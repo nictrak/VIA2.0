@@ -13,6 +13,9 @@ public class PlayerMoveController : MonoBehaviour
     // In same object field
     private Rigidbody2D rgbody;
 
+    // In child field
+    private PlayerRenderer playerRenderer;
+
     // Action permission field
     private bool canMove;
     private bool canUpdateMoveDirection;
@@ -21,6 +24,7 @@ public class PlayerMoveController : MonoBehaviour
     void Start()
     {
         rgbody = GetComponent<Rigidbody2D>();
+        playerRenderer = GetComponentInChildren<PlayerRenderer>();
         canMove = true;
         canUpdateMoveDirection = true;
     }
@@ -58,6 +62,14 @@ public class PlayerMoveController : MonoBehaviour
     private void MovePerFrame()
     {
         Move(CalMoveVector());
+        if (moveDirection.magnitude > 0.001)
+        {
+            playerRenderer.UpdateAnimation(PlayerRenderer.PlayerRenderState.Run, moveDirection);
+        }
+        else
+        {
+            playerRenderer.UpdateAnimation(PlayerRenderer.PlayerRenderState.Static, moveDirection);
+        }
     }
     // End of move method
 }
