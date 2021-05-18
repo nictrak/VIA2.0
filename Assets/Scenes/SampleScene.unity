@@ -209,30 +209,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1656719872, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
-      propertyPath: attackStrings.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1656719872, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
-      propertyPath: renderStates.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1656719872, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
-      propertyPath: attackFrames.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1656719872, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
-      propertyPath: attackStrings.Array.data[3]
-      value: b
-      objectReference: {fileID: 0}
-    - target: {fileID: 1656719872, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
-      propertyPath: renderStates.Array.data[3]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1656719872, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
-      propertyPath: attackFrames.Array.data[3]
-      value: 15
-      objectReference: {fileID: 0}
     - target: {fileID: 4634483407928223877, guid: de7b25d9405ed97409d914dd33f5a080,
         type: 3}
       propertyPath: m_Name
