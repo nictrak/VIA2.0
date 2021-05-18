@@ -202,24 +202,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &411116312 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4634483407574408049, guid: de7b25d9405ed97409d914dd33f5a080,
-    type: 3}
-  m_PrefabInstance: {fileID: 1411240216}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &411116316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 411116312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf1a3b5d8e8f97b42a9a2bf18319f5e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1411240216
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -227,9 +209,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 519420031, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
-      propertyPath: orthographic
-      value: 1
+    - target: {fileID: 1656719872, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+      propertyPath: attackStrings.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656719872, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+      propertyPath: renderStates.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656719872, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+      propertyPath: attackFrames.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656719872, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+      propertyPath: attackStrings.Array.data[3]
+      value: b
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656719872, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+      propertyPath: renderStates.Array.data[3]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656719872, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+      propertyPath: attackFrames.Array.data[3]
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4634483407928223877, guid: de7b25d9405ed97409d914dd33f5a080,
         type: 3}
@@ -293,30 +295,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
---- !u!1 &1656719871 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4634483407928223877, guid: de7b25d9405ed97409d914dd33f5a080,
-    type: 3}
-  m_PrefabInstance: {fileID: 1411240216}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1656719872
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1656719871}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ea03270e5f60b04d8c9223cab761c7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackStrings:
-  - a
-  - aa
-  - aaa
-  renderStates: 020000000300000004000000
-  attackFrames: 140000001400000014000000
 --- !u!4 &2032331031 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4634483407928223878, guid: de7b25d9405ed97409d914dd33f5a080,

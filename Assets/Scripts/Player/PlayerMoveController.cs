@@ -17,6 +17,9 @@ public class PlayerMoveController : MonoBehaviour
     // In child field
     private PlayerRenderer playerRenderer;
 
+    // Buffer field
+    private Vector2 centerMousePosition;
+
     // Action permission field
     private bool canMove;
     private bool canUpdateMoveDirection;
@@ -29,21 +32,31 @@ public class PlayerMoveController : MonoBehaviour
         playerAttackController = GetComponent<PlayerAttackController>();
         canMove = true;
         canUpdateMoveDirection = true;
+        centerMousePosition = new Vector2(Screen.width / 2, Screen.height / 2);
     }
 
     // Update is called once per frame
     void Update()
     {
         if(canUpdateMoveDirection) UpdateMoveDirection();
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetMouseButtonDown(0))
         {
             playerAttackController.AddAttack("a");
+        }
+        if (Input.GetMouseButtonDown(1))
+        {
+            playerAttackController.AddAttack("b");
         }
     }
     // Fixed frame update
     private void FixedUpdate()
     {
         if (canMove) MovePerFrame();
+    }
+
+    private Vector2 CalMouseDirection()
+    {
+        return ((Vector2)Input.mousePosition - centerMousePosition).normalized;
     }
 
     // Start move method
@@ -70,7 +83,7 @@ public class PlayerMoveController : MonoBehaviour
         Move(CalMoveVector());
         if (playerAttackController.IsAttack())
         {
-            playerAttackController.AttackControlPerFrame(playerRenderer, new Vector2());
+            playerAttackController.AttackControlPerFrame(playerRenderer, CalMouseDirection());
         }
         else if (moveDirection.magnitude > 0.001)
         {
