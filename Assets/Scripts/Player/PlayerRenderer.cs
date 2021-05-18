@@ -35,6 +35,9 @@ public class PlayerRenderer : MonoBehaviour
         stateToStringHash = new Dictionary<PlayerRenderState, string>();
         stateToStringHash.Add(PlayerRenderState.Static, "Via static ");
         stateToStringHash.Add(PlayerRenderState.Run, "Via Run ");
+        stateToStringHash.Add(PlayerRenderState.Attack1, "Basic attack 1 ");
+        stateToStringHash.Add(PlayerRenderState.Attack2, "Basic attack 2 ");
+        stateToStringHash.Add(PlayerRenderState.Attack3, "Basic attack 3 ");
     }
     private void Render(PlayerRenderState renderState, string directionString)
     {
@@ -71,7 +74,6 @@ public class PlayerRenderer : MonoBehaviour
         }
         //calculate the amount of steps required to reach this angle
         float stepCount = angle / step;
-        //round it, and we have the answer!
         return Mathf.FloorToInt(stepCount);
     }
     private string DirectionToString(Vector2 direction)

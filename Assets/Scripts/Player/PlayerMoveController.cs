@@ -12,6 +12,7 @@ public class PlayerMoveController : MonoBehaviour
 
     // In same object field
     private Rigidbody2D rgbody;
+    private PlayerAttackController playerAttackController;
 
     // In child field
     private PlayerRenderer playerRenderer;
@@ -25,6 +26,7 @@ public class PlayerMoveController : MonoBehaviour
     {
         rgbody = GetComponent<Rigidbody2D>();
         playerRenderer = GetComponentInChildren<PlayerRenderer>();
+        playerAttackController = GetComponent<PlayerAttackController>();
         canMove = true;
         canUpdateMoveDirection = true;
     }
@@ -33,6 +35,10 @@ public class PlayerMoveController : MonoBehaviour
     void Update()
     {
         if(canUpdateMoveDirection) UpdateMoveDirection();
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            playerAttackController.AddAttack("a");
+        }
     }
     // Fixed frame update
     private void FixedUpdate()
@@ -62,7 +68,11 @@ public class PlayerMoveController : MonoBehaviour
     private void MovePerFrame()
     {
         Move(CalMoveVector());
-        if (moveDirection.magnitude > 0.001)
+        if (playerAttackController.IsAttack())
+        {
+            playerAttackController.AttackControlPerFrame(playerRenderer, new Vector2());
+        }
+        else if (moveDirection.magnitude > 0.001)
         {
             playerRenderer.UpdateAnimation(PlayerRenderer.PlayerRenderState.Run, moveDirection);
         }
