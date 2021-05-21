@@ -71,7 +71,7 @@ public class PlayerMoveController : MonoBehaviour
     }
     private Vector2 CalMoveVector()
     {
-        return moveDirection * moveVelocity;
+        return moveDirection * moveVelocity * (playerAttackController.IsAttack()?0f:1f);
     }
     private void Move(Vector2 moveVector)
     {
