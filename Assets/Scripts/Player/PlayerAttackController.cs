@@ -7,9 +7,7 @@ public class PlayerAttackController : MonoBehaviour
     [SerializeField]
     private List<string> attackStrings;
     [SerializeField]
-    private List<PlayerRenderer.PlayerRenderState> renderStates;
-    [SerializeField]
-    private List<int> attackFrames;
+    private List<Attack> attackObjects;
 
     private string currentAttackString;
     private string animatedAttackString;
@@ -41,7 +39,7 @@ public class PlayerAttackController : MonoBehaviour
     }
     private bool IsFrameCounterHit(int index)
     {
-        return attackFrameCounter >= attackFrames[index];
+        return attackFrameCounter >= attackObjects[index].Frame;
     }
     public void AddAttack(string attackKey)
     {
@@ -57,7 +55,7 @@ public class PlayerAttackController : MonoBehaviour
         {
             string newAnimatedAttackString = currentAttackString.Substring(0, animatedAttackString.Length + 1);
             int newIndex = attackStrings.IndexOf(newAnimatedAttackString);
-            PlayerRenderer.PlayerRenderState newRenderState = renderStates[newIndex];
+            PlayerRenderer.PlayerRenderState newRenderState = attackObjects[newIndex].RenderState;
             playerRenderer.UpdateAnimation(newRenderState, direction);
             animatedAttackString = newAnimatedAttackString;
         }
