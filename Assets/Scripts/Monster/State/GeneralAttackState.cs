@@ -9,7 +9,6 @@ public class GeneralAttackState : MonsterStateBehaviour
     private int attackCounter;
     public override void ExitState()
     {
-        Debug.Log("Attack End");
     }
 
     public override MonsterStateMachine.MonsterState RunState()
@@ -25,7 +24,6 @@ public class GeneralAttackState : MonsterStateBehaviour
 
     public override void StartState()
     {
-        Debug.Log("Start attack");
     }
 
     // Start is called before the first frame update

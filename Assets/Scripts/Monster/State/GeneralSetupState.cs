@@ -9,7 +9,6 @@ public class GeneralSetupState : MonsterStateBehaviour
 
     public override void ExitState()
     {
-        Debug.Log("Setup completed");
     }
 
     public override MonsterStateMachine.MonsterState RunState()
@@ -28,7 +27,6 @@ public class GeneralSetupState : MonsterStateBehaviour
 
     public override void StartState()
     {
-        Debug.Log("Start setup");
     }
 
     // Start is called before the first frame update

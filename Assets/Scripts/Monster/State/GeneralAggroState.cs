@@ -9,7 +9,6 @@ public class GeneralAggroState : MonsterStateBehaviour
     private bool isHit;
     public override void ExitState()
     {
-        Debug.Log("End aggro");
         aiPath.canMove = false;
     }
 
@@ -24,7 +23,6 @@ public class GeneralAggroState : MonsterStateBehaviour
 
     public override void StartState()
     {
-        Debug.Log("Start aggro");
         aiPath.canMove = true;
     }
 

@@ -12,6 +12,10 @@ public class PlayerRenderer : MonoBehaviour
         Attack2,
         Attack3
     }
+    [SerializeField]
+    private List<string> animatorStringHeads;
+    [SerializeField]
+    private List<PlayerRenderState> renderStatesSetupSequence;
     private static readonly string[] directions = { "N", "NW", "W", "SW", "S", "SE", "E", "NE" };
     private Dictionary<PlayerRenderState, string> stateToStringHash;
     private Animator animator;
@@ -33,11 +37,10 @@ public class PlayerRenderer : MonoBehaviour
     private void SetupStateToStringHash()
     {
         stateToStringHash = new Dictionary<PlayerRenderState, string>();
-        stateToStringHash.Add(PlayerRenderState.Static, "Via static ");
-        stateToStringHash.Add(PlayerRenderState.Run, "Via Run ");
-        stateToStringHash.Add(PlayerRenderState.Attack1, "Basic attack 1 ");
-        stateToStringHash.Add(PlayerRenderState.Attack2, "Basic attack 2 ");
-        stateToStringHash.Add(PlayerRenderState.Attack3, "Basic attack 3 ");
+        for (int i = 0; i < renderStatesSetupSequence.Count; i++)
+        {
+            stateToStringHash.Add(renderStatesSetupSequence[i], animatorStringHeads[i]);
+        }
     }
     private void Render(PlayerRenderState renderState, string directionString)
     {
@@ -50,7 +53,7 @@ public class PlayerRenderer : MonoBehaviour
         {
             renderedString = directionString;
         }
-        animator.Play(stateToStringHash[renderState] + renderedString);
+        animator.Play(stateToStringHash[renderState] + " " + renderedString);
         lastRenderedDirectionString = renderedString;
     }
     private int DirectionToIndex(Vector2 dir, int sliceCount)

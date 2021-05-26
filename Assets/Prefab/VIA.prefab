@@ -398,6 +398,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf1a3b5d8e8f97b42a9a2bf18319f5e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animatorStringHeads:
+  - Via static
+  - Via Run
+  - Basic attack 1
+  - Basic attack 2
+  - Basic attack 3
+  renderStatesSetupSequence: 0000000001000000020000000300000004000000
 --- !u!1 &4634483407928223877
 GameObject:
   m_ObjectHideFlags: 0
