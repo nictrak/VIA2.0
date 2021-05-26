@@ -300,6 +300,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &632783917 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2053696797, guid: fb71296f129c18141a0a42216855cf17,
+    type: 3}
+  m_PrefabInstance: {fileID: 6878539700563054497}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08f30bd7e7f70cc48876ff633fe1e4ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1192471437 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1305351802, guid: fb71296f129c18141a0a42216855cf17,
+    type: 3}
+  m_PrefabInstance: {fileID: 6878539700563054497}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0d14d87556c99a4d9553d560d5dbe17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1411240216
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -369,6 +393,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+--- !u!114 &1450578657 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 627429811, guid: fb71296f129c18141a0a42216855cf17,
+    type: 3}
+  m_PrefabInstance: {fileID: 6878539700563054497}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a56870dc275ee7a4b96354c13509826d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2032331031 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4634483407928223878, guid: de7b25d9405ed97409d914dd33f5a080,
@@ -480,6 +516,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 101977564, guid: fb71296f129c18141a0a42216855cf17, type: 3}
+      propertyPath: statesHashSequence.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 101977564, guid: fb71296f129c18141a0a42216855cf17, type: 3}
+      propertyPath: states.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 101977564, guid: fb71296f129c18141a0a42216855cf17, type: 3}
+      propertyPath: stringAnimators.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 101977564, guid: fb71296f129c18141a0a42216855cf17, type: 3}
+      propertyPath: statesHashSequence.Array.data[1]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 101977564, guid: fb71296f129c18141a0a42216855cf17, type: 3}
+      propertyPath: statesHashSequence.Array.data[2]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 101977564, guid: fb71296f129c18141a0a42216855cf17, type: 3}
+      propertyPath: stringAnimators.Array.data[0]
+      value: idle
+      objectReference: {fileID: 0}
+    - target: {fileID: 101977564, guid: fb71296f129c18141a0a42216855cf17, type: 3}
+      propertyPath: stringAnimators.Array.data[1]
+      value: move
+      objectReference: {fileID: 0}
+    - target: {fileID: 101977564, guid: fb71296f129c18141a0a42216855cf17, type: 3}
+      propertyPath: stringAnimators.Array.data[2]
+      value: attack
+      objectReference: {fileID: 0}
+    - target: {fileID: 101977564, guid: fb71296f129c18141a0a42216855cf17, type: 3}
+      propertyPath: states.Array.data[0]
+      value: 
+      objectReference: {fileID: 1450578657}
+    - target: {fileID: 101977564, guid: fb71296f129c18141a0a42216855cf17, type: 3}
+      propertyPath: states.Array.data[1]
+      value: 
+      objectReference: {fileID: 632783917}
+    - target: {fileID: 101977564, guid: fb71296f129c18141a0a42216855cf17, type: 3}
+      propertyPath: states.Array.data[2]
+      value: 
+      objectReference: {fileID: 1192471437}
     - target: {fileID: 6878539700662927994, guid: fb71296f129c18141a0a42216855cf17,
         type: 3}
       propertyPath: m_Name
