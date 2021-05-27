@@ -9,10 +9,13 @@ public class PlayerMoveController : MonoBehaviour
 
     // Calculation field
     private Vector2 moveDirection;
-
+    private Vector2 lastestNonZeroMoveDirecttion;
+    
     // In same object field
     private Rigidbody2D rgbody;
     private PlayerAttackController playerAttackController;
+    private PlayerDashController playerDashController;
+    private Collider2D normalCollider;
 
     // In child field
     private PlayerRenderer playerRenderer;
@@ -30,9 +33,12 @@ public class PlayerMoveController : MonoBehaviour
         rgbody = GetComponent<Rigidbody2D>();
         playerRenderer = GetComponentInChildren<PlayerRenderer>();
         playerAttackController = GetComponent<PlayerAttackController>();
+        playerDashController = GetComponent<PlayerDashController>();
+        normalCollider = GetComponent<Collider2D>();
         canMove = true;
         canUpdateMoveDirection = true;
         centerMousePosition = new Vector2(Screen.width / 2, Screen.height / 2);
+        moveDirection = new Vector2();
     }
 
     // Update is called once per frame
@@ -46,6 +52,10 @@ public class PlayerMoveController : MonoBehaviour
         if (Input.GetMouseButtonDown(1))
         {
             playerAttackController.AddAttack("b");
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            playerDashController.StartDash(lastestNonZeroMoveDirecttion, playerRenderer, normalCollider);
         }
     }
     // Fixed frame update
@@ -68,6 +78,10 @@ public class PlayerMoveController : MonoBehaviour
     private void UpdateMoveDirection()
     {
         moveDirection = GetInputMoveDirection();
+        if(moveDirection.magnitude > 0.001)
+        {
+            lastestNonZeroMoveDirecttion = moveDirection;
+        }
     }
     private Vector2 CalMoveVector()
     {
@@ -80,14 +94,18 @@ public class PlayerMoveController : MonoBehaviour
     }
     private void MovePerFrame()
     {
-        Move(CalMoveVector());
-        if (playerAttackController.IsAttack())
+        if (playerDashController.IsDash)
+        {
+            Move(playerDashController.DashVector);
+        }
+        else if (playerAttackController.IsAttack())
         {
             playerAttackController.AttackControlPerFrame(playerRenderer, CalMouseDirection());
         }
         else if (moveDirection.magnitude > 0.001)
         {
             playerRenderer.UpdateAnimation(PlayerRenderer.PlayerRenderState.Run, moveDirection);
+            Move(CalMoveVector());
         }
         else
         {

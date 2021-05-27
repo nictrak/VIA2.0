@@ -300,6 +300,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &627553377 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4634483407928223877, guid: de7b25d9405ed97409d914dd33f5a080,
+    type: 3}
+  m_PrefabInstance: {fileID: 1411240216}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &627553385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627553377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e4c10b1b670de4a8358fcbb22615fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dashVelocity: 0.5
+  dashFrame: 10
 --- !u!114 &632783917 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2053696797, guid: fb71296f129c18141a0a42216855cf17,
@@ -331,6 +351,59 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 411116316, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+      propertyPath: animatorStringHeads.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 411116316, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+      propertyPath: renderStatesSetupSequence.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 411116316, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+      propertyPath: animatorStringHeads.Array.data[5]
+      value: VIA Dash
+      objectReference: {fileID: 0}
+    - target: {fileID: 411116316, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+      propertyPath: renderStatesSetupSequence.Array.data[5]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 908748499, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.2092411
+      objectReference: {fileID: 0}
+    - target: {fileID: 908748499, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+      propertyPath: m_Size.x
+      value: 1.427284
+      objectReference: {fileID: 0}
+    - target: {fileID: 908748499, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+      propertyPath: m_Offset.y
+      value: 1.540078
+      objectReference: {fileID: 0}
+    - target: {fileID: 908748499, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+      propertyPath: m_Size.y
+      value: 3.165561
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362891524, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.21127214
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362891524, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+      propertyPath: m_Size.x
+      value: 1.4755691
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362891524, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+      propertyPath: m_Offset.y
+      value: 1.5408716
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362891524, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+      propertyPath: m_Size.y
+      value: 3.232353
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550108241435275513, guid: de7b25d9405ed97409d914dd33f5a080,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4634483407928223877, guid: de7b25d9405ed97409d914dd33f5a080,
         type: 3}
       propertyPath: m_Name
@@ -560,6 +633,47 @@ PrefabInstance:
       propertyPath: states.Array.data[2]
       value: 
       objectReference: {fileID: 1192471437}
+    - target: {fileID: 1812663165, guid: fb71296f129c18141a0a42216855cf17, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.7832176
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812663165, guid: fb71296f129c18141a0a42216855cf17, type: 3}
+      propertyPath: m_Size.x
+      value: 2.155845
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812663165, guid: fb71296f129c18141a0a42216855cf17, type: 3}
+      propertyPath: m_Size.y
+      value: 2.3572872
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812663165, guid: fb71296f129c18141a0a42216855cf17, type: 3}
+      propertyPath: m_Offset.y
+      value: 1.0076541
+      objectReference: {fileID: 0}
+    - target: {fileID: 6878539700662927937, guid: fb71296f129c18141a0a42216855cf17,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6878539700662927939, guid: fb71296f129c18141a0a42216855cf17,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 1.2190661
+      objectReference: {fileID: 0}
+    - target: {fileID: 6878539700662927939, guid: fb71296f129c18141a0a42216855cf17,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 2.7401934
+      objectReference: {fileID: 0}
+    - target: {fileID: 6878539700662927939, guid: fb71296f129c18141a0a42216855cf17,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.92688465
+      objectReference: {fileID: 0}
+    - target: {fileID: 6878539700662927939, guid: fb71296f129c18141a0a42216855cf17,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.4673786
+      objectReference: {fileID: 0}
     - target: {fileID: 6878539700662927994, guid: fb71296f129c18141a0a42216855cf17,
         type: 3}
       propertyPath: m_Name

@@ -10,12 +10,14 @@ public class PlayerRenderer : MonoBehaviour
         Run,
         Attack1,
         Attack2,
-        Attack3
+        Attack3,
+        Dash
     }
     [SerializeField]
     private List<string> animatorStringHeads;
     [SerializeField]
     private List<PlayerRenderState> renderStatesSetupSequence;
+
     private static readonly string[] directions = { "N", "NW", "W", "SW", "S", "SE", "E", "NE" };
     private Dictionary<PlayerRenderState, string> stateToStringHash;
     private Animator animator;
