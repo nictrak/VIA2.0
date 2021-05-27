@@ -9,7 +9,7 @@ public class PlayerMoveController : MonoBehaviour
 
     // Calculation field
     private Vector2 moveDirection;
-    private Vector2 lastestNonZeroMoveDirecttion;
+    private Vector2 lastestNonZeroMoveDirection;
     
     // In same object field
     private Rigidbody2D rgbody;
@@ -27,6 +27,8 @@ public class PlayerMoveController : MonoBehaviour
     private bool canMove;
     private bool canUpdateMoveDirection;
 
+    public Vector2 LastestNonZeroMoveDirection { get => lastestNonZeroMoveDirection; set => lastestNonZeroMoveDirection = value; }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +41,7 @@ public class PlayerMoveController : MonoBehaviour
         canUpdateMoveDirection = true;
         centerMousePosition = new Vector2(Screen.width / 2, Screen.height / 2);
         moveDirection = new Vector2();
+        lastestNonZeroMoveDirection = new Vector2(0, -1);
     }
 
     // Update is called once per frame
@@ -55,7 +58,7 @@ public class PlayerMoveController : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            playerDashController.StartDash(lastestNonZeroMoveDirecttion, playerRenderer, normalCollider);
+            playerDashController.StartDash(lastestNonZeroMoveDirection, playerRenderer, normalCollider);
         }
     }
     // Fixed frame update
@@ -78,9 +81,9 @@ public class PlayerMoveController : MonoBehaviour
     private void UpdateMoveDirection()
     {
         moveDirection = GetInputMoveDirection();
-        if(moveDirection.magnitude > 0.001)
+        if(moveDirection.magnitude > 0.001 && !playerAttackController.IsAttack())
         {
-            lastestNonZeroMoveDirecttion = moveDirection;
+            lastestNonZeroMoveDirection = moveDirection;
         }
     }
     private Vector2 CalMoveVector()
@@ -100,6 +103,8 @@ public class PlayerMoveController : MonoBehaviour
         }
         else if (playerAttackController.IsAttack())
         {
+            Vector2 mouseDirection = CalMouseDirection();
+            lastestNonZeroMoveDirection = mouseDirection;
             playerAttackController.AttackControlPerFrame(playerRenderer, CalMouseDirection());
         }
         else if (moveDirection.magnitude > 0.001)
