@@ -2,35 +2,42 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GeneralAttackState : MonsterStateBehaviour
+public class GeneralSpawnState : MonsterStateBehaviour
 {
     [SerializeField]
-    private int attackFrame;
-    private int attackCounter;
+    private NeedTarget spawnedPrefab;
+    [SerializeField]
+    private int delayFrame;
+
+    private int delayCounter;
+
     public override void ExitState()
     {
+        
     }
 
     public override MonsterStateMachine.MonsterState RunState()
     {
-        if (attackCounter >= attackFrame)
+        if (delayCounter >= delayFrame)
         {
-            attackCounter = 0;
-            //TODO do damage
+            delayCounter = 0;
+            Instantiate(spawnedPrefab);
+            //TODO some setting
             return NormalNextState;
         }
-        else attackCounter++;
+        else delayCounter++;
         return currentState;
     }
 
     public override void StartState()
     {
+        
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        attackCounter = 0;
+        delayCounter = 0;
     }
 
     // Update is called once per frame
@@ -38,5 +45,4 @@ public class GeneralAttackState : MonsterStateBehaviour
     {
         
     }
-
 }

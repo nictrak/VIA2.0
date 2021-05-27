@@ -6,11 +6,11 @@ using Pathfinding;
 public class GeneralAggroState : MonsterStateBehaviour
 {
     [SerializeField]
+    private MonsterStateMachine.MonsterState outerRangeNextState;
+    [SerializeField]
     private MonsterRange outerRange;
     [SerializeField]
     private MonsterRange innerRange;
-    [SerializeField]
-    private MonsterStateMachine.MonsterState outerRangeNextState;
     private AIPath aiPath;
     public override void ExitState()
     {
