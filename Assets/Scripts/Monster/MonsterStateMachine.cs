@@ -16,11 +16,14 @@ public class MonsterStateMachine : MonoBehaviour
     private List<MonsterStateBehaviour> states;
     [SerializeField]
     private List<string> stringAnimators;
+    [SerializeField]
+    private bool isHurtBreak;
 
     private Dictionary<MonsterState, MonsterStateBehaviour> statesHash;
     private Dictionary<MonsterState, string> stringAnimatorsHash;
 
     private MonsterState currentState;
+    private Health health;
     public enum MonsterState
     {
         Setup,
@@ -38,6 +41,7 @@ public class MonsterStateMachine : MonoBehaviour
         SetupStringAnimatorsHash();
         currentState = initialState;
         StartState(currentState);
+        health = GetComponent<Health>();
     }
 
     // Update is called once per frame
@@ -93,6 +97,13 @@ public class MonsterStateMachine : MonoBehaviour
     {
         MonsterState nextState;
         nextState = statesHash[state].RunState();
+        if (isHurtBreak)
+        {
+            if (health.IsHurt)
+            {
+                nextState = MonsterState.Hurt;
+            }
+        }
         ChangeState(nextState);
     }
 }
