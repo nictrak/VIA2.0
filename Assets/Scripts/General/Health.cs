@@ -38,6 +38,7 @@ public class Health : MonoBehaviour
     }
     public void TakeDamage(int damage)
     {
+        Debug.Log(damage);
         currentHealth = currentHealth - damage;
         if (damage > 0) isHurt = true;
         if(currentHealth <= 0)

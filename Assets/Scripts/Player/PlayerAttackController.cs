@@ -56,6 +56,7 @@ public class PlayerAttackController : MonoBehaviour
             string newAnimatedAttackString = currentAttackString.Substring(0, animatedAttackString.Length + 1);
             int newIndex = attackStrings.IndexOf(newAnimatedAttackString);
             PlayerRenderer.PlayerRenderState newRenderState = attackObjects[newIndex].RenderState;
+            attackObjects[newIndex].DoDamage();
             playerRenderer.UpdateAnimation(newRenderState, direction);
             animatedAttackString = newAnimatedAttackString;
         }
