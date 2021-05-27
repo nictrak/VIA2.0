@@ -5,8 +5,13 @@ using Pathfinding;
 
 public class GeneralAggroState : MonsterStateBehaviour
 {
+    [SerializeField]
+    private MonsterRange outerRange;
+    [SerializeField]
+    private MonsterRange innerRange;
+    [SerializeField]
+    private MonsterStateMachine.MonsterState outerRangeNextState;
     private AIPath aiPath;
-    private bool isHit;
     public override void ExitState()
     {
         aiPath.canMove = false;
@@ -14,9 +19,19 @@ public class GeneralAggroState : MonsterStateBehaviour
 
     public override MonsterStateMachine.MonsterState RunState()
     {
-        if (isHit)
+        if (innerRange.IsHitPlayer)
         {
             return NormalNextState;
+        }
+        else
+        {
+            if(outerRange != null)
+            {
+                if (!outerRange.IsHitPlayer)
+                {
+                    return outerRangeNextState;
+                }
+            }
         }
         return currentState;
     }
@@ -30,26 +45,11 @@ public class GeneralAggroState : MonsterStateBehaviour
     void Start()
     {
         aiPath = GetComponentInParent<AIPath>();
-        isHit = false;
     }
 
     // Update is called once per frame
     void Update()
     {
         
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.tag == "Player")
-        {
-            isHit = true;
-        }
-    }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.tag == "Player")
-        {
-            isHit = false;
-        }
     }
 }
