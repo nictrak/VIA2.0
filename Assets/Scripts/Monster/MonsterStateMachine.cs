@@ -104,6 +104,10 @@ public class MonsterStateMachine : MonoBehaviour
                 nextState = MonsterState.Hurt;
             }
         }
+        if (health.IsDead)
+        {
+            nextState = MonsterState.Dead;
+        }
         ChangeState(nextState);
     }
 }
