@@ -214,6 +214,53 @@ SortingGroup:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &83543703
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 83543705}
+  - component: {fileID: 83543704}
+  m_Layer: 0
+  m_Name: DeadState
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &83543704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83543703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43d35dbe9a38fbe40a2d248e46888ec6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: 5
+  NormalNextState: 5
+  delayFrame: 20
+  target: {fileID: 407601065}
+--- !u!4 &83543705
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83543703}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 842959436}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &112049135
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,6 +373,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   initialHealth: 100
+--- !u!114 &407601076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407601065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 655e5500e215b074ca2068575267e66d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 816422502}
 --- !u!1 &484702154
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,6 +590,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7edd7f9e21928a4eb32069178829309, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!212 &816422502 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 6878539700156517199, guid: fb71296f129c18141a0a42216855cf17,
+    type: 3}
+  m_PrefabInstance: {fileID: 6878539700563054497}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &842959436 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2109351896, guid: fb71296f129c18141a0a42216855cf17,
@@ -1059,15 +1125,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 101977564, guid: fb71296f129c18141a0a42216855cf17, type: 3}
       propertyPath: statesHashSequence.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 101977564, guid: fb71296f129c18141a0a42216855cf17, type: 3}
       propertyPath: states.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 101977564, guid: fb71296f129c18141a0a42216855cf17, type: 3}
       propertyPath: stringAnimators.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 101977564, guid: fb71296f129c18141a0a42216855cf17, type: 3}
       propertyPath: statesHashSequence.Array.data[1]
@@ -1128,6 +1194,18 @@ PrefabInstance:
     - target: {fileID: 101977564, guid: fb71296f129c18141a0a42216855cf17, type: 3}
       propertyPath: isHurtBreak
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 101977564, guid: fb71296f129c18141a0a42216855cf17, type: 3}
+      propertyPath: statesHashSequence.Array.data[5]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 101977564, guid: fb71296f129c18141a0a42216855cf17, type: 3}
+      propertyPath: states.Array.data[5]
+      value: 
+      objectReference: {fileID: 83543704}
+    - target: {fileID: 101977564, guid: fb71296f129c18141a0a42216855cf17, type: 3}
+      propertyPath: stringAnimators.Array.data[5]
+      value: dead
       objectReference: {fileID: 0}
     - target: {fileID: 627429811, guid: fb71296f129c18141a0a42216855cf17, type: 3}
       propertyPath: NormalNextState
