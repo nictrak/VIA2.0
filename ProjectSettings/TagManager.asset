@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - PlayerTarget
+  - Interaction
   layers:
   - Default
   - TransparentFX
@@ -45,4 +46,7 @@ TagManager:
     locked: 0
   - name: Front
     uniqueID: 2663767201
+    locked: 0
+  - name: UI
+    uniqueID: 2416359737
     locked: 0
