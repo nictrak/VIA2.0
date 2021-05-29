@@ -118,4 +118,36 @@ public class PlayerMoveController : MonoBehaviour
         }
     }
     // End of move method
+
+    //Test Trigger Debuff
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Debuff")
+        {
+            Debuff debuff = collision.gameObject.GetComponent(typeof(Debuff)) as Debuff;
+            debuff.Apply(gameObject);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Debuff")
+        {
+            Debuff debuff = collision.gameObject.GetComponent(typeof(Debuff)) as Debuff;
+            debuff.RemoveEffect(gameObject);
+        }
+    }
+
+    public void SetMoveVelocity(float velocity){
+
+        moveVelocity = velocity;
+
+    }
+
+    public float GetMoveVelocity(){
+
+        return moveVelocity;
+
+    }
+
 }
