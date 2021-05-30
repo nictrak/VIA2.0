@@ -11,10 +11,12 @@ public class DialogueController : MonoBehaviour
     private Text talkerNameText;
     [SerializeField]
     private Text dialogueText;
+
+    private bool isShow;
     // Start is called before the first frame update
     void Start()
     {
-        
+        isShow = false;
     }
 
     // Update is called once per frame
@@ -27,8 +29,30 @@ public class DialogueController : MonoBehaviour
         talkerNameText.text = talkerName;
         dialogueText.text = dialogue;
     }
+    public void SetText(Dialogue dialogue)
+    {
+        talkerNameText.text = dialogue.TalkerName;
+        dialogueText.text = dialogue.DialogueContent;
+    }
+    public void ShowDialogue(Dialogue dialogue)
+    {
+        if(dialogue == null)
+        {
+            SetActivePanel(false);
+            isShow = false;
+        }
+        else
+        {
+            if (!isShow)
+            {
+                SetActivePanel(true);
+            }
+            SetText(dialogue);
+        }
+    }
     public void SetActivePanel(bool isActive)
     {
         dialoguePanel.SetActive(isActive);
+        isShow = isActive;
     }
 }

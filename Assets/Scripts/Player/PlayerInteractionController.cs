@@ -9,17 +9,35 @@ public class PlayerInteractionController : MonoBehaviour
     [SerializeField]
     private GameObject interactionMarkerPrefab;
 
+    private PlayerMoveController playerMoveController;
     private GameObject interactionMarker;
+    private Talker currentTalker;
+    private bool isTalk;
     // Start is called before the first frame update
     void Start()
     {
-        
+        isTalk = false;
+        playerMoveController = GetComponent<PlayerMoveController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        UpdateMarker();
+        if(!isTalk) UpdateMarker();
+        if (Input.GetKeyDown(KeyCode.E) && currentTalker != null && !isTalk)
+        {
+            currentTalker.Talk();
+            isTalk = true;
+            SetMovementControl(false);
+        }
+        if (Input.GetMouseButtonDown(0) && currentTalker != null && isTalk)
+        {
+            isTalk = currentTalker.NextTalk();
+            if (!isTalk)
+            {
+                SetMovementControl(true);
+            }
+        }
     }
     private bool IsMarkerUsed()
     {
@@ -42,6 +60,7 @@ public class PlayerInteractionController : MonoBehaviour
         if(IsMarkerUsed())
         {
             Destroy(interactionMarker);
+            currentTalker = null;
         }
     }
     private void UpdateMarker()
@@ -49,11 +68,19 @@ public class PlayerInteractionController : MonoBehaviour
         if (!triggerRange.IsEmpty())
         {
             GameObject nearestObject = triggerRange.CalNearestObject(transform.position);
+            currentTalker = nearestObject.GetComponent<Talker>();
             ShowMarker(nearestObject.transform.position);
         }
         else
         {
             ClearMarker();
         }
+    }
+    private void SetMovementControl(bool isActive)
+    {
+        playerMoveController.CanMove = isActive;
+        playerMoveController.CanUpdateMoveDirection = isActive;
+        playerMoveController.CanAttack = isActive;
+        playerMoveController.CanDash = isActive;
     }
 }

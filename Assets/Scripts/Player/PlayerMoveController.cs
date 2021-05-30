@@ -26,8 +26,14 @@ public class PlayerMoveController : MonoBehaviour
     // Action permission field
     private bool canMove;
     private bool canUpdateMoveDirection;
+    private bool canAttack;
+    private bool canDash;
 
     public Vector2 LastestNonZeroMoveDirection { get => lastestNonZeroMoveDirection; set => lastestNonZeroMoveDirection = value; }
+    public bool CanMove { get => canMove; set => canMove = value; }
+    public bool CanUpdateMoveDirection { get => canUpdateMoveDirection; set => canUpdateMoveDirection = value; }
+    public bool CanAttack { get => canAttack; set => canAttack = value; }
+    public bool CanDash { get => canDash; set => canDash = value; }
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +45,8 @@ public class PlayerMoveController : MonoBehaviour
         normalCollider = GetComponent<Collider2D>();
         canMove = true;
         canUpdateMoveDirection = true;
+        canAttack = true;
+        canDash = true;
         centerMousePosition = new Vector2(Screen.width / 2, Screen.height / 2);
         moveDirection = new Vector2();
         lastestNonZeroMoveDirection = new Vector2(0, -1);
@@ -48,15 +56,15 @@ public class PlayerMoveController : MonoBehaviour
     void Update()
     {
         if(canUpdateMoveDirection) UpdateMoveDirection();
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && canAttack)
         {
             playerAttackController.AddAttack("a");
         }
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1) && canAttack)
         {
             playerAttackController.AddAttack("b");
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && canDash)
         {
             playerDashController.StartDash(lastestNonZeroMoveDirection, playerRenderer, normalCollider);
         }
