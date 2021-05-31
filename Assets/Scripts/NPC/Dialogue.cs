@@ -7,6 +7,7 @@ public abstract class Dialogue : MonoBehaviour
     [SerializeField]
     protected string talkerName;
     [SerializeField]
+    [Multiline]
     protected string dialogueContent;
 
     public string TalkerName { get => talkerName; set => talkerName = value; }
