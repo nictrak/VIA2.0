@@ -25,4 +25,6 @@ public abstract class Dialogue : MonoBehaviour
         
     }
     public abstract Dialogue GetNextDialogue(int param);
+    public abstract List<string> GetChoicesString();
+    public abstract bool IsClicknext();
 }

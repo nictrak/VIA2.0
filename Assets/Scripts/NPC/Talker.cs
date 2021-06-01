@@ -35,9 +35,9 @@ public class Talker : MonoBehaviour
     {
         dialogueController.ShowDialogue(currentDialogue);
     }
-    public bool NextTalk()
+    public bool NextTalk(int param)
     {
-        currentDialogue = currentDialogue.GetNextDialogue(0);
+        currentDialogue = currentDialogue.GetNextDialogue(param);
         Talk();
         if(currentDialogue == null)
         {
@@ -48,5 +48,9 @@ public class Talker : MonoBehaviour
         {
             return true;
         }
+    }
+    public bool IsClickNext()
+    {
+        return currentDialogue.IsClicknext();
     }
 }

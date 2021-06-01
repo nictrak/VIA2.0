@@ -2,24 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DialogueSingleNext : Dialogue
+public class DialogueMultipleChoices : Dialogue
 {
     [SerializeField]
-    private Dialogue next;
-
+    private List<Dialogue> nexts;
+    [SerializeField]
+    private List<string> choicesString;
     public override List<string> GetChoicesString()
     {
-        return null;
+        return choicesString;
     }
 
     public override Dialogue GetNextDialogue(int param)
     {
-        return next;
+        return nexts[param];
     }
 
     public override bool IsClicknext()
     {
-        return true;
+        return false;
     }
 
     // Start is called before the first frame update

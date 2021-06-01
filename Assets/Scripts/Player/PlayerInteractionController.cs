@@ -32,10 +32,13 @@ public class PlayerInteractionController : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(0) && currentTalker != null && isTalk)
         {
-            isTalk = currentTalker.NextTalk();
-            if (!isTalk)
+            if (currentTalker.IsClickNext())
             {
-                SetMovementControl(true);
+                isTalk = currentTalker.NextTalk(0);
+                if (!isTalk)
+                {
+                    SetMovementControl(true);
+                }
             }
         }
     }
@@ -82,5 +85,13 @@ public class PlayerInteractionController : MonoBehaviour
         playerMoveController.CanUpdateMoveDirection = isActive;
         playerMoveController.CanAttack = isActive;
         playerMoveController.CanDash = isActive;
+    }
+    public void NextDialogueSelectedChoice(int param)
+    {
+        isTalk = currentTalker.NextTalk(param);
+        if (!isTalk)
+        {
+            SetMovementControl(true);
+        }
     }
 }
