@@ -1,18 +1,39 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class InventoryManager : MonoBehaviour
 {
     [SerializeField]
-    private Inventory inventory;
-    [SerializeField]
-    private EquipmentPanel equipmentPanel;
-    [SerializeField]
     private Image draggableItem;
+
+    [SerializeField]
+    private GameObject inventoryObj;
+    [SerializeField]
+    private GameObject equipmentPanelObj;
+
+    private Inventory inventory;
+    private EquipmentPanel equipmentPanel;
 
     private ItemSlot draggingSlot;
 
+    private bool toggleBool;
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            toggleBool = !toggleBool;
+            inventoryObj.SetActive(toggleBool);
+            equipmentPanelObj.SetActive(toggleBool);
+        }
+    }
+
     private void Awake() {
+
+        inventory = inventoryObj.GetComponent<Inventory>();
+        equipmentPanel = equipmentPanelObj.GetComponent<EquipmentPanel>();
+
 
         //Setup Events
         //Right Click
@@ -52,7 +73,7 @@ public class InventoryManager : MonoBehaviour
     }
 
     private void BeginDrag(ItemSlot itemSlot){
-        if(itemSlot != null)
+        if(itemSlot.Item != null)
         {
             draggingSlot = itemSlot;
             draggableItem.sprite = itemSlot.Item.Icon;
@@ -73,25 +94,29 @@ public class InventoryManager : MonoBehaviour
     }
 
     private void Drop(ItemSlot dropSlot){
-        if(dropSlot.CanReceiveItem(draggingSlot.Item) && draggingSlot.CanReceiveItem(dropSlot.Item))
+
+        if(draggingSlot != null)
         {
-            EquippableItem dragItem = draggingSlot.Item as EquippableItem;
-            EquippableItem dropItem = dropSlot.Item as EquippableItem;
-
-            /*if (draggingSlot is EquipmentSlot)
+            if(dropSlot.CanReceiveItem(draggingSlot.Item) && draggingSlot.CanReceiveItem(dropSlot.Item))
             {
-                if(dragItem != null) dragItem.Unequip(this);
-                if(dropItem != null) dropItem.Equip(this);
+                //EquippableItem dragItem = draggingSlot.Item as EquippableItem;
+                //EquippableItem dropItem = dropSlot.Item as EquippableItem;
+
+                /*if (draggingSlot is EquipmentSlot)
+                {
+                    if(dragItem != null) dragItem.Unequip(this);
+                    if(dropItem != null) dropItem.Equip(this);
+                }
+                if (dropSlot is EquipmentSlot)
+                {
+                    if(dragItem != null) dragItem.Equip(this);
+                    if(dropItem != null) dropItem.Unequip(this);
+                }*/
+
+                Item draggingItem = draggingSlot.Item;
+                draggingSlot.Item = dropSlot.Item;
+                dropSlot.Item = draggingItem;
             }
-            if (dropSlot is EquipmentSlot)
-            {
-                if(dragItem != null) dragItem.Equip(this);
-                if(dropItem != null) dropItem.Unequip(this);
-            }*/
-
-            Item draggingItem = draggingSlot.Item;
-            draggingSlot.Item = dropSlot.Item;
-            dropSlot.Item = draggingItem;
         }
     }
 
