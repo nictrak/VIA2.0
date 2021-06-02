@@ -8,6 +8,10 @@ public class FlipToPlayer : MonoBehaviour
     [SerializeField]
     private SpriteRenderer spriteRenderer;
     private AIDestinationSetter destinationSetter;
+    private bool isReverse;
+
+    public bool IsReverse { get => isReverse; set => isReverse = value; }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,11 +25,13 @@ public class FlipToPlayer : MonoBehaviour
         {
             if(destinationSetter.target.transform.position.x < transform.position.x)
             {
-                spriteRenderer.flipX = true;
+                if (isReverse) spriteRenderer.flipX = false;
+                else spriteRenderer.flipX = true;
             }
             else
             {
-                spriteRenderer.flipX = false;
+                if (isReverse) spriteRenderer.flipX = true;
+                else spriteRenderer.flipX = false;
             }
         }
     }

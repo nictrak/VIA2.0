@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ProjectileMovement : MonoBehaviour
+public class ProjectileMovement : NeedTarget
 {
     [SerializeField]
     private float gravity;
     [SerializeField]
     private float terminateThreshold;
+
 
     private Vector2 endPosition;
     private float currentLavitateVelocity;
@@ -81,5 +82,17 @@ public class ProjectileMovement : MonoBehaviour
         {
             lifeCounter++;
         }
+    }
+
+    public override void SetTarget(Vector2 start, Vector2 target, float velocity)
+    {
+        transform.position = start;
+        this.endPosition = target;
+        this.lifeTime = CalculateTime(start, endPosition, velocity);
+        this.currentLavitateVelocity = CalculateStartLavitateVelocity(lifeTime, gravity);
+        planeVector = CalculatePlaneVector(start, endPosition, velocity);
+        lavitateValue = 0;
+        lifeCounter = 0;
+        isAlreadySetup = true;
     }
 }
