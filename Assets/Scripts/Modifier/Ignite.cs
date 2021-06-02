@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ignite : MonoBehaviour
+public class Ignite : Modifier
 {
     [SerializeField]
     private int damage;
@@ -16,6 +16,7 @@ public class Ignite : MonoBehaviour
     {
         health = GetComponentInParent<Health>();
         counter = 0;
+        isEnable = true;
     }
 
     // Update is called once per frame
@@ -25,7 +26,13 @@ public class Ignite : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if(counter >= frameRate)
+        if (isEnable) RunPerFrame();
+        TimeCounterPerFrame();
+    }
+
+    protected override void RunPerFrame()
+    {
+        if (counter >= frameRate)
         {
             health.TakeDamage(damage, false);
             counter = 0;
