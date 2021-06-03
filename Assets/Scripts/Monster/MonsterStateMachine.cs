@@ -32,7 +32,11 @@ public class MonsterStateMachine : MonoBehaviour
         Attack,
         Hurt,
         Dead,
-        Free
+        Free,
+        Charge,
+        Warning,
+        Wait,
+        Aim
     }
     // Start is called before the first frame update
     void Start()

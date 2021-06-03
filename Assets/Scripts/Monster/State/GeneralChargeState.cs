@@ -16,8 +16,7 @@ public class GeneralChargeState : MonsterStateBehaviour
     [SerializeField]
     private float velocity;
 
-    private Vector2 different;
-    private Vector2 startPosition;
+    private Vector2 targetPosition;
     private Rigidbody2D rgbody;
 
     private float percentage;
@@ -33,17 +32,15 @@ public class GeneralChargeState : MonsterStateBehaviour
         if (innerRange.IsHitPlayer)
         {
             return NormalNextState;
-        } else if (percentage == 1f)
+        } else if (rgbody.position == targetPosition)
         {
             return outerRangeNextState;
         }
 
         //Move
-        if(different != null)
+        if(targetPosition != null)
         {
-            percentage += velocity;
-            if(percentage > 1f) percentage = 1f;
-            Move( ( different )*percentage );
+            Move(Vector2.MoveTowards(rgbody.position, targetPosition, velocity * Time.deltaTime));
         }
 
         return currentState;
@@ -51,15 +48,13 @@ public class GeneralChargeState : MonsterStateBehaviour
 
     private void Move(Vector2 moveVector)
     {
-        rgbody.MovePosition(startPosition - moveVector);
+        rgbody.MovePosition(moveVector);
     }
 
     public override void StartState()
     {
         //set Distination
-        percentage = 0f;
-        startPosition = rgbody.position;
-        different =  rgbody.position - outerRange.TargetPosition;
+        targetPosition = outerRange.TargetPosition;
     }
 
     // Start is called before the first frame update
