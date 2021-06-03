@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NeedTarget : MonoBehaviour
+public abstract class NeedTarget : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -15,4 +15,5 @@ public class NeedTarget : MonoBehaviour
     {
         
     }
+    public abstract void SetTarget(Vector2 start, Vector2 target, float velocity);
 }

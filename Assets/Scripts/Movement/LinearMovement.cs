@@ -2,11 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LinearMovement : MonoBehaviour
+public class LinearMovement : NeedTarget
 {
-
-    private float velocity;
-    private Vector2 direction;
+    private Vector2 moveVector;
     private Rigidbody2D rbody;
 
     // Start is called before the first frame update
@@ -28,15 +26,13 @@ public class LinearMovement : MonoBehaviour
 
     private void MovePerFrame()
     {
-        Vector2 newPos = rbody.position + direction * velocity;
+        Vector2 newPos = rbody.position + moveVector;
         rbody.MovePosition(newPos);
     }
 
-    public void Setup(Vector2 start, Vector2 target, float velocity)
+    public override void SetTarget(Vector2 start, Vector2 target, float velocity)
     {
         transform.position = start;
-        direction = (target - start).normalized;
-        this.velocity = velocity;
+        moveVector = (target - start).normalized * velocity;
     }
-
 }

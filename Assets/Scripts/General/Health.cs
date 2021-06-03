@@ -36,11 +36,10 @@ public class Health : MonoBehaviour
     {
         HurtControlPerFrame();
     }
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage, bool doHurt = true)
     {
-        Debug.Log(damage);
         currentHealth = currentHealth - damage;
-        if (damage > 0) isHurt = true;
+        if (damage > 0 && doHurt) isHurt = true;
         if(currentHealth <= 0)
         {
             currentHealth = 0;
@@ -65,5 +64,12 @@ public class Health : MonoBehaviour
                 isAlreadyHurt = true;
             }
         }
+    }
+    void OnDrawGizmos()
+    {
+        Gizmos.color = new Color(1, 0, 0, 1);
+        Vector3 start = transform.position + new Vector3(-1, 1, 0);
+        Vector3 end = start + new Vector3((float)currentHealth / (float)maxHealth, 0, 0);
+        Gizmos.DrawLine(start, end);
     }
 }
