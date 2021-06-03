@@ -16,7 +16,7 @@ public class Ignite : Modifier
     {
         health = GetComponentInParent<Health>();
         counter = 0;
-        isEnable = true;
+        IsEnable = false;
     }
 
     // Update is called once per frame
@@ -26,7 +26,7 @@ public class Ignite : Modifier
     }
     private void FixedUpdate()
     {
-        if (isEnable) RunPerFrame();
+        if (IsEnable) RunPerFrame();
         TimeCounterPerFrame();
     }
 
@@ -41,10 +41,5 @@ public class Ignite : Modifier
         {
             counter++;
         }
-    }
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = GizmosColor;
-        if(isEnable) Gizmos.DrawWireSphere(transform.position, ((float)timeCounter - (float)TimeFrame) / (float)TimeFrame);
     }
 }

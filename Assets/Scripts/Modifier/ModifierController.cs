@@ -28,6 +28,7 @@ public class ModifierController : MonoBehaviour
         else
         {
             Modifier spawned = Instantiate<Modifier>(newMod, ModifierPool.transform);
+            spawned.IsEnable = true;
             modifiers.Add(spawned.ModName, spawned);
         }
     }

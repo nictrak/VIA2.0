@@ -30,14 +30,22 @@ public class AttackHitbox : MonoBehaviour
             enemies.Remove(collision.gameObject);
         }
     }
-    public void DoDamageAll(int damage)
+    public void DoDamageAll(int damage, List<Modifier> mods = null)
     {
         for(int i = 0; i < enemies.Count; i++)
         {
             Health enemyHealth = enemies[i].GetComponent<Health>();
+            ModifierController enemyModController = enemies[i].GetComponent<ModifierController>();
             if (enemyHealth != null)
             {
                 enemyHealth.TakeDamage(damage);
+                if(mods != null)
+                {
+                    for (int j = 0; j < mods.Count; j++)
+                    {
+                        enemyModController.AddModifier(mods[j]);
+                    }
+                }
             }
         }
     }

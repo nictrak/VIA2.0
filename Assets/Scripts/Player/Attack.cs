@@ -27,8 +27,8 @@ public class Attack : MonoBehaviour
     {
         
     }
-    public void DoDamage()
+    public void DoDamage(List<Modifier> mods = null)
     {
-        attackHitbox.DoDamageAll(damage);
+        attackHitbox.DoDamageAll(damage, mods);
     }
 }

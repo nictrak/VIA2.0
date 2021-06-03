@@ -8,6 +8,8 @@ public class PlayerAttackController : MonoBehaviour
     private List<string> attackStrings;
     [SerializeField]
     private List<Attack> attackObjects;
+    [SerializeField]
+    private Weapon weapon;
 
     private string currentAttackString;
     private string animatedAttackString;
@@ -56,7 +58,7 @@ public class PlayerAttackController : MonoBehaviour
             string newAnimatedAttackString = currentAttackString.Substring(0, animatedAttackString.Length + 1);
             int newIndex = attackStrings.IndexOf(newAnimatedAttackString);
             PlayerRenderer.PlayerRenderState newRenderState = attackObjects[newIndex].RenderState;
-            attackObjects[newIndex].DoDamage();
+            attackObjects[newIndex].DoDamage(weapon.ModifiersPrefab);
             playerRenderer.UpdateAnimation(newRenderState, direction);
             animatedAttackString = newAnimatedAttackString;
         }

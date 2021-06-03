@@ -4,13 +4,11 @@ using UnityEngine;
 
 public abstract class Modifier : MonoBehaviour
 {
-    private string modName;
+    public string ModName;
     public int TimeFrame;
     protected int timeCounter;
-    protected bool isEnable;
+    public bool IsEnable;
     public Color GizmosColor;
-
-    public string ModName { get => modName; set => modName = value; }
 
     // Start is called before the first frame update
     void Start()
@@ -27,11 +25,11 @@ public abstract class Modifier : MonoBehaviour
 
     protected void TimeCounterPerFrame()
     {
-        if (isEnable)
+        if (IsEnable)
         {
             if (timeCounter >= TimeFrame)
             {
-                isEnable = false;
+                IsEnable = false;
                 timeCounter = 0;
             }
             else
@@ -44,7 +42,11 @@ public abstract class Modifier : MonoBehaviour
     {
         TimeFrame = newTime;
         timeCounter = 0;
-        isEnable = true;
+        IsEnable = true;
     }
-
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = GizmosColor;
+        if (IsEnable) Gizmos.DrawWireSphere(transform.position, ((float)timeCounter - (float)TimeFrame) / (float)TimeFrame);
+    }
 }
