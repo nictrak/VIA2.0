@@ -42,4 +42,9 @@ public class Ignite : Modifier
             counter++;
         }
     }
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = GizmosColor;
+        if(isEnable) Gizmos.DrawWireSphere(transform.position, ((float)timeCounter - (float)TimeFrame) / (float)TimeFrame);
+    }
 }

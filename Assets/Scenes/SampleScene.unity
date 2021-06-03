@@ -499,52 +499,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &233846719
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 233846720}
-  - component: {fileID: 233846721}
-  m_Layer: 0
-  m_Name: Ignite
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &233846720
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 233846719}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1309778895}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &233846721
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 233846719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 735db5d2d17bcd24498a8dce0bf59728, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TimeFrame: 100
-  damage: 10
-  frameRate: 10
 --- !u!1 &251900743
 GameObject:
   m_ObjectHideFlags: 0
@@ -1668,37 +1622,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1287307695}
   m_CullTransparentMesh: 0
---- !u!1 &1309778894
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1309778895}
-  m_Layer: 0
-  m_Name: ModifierPool
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1309778895
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1309778894}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 233846720}
-  m_Father: {fileID: 1835885882}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1347642796
 GameObject:
   m_ObjectHideFlags: 0
@@ -1846,25 +1769,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
---- !u!1 &1490483532 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6878539700662927994, guid: fb71296f129c18141a0a42216855cf17,
-    type: 3}
-  m_PrefabInstance: {fileID: 6878539700563054497}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1490483533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1490483532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5b2be4e1620e4242af4f9c3a9cd9142, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ModifierPool: {fileID: 1309778894}
 --- !u!1 &1513941423
 GameObject:
   m_ObjectHideFlags: 0
@@ -2681,12 +2585,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 0
   NormalNextState: 1
---- !u!4 &1835885882 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6878539700662927998, guid: fb71296f129c18141a0a42216855cf17,
-    type: 3}
-  m_PrefabInstance: {fileID: 6878539700563054497}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1914000629
 GameObject:
   m_ObjectHideFlags: 0
@@ -3209,19 +3107,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 484702154, guid: fb71296f129c18141a0a42216855cf17, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6878539700662927994, guid: fb71296f129c18141a0a42216855cf17,
         type: 3}
       propertyPath: m_Name
       value: BasicMelee
-      objectReference: {fileID: 0}
-    - target: {fileID: 6878539700662927994, guid: fb71296f129c18141a0a42216855cf17,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6878539700662927998, guid: fb71296f129c18141a0a42216855cf17,
         type: 3}

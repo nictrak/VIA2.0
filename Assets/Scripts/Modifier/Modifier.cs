@@ -8,6 +8,7 @@ public abstract class Modifier : MonoBehaviour
     public int TimeFrame;
     protected int timeCounter;
     protected bool isEnable;
+    public Color GizmosColor;
 
     public string ModName { get => modName; set => modName = value; }
 
