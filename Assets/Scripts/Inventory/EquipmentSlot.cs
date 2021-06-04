@@ -12,7 +12,7 @@ public class EquipmentSlot : ItemSlot
 
     public override bool CanReceiveItem(Item item)
     {
-        if(item == null)
+        if (item == null)
             return true;
 
         EquippableItem equippableItem = item as EquippableItem;

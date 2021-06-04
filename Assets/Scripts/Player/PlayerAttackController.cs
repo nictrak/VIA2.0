@@ -90,4 +90,19 @@ public class PlayerAttackController : MonoBehaviour
             UpdateAttackAnimate(playerRenderer, direction);
         }
     }
+    public bool IsEquipWeapon()
+    {
+        return weapon != null;
+    }
+    public void ChangeWeapon(Weapon newWeapon)
+    {
+        if (IsEquipWeapon())
+        {
+            Destroy(weapon.gameObject);
+        }
+        if(newWeapon != null)
+        {
+            weapon = Instantiate<Weapon>(newWeapon, transform);
+        }
+    }
 }

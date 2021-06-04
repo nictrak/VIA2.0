@@ -56,11 +56,11 @@ public class PlayerMoveController : MonoBehaviour
     void Update()
     {
         if(canUpdateMoveDirection) UpdateMoveDirection();
-        if (Input.GetMouseButtonDown(0) && canAttack)
+        if (Input.GetMouseButtonDown(0) && canAttack && playerAttackController.IsEquipWeapon())
         {
             playerAttackController.AddAttack("a");
         }
-        if (Input.GetMouseButtonDown(1) && canAttack)
+        if (Input.GetMouseButtonDown(1) && canAttack && playerAttackController.IsEquipWeapon())
         {
             playerAttackController.AddAttack("b");
         }

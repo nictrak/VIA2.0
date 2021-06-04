@@ -102,6 +102,9 @@ public class InventoryManager : MonoBehaviour
             EquippableItem previousItem;
             if(equipmentPanel.AddItem(item, out previousItem))
             {
+                Debug.Log("Change Weapon");
+                PlayerAttackController playerAttackController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerAttackController>();
+                playerAttackController.ChangeWeapon(equipmentPanel.GetEquipedWeapon());
                 if(previousItem != null)
                 {
                     inventory.AddItem(previousItem);
