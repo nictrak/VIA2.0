@@ -43,7 +43,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 735db5d2d17bcd24498a8dce0bf59728, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ModName: Ignite
   TimeFrame: 100
+  IsEnable: 0
   GizmosColor: {r: 1, g: 0, b: 0, a: 1}
   damage: 10
   frameRate: 10

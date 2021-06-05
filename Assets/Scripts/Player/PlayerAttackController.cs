@@ -14,6 +14,9 @@ public class PlayerAttackController : MonoBehaviour
     private string currentAttackString;
     private string animatedAttackString;
     private int attackFrameCounter;
+
+    public Weapon Weapon { get => weapon; set => weapon = value; }
+
     // Start is called before the first frame update
     void Start()
     {

@@ -16,6 +16,7 @@ public class PlayerMoveController : MonoBehaviour
     private PlayerAttackController playerAttackController;
     private PlayerDashController playerDashController;
     private Collider2D normalCollider;
+    private ModifierController modifierController;
 
     // In child field
     private PlayerRenderer playerRenderer;
@@ -28,6 +29,10 @@ public class PlayerMoveController : MonoBehaviour
     private bool canUpdateMoveDirection;
     private bool canAttack;
     private bool canDash;
+
+    //Test field
+    [SerializeField]
+    private Modifier testModPrefab;
 
     public Vector2 LastestNonZeroMoveDirection { get => lastestNonZeroMoveDirection; set => lastestNonZeroMoveDirection = value; }
     public bool CanMove { get => canMove; set => canMove = value; }
@@ -43,6 +48,7 @@ public class PlayerMoveController : MonoBehaviour
         playerAttackController = GetComponent<PlayerAttackController>();
         playerDashController = GetComponent<PlayerDashController>();
         normalCollider = GetComponent<Collider2D>();
+        modifierController = GetComponent<ModifierController>();
         canMove = true;
         canUpdateMoveDirection = true;
         canAttack = true;
@@ -67,6 +73,11 @@ public class PlayerMoveController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && canDash)
         {
             playerDashController.StartDash(lastestNonZeroMoveDirection, playerRenderer, normalCollider);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            Debug.Log("Test");
+            modifierController.AddWeaponModifier(testModPrefab);
         }
     }
     // Fixed frame update

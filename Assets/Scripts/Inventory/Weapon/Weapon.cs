@@ -27,7 +27,7 @@ public class Weapon : MonoBehaviour
         List<string> newIgnore = new List<string>();
         for (int i = 0; i < modifiersPrefab.Count; i++)
         {
-            newIgnore.Add(modifiersPrefab[i].name);
+            newIgnore.Add(modifiersPrefab[i].ModName);
         }
         ignoredModifiers = newIgnore;
     }
@@ -37,6 +37,14 @@ public class Weapon : MonoBehaviour
     }
     public bool IsCanAdd(Modifier newMod)
     {
-        return !ignoredModifiers.Contains(newMod.name);
+        return !ignoredModifiers.Contains(newMod.ModName);
+    }
+    public void AddModifier(Modifier newMod)
+    {
+        if (IsCanAdd(newMod))
+        {
+            Modifier spawned = Instantiate<Modifier>(newMod, transform.transform);
+            modifiersPrefab.Add(spawned);
+        }
     }
 }
