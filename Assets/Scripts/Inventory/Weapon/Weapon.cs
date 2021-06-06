@@ -39,12 +39,14 @@ public class Weapon : MonoBehaviour
     {
         return !ignoredModifiers.Contains(newMod.ModName);
     }
-    public void AddModifier(Modifier newMod)
+    public Modifier AddModifier(Modifier newMod)
     {
         if (IsCanAdd(newMod))
         {
             Modifier spawned = Instantiate<Modifier>(newMod, transform.transform);
             modifiersPrefab.Add(spawned);
+            return spawned;
         }
+        return null;
     }
 }

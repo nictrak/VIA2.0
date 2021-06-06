@@ -9,10 +9,12 @@ public class ModifierController : MonoBehaviour
     private PlayerAttackController playerAttackController;
 
     private Dictionary<string, Modifier> modifiers;
+    private Dictionary<string, PortionTime> portions;
     // Start is called before the first frame update
     void Start()
     {
         modifiers = new Dictionary<string, Modifier>();
+        portions = new Dictionary<string, PortionTime>();
         playerAttackController = GetComponent<PlayerAttackController>();
     }
 
@@ -36,9 +38,39 @@ public class ModifierController : MonoBehaviour
     }
     public void AddWeaponModifier(Modifier newMod)
     {
+        PortionTime portion = newMod.GetComponent<PortionTime>();
         if (playerAttackController != null)
         {
-            if(playerAttackController.IsEquipWeapon()) playerAttackController.Weapon.AddModifier(newMod);
+            if (playerAttackController.IsEquipWeapon()){
+                if (playerAttackController.Weapon.IsCanAdd(newMod))
+                {
+                    Modifier mod = playerAttackController.Weapon.AddModifier(newMod);
+                    if(portion != null)
+                    {
+                        if (portions.ContainsKey(portion.PortionName))
+                        {
+                            portions[portion.PortionName].ResetTime(portion.TimeFrame);
+                        }
+                        else
+                        {
+                            portions.Add(portion.PortionName, mod.GetComponent<PortionTime>());
+                        }
+                    }
+                }
+                else
+                {
+                    if(portion != null)
+                    {
+                        if (portions.ContainsKey(portion.PortionName))
+                        {
+                            if(portions[portion.PortionName] != null)
+                            {
+                                portions[portion.PortionName].ResetTime(portion.TimeFrame);
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

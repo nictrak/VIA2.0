@@ -8,6 +8,8 @@ public class InventoryManager : MonoBehaviour
     [SerializeField]
     private EquipmentPanel equipmentPanel;
     [SerializeField]
+    private ShortcutPanel shortcutPanel;
+    [SerializeField]
     private Image draggableItem;
 
     private ItemSlot draggingSlot;
@@ -21,16 +23,21 @@ public class InventoryManager : MonoBehaviour
         //Begin Drag
         inventory.OnBeginDragEvent += BeginDrag;
         equipmentPanel.OnBeginDragEvent += BeginDrag;
+        shortcutPanel.OnBeginDragEvent += BeginDrag;
         //End Drag
         inventory.OnEndDragEvent += EndDrag;
         equipmentPanel.OnEndDragEvent += EndDrag;
+        shortcutPanel.OnEndDragEvent += EndDrag;
         //Drag
         inventory.OnDragEvent += Drag;
         equipmentPanel.OnDragEvent += Drag;
+        shortcutPanel.OnDragEvent += Drag;
         //Drop
         inventory.OnDropEvent += Drop;
         equipmentPanel.OnDropEvent += Drop;
+        shortcutPanel.OnDropEvent += Drop;
 
+        this.gameObject.SetActive(false);
     }
 
     private void Equip(ItemSlot itemSlot)
