@@ -43,13 +43,14 @@ public class AttackHitbox : MonoBehaviour
                 {
                     for (int j = 0; j < mods.Count; j++)
                     {
-                        Modifier mod = mods[j];
-                        PortionTime portion = mod.GetComponent<PortionTime>();
+                        Modifier newMod = Instantiate<Modifier>(mods[j]);
+                        PortionTime portion = newMod.GetComponent<PortionTime>();
                         if (portion != null)
                         {
                             Destroy(portion);
                         }
-                        enemyModController.AddModifier(mods[j]);
+                        enemyModController.AddModifier(newMod);
+                        Destroy(newMod.gameObject);
                     }
                 }
             }
