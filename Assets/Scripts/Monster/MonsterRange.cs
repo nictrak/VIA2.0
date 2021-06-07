@@ -8,6 +8,12 @@ public class MonsterRange : MonoBehaviour
 
     public bool IsHitPlayer { get => isHitPlayer; set => isHitPlayer = value; }
 
+    private Collider2D lastestCollider;
+
+    public Vector2 TargetPosition {
+        get { return lastestCollider.transform.parent.transform.position; }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +30,7 @@ public class MonsterRange : MonoBehaviour
         if (collision.tag == "PlayerTarget")
         {
             isHitPlayer = true;
+            lastestCollider = collision;
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
