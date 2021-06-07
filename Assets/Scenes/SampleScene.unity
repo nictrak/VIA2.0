@@ -4269,7 +4269,7 @@ SortingGroup:
   m_GameObject: {fileID: 1513941423}
   m_Enabled: 1
   m_SortingLayerID: -1631200095
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
 --- !u!50 &1513941425
 Rigidbody2D:
@@ -5018,7 +5018,7 @@ SortingGroup:
   m_GameObject: {fileID: 1712241643}
   m_Enabled: 1
   m_SortingLayerID: -1631200095
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
 --- !u!114 &1712241645
 MonoBehaviour:
@@ -6221,6 +6221,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BasicMelee
+      objectReference: {fileID: 0}
+    - target: {fileID: 6878539700662927994, guid: fb71296f129c18141a0a42216855cf17,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6878539700662927998, guid: fb71296f129c18141a0a42216855cf17,
         type: 3}
