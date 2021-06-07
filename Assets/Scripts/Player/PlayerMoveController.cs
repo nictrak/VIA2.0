@@ -10,6 +10,7 @@ public class PlayerMoveController : MonoBehaviour
     // Calculation field
     private Vector2 moveDirection;
     private Vector2 lastestNonZeroMoveDirection;
+    private List<float> moveSpeedModifiers;
     
     // In same object field
     private Rigidbody2D rgbody;
@@ -35,6 +36,7 @@ public class PlayerMoveController : MonoBehaviour
     public bool CanUpdateMoveDirection { get => canUpdateMoveDirection; set => canUpdateMoveDirection = value; }
     public bool CanAttack { get => canAttack; set => canAttack = value; }
     public bool CanDash { get => canDash; set => canDash = value; }
+    public List<float> MoveSpeedModifiers { get => moveSpeedModifiers; set => moveSpeedModifiers = value; }
 
     // Start is called before the first frame update
     void Start()
@@ -52,6 +54,7 @@ public class PlayerMoveController : MonoBehaviour
         centerMousePosition = new Vector2(Screen.width / 2, Screen.height / 2);
         moveDirection = new Vector2();
         lastestNonZeroMoveDirection = new Vector2(0, -1);
+        MoveSpeedModifiers = new List<float>();
     }
 
     // Update is called once per frame
@@ -98,7 +101,13 @@ public class PlayerMoveController : MonoBehaviour
     }
     private Vector2 CalMoveVector()
     {
-        return moveDirection * moveVelocity * (playerAttackController.IsAttack()?0f:1f);
+        float mod = 1f;
+        for(int i = 0; i < moveSpeedModifiers.Count; i++)
+        {
+            mod = mod * (float)moveSpeedModifiers[i];
+        }
+        Debug.Log(mod);
+        return moveDirection * moveVelocity * (playerAttackController.IsAttack()?0f:1f) * mod;
     }
     private void Move(Vector2 moveVector)
     {
