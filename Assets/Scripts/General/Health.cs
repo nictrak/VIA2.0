@@ -8,11 +8,14 @@ public class Health : MonoBehaviour
     private int maxHealth;
     [SerializeField]
     private int initialHealth;
+    [SerializeField]
+    private RectTransform healthBar;
 
     private bool isHurt;
     private bool isAlreadyHurt;
     private int currentHealth;
     private bool isDead;
+    private float barWidth;
 
     public bool IsDead { get => isDead; set => isDead = value; }
     public bool IsHurt { get => isHurt; set => isHurt = value; }
@@ -25,16 +28,29 @@ public class Health : MonoBehaviour
         isAlreadyHurt = false;
         currentHealth = initialHealth;
         if (currentHealth > maxHealth) currentHealth = maxHealth;
+        barWidth = -1;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(healthBar != null)
+        {
+            UpdateHealthBar();
+        }
     }
     private void FixedUpdate()
     {
         HurtControlPerFrame();
+    }
+    private void UpdateHealthBar()
+    {
+        if(barWidth == -1)
+        {
+            barWidth = healthBar.sizeDelta.x;
+        }
+        float currentWidth = barWidth * currentHealth / maxHealth;
+        healthBar.sizeDelta = new Vector2(currentWidth, healthBar.sizeDelta.y);
     }
     public void TakeDamage(int damage, bool doHurt = true)
     {
