@@ -14,6 +14,7 @@ public class PlayerAttackController : MonoBehaviour
     private string currentAttackString;
     private string animatedAttackString;
     private int attackFrameCounter;
+    private PlayerStaminaController playerStaminaController;
 
     public Weapon Weapon { get => weapon; set => weapon = value; }
 
@@ -23,6 +24,7 @@ public class PlayerAttackController : MonoBehaviour
         attackFrameCounter = 0;
         currentAttackString = "";
         animatedAttackString = "";
+        playerStaminaController = GetComponent<PlayerStaminaController>();
     }
 
     // Update is called once per frame
@@ -51,7 +53,9 @@ public class PlayerAttackController : MonoBehaviour
         string newAttackString = currentAttackString + attackKey;
         if (attackStrings.Contains(newAttackString))
         {
-            currentAttackString = newAttackString; 
+            int index = attackStrings.IndexOf(newAttackString);
+            int stamina = attackObjects[index].Stamina;
+            if(playerStaminaController.ConsumeStamina(stamina)) currentAttackString = newAttackString; 
         }
     }
     private void UpdateAttackAnimate(PlayerRenderer playerRenderer, Vector2 direction)
@@ -108,4 +112,5 @@ public class PlayerAttackController : MonoBehaviour
             weapon = Instantiate<Weapon>(newWeapon, transform);
         }
     }
+
 }

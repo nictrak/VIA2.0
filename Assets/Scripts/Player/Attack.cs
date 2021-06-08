@@ -10,11 +10,14 @@ public class Attack : MonoBehaviour
     private int frame;
     [SerializeField]
     private int damage;
+    [SerializeField]
+    private int stamina;
 
     private AttackHitbox attackHitbox;
 
     public int Frame { get => frame; set => frame = value; }
     public PlayerRenderer.PlayerRenderState RenderState { get => renderState; set => renderState = value; }
+    public int Stamina { get => stamina; set => stamina = value; }
 
     // Start is called before the first frame update
     void Start()
