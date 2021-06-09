@@ -23,7 +23,7 @@ public class FlipToPlayer : MonoBehaviour
     {
         if(destinationSetter.target != null)
         {
-            if(destinationSetter.target.transform.position.x < transform.position.x)
+            if(destinationSetter.target.transform.position.x > transform.position.x)
             {
                 if (isReverse) spriteRenderer.flipX = false;
                 else spriteRenderer.flipX = true;
