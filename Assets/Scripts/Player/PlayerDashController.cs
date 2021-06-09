@@ -23,7 +23,7 @@ public class PlayerDashController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerStaminaController = GetComponent<PlayerStaminaController>();
     }
 
     // Update is called once per frame

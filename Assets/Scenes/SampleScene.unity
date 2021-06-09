@@ -754,87 +754,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 182164561}
   m_CullTransparentMesh: 0
---- !u!1 &245941478
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 245941480}
-  - component: {fileID: 245941479}
-  m_Layer: 0
-  m_Name: testhitt4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &245941479
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 245941478}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5aad55a8376585a4483be79d65217159, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1.82, y: 0.75}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &245941480
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 245941478}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 117.9, y: 396.3, z: 0}
-  m_LocalScale: {x: 95.42041, y: 105.46237, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &251900743
 GameObject:
   m_ObjectHideFlags: 0
@@ -2618,6 +2537,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 860612575}
   m_CullTransparentMesh: 0
+--- !u!1 &894784128 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4634483407928223877, guid: de7b25d9405ed97409d914dd33f5a080,
+    type: 3}
+  m_PrefabInstance: {fileID: 1411240216}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &894784141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894784128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff138a60760f47649a386e0634b5cedc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxStamina: 100
+  initialStamina: 100
+  staminaBar: {fileID: 722239128}
+  regenFrame: 10
+  regenedStamina: 1
 --- !u!1 &913063278
 GameObject:
   m_ObjectHideFlags: 0
@@ -3873,6 +3815,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 407361424, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+      propertyPath: stamina
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 627553385, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+      propertyPath: dashStamina
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 971960582, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
       propertyPath: healthBar
       value: 
@@ -3880,6 +3830,14 @@ PrefabInstance:
     - target: {fileID: 971960582, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
       propertyPath: initialHealth
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1084430251, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+      propertyPath: stamina
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103140246, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+      propertyPath: stamina
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4634483407928223877, guid: de7b25d9405ed97409d914dd33f5a080,
         type: 3}
