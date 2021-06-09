@@ -370,6 +370,9 @@ MonoBehaviour:
   attackFrame: 1
   damage: 20
   attackRange: {fileID: 337725380401635202}
+  isKnock: 1
+  knockVelocity: 0.3
+  knockFrame: 7
 --- !u!1 &337725380821697425
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,7 +726,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6618791823218120244
 Transform:
   m_ObjectHideFlags: 0
