@@ -2124,6 +2124,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 676791537}
   m_CullTransparentMesh: 0
+--- !u!1 &695974148
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 695974150}
+  - component: {fileID: 695974149}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &695974149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695974148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de354fb6a9fbf154db582926c60ebabf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemies:
+  - {fileID: 6878539700662927994, guid: fb71296f129c18141a0a42216855cf17, type: 3}
+  - {fileID: 3626388922457289444, guid: 494954c46b1598546830b9b5fb340ed2, type: 3}
+  - {fileID: 7000904033944838464, guid: 2ab14781471b3fb479e1c3bdea38ace4, type: 3}
+--- !u!4 &695974150
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695974148}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.625386, y: 1.7228796, z: -0.8279686}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &722239127
 GameObject:
   m_ObjectHideFlags: 0
@@ -2592,21 +2639,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 337725380688118320, guid: 1a384ff47a881fd46a8b565036cf90aa,
-        type: 3}
-      propertyPath: isKnock
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 337725380688118320, guid: 1a384ff47a881fd46a8b565036cf90aa,
-        type: 3}
-      propertyPath: knockVelocity
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 337725380688118320, guid: 1a384ff47a881fd46a8b565036cf90aa,
-        type: 3}
-      propertyPath: knockFrame
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 6618791823218120240, guid: 1a384ff47a881fd46a8b565036cf90aa,
         type: 3}
       propertyPath: m_Name
