@@ -2537,29 +2537,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 860612575}
   m_CullTransparentMesh: 0
---- !u!1 &894784128 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4634483407928223877, guid: de7b25d9405ed97409d914dd33f5a080,
-    type: 3}
-  m_PrefabInstance: {fileID: 1411240216}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &894784141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 894784128}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff138a60760f47649a386e0634b5cedc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxStamina: 100
-  initialStamina: 100
-  staminaBar: {fileID: 722239128}
-  regenFrame: 10
-  regenedStamina: 1
 --- !u!1 &913063278
 GameObject:
   m_ObjectHideFlags: 0
@@ -3734,6 +3711,53 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 494954c46b1598546830b9b5fb340ed2, type: 3}
+--- !u!1 &1317626772
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1317626773}
+  - component: {fileID: 1317626774}
+  m_Layer: 8
+  m_Name: PlayerTarget
+  m_TagString: PlayerTarget
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1317626773
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317626772}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2032331031}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1317626774
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317626772}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.1
 --- !u!1 &1347642796
 GameObject:
   m_ObjectHideFlags: 0
@@ -3894,53 +3918,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 407361422, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 407361424, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
-      propertyPath: stamina
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 627553385, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
-      propertyPath: dashStamina
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 722859220, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
-      propertyPath: m_Radius
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 895976575, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
-      propertyPath: m_Radius
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 971960582, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
-      propertyPath: healthBar
+    - target: {fileID: 894784141, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+      propertyPath: staminaBar
       value: 
-      objectReference: {fileID: 138505710}
-    - target: {fileID: 971960582, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
-      propertyPath: initialHealth
-      value: 100
+      objectReference: {fileID: 722239128}
+    - target: {fileID: 1362891522, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1084430249, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1084430251, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
-      propertyPath: stamina
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 2103140244, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2103140246, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
-      propertyPath: stamina
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 2141001941, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
-      propertyPath: m_Radius
-      value: 3
+    - target: {fileID: 1780935893056932095, guid: de7b25d9405ed97409d914dd33f5a080,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4634483407928223877, guid: de7b25d9405ed97409d914dd33f5a080,
         type: 3}
@@ -3950,12 +3939,12 @@ PrefabInstance:
     - target: {fileID: 4634483407928223878, guid: de7b25d9405ed97409d914dd33f5a080,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.2
+      value: -6.02
       objectReference: {fileID: 0}
     - target: {fileID: 4634483407928223878, guid: de7b25d9405ed97409d914dd33f5a080,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.36
+      value: -0.66
       objectReference: {fileID: 0}
     - target: {fileID: 4634483407928223878, guid: de7b25d9405ed97409d914dd33f5a080,
         type: 3}
@@ -4001,6 +3990,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6753721860154418045, guid: de7b25d9405ed97409d914dd33f5a080,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
