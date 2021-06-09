@@ -2558,6 +2558,21 @@ MonoBehaviour:
   triggerRange: {fileID: 2011776293}
   interactionMarkerPrefab: {fileID: 7294971506650545309, guid: b179261737990e845bb71eac0d67769e,
     type: 3}
+--- !u!114 &894784139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894784128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30367bfd22ea2ca44b7b8cf9cb6b3d6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  initialHealth: 100
+  healthBar: {fileID: 138505710}
 --- !u!1001 &907195149
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2609,6 +2624,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.y
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 337725380688118320, guid: 1a384ff47a881fd46a8b565036cf90aa,
+        type: 3}
+      propertyPath: attackRange
+      value: 
+      objectReference: {fileID: 1926512662}
+    - target: {fileID: 337725380688118320, guid: 1a384ff47a881fd46a8b565036cf90aa,
+        type: 3}
+      propertyPath: damage
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 337725380688118320, guid: 1a384ff47a881fd46a8b565036cf90aa,
+        type: 3}
+      propertyPath: attackFrame
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 337725380821697428, guid: 1a384ff47a881fd46a8b565036cf90aa,
         type: 3}
@@ -5220,6 +5250,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 907195149}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1926512662 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 337725380401635202, guid: 1a384ff47a881fd46a8b565036cf90aa,
+    type: 3}
+  m_PrefabInstance: {fileID: 907195149}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926512660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d998e1fbe7eed14995c165fba22ab6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!58 &1926512663
 CircleCollider2D:
   m_ObjectHideFlags: 0
