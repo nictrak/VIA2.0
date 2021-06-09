@@ -25,6 +25,7 @@ public class MonsterStateMachine : MonoBehaviour
     private Dictionary<MonsterState, MonsterStateBehaviour> statesHash;
     private Dictionary<MonsterState, string> stringAnimatorsHash;
     private AIDestinationSetter aIDestinationSetter;
+    private FlipToPlayer flipToPlayer;
 
     private MonsterState currentState;
     private Health health;
@@ -53,12 +54,13 @@ public class MonsterStateMachine : MonoBehaviour
         StartState(currentState);
         health = GetComponent<Health>();
         aIDestinationSetter = GetComponent<AIDestinationSetter>();
+        flipToPlayer = GetComponent<FlipToPlayer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        animator.Play(CreateAnimatorString(currentState));
     }
     private void FixedUpdate()
     {
@@ -87,7 +89,6 @@ public class MonsterStateMachine : MonoBehaviour
             ExitState(currentState);
             currentState = nextState;
             StartState(currentState);
-            animator.Play(CreateAnimatorString(currentState));
         }
     }
     private void StartState(MonsterState state)
@@ -102,11 +103,15 @@ public class MonsterStateMachine : MonoBehaviour
     {
         string result = animatorStringHead;
         string directionString = "S";
-        if (isHaveEightDirection)
+        if (isHaveEightDirection && currentState != MonsterState.Hurt && currentState != MonsterState.Dead)
         {
             if (aIDestinationSetter.target != null)
             {
                 Vector2 direction = (aIDestinationSetter.target.transform.position - transform.position).normalized;
+                if (flipToPlayer.IsReverse)
+                {
+                    direction = direction * -1;
+                }
                 directionString = directions[DirectionToIndex(direction, 8)];
             }
             result = result + stringAnimatorsHash[state] + " " + directionString;

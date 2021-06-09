@@ -106,7 +106,6 @@ public class PlayerMoveController : MonoBehaviour
         {
             mod = mod * (float)moveSpeedModifiers[i];
         }
-        Debug.Log(mod);
         return moveDirection * moveVelocity * (playerAttackController.IsAttack()?0f:1f) * mod;
     }
     private void Move(Vector2 moveVector)
