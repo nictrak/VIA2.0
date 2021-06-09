@@ -11,6 +11,7 @@ public class PlayerRenderer : MonoBehaviour
         Attack1,
         Attack2,
         Attack3,
+        AreaAttack,
         Dash
     }
     [SerializeField]
