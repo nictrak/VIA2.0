@@ -11,6 +11,12 @@ public class GeneralAttackState : MonsterStateBehaviour
     private int damage;
     [SerializeField]
     private MonsterRange attackRange;
+    [SerializeField]
+    private bool isKnock;
+    [SerializeField]
+    private float knockVelocity;
+    [SerializeField]
+    private int knockFrame;
 
     private int attackCounter;
     private AIDestinationSetter aIDestinationSetter;
@@ -27,6 +33,10 @@ public class GeneralAttackState : MonsterStateBehaviour
             if (attackRange.IsHitPlayer)
             {
                 aIDestinationSetter.target.gameObject.GetComponent<Health>().TakeDamage(damage);
+                if (isKnock)
+                {
+                    aIDestinationSetter.target.gameObject.GetComponent<PlayerKnockController>().StartKnock(transform.position, knockVelocity, knockFrame);
+                }
             }
             return NormalNextState;
         }

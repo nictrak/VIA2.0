@@ -18,6 +18,7 @@ public class PlayerMoveController : MonoBehaviour
     private PlayerDashController playerDashController;
     private Collider2D normalCollider;
     private ModifierController modifierController;
+    private PlayerKnockController playerKnockController;
 
     // In child field
     private PlayerRenderer playerRenderer;
@@ -47,6 +48,7 @@ public class PlayerMoveController : MonoBehaviour
         playerDashController = GetComponent<PlayerDashController>();
         normalCollider = GetComponent<Collider2D>();
         modifierController = GetComponent<ModifierController>();
+        playerKnockController = GetComponent<PlayerKnockController>();
         canMove = true;
         canUpdateMoveDirection = true;
         canAttack = true;
@@ -115,7 +117,11 @@ public class PlayerMoveController : MonoBehaviour
     }
     private void MovePerFrame()
     {
-        if (playerDashController.IsDash)
+        if (playerKnockController.IsKnocked)
+        {
+            Move(playerKnockController.KnockedVector);
+        }
+        else if (playerDashController.IsDash)
         {
             Move(playerDashController.DashVector);
         }
