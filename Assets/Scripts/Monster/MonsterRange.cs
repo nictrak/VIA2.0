@@ -14,6 +14,10 @@ public class MonsterRange : MonoBehaviour
         get { return lastestCollider.transform.parent.transform.position; }
     }
 
+    public GameObject TargetGameObject {
+        get { return lastestCollider.transform.parent.gameObject; }
+    }
+
     // Start is called before the first frame update
     void Start()
     {

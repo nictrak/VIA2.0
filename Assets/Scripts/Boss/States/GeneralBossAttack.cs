@@ -5,8 +5,19 @@ using UnityEngine;
 public class GeneralBossAttack : BossStateBehaviour
 {
     [SerializeField]
+    private int damage;
+    [SerializeField]
     private int attackFrame;
     private int attackCounter;
+
+    [SerializeField]
+    private MonsterRange attackRange;
+    [SerializeField]
+    private bool isKnock;
+    [SerializeField]
+    private float knockVelocity;
+    [SerializeField]
+    private int knockFrame;
     public override void ExitState()
     {
         
@@ -18,6 +29,14 @@ public class GeneralBossAttack : BossStateBehaviour
         {
             attackCounter = 0;
             //TODO do damage
+            if (attackRange.IsHitPlayer)
+            {
+                attackRange.TargetGameObject.GetComponent<Health>().TakeDamage(damage);
+                if (isKnock)
+                {
+                    attackRange.TargetGameObject.GetComponent<PlayerKnockController>().StartKnock(transform.position, knockVelocity, knockFrame);
+                }
+            }
             energyOut = energy - energyCost;
             return NormalNextState;
         }
