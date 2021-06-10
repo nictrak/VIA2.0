@@ -1,5 +1,53 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &717063299637743334
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1944645087341620335}
+  - component: {fileID: 5826459654110958371}
+  m_Layer: 0
+  m_Name: DeadState
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1944645087341620335
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717063299637743334}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4572711834786345266}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5826459654110958371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717063299637743334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df034022e45c5c141a4f8add15bd4418, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: 12
+  NormalNextState: 12
+  energyCost: 0
+  delayFrame: 25
+  target: {fileID: 4572711834326518909}
 --- !u!1 &4572711833796270841
 GameObject:
   m_ObjectHideFlags: 0
@@ -680,6 +728,7 @@ Transform:
   - {fileID: 4572711834669494756}
   - {fileID: 4572711835783649574}
   - {fileID: 4572711834304917680}
+  - {fileID: 1944645087341620335}
   m_Father: {fileID: 4572711835351186454}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1055,7 +1104,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4572711835351186441}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4572711835032940424}
@@ -1225,7 +1274,7 @@ MonoBehaviour:
   initialState: 0
   animatorStringHead: boss_
   animator: {fileID: 4572711835032940425}
-  statesHashSequence: 000000000100000002000000050000000600000004000000070000000300000008000000090000000a0000000b000000
+  statesHashSequence: 000000000100000002000000050000000600000004000000070000000300000008000000090000000a0000000b0000000c000000
   states:
   - {fileID: 4572711835138321385}
   - {fileID: 4572711834399819626}
@@ -1239,6 +1288,7 @@ MonoBehaviour:
   - {fileID: 4572711834669494757}
   - {fileID: 4572711835783649575}
   - {fileID: 4572711834304917681}
+  - {fileID: 5826459654110958371}
   stringAnimators:
   - idle
   - idle
@@ -1251,6 +1301,7 @@ MonoBehaviour:
   - shoot_around
   - shoot_around
   - shoot_around
+  - idle
   - idle
   isHurtBreak: 0
 --- !u!1 &4572711835411290717
