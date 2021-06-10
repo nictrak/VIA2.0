@@ -19,9 +19,6 @@ public class GeneralChargeState : MonsterStateBehaviour
     private Vector2 targetPosition;
     private Rigidbody2D rgbody;
 
-    private float percentage;
-
-
     public override void ExitState()
     {
 

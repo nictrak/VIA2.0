@@ -2,26 +2,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MonsterRange : MonoBehaviour
+public class BossCorner : MonoBehaviour
 {
-    private bool isHitPlayer;
+    private float distance;
 
-    public bool IsHitPlayer { get => isHitPlayer; set => isHitPlayer = value; }
+    private bool isCurrentCorner;
 
     private Collider2D lastestCollider;
 
-    public Vector2 TargetPosition {
-        get { return lastestCollider.transform.parent.transform.position; }
+    public bool IsCurrentCorner { get => isCurrentCorner; set => isCurrentCorner = value; }
+
+    public float PlayerDistance {
+        get {
+            if(isHitPlayer) return Vector2.Distance(transform.position, lastestCollider.transform.parent.transform.position);
+            return 999999f;
+        } 
     }
 
-    public GameObject TargetGameObject {
-        get { return lastestCollider.transform.parent.gameObject; }
-    }
+    private bool isHitPlayer;
+
+    public Vector2 GetPosition { get => transform.position;}
 
     // Start is called before the first frame update
     void Start()
     {
-        isHitPlayer = false;   
+        distance = 0f;
     }
 
     // Update is called once per frame
@@ -29,15 +34,8 @@ public class MonsterRange : MonoBehaviour
     {
         
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "PlayerTarget")
-        {
-            isHitPlayer = true;
-            lastestCollider = collision;
-        }
-    }
-    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.tag == "PlayerTarget")
         {
@@ -51,5 +49,7 @@ public class MonsterRange : MonoBehaviour
         {
             isHitPlayer = false;
         }
+
     }
+
 }
