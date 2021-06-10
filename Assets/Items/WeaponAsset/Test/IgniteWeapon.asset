@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: IgniteWeapon
   m_EditorClassIdentifier: 
   Name: Ignite Weapon
-  Icon: {fileID: 21300000, guid: 6ef7dfbd97073d5408ae546dba7f0d42, type: 3}
+  Icon: {fileID: 21300000, guid: 539608af302184e479cbeb265856eb2a, type: 3}
   EquipmentType: 0
   weaponPrefab: {fileID: 8319709647177024906, guid: 054c03a396d26ab4f97a8465d508d2d3,
     type: 3}
