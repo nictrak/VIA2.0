@@ -38,7 +38,7 @@ public class GeneralBossShoot : BossStateBehaviour
         if (delayCounter >= delayFrame)
         {
             bulletCounter++;
-            if(pattern.Length != 0){
+            if(pattern != null){
                 for(int i = 0; i < pattern.Length; i++)
                 {
                     NeedTarget spawned = Instantiate(spawnedPrefab);
