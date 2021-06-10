@@ -4,7 +4,15 @@ using UnityEngine;
 
 public class GeneralBossCharge : BossStateBehaviour
 {
-
+    [SerializeField]
+    private int damage;
+    [SerializeField]
+    private bool isKnock;
+    [SerializeField]
+    private float knockVelocity;
+    [SerializeField]
+    private int knockFrame;
+    
     [SerializeField]
     private float velocity;
     [SerializeField]
@@ -27,6 +35,14 @@ public class GeneralBossCharge : BossStateBehaviour
         if (innerRange.IsHitPlayer)
         {
             //Damage player
+            if (innerRange.IsHitPlayer)
+            {
+                innerRange.TargetGameObject.GetComponent<Health>().TakeDamage(damage);
+                if (isKnock)
+                {
+                    innerRange.TargetGameObject.GetComponent<PlayerKnockController>().StartKnock(transform.position, knockVelocity, knockFrame);
+                }
+            }
             Debug.Log("Hit By Boss Charge!");
         } else if (rgbody.position == targetPosition)
         {
