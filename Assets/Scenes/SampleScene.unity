@@ -634,7 +634,7 @@ PrefabInstance:
     - target: {fileID: 3626388922457289444, guid: 494954c46b1598546830b9b5fb340ed2,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3626388922457289470, guid: 494954c46b1598546830b9b5fb340ed2,
         type: 3}
@@ -1424,6 +1424,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SlowDebuff
+      objectReference: {fileID: 0}
+    - target: {fileID: 7000904033944838464, guid: 2ab14781471b3fb479e1c3bdea38ace4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7000904033944838490, guid: 2ab14781471b3fb479e1c3bdea38ace4,
         type: 3}
