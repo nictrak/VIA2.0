@@ -35,10 +35,15 @@ public class BossStateMachine : MonoBehaviour
     public enum BossState
     {
         Check,
-        Random,
+        RandomFar,
+        RandomClose,
         Charge,
-        Attack,
-        Launch,
+        AttackPunch,
+        AttackRowel,
+        LaunchBomb,
+        ShootRapid,
+        ShootStar,
+        ShootBig,
         Wait,
         //Hurt,
         Dead
