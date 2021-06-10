@@ -50,6 +50,7 @@ public class AttackHitbox : MonoBehaviour
                         {
                             Destroy(portion);
                         }
+                        Debug.Log(enemies[i]);
                         enemyModController.AddModifier(newMod);
                         Destroy(newMod.gameObject);
                     }

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3046217611935906099}
   - component: {fileID: 2393969687519117863}
   - component: {fileID: 5787900438083992262}
+  - component: {fileID: 300745274425365030}
   m_Layer: 10
   m_Name: SlowDebuffFloor
   m_TagString: Untagged
@@ -391,3 +392,16 @@ PolygonCollider2D:
       - {x: -6.153516, y: -2.5135548}
       - {x: -6.153516, y: -2.534414}
       - {x: -6.174375, y: -2.534414}
+--- !u!114 &300745274425365030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3046217611935906098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 680a715e39fd9a7418617f1e1a5f8c35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTimeFrame: 50

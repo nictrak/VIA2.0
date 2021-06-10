@@ -33,6 +33,14 @@ public class MonsterRange : MonoBehaviour
             lastestCollider = collision;
         }
     }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.tag == "PlayerTarget")
+        {
+            isHitPlayer = true;
+            lastestCollider = collision;
+        }
+    }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.tag == "PlayerTarget")

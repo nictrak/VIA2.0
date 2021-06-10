@@ -33,11 +33,13 @@ public class SlowPlayerMove : Modifier
         if (IsEnable == true && lastIsEnable == false)
         {
             //add mod
+            if(playerMoveController != null)
             playerMoveController.MoveSpeedModifiers.Add(speedModifier);
         }
         if (IsEnable == false && lastIsEnable == true)
         {
             //remove mod
+            if (playerMoveController != null)
             playerMoveController.MoveSpeedModifiers.Remove(speedModifier);
         }
         lastIsEnable = IsEnable;

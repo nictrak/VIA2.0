@@ -8,11 +8,12 @@ public class PhasedSpawner : MonoBehaviour
     private List<GameObject> enemies;
 
     private int checkFrame;
+    private bool isSpawn;
     private int counter;
     // Start is called before the first frame update
     void Start()
     {
-        checkFrame = 100;
+        checkFrame = 50;
         counter = 0;
     }
 
@@ -27,13 +28,19 @@ public class PhasedSpawner : MonoBehaviour
         {
             if(counter >= checkFrame)
             {
-                if (GameObject.FindGameObjectsWithTag("Enemy").Length <= 0)
+                if (isSpawn)
                 {
                     GameObject spawned = Instantiate(enemies[0]);
                     spawned.transform.position = transform.position;
+                    spawned.SetActive(true);
                     enemies.RemoveAt(0);
-                    counter = 0;
+                    isSpawn = false;
                 }
+                else if (GameObject.FindGameObjectsWithTag("Enemy").Length <= 0)
+                {
+                    isSpawn = true;
+                }
+                counter = 0;
             }
             else
             {
