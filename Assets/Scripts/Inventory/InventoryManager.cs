@@ -1,39 +1,21 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class InventoryManager : MonoBehaviour
 {
     [SerializeField]
+    private Inventory inventory;
+    [SerializeField]
+    private EquipmentPanel equipmentPanel;
+    [SerializeField]
+    private ShortcutPanel shortcutPanel;
+    [SerializeField]
     private Image draggableItem;
 
-    [SerializeField]
-    private GameObject inventoryObj;
-    [SerializeField]
-    private GameObject equipmentPanelObj;
-
-    private Inventory inventory;
-    private EquipmentPanel equipmentPanel;
-
     private ItemSlot draggingSlot;
-
-    private bool toggleBool;
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            toggleBool = !toggleBool;
-            inventoryObj.SetActive(toggleBool);
-            equipmentPanelObj.SetActive(toggleBool);
-        }
-    }
+    private WeaponItem lastWeaponItem;
 
     private void Awake() {
-
-        inventory = inventoryObj.GetComponent<Inventory>();
-        equipmentPanel = equipmentPanelObj.GetComponent<EquipmentPanel>();
-
 
         //Setup Events
         //Right Click
@@ -42,16 +24,21 @@ public class InventoryManager : MonoBehaviour
         //Begin Drag
         inventory.OnBeginDragEvent += BeginDrag;
         equipmentPanel.OnBeginDragEvent += BeginDrag;
+        shortcutPanel.OnBeginDragEvent += BeginDrag;
         //End Drag
         inventory.OnEndDragEvent += EndDrag;
         equipmentPanel.OnEndDragEvent += EndDrag;
+        shortcutPanel.OnEndDragEvent += EndDrag;
         //Drag
         inventory.OnDragEvent += Drag;
         equipmentPanel.OnDragEvent += Drag;
+        shortcutPanel.OnDragEvent += Drag;
         //Drop
         inventory.OnDropEvent += Drop;
         equipmentPanel.OnDropEvent += Drop;
+        shortcutPanel.OnDropEvent += Drop;
 
+        this.gameObject.SetActive(false);
     }
 
     private void Equip(ItemSlot itemSlot)
@@ -73,7 +60,7 @@ public class InventoryManager : MonoBehaviour
     }
 
     private void BeginDrag(ItemSlot itemSlot){
-        if(itemSlot.Item != null)
+        if(itemSlot != null)
         {
             draggingSlot = itemSlot;
             draggableItem.sprite = itemSlot.Item.Icon;
@@ -94,29 +81,25 @@ public class InventoryManager : MonoBehaviour
     }
 
     private void Drop(ItemSlot dropSlot){
-
-        if(draggingSlot != null)
+        if(dropSlot.CanReceiveItem(draggingSlot.Item) && draggingSlot.CanReceiveItem(dropSlot.Item))
         {
-            if(dropSlot.CanReceiveItem(draggingSlot.Item) && draggingSlot.CanReceiveItem(dropSlot.Item))
+            EquippableItem dragItem = draggingSlot.Item as EquippableItem;
+            EquippableItem dropItem = dropSlot.Item as EquippableItem;
+
+            /*if (draggingSlot is EquipmentSlot)
             {
-                //EquippableItem dragItem = draggingSlot.Item as EquippableItem;
-                //EquippableItem dropItem = dropSlot.Item as EquippableItem;
-
-                /*if (draggingSlot is EquipmentSlot)
-                {
-                    if(dragItem != null) dragItem.Unequip(this);
-                    if(dropItem != null) dropItem.Equip(this);
-                }
-                if (dropSlot is EquipmentSlot)
-                {
-                    if(dragItem != null) dragItem.Equip(this);
-                    if(dropItem != null) dropItem.Unequip(this);
-                }*/
-
-                Item draggingItem = draggingSlot.Item;
-                draggingSlot.Item = dropSlot.Item;
-                dropSlot.Item = draggingItem;
+                if(dragItem != null) dragItem.Unequip(this);
+                if(dropItem != null) dropItem.Equip(this);
             }
+            if (dropSlot is EquipmentSlot)
+            {
+                if(dragItem != null) dragItem.Equip(this);
+                if(dropItem != null) dropItem.Unequip(this);
+            }*/
+
+            Item draggingItem = draggingSlot.Item;
+            draggingSlot.Item = dropSlot.Item;
+            dropSlot.Item = draggingItem;
         }
     }
 
@@ -144,5 +127,17 @@ public class InventoryManager : MonoBehaviour
             inventory.AddItem(item);
         }
     }
-
+    private void ChangeWeapon()
+    {
+        PlayerAttackController playerAttackController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerAttackController>();
+        playerAttackController.ChangeWeapon(equipmentPanel.GetEquipedWeapon());
+    }
+    private void Update()
+    {
+        if(equipmentPanel.GetItemWeapon() != lastWeaponItem)
+        {
+            ChangeWeapon();
+        }
+        lastWeaponItem = equipmentPanel.GetItemWeapon();
+    }
 }

@@ -1,12 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 public class GeneralAttackState : MonsterStateBehaviour
 {
     [SerializeField]
     private int attackFrame;
+    [SerializeField]
+    private int damage;
+    [SerializeField]
+    private MonsterRange attackRange;
+    [SerializeField]
+    private bool isKnock;
+    [SerializeField]
+    private float knockVelocity;
+    [SerializeField]
+    private int knockFrame;
+
     private int attackCounter;
+    private AIDestinationSetter aIDestinationSetter;
     public override void ExitState()
     {
     }
@@ -17,6 +30,14 @@ public class GeneralAttackState : MonsterStateBehaviour
         {
             attackCounter = 0;
             //TODO do damage
+            if (attackRange.IsHitPlayer)
+            {
+                aIDestinationSetter.target.gameObject.GetComponent<Health>().TakeDamage(damage);
+                if (isKnock)
+                {
+                    aIDestinationSetter.target.gameObject.GetComponent<PlayerKnockController>().StartKnock(transform.position, knockVelocity, knockFrame);
+                }
+            }
             return NormalNextState;
         }
         else attackCounter++;
@@ -31,6 +52,7 @@ public class GeneralAttackState : MonsterStateBehaviour
     void Start()
     {
         attackCounter = 0;
+        aIDestinationSetter = GetComponentInParent<AIDestinationSetter>();
     }
 
     // Update is called once per frame

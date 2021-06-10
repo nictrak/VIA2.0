@@ -7,6 +7,8 @@ public class EquipmentPanel : MonoBehaviour
     private Transform equipmentSlotsParent;
     [SerializeField]
     private EquipmentSlot[] equipmentSlots;
+    [SerializeField]
+    private int weaponSlotIndex;
 
     public event Action<ItemSlot> OnRightClickEvent;
     public event Action<ItemSlot> OnBeginDragEvent;
@@ -57,5 +59,12 @@ public class EquipmentPanel : MonoBehaviour
         }
         return false;
     }
-
+    public Weapon GetEquipedWeapon()
+    {
+        return ((WeaponItem)equipmentSlots[weaponSlotIndex].Item).weaponPrefab;
+    }
+    public WeaponItem GetItemWeapon()
+    {
+        return (WeaponItem)equipmentSlots[weaponSlotIndex].Item;
+    }
 }

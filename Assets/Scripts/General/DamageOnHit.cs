@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DamageOnHit : MonoBehaviour
 {
-
+    [SerializeField]
     private int damage;
     [SerializeField]
     private bool isEffectPlayer = true;
@@ -30,22 +30,17 @@ public class DamageOnHit : MonoBehaviour
         {
             if (collision.gameObject.tag == "Player" && isEffectPlayer)
             {
-                //collision.gameObject.GetComponent<PlayerHealth>().DealDamage(damage);
+                collision.gameObject.GetComponent<Health>().TakeDamage(damage);
             }
             if (collision.gameObject.tag == "Enemy" && isEffectEnemy)
             {
                 if (!enemyHittedList.Contains(collision.gameObject))
                 {
                     enemyHittedList.Add(collision.gameObject);
-                    //collision.gameObject.GetComponent<MonsterHealth>().TakeDamage(damage);
+                    collision.gameObject.GetComponent<Health>().TakeDamage(damage);
                 }
             }
         }
-    }
-
-    public void Setup(int damage)
-    {
-        this.damage = damage;
     }
 
 }

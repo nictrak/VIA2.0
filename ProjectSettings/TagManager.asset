@@ -8,6 +8,7 @@ TagManager:
   - PlayerTarget
   - Interaction
   - HUDController
+  - Shortcut
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - 
   - Character
   - Blocker
-  - 
+  - Attack
   - 
   - 
   - 
@@ -44,6 +45,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Floor
+    uniqueID: 2982515735
     locked: 0
   - name: Front
     uniqueID: 2663767201

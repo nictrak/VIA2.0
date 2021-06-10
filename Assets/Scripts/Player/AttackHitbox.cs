@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AttackHitbox : MonoBehaviour
 {
+    [SerializeField]
     private List<GameObject> enemies;
     // Start is called before the first frame update
     void Start()
@@ -30,14 +31,29 @@ public class AttackHitbox : MonoBehaviour
             enemies.Remove(collision.gameObject);
         }
     }
-    public void DoDamageAll(int damage)
+    public void DoDamageAll(int damage, List<Modifier> mods = null)
     {
         for(int i = 0; i < enemies.Count; i++)
         {
             Health enemyHealth = enemies[i].GetComponent<Health>();
+            ModifierController enemyModController = enemies[i].GetComponent<ModifierController>();
             if (enemyHealth != null)
             {
                 enemyHealth.TakeDamage(damage);
+                if(mods != null)
+                {
+                    for (int j = 0; j < mods.Count; j++)
+                    {
+                        Modifier newMod = Instantiate<Modifier>(mods[j]);
+                        PortionTime portion = newMod.GetComponent<PortionTime>();
+                        if (portion != null)
+                        {
+                            Destroy(portion);
+                        }
+                        enemyModController.AddModifier(newMod);
+                        Destroy(newMod.gameObject);
+                    }
+                }
             }
         }
     }

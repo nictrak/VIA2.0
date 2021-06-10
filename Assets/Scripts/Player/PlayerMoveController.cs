@@ -10,12 +10,15 @@ public class PlayerMoveController : MonoBehaviour
     // Calculation field
     private Vector2 moveDirection;
     private Vector2 lastestNonZeroMoveDirection;
+    private List<float> moveSpeedModifiers;
     
     // In same object field
     private Rigidbody2D rgbody;
     private PlayerAttackController playerAttackController;
     private PlayerDashController playerDashController;
     private Collider2D normalCollider;
+    private ModifierController modifierController;
+    private PlayerKnockController playerKnockController;
 
     // In child field
     private PlayerRenderer playerRenderer;
@@ -34,6 +37,7 @@ public class PlayerMoveController : MonoBehaviour
     public bool CanUpdateMoveDirection { get => canUpdateMoveDirection; set => canUpdateMoveDirection = value; }
     public bool CanAttack { get => canAttack; set => canAttack = value; }
     public bool CanDash { get => canDash; set => canDash = value; }
+    public List<float> MoveSpeedModifiers { get => moveSpeedModifiers; set => moveSpeedModifiers = value; }
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +47,8 @@ public class PlayerMoveController : MonoBehaviour
         playerAttackController = GetComponent<PlayerAttackController>();
         playerDashController = GetComponent<PlayerDashController>();
         normalCollider = GetComponent<Collider2D>();
+        modifierController = GetComponent<ModifierController>();
+        playerKnockController = GetComponent<PlayerKnockController>();
         canMove = true;
         canUpdateMoveDirection = true;
         canAttack = true;
@@ -50,17 +56,18 @@ public class PlayerMoveController : MonoBehaviour
         centerMousePosition = new Vector2(Screen.width / 2, Screen.height / 2);
         moveDirection = new Vector2();
         lastestNonZeroMoveDirection = new Vector2(0, -1);
+        MoveSpeedModifiers = new List<float>();
     }
 
     // Update is called once per frame
     void Update()
     {
         if(canUpdateMoveDirection) UpdateMoveDirection();
-        if (Input.GetMouseButtonDown(0) && canAttack)
+        if (Input.GetMouseButtonDown(0) && canAttack && playerAttackController.IsEquipWeapon())
         {
             playerAttackController.AddAttack("a");
         }
-        if (Input.GetMouseButtonDown(1) && canAttack)
+        if (Input.GetMouseButtonDown(1) && canAttack && playerAttackController.IsEquipWeapon())
         {
             playerAttackController.AddAttack("b");
         }
@@ -96,7 +103,12 @@ public class PlayerMoveController : MonoBehaviour
     }
     private Vector2 CalMoveVector()
     {
-        return moveDirection * moveVelocity * (playerAttackController.IsAttack()?0f:1f);
+        float mod = 1f;
+        for(int i = 0; i < moveSpeedModifiers.Count; i++)
+        {
+            mod = mod * (float)moveSpeedModifiers[i];
+        }
+        return moveDirection * moveVelocity * (playerAttackController.IsAttack()?0f:1f) * mod;
     }
     private void Move(Vector2 moveVector)
     {
@@ -105,7 +117,11 @@ public class PlayerMoveController : MonoBehaviour
     }
     private void MovePerFrame()
     {
-        if (playerDashController.IsDash)
+        if (playerKnockController.IsKnocked)
+        {
+            Move(playerKnockController.KnockedVector);
+        }
+        else if (playerDashController.IsDash)
         {
             Move(playerDashController.DashVector);
         }
