@@ -25,6 +25,7 @@ public class GeneralBossCharge : BossStateBehaviour
     private Rigidbody2D rgbody;
     private float minDistance;
     
+    private BossCorner selectedCorner;
     public override void ExitState()
     {
         
@@ -67,15 +68,23 @@ public class GeneralBossCharge : BossStateBehaviour
 
     public override void StartState()
     {
-        minDistance = 0f;
+        minDistance = 999999f;
 
         for (int i=dashCorners.Length - 1; i > -1; i--)
         {
-            if(!dashCorners[i].IsCurrentCorner && dashCorners[i].PlayerDistance < minDistance)
-            {
-                targetPosition = dashCorners[i].GetPosition;
+            if(!dashCorners[i].IsCurrentCorner){
+                if(dashCorners[i].PlayerDistance < minDistance)
+                {
+                    targetPosition = dashCorners[i].GetPosition;
+                    selectedCorner = dashCorners[i];
+                }
+            } else {
+                dashCorners[i].IsCurrentCorner = false;
             }
         }
+
+        selectedCorner.IsCurrentCorner = true;
+
     }
 
     // Start is called before the first frame update

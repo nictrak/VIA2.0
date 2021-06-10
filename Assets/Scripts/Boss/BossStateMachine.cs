@@ -37,6 +37,7 @@ public class BossStateMachine : MonoBehaviour
         Check,
         RandomFar,
         RandomClose,
+        RandomShoot,
         Charge,
         AttackPunch,
         AttackRowel,

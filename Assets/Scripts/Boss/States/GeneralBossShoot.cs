@@ -42,7 +42,7 @@ public class GeneralBossShoot : BossStateBehaviour
                 for(int i = 0; i < pattern.Length; i++)
                 {
                     NeedTarget spawned = Instantiate(spawnedPrefab);
-                    Vector2 targetPoint = (Vector2)transform.position + pattern.GetPositionByIndex(i);
+                    Vector2 targetPoint = (Vector2)destinationSetter.target.transform.position + pattern.GetPositionByIndex(i);
                     spawned.SetTarget(transform.position, targetPoint, velocity);
                 }
                 delayCounter = 0;

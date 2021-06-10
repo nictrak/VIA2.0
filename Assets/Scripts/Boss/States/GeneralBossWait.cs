@@ -7,6 +7,9 @@ public class GeneralBossWait : BossStateBehaviour
 
     [SerializeField]
     private int delayFrame;
+
+    [SerializeField]
+    private int energyRecharge;
     private int delayCounter;
 
     public override void ExitState()
@@ -19,11 +22,19 @@ public class GeneralBossWait : BossStateBehaviour
         if (delayCounter >= delayFrame)
         {
             delayCounter = 0;
-            energyOut = energy - energyCost;
+            if(energy <= 2){
+                energyOut = energyRecharge;
+            } else {
+                energyOut = energy - energyCost;
+            }
             return NormalNextState;
         }
         else delayCounter++;
-        energyOut = energy;
+        if(energy <= 2){
+                energyOut = energyRecharge;
+        } else {
+            energyOut = energy - energyCost;
+        }
         return currentState;
     }
 

@@ -18,6 +18,10 @@ class WeightedRandomBag<T>  {
         entries.Add(new Entry { item = item, accumulatedWeight = accumulatedWeight });
     }
 
+    public int EntrySize {
+        get { return entries.Count; }
+    }
+
     public void ClearEntry() {
         entries.Clear();
         accumulatedWeight = 0;
@@ -48,12 +52,14 @@ public class GeneralBossRandom : BossStateBehaviour
     
     // Start is called before the first frame update
     void Start() {
-        WeightedRandomBag<BossStateBehaviour> rand = new WeightedRandomBag<BossStateBehaviour>();
+
+        rand = new WeightedRandomBag<BossStateBehaviour>();
+
     }
 
     public override void ExitState()
     {
-        throw new System.NotImplementedException();
+
     }
 
     public override BossStateMachine.BossState RunState(int energy, out int energyOut)
@@ -65,9 +71,15 @@ public class GeneralBossRandom : BossStateBehaviour
                 rand.AddEntry(states[i], probabilities[i]);
             }
         }
-        BossStateBehaviour state = rand.GetRandom();
-        energyOut = energy - energyCost;
-        return state.StateEnum;
+
+        if(rand.EntrySize != 0) {
+            BossStateBehaviour state = rand.GetRandom();
+            energyOut = energy - energyCost;
+            return state.StateEnum;
+        } else {
+            energyOut = energy - energyCost;
+            return NormalNextState;
+        }
     }
 
     public override void StartState()
