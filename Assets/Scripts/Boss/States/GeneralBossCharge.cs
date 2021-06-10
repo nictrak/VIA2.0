@@ -73,7 +73,7 @@ public class GeneralBossCharge : BossStateBehaviour
         for (int i=dashCorners.Length - 1; i > -1; i--)
         {
             if(!dashCorners[i].IsCurrentCorner){
-                if(dashCorners[i].PlayerDistance < minDistance)
+                if(dashCorners[i].PlayerDistance <= minDistance)
                 {
                     targetPosition = dashCorners[i].GetPosition;
                     selectedCorner = dashCorners[i];
