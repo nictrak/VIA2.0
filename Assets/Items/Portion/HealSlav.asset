@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d29431f2f03d654f9fd88f1af11a246, type: 3}
-  m_Name: IgnitePortion
+  m_Name: HealSlav
   m_EditorClassIdentifier: 
-  Name: Ignite Portion
-  Icon: {fileID: -170798982848044286, guid: c7bc3894b0930a44cb923b07f96f0609, type: 3}
-  playerModifiersPrefab: []
-  weaponModifiersPrefab:
-  - {fileID: 5479488949290762229, guid: d4cbd8cf387c1da408225fa6540d0140, type: 3}
+  Name: Healing Slav
+  Icon: {fileID: 2802018068357697598, guid: c7bc3894b0930a44cb923b07f96f0609, type: 3}
+  playerModifiersPrefab:
+  - {fileID: 1373172766325546703, guid: 67b85db127cc8a54cbbbea286e228c1d, type: 3}
+  weaponModifiersPrefab: []
