@@ -813,9 +813,9 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7000904033944838464}
   m_Enabled: 1
-  m_SortingLayerID: -1631200095
-  m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 35
 --- !u!70 &7000904033944838489
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -918,6 +918,7 @@ MonoBehaviour:
   maxHealth: 100
   initialHealth: 100
   healthBar: {fileID: 0}
+  hitEffectPrefab: {fileID: 0}
 --- !u!114 &7000904033944838483
 MonoBehaviour:
   m_ObjectHideFlags: 0

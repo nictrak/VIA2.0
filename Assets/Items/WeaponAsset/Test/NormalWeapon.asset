@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: NormalWeapon
   m_EditorClassIdentifier: 
   Name: NormalWeapon
-  Icon: {fileID: 21300000, guid: c274cbc128eb9d44a904581ab43c265b, type: 3}
+  Icon: {fileID: 21300000, guid: 752443c5e42aef346bbaf798b33d5d44, type: 3}
   EquipmentType: 0
   weaponPrefab: {fileID: 2563879699250417919, guid: e4f4399ba3a197d44ae30d7a19d1a1af,
     type: 3}
