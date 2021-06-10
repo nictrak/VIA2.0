@@ -6,7 +6,7 @@ using Pathfinding;
 public class GeneralBossShoot : BossStateBehaviour
 {
     [SerializeField]
-    private List<Vector2> patterns;
+    private Pattern pattern;
 
     [SerializeField]
     private float velocity;
@@ -38,11 +38,11 @@ public class GeneralBossShoot : BossStateBehaviour
         if (delayCounter >= delayFrame)
         {
             bulletCounter++;
-            if(patterns.Count != 0){
-                for(int i = 0; i < patterns.Count; i++)
+            if(pattern.Length != 0){
+                for(int i = 0; i < pattern.Length; i++)
                 {
                     NeedTarget spawned = Instantiate(spawnedPrefab);
-                    Vector2 targetPoint = (Vector2)transform.position + patterns[i];
+                    Vector2 targetPoint = (Vector2)transform.position + pattern.GetPositionByIndex(i);
                     spawned.SetTarget(transform.position, targetPoint, velocity);
                 }
                 delayCounter = 0;

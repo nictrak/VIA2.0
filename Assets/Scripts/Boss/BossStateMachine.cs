@@ -31,14 +31,15 @@ public class BossStateMachine : MonoBehaviour
 
     private BossState currentState;
     private Health health;
+
     public enum BossState
     {
         Check,
         Random,
         Charge,
-        Bomb,
+        Attack,
         Launch,
-        Use,
+        Wait,
         //Hurt,
         Dead
     }
