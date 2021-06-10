@@ -401,10 +401,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 3
   NormalNextState: 6
-  spawnedPrefab: {fileID: 7502476381054501942, guid: d13a01e0f77b9e54d9feb82e5393a3a4,
+  spawnedPrefab: {fileID: 4716439374236236606, guid: 448e64b8e16918b459b19948cb1abd67,
     type: 3}
   delayFrame: 20
-  velocity: 0.3
+  velocity: 0.1
   outerRangeNextState: 1
   outerRange: {fileID: 7000904033806837122}
   innerRange: {fileID: 7000904032712114227}
@@ -434,8 +434,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7000904033632237735}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.962, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalPosition: {x: 0, y: 0.76, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 7000904033944838490}
   m_RootOrder: 0
@@ -930,4 +930,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b0c07ca774d8464fb3bb71f6fbf61ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fleeVelocity: 0.01
+  fleeVelocity: 0.015

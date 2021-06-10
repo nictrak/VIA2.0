@@ -13,6 +13,7 @@ public class InventoryManager : MonoBehaviour
     private Image draggableItem;
 
     private ItemSlot draggingSlot;
+    private WeaponItem lastWeaponItem;
 
     private void Awake() {
 
@@ -109,9 +110,6 @@ public class InventoryManager : MonoBehaviour
             EquippableItem previousItem;
             if(equipmentPanel.AddItem(item, out previousItem))
             {
-                Debug.Log("Change Weapon");
-                PlayerAttackController playerAttackController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerAttackController>();
-                playerAttackController.ChangeWeapon(equipmentPanel.GetEquipedWeapon());
                 if(previousItem != null)
                 {
                     inventory.AddItem(previousItem);
@@ -129,5 +127,17 @@ public class InventoryManager : MonoBehaviour
             inventory.AddItem(item);
         }
     }
-
+    private void ChangeWeapon()
+    {
+        PlayerAttackController playerAttackController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerAttackController>();
+        playerAttackController.ChangeWeapon(equipmentPanel.GetEquipedWeapon());
+    }
+    private void Update()
+    {
+        if(equipmentPanel.GetItemWeapon() != lastWeaponItem)
+        {
+            ChangeWeapon();
+        }
+        lastWeaponItem = equipmentPanel.GetItemWeapon();
+    }
 }

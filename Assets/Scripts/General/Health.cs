@@ -66,6 +66,14 @@ public class Health : MonoBehaviour
             currentHealth = maxHealth;
         }
     }
+    public void Heal(int point)
+    {
+        currentHealth = currentHealth + point;
+        if(currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+    }
     private void HurtControlPerFrame()
     {
         if (isHurt)
