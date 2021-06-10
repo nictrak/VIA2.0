@@ -10,6 +10,8 @@ public class GerenalBossDeadState : BossStateBehaviour
     [SerializeField]
     private GameObject target;
     private int delayCounter;
+    [SerializeField]
+    private Animator animator;
     public override void ExitState()
     {
         
