@@ -9,6 +9,8 @@ TagManager:
   - Interaction
   - HUDController
   - Shortcut
+  - Key
+  - Door
   layers:
   - Default
   - TransparentFX
