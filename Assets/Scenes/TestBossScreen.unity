@@ -1839,6 +1839,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1542102045}
   - component: {fileID: 1542102046}
+  - component: {fileID: 1542102047}
   m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
@@ -1874,9 +1875,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 1
   NormalNextState: 1
+  energyCost: 0
   states: []
-  energyValues: 
   probabilities: 
+--- !u!114 &1542102047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542102044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686a2bd296cf61d43b438143e2b8faf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: 0
+  NormalNextState: 0
+  energyCost: 50
+  starDirections:
+  - {x: 1, y: 1}
+  - {x: 1, y: 2}
+  - {x: 1, y: 3}
+  velocity: 0
+  delayFrame: 0
+  bulletAmount: 0
+  spawnedPrefab: {fileID: 0}
 --- !u!1 &1552838316
 GameObject:
   m_ObjectHideFlags: 0

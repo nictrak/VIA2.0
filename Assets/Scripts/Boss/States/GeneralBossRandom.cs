@@ -66,7 +66,7 @@ public class GeneralBossRandom : BossStateBehaviour
             }
         }
         BossStateBehaviour state = rand.GetRandom();
-        energyOut = energy;
+        energyOut = energy - energyCost;
         return state.StateEnum;
     }
 
