@@ -10,6 +10,8 @@ public class Health : MonoBehaviour
     private int initialHealth;
     [SerializeField]
     private RectTransform healthBar;
+    [SerializeField]
+    private GameObject hitEffectPrefab;
 
     private bool isHurt;
     private bool isAlreadyHurt;
@@ -55,7 +57,15 @@ public class Health : MonoBehaviour
     public void TakeDamage(int damage, bool doHurt = true)
     {
         currentHealth = currentHealth - damage;
-        if (damage > 0 && doHurt) isHurt = true;
+        if (damage > 0 && doHurt)
+        {
+            isHurt = true;
+            if(hitEffectPrefab != null)
+            {
+                GameObject spawned = Instantiate(hitEffectPrefab);
+                spawned.transform.position = transform.position;
+            }
+        }
         if(currentHealth <= 0)
         {
             currentHealth = 0;

@@ -12,6 +12,8 @@ public class Attack : MonoBehaviour
     private int damage;
     [SerializeField]
     private int stamina;
+    [SerializeField]
+    private MonoBehaviour specialAttack;
 
     private AttackHitbox attackHitbox;
 
@@ -33,5 +35,9 @@ public class Attack : MonoBehaviour
     public void DoDamage(List<Modifier> mods = null)
     {
         attackHitbox.DoDamageAll(damage, mods);
+        if(specialAttack != null)
+        {
+            ((SpecialAttack)specialAttack).DoSpecial();
+        }
     }
 }
