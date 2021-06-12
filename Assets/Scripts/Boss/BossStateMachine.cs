@@ -121,6 +121,8 @@ public class BossStateMachine : MonoBehaviour
         }*/
         if (health.IsDead)
         {
+            // HOT FIX ::
+            animator.Play("boss_DeadBomb");
             nextState = BossState.Dead;
         }
         ChangeState(nextState);
