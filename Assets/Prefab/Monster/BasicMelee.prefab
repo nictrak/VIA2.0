@@ -929,7 +929,8 @@ MonoBehaviour:
   maxHealth: 100
   initialHealth: 100
   healthBar: {fileID: 0}
-  hitEffectPrefab: {fileID: 0}
+  hitEffectPrefab: {fileID: 1454490803532372921, guid: ce520020bce440044bc0d5d1f8feca7c,
+    type: 3}
 --- !u!114 &407601076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -968,6 +969,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b628e686251b8cf429fda6114ed8c841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  aimPrefab: {fileID: 0}
 --- !u!1001 &320503324024680411
 PrefabInstance:
   m_ObjectHideFlags: 0
