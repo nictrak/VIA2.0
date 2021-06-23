@@ -11,6 +11,8 @@ TagManager:
   - Shortcut
   - Key
   - Door
+  - ground
+  - Lock Door
   layers:
   - Default
   - TransparentFX

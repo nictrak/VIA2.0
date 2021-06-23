@@ -836,8 +836,8 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6878539700662927994}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1631200095
+  m_SortingLayer: 2
   m_SortingOrder: 35
 --- !u!70 &6878539700662927939
 CapsuleCollider2D:
