@@ -18,6 +18,7 @@ public class Singleton : MonoBehaviour
         }
         if (singletons.ContainsKey(currentHash))
         {
+            singletons[currentHash].transform.position = gameObject.transform.position;
             Destroy(gameObject);
         }
         else
