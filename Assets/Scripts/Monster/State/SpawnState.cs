@@ -23,6 +23,7 @@ public class SpawnState : MonsterStateBehaviour
         {
             GameObject spawned = Instantiate(spawnedPrefab);
             spawned.transform.position = targetBuffer.TargetPosition;
+            targetBuffer.IsAim = false;
             counter = 0;
             return NormalNextState;
         }

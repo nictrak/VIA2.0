@@ -15,6 +15,7 @@ public class GeneralAimState : MonsterStateBehaviour
     public override MonsterStateMachine.MonsterState RunState()
     {
         targetBuffer.TargetPosition = aIDestinationSetter.target.position;
+        targetBuffer.IsAim = true;
         return NormalNextState;
     }
 
