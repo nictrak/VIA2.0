@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 8898590711174847108}
   - component: {fileID: -6691364156607416597}
   - component: {fileID: -12281541144866874}
+  - component: {fileID: 4731573904637704624}
   m_Layer: 10
   m_Name: SimpleLinearBullet
   m_TagString: Untagged
@@ -196,3 +197,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEffectPlayer: 1
   isEffectEnemy: 0
+--- !u!114 &4731573904637704624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16835113858383415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 680a715e39fd9a7418617f1e1a5f8c35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTimeFrame: 500

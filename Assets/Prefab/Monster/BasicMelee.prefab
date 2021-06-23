@@ -224,7 +224,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.413623, y: 0.2545375}
@@ -837,8 +837,8 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6878539700662927994}
   m_Enabled: 1
-  m_SortingLayerID: -1631200095
-  m_SortingLayer: 2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 35
 --- !u!70 &6878539700662927939
 CapsuleCollider2D:
@@ -886,7 +886,7 @@ MonoBehaviour:
   - attack
   - hurt
   - dead
-  isHurtBreak: 0
+  isHurtBreak: 1
   isHaveEightDirection: 0
 --- !u!114 &101977571
 MonoBehaviour:

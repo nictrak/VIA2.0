@@ -30,7 +30,10 @@ public class PlayerStaminaController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UpdateStaminaBar();
+        if(staminaBar != null)
+        {
+            UpdateStaminaBar();
+        }
     }
     private void FixedUpdate()
     {
