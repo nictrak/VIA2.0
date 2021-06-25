@@ -37,11 +37,7 @@ public class PlayerDashController : MonoBehaviour
         {
             if(dashCounter >= dashFrame)
             {
-                dashCounter = 0;
-                isDash = false;
-                dashVector = new Vector2();
-                normalCollider.isTrigger = false;
-                normalCollider = null;
+                StopDash();
             }
             else
             {
@@ -58,6 +54,21 @@ public class PlayerDashController : MonoBehaviour
             playerRenderer.UpdateAnimation(PlayerRenderer.PlayerRenderState.Dash, direction);
             normalCollider = collider2D;
             normalCollider.isTrigger = true;
+        }
+    }
+    public void StopDash()
+    {
+        dashCounter = 0;
+        isDash = false;
+        dashVector = new Vector2();
+        normalCollider.isTrigger = false;
+        normalCollider = null;
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (isDash && collision.gameObject.tag == "Wall")
+        {
+            StopDash();
         }
     }
 }
