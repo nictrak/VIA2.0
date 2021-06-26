@@ -14,7 +14,7 @@ public class HudController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        isInventoryOpen = false;
+        inventoryPanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -22,16 +22,7 @@ public class HudController : MonoBehaviour
     {
         if (Input.GetKeyDown(inventoryKey))
         {
-            if (isInventoryOpen)
-            {
-                inventoryPanel.SetActive(false);
-                isInventoryOpen = false;
-            }
-            else
-            {
-                inventoryPanel.SetActive(true);
-                isInventoryOpen = true;
-            }
+            inventoryPanel.SetActive(!inventoryPanel.activeSelf);
         }    
     }
 

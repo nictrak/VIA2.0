@@ -37,8 +37,6 @@ public class InventoryManager : MonoBehaviour
         inventory.OnDropEvent += Drop;
         equipmentPanel.OnDropEvent += Drop;
         shortcutPanel.OnDropEvent += Drop;
-
-        this.gameObject.SetActive(false);
     }
 
     private void Equip(ItemSlot itemSlot)
@@ -60,7 +58,7 @@ public class InventoryManager : MonoBehaviour
     }
 
     private void BeginDrag(ItemSlot itemSlot){
-        if(itemSlot != null)
+        if(itemSlot.Item != null)
         {
             draggingSlot = itemSlot;
             draggableItem.sprite = itemSlot.Item.Icon;
@@ -81,25 +79,27 @@ public class InventoryManager : MonoBehaviour
     }
 
     private void Drop(ItemSlot dropSlot){
-        if(dropSlot.CanReceiveItem(draggingSlot.Item) && draggingSlot.CanReceiveItem(dropSlot.Item))
-        {
-            EquippableItem dragItem = draggingSlot.Item as EquippableItem;
-            EquippableItem dropItem = dropSlot.Item as EquippableItem;
-
-            /*if (draggingSlot is EquipmentSlot)
+        if(draggingSlot != null){
+            if(dropSlot.CanReceiveItem(draggingSlot.Item) && draggingSlot.CanReceiveItem(dropSlot.Item))
             {
-                if(dragItem != null) dragItem.Unequip(this);
-                if(dropItem != null) dropItem.Equip(this);
+                EquippableItem dragItem = draggingSlot.Item as EquippableItem;
+                EquippableItem dropItem = dropSlot.Item as EquippableItem;
+
+                /*if (draggingSlot is EquipmentSlot)
+                {
+                    if(dragItem != null) dragItem.Unequip(this);
+                    if(dropItem != null) dropItem.Equip(this);
+                }
+                if (dropSlot is EquipmentSlot)
+                {
+                    if(dragItem != null) dragItem.Equip(this);
+                    if(dropItem != null) dropItem.Unequip(this);
+                }*/
+
+                Item draggingItem = draggingSlot.Item;
+                draggingSlot.Item = dropSlot.Item;
+                dropSlot.Item = draggingItem;
             }
-            if (dropSlot is EquipmentSlot)
-            {
-                if(dragItem != null) dragItem.Equip(this);
-                if(dropItem != null) dropItem.Unequip(this);
-            }*/
-
-            Item draggingItem = draggingSlot.Item;
-            draggingSlot.Item = dropSlot.Item;
-            dropSlot.Item = draggingItem;
         }
     }
 
