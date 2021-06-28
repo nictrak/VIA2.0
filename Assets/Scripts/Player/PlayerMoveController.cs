@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerMoveController : MonoBehaviour
 {
+
+    public Transform prefab_summon_1;
     [SerializeField]
     private float moveVelocity;
 
@@ -74,6 +76,12 @@ public class PlayerMoveController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && canDash)
         {
             playerDashController.StartDash(lastestNonZeroMoveDirection, playerRenderer, normalCollider);
+        }
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            Debug.Log("J key was released.");
+            Vector3 v3 = lastestNonZeroMoveDirection;
+            Instantiate(prefab_summon_1, v3, Quaternion.identity);
         }
     }
     // Fixed frame update
