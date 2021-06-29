@@ -14,6 +14,7 @@ TagManager:
   - ground
   - Lock Door
   - Wall
+  - Crafting
   layers:
   - Default
   - TransparentFX
@@ -26,7 +27,7 @@ TagManager:
   - Character
   - Blocker
   - Attack
-  - 
+  - ItemCraft
   - 
   - 
   - 
