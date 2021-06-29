@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class CraftingMaterial : MonoBehaviour
@@ -28,7 +29,18 @@ public class CraftingMaterial : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        
+        CraftingMaterial other = collision.gameObject.GetComponent<CraftingMaterial>();
+        (string, string) materials = (GetItemName(), other.GetItemName());
+        if (CraftingSystem.CraftingHash.ContainsKey(materials))
+        {
+            if (String.Compare(other.GetItemName(), GetItemName()) > 0)
+            {
+                GameObject spawned = Instantiate(CraftingSystem.CraftingHash[materials]);
+                spawned.transform.position = transform.position;
+            }
+           
+            Destroy(gameObject);
+        }
     }
     public string GetItemName()
     {

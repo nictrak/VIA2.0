@@ -8,11 +8,13 @@ public class ItemCraftGravity : MonoBehaviour
     private float gravityVelocity;
     private Rigidbody2D rgbody;
     private TriggerRange triggerRange;
+    private CraftingMaterial thisCratingMaterial;
     // Start is called before the first frame update
     void Start()
     {
         triggerRange = GetComponentInChildren<TriggerRange>();
         rgbody = GetComponent<Rigidbody2D>();
+        thisCratingMaterial = GetComponent<CraftingMaterial>();
     }
 
     // Update is called once per frame
@@ -33,8 +35,14 @@ public class ItemCraftGravity : MonoBehaviour
         Vector2 result = new Vector2();
         for(int i = 0; i < triggerRange.Objs.Count; i++)
         {
-            result = result + CalSingleMoveVector(triggerRange.Objs[i].transform.position);
+            if(IsCanCraft(triggerRange.Objs[i])) result = result + CalSingleMoveVector(triggerRange.Objs[i].transform.position);
         }
         return result;
+    }
+    private bool IsCanCraft(GameObject obj)
+    {
+        CraftingMaterial otherCraftingMaterial = obj.GetComponentInParent<CraftingMaterial>();
+        (string, string) materials = (thisCratingMaterial.GetItemName(), otherCraftingMaterial.GetItemName());
+        return CraftingSystem.CraftingHash.ContainsKey(materials);
     }
 }
