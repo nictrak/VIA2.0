@@ -10,7 +10,7 @@ public class ShortcutSlot : ItemSlot
         if (item == null)
             return true;
 
-        PortionItem portionItem = item as PortionItem;
-        return portionItem != null;
+        CraftingMaterialItem craftingMaterialItem = item as CraftingMaterialItem;
+        return craftingMaterialItem != null;
     }
 }

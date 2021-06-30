@@ -8,10 +8,14 @@ public class CraftingMaterial : MonoBehaviour
     [SerializeField]
     private CraftingMaterialItem itemData;
     private SpriteRenderer spriteRenderer;
+
+    public CraftingMaterialItem ItemData { get => itemData; set => itemData = value; }
+
     // Start is called before the first frame update
     void Start()
     {
-
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.sprite = itemData.Icon;
     }
 
     // Update is called once per frame

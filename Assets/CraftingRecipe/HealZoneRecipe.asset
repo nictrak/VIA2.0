@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e034655493a7ee542a79a2806541d56f, type: 3}
   m_Name: HealZoneRecipe
   m_EditorClassIdentifier: 
-  material1: 
-  material2: 
-  result: 
+  material1: Seed
+  material2: Life
+  resultPrefab: {fileID: 2459201674602064576, guid: 3e464a012fe289d41b4c33073fc09861,
+    type: 3}

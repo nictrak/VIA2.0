@@ -41,6 +41,7 @@ public class ItemCraftGravity : MonoBehaviour
     }
     private bool IsCanCraft(GameObject obj)
     {
+        if (obj == null) return false;
         CraftingMaterial otherCraftingMaterial = obj.GetComponentInParent<CraftingMaterial>();
         (string, string) materials = (thisCratingMaterial.GetItemName(), otherCraftingMaterial.GetItemName());
         return CraftingSystem.CraftingHash.ContainsKey(materials);
