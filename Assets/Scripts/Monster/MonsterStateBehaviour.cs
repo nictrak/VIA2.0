@@ -26,4 +26,8 @@ public abstract class MonsterStateBehaviour : MonoBehaviour
     {
         return GetComponentInParent<AIDestinationSetter>().target.gameObject;
     }
+    protected bool IsTriggerRangeContainTarget(TriggerRange range)
+    {
+        return range.Objs.Contains(GetTarget());
+    }
 }
