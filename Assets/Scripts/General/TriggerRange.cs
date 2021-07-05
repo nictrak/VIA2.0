@@ -56,6 +56,23 @@ public class TriggerRange : MonoBehaviour
         }
         return nearestObject;
     }
+    public GameObject CalNearestObject()
+    {
+        Vector3 position = transform.position;
+        if (IsEmpty()) return null;
+        float nearestDistance = CalDistance(0, position);
+        GameObject nearestObject = objs[0];
+        for (int i = 1; i < objs.Count; i++)
+        {
+            float newDistance = CalDistance(i, position);
+            if (newDistance < nearestDistance)
+            {
+                nearestDistance = newDistance;
+                nearestObject = objs[i];
+            }
+        }
+        return nearestObject;
+    }
     public bool IsEmpty()
     {
         return objs.Count == 0;
