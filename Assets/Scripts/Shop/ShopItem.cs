@@ -19,7 +19,10 @@ public class ShopItem : ScriptableObject
     public void Buy(Inventory inventory){
         if(CanBuy(inventory)){
             inventory.Money = inventory.Money - Price;
-            inventory.AddItem(Instantiate(Item));
+            Item itemToAdd = Item.Copy();
+            if (!inventory.AddItem(itemToAdd)) {
+                itemToAdd.Destroy();
+            }
         }
     }
 }

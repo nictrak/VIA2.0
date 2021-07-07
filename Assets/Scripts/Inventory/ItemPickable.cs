@@ -13,7 +13,10 @@ public class ItemPickable : MonoBehaviour
     private void Update() {
         if (isInRange && Input.GetKeyDown(itemPickupKeyCode))
         {
-            inventory.AddItem(Instantiate(item));
+            Item itemToAdd = item.Copy();
+            if (!inventory.AddItem(itemToAdd)) {
+                itemToAdd.Destroy();
+            }
             Destroy(gameObject);
         }
     }

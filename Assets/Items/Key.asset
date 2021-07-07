@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a07d213d61054a478021793181cfffb, type: 3}
   m_Name: Key
   m_EditorClassIdentifier: 
+  id: e8b6da3d7bca40e47902a9d1c9d1a007
   Name: Key
   Icon: {fileID: 3048086345109389169, guid: cf05b2614ab18c649872a9d7758bcde8, type: 3}
+  MaximunStack: 99
