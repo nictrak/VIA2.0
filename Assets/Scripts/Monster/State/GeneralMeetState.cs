@@ -5,7 +5,7 @@ using UnityEngine;
 public class GeneralMeetState : MonsterStateBehaviour
 {
     [SerializeField]
-    private MonsterRange nextStateRange;
+    private TriggerRange nextStateRange;
     public override void ExitState()
     {
         
@@ -13,7 +13,7 @@ public class GeneralMeetState : MonsterStateBehaviour
 
     public override MonsterStateMachine.MonsterState RunState()
     {
-        if (nextStateRange.IsHitPlayer)
+        if (!nextStateRange.IsEmpty())
         {
             return NormalNextState;
         }

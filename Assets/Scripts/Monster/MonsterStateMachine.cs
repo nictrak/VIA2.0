@@ -21,6 +21,8 @@ public class MonsterStateMachine : MonoBehaviour
     private bool isHurtBreak;
     [SerializeField]
     private bool isHaveEightDirection;
+    [SerializeField]
+    private TriggerRange mostOuterRange;
 
     private Dictionary<MonsterState, MonsterStateBehaviour> statesHash;
     private Dictionary<MonsterState, string> stringAnimatorsHash;
@@ -60,6 +62,7 @@ public class MonsterStateMachine : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        UpdateDestination();
         animator.Play(CreateAnimatorString(currentState));
     }
     private void FixedUpdate()
@@ -161,5 +164,13 @@ public class MonsterStateMachine : MonoBehaviour
         //calculate the amount of steps required to reach this angle
         float stepCount = angle / step;
         return Mathf.FloorToInt(stepCount);
+    }
+    private void UpdateDestination()
+    {
+        GameObject newTarget = mostOuterRange.CalNearestObject();
+        if(newTarget != null)
+        {
+            aIDestinationSetter.target = newTarget.transform;
+        }
     }
 }

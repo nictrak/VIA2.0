@@ -10,7 +10,7 @@ public class GeneralAttackState : MonsterStateBehaviour
     [SerializeField]
     private int damage;
     [SerializeField]
-    private MonsterRange attackRange;
+    private TriggerRange attackRange;
     [SerializeField]
     private bool isKnock;
     [SerializeField]
@@ -19,7 +19,6 @@ public class GeneralAttackState : MonsterStateBehaviour
     private int knockFrame;
 
     private int attackCounter;
-    private AIDestinationSetter aIDestinationSetter;
     public override void ExitState()
     {
     }
@@ -30,12 +29,13 @@ public class GeneralAttackState : MonsterStateBehaviour
         {
             attackCounter = 0;
             //TODO do damage
-            if (attackRange.IsHitPlayer)
+            if (!attackRange.IsEmpty())
             {
-                aIDestinationSetter.target.gameObject.GetComponent<Health>().TakeDamage(damage);
+                Debug.Log(GetTarget());
+                GetTarget().GetComponentInParent<Health>().TakeDamage(damage);
                 if (isKnock)
                 {
-                    aIDestinationSetter.target.gameObject.GetComponent<PlayerKnockController>().StartKnock(transform.position, knockVelocity, knockFrame);
+                    GetTarget().GetComponent<PlayerKnockController>().StartKnock(transform.position, knockVelocity, knockFrame);
                 }
             }
             return NormalNextState;
@@ -52,7 +52,6 @@ public class GeneralAttackState : MonsterStateBehaviour
     void Start()
     {
         attackCounter = 0;
-        aIDestinationSetter = GetComponentInParent<AIDestinationSetter>();
     }
 
     // Update is called once per frame

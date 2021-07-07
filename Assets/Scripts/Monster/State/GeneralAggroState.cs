@@ -8,9 +8,9 @@ public class GeneralAggroState : MonsterStateBehaviour
     [SerializeField]
     private MonsterStateMachine.MonsterState outerRangeNextState;
     [SerializeField]
-    private MonsterRange outerRange;
+    private TriggerRange outerRange;
     [SerializeField]
-    private MonsterRange innerRange;
+    private TriggerRange innerRange;
     private AIPath aiPath;
     public override void ExitState()
     {
@@ -19,7 +19,7 @@ public class GeneralAggroState : MonsterStateBehaviour
 
     public override MonsterStateMachine.MonsterState RunState()
     {
-        if (innerRange.IsHitPlayer)
+        if (!innerRange.IsEmpty())
         {
             return NormalNextState;
         }
@@ -27,7 +27,7 @@ public class GeneralAggroState : MonsterStateBehaviour
         {
             if(outerRange != null)
             {
-                if (!outerRange.IsHitPlayer)
+                if (outerRange.IsEmpty())
                 {
                     return outerRangeNextState;
                 }

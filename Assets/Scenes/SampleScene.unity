@@ -499,11 +499,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: BasicMelee
       objectReference: {fileID: 0}
-    - target: {fileID: 6878539700662927994, guid: fb71296f129c18141a0a42216855cf17,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6878539700662927998, guid: fb71296f129c18141a0a42216855cf17,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -576,7 +571,7 @@ PrefabInstance:
     - target: {fileID: 6618791823218120240, guid: 1a384ff47a881fd46a8b565036cf90aa,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6618791823218120244, guid: 1a384ff47a881fd46a8b565036cf90aa,
         type: 3}

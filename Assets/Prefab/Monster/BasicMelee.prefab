@@ -169,7 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 1
   NormalNextState: 2
-  nextStateRange: {fileID: 1170233309}
+  nextStateRange: {fileID: 82805168}
 --- !u!1 &1010535366
 GameObject:
   m_ObjectHideFlags: 0
@@ -179,8 +179,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1010535367}
-  - component: {fileID: 1010535368}
   - component: {fileID: 1286149515167316011}
+  - component: {fileID: 623239987}
   m_Layer: 0
   m_Name: AttackRange
   m_TagString: Untagged
@@ -202,18 +202,6 @@ Transform:
   m_Father: {fileID: 484702155}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
---- !u!114 &1010535368
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1010535366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d998e1fbe7eed14995c165fba22ab6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!58 &1286149515167316011
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -230,6 +218,19 @@ CircleCollider2D:
   m_Offset: {x: 0.413623, y: 0.2545375}
   serializedVersion: 2
   m_Radius: 1.0149988
+--- !u!114 &623239987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010535366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf52656b99340fc45a6b2cd2520008f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagTarget: PlayerTarget
 --- !u!1 &1170233307
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,7 +241,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1170233308}
   - component: {fileID: 1170233310}
-  - component: {fileID: 1170233309}
+  - component: {fileID: 82805168}
   m_Layer: 0
   m_Name: AggroRange
   m_TagString: Untagged
@@ -288,7 +289,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 15, y: 15}
   m_EdgeRadius: 0
---- !u!114 &1170233309
+--- !u!114 &82805168
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -297,9 +298,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1170233307}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d998e1fbe7eed14995c165fba22ab6d, type: 3}
+  m_Script: {fileID: 11500000, guid: bf52656b99340fc45a6b2cd2520008f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tagTarget: PlayerTarget
 --- !u!1 &1305351800
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,7 +349,7 @@ MonoBehaviour:
   NormalNextState: 2
   attackFrame: 50
   damage: 8
-  attackRange: {fileID: 1010535368}
+  attackRange: {fileID: 623239987}
   isKnock: 0
   knockVelocity: 0
   knockFrame: 0
@@ -496,8 +498,8 @@ MonoBehaviour:
   currentState: 2
   NormalNextState: 3
   outerRangeNextState: 1
-  outerRange: {fileID: 1170233309}
-  innerRange: {fileID: 1010535368}
+  outerRange: {fileID: 82805168}
+  innerRange: {fileID: 623239987}
 --- !u!1 &2109351895
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,6 +890,7 @@ MonoBehaviour:
   - dead
   isHurtBreak: 1
   isHaveEightDirection: 0
+  mostOuterRange: {fileID: 82805168}
 --- !u!114 &101977571
 MonoBehaviour:
   m_ObjectHideFlags: 0
