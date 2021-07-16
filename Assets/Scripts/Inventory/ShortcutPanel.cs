@@ -50,11 +50,6 @@ public class ShortcutPanel : MonoBehaviour
 
     public bool AddItem(Item item)
     {
-        /*if(IsFull())
-            return false;
-        items.Add(item);
-        RefeshUI();
-        return true;*/
         for (int i = 0; i < shortcutSlots.Length; i++)
         {
             if (shortcutSlots[i].Item == null)
@@ -70,11 +65,6 @@ public class ShortcutPanel : MonoBehaviour
 
     public bool RemoveItem(Item item)
     {
-        /*if(items.Remove(item)){
-            RefeshUI();
-            return true;
-        }
-        return false;*/
         for (int i = 0; i < shortcutSlots.Length; i++)
         {
             if (shortcutSlots[i].Item == item)

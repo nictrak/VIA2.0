@@ -10,4 +10,12 @@ public enum EquipmentType
 public class EquippableItem : Item
 {
     public EquipmentType EquipmentType;
+
+    public override Item Copy() {
+        return Instantiate(this);
+    }
+
+    public override void Destroy() {
+        Destroy(this);
+    } 
 }

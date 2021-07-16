@@ -21,6 +21,9 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler , IDragHandler, IBeg
     [SerializeField]
     private Image image;
 
+    [SerializeField]
+    private Text amountText;
+
     private Item _item;
 
     public Item Item {
@@ -38,10 +41,27 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler , IDragHandler, IBeg
         }
     }
 
+    private int _amount;
+    public int Amount {
+        get { return _amount; }
+        set {
+            _amount = value;
+            amountText.enabled = _item != null && _item.MaximunStack > 1 && _amount > 1;
+            if(amountText.enabled) {
+                amountText.text = _amount.ToString();
+            }
+        }
+    }
+
+
     protected virtual void OnValidate()
     {
         if (image == null)
             image = GetComponent<Image>();
+
+        if (amountText == null)
+            amountText = GetComponentInChildren<Text>();
+
     }
 
     public virtual bool CanReceiveItem(Item item)

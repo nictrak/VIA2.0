@@ -97,8 +97,13 @@ public class InventoryManager : MonoBehaviour
                 }*/
 
                 Item draggingItem = draggingSlot.Item;
+                int draggingAmount = draggingSlot.Amount;
+
                 draggingSlot.Item = dropSlot.Item;
                 dropSlot.Item = draggingItem;
+                
+                draggingSlot.Amount = dropSlot.Amount;
+                dropSlot.Amount = draggingAmount;
             }
         }
     }

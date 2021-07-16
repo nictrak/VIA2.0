@@ -6,11 +6,25 @@ using System;
 public class Inventory : MonoBehaviour
 {
     [SerializeField]
+    private int _money;
+    [SerializeField]
     private List<Item> startingItems;
     [SerializeField]
     private Transform itemsParent;
     [SerializeField]
     private ItemSlot[] itemSlots;
+
+    public int Money {
+        get { return _money; }
+        set {
+            _money = value;
+            if(_money < 0){
+                _money = 0;
+            } else if (_money > 9999){
+                _money = 9999;
+            }
+        }
+    }
 
     public event Action<ItemSlot> OnRightClickEvent;
     public event Action<ItemSlot> OnBeginDragEvent;
@@ -27,7 +41,6 @@ public class Inventory : MonoBehaviour
             itemSlots[i].OnDragEvent += OnDragEvent;
             itemSlots[i].OnDropEvent += OnDropEvent;
         }
-        RefeshUI();
     }
 
     private void OnValidate()
@@ -35,21 +48,23 @@ public class Inventory : MonoBehaviour
         if (itemsParent != null)
             itemSlots = itemsParent.GetComponentsInChildren<ItemSlot>();
 
-        RefeshUI();
+        SetStartingItem();
     }
 
-    private void RefeshUI()
+    private void SetStartingItem()
     {
 
         int i = 0;
         for(; i < startingItems.Count && i < itemSlots.Length ; i++)
         {
-            itemSlots[i].Item = startingItems[i];
+            itemSlots[i].Item = startingItems[i].Copy();
+            itemSlots[i].Amount = 1;
         }
 
         for(;i < itemSlots.Length ; i++)
         {
             itemSlots[i].Item = null;
+            itemSlots[i].Amount = 0;
         }
 
     }
@@ -70,17 +85,13 @@ public class Inventory : MonoBehaviour
     }
 
     public bool AddItem(Item item){
-        /*if(IsFull())
-            return false;
-        items.Add(item);
-        RefeshUI();
-        return true;*/
         for (int i =0; i< itemSlots.Length ; i++)
         {
-            if(itemSlots[i].Item == null)
+            if(itemSlots[i].Item == null || (itemSlots[i].Item.ID == item.ID && itemSlots[i].Amount < itemSlots[i].Item.MaximunStack))
             {
                 //previousItem = itemSlots[i].Item;
                 itemSlots[i].Item = item;
+                itemSlots[i].Amount++;
                 return true;
             }
         }
@@ -89,22 +100,40 @@ public class Inventory : MonoBehaviour
     }
 
     public bool RemoveItem(Item item){
-        /*if(items.Remove(item)){
-            RefeshUI();
-            return true;
-        }
-        return false;*/
         for (int i =0; i< itemSlots.Length ; i++)
         {
             if(itemSlots[i].Item == item)
             {
                 //previousItem = itemSlots[i].Item;
-                itemSlots[i].Item = null;
+                itemSlots[i].Amount--;
+                if(itemSlots[i].Amount == 0) {
+                    itemSlots[i].Item = null;
+                }
                 return true;
             }
         }
         //previousItem = null;
         return false;
+    }
+
+    public Item RemoveItem(string itemID){
+        for (int i =0; i< itemSlots.Length ; i++)
+        {
+            Item item = itemSlots[i].Item;
+            if(item != null){
+                if(item.ID == itemID)
+                {
+                    //previousItem = itemSlots[i].Item;
+                    itemSlots[i].Amount--;
+                    if(itemSlots[i].Amount == 0) {
+                        itemSlots[i].Item = null;
+                    }
+                    return item;
+                }
+            }
+        }
+        //previousItem = null;
+        return null;
     }
 
 }
