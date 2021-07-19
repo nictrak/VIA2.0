@@ -46,9 +46,13 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler , IDragHandler, IBeg
         get { return _amount; }
         set {
             _amount = value;
-            amountText.enabled = _item != null && _item.MaximunStack > 1 && _amount > 1;
-            if(amountText.enabled) {
-                amountText.text = _amount.ToString();
+            if(amountText != null)
+            {
+                amountText.enabled = _item != null && _item.MaximunStack > 1 && _amount > 1;
+                if (amountText.enabled)
+                {
+                    amountText.text = _amount.ToString();
+                }
             }
         }
     }

@@ -9,9 +9,12 @@ public abstract class Dialogue : MonoBehaviour
     [SerializeField]
     [Multiline]
     protected string dialogueContent;
+    [SerializeField]
+    protected bool isGoNext;
 
     public string TalkerName { get => talkerName; set => talkerName = value; }
     public string DialogueContent { get => dialogueContent; set => dialogueContent = value; }
+    public bool IsGoNext { get => isGoNext; set => isGoNext = value; }
 
     // Start is called before the first frame update
     void Start()
