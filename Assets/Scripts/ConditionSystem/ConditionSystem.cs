@@ -22,6 +22,14 @@ public class ConditionSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+    }
+    public bool GetCondition(string topic)
+    {
+        if (ConditionHash.ContainsKey(topic))
+        {
+            return ConditionHash[topic];
+        }
+        return false;
     }
 }
