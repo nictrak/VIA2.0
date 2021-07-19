@@ -5,6 +5,7 @@ using UnityEngine;
 public class ConditionSystem : MonoBehaviour
 {
     public static Dictionary<string, bool> ConditionHash;
+    [SerializeField]
     private List<string> conditionTopics;
     // Start is called before the first frame update
     void Start()
@@ -32,4 +33,15 @@ public class ConditionSystem : MonoBehaviour
         }
         return false;
     }
+    public static void SetCondition(string topic, bool value)
+    {
+        if (ConditionHash.ContainsKey(topic))
+        {
+            ConditionHash[topic] = value;
+        }
+        else
+        {
+            ConditionHash.Add(topic, value);
+        }
+    } 
 }

@@ -11,7 +11,8 @@ public abstract class Dialogue : MonoBehaviour
     protected string dialogueContent;
     [SerializeField]
     protected bool isGoNext;
-
+    [SerializeField]
+    protected List<string> makeTrueConditionTopics;
     public string TalkerName { get => talkerName; set => talkerName = value; }
     public string DialogueContent { get => dialogueContent; set => dialogueContent = value; }
     public bool IsGoNext { get => isGoNext; set => isGoNext = value; }
@@ -30,4 +31,11 @@ public abstract class Dialogue : MonoBehaviour
     public abstract Dialogue GetNextDialogue(int param);
     public abstract List<string> GetChoicesString();
     public abstract bool IsClicknext();
+    public void MakeConditionTrue()
+    {
+        for(int i = 0; i < makeTrueConditionTopics.Count; i++)
+        {
+            ConditionSystem.SetCondition(makeTrueConditionTopics[i], true);
+        }
+    }
 }

@@ -37,10 +37,14 @@ public class Talker : MonoBehaviour
     }
     public bool NextTalk(int param)
     {
+        currentDialogue.MakeConditionTrue();
         currentDialogue = currentDialogue.GetNextDialogue(param);
-        while (currentDialogue.IsGoNext)
+        if (currentDialogue != null)
         {
-            currentDialogue = currentDialogue.GetNextDialogue(0);
+            while (currentDialogue.IsGoNext)
+            {
+                currentDialogue = currentDialogue.GetNextDialogue(0);
+            }
         }
         Talk();
         if(currentDialogue == null)
