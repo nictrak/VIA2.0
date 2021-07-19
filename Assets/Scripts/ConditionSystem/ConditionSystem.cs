@@ -27,6 +27,7 @@ public class ConditionSystem : MonoBehaviour
     }
     public static bool GetCondition(string topic)
     {
+        if (ConditionHash == null) return false;
         if (ConditionHash.ContainsKey(topic))
         {
             return ConditionHash[topic];
