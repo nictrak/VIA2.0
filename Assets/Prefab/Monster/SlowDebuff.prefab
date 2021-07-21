@@ -30,6 +30,53 @@ Transform:
   m_Father: {fileID: 7000904033944838490}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &987756244
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 987756245}
+  - component: {fileID: 987756246}
+  m_Layer: 0
+  m_Name: EnemyTarget
+  m_TagString: EnemyTarget
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &987756245
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987756244}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7000904033944838490}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &987756246
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987756244}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.1
 --- !u!1 &6015595940070885954
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,7 +215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 6
   NormalNextState: 3
-  fleeRange: {fileID: 7000904032712114227}
+  fleeRange: {fileID: 397920582}
 --- !u!1 &7000904032515519400
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,7 +330,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 1
   NormalNextState: 3
-  nextStateRange: {fileID: 7000904033806837122}
+  nextStateRange: {fileID: 1245999426}
 --- !u!1 &7000904032712114228
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,7 +341,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7000904032712114225}
   - component: {fileID: 7000904032712114226}
-  - component: {fileID: 7000904032712114227}
+  - component: {fileID: 397920582}
   m_Layer: 0
   m_Name: FleeRange
   m_TagString: Untagged
@@ -342,7 +389,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 8, y: 8}
   m_EdgeRadius: 0
---- !u!114 &7000904032712114227
+--- !u!114 &397920582
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -351,9 +398,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7000904032712114228}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d998e1fbe7eed14995c165fba22ab6d, type: 3}
+  m_Script: {fileID: 11500000, guid: bf52656b99340fc45a6b2cd2520008f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tagTarget: PlayerTarget
 --- !u!1 &7000904032971910821
 GameObject:
   m_ObjectHideFlags: 0
@@ -436,8 +484,8 @@ MonoBehaviour:
   delayFrame: 40
   velocity: 0.1
   outerRangeNextState: 1
-  outerRange: {fileID: 7000904033806837122}
-  innerRange: {fileID: 7000904032712114227}
+  outerRange: {fileID: 1245999426}
+  innerRange: {fileID: 397920582}
 --- !u!1 &7000904033632237735
 GameObject:
   m_ObjectHideFlags: 0
@@ -594,7 +642,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7000904033806837124}
   - component: {fileID: 7000904033806837123}
-  - component: {fileID: 7000904033806837122}
+  - component: {fileID: 1245999426}
   m_Layer: 0
   m_Name: ShootRange
   m_TagString: Untagged
@@ -642,7 +690,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 20, y: 20}
   m_EdgeRadius: 0
---- !u!114 &7000904033806837122
+--- !u!114 &1245999426
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -651,9 +699,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7000904033806837125}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d998e1fbe7eed14995c165fba22ab6d, type: 3}
+  m_Script: {fileID: 11500000, guid: bf52656b99340fc45a6b2cd2520008f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tagTarget: PlayerTarget
 --- !u!1 &7000904033939796323
 GameObject:
   m_ObjectHideFlags: 0
@@ -736,6 +785,7 @@ Transform:
   - {fileID: 7000904032971910820}
   - {fileID: 7000904033939796322}
   - {fileID: 674163032}
+  - {fileID: 987756245}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -936,6 +986,7 @@ MonoBehaviour:
   - dead
   isHurtBreak: 0
   isHaveEightDirection: 1
+  mostOuterRange: {fileID: 1245999426}
 --- !u!114 &7000904033944838485
 MonoBehaviour:
   m_ObjectHideFlags: 0
