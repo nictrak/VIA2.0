@@ -3,12 +3,12 @@ using UnityEngine.UI;
 
 public class InventoryManager : MonoBehaviour
 {
-    [SerializeField]
-    private Inventory inventory;
-    [SerializeField]
-    private EquipmentPanel equipmentPanel;
+    public Inventory Inventory;
+    public EquipmentPanel EquipmentPanel;
     [SerializeField]
     private ShortcutPanel shortcutPanel;
+    [SerializeField]
+    private ItemSaveManager itemSaveManager;
     [SerializeField]
     private Image draggableItem;
 
@@ -19,24 +19,36 @@ public class InventoryManager : MonoBehaviour
 
         //Setup Events
         //Right Click
-        inventory.OnRightClickEvent += Equip;
-        equipmentPanel.OnRightClickEvent += Unequip;
+        Inventory.OnRightClickEvent += Equip;
+        EquipmentPanel.OnRightClickEvent += Unequip;
         //Begin Drag
-        inventory.OnBeginDragEvent += BeginDrag;
-        equipmentPanel.OnBeginDragEvent += BeginDrag;
+        Inventory.OnBeginDragEvent += BeginDrag;
+        EquipmentPanel.OnBeginDragEvent += BeginDrag;
         shortcutPanel.OnBeginDragEvent += BeginDrag;
         //End Drag
-        inventory.OnEndDragEvent += EndDrag;
-        equipmentPanel.OnEndDragEvent += EndDrag;
+        Inventory.OnEndDragEvent += EndDrag;
+        EquipmentPanel.OnEndDragEvent += EndDrag;
         shortcutPanel.OnEndDragEvent += EndDrag;
         //Drag
-        inventory.OnDragEvent += Drag;
-        equipmentPanel.OnDragEvent += Drag;
+        Inventory.OnDragEvent += Drag;
+        EquipmentPanel.OnDragEvent += Drag;
         shortcutPanel.OnDragEvent += Drag;
         //Drop
-        inventory.OnDropEvent += Drop;
-        equipmentPanel.OnDropEvent += Drop;
+        Inventory.OnDropEvent += Drop;
+        EquipmentPanel.OnDropEvent += Drop;
         shortcutPanel.OnDropEvent += Drop;
+
+        //if(itemSaveManager != null){
+            itemSaveManager.LoadEquipment(this);
+            itemSaveManager.LoadInventory(this);
+        //}
+    }
+
+    private void OnDestroy() {
+        //if(itemSaveManager != null){
+            itemSaveManager.SaveEquipment(this);
+            itemSaveManager.SaveInventory(this);
+        //}
     }
 
     private void Equip(ItemSlot itemSlot)
@@ -110,39 +122,41 @@ public class InventoryManager : MonoBehaviour
 
     public void Equip(EquippableItem item)
     {
-        if(inventory.RemoveItem(item))
+        if(Inventory.RemoveItem(item))
         {
-            EquippableItem previousItem;
-            if(equipmentPanel.AddItem(item, out previousItem))
+            EquippableItem previousItem = EquipmentPanel.GetEquippedItem(item.EquipmentType);
+            if(previousItem != null){
+                Unequip(previousItem);
+                EquipmentPanel.AddItem(item);
+            } else if(!EquipmentPanel.AddItem(item))
             {
-                if(previousItem != null)
-                {
-                    inventory.AddItem(previousItem);
-                }
-            } else {
-                inventory.AddItem(item);
+                Inventory.AddItem(item);
             }
         }
+    }
+    public void LoadEquip(EquippableItem item, int amount)
+    {
+        EquipmentPanel.SetItem(item, amount);
     }
 
     public void Unequip(EquippableItem item)
     {
-        if(!inventory.IsFull() && equipmentPanel.RemoveItem(item))
+        if(!Inventory.IsFull() && EquipmentPanel.RemoveItem(item))
         {
-            inventory.AddItem(item);
+            Inventory.AddItem(item);
         }
     }
     private void ChangeWeapon()
     {
         PlayerAttackController playerAttackController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerAttackController>();
-        playerAttackController.ChangeWeapon(equipmentPanel.GetEquipedWeapon());
+        playerAttackController.ChangeWeapon(EquipmentPanel.GetEquipedWeapon());
     }
     private void Update()
     {
-        if(equipmentPanel.GetItemWeapon() != lastWeaponItem)
+        if(EquipmentPanel.GetItemWeapon() != lastWeaponItem)
         {
             ChangeWeapon();
         }
-        lastWeaponItem = equipmentPanel.GetItemWeapon();
+        lastWeaponItem = EquipmentPanel.GetItemWeapon();
     }
 }
