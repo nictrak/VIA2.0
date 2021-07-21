@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4adb36c8bd3a07549a9f41eb0b3c0e70, type: 3}
+  m_Name: Void
+  m_EditorClassIdentifier: 
+  id: 1d6e52ca43c517d47a90971b4205bc78
+  Name: Void
+  Icon: {fileID: 8165653263662851408, guid: cf05b2614ab18c649872a9d7758bcde8, type: 3}
+  MaximunStack: 1
