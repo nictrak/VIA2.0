@@ -9,9 +9,9 @@ public class GeneralChargeState : MonsterStateBehaviour
     private MonsterStateMachine.MonsterState outerRangeNextState;
     
     [SerializeField]
-    private MonsterRange innerRange;
+    private TriggerRange innerRange;
     [SerializeField]
-    private MonsterRange outerRange;
+    private TriggerRange outerRange;
 
     [SerializeField]
     private float velocity;
@@ -26,7 +26,7 @@ public class GeneralChargeState : MonsterStateBehaviour
 
     public override MonsterStateMachine.MonsterState RunState()
     {
-        if (innerRange.IsHitPlayer)
+        if (!innerRange.IsEmpty())
         {
             return NormalNextState;
         } else if (rgbody.position == targetPosition)
@@ -51,7 +51,7 @@ public class GeneralChargeState : MonsterStateBehaviour
     public override void StartState()
     {
         //set Distination
-        targetPosition = outerRange.TargetPosition;
+        targetPosition = GetTarget().transform.position;
     }
 
     // Start is called before the first frame update
