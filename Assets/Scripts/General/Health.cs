@@ -12,6 +12,8 @@ public class Health : MonoBehaviour
     private RectTransform healthBar;
     [SerializeField]
     private GameObject hitEffectPrefab;
+    [SerializeField]
+    private string charName;
 
     private bool isHurt;
     private bool isAlreadyHurt;
@@ -69,7 +71,11 @@ public class Health : MonoBehaviour
         if(currentHealth <= 0)
         {
             currentHealth = 0;
-            isDead = true;
+            if (!isDead)
+            {
+                QuestSystem.SendQuestMessage("Kill " + charName);
+                isDead = true;
+            }
         }
         if(currentHealth > maxHealth)
         {

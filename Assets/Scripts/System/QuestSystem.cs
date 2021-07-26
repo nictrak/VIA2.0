@@ -28,4 +28,17 @@ public class QuestSystem : MonoBehaviour
     {
         Quests.Remove(quest);
     }
+    public static void SendQuestMessage(string message)
+    {
+        for(int i = 0; i < Quests.Count; i++)
+        {
+            Quests[i].ReceiveMessage(message);
+        }
+    }
+    public static string GetTopQuestDescription()
+    {
+        if (Quests == null) return "";
+        if (Quests.Count == 0) return "";
+        return Quests[0].Data.Description + " ("+ Quests[0].CurrentProgress + "/"+ Quests[0].Data.GoalProgress +")";
+    }
 }

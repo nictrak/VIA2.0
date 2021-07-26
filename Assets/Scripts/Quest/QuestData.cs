@@ -12,16 +12,17 @@ public class QuestData : ScriptableObject
     [SerializeField]
     private string triggerMessage;
     [SerializeField]
-    private List<string> MakeTrueAfterComplete;
+    private List<string> makeTrueAfterComplete;
     [SerializeField]
-    private List<string> MakeFalseAfterComplete;
+    private List<string> makeFalseAfterComplete;
     [SerializeField]
+    [Multiline]
     private string description;
 
     public int InitialProgress { get => initialProgress; set => initialProgress = value; }
     public int GoalProgress { get => goalProgress; set => goalProgress = value; }
-    public List<string> MakeTrueAfterComplete1 { get => MakeTrueAfterComplete; set => MakeTrueAfterComplete = value; }
-    public List<string> MakeFalseAfterComplete1 { get => MakeFalseAfterComplete; set => MakeFalseAfterComplete = value; }
     public string TriggerMessage { get => triggerMessage; set => triggerMessage = value; }
     public string Description { get => description; set => description = value; }
+    public List<string> MakeTrueAfterComplete { get => makeTrueAfterComplete; set => makeTrueAfterComplete = value; }
+    public List<string> MakeFalseAfterComplete { get => makeFalseAfterComplete; set => makeFalseAfterComplete = value; }
 }

@@ -33,11 +33,19 @@ public class Talker : MonoBehaviour
     }
     public void Talk()
     {
+        if(currentDialogue != null)
+        {
+            while (currentDialogue.IsGoNext)
+            {
+                currentDialogue = currentDialogue.GetNextDialogue(0);
+            }
+        }
         dialogueController.ShowDialogue(currentDialogue);
     }
     public bool NextTalk(int param)
     {
         currentDialogue.MakeConditionTrue();
+        currentDialogue.AssignQuest();
         currentDialogue = currentDialogue.GetNextDialogue(param);
         if (currentDialogue != null)
         {
@@ -64,9 +72,5 @@ public class Talker : MonoBehaviour
     public void SetToInitialDialogue()
     {
         currentDialogue = initialDialogue;
-        while (currentDialogue.IsGoNext)
-        {
-            currentDialogue = currentDialogue.GetNextDialogue(0);
-        }
     }
 }

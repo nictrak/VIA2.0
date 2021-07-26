@@ -48,6 +48,9 @@ public abstract class Dialogue : MonoBehaviour
     }
     public void AssignQuest()
     {
-
+        for(int i = 0; i < assignedQuest.Count; i++)
+        {
+            QuestSystem.AddNewQuest(assignedQuest[i]);
+        }
     }
 }
