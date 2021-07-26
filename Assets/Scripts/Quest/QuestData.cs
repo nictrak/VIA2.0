@@ -11,4 +11,8 @@ public class QuestData : ScriptableObject
     private int goalProgress;
     [SerializeField]
     private Watcher watcherPrefab;
+    [SerializeField]
+    private List<string> MakeTrueAfterComplete;
+    [SerializeField]
+    private List<string> MakeFalseAfterComplete;
 }

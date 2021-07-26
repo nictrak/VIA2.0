@@ -5,8 +5,7 @@ public class EquipmentPanel : MonoBehaviour
 {
     [SerializeField]
     private Transform equipmentSlotsParent;
-    [SerializeField]
-    private EquipmentSlot[] equipmentSlots;
+    public EquipmentSlot[] EquipmentSlots;
     [SerializeField]
     private int weaponSlotIndex;
 
@@ -17,43 +16,71 @@ public class EquipmentPanel : MonoBehaviour
     public event Action<ItemSlot> OnDropEvent;
 
     private void Start() {
-        for ( int i = 0 ; i < equipmentSlots.Length ; i++ )
+        for ( int i = 0 ; i < EquipmentSlots.Length ; i++ )
         {
-            equipmentSlots[i].OnRightClickEvent += OnRightClickEvent;
-            equipmentSlots[i].OnBeginDragEvent += OnBeginDragEvent;
-            equipmentSlots[i].OnEndDragEvent += OnEndDragEvent;
-            equipmentSlots[i].OnDragEvent += OnDragEvent;
-            equipmentSlots[i].OnDropEvent += OnDropEvent;
+            EquipmentSlots[i].OnRightClickEvent += OnRightClickEvent;
+            EquipmentSlots[i].OnBeginDragEvent += OnBeginDragEvent;
+            EquipmentSlots[i].OnEndDragEvent += OnEndDragEvent;
+            EquipmentSlots[i].OnDragEvent += OnDragEvent;
+            EquipmentSlots[i].OnDropEvent += OnDropEvent;
         }
     }
 
     private void OnValidate()
     {
-        equipmentSlots = equipmentSlotsParent.GetComponentsInChildren<EquipmentSlot>();
+        EquipmentSlots = equipmentSlotsParent.GetComponentsInChildren<EquipmentSlot>();
     }
 
-    public bool AddItem(EquippableItem item, out EquippableItem previousItem)
+    public EquippableItem GetEquippedItem(EquipmentType equipmentType)
     {
-        for (int i =0; i< equipmentSlots.Length ; i++)
+        for (int i =0; i< EquipmentSlots.Length ; i++)
         {
-            if(equipmentSlots[i].EquipmentType == item.EquipmentType)
+            if(EquipmentSlots[i].EquipmentType == equipmentType)
             {
-                previousItem = (EquippableItem) equipmentSlots[i].Item;
-                equipmentSlots[i].Item = item;
+                return (EquippableItem) EquipmentSlots[i].Item;
+            }
+        }
+        return null;
+    }
+
+    public bool AddItem(EquippableItem item)
+    {
+        for (int i =0; i< EquipmentSlots.Length ; i++)
+        {
+            if(EquipmentSlots[i].EquipmentType == item.EquipmentType)
+            {
+                EquipmentSlots[i].Item = item;
+                EquipmentSlots[i].Amount++;
                 return true;
             }
         }
-        previousItem = null;
+        return false;
+    }
+
+    public bool SetItem(EquippableItem item, int amount)
+    {
+        for (int i =0; i< EquipmentSlots.Length ; i++)
+        {
+            if(EquipmentSlots[i].EquipmentType == item.EquipmentType)
+            {
+                EquipmentSlots[i].Item = item;
+                EquipmentSlots[i].Amount = amount;
+                return true;
+            }
+        }
         return false;
     }
 
     public bool RemoveItem(EquippableItem item)
     {
-        for (int i =0; i< equipmentSlots.Length ; i++)
+        for (int i =0; i< EquipmentSlots.Length ; i++)
         {
-            if(equipmentSlots[i].Item == item)
+            if(EquipmentSlots[i].Item == item)
             {
-                equipmentSlots[i].Item = null;
+                EquipmentSlots[i].Amount--;
+                if(EquipmentSlots[i].Amount == 0) {
+                    EquipmentSlots[i].Item = null;
+                }
                 return true;
             }
         }
@@ -61,10 +88,10 @@ public class EquipmentPanel : MonoBehaviour
     }
     public Weapon GetEquipedWeapon()
     {
-        return ((WeaponItem)equipmentSlots[weaponSlotIndex].Item).weaponPrefab;
+        return ((WeaponItem)EquipmentSlots[weaponSlotIndex].Item).weaponPrefab;
     }
     public WeaponItem GetItemWeapon()
     {
-        return (WeaponItem)equipmentSlots[weaponSlotIndex].Item;
+        return (WeaponItem)EquipmentSlots[weaponSlotIndex].Item;
     }
 }
