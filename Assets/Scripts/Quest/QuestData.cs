@@ -10,9 +10,15 @@ public class QuestData : ScriptableObject
     [SerializeField]
     private int goalProgress;
     [SerializeField]
-    private Watcher watcherPrefab;
+    private string triggerMessage;
     [SerializeField]
     private List<string> MakeTrueAfterComplete;
     [SerializeField]
     private List<string> MakeFalseAfterComplete;
+
+    public int InitialProgress { get => initialProgress; set => initialProgress = value; }
+    public int GoalProgress { get => goalProgress; set => goalProgress = value; }
+    public List<string> MakeTrueAfterComplete1 { get => MakeTrueAfterComplete; set => MakeTrueAfterComplete = value; }
+    public List<string> MakeFalseAfterComplete1 { get => MakeFalseAfterComplete; set => MakeFalseAfterComplete = value; }
+    public string TriggerMessage { get => triggerMessage; set => triggerMessage = value; }
 }

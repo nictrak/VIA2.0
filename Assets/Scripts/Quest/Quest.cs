@@ -2,32 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Quest : MonoBehaviour
+public class Quest
 {
     private int currentProgress;
     private QuestData data;
-    private Watcher currentWatcher;
-    // Start is called before the first frame update
-    void Start()
+
+    public Quest(QuestData questData)
     {
-        
+        data = questData;
+        currentProgress = data.InitialProgress;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ReceiveMessage(string message)
     {
-        
-    }
-    public void IncreaseProgress()
-    {
-
+        if(message == data.TriggerMessage)
+        {
+            currentProgress += 1;
+            if(currentProgress == data.GoalProgress)
+            {
+                QuestSystem.RemoveQuest(this);
+            }
+        }
     }
     public void ResetProgress()
     {
-
-    }
-    public void CreateWatcher()
-    {
-
+        currentProgress = data.InitialProgress;
     }
 }

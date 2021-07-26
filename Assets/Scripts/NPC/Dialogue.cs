@@ -15,6 +15,8 @@ public abstract class Dialogue : MonoBehaviour
     protected List<string> makeTrueConditionTopics;
     [SerializeField]
     protected List<string> makeFalseConditionTopics;
+    [SerializeField]
+    protected List<QuestData> assignedQuest;
     public string TalkerName { get => talkerName; set => talkerName = value; }
     public string DialogueContent { get => dialogueContent; set => dialogueContent = value; }
     public bool IsGoNext { get => isGoNext; set => isGoNext = value; }
@@ -43,5 +45,9 @@ public abstract class Dialogue : MonoBehaviour
         {
             ConditionSystem.SetCondition(makeFalseConditionTopics[i], false);
         }
+    }
+    public void AssignQuest()
+    {
+
     }
 }
