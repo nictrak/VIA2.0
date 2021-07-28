@@ -49,9 +49,11 @@ public class Talker : MonoBehaviour
         currentDialogue = currentDialogue.GetNextDialogue(param);
         if (currentDialogue != null)
         {
+            currentDialogue.StartDialogue();
             while (currentDialogue.IsGoNext)
             {
                 currentDialogue = currentDialogue.GetNextDialogue(0);
+                currentDialogue.StartDialogue();
             }
         }
         Talk();

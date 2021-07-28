@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DialogueSingleNext : Dialogue
+public class ShopDialogue : Dialogue
 {
     [SerializeField]
     private Dialogue next;
-
     public override List<string> GetChoicesString()
     {
         return null;
@@ -19,23 +18,16 @@ public class DialogueSingleNext : Dialogue
 
     public override bool IsClicknext()
     {
-        return true;
+        return false;
     }
 
     public override void StartDialogue()
     {
-        
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        GameObject finded = GameObject.FindGameObjectWithTag("HUDController");
+        if(finded != null)
+        {
+            HudController hudCon = finded.GetComponent<HudController>();
+            hudCon.OpenShop();
+        }
     }
 }

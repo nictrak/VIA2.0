@@ -29,6 +29,11 @@ public class ConditionalDialogue : Dialogue
         return true;
     }
 
+    public override void StartDialogue()
+    {
+
+    }
+
     // Start is called before the first frame update
     void Start()
     {

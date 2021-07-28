@@ -46,6 +46,7 @@ public abstract class Dialogue : MonoBehaviour
             ConditionSystem.SetCondition(makeFalseConditionTopics[i], false);
         }
     }
+    public abstract void StartDialogue();
     public void AssignQuest()
     {
         for(int i = 0; i < assignedQuest.Count; i++)

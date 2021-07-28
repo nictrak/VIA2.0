@@ -23,6 +23,11 @@ public class DialogueMultipleChoices : Dialogue
         return false;
     }
 
+    public override void StartDialogue()
+    {
+        
+    }
+
     // Start is called before the first frame update
     void Start()
     {

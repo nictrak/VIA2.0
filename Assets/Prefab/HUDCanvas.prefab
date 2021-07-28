@@ -7203,6 +7203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryPanel: {fileID: 3472931758508167940}
+  shopPanel: {fileID: 0}
   inventoryKey: 105
 --- !u!1 &3472931759617255541
 GameObject:
