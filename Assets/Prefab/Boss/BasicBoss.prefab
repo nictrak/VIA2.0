@@ -48,6 +48,7 @@ MonoBehaviour:
   energyCost: 0
   delayFrame: 25
   target: {fileID: 4572711834326518909}
+  animator: {fileID: 0}
 --- !u!1 &4572711833796270841
 GameObject:
   m_ObjectHideFlags: 0
@@ -1091,7 +1092,7 @@ GameObject:
   - component: {fileID: 4572711835351186455}
   m_Layer: 8
   m_Name: BossController
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1245,6 +1246,7 @@ MonoBehaviour:
   maxHealth: 100
   initialHealth: 100
   healthBar: {fileID: 0}
+  hitEffectPrefab: {fileID: 0}
 --- !u!114 &4572711835351186452
 MonoBehaviour:
   m_ObjectHideFlags: 0

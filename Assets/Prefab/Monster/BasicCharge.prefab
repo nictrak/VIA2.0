@@ -246,7 +246,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 1
   NormalNextState: 10
-  nextStateRange: {fileID: 337725380821697431}
+  nextStateRange: {fileID: 0}
 --- !u!1 &337725380278830584
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,7 +399,7 @@ MonoBehaviour:
   NormalNextState: 9
   attackFrame: 1
   damage: 20
-  attackRange: {fileID: 337725380401635202}
+  attackRange: {fileID: 0}
   isKnock: 1
   knockVelocity: 0.3
   knockFrame: 7
@@ -885,8 +885,8 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6618791823218120240}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1631200095
+  m_SortingLayer: 2
   m_SortingOrder: 35
 --- !u!70 &6618791823218120201
 CapsuleCollider2D:
@@ -940,6 +940,7 @@ MonoBehaviour:
   - charge
   isHurtBreak: 0
   isHaveEightDirection: 0
+  mostOuterRange: {fileID: 0}
 --- !u!114 &337725379694729641
 MonoBehaviour:
   m_ObjectHideFlags: 0
