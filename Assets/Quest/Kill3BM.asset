@@ -15,6 +15,7 @@ MonoBehaviour:
   initialProgress: 0
   goalProgress: 3
   triggerMessage: Kill BasicMelee
-  makeTrueAfterComplete: []
+  makeTrueAfterComplete:
+  - Test02
   makeFalseAfterComplete: []
   description: Kill three Basic Melee
