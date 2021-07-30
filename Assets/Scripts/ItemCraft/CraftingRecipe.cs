@@ -7,5 +7,6 @@ public class CraftingRecipe: ScriptableObject
 {
     public string material1;
     public string material2;
+    public string resultName;
     public GameObject resultPrefab;
 }
