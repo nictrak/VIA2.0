@@ -12,7 +12,7 @@ public class Talker : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentDialogue = initialDialogue;
+        SetToInitialDialogue();
     }
 
     // Update is called once per frame
@@ -33,15 +33,33 @@ public class Talker : MonoBehaviour
     }
     public void Talk()
     {
+        if(currentDialogue != null)
+        {
+            while (currentDialogue.IsGoNext)
+            {
+                currentDialogue = currentDialogue.GetNextDialogue(0);
+            }
+        }
         dialogueController.ShowDialogue(currentDialogue);
     }
     public bool NextTalk(int param)
     {
+        currentDialogue.MakeConditionTrue();
+        currentDialogue.AssignQuest();
         currentDialogue = currentDialogue.GetNextDialogue(param);
+        if (currentDialogue != null)
+        {
+            currentDialogue.StartDialogue();
+            while (currentDialogue.IsGoNext)
+            {
+                currentDialogue = currentDialogue.GetNextDialogue(0);
+                currentDialogue.StartDialogue();
+            }
+        }
         Talk();
         if(currentDialogue == null)
         {
-            currentDialogue = initialDialogue;
+            SetToInitialDialogue();
             return false;
         }
         else
@@ -52,5 +70,9 @@ public class Talker : MonoBehaviour
     public bool IsClickNext()
     {
         return currentDialogue.IsClicknext();
+    }
+    public void SetToInitialDialogue()
+    {
+        currentDialogue = initialDialogue;
     }
 }

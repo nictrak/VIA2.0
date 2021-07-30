@@ -24,6 +24,7 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler , IDragHandler, IBeg
     [SerializeField]
     private Text amountText;
 
+    [SerializeField]
     private Item _item;
 
     public Item Item {
@@ -41,14 +42,19 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler , IDragHandler, IBeg
         }
     }
 
+    [SerializeField]
     private int _amount;
     public int Amount {
         get { return _amount; }
         set {
             _amount = value;
-            amountText.enabled = _item != null && _item.MaximunStack > 1 && _amount > 1;
-            if(amountText.enabled) {
-                amountText.text = _amount.ToString();
+            if(amountText != null)
+            {
+                amountText.enabled = _item != null && _item.MaximunStack > 1 && _amount > 1;
+                if (amountText.enabled)
+                {
+                    amountText.text = _amount.ToString();
+                }
             }
         }
     }

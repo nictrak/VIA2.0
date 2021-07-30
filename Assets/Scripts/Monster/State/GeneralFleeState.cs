@@ -5,7 +5,7 @@ using UnityEngine;
 public class GeneralFleeState : MonsterStateBehaviour
 {
     [SerializeField]
-    private MonsterRange fleeRange;
+    private TriggerRange fleeRange;
     private FleeController fleeController;
     private FlipToPlayer flipToPlayer;
     public override void ExitState()
@@ -16,7 +16,7 @@ public class GeneralFleeState : MonsterStateBehaviour
 
     public override MonsterStateMachine.MonsterState RunState()
     {
-        if (!fleeRange.IsHitPlayer)
+        if (fleeRange.IsEmpty())
         {
             return NormalNextState;
         }

@@ -35,7 +35,8 @@ public class GeneralAttackState : MonsterStateBehaviour
                 GetTarget().GetComponentInParent<Health>().TakeDamage(damage);
                 if (isKnock)
                 {
-                    GetTarget().GetComponent<PlayerKnockController>().StartKnock(transform.position, knockVelocity, knockFrame);
+                    PlayerKnockController knockController = GetTarget().GetComponent<PlayerKnockController>();
+                    if(knockController != null) knockController.StartKnock(transform.position, knockVelocity, knockFrame);
                 }
             }
             return NormalNextState;

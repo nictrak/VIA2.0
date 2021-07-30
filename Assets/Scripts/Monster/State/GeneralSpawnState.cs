@@ -14,12 +14,11 @@ public class GeneralSpawnState : MonsterStateBehaviour
     [SerializeField]
     private MonsterStateMachine.MonsterState outerRangeNextState;
     [SerializeField]
-    private MonsterRange outerRange;
+    private TriggerRange outerRange;
     [SerializeField]
-    private MonsterRange innerRange;
+    private TriggerRange innerRange;
 
     private int delayCounter;
-    private AIDestinationSetter destinationSetter;
 
     public override void ExitState()
     {
@@ -32,10 +31,10 @@ public class GeneralSpawnState : MonsterStateBehaviour
         {
             delayCounter = 0;
             NeedTarget spawned = Instantiate(spawnedPrefab);
-            spawned.SetTarget(transform.position, destinationSetter.target.transform.position, velocity);
+            spawned.SetTarget(transform.position, GetTarget().transform.position, velocity);
         }
         else delayCounter++;
-        if (innerRange.IsHitPlayer)
+        if (!innerRange.IsEmpty())
         {
             return NormalNextState;
         }
@@ -43,7 +42,7 @@ public class GeneralSpawnState : MonsterStateBehaviour
         {
             if (outerRange != null)
             {
-                if (!outerRange.IsHitPlayer)
+                if (outerRange.IsEmpty())
                 {
                     return outerRangeNextState;
                 }
@@ -61,7 +60,6 @@ public class GeneralSpawnState : MonsterStateBehaviour
     void Start()
     {
         delayCounter = 0;
-        destinationSetter = GetComponentInParent<AIDestinationSetter>();
     }
 
     // Update is called once per frame
