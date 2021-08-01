@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class TokenBasedSpawner : MonoBehaviour
 {
+    [SerializeField]
+    private TriggerRange innerRange;
+    [SerializeField]
+    private TriggerRange outerRange;
+    [SerializeField]
+    private GameObject spawnedPrefab;
     // Start is called before the first frame update
     void Start()
     {
