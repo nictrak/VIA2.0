@@ -8,6 +8,12 @@ public class DialogueMultipleChoices : Dialogue
     private List<Dialogue> nexts;
     [SerializeField]
     private List<string> choicesString;
+
+    public override void EndDialogue()
+    {
+        
+    }
+
     public override List<string> GetChoicesString()
     {
         return choicesString;

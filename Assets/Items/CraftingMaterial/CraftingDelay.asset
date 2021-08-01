@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: CraftingDelay
   m_EditorClassIdentifier: 
   id: 
-  Name: 
-  Icon: {fileID: 0}
+  Name: CraftingDelay
+  Icon: {fileID: 21300000, guid: 1d237283c91cc0b47bc23a2e0bbe253d, type: 3}
   MaximunStack: 1
