@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material1: boneCorpse
   material2: spirit
+  resultName: ghostBullZombie
   resultPrefab: {fileID: 3404106456946982286, guid: b7b9f65f67907f64ba4d8a5b1fb47709,
     type: 3}

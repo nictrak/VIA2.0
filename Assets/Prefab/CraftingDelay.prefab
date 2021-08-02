@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityVelocity: 0.01
-  isMove: 1
+  isMove: 0
 --- !u!114 &1782124838949114625
 MonoBehaviour:
   m_ObjectHideFlags: 0
