@@ -12,29 +12,31 @@ public class ItemPickable : MonoBehaviour
     private bool isInRange;
 
     private void Update() {
+
         if (isInRange && Input.GetKeyDown(itemPickupKeyCode))
         {
             Item itemToAdd = item.Copy();
             if (!inventory.AddItem(itemToAdd)) {
                 itemToAdd.Destroy();
+                Destroy(gameObject);
             }
-            Destroy(gameObject);
+            
         }
     }
 
-     private void OnValidate()
+    private void Start()
     {
         if(inventory == null)
         {
-            inventory = GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>();
+            inventory = Resources.FindObjectsOfTypeAll<Inventory>()[0];
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        isInRange = true;
+        if(other.tag == "PlayerTarget") isInRange = true;
     }
 
     private void OnTriggerExit2D(Collider2D other) {
-        isInRange = false;
+        if(other.tag == "PlayerTarget") isInRange = false;
     }
 }
