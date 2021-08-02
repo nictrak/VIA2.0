@@ -3,11 +3,12 @@
 public class ItemPickable : MonoBehaviour
 {
     [SerializeField] Item item;
+    public Item Item { get => item; set => item = value; }
     [SerializeField] Inventory inventory;
     [SerializeField] KeyCode itemPickupKeyCode = KeyCode.F;
-    [SerializeField]
     
 
+    [SerializeField]
     private bool isInRange;
 
     private void Update() {
@@ -18,6 +19,14 @@ public class ItemPickable : MonoBehaviour
                 itemToAdd.Destroy();
             }
             Destroy(gameObject);
+        }
+    }
+
+     private void OnValidate()
+    {
+        if(inventory == null)
+        {
+            inventory = GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>();
         }
     }
 

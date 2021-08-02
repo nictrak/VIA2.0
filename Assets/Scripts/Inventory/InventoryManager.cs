@@ -38,17 +38,17 @@ public class InventoryManager : MonoBehaviour
         EquipmentPanel.OnDropEvent += Drop;
         shortcutPanel.OnDropEvent += Drop;
 
-        //if(itemSaveManager != null){
+        /*if(itemSaveManager != null){
             itemSaveManager.LoadEquipment(this);
             itemSaveManager.LoadInventory(this);
-        //}
+        }*/
     }
 
     private void OnDestroy() {
-        //if(itemSaveManager != null){
+        /*if(itemSaveManager != null){
             itemSaveManager.SaveEquipment(this);
             itemSaveManager.SaveInventory(this);
-        //}
+        }*/
     }
 
     private void Equip(ItemSlot itemSlot)
