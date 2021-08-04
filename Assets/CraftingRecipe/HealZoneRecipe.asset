@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material1: Seed
   material2: Life
+  resultName: HealZone
   resultPrefab: {fileID: 2459201674602064576, guid: 3e464a012fe289d41b4c33073fc09861,
     type: 3}

@@ -3,10 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class WarpPoint : MonoBehaviour
+public class ConditionalWarp : MonoBehaviour
 {
     [SerializeField]
     private string nextLevel;
+    [SerializeField]
+    private Condition condition;
+    [SerializeField]
+    private bool IsPassIfTrue;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,14 +24,11 @@ public class WarpPoint : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "PlayerTarget")
+        if (collision.gameObject.tag == "PlayerTarget")
         {
-            if(collision.gameObject.GetComponent<PlayerIdentity>() != null)
+            if (condition.IsPass() == IsPassIfTrue)
             {
-                if (GameObject.FindGameObjectsWithTag("Enemy").Length <= 0)
-                {
-                    SceneManager.LoadScene(nextLevel);
-                }
+                SceneManager.LoadScene(nextLevel);
             }
         }
     }

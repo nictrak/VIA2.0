@@ -10,6 +10,12 @@ public class ConditionalDialogue : Dialogue
     private Dialogue falseNext;
     [SerializeField]
     private Condition condition;
+
+    public override void EndDialogue()
+    {
+        
+    }
+
     public override List<string> GetChoicesString()
     {
         return null;

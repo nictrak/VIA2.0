@@ -47,6 +47,7 @@ public abstract class Dialogue : MonoBehaviour
         }
     }
     public abstract void StartDialogue();
+    public abstract void EndDialogue();
     public void AssignQuest()
     {
         for(int i = 0; i < assignedQuest.Count; i++)

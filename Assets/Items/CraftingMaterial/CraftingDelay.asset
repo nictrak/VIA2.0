@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e034655493a7ee542a79a2806541d56f, type: 3}
-  m_Name: SummonBullRecipe
+  m_Script: {fileID: 11500000, guid: 4adb36c8bd3a07549a9f41eb0b3c0e70, type: 3}
+  m_Name: CraftingDelay
   m_EditorClassIdentifier: 
-  material1: boneCorpse
-  material2: spirit
-  resultName: ghostBullZombie
-  resultPrefab: {fileID: 3404106456946982286, guid: b7b9f65f67907f64ba4d8a5b1fb47709,
-    type: 3}
+  id: 
+  Name: CraftingDelay
+  Icon: {fileID: 21300000, guid: 1d237283c91cc0b47bc23a2e0bbe253d, type: 3}
+  MaximunStack: 1

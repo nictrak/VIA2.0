@@ -6,6 +6,17 @@ public class ShopDialogue : Dialogue
 {
     [SerializeField]
     private Dialogue next;
+
+    public override void EndDialogue()
+    {
+        GameObject finded = GameObject.FindGameObjectWithTag("HUDController");
+        if (finded != null)
+        {
+            HudController hudCon = finded.GetComponent<HudController>();
+            hudCon.CloseShop();
+        }
+    }
+
     public override List<string> GetChoicesString()
     {
         return null;
