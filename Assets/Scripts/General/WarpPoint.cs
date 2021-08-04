@@ -22,9 +22,12 @@ public class WarpPoint : MonoBehaviour
     {
         if(collision.gameObject.tag == "PlayerTarget")
         {
-            if (GameObject.FindGameObjectsWithTag("Enemy").Length <= 0)
+            if(collision.gameObject.GetComponent<PlayerIdentity>() != null)
             {
-                SceneManager.LoadScene(nextLevel);
+                if (GameObject.FindGameObjectsWithTag("Enemy").Length <= 0)
+                {
+                    SceneManager.LoadScene(nextLevel);
+                }
             }
         }
     }
