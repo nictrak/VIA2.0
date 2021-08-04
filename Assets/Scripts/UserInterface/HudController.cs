@@ -11,35 +11,46 @@ public class HudController : MonoBehaviour
     private GameObject shopPanel;
     [SerializeField]
     private KeyCode inventoryKey;
+    [SerializeField]
+    private GameObject questsPanel;
+    [SerializeField]
+    private GameObject questPanel;
+    [SerializeField]
+    private KeyCode questKey;
 
-    private bool canInventoryToggle;
+    private bool canToggle;
     // Start is called before the first frame update
     void Start()
     {
         inventoryPanel.SetActive(false);
         shopPanel.SetActive(false);
-        canInventoryToggle = true;
+        canToggle = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(inventoryKey) && canInventoryToggle)
+        if (Input.GetKeyDown(inventoryKey) && canToggle)
         {
             inventoryPanel.SetActive(!inventoryPanel.activeSelf);
-        }    
+        }
+        if (Input.GetKeyDown(questKey) && canToggle)
+        {
+            questPanel.SetActive(!questPanel.activeSelf);
+            questsPanel.SetActive(!questsPanel.activeSelf);
+        }
     }
     public void OpenShop()
     {
         inventoryPanel.SetActive(true);
         shopPanel.SetActive(true);
-        canInventoryToggle = false;
+        canToggle = false;
     }
     public void CloseShop()
     {
         inventoryPanel.SetActive(false);
         shopPanel.SetActive(false);
-        canInventoryToggle = true;
+        canToggle = true;
     }
 
 }
