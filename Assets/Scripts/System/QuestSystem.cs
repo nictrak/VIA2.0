@@ -41,4 +41,15 @@ public class QuestSystem : MonoBehaviour
         if (Quests.Count == 0) return "";
         return Quests[0].Data.Description + " ("+ Quests[0].CurrentProgress + "/"+ Quests[0].Data.GoalProgress +")";
     }
+    public static string GetQuestDescriptionFromIndex(int index)
+    {
+        if (Quests == null) return "";
+        if (Quests.Count <= index) return "";
+        return Quests[index].Data.Description + " (" + Quests[index].CurrentProgress + "/" + Quests[index].Data.GoalProgress + ")";
+    }
+    public static int GetQuestsCount()
+    {
+        if (Quests == null) return 0;
+        else return Quests.Count;
+    }
 }
