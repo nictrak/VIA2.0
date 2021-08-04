@@ -7,6 +7,7 @@ public class ConditionSystem : MonoBehaviour
     public static Dictionary<string, bool> ConditionHash;
     [SerializeField]
     private List<string> conditionTopics;
+
     // Start is called before the first frame update
     void Start()
     {
