@@ -28,11 +28,11 @@ public class QuestSystem : MonoBehaviour
     {
         Quests.Remove(quest);
     }
-    public static void SendQuestMessage(string message)
+    public static void SendQuestMessage(string message, bool isSetProgress = false, int newProgress = 0)
     {
         for(int i = 0; i < Quests.Count; i++)
         {
-            Quests[i].ReceiveMessage(message);
+            Quests[i].ReceiveMessage(message, isSetProgress, newProgress);
         }
     }
     public static string GetTopQuestDescription()

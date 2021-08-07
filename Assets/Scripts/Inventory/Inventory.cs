@@ -105,7 +105,7 @@ public class Inventory : MonoBehaviour
             {
                 //previousItem = itemSlots[i].Item;
                 ItemSlots[i].Amount--;
-                if(ItemSlots[i].Amount == 0) {
+                if (ItemSlots[i].Amount == 0) {
                     ItemSlots[i].Item = null;
                     //ItemSlots[i].Amount = 0;
                 }

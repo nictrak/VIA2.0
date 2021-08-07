@@ -112,5 +112,12 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler , IDragHandler, IBeg
             OnDropEvent(this);
         }
     }
-
+    public string GetItemName()
+    {
+        if (_item == null)
+        {
+            return "";
+        }
+        return _item.Name;
+    }
 }
