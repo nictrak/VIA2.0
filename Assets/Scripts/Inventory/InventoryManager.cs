@@ -15,6 +15,8 @@ public class InventoryManager : MonoBehaviour
     private ItemSlot draggingSlot;
     private WeaponItem lastWeaponItem;
 
+    public ShortcutPanel ShortcutPanel { get => shortcutPanel; set => shortcutPanel = value; }
+
     private void Awake() {
 
         //Setup Events
@@ -158,5 +160,9 @@ public class InventoryManager : MonoBehaviour
             ChangeWeapon();
         }
         lastWeaponItem = EquipmentPanel.GetItemWeapon();
+    }
+    public int CountItem(string itemName)
+    {
+        return this.Inventory.CountItem(itemName) + EquipmentPanel.CountItem(itemName) + ShortcutPanel.CountItem(itemName); 
     }
 }
