@@ -19,3 +19,4 @@ MonoBehaviour:
   - Test02
   makeFalseAfterComplete: []
   description: Kill three Basic Melee
+  nextQuest: {fileID: 11400000, guid: d82bc20ae3851e44c8df56df6810b044, type: 2}

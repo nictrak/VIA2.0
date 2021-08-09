@@ -19,10 +19,12 @@ public class QuestSystem : MonoBehaviour
     {
         
     }
-    public static void AddNewQuest(QuestData questData)
+    // return added index
+    public static int AddNewQuest(QuestData questData)
     {
         Quest quest = new Quest(questData);
         Quests.Add(quest);
+        return Quests.Count - 1;
     }
     public static void RemoveQuest(Quest quest)
     {

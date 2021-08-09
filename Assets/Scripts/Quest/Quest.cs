@@ -39,6 +39,11 @@ public class Quest
                     ConditionSystem.SetCondition(data.MakeFalseAfterComplete[i], false);
                 }
                 QuestSystem.RemoveQuest(this);
+                if (Data.NextQuest != null)
+                {
+                    int newQuestIndex = QuestSystem.AddNewQuest(Data.NextQuest);
+                    QuestPanel.SetIndex(newQuestIndex);
+                }
             }
         }
     }

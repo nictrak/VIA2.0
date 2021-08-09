@@ -9,7 +9,7 @@ public class QuestPanel : MonoBehaviour
     private Text questDescription;
     [SerializeField]
     private Text questsCount;
-    private int currentQuestIndex;
+    private static int currentQuestIndex;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,5 +47,9 @@ public class QuestPanel : MonoBehaviour
                 questsCount.text = "";
             }
         }
+    }
+    public static void SetIndex(int newIndex)
+    {
+        currentQuestIndex = newIndex;
     }
 }

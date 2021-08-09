@@ -18,6 +18,8 @@ public class QuestData : ScriptableObject
     [SerializeField]
     [Multiline]
     private string description;
+    [SerializeField]
+    private QuestData nextQuest;
 
     public int InitialProgress { get => initialProgress; set => initialProgress = value; }
     public int GoalProgress { get => goalProgress; set => goalProgress = value; }
@@ -25,4 +27,5 @@ public class QuestData : ScriptableObject
     public string Description { get => description; set => description = value; }
     public List<string> MakeTrueAfterComplete { get => makeTrueAfterComplete; set => makeTrueAfterComplete = value; }
     public List<string> MakeFalseAfterComplete { get => makeFalseAfterComplete; set => makeFalseAfterComplete = value; }
+    public QuestData NextQuest { get => nextQuest; set => nextQuest = value; }
 }
