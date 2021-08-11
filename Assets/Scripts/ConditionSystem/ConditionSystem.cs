@@ -19,6 +19,13 @@ public class ConditionSystem : MonoBehaviour
                 ConditionHash.Add(conditionTopics[i], false);
             }
         }
+        Object[] objs = Resources.LoadAll("Quest");
+        for(int i = 0; i < objs.Length; i++)
+        {
+            string questName = objs[i].name;
+            ConditionHash.Add("IsAssigned " + questName, false);
+            ConditionHash.Add("IsCompleted " + questName, false);
+        }
     }
 
     // Update is called once per frame

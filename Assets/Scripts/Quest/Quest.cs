@@ -38,6 +38,7 @@ public class Quest
                 {
                     ConditionSystem.SetCondition(data.MakeFalseAfterComplete[i], false);
                 }
+                ConditionSystem.SetCondition("IsCompleted " + data.name, true);
                 QuestSystem.RemoveQuest(this);
                 if (Data.NextQuest != null)
                 {

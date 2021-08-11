@@ -16,8 +16,8 @@ public class Item : ScriptableObject
 
     #if UNITY_EDITOR
     private void OnValidate() {
-        //string path = AssetDatabase.GetAssetPath(this);
-        //id = AssetDatabase.AssetPathToGUID(path);
+        string path = AssetDatabase.GetAssetPath(this);
+        id = AssetDatabase.AssetPathToGUID(path);
     }
     #endif
 

@@ -24,6 +24,7 @@ public class QuestSystem : MonoBehaviour
     {
         Quest quest = new Quest(questData);
         Quests.Add(quest);
+        ConditionSystem.SetCondition("IsAssigned " + questData.name, true);
         return Quests.Count - 1;
     }
     public static void RemoveQuest(Quest quest)
