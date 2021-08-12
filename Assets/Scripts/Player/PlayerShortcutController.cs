@@ -36,8 +36,12 @@ public class PlayerShortcutController : MonoBehaviour
     {
         ShortcutPanel shortcutPanel = GameObject.FindGameObjectWithTag("Shortcut").GetComponent<ShortcutPanel>();
         GameObject spawned = Instantiate(itemCraftPrefab);
+        
         spawned.transform.position = transform.position;
         CraftingMaterial craftingMaterial = spawned.GetComponent<CraftingMaterial>();
-        craftingMaterial.ItemData = (CraftingMaterialItem)shortcutPanel.ShortcutSlots[index].Item;
+        craftingMaterial.ItemData = (CraftingMaterialItem)shortcutPanel.ShortcutSlots[index].Item.Copy();
+
+        ItemPickable itemPickable = spawned.GetComponent<ItemPickable>();
+        itemPickable.Item = shortcutPanel.ShortcutSlots[index].Item.Copy();
     }
 }

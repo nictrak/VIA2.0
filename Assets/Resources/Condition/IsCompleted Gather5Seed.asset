@@ -9,13 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 550863f633806484ebf2126aff974574, type: 3}
-  m_Name: Kill3BM
+  m_Script: {fileID: 11500000, guid: 0ad2e86ad1fb6ed4ca0eadd56a6b4e52, type: 3}
+  m_Name: IsCompleted Gather5Seed
   m_EditorClassIdentifier: 
-  initialProgress: 0
-  goalProgress: 3
-  triggerMessage: Kill BasicMelee
-  makeTrueAfterComplete:
-  - Test02
-  makeFalseAfterComplete: []
-  description: Kill three Basic Melee
+  conditionTopic: IsCompleted Gather5Seed

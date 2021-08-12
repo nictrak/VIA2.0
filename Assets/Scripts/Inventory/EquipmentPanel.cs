@@ -94,4 +94,20 @@ public class EquipmentPanel : MonoBehaviour
     {
         return (WeaponItem)EquipmentSlots[weaponSlotIndex].Item;
     }
+    public int CountItem(string itemName)
+    {
+        int count = 0;
+        for (int i = 0; i < EquipmentSlots.Length; i++)
+        {
+            Item item = EquipmentSlots[i].Item;
+            if (item != null)
+            {
+                if (item.Name == itemName)
+                {
+                    count += EquipmentSlots[i].Amount;
+                }
+            }
+        }
+        return count;
+    }
 }

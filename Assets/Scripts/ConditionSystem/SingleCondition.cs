@@ -6,6 +6,9 @@ public class SingleCondition : Condition
 {
     [SerializeField]
     private string conditionTopic;
+
+    public string ConditionTopic { get => conditionTopic; set => conditionTopic = value; }
+
     public override bool IsPass()
     {
         return ConditionSystem.GetCondition(conditionTopic);

@@ -77,4 +77,20 @@ public class ShortcutPanel : MonoBehaviour
         //previousItem = null;
         return false;
     }
+    public int CountItem(string itemName)
+    {
+        int count = 0;
+        for (int i = 0; i < shortcutSlots.Length; i++)
+        {
+            Item item = shortcutSlots[i].Item;
+            if (item != null)
+            {
+                if (item.Name == itemName)
+                {
+                    count += shortcutSlots[i].Amount;
+                }
+            }
+        }
+        return count;
+    }
 }

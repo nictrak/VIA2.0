@@ -19,20 +19,23 @@ public class QuestSystem : MonoBehaviour
     {
         
     }
-    public static void AddNewQuest(QuestData questData)
+    // return added index
+    public static int AddNewQuest(QuestData questData)
     {
         Quest quest = new Quest(questData);
         Quests.Add(quest);
+        ConditionSystem.SetCondition("IsAssigned " + questData.name, true);
+        return Quests.Count - 1;
     }
     public static void RemoveQuest(Quest quest)
     {
         Quests.Remove(quest);
     }
-    public static void SendQuestMessage(string message)
+    public static void SendQuestMessage(string message, bool isSetProgress = false, int newProgress = 0)
     {
         for(int i = 0; i < Quests.Count; i++)
         {
-            Quests[i].ReceiveMessage(message);
+            Quests[i].ReceiveMessage(message, isSetProgress, newProgress);
         }
     }
     public static string GetTopQuestDescription()
