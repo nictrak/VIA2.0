@@ -974,6 +974,7 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   hitEffectPrefab: {fileID: 1454490803532372921, guid: ce520020bce440044bc0d5d1f8feca7c,
     type: 3}
+  charName: BasicRange
 --- !u!114 &3626388922457289463
 MonoBehaviour:
   m_ObjectHideFlags: 0

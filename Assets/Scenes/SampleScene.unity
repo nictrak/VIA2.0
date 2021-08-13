@@ -121,6 +121,25 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &22048062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
+  m_Name: NormalWeapon(Clone)
+  m_EditorClassIdentifier: 
+  id: 3379b14b38cb0e241977682e32a54afd
+  Name: NormalWeapon
+  Icon: {fileID: 21300000, guid: 752443c5e42aef346bbaf798b33d5d44, type: 3}
+  MaximunStack: 1
+  EquipmentType: 0
+  weaponPrefab: {fileID: 2563879699250417919, guid: e4f4399ba3a197d44ae30d7a19d1a1af,
+    type: 3}
 --- !u!1 &30591508
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,25 +394,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 3472931758922334578}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &265070326
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
-  m_Name: NormalWeapon(Clone)
-  m_EditorClassIdentifier: 
-  id: 3379b14b38cb0e241977682e32a54afd
-  Name: NormalWeapon
-  Icon: {fileID: 21300000, guid: 752443c5e42aef346bbaf798b33d5d44, type: 3}
-  MaximunStack: 1
-  EquipmentType: 0
-  weaponPrefab: {fileID: 2563879699250417919, guid: e4f4399ba3a197d44ae30d7a19d1a1af,
-    type: 3}
 --- !u!224 &287691102 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3472931759218802746, guid: 56c520b0a64b3094f9373c505eaccfbc,
@@ -562,7 +562,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &384886184
 GameObject:
@@ -836,7 +836,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &636330758
 GameObject:
@@ -978,12 +978,12 @@ PrefabInstance:
     - target: {fileID: 6878539700662927998, guid: fb71296f129c18141a0a42216855cf17,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.18
+      value: -3.1799927
       objectReference: {fileID: 0}
     - target: {fileID: 6878539700662927998, guid: fb71296f129c18141a0a42216855cf17,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.32
+      value: -0.32000732
       objectReference: {fileID: 0}
     - target: {fileID: 6878539700662927998, guid: fb71296f129c18141a0a42216855cf17,
         type: 3}
@@ -993,17 +993,17 @@ PrefabInstance:
     - target: {fileID: 6878539700662927998, guid: fb71296f129c18141a0a42216855cf17,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6878539700662927998, guid: fb71296f129c18141a0a42216855cf17,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6878539700662927998, guid: fb71296f129c18141a0a42216855cf17,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6878539700662927998, guid: fb71296f129c18141a0a42216855cf17,
         type: 3}
@@ -1013,7 +1013,7 @@ PrefabInstance:
     - target: {fileID: 6878539700662927998, guid: fb71296f129c18141a0a42216855cf17,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 6878539700662927998, guid: fb71296f129c18141a0a42216855cf17,
         type: 3}
@@ -1129,7 +1129,7 @@ PrefabInstance:
     - target: {fileID: 6878539700662927998, guid: fb71296f129c18141a0a42216855cf17,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 6878539700662927998, guid: fb71296f129c18141a0a42216855cf17,
         type: 3}
@@ -1300,25 +1300,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a384ff47a881fd46a8b565036cf90aa, type: 3}
---- !u!114 &927465954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
-  m_Name: IgniteWeapon(Clone)
-  m_EditorClassIdentifier: 
-  id: af75609591bad584abc70e65f391be17
-  Name: Ignite Weapon
-  Icon: {fileID: 21300000, guid: 539608af302184e479cbeb265856eb2a, type: 3}
-  MaximunStack: 1
-  EquipmentType: 0
-  weaponPrefab: {fileID: 8319709647177024906, guid: 054c03a396d26ab4f97a8465d508d2d3,
-    type: 3}
 --- !u!1 &1142153218
 GameObject:
   m_ObjectHideFlags: 0
@@ -1708,25 +1689,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
---- !u!114 &1423159490
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
-  m_Name: IgniteWeapon(Clone)
-  m_EditorClassIdentifier: 
-  id: af75609591bad584abc70e65f391be17
-  Name: Ignite Weapon
-  Icon: {fileID: 21300000, guid: 539608af302184e479cbeb265856eb2a, type: 3}
-  MaximunStack: 1
-  EquipmentType: 0
-  weaponPrefab: {fileID: 8319709647177024906, guid: 054c03a396d26ab4f97a8465d508d2d3,
-    type: 3}
 --- !u!1 &1501020763
 GameObject:
   m_ObjectHideFlags: 0
@@ -2173,25 +2135,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1608363292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
-  m_Name: NormalWeapon(Clone)
-  m_EditorClassIdentifier: 
-  id: 3379b14b38cb0e241977682e32a54afd
-  Name: NormalWeapon
-  Icon: {fileID: 21300000, guid: 752443c5e42aef346bbaf798b33d5d44, type: 3}
-  MaximunStack: 1
-  EquipmentType: 0
-  weaponPrefab: {fileID: 2563879699250417919, guid: e4f4399ba3a197d44ae30d7a19d1a1af,
-    type: 3}
 --- !u!1 &1712241643
 GameObject:
   m_ObjectHideFlags: 0
@@ -2447,6 +2390,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1876902904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
+  m_Name: IgniteWeapon(Clone)
+  m_EditorClassIdentifier: 
+  id: af75609591bad584abc70e65f391be17
+  Name: Ignite Weapon
+  Icon: {fileID: 21300000, guid: 539608af302184e479cbeb265856eb2a, type: 3}
+  MaximunStack: 1
+  EquipmentType: 0
+  weaponPrefab: {fileID: 8319709647177024906, guid: 054c03a396d26ab4f97a8465d508d2d3,
+    type: 3}
 --- !u!4 &1913062098 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6878539700662927998, guid: fb71296f129c18141a0a42216855cf17,
@@ -2534,6 +2496,44 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1948822066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
+  m_Name: NormalWeapon(Clone)
+  m_EditorClassIdentifier: 
+  id: 3379b14b38cb0e241977682e32a54afd
+  Name: NormalWeapon
+  Icon: {fileID: 21300000, guid: 752443c5e42aef346bbaf798b33d5d44, type: 3}
+  MaximunStack: 1
+  EquipmentType: 0
+  weaponPrefab: {fileID: 2563879699250417919, guid: e4f4399ba3a197d44ae30d7a19d1a1af,
+    type: 3}
+--- !u!114 &1958229423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
+  m_Name: IgniteWeapon(Clone)
+  m_EditorClassIdentifier: 
+  id: af75609591bad584abc70e65f391be17
+  Name: Ignite Weapon
+  Icon: {fileID: 21300000, guid: 539608af302184e479cbeb265856eb2a, type: 3}
+  MaximunStack: 1
+  EquipmentType: 0
+  weaponPrefab: {fileID: 8319709647177024906, guid: 054c03a396d26ab4f97a8465d508d2d3,
+    type: 3}
 --- !u!1 &1979970340
 GameObject:
   m_ObjectHideFlags: 0
@@ -3276,7 +3276,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _item
       value: 
-      objectReference: {fileID: 1608363292}
+      objectReference: {fileID: 22048062}
     - target: {fileID: 3472931759074333180, guid: 56c520b0a64b3094f9373c505eaccfbc,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -3601,7 +3601,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _item
       value: 
-      objectReference: {fileID: 927465954}
+      objectReference: {fileID: 1876902904}
     - target: {fileID: 3472931759568579295, guid: 56c520b0a64b3094f9373c505eaccfbc,
         type: 3}
       propertyPath: m_AnchorMin.y
