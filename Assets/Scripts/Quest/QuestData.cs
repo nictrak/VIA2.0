@@ -33,18 +33,37 @@ public class QuestData : ScriptableObject
     #if UNITY_EDITOR
     private void OnValidate()
     {
-        if(AssetDatabase.LoadAssetAtPath("Assets/Resources/Condition/IsAssigned " + name + ".asset", typeof(Condition)) == null)
+        if(!AssetDatabase.IsValidFolder("Assets/Resources/Condition/" + name))
+        {
+            AssetDatabase.CreateFolder("Assets/Resources/Condition", name);
+        }
+        //IsAssigned
+        if(AssetDatabase.LoadAssetAtPath("Assets/Resources/Condition/" + name + "/IsAssigned " + name + ".asset", typeof(Condition)) == null)
         {
             SingleCondition asset = ScriptableObject.CreateInstance<SingleCondition>();
             asset.ConditionTopic = "IsAssigned " + name;
-            AssetDatabase.CreateAsset(asset, "Assets/Resources/Condition/IsAssigned " + name + ".asset");
+            AssetDatabase.CreateAsset(asset, "Assets/Resources/Condition/" + name + "/IsAssigned " + name + ".asset");
         }
-
-        if (AssetDatabase.LoadAssetAtPath("Assets/Resources/Condition/IsCompleted " + name + ".asset", typeof(Condition)) == null)
+        //IsCompleted
+        if (AssetDatabase.LoadAssetAtPath("Assets/Resources/Condition/" + name + "/IsCompleted " + name + ".asset", typeof(Condition)) == null)
         {
             SingleCondition asset2 = ScriptableObject.CreateInstance<SingleCondition>();
             asset2.ConditionTopic = "IsCompleted " + name;
-            AssetDatabase.CreateAsset(asset2, "Assets/Resources/Condition/IsCompleted " + name + ".asset");
+            AssetDatabase.CreateAsset(asset2, "Assets/Resources/Condition/" + name + "/IsCompleted " + name + ".asset");
+        }
+        //NotAssigned
+        if (AssetDatabase.LoadAssetAtPath("Assets/Resources/Condition/" + name + "/NotAssigned " + name + ".asset", typeof(Condition)) == null)
+        {
+            NotCondition asset = ScriptableObject.CreateInstance<NotCondition>();
+            asset.ConditionTopic = "IsAssigned " + name;
+            AssetDatabase.CreateAsset(asset, "Assets/Resources/Condition/" + name + "/NotAssigned " + name + ".asset");
+        }
+        //NotCompleted
+        if (AssetDatabase.LoadAssetAtPath("Assets/Resources/Condition/" + name + "/NotCompleted " + name + ".asset", typeof(Condition)) == null)
+        {
+            NotCondition asset2 = ScriptableObject.CreateInstance<NotCondition>();
+            asset2.ConditionTopic = "IsCompleted " + name;
+            AssetDatabase.CreateAsset(asset2, "Assets/Resources/Condition/" + name + "/NotCompleted " + name + ".asset");
         }
 
         AssetDatabase.Refresh();

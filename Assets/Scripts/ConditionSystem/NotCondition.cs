@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 [CreateAssetMenu(fileName = "New Not Condition", menuName = "VIA2.0/Condition/Not Condition", order = 0)]
-public class NotConditon : Condition
+public class NotCondition : Condition
 {
     [SerializeField]
     private string conditionTopic;
