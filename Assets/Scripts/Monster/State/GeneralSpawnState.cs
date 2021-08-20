@@ -17,6 +17,8 @@ public class GeneralSpawnState : MonsterStateBehaviour
     private TriggerRange outerRange;
     [SerializeField]
     private TriggerRange innerRange;
+    [SerializeField]
+    private float randomRadius;
 
     private int delayCounter;
 
@@ -31,7 +33,7 @@ public class GeneralSpawnState : MonsterStateBehaviour
         {
             delayCounter = 0;
             NeedTarget spawned = Instantiate(spawnedPrefab);
-            spawned.SetTarget(transform.position, GetTarget().transform.position, velocity);
+            spawned.SetTarget(transform.position, GetTarget().transform.position + RandomVector(), velocity);
         }
         else delayCounter++;
         if (!innerRange.IsEmpty())
@@ -66,5 +68,9 @@ public class GeneralSpawnState : MonsterStateBehaviour
     void Update()
     {
         
+    }
+    private Vector3 RandomVector()
+    {
+        return new Vector3(Random.Range(-randomRadius, randomRadius), Random.Range(-randomRadius, randomRadius), 0);
     }
 }
