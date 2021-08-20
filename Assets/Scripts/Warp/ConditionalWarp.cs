@@ -28,7 +28,7 @@ public class ConditionalWarp : MonoBehaviour
         {
             if (condition.IsPass() == IsPassIfTrue)
             {
-                SceneManager.LoadScene(nextLevel);
+                WarpSystem.WarpToScene(nextLevel);
             }
         }
     }
