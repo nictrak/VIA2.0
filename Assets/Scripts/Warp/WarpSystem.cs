@@ -18,6 +18,8 @@ public class WarpSystem : MonoBehaviour
     }
     public static void WarpToScene(string sceneName)
     {
+        QuestSystem.SendQuestMessage("EscapeFrom " + SceneManager.GetActiveScene().name);
         SceneManager.LoadScene(sceneName);
+        QuestSystem.SendQuestMessage("GoTo " + sceneName);
     }
 }
