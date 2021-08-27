@@ -25,6 +25,7 @@ public class CraftingDelay : MonoBehaviour
         if(currentCounter >= delayFrame) {
             GameObject spawned = Instantiate(resultPrefab);
             spawned.transform.position = transform.position;
+            QuestSystem.SendQuestMessage("Craft " + resultName);
             Destroy(gameObject);
         }
         else

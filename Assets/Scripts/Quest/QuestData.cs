@@ -21,6 +21,10 @@ public class QuestData : ScriptableObject
     private string description;
     [SerializeField]
     private QuestData nextQuest;
+    [SerializeField]
+    private List<Item> questRewards;
+    [SerializeField]
+    private List<int> rewardNumbers;
 
     public int InitialProgress { get => initialProgress; set => initialProgress = value; }
     public int GoalProgress { get => goalProgress; set => goalProgress = value; }
@@ -29,8 +33,10 @@ public class QuestData : ScriptableObject
     public List<string> MakeTrueAfterComplete { get => makeTrueAfterComplete; set => makeTrueAfterComplete = value; }
     public List<string> MakeFalseAfterComplete { get => makeFalseAfterComplete; set => makeFalseAfterComplete = value; }
     public QuestData NextQuest { get => nextQuest; set => nextQuest = value; }
+    public List<Item> QuestRewards { get => questRewards; set => questRewards = value; }
+    public List<int> RewardNumbers { get => rewardNumbers; set => rewardNumbers = value; }
 
-    #if UNITY_EDITOR
+#if UNITY_EDITOR
     private void OnValidate()
     {
         if(!AssetDatabase.IsValidFolder("Assets/Resources/Condition/" + name))

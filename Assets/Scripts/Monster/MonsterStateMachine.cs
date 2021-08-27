@@ -31,6 +31,7 @@ public class MonsterStateMachine : MonoBehaviour
 
     private MonsterState currentState;
     private Health health;
+    private MonsterTokenController monsterTokenController;
 
     private static readonly string[] directions = { "N", "NW", "W", "SW", "S", "SW", "W", "NW" };
     public enum MonsterState
@@ -57,6 +58,10 @@ public class MonsterStateMachine : MonoBehaviour
         health = GetComponent<Health>();
         aIDestinationSetter = GetComponent<AIDestinationSetter>();
         flipToPlayer = GetComponent<FlipToPlayer>();
+        if(monsterTokenController == null)
+        {
+            monsterTokenController = Resources.FindObjectsOfTypeAll<MonsterTokenController>()[0];
+        }
     }
 
     // Update is called once per frame
@@ -89,9 +94,17 @@ public class MonsterStateMachine : MonoBehaviour
     {
         if(nextState != currentState)
         {
-            ExitState(currentState);
-            currentState = nextState;
-            StartState(currentState);
+            if(nextState == MonsterState.Attack){
+                if(monsterTokenController.RequestToken()){
+                    ExitState(currentState);
+                    currentState = nextState;
+                    StartState(currentState);
+                }
+            } else {
+                ExitState(currentState);
+                currentState = nextState;
+                StartState(currentState);
+            }
         }
     }
     private void StartState(MonsterState state)

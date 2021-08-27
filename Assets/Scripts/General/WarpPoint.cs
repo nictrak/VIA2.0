@@ -26,7 +26,7 @@ public class WarpPoint : MonoBehaviour
             {
                 if (GameObject.FindGameObjectsWithTag("Enemy").Length <= 0)
                 {
-                    SceneManager.LoadScene(nextLevel);
+                    WarpSystem.WarpToScene(nextLevel);
                 }
             }
         }
