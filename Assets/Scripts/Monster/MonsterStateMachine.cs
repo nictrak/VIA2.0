@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
@@ -48,6 +48,12 @@ public class MonsterStateMachine : MonoBehaviour
         Wait,
         Aim
     }
+
+    MonsterState[] tokenState = {
+        MonsterState.Attack,
+        MonsterState.Charge
+    };
+
     // Start is called before the first frame update
     void Start()
     {
@@ -94,7 +100,7 @@ public class MonsterStateMachine : MonoBehaviour
     {
         if(nextState != currentState)
         {
-            if(nextState == MonsterState.Attack){
+            if( Array.Exists(tokenState, state => state == nextState) ){
                 if(monsterTokenController.RequestToken()){
                     ExitState(currentState);
                     currentState = nextState;
