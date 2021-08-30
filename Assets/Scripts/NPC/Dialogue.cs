@@ -17,6 +17,8 @@ public abstract class Dialogue : MonoBehaviour
     protected List<string> makeFalseConditionTopics;
     [SerializeField]
     protected List<QuestData> assignedQuest;
+    [SerializeField]
+    protected bool isSendQuestMessage;
     public string TalkerName { get => talkerName; set => talkerName = value; }
     public string DialogueContent { get => dialogueContent; set => dialogueContent = value; }
     public bool IsGoNext { get => isGoNext; set => isGoNext = value; }
@@ -53,6 +55,13 @@ public abstract class Dialogue : MonoBehaviour
         for(int i = 0; i < assignedQuest.Count; i++)
         {
             QuestSystem.AddNewQuest(assignedQuest[i]);
+        }
+    }
+    public void SendTalkQuestMessage()
+    {
+        if (isSendQuestMessage)
+        {
+            QuestSystem.SendQuestMessage("Talk " + talkerName);
         }
     }
 }

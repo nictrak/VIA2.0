@@ -19,4 +19,8 @@ MonoBehaviour:
   - Test02
   makeFalseAfterComplete: []
   description: Kill three Basic Melee
-  nextQuest: {fileID: 0}
+  nextQuest: {fileID: 11400000, guid: d82bc20ae3851e44c8df56df6810b044, type: 2}
+  questRewards:
+  - {fileID: 11400000, guid: 8e298869afabd224c92ac327c70bffba, type: 2}
+  - {fileID: 11400000, guid: ef61722b8ae0d77419492b452fbc5074, type: 2}
+  rewardNumbers: 0300000005000000

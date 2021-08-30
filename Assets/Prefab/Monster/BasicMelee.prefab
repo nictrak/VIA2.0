@@ -264,7 +264,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.413623, y: 0.2545375}
   serializedVersion: 2
-  m_Radius: 2
+  m_Radius: 1.5
 --- !u!114 &623239987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -939,6 +939,7 @@ MonoBehaviour:
   isHurtBreak: 1
   isHaveEightDirection: 0
   mostOuterRange: {fileID: 82805168}
+  tokenStates: 03000000
 --- !u!114 &101977571
 MonoBehaviour:
   m_ObjectHideFlags: 0
