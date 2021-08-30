@@ -11,10 +11,13 @@ public class TriggerRange : MonoBehaviour
 
     public List<GameObject> Objs { get => objs; set => objs = value; }
 
+    private void Awake()
+    {
+        objs = new List<GameObject>();
+    }
     // Start is called before the first frame update
     void Start()
     {
-        objs = new List<GameObject>();
     }
 
     // Update is called once per frame

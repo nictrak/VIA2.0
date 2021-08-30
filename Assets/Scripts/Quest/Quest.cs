@@ -16,11 +16,18 @@ public class Quest
     public QuestData Data { get => data; set => data = value; }
     public int CurrentProgress { get => currentProgress; set => currentProgress = value; }
 
-    public void ReceiveMessage(string message)
+    public void ReceiveMessage(string message, bool isSetProgress = false, int newProgress = 0)
     {
         if(message == data.TriggerMessage)
         {
-            currentProgress += 1;
+            if (isSetProgress)
+            {
+                currentProgress = newProgress;
+            }
+            else
+            {
+                currentProgress += 1;
+            }
             if(currentProgress == data.GoalProgress)
             {
                 for(int i = 0; i < data.MakeTrueAfterComplete.Count; i++)
@@ -31,7 +38,13 @@ public class Quest
                 {
                     ConditionSystem.SetCondition(data.MakeFalseAfterComplete[i], false);
                 }
+                ConditionSystem.SetCondition("IsCompleted " + data.name, true);
                 QuestSystem.RemoveQuest(this);
+                if (Data.NextQuest != null)
+                {
+                    int newQuestIndex = QuestSystem.AddNewQuest(Data.NextQuest);
+                    QuestPanel.SetIndex(newQuestIndex);
+                }
             }
         }
     }

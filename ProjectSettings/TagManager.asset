@@ -16,6 +16,8 @@ TagManager:
   - Wall
   - Crafting
   - EnemyTarget
+  - Inventory
+  - HUD
   layers:
   - Default
   - TransparentFX

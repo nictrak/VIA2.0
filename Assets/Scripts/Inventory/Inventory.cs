@@ -105,7 +105,7 @@ public class Inventory : MonoBehaviour
             {
                 //previousItem = itemSlots[i].Item;
                 ItemSlots[i].Amount--;
-                if(ItemSlots[i].Amount == 0) {
+                if (ItemSlots[i].Amount == 0) {
                     ItemSlots[i].Item = null;
                     //ItemSlots[i].Amount = 0;
                 }
@@ -136,4 +136,20 @@ public class Inventory : MonoBehaviour
         return null;
     }
 
+    public int CountItem(string itemName)
+    {
+        int count = 0;
+        for (int i = 0; i < ItemSlots.Length; i++)
+        {
+            Item item = ItemSlots[i].Item;
+            if (item != null)
+            {
+                if (item.Name == itemName)
+                {
+                    count += ItemSlots[i].Amount;
+                }
+            }
+        }
+        return count;
+    }
 }

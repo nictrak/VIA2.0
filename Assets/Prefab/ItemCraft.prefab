@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8513676582514408390}
   - component: {fileID: 8513676582514408395}
   - component: {fileID: 8513676582514408392}
+  - component: {fileID: -8773948596348522756}
   m_Layer: 11
   m_Name: ItemCraft
   m_TagString: Crafting
@@ -133,6 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityVelocity: 0.01
+  isMove: 1
 --- !u!114 &8513676582514408395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,6 +164,22 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.16
+--- !u!114 &-8773948596348522756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8513676582514408385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ee339f4220fd5246b1c6304f4b44949, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: e3625ecb93999f74b80f0f6f44d50876, type: 2}
+  inventory: {fileID: 0}
+  itemPickupKeyCode: 102
+  isInRange: 0
 --- !u!1 &8513676583261816179
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,6 +7,7 @@ public class ConditionSystem : MonoBehaviour
     public static Dictionary<string, bool> ConditionHash;
     [SerializeField]
     private List<string> conditionTopics;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +18,13 @@ public class ConditionSystem : MonoBehaviour
             {
                 ConditionHash.Add(conditionTopics[i], false);
             }
+        }
+        Object[] objs = Resources.LoadAll("Quest");
+        for(int i = 0; i < objs.Length; i++)
+        {
+            string questName = objs[i].name;
+            ConditionHash.Add("IsAssigned " + questName, false);
+            ConditionHash.Add("IsCompleted " + questName, false);
         }
     }
 

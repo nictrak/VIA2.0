@@ -15,6 +15,8 @@ public class InventoryManager : MonoBehaviour
     private ItemSlot draggingSlot;
     private WeaponItem lastWeaponItem;
 
+    public ShortcutPanel ShortcutPanel { get => shortcutPanel; set => shortcutPanel = value; }
+
     private void Awake() {
 
         //Setup Events
@@ -38,17 +40,17 @@ public class InventoryManager : MonoBehaviour
         EquipmentPanel.OnDropEvent += Drop;
         shortcutPanel.OnDropEvent += Drop;
 
-        //if(itemSaveManager != null){
-            //itemSaveManager.LoadEquipment(this);
-            //itemSaveManager.LoadInventory(this);
-        //}
+        /*if(itemSaveManager != null){
+            itemSaveManager.LoadEquipment(this);
+            itemSaveManager.LoadInventory(this);
+        }*/
     }
 
     private void OnDestroy() {
-        //if(itemSaveManager != null){
-            //itemSaveManager.SaveEquipment(this);
-            //itemSaveManager.SaveInventory(this);
-        //}
+        /*if(itemSaveManager != null){
+            itemSaveManager.SaveEquipment(this);
+            itemSaveManager.SaveInventory(this);
+        }*/
     }
 
     private void Equip(ItemSlot itemSlot)
@@ -158,5 +160,9 @@ public class InventoryManager : MonoBehaviour
             ChangeWeapon();
         }
         lastWeaponItem = EquipmentPanel.GetItemWeapon();
+    }
+    public int CountItem(string itemName)
+    {
+        return this.Inventory.CountItem(itemName) + EquipmentPanel.CountItem(itemName) + ShortcutPanel.CountItem(itemName); 
     }
 }
