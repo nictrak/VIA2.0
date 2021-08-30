@@ -38,6 +38,7 @@ public class Quest
                 {
                     ConditionSystem.SetCondition(data.MakeFalseAfterComplete[i], false);
                 }
+                GiveReward();
                 ConditionSystem.SetCondition("IsCompleted " + data.name, true);
                 QuestSystem.RemoveQuest(this);
                 if (Data.NextQuest != null)
@@ -51,5 +52,16 @@ public class Quest
     public void ResetProgress()
     {
         currentProgress = data.InitialProgress;
+    }
+    private void GiveReward()
+    {
+        Inventory inventory = Resources.FindObjectsOfTypeAll<Inventory>()[0];
+        for (int i = 0; i < data.QuestRewards.Count; i++)
+        {
+            for (int j = 0; j < data.RewardNumbers[i]; j++)
+            {
+                inventory.AddItem(data.QuestRewards[i]);
+            }
+        }
     }
 }

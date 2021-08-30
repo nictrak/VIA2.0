@@ -55,11 +55,4 @@ public class QuestSystem : MonoBehaviour
         if (Quests == null) return 0;
         else return Quests.Count;
     }
-    private void GiveReward(QuestData questData)
-    {
-        for(int i = 0; i < questData.QuestRewards.Count; i++)
-        {
-
-        }
-    }
 }

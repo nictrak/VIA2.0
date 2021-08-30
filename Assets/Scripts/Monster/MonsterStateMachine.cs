@@ -23,6 +23,8 @@ public class MonsterStateMachine : MonoBehaviour
     private bool isHaveEightDirection;
     [SerializeField]
     private TriggerRange mostOuterRange;
+    [SerializeField]
+    private List<MonsterState> tokenStates;
 
     private Dictionary<MonsterState, MonsterStateBehaviour> statesHash;
     private Dictionary<MonsterState, string> stringAnimatorsHash;
@@ -94,7 +96,7 @@ public class MonsterStateMachine : MonoBehaviour
     {
         if(nextState != currentState)
         {
-            if(nextState == MonsterState.Attack){
+            if(tokenStates.Contains(nextState)){
                 if(monsterTokenController.RequestToken()){
                     ExitState(currentState);
                     currentState = nextState;
