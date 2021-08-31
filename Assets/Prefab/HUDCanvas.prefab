@@ -89,6 +89,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questDescription: {fileID: 1779107043}
+  questsCount: {fileID: 0}
 --- !u!1 &443384700
 GameObject:
   m_ObjectHideFlags: 0
@@ -7376,6 +7377,9 @@ MonoBehaviour:
   inventoryPanel: {fileID: 3472931758508167940}
   shopPanel: {fileID: 7556488144814068872}
   inventoryKey: 105
+  questsPanel: {fileID: 0}
+  questPanel: {fileID: 0}
+  questKey: 0
 --- !u!1 &3472931759617255541
 GameObject:
   m_ObjectHideFlags: 0
