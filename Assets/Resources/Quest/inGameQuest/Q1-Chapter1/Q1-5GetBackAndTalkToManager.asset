@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Q1-5GetBackAndTalkToManager
   m_EditorClassIdentifier: 
   initialProgress: 0
-  goalProgress: 0
-  triggerMessage: 
+  goalProgress: 1
+  triggerMessage: Talk Manager
   makeTrueAfterComplete: []
   makeFalseAfterComplete: []
-  description: 
+  description: Talk to manager and result in quest
   nextQuest: {fileID: 0}
   questRewards: []
   rewardNumbers: 

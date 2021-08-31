@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Q1-3Summon
   m_EditorClassIdentifier: 
   initialProgress: 0
-  goalProgress: 0
-  triggerMessage: 
+  goalProgress: 1
+  triggerMessage: Craft HealZone
   makeTrueAfterComplete: []
   makeFalseAfterComplete: []
-  description: 
-  nextQuest: {fileID: 0}
+  description: ' Summon HealZone'
+  nextQuest: {fileID: 11400000, guid: 35b96a4eafe729f4c993e87a4c605f47, type: 2}
   questRewards: []
   rewardNumbers: 

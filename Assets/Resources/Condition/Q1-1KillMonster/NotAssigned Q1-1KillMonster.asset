@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7d08cb072e4ca6d4da278afab982d2f6, type: 3}
-  m_Name: NotCompleted Q1-1Kill3BM
+  m_Name: NotAssigned Q1-1KillMonster
   m_EditorClassIdentifier: 
-  conditionTopic: IsCompleted Q1-1Kill3BM
+  conditionTopic: IsAssigned Q1-1KillMonster

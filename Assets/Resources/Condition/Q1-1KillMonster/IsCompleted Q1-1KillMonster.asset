@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d08cb072e4ca6d4da278afab982d2f6, type: 3}
-  m_Name: 'NotAssigned '
+  m_Script: {fileID: 11500000, guid: 0ad2e86ad1fb6ed4ca0eadd56a6b4e52, type: 3}
+  m_Name: IsCompleted Q1-1KillMonster
   m_EditorClassIdentifier: 
-  conditionTopic: 'IsAssigned '
+  conditionTopic: IsCompleted Q1-1KillMonster

@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 550863f633806484ebf2126aff974574, type: 3}
-  m_Name: Q1-1Kill3BM
+  m_Name: Q1-1KillMonster
   m_EditorClassIdentifier: 
   initialProgress: 0
-  goalProgress: 5
+  goalProgress: 1
   triggerMessage: Kill BasicMelee
   makeTrueAfterComplete: []
   makeFalseAfterComplete: []
-  description: 
-  nextQuest: {fileID: 0}
+  description: Kill 5 monster and investigate the area
+  nextQuest: {fileID: 11400000, guid: d82bc20ae3851e44c8df56df6810b044, type: 2}
   questRewards: []
   rewardNumbers: 

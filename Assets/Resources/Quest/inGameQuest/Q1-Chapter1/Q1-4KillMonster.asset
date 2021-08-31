@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Q1-4KillMonster
   m_EditorClassIdentifier: 
   initialProgress: 0
-  goalProgress: 0
-  triggerMessage: 
+  goalProgress: 15
+  triggerMessage: Kill Monster
   makeTrueAfterComplete: []
   makeFalseAfterComplete: []
-  description: 
-  nextQuest: {fileID: 0}
+  description: Clear  monster untill Door open
+  nextQuest: {fileID: 11400000, guid: cbea7f29a9033c640a151deaad02bbfd, type: 2}
   questRewards: []
   rewardNumbers: 
