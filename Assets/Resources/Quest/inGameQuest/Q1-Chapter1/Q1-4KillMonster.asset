@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialProgress: 0
   goalProgress: 15
-  triggerMessage: Kill Monster
+  triggerMessage: Kill monster
   makeTrueAfterComplete: []
   makeFalseAfterComplete: []
   description: Clear  monster untill Door open

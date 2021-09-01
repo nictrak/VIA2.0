@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Q1-1KillMonster
   m_EditorClassIdentifier: 
   initialProgress: 0
-  goalProgress: 1
-  triggerMessage: Kill BasicMelee
+  goalProgress: 5
+  triggerMessage: Kill monster
   makeTrueAfterComplete: []
   makeFalseAfterComplete: []
   description: Kill 5 monster and investigate the area
-  nextQuest: {fileID: 11400000, guid: d82bc20ae3851e44c8df56df6810b044, type: 2}
+  nextQuest: {fileID: 11400000, guid: ddf2902ccff76f448bb9e664382c76dd, type: 2}
   questRewards: []
   rewardNumbers: 

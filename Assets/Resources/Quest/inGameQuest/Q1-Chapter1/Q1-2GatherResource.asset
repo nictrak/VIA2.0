@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Q1-2GatherResource
   m_EditorClassIdentifier: 
   initialProgress: 0
-  goalProgress: 1
+  goalProgress: 5
   triggerMessage: Gather Seed
   makeTrueAfterComplete: []
   makeFalseAfterComplete: []
-  description: 'Gather 5 Seed '
+  description: Gather 5 Seeds
   nextQuest: {fileID: 11400000, guid: 07b617c0fa3bcfa4a937e60d20b173e5, type: 2}
   questRewards: []
   rewardNumbers: 
