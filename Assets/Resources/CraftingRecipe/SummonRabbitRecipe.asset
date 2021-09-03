@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e034655493a7ee542a79a2806541d56f, type: 3}
   m_Name: SummonRabbitRecipe
   m_EditorClassIdentifier: 
-  material1: Void
+  material1: spirit
   material2: Seed
-  resultPrefab: {fileID: 6878539700662927994, guid: fb71296f129c18141a0a42216855cf17,
+  resultName: FriendMelee
+  resultPrefab: {fileID: 8122467121740665326, guid: b8c7c7991d4a87144b476ecf309c58f7,
     type: 3}
