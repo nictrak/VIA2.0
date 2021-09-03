@@ -1,0 +1,311 @@
+fileFormatVersion: 2
+guid: c9dc5223edc7ef343b5e9fb912a9e886
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1997483441994897864
+    second: HQ asset Map_0
+  - first:
+      213: -1855216302269883896
+    second: HQ asset Map_1
+  - first:
+      213: 5157513855469520825
+    second: HQ asset Map_2
+  - first:
+      213: -3655860098042389862
+    second: HQ asset Map_3
+  - first:
+      213: 455143014750376484
+    second: HQ asset Map_4
+  - first:
+      213: -4952580332491779874
+    second: HQ asset Map_5
+  - first:
+      213: 889648608998084420
+    second: HQ asset Map_6
+  - first:
+      213: 5059696171852571436
+    second: HQ asset Map_7
+  - first:
+      213: -4005667270420660913
+    second: HQ asset Map_8
+  - first:
+      213: 376000690866374582
+    second: HQ asset Map_9
+  - first:
+      213: -2094060989248719904
+    second: HQ asset Map_10
+  - first:
+      213: 4984986625866048582
+    second: HQ asset Map_11
+  - first:
+      213: 934415873941294337
+    second: HQ asset Map_12
+  - first:
+      213: -1050588275304844437
+    second: HQ asset Map_13
+  - first:
+      213: 480099213949521489
+    second: HQ asset Map_14
+  - first:
+      213: -80713587312820323
+    second: HQ asset Map_15
+  - first:
+      213: -9185824378570890022
+    second: HQ asset Map_16
+  - first:
+      213: -5005258386529105523
+    second: HQ asset Map_17
+  - first:
+      213: -6944847239405693029
+    second: HQ asset Map_18
+  - first:
+      213: -9164778295182373639
+    second: HQ asset Map_19
+  - first:
+      213: 6318098173363541452
+    second: HQ asset Map_20
+  - first:
+      213: -6894872284878469066
+    second: HQ asset Map_21
+  - first:
+      213: 8477214682142434131
+    second: HQ asset Map_22
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 100
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 100
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 100
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HQ asset Map_0
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 1232
+        width: 496
+        height: 659
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8366b2384638744e0800000000000000
+      internalID: -1997483441994897864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HQ asset Map_1
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 1179
+        width: 901
+        height: 567
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a90b93a92f046e0800000000000000
+      internalID: -1855216302269883896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HQ asset Map_2
+      rect:
+        serializedVersion: 2
+        x: 2286
+        y: 1246
+        width: 1268
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b78a6f968b239740800000000000000
+      internalID: 5157513855469520825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HQ asset Map_3
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 360
+        width: 496
+        height: 659
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9a98a34c96c34dc0800000000000000
+      internalID: -3655860098042389862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HQ asset Map_4
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 297
+        width: 706
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4225234192ef05600800000000000000
+      internalID: 455143014750376484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HQ asset Map_5
+      rect:
+        serializedVersion: 2
+        x: 2435
+        y: 211
+        width: 927
+        height: 670
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed0dd307d66e44bb0800000000000000
+      internalID: -4952580332491779874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

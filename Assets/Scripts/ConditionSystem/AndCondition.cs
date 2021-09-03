@@ -11,8 +11,11 @@ public class AndCondition : Condition
     {
         for (int i = 0; i < conditionTopics.Count; i++)
         {
-            if (!ConditionSystem.GetCondition(conditionTopics[i]))
-            {
+            
+            if (!ConditionSystem.GetCondition(conditionTopics[i])) { 
+                Debug.Log("Debug in file: AndCondition.cs");
+                Debug.Log(conditionTopics[i]);
+                Debug.Log(ConditionSystem.GetCondition(conditionTopics[i]));
                 return false;
             }
         }
