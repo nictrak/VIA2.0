@@ -3467,13 +3467,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 8673016203202896389, guid: abc0584209e21aa4ca24bdd2105f6e12,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3497,8 +3498,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 3472931757693695702}
   amountText: {fileID: 6513791946756084655}
-  _item: {fileID: 0}
-  _amount: 0
+  _item: {fileID: 11400000, guid: de1b3fe23db43e64e9a5522ba55e3f1b, type: 2}
+  _amount: 1
 --- !u!1 &3472931757708247295
 GameObject:
   m_ObjectHideFlags: 0
@@ -4349,6 +4350,15 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e879342816bc5084f9345af287d31af8, type: 2}
   - {fileID: 11400000, guid: fb65723f5c556474eb0353e05a63da1b, type: 2}
   - {fileID: 11400000, guid: e3625ecb93999f74b80f0f6f44d50876, type: 2}
+  - {fileID: 11400000, guid: 1d6e52ca43c517d47a90971b4205bc78, type: 2}
+  - {fileID: 11400000, guid: d6e32e8da44aa074c992237068ab8232, type: 2}
+  - {fileID: 11400000, guid: de1b3fe23db43e64e9a5522ba55e3f1b, type: 2}
+  - {fileID: 11400000, guid: 811ca5eb41901124abb46f78b1a72cc9, type: 2}
+  - {fileID: 11400000, guid: ef61722b8ae0d77419492b452fbc5074, type: 2}
+  - {fileID: 11400000, guid: 8e298869afabd224c92ac327c70bffba, type: 2}
+  - {fileID: 11400000, guid: dc82a1d367586a249b290e76ca06926b, type: 2}
+  - {fileID: 11400000, guid: a45b7e0b3b38ce447a7f97e948a27dce, type: 2}
+  - {fileID: 11400000, guid: a7a56584c5410eb40a8256e702cb9821, type: 2}
   itemsParent: {fileID: 3472931759751427386}
   ItemSlots:
   - {fileID: 3472931759033817507}
@@ -5777,13 +5787,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 6716918967265534763, guid: abc0584209e21aa4ca24bdd2105f6e12,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5807,8 +5818,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 3472931758999423562}
   amountText: {fileID: 5914304829622804368}
-  _item: {fileID: 0}
-  _amount: 0
+  _item: {fileID: 11400000, guid: a45b7e0b3b38ce447a7f97e948a27dce, type: 2}
+  _amount: 1
 --- !u!1 &3472931759033817533
 GameObject:
   m_ObjectHideFlags: 0
@@ -5961,13 +5972,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -2937047895476085584, guid: 31f4c475c5750fa409fda6c542d1f83d,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5991,8 +6003,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 3472931759074333154}
   amountText: {fileID: 4715061023257533678}
-  _item: {fileID: 0}
-  _amount: 0
+  _item: {fileID: 11400000, guid: a7a56584c5410eb40a8256e702cb9821, type: 2}
+  _amount: 1
 --- !u!1 &3472931759092505969
 GameObject:
   m_ObjectHideFlags: 0
@@ -6274,13 +6286,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 6170761168918114627, guid: abc0584209e21aa4ca24bdd2105f6e12,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6304,8 +6317,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 3472931759116676256}
   amountText: {fileID: 2043780765582015488}
-  _item: {fileID: 0}
-  _amount: 0
+  _item: {fileID: 11400000, guid: d6e32e8da44aa074c992237068ab8232, type: 2}
+  _amount: 1
 --- !u!1 &3472931759120821588
 GameObject:
   m_ObjectHideFlags: 0
@@ -6795,13 +6808,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -2366726274241941888, guid: abc0584209e21aa4ca24bdd2105f6e12,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6825,8 +6839,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 3472931759327937926}
   amountText: {fileID: 3603996241689741458}
-  _item: {fileID: 0}
-  _amount: 0
+  _item: {fileID: 11400000, guid: 811ca5eb41901124abb46f78b1a72cc9, type: 2}
+  _amount: 1
 --- !u!1 &3472931759331220590
 GameObject:
   m_ObjectHideFlags: 0
@@ -7071,13 +7085,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -5626219259714403924, guid: cf05b2614ab18c649872a9d7758bcde8,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7101,8 +7116,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 3472931759451226364}
   amountText: {fileID: 3979394618179888461}
-  _item: {fileID: 0}
-  _amount: 0
+  _item: {fileID: 11400000, guid: 8e298869afabd224c92ac327c70bffba, type: 2}
+  _amount: 1
 --- !u!1 &3472931759541143979
 GameObject:
   m_ObjectHideFlags: 0
@@ -7163,13 +7178,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 8165653263662851408, guid: cf05b2614ab18c649872a9d7758bcde8,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7193,8 +7209,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 3472931759541143982}
   amountText: {fileID: 2904095585733685018}
-  _item: {fileID: 0}
-  _amount: 0
+  _item: {fileID: 11400000, guid: 1d6e52ca43c517d47a90971b4205bc78, type: 2}
+  _amount: 1
 --- !u!1 &3472931759568579294
 GameObject:
   m_ObjectHideFlags: 0
@@ -7491,13 +7507,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 8581283089315179245, guid: abc0584209e21aa4ca24bdd2105f6e12,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7521,8 +7538,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 3472931759617255544}
   amountText: {fileID: 2875255846172690979}
-  _item: {fileID: 0}
-  _amount: 0
+  _item: {fileID: 11400000, guid: dc82a1d367586a249b290e76ca06926b, type: 2}
+  _amount: 1
 --- !u!1 &3472931759681103533
 GameObject:
   m_ObjectHideFlags: 0
@@ -7583,13 +7600,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -4188457924541785842, guid: cf05b2614ab18c649872a9d7758bcde8,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7613,8 +7631,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 3472931759681103504}
   amountText: {fileID: 4572685522794153593}
-  _item: {fileID: 0}
-  _amount: 0
+  _item: {fileID: 11400000, guid: ef61722b8ae0d77419492b452fbc5074, type: 2}
+  _amount: 1
 --- !u!1 &3472931759728833706
 GameObject:
   m_ObjectHideFlags: 0
