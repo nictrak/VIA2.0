@@ -3,7 +3,21 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - PlayerTarget
+  - Interaction
+  - HUDController
+  - Shortcut
+  - Key
+  - Door
+  - ground
+  - Lock Door
+  - Wall
+  - Crafting
+  - EnemyTarget
+  - Inventory
+  - HUD
   layers:
   - Default
   - TransparentFX
@@ -15,9 +29,9 @@ TagManager:
   - 
   - Character
   - Blocker
-  - 
-  - 
-  - 
+  - Attack
+  - ItemCraft
+  - Interaction
   - 
   - 
   - 
@@ -41,6 +55,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Floor
+    uniqueID: 2982515735
+    locked: 0
   - name: Front
     uniqueID: 2663767201
+    locked: 0
+  - name: Effect
+    uniqueID: 748235627
+    locked: 0
+  - name: UI
+    uniqueID: 2416359737
     locked: 0

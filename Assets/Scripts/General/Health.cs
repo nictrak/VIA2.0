@@ -8,11 +8,18 @@ public class Health : MonoBehaviour
     private int maxHealth;
     [SerializeField]
     private int initialHealth;
+    [SerializeField]
+    private RectTransform healthBar;
+    [SerializeField]
+    private GameObject hitEffectPrefab;
+    [SerializeField]
+    private string charName;
 
     private bool isHurt;
     private bool isAlreadyHurt;
     private int currentHealth;
     private bool isDead;
+    private float barWidth;
 
     public bool IsDead { get => isDead; set => isDead = value; }
     public bool IsHurt { get => isHurt; set => isHurt = value; }
@@ -25,26 +32,59 @@ public class Health : MonoBehaviour
         isAlreadyHurt = false;
         currentHealth = initialHealth;
         if (currentHealth > maxHealth) currentHealth = maxHealth;
+        barWidth = -1;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(healthBar != null)
+        {
+            UpdateHealthBar();
+        }
     }
     private void FixedUpdate()
     {
         HurtControlPerFrame();
     }
-    public void TakeDamage(int damage)
+    private void UpdateHealthBar()
+    {
+        if(barWidth == -1)
+        {
+            barWidth = healthBar.sizeDelta.x;
+        }
+        float currentWidth = barWidth * currentHealth / maxHealth;
+        healthBar.sizeDelta = new Vector2(currentWidth, healthBar.sizeDelta.y);
+    }
+    public void TakeDamage(int damage, bool doHurt = true)
     {
         currentHealth = currentHealth - damage;
-        if (damage > 0) isHurt = true;
+        if (damage > 0 && doHurt)
+        {
+            isHurt = true;
+            if(hitEffectPrefab != null)
+            {
+                GameObject spawned = Instantiate(hitEffectPrefab);
+                spawned.transform.position = transform.position;
+            }
+        }
         if(currentHealth <= 0)
         {
             currentHealth = 0;
-            isDead = true;
+            if (!isDead)
+            {
+                QuestSystem.SendQuestMessage("Kill " + charName);
+                isDead = true;
+            }
         }
+        if(currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+    }
+    public void Heal(int point)
+    {
+        currentHealth = currentHealth + point;
         if(currentHealth > maxHealth)
         {
             currentHealth = maxHealth;
@@ -64,5 +104,12 @@ public class Health : MonoBehaviour
                 isAlreadyHurt = true;
             }
         }
+    }
+    void OnDrawGizmos()
+    {
+        Gizmos.color = new Color(1, 0, 0, 1);
+        Vector3 start = transform.position + new Vector3(-1, 1, 0);
+        Vector3 end = start + new Vector3((float)currentHealth / (float)maxHealth, 0, 0);
+        Gizmos.DrawLine(start, end);
     }
 }

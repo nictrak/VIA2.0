@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/level/WorldGhost/Chapter0GhostRegion.unity
+    guid: dd56c8d1f56031a469797608fc98be42
+  - enabled: 1
+    path: Assets/Scenes/level/WorldGhost/Chaptor0HQ.unity
+    guid: 2aeac3cdde20cee43bb99f904fb7fff2
+  - enabled: 1
+    path: Assets/Scenes/level/WorldGhost/Chaptor1GhostRegion.unity
+    guid: 7ca9c87adb685e340817575e4dd036d0
+  - enabled: 1
+    path: Assets/Scenes/level/WorldGhost/MainHQ.unity
+    guid: 0e88302e8c49fc4479f9df2a39a3d575
   m_configObjects: {}

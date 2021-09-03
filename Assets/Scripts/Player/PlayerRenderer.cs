@@ -10,38 +10,100 @@ public class PlayerRenderer : MonoBehaviour
         Run,
         Attack1,
         Attack2,
-        Attack3
+        Attack3,
+        AreaAttack,
+        Dash
     }
     [SerializeField]
-    private List<string> animatorStringHeads;
+    private List<string> animatorBodyStringHeads;
+    [SerializeField]
+    private List<string> animatorArmFrontStringHeads;
+    [SerializeField]
+    private List<string> animatorArmBelowStringHeads;
+    [SerializeField]
+    private List<string> animatorWeaponStringHeads;
+    [SerializeField]
+    private List<string> animatorEffectStringHeads;
     [SerializeField]
     private List<PlayerRenderState> renderStatesSetupSequence;
+    [SerializeField]
+    private Animator bodyAnimator;
+    [SerializeField]
+    private Animator weaponAnimator;
+    [SerializeField]
+    private Animator armFrontAnimator;
+    [SerializeField]
+    private Animator armBelowAnimator;
+    [SerializeField]
+    private Animator effectAnimator;
+
+
     private static readonly string[] directions = { "N", "NW", "W", "SW", "S", "SE", "E", "NE" };
-    private Dictionary<PlayerRenderState, string> stateToStringHash;
-    private Animator animator;
+    private Dictionary<PlayerRenderState, string> stateToBodyStringHash;
+    private Dictionary<PlayerRenderState, string> stateToArmFrontStringHash;
+    private Dictionary<PlayerRenderState, string> stateToArmBelowStringHash;
+    private Dictionary<PlayerRenderState, string> stateToWeaponStringHash;
+    private Dictionary<PlayerRenderState, string> stateToEffectStringHash;
     private string lastRenderedDirectionString;
 
     // Start is called before the first frame update
     void Start()
     {
-        animator = GetComponent<Animator>();
-        SetupStateToStringHash();
+        SetupStateToBodyStringHash();
+        SetupStateToArmFrontStringHash();
+        SetupStateToWeaponStringHash();
+        SetupStateToArmBelowStringHash();
+        SetupStateToEffectStringHash();
         lastRenderedDirectionString = "S";
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
-    private void SetupStateToStringHash()
+
+    private void SetupStateToBodyStringHash()
     {
-        stateToStringHash = new Dictionary<PlayerRenderState, string>();
+        stateToBodyStringHash = new Dictionary<PlayerRenderState, string>();
         for (int i = 0; i < renderStatesSetupSequence.Count; i++)
         {
-            stateToStringHash.Add(renderStatesSetupSequence[i], animatorStringHeads[i]);
+            stateToBodyStringHash.Add(renderStatesSetupSequence[i], animatorBodyStringHeads[i]);
         }
     }
+    private void SetupStateToArmFrontStringHash()
+    {
+        stateToArmFrontStringHash = new Dictionary<PlayerRenderState, string>();
+        for (int i = 0; i < renderStatesSetupSequence.Count; i++)
+        {
+            stateToArmFrontStringHash.Add(renderStatesSetupSequence[i], animatorArmFrontStringHeads[i]);
+        }
+    }
+    private void SetupStateToArmBelowStringHash()
+    {
+        stateToArmBelowStringHash = new Dictionary<PlayerRenderState, string>();
+        for (int i = 0; i < renderStatesSetupSequence.Count; i++)
+        {
+            stateToArmBelowStringHash.Add(renderStatesSetupSequence[i], animatorArmBelowStringHeads[i]);
+        }
+    }
+    private void SetupStateToEffectStringHash()
+    {
+        stateToEffectStringHash = new Dictionary<PlayerRenderState, string>();
+        for (int i = 0; i < renderStatesSetupSequence.Count; i++)
+        {
+            stateToEffectStringHash.Add(renderStatesSetupSequence[i], animatorEffectStringHeads[i]);
+        }
+    }
+    private void SetupStateToWeaponStringHash()
+    {
+        stateToWeaponStringHash = new Dictionary<PlayerRenderState, string>();
+        for (int i = 0; i < renderStatesSetupSequence.Count; i++)
+        {
+            stateToWeaponStringHash.Add(renderStatesSetupSequence[i], animatorWeaponStringHeads[i]);
+        }
+    }
+
     private void Render(PlayerRenderState renderState, string directionString)
     {
         string renderedString;
@@ -53,7 +115,11 @@ public class PlayerRenderer : MonoBehaviour
         {
             renderedString = directionString;
         }
-        animator.Play(stateToStringHash[renderState] + " " + renderedString);
+        bodyAnimator.Play(stateToBodyStringHash[renderState] + " " + renderedString);
+        armFrontAnimator.Play(stateToArmFrontStringHash[renderState] + " " + renderedString);
+        armBelowAnimator.Play(stateToArmBelowStringHash[renderState] + " " + renderedString);
+        weaponAnimator.Play(stateToWeaponStringHash[renderState] + " " + renderedString);
+        effectAnimator.Play(stateToEffectStringHash[renderState] + " " + renderedString);
         lastRenderedDirectionString = renderedString;
     }
     private int DirectionToIndex(Vector2 dir, int sliceCount)
@@ -81,7 +147,7 @@ public class PlayerRenderer : MonoBehaviour
     }
     private string DirectionToString(Vector2 direction)
     {
-        if(direction.magnitude < 0.001)
+        if (direction.magnitude < 0.001)
         {
             return "0";
         }
