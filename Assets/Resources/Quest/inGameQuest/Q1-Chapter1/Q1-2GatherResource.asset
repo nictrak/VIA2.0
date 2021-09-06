@@ -17,7 +17,9 @@ MonoBehaviour:
   triggerMessage: Gather Seed
   makeTrueAfterComplete: []
   makeFalseAfterComplete: []
-  description: Gather 5 Seeds
+  description: Gather 5 Seeds from tree
   nextQuest: {fileID: 11400000, guid: 07b617c0fa3bcfa4a937e60d20b173e5, type: 2}
-  questRewards: []
-  rewardNumbers: 
+  questRewards:
+  - {fileID: 11400000, guid: a7a56584c5410eb40a8256e702cb9821, type: 2}
+  - {fileID: 11400000, guid: e3625ecb93999f74b80f0f6f44d50876, type: 2}
+  rewardNumbers: 0200000002000000
