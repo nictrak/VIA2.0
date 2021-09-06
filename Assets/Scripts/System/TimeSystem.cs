@@ -17,20 +17,6 @@ public class TimeSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.E))
-        {
-            if (!isSlow)
-            {
-                DoSlowMotion();
-            }
-        }
-        else
-        {
-            if (isSlow)
-            {
-                DoStandardTime();
-            }
-        }
     }
     public void DoSlowMotion()
     {

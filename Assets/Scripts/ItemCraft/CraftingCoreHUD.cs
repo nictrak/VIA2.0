@@ -61,7 +61,7 @@ public class CraftingCoreHUD : MonoBehaviour
     {
         for (int i = 0; i < craftingCoreSlots.Count; i++)
         {
-            craftingCoreSlots[i].UpdateSprite(craftingCores[currentIndex + i - selectedCraftingCoreSlotsIndex]);
+            craftingCoreSlots[i].UpdateSprite(GetCycleCraftingCores(currentIndex + i - selectedCraftingCoreSlotsIndex));
         }
     }
 }
