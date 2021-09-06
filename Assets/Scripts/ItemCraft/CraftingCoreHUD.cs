@@ -22,7 +22,17 @@ public class CraftingCoreHUD : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (gameObject.activeSelf)
+        {
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                BackCycleCraftingCoreIndex();
+            }
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                NextCycleCraftingCoreIndex();
+            }
+        }
     }
     private CraftingCore GetCycleCraftingCores(int index)
     {
@@ -30,7 +40,7 @@ public class CraftingCoreHUD : MonoBehaviour
         {
             return craftingCores[index + craftingCores.Count];
         }
-        else if (index > craftingCores.Count)
+        else if (index >= craftingCores.Count)
         {
             return craftingCores[index % craftingCores.Count];
         }
@@ -47,6 +57,7 @@ public class CraftingCoreHUD : MonoBehaviour
             nextIndex = nextIndex - craftingCores.Count;
         }
         currentIndex = nextIndex;
+        UpdateAllSprite();
     }
     private void BackCycleCraftingCoreIndex()
     {
@@ -56,12 +67,14 @@ public class CraftingCoreHUD : MonoBehaviour
             nextIndex = nextIndex + craftingCores.Count;
         }
         currentIndex = nextIndex;
+        UpdateAllSprite();
     }
     private void UpdateAllSprite()
     {
         for (int i = 0; i < craftingCoreSlots.Count; i++)
         {
-            craftingCoreSlots[i].UpdateSprite(GetCycleCraftingCores(currentIndex + i - selectedCraftingCoreSlotsIndex));
+            int usedIndex = currentIndex + i - selectedCraftingCoreSlotsIndex;
+            craftingCoreSlots[i].UpdateSprite(GetCycleCraftingCores(usedIndex));
         }
     }
 }
