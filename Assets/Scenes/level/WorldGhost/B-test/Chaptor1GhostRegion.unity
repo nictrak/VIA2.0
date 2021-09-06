@@ -247,7 +247,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &15763426
 Rigidbody2D:
   serializedVersion: 4
@@ -734,25 +734,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 124665678}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &137837847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
-  m_Name: IgniteWeapon(Clone)
-  m_EditorClassIdentifier: 
-  id: af75609591bad584abc70e65f391be17
-  Name: Ignite Weapon
-  Icon: {fileID: 21300000, guid: 539608af302184e479cbeb265856eb2a, type: 3}
-  MaximunStack: 1
-  EquipmentType: 0
-  weaponPrefab: {fileID: 8319709647177024906, guid: 054c03a396d26ab4f97a8465d508d2d3,
-    type: 3}
 --- !u!1 &179112647
 GameObject:
   m_ObjectHideFlags: 0
@@ -33744,6 +33725,25 @@ MonoBehaviour:
   assignedQuest: []
   isSendQuestMessage: 0
   next: {fileID: 0}
+--- !u!114 &211647894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
+  m_Name: NormalWeapon(Clone)
+  m_EditorClassIdentifier: 
+  id: 3379b14b38cb0e241977682e32a54afd
+  Name: NormalWeapon
+  Icon: {fileID: 21300000, guid: 752443c5e42aef346bbaf798b33d5d44, type: 3}
+  MaximunStack: 1
+  EquipmentType: 0
+  weaponPrefab: {fileID: 2563879699250417919, guid: e4f4399ba3a197d44ae30d7a19d1a1af,
+    type: 3}
 --- !u!1 &231353652
 GameObject:
   m_ObjectHideFlags: 0
@@ -33761,7 +33761,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &231353653
 Rigidbody2D:
   serializedVersion: 4
@@ -34200,6 +34200,19 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 894784139, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1201509548}
+    - target: {fileID: 894784139, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+      propertyPath: hitEffectPrefab
+      value: 
+      objectReference: {fileID: 1454490803532372921, guid: ce520020bce440044bc0d5d1f8feca7c,
+        type: 3}
+    - target: {fileID: 894784141, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+      propertyPath: staminaBar
+      value: 
+      objectReference: {fileID: 1536675860}
     - target: {fileID: 4634483407928223877, guid: de7b25d9405ed97409d914dd33f5a080,
         type: 3}
       propertyPath: m_Name
@@ -34618,7 +34631,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _item
       value: 
-      objectReference: {fileID: 345869728}
+      objectReference: {fileID: 688738402}
     - target: {fileID: 2232236816726335518, guid: 4db7594b18e8fe44698d1a208763d9cc,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -34868,7 +34881,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _item
       value: 
-      objectReference: {fileID: 705496847}
+      objectReference: {fileID: 1045748949}
     - target: {fileID: 2232236817259668466, guid: 4db7594b18e8fe44698d1a208763d9cc,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -35091,25 +35104,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4db7594b18e8fe44698d1a208763d9cc, type: 3}
---- !u!114 &345869728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
-  m_Name: NormalWeapon(Clone)
-  m_EditorClassIdentifier: 
-  id: 3379b14b38cb0e241977682e32a54afd
-  Name: NormalWeapon
-  Icon: {fileID: 21300000, guid: 752443c5e42aef346bbaf798b33d5d44, type: 3}
-  MaximunStack: 1
-  EquipmentType: 0
-  weaponPrefab: {fileID: 2563879699250417919, guid: e4f4399ba3a197d44ae30d7a19d1a1af,
-    type: 3}
 --- !u!1 &348043010
 GameObject:
   m_ObjectHideFlags: 0
@@ -36133,6 +36127,25 @@ Transform:
   m_Father: {fileID: 1314426092}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &395414045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
+  m_Name: IgniteWeapon(Clone)
+  m_EditorClassIdentifier: 
+  id: af75609591bad584abc70e65f391be17
+  Name: Ignite Weapon
+  Icon: {fileID: 21300000, guid: 539608af302184e479cbeb265856eb2a, type: 3}
+  MaximunStack: 1
+  EquipmentType: 0
+  weaponPrefab: {fileID: 8319709647177024906, guid: 054c03a396d26ab4f97a8465d508d2d3,
+    type: 3}
 --- !u!4 &415526304 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5354430864999932865, guid: 5e6ecaa41181b884686ae898cf654dd9,
@@ -38249,7 +38262,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 680904878}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &705496847
+--- !u!114 &688738402
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -38259,14 +38272,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
-  m_Name: IgniteWeapon(Clone)
+  m_Name: NormalWeapon(Clone)
   m_EditorClassIdentifier: 
-  id: af75609591bad584abc70e65f391be17
-  Name: Ignite Weapon
-  Icon: {fileID: 21300000, guid: 539608af302184e479cbeb265856eb2a, type: 3}
+  id: 3379b14b38cb0e241977682e32a54afd
+  Name: NormalWeapon
+  Icon: {fileID: 21300000, guid: 752443c5e42aef346bbaf798b33d5d44, type: 3}
   MaximunStack: 1
   EquipmentType: 0
-  weaponPrefab: {fileID: 8319709647177024906, guid: 054c03a396d26ab4f97a8465d508d2d3,
+  weaponPrefab: {fileID: 2563879699250417919, guid: e4f4399ba3a197d44ae30d7a19d1a1af,
     type: 3}
 --- !u!1 &770625833
 GameObject:
@@ -44793,6 +44806,25 @@ Transform:
   m_Father: {fileID: 1250492430}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1045748949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
+  m_Name: IgniteWeapon(Clone)
+  m_EditorClassIdentifier: 
+  id: af75609591bad584abc70e65f391be17
+  Name: Ignite Weapon
+  Icon: {fileID: 21300000, guid: 539608af302184e479cbeb265856eb2a, type: 3}
+  MaximunStack: 1
+  EquipmentType: 0
+  weaponPrefab: {fileID: 8319709647177024906, guid: 054c03a396d26ab4f97a8465d508d2d3,
+    type: 3}
 --- !u!1 &1099586564
 GameObject:
   m_ObjectHideFlags: 0
@@ -45132,7 +45164,7 @@ PrefabInstance:
     - target: {fileID: 4572711834326518906, guid: 90b4ab27ce22b294e9892390e651ebdf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4572711834326518906, guid: 90b4ab27ce22b294e9892390e651ebdf,
         type: 3}
@@ -45161,6 +45193,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90b4ab27ce22b294e9892390e651ebdf, type: 3}
+--- !u!224 &1201509548 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2232236816401729222, guid: 4db7594b18e8fe44698d1a208763d9cc,
+    type: 3}
+  m_PrefabInstance: {fileID: 343105373}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1209783990
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45873,25 +45911,6 @@ Transform:
   m_Father: {fileID: 1157373408}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
---- !u!114 &1312872576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
-  m_Name: NormalWeapon(Clone)
-  m_EditorClassIdentifier: 
-  id: 3379b14b38cb0e241977682e32a54afd
-  Name: NormalWeapon
-  Icon: {fileID: 21300000, guid: 752443c5e42aef346bbaf798b33d5d44, type: 3}
-  MaximunStack: 1
-  EquipmentType: 0
-  weaponPrefab: {fileID: 2563879699250417919, guid: e4f4399ba3a197d44ae30d7a19d1a1af,
-    type: 3}
 --- !u!1 &1314426089
 GameObject:
   m_ObjectHideFlags: 0
@@ -45909,7 +45928,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &1314426090
 Rigidbody2D:
   serializedVersion: 4
@@ -55950,7 +55969,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 4
-      m_TileSpriteIndex: 25
+      m_TileSpriteIndex: 38
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -58263,7 +58282,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 4
-      m_TileSpriteIndex: 20
+      m_TileSpriteIndex: 37
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -80173,8 +80192,8 @@ Tilemap:
     m_Data: {fileID: 21300034, guid: d55267ecbd86c04d8c26656745213873, type: 3}
   - m_RefCount: 68
     m_Data: {fileID: 21300032, guid: d55267ecbd86c04d8c26656745213873, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 21300254, guid: d55267ecbd86c04d8c26656745213873, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 6
     m_Data: {fileID: 21300320, guid: d55267ecbd86c04d8c26656745213873, type: 3}
   - m_RefCount: 26
@@ -80183,8 +80202,8 @@ Tilemap:
     m_Data: {fileID: 21300128, guid: d55267ecbd86c04d8c26656745213873, type: 3}
   - m_RefCount: 9
     m_Data: {fileID: 21300122, guid: d55267ecbd86c04d8c26656745213873, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 21300154, guid: d55267ecbd86c04d8c26656745213873, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 3
     m_Data: {fileID: 21300250, guid: d55267ecbd86c04d8c26656745213873, type: 3}
   - m_RefCount: 1
@@ -80207,10 +80226,10 @@ Tilemap:
     m_Data: {fileID: 21300174, guid: d55267ecbd86c04d8c26656745213873, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300298, guid: d55267ecbd86c04d8c26656745213873, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300254, guid: d55267ecbd86c04d8c26656745213873, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300154, guid: d55267ecbd86c04d8c26656745213873, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300112, guid: d55267ecbd86c04d8c26656745213873, type: 3}
   - m_RefCount: 1
@@ -80418,6 +80437,12 @@ Transform:
   m_Father: {fileID: 1630638002}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!224 &1536675860 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2232236816992409008, guid: 4db7594b18e8fe44698d1a208763d9cc,
+    type: 3}
+  m_PrefabInstance: {fileID: 343105373}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1550899465
 GameObject:
   m_ObjectHideFlags: 0
@@ -80571,7 +80596,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &1631790003
 Rigidbody2D:
   serializedVersion: 4
@@ -99510,7 +99535,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1700622331
 PrefabInstance:
@@ -127223,7 +127248,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &2112757053
 Rigidbody2D:
   serializedVersion: 4
