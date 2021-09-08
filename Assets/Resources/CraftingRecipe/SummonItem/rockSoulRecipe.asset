@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e034655493a7ee542a79a2806541d56f, type: 3}
-  m_Name: SummonGraveSkeletonRecipe
+  m_Name: rockSoulRecipe
   m_EditorClassIdentifier: 
-  material1: boneCorpse
-  material2: deadSeed
-  resultPrefab: {fileID: 1974363470073589601, guid: 5851691f181616f4eb5b003e1f17d98e,
+  material1: rock
+  material2: soulTrap
+  resultName: 
+  resultPrefab: {fileID: 5021506805927386240, guid: 2743e1476b242f44092e871840e6225b,
     type: 3}

@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material1: soulTrap
   material2: ghostDust
+  resultName: 
   resultPrefab: {fileID: 8665236811368332046, guid: e73d0baf0699ee9428af40bf009d5637,
     type: 3}

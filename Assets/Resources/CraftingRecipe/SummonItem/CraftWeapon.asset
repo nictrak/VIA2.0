@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e034655493a7ee542a79a2806541d56f, type: 3}
-  m_Name: SummonBullRecipe
+  m_Name: CraftWeapon
   m_EditorClassIdentifier: 
-  material1: boneCorpse
-  material2: spirit
-  resultName: ghostBullZombie
-  resultPrefab: {fileID: 3404106456946982286, guid: b7b9f65f67907f64ba4d8a5b1fb47709,
+  material1: Life
+  material2: Void
+  resultName: 
+  resultPrefab: {fileID: 6086613904195053581, guid: e4f4399ba3a197d44ae30d7a19d1a1af,
     type: 3}
