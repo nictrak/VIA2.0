@@ -17,7 +17,7 @@ MonoBehaviour:
   triggerMessage: Kill monster
   makeTrueAfterComplete: []
   makeFalseAfterComplete: []
-  description: Clear  monster untill Door open
+  description: Clear  monster with your Summon
   nextQuest: {fileID: 11400000, guid: cbea7f29a9033c640a151deaad02bbfd, type: 2}
   questRewards: []
   rewardNumbers: 

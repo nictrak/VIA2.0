@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialProgress: 0
   goalProgress: 1
-  triggerMessage: Craft HealZone
+  triggerMessage: Craft FriendMelee
   makeTrueAfterComplete: []
   makeFalseAfterComplete: []
-  description: ' Summon HealZone'
+  description: ' Summon Friend Rabbit fighting for you'
   nextQuest: {fileID: 11400000, guid: 35b96a4eafe729f4c993e87a4c605f47, type: 2}
   questRewards: []
   rewardNumbers: 
