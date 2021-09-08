@@ -98,21 +98,47 @@ public class Inventory : MonoBehaviour
         return false;
     }
 
-    public bool RemoveItem(Item item){
+    public bool RemoveItem(Item item, int Amount = 1){
+
+        if(ContainItem(item, Amount))
+        {
+            int remainingRemoveAmount = Amount;
+            for (int i =0; i< ItemSlots.Length ; i++)
+            {
+                if(ItemSlots[i].Item == item)
+                {
+                    if(ItemSlots[i].Amount >= remainingRemoveAmount)
+                    {
+                        ItemSlots[i].Amount -= remainingRemoveAmount;
+                        if(ItemSlots[i].Amount == 0) {
+                            ItemSlots[i].Item = null;
+                        }
+                        return true;
+                    } else {
+                        remainingRemoveAmount -= ItemSlots[i].Amount;
+                        ItemSlots[i].Amount = 0;
+                        ItemSlots[i].Item = null;
+                    }
+                }
+            }
+        }
+        //previousItem = null;
+        return false;
+
+    }
+
+    public bool ContainItem(Item item, int Amount = 1){
+        int count = 0;
         for (int i =0; i< ItemSlots.Length ; i++)
         {
             if(ItemSlots[i].Item == item)
             {
-                //previousItem = itemSlots[i].Item;
-                ItemSlots[i].Amount--;
-                if(ItemSlots[i].Amount == 0) {
-                    ItemSlots[i].Item = null;
-                    //ItemSlots[i].Amount = 0;
-                }
+                count += ItemSlots[i].Amount;
+            }
+            if(count >= Amount){
                 return true;
             }
         }
-        //previousItem = null;
         return false;
     }
 
