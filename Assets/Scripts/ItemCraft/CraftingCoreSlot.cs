@@ -6,6 +6,9 @@ public class CraftingCoreSlot:MonoBehaviour
 {
     [SerializeField]
     private Image image;
+    [SerializeField]
+    private CraftingCore craftingCore;
+
     // Start is called before the first frame update
     void Start()
     {

@@ -10,6 +10,8 @@ public class CraftingCoreHUD : MonoBehaviour
     private int selectedCraftingCoreSlotsIndex;
     [SerializeField]
     private List<CraftingCoreSlot> craftingCoreSlots;
+    [SerializeField]
+    private CraftingMaterial craftingMaterialPrefab;
 
     private int currentIndex;
     // Start is called before the first frame update
@@ -68,6 +70,10 @@ public class CraftingCoreHUD : MonoBehaviour
         }
         currentIndex = nextIndex;
         UpdateAllSprite();
+    }
+    private void SummonCraftingCore()
+    {
+        Instantiate(craftingCores[currentIndex]);
     }
     private void UpdateAllSprite()
     {

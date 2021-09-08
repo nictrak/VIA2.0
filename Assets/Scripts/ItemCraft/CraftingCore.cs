@@ -11,7 +11,8 @@ public class CraftingCore : ScriptableObject
     [SerializeField]
     private Sprite icon;
     [SerializeField]
-    private GameObject summonedPrefab;
+    private CraftingMaterialItem summonedCraftingMaterial;
 
     public Sprite Icon { get => icon; set => icon = value; }
+    public CraftingMaterialItem SummonedCraftingMaterial { get => summonedCraftingMaterial; set => summonedCraftingMaterial = value; }
 }
