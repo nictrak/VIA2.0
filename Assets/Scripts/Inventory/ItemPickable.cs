@@ -20,6 +20,10 @@ public class ItemPickable : MonoBehaviour
                 itemToAdd.Destroy();
                 Destroy(gameObject);
             }
+            else
+            {
+                Destroy(gameObject);
+            }
             
         }
     }
