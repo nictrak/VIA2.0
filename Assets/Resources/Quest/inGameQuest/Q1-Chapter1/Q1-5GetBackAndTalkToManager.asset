@@ -17,7 +17,7 @@ MonoBehaviour:
   triggerMessage: Talk Manager
   makeTrueAfterComplete: []
   makeFalseAfterComplete: []
-  description: Talk to manager and result in quest
+  description: Well, You finish quest in this area. Talk to Manager at HQ
   nextQuest: {fileID: 0}
   questRewards: []
   rewardNumbers: 

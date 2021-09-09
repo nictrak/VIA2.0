@@ -17,7 +17,7 @@ MonoBehaviour:
   triggerMessage: Talk Defender
   makeTrueAfterComplete: []
   makeFalseAfterComplete: []
-  description: Talk Defender
+  description: 'Use warp gate then Talk to Defender '
   nextQuest: {fileID: 11400000, guid: d067c44446475d54d82998a28aae6e93, type: 2}
   questRewards: []
   rewardNumbers: 

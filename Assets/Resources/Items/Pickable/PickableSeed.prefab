@@ -85,9 +85,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1631200095
+  m_SortingLayer: 2
+  m_SortingOrder: 100
   m_Sprite: {fileID: 8576124541983880907, guid: abc0584209e21aa4ca24bdd2105f6e12,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -108,9 +108,9 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5354430864999932871}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 35
+  m_SortingLayerID: -1631200095
+  m_SortingLayer: 2
+  m_SortingOrder: 100
 --- !u!50 &5354430864999932869
 Rigidbody2D:
   serializedVersion: 4
