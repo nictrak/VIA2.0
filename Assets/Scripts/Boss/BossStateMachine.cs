@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 public class BossStateMachine : MonoBehaviour
 {
@@ -28,6 +29,7 @@ public class BossStateMachine : MonoBehaviour
 
     private Dictionary<BossState, BossStateBehaviour> statesHash;
     private Dictionary<BossState, string> stringAnimatorsHash;
+    private AIDestinationSetter destinationSetter;
 
     private BossState currentState;
     private Health health;
@@ -57,6 +59,8 @@ public class BossStateMachine : MonoBehaviour
         currentState = initialState;
         StartState(currentState);
         health = GetComponent<Health>();
+        destinationSetter = GetComponent<AIDestinationSetter>();
+        destinationSetter.target = Resources.FindObjectsOfTypeAll<PlayerIdentity>()[0].transform;
     }
 
     // Update is called once per frame
