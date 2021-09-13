@@ -15,6 +15,10 @@ public class ItemPickable : MonoBehaviour
 
         if (isInRange && Input.GetKeyDown(itemPickupKeyCode))
         {
+            if (inventory == null)
+            {
+                inventory = Resources.FindObjectsOfTypeAll<Inventory>()[0];
+            }
             Item itemToAdd = item.Copy();
             if (!inventory.AddItem(itemToAdd)) {
                 itemToAdd.Destroy();
@@ -30,10 +34,6 @@ public class ItemPickable : MonoBehaviour
 
     private void Start()
     {
-        if(inventory == null)
-        {
-            inventory = Resources.FindObjectsOfTypeAll<Inventory>()[0];
-        }
         UpdateSprite();
     }
     private void OnValidate()

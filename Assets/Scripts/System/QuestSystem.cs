@@ -22,6 +22,7 @@ public class QuestSystem : MonoBehaviour
     // return added index
     public static int AddNewQuest(QuestData questData)
     {
+        Debug.Log("Adding " + questData.Description);
         Quest quest = new Quest(questData);
         Quests.Add(quest);
         ConditionSystem.SetCondition("IsAssigned " + questData.name, true);

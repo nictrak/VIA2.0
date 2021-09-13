@@ -9,8 +9,7 @@ public class Singleton : MonoBehaviour
     [SerializeField]
     private bool isDontDestroyOnLoad;
     private static Dictionary<string, GameObject> singletons;
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
         if (singletons == null)
         {
@@ -25,7 +24,11 @@ public class Singleton : MonoBehaviour
         {
             singletons.Add(currentHash, gameObject);
         }
-        if(isDontDestroyOnLoad) DontDestroyOnLoad(gameObject);
+        if (isDontDestroyOnLoad) DontDestroyOnLoad(gameObject);
+    }
+    // Start is called before the first frame update
+    void Start()
+    {
     }
 
     // Update is called once per frame
