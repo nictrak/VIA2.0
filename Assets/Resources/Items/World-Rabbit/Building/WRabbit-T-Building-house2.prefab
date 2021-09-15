@@ -1161,7 +1161,7 @@ GameObject:
   - component: {fileID: 8039943120666337613}
   - component: {fileID: 8039943120666337614}
   m_Layer: 0
-  m_Name: WRabbit-Building-house2
+  m_Name: WRabbit-T-Building-house2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1280,7 +1280,7 @@ SpriteRenderer:
   m_SortingLayerID: -1312451561
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3540478223609910194, guid: 7e4e4bd5fddd2ab48bd25fbbbd5399f4,
+  m_Sprite: {fileID: -3709990616352707482, guid: 86db0150da232fc4e9de5e32ad87ca7b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
