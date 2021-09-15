@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7702393093296509303}
   - component: {fileID: 7702393093296509300}
   m_Layer: 0
-  m_Name: WRabbit-Building-house
+  m_Name: WRabbit-T-Building-house
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 7702393093296509301}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -23.43, y: -8.22, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 7702393093512932949}
   - {fileID: 7702393094153831529}
