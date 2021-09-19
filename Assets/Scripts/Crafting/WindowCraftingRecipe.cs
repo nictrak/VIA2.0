@@ -10,11 +10,19 @@ public struct ItemAndAmount
     public int Amount;
 }
 
+public enum ItemType {
+        Machine,
+        Magic,
+        Health,
+}
+
 [CreateAssetMenu(fileName = "New CraftRecipe", menuName = "VIA2.0/Window Crafting Recipe", order = 0)]
 public class WindowCraftingRecipe : ScriptableObject
 {
     public List<ItemAndAmount> Materials;
     public ItemAndAmount Result;
+
+    public ItemType type;
 
     public bool CanCraft(Inventory inventory){
         foreach (ItemAndAmount material in Materials)
