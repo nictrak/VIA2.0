@@ -52,12 +52,14 @@ public class WindowCraftingMenu : MonoBehaviour
 
     }
     private void OnValidate() {
-        recipeRowUIParent.GetComponentsInChildren<WindowCraftMenuUIController>(includeInactive: true, result: recipeRowUIs);
-        seperatedList = new Dictionary<ItemType, List<WindowCraftingRecipe>>();
-        foreach(ItemType type in System.Enum.GetValues(typeof(ItemType))){
-            seperatedList[type] = new List<WindowCraftingRecipe>();
+        if(recipeRowUIParent != null){
+            recipeRowUIParent.GetComponentsInChildren<WindowCraftMenuUIController>(includeInactive: true, result: recipeRowUIs);
+            seperatedList = new Dictionary<ItemType, List<WindowCraftingRecipe>>();
+            foreach(ItemType type in System.Enum.GetValues(typeof(ItemType))){
+                seperatedList[type] = new List<WindowCraftingRecipe>();
+            }
+            SeperateCraftingType();
+            SetWindowCraftingRecipe();
         }
-        SeperateCraftingType();
-        SetWindowCraftingRecipe();
     }
 }
