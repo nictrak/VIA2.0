@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5093873814600852345}
   - component: {fileID: 5606510148411037805}
   - component: {fileID: 7555689709906200684}
-  - component: {fileID: 5093873814600852346}
+  - component: {fileID: 1145101407339351039}
   m_Layer: 10
   m_Name: ConfuseZone
   m_TagString: Untagged
@@ -165,8 +165,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeTimeFrame: 200
---- !u!60 &5093873814600852346
-PolygonCollider2D:
+--- !u!58 &1145101407339351039
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -175,46 +175,9 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.4, y: 1.84}
-    newSize: {x: 5.52, y: 2.8}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.79999995, y: -0.53999996}
-      - {x: 0.74, y: -0.53999996}
-      - {x: 0.5, y: -0.74}
-      - {x: 0.5, y: -0.84}
-      - {x: 0.65999997, y: -0.84}
-      - {x: 0.82, y: -0.7}
-      - {x: 0.82, y: -0.58}
-    - - {x: -0.53999996, y: -0.45999998}
-      - {x: -0.53999996, y: -0.7}
-      - {x: -0.52, y: -0.79999995}
-      - {x: -0.34, y: -0.82}
-      - {x: -0.17999999, y: -0.82}
-      - {x: -0.17999999, y: -0.71999997}
-      - {x: -0.38, y: -0.45999998}
-    - - {x: 0.68, y: 0.06}
-      - {x: 0.56, y: 0.22}
-      - {x: 0.26, y: 0.42}
-      - {x: -0.28, y: 0.42}
-      - {x: -0.44, y: 0.22}
-      - {x: -0.44, y: -0.08}
-      - {x: -0.42, y: -0.16}
-      - {x: -0.44, y: -0.28}
-      - {x: -0.44, y: -0.48}
-      - {x: -0.24, y: -0.7}
-      - {x: 0.14, y: -0.7}
-      - {x: 0.52, y: -0.65999997}
-      - {x: 0.62, y: -0.59999996}
-      - {x: 0.68, y: -0.34}
+  serializedVersion: 2
+  m_Radius: 1.2
