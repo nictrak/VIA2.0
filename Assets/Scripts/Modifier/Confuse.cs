@@ -16,9 +16,6 @@ public class Confuse : Modifier
     void Start()
     {
         fleeController = GetComponentInParent<FleeController>();
-        //Delete: Debug
-        Debug.Log("Debug fleeController");
-        Debug.Log(fleeController);
     }
 
     // Update is called once per frame
@@ -29,6 +26,16 @@ public class Confuse : Modifier
     private void FixedUpdate()
     {
         if (IsEnable) RunPerFrame();
+        if (!IsEnable) ClearConfuse();
         TimeCounterPerFrame();
     }
+
+    // Debug : Nagate Status Confuse
+    private  void ClearConfuse()
+    {
+        fleeController.IsEnable = false;
+        // Due to Affect of Mother-Object destroy not Destroy internal script of prefab
+        Destroy(this);
+    }
+
 }
