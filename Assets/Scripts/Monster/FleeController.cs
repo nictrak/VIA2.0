@@ -7,11 +7,16 @@ public class FleeController : MonoBehaviour
 {
     [SerializeField]
     private float fleeVelocity;
+    // Add random move
+    [SerializeField]
+    private float rngMoveX;
+    [SerializeField]
+    private float rngMoveY;
 
     private bool isEnable;
     private AIDestinationSetter destinationSetter;
     private Rigidbody2D rgbody;
-
+    
     public bool IsEnable { get => isEnable; set => isEnable = value; }
 
     // Start is called before the first frame update
@@ -33,6 +38,8 @@ public class FleeController : MonoBehaviour
     }
     private Vector2 CalFleeVector()
     {
+        //Add random range
+        
         Vector2 res = (rgbody.position - (Vector2)destinationSetter.target.position).normalized * fleeVelocity;
         return res;
     }
