@@ -705,7 +705,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.6, y: 2.8}
+  m_Size: {x: 4.125, y: 4.125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -819,16 +819,16 @@ MonoBehaviour:
   - 
   - Via area attack
   animatorArmFrontStringHeads:
+  - Via Stand weapon 1
   - Via Stand arm hold weapon1
-  - Via Run weapon
   - 'Via attack 1 arm '
   - 'Via attack 2 arm '
   - 'Via attack 3 arm '
   - 
   - Via null
   animatorArmBelowStringHeads:
-  - Via Stand arm below hold weapon
-  - Via run arm below hold weapon guitar
+  - Via null
+  - Via null
   - Via attack 1 arm below
   - Via attack 2 arm below
   - Via attack 3 arm below
@@ -836,7 +836,7 @@ MonoBehaviour:
   - Via null
   animatorWeaponStringHeads:
   - Via Stand weapon 1
-  - Via Run weapon guitar
+  - Via Stand weapon 1
   - Via attack 1 weapon
   - Via attack 2 weapon
   - Via attack 3 weapon
@@ -1690,7 +1690,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.6, y: 2.8}
+  m_Size: {x: 4.125, y: 4.125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
