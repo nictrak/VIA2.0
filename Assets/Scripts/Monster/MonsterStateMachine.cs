@@ -25,11 +25,16 @@ public class MonsterStateMachine : MonoBehaviour
     private TriggerRange mostOuterRange;
     [SerializeField]
     private List<MonsterState> tokenStates;
+    [SerializeField]
+    private List<MonsterState> idleAnimationIfNotMoveState;
+    [SerializeField]
+    private string idleString;
 
     private Dictionary<MonsterState, MonsterStateBehaviour> statesHash;
     private Dictionary<MonsterState, string> stringAnimatorsHash;
     private AIDestinationSetter aIDestinationSetter;
     private FlipToPlayer flipToPlayer;
+    private AIPath aIPath;
 
     private MonsterState currentState;
     private Health health;
@@ -60,6 +65,7 @@ public class MonsterStateMachine : MonoBehaviour
         health = GetComponent<Health>();
         aIDestinationSetter = GetComponent<AIDestinationSetter>();
         flipToPlayer = GetComponent<FlipToPlayer>();
+        aIPath = GetComponent<AIPath>();
         if(monsterTokenController == null)
         {
             monsterTokenController = Resources.FindObjectsOfTypeAll<MonsterTokenController>()[0];
@@ -132,11 +138,19 @@ public class MonsterStateMachine : MonoBehaviour
                 }
                 directionString = directions[DirectionToIndex(direction, 8)];
             }
-            result = result + stringAnimatorsHash[state] + " " + directionString;
+            if (idleAnimationIfNotMoveState.Contains(state) && aIPath.reachedEndOfPath && aIPath.canMove)
+            {
+                result = result + idleString + " " + directionString;
+            }
+            else result = result + stringAnimatorsHash[state] + " " + directionString;
         }
         else
         {
-            result = result + stringAnimatorsHash[state];
+            if (idleAnimationIfNotMoveState.Contains(state) && aIPath.reachedEndOfPath && aIPath.canMove)
+            {
+                result = result + idleString;
+            }
+            else result = result + stringAnimatorsHash[state];
         }
         return result;
     }
@@ -156,7 +170,7 @@ public class MonsterStateMachine : MonoBehaviour
             nextState = MonsterState.Dead;
         }
         ChangeState(nextState);
-    }
+    } 
     private int DirectionToIndex(Vector2 dir, int sliceCount)
     {
         //get the normalized direction

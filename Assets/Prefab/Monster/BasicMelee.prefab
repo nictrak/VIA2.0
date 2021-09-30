@@ -941,6 +941,8 @@ MonoBehaviour:
   isHaveEightDirection: 0
   mostOuterRange: {fileID: 82805168}
   tokenStates: 03000000
+  idleAnimationIfNotMoveState: 02000000
+  idleString: idle
 --- !u!114 &101977571
 MonoBehaviour:
   m_ObjectHideFlags: 0
