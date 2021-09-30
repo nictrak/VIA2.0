@@ -39,8 +39,12 @@ public class MonsterStateMachine : MonoBehaviour
     private MonsterState currentState;
     private Health health;
     private MonsterTokenController monsterTokenController;
+    private bool isUpdateDestination;
 
     private static readonly string[] directions = { "N", "NW", "W", "SW", "S", "SW", "W", "NW" };
+
+    public bool IsUpdateDestination { get => isUpdateDestination; set => isUpdateDestination = value; }
+
     public enum MonsterState
     {
         Setup,
@@ -66,6 +70,7 @@ public class MonsterStateMachine : MonoBehaviour
         aIDestinationSetter = GetComponent<AIDestinationSetter>();
         flipToPlayer = GetComponent<FlipToPlayer>();
         aIPath = GetComponent<AIPath>();
+        isUpdateDestination = true;
         if(monsterTokenController == null)
         {
             monsterTokenController = Resources.FindObjectsOfTypeAll<MonsterTokenController>()[0];
@@ -75,7 +80,7 @@ public class MonsterStateMachine : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UpdateDestination();
+        if(isUpdateDestination) UpdateDestination();
         animator.Play(CreateAnimatorString(currentState));
     }
     private void FixedUpdate()
