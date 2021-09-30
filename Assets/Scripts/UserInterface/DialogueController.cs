@@ -19,6 +19,8 @@ public class DialogueController : MonoBehaviour
     private Button button3;
     [SerializeField]
     private Button button4;
+    [SerializeField]
+    private Image Image;
 
     private bool isShow;
     // Start is called before the first frame update
@@ -42,6 +44,13 @@ public class DialogueController : MonoBehaviour
         talkerNameText.text = dialogue.TalkerName;
         dialogueText.text = dialogue.DialogueContent;
     }
+
+    public void SetImage(string talkerName)
+    {
+        // talkerNameText.text = dialogue.TalkerName;
+        // dialogueText.text = dialogue.DialogueContent;
+    }
+
     public void ShowDialogue(Dialogue dialogue)
     {
         if(dialogue == null)
@@ -57,6 +66,12 @@ public class DialogueController : MonoBehaviour
             }
             SetActiveButton(dialogue.GetChoicesString());
             SetText(dialogue);
+            // "Assets\Materials\Characters\Mark inport.1"
+            Object [] sprites;
+            sprites = Resources.LoadAll ("testUIDialog/animal");
+            Debug.Log("FindAssets");
+            Debug.Log((Sprite)sprites [3]);
+            Image.sprite = (Sprite)sprites [3];
         }
     }
     public void SetActivePanel(bool isActive)
