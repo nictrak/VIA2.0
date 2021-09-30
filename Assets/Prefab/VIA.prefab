@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   renderState: 2
-  frame: 15
+  frame: 25
   damage: 10
   stamina: 0
   specialAttack: {fileID: 0}
@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   renderState: 3
-  frame: 15
+  frame: 25
   damage: 20
   stamina: 0
   specialAttack: {fileID: 0}
@@ -565,7 +565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   renderState: 4
-  frame: 20
+  frame: 40
   damage: 30
   stamina: 20
   specialAttack: {fileID: 0}
@@ -813,41 +813,41 @@ MonoBehaviour:
   animatorBodyStringHeads:
   - Via Stand body
   - Via Run body
-  - Via attack 1 body
-  - Via attack 2 body
-  - Via attack 3 body
+  - Via attack 2-1 body
+  - Via attack 2-2 body
+  - Via attack 2-3 body
   - 
   - Via area attack
   animatorArmFrontStringHeads:
-  - Via Stand weapon 1
   - Via Stand arm hold weapon1
-  - 'Via attack 1 arm '
-  - 'Via attack 2 arm '
-  - 'Via attack 3 arm '
+  - Via Stand arm hold weapon1
+  - 'Via attack 2-1 arm '
+  - 'Via attack 2-2 arm '
+  - 'Via attack 2-3 arm '
   - 
   - Via null
   animatorArmBelowStringHeads:
   - Via null
   - Via null
-  - Via attack 1 arm below
-  - Via attack 2 arm below
-  - Via attack 3 arm below
+  - Via null
+  - Via null
+  - Via null
   - 
   - Via null
   animatorWeaponStringHeads:
   - Via Stand weapon 1
   - Via Stand weapon 1
-  - Via attack 1 weapon
-  - Via attack 2 weapon
-  - Via attack 3 weapon
+  - Via attack 2-1 weapon
+  - Via attack 2-2 weapon
+  - Via attack 2-3 weapon
   - 
   - Via null
   animatorEffectStringHeads:
   - Via null
   - Via null
-  - Via attack 1 effect
-  - Via attack 2 effect
-  - Via attack 3 effect
+  - Via attack 2-1 effect
+  - Via attack 2-2 effect
+  - Via attack 2-3 effect
   - 
   - Via null
   renderStatesSetupSequence: 00000000010000000200000003000000040000000600000005000000
