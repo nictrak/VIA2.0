@@ -314,6 +314,186 @@ TextureImporter:
   - first:
       213: -5680906443214027058
     second: Attack L4 Body_103
+  - first:
+      213: 621922577486211574
+    second: Attack L4 Body_0
+  - first:
+      213: -2545573402321475355
+    second: Attack L4 Body_1
+  - first:
+      213: -5141679560399895195
+    second: Attack L4 Body_2
+  - first:
+      213: -2937499657129823080
+    second: Attack L4 Body_3
+  - first:
+      213: 5557286484158460839
+    second: Attack L4 Body_4
+  - first:
+      213: 2793696647056105664
+    second: Attack L4 Body_8
+  - first:
+      213: -8985302911739964562
+    second: Attack L4 Body_9
+  - first:
+      213: 2324985093284909624
+    second: Attack L4 Body_10
+  - first:
+      213: 5849843453727411355
+    second: Attack L4 Body_11
+  - first:
+      213: 1680539341657363014
+    second: Attack L4 Body_12
+  - first:
+      213: 6285361415307119694
+    second: Attack L4 Body_16
+  - first:
+      213: 4020384787714265238
+    second: Attack L4 Body_17
+  - first:
+      213: 1141846615913707423
+    second: Attack L4 Body_18
+  - first:
+      213: -2457900721241299102
+    second: Attack L4 Body_19
+  - first:
+      213: -5517447617694115422
+    second: Attack L4 Body_20
+  - first:
+      213: 7559475740814623588
+    second: Attack L4 Body_24
+  - first:
+      213: 4943684865117228087
+    second: Attack L4 Body_25
+  - first:
+      213: -273921301951757030
+    second: Attack L4 Body_26
+  - first:
+      213: 5732800184984837027
+    second: Attack L4 Body_27
+  - first:
+      213: -1266011971967821650
+    second: Attack L4 Body_28
+  - first:
+      213: 7711858557647553359
+    second: Attack L4 Body_32
+  - first:
+      213: 8944562762868171737
+    second: Attack L4 Body_33
+  - first:
+      213: -5261456241385293843
+    second: Attack L4 Body_34
+  - first:
+      213: -7436901631633971810
+    second: Attack L4 Body_35
+  - first:
+      213: 8449685252117517520
+    second: Attack L4 Body_36
+  - first:
+      213: -8145515454061155927
+    second: Attack L4 Body_40
+  - first:
+      213: -550827253207648577
+    second: Attack L4 Body_41
+  - first:
+      213: 3978436474263432754
+    second: Attack L4 Body_42
+  - first:
+      213: -78316112758226781
+    second: Attack L4 Body_43
+  - first:
+      213: -7347080884317904519
+    second: Attack L4 Body_44
+  - first:
+      213: 4856473433781636383
+    second: Attack L4 Body_48
+  - first:
+      213: -9033304080748960720
+    second: Attack L4 Body_49
+  - first:
+      213: -3699197679527850883
+    second: Attack L4 Body_50
+  - first:
+      213: 9101408244519370067
+    second: Attack L4 Body_51
+  - first:
+      213: 5350604495371057717
+    second: Attack L4 Body_52
+  - first:
+      213: 1729819729407899622
+    second: Attack L4 Body_56
+  - first:
+      213: -7496214293997527865
+    second: Attack L4 Body_57
+  - first:
+      213: 4001356075919342161
+    second: Attack L4 Body_58
+  - first:
+      213: -7338716032613191689
+    second: Attack L4 Body_59
+  - first:
+      213: 8375294141554654519
+    second: Attack L4 Body_60
+  - first:
+      213: -3109295070235501377
+    second: Attack L4 Body_64
+  - first:
+      213: -8086726683079692862
+    second: Attack L4 Body_65
+  - first:
+      213: -7714612346441903651
+    second: Attack L4 Body_66
+  - first:
+      213: 3127192317493411332
+    second: Attack L4 Body_67
+  - first:
+      213: -3950322548894347120
+    second: Attack L4 Body_68
+  - first:
+      213: -7820031005434214157
+    second: Attack L4 Body_72
+  - first:
+      213: 4796050278009436767
+    second: Attack L4 Body_73
+  - first:
+      213: -3996596919853393580
+    second: Attack L4 Body_74
+  - first:
+      213: -1944704638724611315
+    second: Attack L4 Body_75
+  - first:
+      213: 4579061311659238286
+    second: Attack L4 Body_76
+  - first:
+      213: 6548932326718777596
+    second: Attack L4 Body_80
+  - first:
+      213: 2362400632256563338
+    second: Attack L4 Body_81
+  - first:
+      213: 51111910568907746
+    second: Attack L4 Body_82
+  - first:
+      213: -4942924478203815962
+    second: Attack L4 Body_83
+  - first:
+      213: 3057221751572252672
+    second: Attack L4 Body_84
+  - first:
+      213: -4278175410445570380
+    second: Attack L4 Body_88
+  - first:
+      213: 2368934517781710652
+    second: Attack L4 Body_89
+  - first:
+      213: 3256411151484713034
+    second: Attack L4 Body_90
+  - first:
+      213: -83168211728195264
+    second: Attack L4 Body_91
+  - first:
+      213: -6246183010166923121
+    second: Attack L4 Body_92
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -399,116 +579,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Attack L4 Body_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 3168
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f2397f939d46a8430800000000000000
-      internalID: 3785949320901530415
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_1
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 3168
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5161aa22f3ac91f90800000000000000
-      internalID: -6982327374747920875
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_2
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 3168
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c3b985a22128a7350800000000000000
-      internalID: 6015263266838190908
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_3
-      rect:
-        serializedVersion: 2
-        x: 792
-        y: 3168
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dc635ef763e2beec0800000000000000
-      internalID: -3536682270760552755
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_4
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 3168
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4eb16825f6ccc15f0800000000000000
-      internalID: -784527456571352092
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attack L4 Body_5
       rect:
         serializedVersion: 2
-        x: 1320
-        y: 3168
+        x: 0
+        y: 4488
         width: 264
         height: 264
       alignment: 0
@@ -528,8 +603,8 @@ TextureImporter:
       name: Attack L4 Body_6
       rect:
         serializedVersion: 2
-        x: 1584
-        y: 3168
+        x: 264
+        y: 4488
         width: 264
         height: 264
       alignment: 0
@@ -549,8 +624,8 @@ TextureImporter:
       name: Attack L4 Body_7
       rect:
         serializedVersion: 2
-        x: 1848
-        y: 3168
+        x: 528
+        y: 4488
         width: 264
         height: 264
       alignment: 0
@@ -567,116 +642,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L4 Body_8
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 2904
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c5786eeefb2c4e9d0800000000000000
-      internalID: -2745855743186532516
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_9
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 2904
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c54d9696e143c820800000000000000
-      internalID: 2937263840600868293
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_10
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 2904
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d240ba0c9b0039b70800000000000000
-      internalID: 8904461686042985517
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_11
-      rect:
-        serializedVersion: 2
-        x: 792
-        y: 2904
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 339356fac88d40110800000000000000
-      internalID: 1226343097301285171
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_12
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 2904
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: edaebd97932fcec90800000000000000
-      internalID: -7139064980617565474
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attack L4 Body_13
       rect:
         serializedVersion: 2
-        x: 1320
-        y: 2904
+        x: 792
+        y: 4224
         width: 264
         height: 264
       alignment: 0
@@ -696,8 +666,8 @@ TextureImporter:
       name: Attack L4 Body_14
       rect:
         serializedVersion: 2
-        x: 1584
-        y: 2904
+        x: 1056
+        y: 4224
         width: 264
         height: 264
       alignment: 0
@@ -717,8 +687,8 @@ TextureImporter:
       name: Attack L4 Body_15
       rect:
         serializedVersion: 2
-        x: 1848
-        y: 2904
+        x: 0
+        y: 3960
         width: 264
         height: 264
       alignment: 0
@@ -735,116 +705,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L4 Body_16
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 2640
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8495598981784c790800000000000000
-      internalID: -7510729738838255288
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_17
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 2640
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e800dca054a1e0f0800000000000000
-      internalID: -1089408968443295515
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_18
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 2640
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e28e234e816ccbbc0800000000000000
-      internalID: -3765917378178521042
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_19
-      rect:
-        serializedVersion: 2
-        x: 792
-        y: 2640
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8686b5a02189d7b00800000000000000
-      internalID: 827985109756635240
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_20
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 2640
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ada586e2a96503b0800000000000000
-      internalID: -5546911217663758940
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attack L4 Body_21
       rect:
         serializedVersion: 2
-        x: 1320
-        y: 2640
+        x: 264
+        y: 3696
         width: 264
         height: 264
       alignment: 0
@@ -864,8 +729,8 @@ TextureImporter:
       name: Attack L4 Body_22
       rect:
         serializedVersion: 2
-        x: 1584
-        y: 2640
+        x: 528
+        y: 3696
         width: 264
         height: 264
       alignment: 0
@@ -885,8 +750,8 @@ TextureImporter:
       name: Attack L4 Body_23
       rect:
         serializedVersion: 2
-        x: 1848
-        y: 2640
+        x: 792
+        y: 3696
         width: 264
         height: 264
       alignment: 0
@@ -903,116 +768,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L4 Body_24
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 2376
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ea27fdf6a342fe10800000000000000
-      internalID: 2229919150006282980
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_25
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 2376
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f5a36223caafe1ac0800000000000000
-      internalID: -3882390211264103841
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_26
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 2376
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ec1eefbf7f17bd660800000000000000
-      internalID: 7411642921666929102
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_27
-      rect:
-        serializedVersion: 2
-        x: 792
-        y: 2376
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 461403dbb64658810800000000000000
-      internalID: 1766928842711122276
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_28
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 2376
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 22a0b9aff140fd9a0800000000000000
-      internalID: -6206237226098292190
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attack L4 Body_29
       rect:
         serializedVersion: 2
-        x: 1320
-        y: 2376
+        x: 1056
+        y: 3432
         width: 264
         height: 264
       alignment: 0
@@ -1032,8 +792,8 @@ TextureImporter:
       name: Attack L4 Body_30
       rect:
         serializedVersion: 2
-        x: 1584
-        y: 2376
+        x: 0
+        y: 3168
         width: 264
         height: 264
       alignment: 0
@@ -1053,8 +813,8 @@ TextureImporter:
       name: Attack L4 Body_31
       rect:
         serializedVersion: 2
-        x: 1848
-        y: 2376
+        x: 264
+        y: 3168
         width: 264
         height: 264
       alignment: 0
@@ -1071,116 +831,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L4 Body_32
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 2112
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 59db856eb09af9a80800000000000000
-      internalID: -8457855706604192363
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_33
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 2112
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 20f3e577bb6927b80800000000000000
-      internalID: -8398484623186837758
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_34
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 2112
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5ae777e1eebda0cb0800000000000000
-      internalID: -4896859829052146011
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_35
-      rect:
-        serializedVersion: 2
-        x: 792
-        y: 2112
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cff180c8de4d7ac60800000000000000
-      internalID: 7829460593928577020
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_36
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 2112
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 46a21130e4dcec8f0800000000000000
-      internalID: -518251172158428572
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attack L4 Body_37
       rect:
         serializedVersion: 2
-        x: 1320
-        y: 2112
+        x: 528
+        y: 2904
         width: 264
         height: 264
       alignment: 0
@@ -1200,8 +855,8 @@ TextureImporter:
       name: Attack L4 Body_38
       rect:
         serializedVersion: 2
-        x: 1584
-        y: 2112
+        x: 792
+        y: 2904
         width: 264
         height: 264
       alignment: 0
@@ -1221,8 +876,8 @@ TextureImporter:
       name: Attack L4 Body_39
       rect:
         serializedVersion: 2
-        x: 1848
-        y: 2112
+        x: 1056
+        y: 2904
         width: 264
         height: 264
       alignment: 0
@@ -1239,116 +894,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L4 Body_40
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1848
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 73fd593092a114c50800000000000000
-      internalID: 6647623288431697719
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_41
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 1848
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aebbe5fac2c9fa8a0800000000000000
-      internalID: -6291638438678578198
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_42
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 1848
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 27b84b03a76d74220800000000000000
-      internalID: 2470178740927499122
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_43
-      rect:
-        serializedVersion: 2
-        x: 792
-        y: 1848
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7ee012807d71a7ef0800000000000000
-      internalID: -109749028595364121
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_44
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 1848
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 434fb227aa87eb970800000000000000
-      internalID: 8772581797619561524
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attack L4 Body_45
       rect:
         serializedVersion: 2
-        x: 1320
-        y: 1848
+        x: 0
+        y: 2376
         width: 264
         height: 264
       alignment: 0
@@ -1368,8 +918,8 @@ TextureImporter:
       name: Attack L4 Body_46
       rect:
         serializedVersion: 2
-        x: 1584
-        y: 1848
+        x: 264
+        y: 2376
         width: 264
         height: 264
       alignment: 0
@@ -1389,8 +939,8 @@ TextureImporter:
       name: Attack L4 Body_47
       rect:
         serializedVersion: 2
-        x: 1848
-        y: 1848
+        x: 528
+        y: 2376
         width: 264
         height: 264
       alignment: 0
@@ -1407,116 +957,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L4 Body_48
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1584
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 83bcc3c073ab564e0800000000000000
-      internalID: -1988978914822927560
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_49
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 1584
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a6472fd8e9aac400800000000000000
-      internalID: 345275139088664231
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_50
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 1584
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0c3fa897be1b14b30800000000000000
-      internalID: 4269889546638521280
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_51
-      rect:
-        serializedVersion: 2
-        x: 792
-        y: 1584
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eebff2772d57b1610800000000000000
-      internalID: 1592996440008817646
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_52
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 1584
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: daaf5643e93494830800000000000000
-      internalID: 4055847286186834605
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attack L4 Body_53
       rect:
         serializedVersion: 2
-        x: 1320
-        y: 1584
+        x: 792
+        y: 2112
         width: 264
         height: 264
       alignment: 0
@@ -1536,8 +981,8 @@ TextureImporter:
       name: Attack L4 Body_54
       rect:
         serializedVersion: 2
-        x: 1584
-        y: 1584
+        x: 1056
+        y: 2112
         width: 264
         height: 264
       alignment: 0
@@ -1557,8 +1002,8 @@ TextureImporter:
       name: Attack L4 Body_55
       rect:
         serializedVersion: 2
-        x: 1848
-        y: 1584
+        x: 0
+        y: 1848
         width: 264
         height: 264
       alignment: 0
@@ -1575,116 +1020,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L4 Body_56
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1320
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 53e41be2f2a8f0640800000000000000
-      internalID: 5048405642557083189
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_57
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 1320
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b257ce7fb8dfa9c0800000000000000
-      internalID: -3913671234184326478
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_58
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 1320
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 357179c38fdded450800000000000000
-      internalID: 6115569402253875027
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_59
-      rect:
-        serializedVersion: 2
-        x: 792
-        y: 1320
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a8fab3289a7370da0800000000000000
-      internalID: -5978748779137093750
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_60
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 1320
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c51dc6d80d36903a0800000000000000
-      internalID: -6698713223359835812
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attack L4 Body_61
       rect:
         serializedVersion: 2
-        x: 1320
-        y: 1320
+        x: 264
+        y: 1584
         width: 264
         height: 264
       alignment: 0
@@ -1704,8 +1044,8 @@ TextureImporter:
       name: Attack L4 Body_62
       rect:
         serializedVersion: 2
-        x: 1584
-        y: 1320
+        x: 528
+        y: 1584
         width: 264
         height: 264
       alignment: 0
@@ -1725,8 +1065,8 @@ TextureImporter:
       name: Attack L4 Body_63
       rect:
         serializedVersion: 2
-        x: 1848
-        y: 1320
+        x: 792
+        y: 1584
         width: 264
         height: 264
       alignment: 0
@@ -1743,116 +1083,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L4 Body_64
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1056
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e945400d36dd02840800000000000000
-      internalID: 5197397390746997918
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_65
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 1056
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a18198b0960867260800000000000000
-      internalID: 7094999451622250522
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_66
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 1056
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5ef36e6bc7eb90f90800000000000000
-      internalID: -6986843904034848795
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_67
-      rect:
-        serializedVersion: 2
-        x: 792
-        y: 1056
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a1d2794af51356d90800000000000000
-      internalID: -7105218550254064358
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_68
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 1056
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 78a7dbe895a90b350800000000000000
-      internalID: 6030489610486643335
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attack L4 Body_69
       rect:
         serializedVersion: 2
-        x: 1320
-        y: 1056
+        x: 1056
+        y: 1320
         width: 264
         height: 264
       alignment: 0
@@ -1872,7 +1107,7 @@ TextureImporter:
       name: Attack L4 Body_70
       rect:
         serializedVersion: 2
-        x: 1584
+        x: 0
         y: 1056
         width: 264
         height: 264
@@ -1893,7 +1128,7 @@ TextureImporter:
       name: Attack L4 Body_71
       rect:
         serializedVersion: 2
-        x: 1848
+        x: 264
         y: 1056
         width: 264
         height: 264
@@ -1911,115 +1146,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L4 Body_72
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 792
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 628b22eb24f7f9d60800000000000000
-      internalID: 7899172196065654822
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_73
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 792
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 700d049817ff07f60800000000000000
-      internalID: 8030198998700707847
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_74
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 792
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 55b35479a07160470800000000000000
-      internalID: 8360395092514913109
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_75
-      rect:
-        serializedVersion: 2
-        x: 792
-        y: 792
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f676b14fb07c4c80800000000000000
-      internalID: -8337164843426089229
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_76
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 792
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0218c0715e4e44f30800000000000000
-      internalID: 4559020395391123744
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attack L4 Body_77
       rect:
         serializedVersion: 2
-        x: 1320
+        x: 528
         y: 792
         width: 264
         height: 264
@@ -2040,7 +1170,7 @@ TextureImporter:
       name: Attack L4 Body_78
       rect:
         serializedVersion: 2
-        x: 1584
+        x: 792
         y: 792
         width: 264
         height: 264
@@ -2061,7 +1191,7 @@ TextureImporter:
       name: Attack L4 Body_79
       rect:
         serializedVersion: 2
-        x: 1848
+        x: 1056
         y: 792
         width: 264
         height: 264
@@ -2079,116 +1209,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L4 Body_80
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 528
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e037e893666cf6800800000000000000
-      internalID: 607922617072907022
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_81
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 528
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 27346f958999ebfe0800000000000000
-      internalID: -1171329973446360206
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_82
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 528
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a1d869c1065170a50800000000000000
-      internalID: 6487177290791161114
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_83
-      rect:
-        serializedVersion: 2
-        x: 792
-        y: 528
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a2487762b68804100800000000000000
-      internalID: 90221986335654954
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_84
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 528
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 96cd5a8f0c35b8f00800000000000000
-      internalID: 1120081020602145897
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attack L4 Body_85
       rect:
         serializedVersion: 2
-        x: 1320
-        y: 528
+        x: 0
+        y: 264
         width: 264
         height: 264
       alignment: 0
@@ -2208,8 +1233,8 @@ TextureImporter:
       name: Attack L4 Body_86
       rect:
         serializedVersion: 2
-        x: 1584
-        y: 528
+        x: 264
+        y: 264
         width: 264
         height: 264
       alignment: 0
@@ -2229,8 +1254,8 @@ TextureImporter:
       name: Attack L4 Body_87
       rect:
         serializedVersion: 2
-        x: 1848
-        y: 528
+        x: 528
+        y: 264
         width: 264
         height: 264
       alignment: 0
@@ -2247,116 +1272,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L4 Body_88
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 264
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c41bec2a97d6de30800000000000000
-      internalID: 4528043532546151619
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_89
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 264
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9cf1596a2ae24eb10800000000000000
-      internalID: 2009782609828454345
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_90
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 264
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a8071ce08994fb8b0800000000000000
-      internalID: -5134304132747661174
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_91
-      rect:
-        serializedVersion: 2
-        x: 792
-        y: 264
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e90f2b81a63a604c0800000000000000
-      internalID: -4321587116339171170
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_92
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 264
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d15e6c5740625bca0800000000000000
-      internalID: -6001849127803624163
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attack L4 Body_93
       rect:
         serializedVersion: 2
-        x: 1320
-        y: 264
+        x: 792
+        y: 0
         width: 264
         height: 264
       alignment: 0
@@ -2376,8 +1296,8 @@ TextureImporter:
       name: Attack L4 Body_94
       rect:
         serializedVersion: 2
-        x: 1584
-        y: 264
+        x: 1056
+        y: 0
         width: 264
         height: 264
       alignment: 0
@@ -2394,10 +1314,1165 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L4 Body_95
+      name: Attack L4 Body_0
       rect:
         serializedVersion: 2
-        x: 1848
+        x: 0
+        y: 4752
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f96cd40a4381a800800000000000000
+      internalID: 621922577486211574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_1
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 4752
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e822f44a7e4cacd0800000000000000
+      internalID: -2545573402321475355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_2
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 4752
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5654a7d7ea515a8b0800000000000000
+      internalID: -5141679560399895195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_3
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 4752
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894f1f810a7eb37d0800000000000000
+      internalID: -2937499657129823080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_4
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 4752
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a338531d927f1d40800000000000000
+      internalID: 5557286484158460839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_8
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 4488
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c0aaf18c4435c620800000000000000
+      internalID: 2793696647056105664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_9
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 4488
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e63d472ab9acd4380800000000000000
+      internalID: -8985302911739964562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4224
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8325351cf91044020800000000000000
+      internalID: 2324985093284909624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_11
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 4224
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c011b90a1de2150800000000000000
+      internalID: 5849843453727411355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_12
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 4224
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6425e8a90a9725710800000000000000
+      internalID: 1680539341657363014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_16
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 3960
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4cc35ce7e61a3750800000000000000
+      internalID: 6285361415307119694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_17
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 3960
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 690d71cd9a64bc730800000000000000
+      internalID: 4020384787714265238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_18
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 3960
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f97b4898277a8df00800000000000000
+      internalID: 1141846615913707423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_19
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 3960
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2676c390158c3edd0800000000000000
+      internalID: -2457900721241299102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3696
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a95488df961e63b0800000000000000
+      internalID: -5517447617694115422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_24
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 3696
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 463407b6227a8e860800000000000000
+      internalID: 7559475740814623588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3432
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73c89ca213f7b9440800000000000000
+      internalID: 4943684865117228087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_26
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 3432
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15c0c4f606d23cf0800000000000000
+      internalID: -273921301951757030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_27
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 3432
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ab9052056ffe8f40800000000000000
+      internalID: 5732800184984837027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_28
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 3432
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea85771b1d83e6ee0800000000000000
+      internalID: -1266011971967821650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_32
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 3168
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4383aebf76060b60800000000000000
+      internalID: 7711858557647553359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_33
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 3168
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d3a1f74178712c70800000000000000
+      internalID: 8944562762868171737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_34
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 3168
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de7b7f2cc6d8bf6b0800000000000000
+      internalID: -5261456241385293843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2904
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e952fe05e51dac890800000000000000
+      internalID: -7436901631633971810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_36
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 2904
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d4525ce7ff434570800000000000000
+      internalID: 8449685252117517520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2640
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a9ea30f9d055fe80800000000000000
+      internalID: -8145515454061155927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_41
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 2640
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb634f718811b58f0800000000000000
+      internalID: -550827253207648577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_42
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 2640
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23eede905ee363730800000000000000
+      internalID: 3978436474263432754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_43
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 2640
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a04bde09e3c9eef0800000000000000
+      internalID: -78316112758226781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_44
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 2640
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9712b2abcdce90a90800000000000000
+      internalID: -7347080884317904519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_48
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 2376
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d0da97bd8a56340800000000000000
+      internalID: 4856473433781636383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_49
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 2376
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0342fde8cc143a280800000000000000
+      internalID: -9033304080748960720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2112
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7c0bc54f4fc9acc0800000000000000
+      internalID: -3699197679527850883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_51
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 2112
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35d736ab392be4e70800000000000000
+      internalID: 9101408244519370067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_52
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 2112
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a3338907a214a40800000000000000
+      internalID: 5350604495371057717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_56
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1848
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e7f1d001ed810810800000000000000
+      internalID: 1729819729407899622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_57
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1848
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc5216f0d818f790800000000000000
+      internalID: -7496214293997527865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_58
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1848
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15af505a62ca78730800000000000000
+      internalID: 4001356075919342161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_59
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1848
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ff60a886a4a72a90800000000000000
+      internalID: -7338716032613191689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1584
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73d76c4c5a50b3470800000000000000
+      internalID: 8375294141554654519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_64
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1584
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbc5dbc7b9099d4d0800000000000000
+      internalID: -3109295070235501377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1320
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cdac535dec26cf80800000000000000
+      internalID: -8086726683079692862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_66
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1320
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd1dc76d1f030f490800000000000000
+      internalID: -7714612346441903651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_67
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1320
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40e768c18d4066b20800000000000000
+      internalID: 3127192317493411332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_68
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1320
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 090dfec4292ad29c0800000000000000
+      internalID: -3950322548894347120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_72
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1056
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f88d8c9b3ba97390800000000000000
+      internalID: -7820031005434214157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_73
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1056
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a7aa9315efe8240800000000000000
+      internalID: 4796050278009436767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_74
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1056
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 459d7b9b64c3988c0800000000000000
+      internalID: -3996596919853393580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 792
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d03e3cf3f650305e0800000000000000
+      internalID: -1944704638724611315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_76
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 792
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e83ee2680081c8f30800000000000000
+      internalID: 4579061311659238286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 528
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf82520e04b72ea50800000000000000
+      internalID: 6548932326718777596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_81
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 528
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a888fc6cbdee8c020800000000000000
+      internalID: 2362400632256563338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_82
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 528
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e35049030695b000800000000000000
+      internalID: 51111910568907746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_83
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 528
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e714153064376bb0800000000000000
+      internalID: -4942924478203815962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_84
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 528
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008cf063cfe6d6a20800000000000000
+      internalID: 3057221751572252672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_88
+      rect:
+        serializedVersion: 2
+        x: 792
         y: 264
         width: 264
         height: 264
@@ -2408,14 +2483,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e557809dfe249240800000000000000
-      internalID: 4797511169642812904
+      spriteID: 4bea495812ed0a4c0800000000000000
+      internalID: -4278175410445570380
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L4 Body_96
+      name: Attack L4 Body_89
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 264
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c374a8c846520e020800000000000000
+      internalID: 2368934517781710652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L4 Body_90
       rect:
         serializedVersion: 2
         x: 0
@@ -2429,14 +2525,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6825e5998d63f4890800000000000000
-      internalID: -7471692952870432122
+      spriteID: a48fdd660b8113d20800000000000000
+      internalID: 3256411151484713034
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L4 Body_97
+      name: Attack L4 Body_91
       rect:
         serializedVersion: 2
         x: 264
@@ -2450,14 +2546,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 908d3d93c77fbaa00800000000000000
-      internalID: 768980274314991625
+      spriteID: 041265bb3f688def0800000000000000
+      internalID: -83168211728195264
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L4 Body_98
+      name: Attack L4 Body_92
       rect:
         serializedVersion: 2
         x: 528
@@ -2471,113 +2567,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7eab18fd9e74c8270800000000000000
-      internalID: 8254051286866049767
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_99
-      rect:
-        serializedVersion: 2
-        x: 792
-        y: 0
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1f6dfc28aa3e27d30800000000000000
-      internalID: 4427851705137223409
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_100
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 0
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 72e1de9e87cdfe7c0800000000000000
-      internalID: -4039767928849228249
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_101
-      rect:
-        serializedVersion: 2
-        x: 1320
-        y: 0
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d7d5bbd5180ff8d30800000000000000
-      internalID: 4436028596397235581
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_102
-      rect:
-        serializedVersion: 2
-        x: 1584
-        y: 0
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9cf83923ce372dc00800000000000000
-      internalID: 923928331862380489
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L4 Body_103
-      rect:
-        serializedVersion: 2
-        x: 1848
-        y: 0
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ec6000a40bd5921b0800000000000000
-      internalID: -5680906443214027058
+      spriteID: f80abec55a91159a0800000000000000
+      internalID: -6246183010166923121
       vertices: []
       indices: 
       edges: []

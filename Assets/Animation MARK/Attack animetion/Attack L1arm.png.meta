@@ -715,7 +715,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 3168
+        y: 4752
         width: 264
         height: 264
       alignment: 0
@@ -736,7 +736,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 264
-        y: 3168
+        y: 4752
         width: 264
         height: 264
       alignment: 0
@@ -757,7 +757,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 528
-        y: 3168
+        y: 4752
         width: 264
         height: 264
       alignment: 0
@@ -778,7 +778,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 792
-        y: 3168
+        y: 4752
         width: 264
         height: 264
       alignment: 0
@@ -799,7 +799,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1056
-        y: 3168
+        y: 4752
         width: 264
         height: 264
       alignment: 0
@@ -816,74 +816,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L1arm_5
-      rect:
-        serializedVersion: 2
-        x: 1320
-        y: 3168
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 04d05af4fb02c7820800000000000000
-      internalID: 2917242664676298048
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L1arm_6
-      rect:
-        serializedVersion: 2
-        x: 1584
-        y: 3168
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dd900bfe0d0d89420800000000000000
-      internalID: 2637087177618491869
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L1arm_7
-      rect:
-        serializedVersion: 2
-        x: 1848
-        y: 3168
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 73683b40076a63260800000000000000
-      internalID: 7077026864504735287
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attack L1arm_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2904
+        x: 792
+        y: 4488
         width: 264
         height: 264
       alignment: 0
@@ -903,8 +840,8 @@ TextureImporter:
       name: Attack L1arm_9
       rect:
         serializedVersion: 2
-        x: 264
-        y: 2904
+        x: 1056
+        y: 4488
         width: 264
         height: 264
       alignment: 0
@@ -924,8 +861,8 @@ TextureImporter:
       name: Attack L1arm_10
       rect:
         serializedVersion: 2
-        x: 528
-        y: 2904
+        x: 0
+        y: 4224
         width: 264
         height: 264
       alignment: 0
@@ -945,8 +882,8 @@ TextureImporter:
       name: Attack L1arm_11
       rect:
         serializedVersion: 2
-        x: 792
-        y: 2904
+        x: 264
+        y: 4224
         width: 264
         height: 264
       alignment: 0
@@ -966,8 +903,8 @@ TextureImporter:
       name: Attack L1arm_12
       rect:
         serializedVersion: 2
-        x: 1056
-        y: 2904
+        x: 528
+        y: 4224
         width: 264
         height: 264
       alignment: 0
@@ -984,74 +921,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L1arm_13
-      rect:
-        serializedVersion: 2
-        x: 1320
-        y: 2904
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 99a9f796ec8ef0060800000000000000
-      internalID: 6922007125522619033
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L1arm_14
-      rect:
-        serializedVersion: 2
-        x: 1584
-        y: 2904
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 03eed84db0f005f80800000000000000
-      internalID: -8119973584663876048
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L1arm_15
-      rect:
-        serializedVersion: 2
-        x: 1848
-        y: 2904
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 445c4e5504fdecd60800000000000000
-      internalID: 7912507062748497220
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attack L1arm_16
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2640
+        x: 264
+        y: 3960
         width: 264
         height: 264
       alignment: 0
@@ -1071,8 +945,8 @@ TextureImporter:
       name: Attack L1arm_17
       rect:
         serializedVersion: 2
-        x: 264
-        y: 2640
+        x: 528
+        y: 3960
         width: 264
         height: 264
       alignment: 0
@@ -1092,8 +966,8 @@ TextureImporter:
       name: Attack L1arm_18
       rect:
         serializedVersion: 2
-        x: 528
-        y: 2640
+        x: 792
+        y: 3960
         width: 264
         height: 264
       alignment: 0
@@ -1113,8 +987,8 @@ TextureImporter:
       name: Attack L1arm_19
       rect:
         serializedVersion: 2
-        x: 792
-        y: 2640
+        x: 1056
+        y: 3960
         width: 264
         height: 264
       alignment: 0
@@ -1134,8 +1008,8 @@ TextureImporter:
       name: Attack L1arm_20
       rect:
         serializedVersion: 2
-        x: 1056
-        y: 2640
+        x: 0
+        y: 3696
         width: 264
         height: 264
       alignment: 0
@@ -1152,74 +1026,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L1arm_21
-      rect:
-        serializedVersion: 2
-        x: 1320
-        y: 2640
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 731caf5f229d3ab00800000000000000
-      internalID: 838752699800011063
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L1arm_22
-      rect:
-        serializedVersion: 2
-        x: 1584
-        y: 2640
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c19b5ba7a5c3cb40800000000000000
-      internalID: 5459424497228288450
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L1arm_23
-      rect:
-        serializedVersion: 2
-        x: 1848
-        y: 2640
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cf31ffa539263c350800000000000000
-      internalID: 6035776310632977404
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attack L1arm_24
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2376
+        x: 1056
+        y: 3696
         width: 264
         height: 264
       alignment: 0
@@ -1239,8 +1050,8 @@ TextureImporter:
       name: Attack L1arm_25
       rect:
         serializedVersion: 2
-        x: 264
-        y: 2376
+        x: 0
+        y: 3432
         width: 264
         height: 264
       alignment: 0
@@ -1260,8 +1071,8 @@ TextureImporter:
       name: Attack L1arm_26
       rect:
         serializedVersion: 2
-        x: 528
-        y: 2376
+        x: 264
+        y: 3432
         width: 264
         height: 264
       alignment: 0
@@ -1281,8 +1092,8 @@ TextureImporter:
       name: Attack L1arm_27
       rect:
         serializedVersion: 2
-        x: 792
-        y: 2376
+        x: 528
+        y: 3432
         width: 264
         height: 264
       alignment: 0
@@ -1302,8 +1113,8 @@ TextureImporter:
       name: Attack L1arm_28
       rect:
         serializedVersion: 2
-        x: 1056
-        y: 2376
+        x: 792
+        y: 3432
         width: 264
         height: 264
       alignment: 0
@@ -1320,74 +1131,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L1arm_29
-      rect:
-        serializedVersion: 2
-        x: 1320
-        y: 2376
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1cdcc24b2b4268b10800000000000000
-      internalID: 1983313035848895937
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L1arm_30
-      rect:
-        serializedVersion: 2
-        x: 1584
-        y: 2376
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fd203982c7cb06060800000000000000
-      internalID: 6944757866847994591
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L1arm_31
-      rect:
-        serializedVersion: 2
-        x: 1848
-        y: 2376
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4eccbeaff98c31ed0800000000000000
-      internalID: -2444389583296934684
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attack L1arm_32
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2112
+        x: 528
+        y: 3168
         width: 264
         height: 264
       alignment: 0
@@ -1407,8 +1155,8 @@ TextureImporter:
       name: Attack L1arm_33
       rect:
         serializedVersion: 2
-        x: 264
-        y: 2112
+        x: 792
+        y: 3168
         width: 264
         height: 264
       alignment: 0
@@ -1428,8 +1176,8 @@ TextureImporter:
       name: Attack L1arm_34
       rect:
         serializedVersion: 2
-        x: 528
-        y: 2112
+        x: 1056
+        y: 3168
         width: 264
         height: 264
       alignment: 0
@@ -1449,8 +1197,8 @@ TextureImporter:
       name: Attack L1arm_35
       rect:
         serializedVersion: 2
-        x: 792
-        y: 2112
+        x: 0
+        y: 2904
         width: 264
         height: 264
       alignment: 0
@@ -1470,8 +1218,8 @@ TextureImporter:
       name: Attack L1arm_36
       rect:
         serializedVersion: 2
-        x: 1056
-        y: 2112
+        x: 264
+        y: 2904
         width: 264
         height: 264
       alignment: 0
@@ -1488,74 +1236,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L1arm_37
-      rect:
-        serializedVersion: 2
-        x: 1320
-        y: 2112
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9a209853d9ec25710800000000000000
-      internalID: 1680632785565975209
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L1arm_38
-      rect:
-        serializedVersion: 2
-        x: 1584
-        y: 2112
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 460be9db9b414fb40800000000000000
-      internalID: 5473022235144794212
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L1arm_39
-      rect:
-        serializedVersion: 2
-        x: 1848
-        y: 2112
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 35efcd448e2164a20800000000000000
-      internalID: 3046142986759765587
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attack L1arm_40
       rect:
         serializedVersion: 2
         x: 0
-        y: 1848
+        y: 2640
         width: 264
         height: 264
       alignment: 0
@@ -1576,7 +1261,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 264
-        y: 1848
+        y: 2640
         width: 264
         height: 264
       alignment: 0
@@ -1597,7 +1282,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 528
-        y: 1848
+        y: 2640
         width: 264
         height: 264
       alignment: 0
@@ -1618,7 +1303,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 792
-        y: 1848
+        y: 2640
         width: 264
         height: 264
       alignment: 0
@@ -1639,7 +1324,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1056
-        y: 1848
+        y: 2640
         width: 264
         height: 264
       alignment: 0
@@ -1656,74 +1341,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L1arm_45
-      rect:
-        serializedVersion: 2
-        x: 1320
-        y: 1848
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 27dcb1725588eb730800000000000000
-      internalID: 4016797816970792306
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L1arm_46
-      rect:
-        serializedVersion: 2
-        x: 1584
-        y: 1848
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c71c22cad208e3940800000000000000
-      internalID: 5277796746974642556
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L1arm_47
-      rect:
-        serializedVersion: 2
-        x: 1848
-        y: 1848
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c47214f0cc9567780800000000000000
-      internalID: -8685656098373294260
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attack L1arm_48
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1584
+        x: 792
+        y: 2376
         width: 264
         height: 264
       alignment: 0
@@ -1743,8 +1365,8 @@ TextureImporter:
       name: Attack L1arm_49
       rect:
         serializedVersion: 2
-        x: 264
-        y: 1584
+        x: 1056
+        y: 2376
         width: 264
         height: 264
       alignment: 0
@@ -1764,8 +1386,8 @@ TextureImporter:
       name: Attack L1arm_50
       rect:
         serializedVersion: 2
-        x: 528
-        y: 1584
+        x: 0
+        y: 2112
         width: 264
         height: 264
       alignment: 0
@@ -1785,8 +1407,8 @@ TextureImporter:
       name: Attack L1arm_51
       rect:
         serializedVersion: 2
-        x: 792
-        y: 1584
+        x: 264
+        y: 2112
         width: 264
         height: 264
       alignment: 0
@@ -1806,8 +1428,8 @@ TextureImporter:
       name: Attack L1arm_52
       rect:
         serializedVersion: 2
-        x: 1056
-        y: 1584
+        x: 528
+        y: 2112
         width: 264
         height: 264
       alignment: 0
@@ -1824,74 +1446,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L1arm_53
-      rect:
-        serializedVersion: 2
-        x: 1320
-        y: 1584
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c6e7713f57738850800000000000000
-      internalID: 6378072748022294213
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L1arm_54
-      rect:
-        serializedVersion: 2
-        x: 1584
-        y: 1584
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a9a77870507d5b7b0800000000000000
-      internalID: -5209020977382983014
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L1arm_55
-      rect:
-        serializedVersion: 2
-        x: 1848
-        y: 1584
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 961f82777c80fbd90800000000000000
-      internalID: -7079930436412444311
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attack L1arm_56
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1320
+        x: 264
+        y: 1848
         width: 264
         height: 264
       alignment: 0
@@ -1911,8 +1470,8 @@ TextureImporter:
       name: Attack L1arm_57
       rect:
         serializedVersion: 2
-        x: 264
-        y: 1320
+        x: 528
+        y: 1848
         width: 264
         height: 264
       alignment: 0
@@ -1932,8 +1491,8 @@ TextureImporter:
       name: Attack L1arm_58
       rect:
         serializedVersion: 2
-        x: 528
-        y: 1320
+        x: 792
+        y: 1848
         width: 264
         height: 264
       alignment: 0
@@ -1953,8 +1512,8 @@ TextureImporter:
       name: Attack L1arm_59
       rect:
         serializedVersion: 2
-        x: 792
-        y: 1320
+        x: 1056
+        y: 1848
         width: 264
         height: 264
       alignment: 0
@@ -1974,8 +1533,8 @@ TextureImporter:
       name: Attack L1arm_60
       rect:
         serializedVersion: 2
-        x: 1056
-        y: 1320
+        x: 0
+        y: 1584
         width: 264
         height: 264
       alignment: 0
@@ -1992,74 +1551,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L1arm_61
-      rect:
-        serializedVersion: 2
-        x: 1320
-        y: 1320
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af08ccee2e0132860800000000000000
-      internalID: 7503859970984411386
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L1arm_62
-      rect:
-        serializedVersion: 2
-        x: 1584
-        y: 1320
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1764e9d2568516d90800000000000000
-      internalID: -7106301545433643407
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L1arm_63
-      rect:
-        serializedVersion: 2
-        x: 1848
-        y: 1320
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 00733f5439ddc61d0800000000000000
-      internalID: -3356063997694363904
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attack L1arm_64
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1056
+        x: 1056
+        y: 1584
         width: 264
         height: 264
       alignment: 0
@@ -2079,8 +1575,8 @@ TextureImporter:
       name: Attack L1arm_65
       rect:
         serializedVersion: 2
-        x: 264
-        y: 1056
+        x: 0
+        y: 1320
         width: 264
         height: 264
       alignment: 0
@@ -2100,8 +1596,8 @@ TextureImporter:
       name: Attack L1arm_66
       rect:
         serializedVersion: 2
-        x: 528
-        y: 1056
+        x: 264
+        y: 1320
         width: 264
         height: 264
       alignment: 0
@@ -2121,8 +1617,8 @@ TextureImporter:
       name: Attack L1arm_67
       rect:
         serializedVersion: 2
-        x: 792
-        y: 1056
+        x: 528
+        y: 1320
         width: 264
         height: 264
       alignment: 0
@@ -2142,8 +1638,8 @@ TextureImporter:
       name: Attack L1arm_68
       rect:
         serializedVersion: 2
-        x: 1056
-        y: 1056
+        x: 792
+        y: 1320
         width: 264
         height: 264
       alignment: 0
@@ -2160,74 +1656,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L1arm_69
-      rect:
-        serializedVersion: 2
-        x: 1320
-        y: 1056
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8966af89eb5a99dd0800000000000000
-      internalID: -2478767881861831016
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L1arm_70
-      rect:
-        serializedVersion: 2
-        x: 1584
-        y: 1056
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9202a24c9334aeb90800000000000000
-      internalID: -7211877937897136087
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L1arm_71
-      rect:
-        serializedVersion: 2
-        x: 1848
-        y: 1056
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fc11b0501341ae480800000000000000
-      internalID: -8869254315382206001
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attack L1arm_72
       rect:
         serializedVersion: 2
-        x: 0
-        y: 792
+        x: 528
+        y: 1056
         width: 264
         height: 264
       alignment: 0
@@ -2247,8 +1680,8 @@ TextureImporter:
       name: Attack L1arm_73
       rect:
         serializedVersion: 2
-        x: 264
-        y: 792
+        x: 792
+        y: 1056
         width: 264
         height: 264
       alignment: 0
@@ -2268,8 +1701,8 @@ TextureImporter:
       name: Attack L1arm_74
       rect:
         serializedVersion: 2
-        x: 528
-        y: 792
+        x: 1056
+        y: 1056
         width: 264
         height: 264
       alignment: 0
@@ -2289,7 +1722,7 @@ TextureImporter:
       name: Attack L1arm_75
       rect:
         serializedVersion: 2
-        x: 792
+        x: 0
         y: 792
         width: 264
         height: 264
@@ -2310,7 +1743,7 @@ TextureImporter:
       name: Attack L1arm_76
       rect:
         serializedVersion: 2
-        x: 1056
+        x: 264
         y: 792
         width: 264
         height: 264
@@ -2323,69 +1756,6 @@ TextureImporter:
       bones: []
       spriteID: bb0cdd53aa47f6b00800000000000000
       internalID: 824005531229077691
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L1arm_77
-      rect:
-        serializedVersion: 2
-        x: 1320
-        y: 792
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b438ae48a46b9f0a0800000000000000
-      internalID: -6847241327266331829
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L1arm_78
-      rect:
-        serializedVersion: 2
-        x: 1584
-        y: 792
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af4f5f64c33331ef0800000000000000
-      internalID: -138710829536774918
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L1arm_79
-      rect:
-        serializedVersion: 2
-        x: 1848
-        y: 792
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c41f86647311f100800000000000000
-      internalID: 139914454082983106
       vertices: []
       indices: 
       edges: []
@@ -2496,73 +1866,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L1arm_85
-      rect:
-        serializedVersion: 2
-        x: 1320
-        y: 528
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 49b65f774770f9080800000000000000
-      internalID: -9178609318747608172
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L1arm_86
-      rect:
-        serializedVersion: 2
-        x: 1584
-        y: 528
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42519e2a3158d0280800000000000000
-      internalID: -9075451354697624284
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L1arm_87
-      rect:
-        serializedVersion: 2
-        x: 1848
-        y: 528
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e3ba85b98c2d97580800000000000000
-      internalID: -8828793835441575106
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attack L1arm_88
       rect:
         serializedVersion: 2
-        x: 0
+        x: 792
         y: 264
         width: 264
         height: 264
@@ -2583,7 +1890,7 @@ TextureImporter:
       name: Attack L1arm_89
       rect:
         serializedVersion: 2
-        x: 264
+        x: 1056
         y: 264
         width: 264
         height: 264
@@ -2604,8 +1911,8 @@ TextureImporter:
       name: Attack L1arm_90
       rect:
         serializedVersion: 2
-        x: 528
-        y: 264
+        x: 0
+        y: 0
         width: 264
         height: 264
       alignment: 0
@@ -2625,8 +1932,8 @@ TextureImporter:
       name: Attack L1arm_91
       rect:
         serializedVersion: 2
-        x: 792
-        y: 264
+        x: 264
+        y: 0
         width: 264
         height: 264
       alignment: 0
@@ -2646,8 +1953,8 @@ TextureImporter:
       name: Attack L1arm_92
       rect:
         serializedVersion: 2
-        x: 1056
-        y: 264
+        x: 528
+        y: 0
         width: 264
         height: 264
       alignment: 0
@@ -2664,73 +1971,703 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L1arm_93
-      rect:
-        serializedVersion: 2
-        x: 1320
-        y: 264
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b207dde4d07df6750800000000000000
-      internalID: 6300490855872294955
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L1arm_94
-      rect:
-        serializedVersion: 2
-        x: 1584
-        y: 264
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d8d6f24723b2486b0800000000000000
-      internalID: -5295059766183236211
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L1arm_95
-      rect:
-        serializedVersion: 2
-        x: 1848
-        y: 264
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ce30451a5d4720ce0800000000000000
-      internalID: -1440460469921643540
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L1arm_96
+      name: Attack L1arm_5
       rect:
         serializedVersion: 2
         x: 0
+        y: 4488
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54868f55cc9828540800000000000000
+      internalID: 5008717246298089541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L1arm_6
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 4488
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21004d18c67f1c3f0800000000000000
+      internalID: -882152006581223406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L1arm_7
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 4488
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5806c6afc693fba10800000000000000
+      internalID: 1927322305758519429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L1arm_13
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 4224
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b26b033b5f89f3240800000000000000
+      internalID: 4773702311076738603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L1arm_14
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 4224
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b31494635d9b6150800000000000000
+      internalID: 5866955921075475377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L1arm_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3960
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83a0bbe544aaca240800000000000000
+      internalID: 4804402113121290808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L1arm_21
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 3696
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df0dccf567c3c1680800000000000000
+      internalID: -8783078694168243971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L1arm_22
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 3696
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a7cfea63d375ce0800000000000000
+      internalID: -1416596252711421421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L1arm_23
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 3696
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f7fd01deb42619b0800000000000000
+      internalID: -5109856325235509260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L1arm_29
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 3432
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a8578a0ce0ecf9f0800000000000000
+      internalID: -433224159740864349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L1arm_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3168
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 999f6d4b18d078500800000000000000
+      internalID: 398301942781507993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L1arm_31
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 3168
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cdbd1fc93aceeb30800000000000000
+      internalID: 4318611442331663813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L1arm_37
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 2904
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3870b3c210aeecc10800000000000000
+      internalID: 2075853769022310275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L1arm_38
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 2904
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75093c1d640734720800000000000000
+      internalID: 2829228440388079703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L1arm_39
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 2904
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52fe534dc29a59e60800000000000000
+      internalID: 7968461125705920293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L1arm_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2376
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03b134db4aca35730800000000000000
+      internalID: 3986719918702926640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L1arm_46
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 2376
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e893a260f4a9b00800000000000000
+      internalID: 836067568727461422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L1arm_47
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 2376
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf5787a67a2864480800000000000000
+      internalID: -8915294756775889412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L1arm_53
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 2112
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3cf094305a1b15a0800000000000000
+      internalID: -6549612301298631620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L1arm_54
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 2112
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08720f31b20ea5ce0800000000000000
+      internalID: -1415572657231878272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L1arm_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1848
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f6309bf187632950800000000000000
+      internalID: 6423091301529433840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L1arm_61
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1584
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 722cf84d5951decb0800000000000000
+      internalID: -4833183091838172633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L1arm_62
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1584
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b2391373744b9770800000000000000
+      internalID: 8618557574546535094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L1arm_63
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1584
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a79850ecfa6a01060800000000000000
+      internalID: 6922215901274409338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L1arm_69
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1320
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0dc50049247182b0800000000000000
+      internalID: -5584054342446101238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L1arm_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1056
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce25d3b1db7d98d20800000000000000
+      internalID: 3281391010721911532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L1arm_71
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1056
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ecba2feded7ca440800000000000000
+      internalID: 4948468551446609123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L1arm_77
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 792
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cbae099f337c9280800000000000000
+      internalID: -9035220035424048192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L1arm_78
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 792
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 503de89d515e33090800000000000000
+      internalID: -8055843426428595451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L1arm_79
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 792
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87b29e12a9391ef10800000000000000
+      internalID: 2297279575138839416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L1arm_85
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 264
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac04c3d35b156f070800000000000000
+      internalID: 8139783215377039562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L1arm_86
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 264
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e3e1ae43e2635860800000000000000
+      internalID: 7517460931427820517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L1arm_87
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 264
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1275c254c1dd20e90800000000000000
+      internalID: -7060838152274159839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L1arm_93
+      rect:
+        serializedVersion: 2
+        x: 792
         y: 0
         width: 264
         height: 264
@@ -2741,8 +2678,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b17a0bdb0632817c0800000000000000
-      internalID: -4100488562314533093
+      spriteID: 06dac6dd24a126a10800000000000000
+      internalID: 1901110867188821344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L1arm_94
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 0
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97cdc503647500270800000000000000
+      internalID: 8214661679294504057
       vertices: []
       indices: 
       edges: []

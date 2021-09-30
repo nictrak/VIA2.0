@@ -314,6 +314,186 @@ TextureImporter:
   - first:
       213: 3688461346530203144
     second: Attack L2 Effect_103
+  - first:
+      213: -7669676518146466478
+    second: Attack L2 Effect_0
+  - first:
+      213: -1423687111185828110
+    second: Attack L2 Effect_1
+  - first:
+      213: 2757636905280467871
+    second: Attack L2 Effect_2
+  - first:
+      213: -650962255827260118
+    second: Attack L2 Effect_3
+  - first:
+      213: -416390160531837098
+    second: Attack L2 Effect_4
+  - first:
+      213: -4824311242924796740
+    second: Attack L2 Effect_8
+  - first:
+      213: -346962541530066532
+    second: Attack L2 Effect_9
+  - first:
+      213: 9182449833531410779
+    second: Attack L2 Effect_10
+  - first:
+      213: 9131742933750353835
+    second: Attack L2 Effect_11
+  - first:
+      213: -1586546646953164076
+    second: Attack L2 Effect_12
+  - first:
+      213: -6247898989424390551
+    second: Attack L2 Effect_16
+  - first:
+      213: 2095291196873381572
+    second: Attack L2 Effect_17
+  - first:
+      213: 366682065631794958
+    second: Attack L2 Effect_18
+  - first:
+      213: -6070222257793383873
+    second: Attack L2 Effect_19
+  - first:
+      213: -129549017063169921
+    second: Attack L2 Effect_20
+  - first:
+      213: 2810283697388800009
+    second: Attack L2 Effect_24
+  - first:
+      213: 1372638710977728908
+    second: Attack L2 Effect_25
+  - first:
+      213: -5887805621327295450
+    second: Attack L2 Effect_26
+  - first:
+      213: 7418320482019967287
+    second: Attack L2 Effect_27
+  - first:
+      213: -7988274660909563694
+    second: Attack L2 Effect_28
+  - first:
+      213: 6656091833679838146
+    second: Attack L2 Effect_32
+  - first:
+      213: -7341396698865016873
+    second: Attack L2 Effect_33
+  - first:
+      213: 178114360948585730
+    second: Attack L2 Effect_34
+  - first:
+      213: -367254821921563430
+    second: Attack L2 Effect_35
+  - first:
+      213: 3202837171223391020
+    second: Attack L2 Effect_36
+  - first:
+      213: 2181346913302036486
+    second: Attack L2 Effect_40
+  - first:
+      213: -2487898144281121559
+    second: Attack L2 Effect_41
+  - first:
+      213: -3608425096238406470
+    second: Attack L2 Effect_42
+  - first:
+      213: 6137355558497534284
+    second: Attack L2 Effect_43
+  - first:
+      213: 3278340659288173546
+    second: Attack L2 Effect_44
+  - first:
+      213: -3194467933901485879
+    second: Attack L2 Effect_48
+  - first:
+      213: 7721010507709312340
+    second: Attack L2 Effect_49
+  - first:
+      213: 8363244640224926459
+    second: Attack L2 Effect_50
+  - first:
+      213: 5113120783983738808
+    second: Attack L2 Effect_51
+  - first:
+      213: 3667032762896253286
+    second: Attack L2 Effect_52
+  - first:
+      213: -7062573996371515194
+    second: Attack L2 Effect_56
+  - first:
+      213: 6705462430025506195
+    second: Attack L2 Effect_57
+  - first:
+      213: -1939151650544460553
+    second: Attack L2 Effect_58
+  - first:
+      213: 6774242389659100326
+    second: Attack L2 Effect_59
+  - first:
+      213: 5612708313977783112
+    second: Attack L2 Effect_60
+  - first:
+      213: -965321114152083696
+    second: Attack L2 Effect_64
+  - first:
+      213: 8505277049524007689
+    second: Attack L2 Effect_65
+  - first:
+      213: -3357382109535227042
+    second: Attack L2 Effect_66
+  - first:
+      213: 7630439974251804794
+    second: Attack L2 Effect_67
+  - first:
+      213: 5587789566089689943
+    second: Attack L2 Effect_68
+  - first:
+      213: 8543966750749765578
+    second: Attack L2 Effect_72
+  - first:
+      213: 585288791842598844
+    second: Attack L2 Effect_73
+  - first:
+      213: 5315612626628138578
+    second: Attack L2 Effect_74
+  - first:
+      213: 5157926574398247158
+    second: Attack L2 Effect_75
+  - first:
+      213: -4673699677659446778
+    second: Attack L2 Effect_76
+  - first:
+      213: 6713950629431965527
+    second: Attack L2 Effect_80
+  - first:
+      213: 5163115084741900877
+    second: Attack L2 Effect_81
+  - first:
+      213: 941822760279116329
+    second: Attack L2 Effect_82
+  - first:
+      213: -3155250454812171664
+    second: Attack L2 Effect_83
+  - first:
+      213: 4006671548085275193
+    second: Attack L2 Effect_84
+  - first:
+      213: 1577909655179988058
+    second: Attack L2 Effect_88
+  - first:
+      213: -4878829566849258057
+    second: Attack L2 Effect_89
+  - first:
+      213: -8928653596224652071
+    second: Attack L2 Effect_90
+  - first:
+      213: 4331967250939172059
+    second: Attack L2 Effect_91
+  - first:
+      213: -531140387255330003
+    second: Attack L2 Effect_92
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -399,116 +579,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Attack L2 Effect_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 3168
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 24a6c677b610cb510800000000000000
-      internalID: 1566128331494812226
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_1
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 3168
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5f0aae01bbc317fa0800000000000000
-      internalID: -5804791670563495691
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_2
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 3168
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1fca2ff1bceabfee0800000000000000
-      internalID: -1226194286090736399
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_3
-      rect:
-        serializedVersion: 2
-        x: 792
-        y: 3168
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 176e8f6047d3d0780800000000000000
-      internalID: -8715242135349565839
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_4
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 3168
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b2342302ff6b103d0800000000000000
-      internalID: -3242109049856965845
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attack L2 Effect_5
       rect:
         serializedVersion: 2
-        x: 1320
-        y: 3168
+        x: 0
+        y: 4488
         width: 264
         height: 264
       alignment: 0
@@ -528,8 +603,8 @@ TextureImporter:
       name: Attack L2 Effect_6
       rect:
         serializedVersion: 2
-        x: 1584
-        y: 3168
+        x: 264
+        y: 4488
         width: 264
         height: 264
       alignment: 0
@@ -549,8 +624,8 @@ TextureImporter:
       name: Attack L2 Effect_7
       rect:
         serializedVersion: 2
-        x: 1848
-        y: 3168
+        x: 528
+        y: 4488
         width: 264
         height: 264
       alignment: 0
@@ -567,116 +642,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L2 Effect_8
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 2904
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 420b33ccd6a46f6b0800000000000000
-      internalID: -5262937279098015708
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_9
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 2904
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b4b340b9280b01b10800000000000000
-      internalID: 1950252713644407627
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_10
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 2904
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 519623742041f6f40800000000000000
-      internalID: 5723815651428165909
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_11
-      rect:
-        serializedVersion: 2
-        x: 792
-        y: 2904
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 84e7091f9859db6e0800000000000000
-      internalID: -1820134254691975608
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_12
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 2904
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d52af1866252fb490800000000000000
-      internalID: -7728417588658593187
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attack L2 Effect_13
       rect:
         serializedVersion: 2
-        x: 1320
-        y: 2904
+        x: 792
+        y: 4224
         width: 264
         height: 264
       alignment: 0
@@ -696,8 +666,8 @@ TextureImporter:
       name: Attack L2 Effect_14
       rect:
         serializedVersion: 2
-        x: 1584
-        y: 2904
+        x: 1056
+        y: 4224
         width: 264
         height: 264
       alignment: 0
@@ -717,8 +687,8 @@ TextureImporter:
       name: Attack L2 Effect_15
       rect:
         serializedVersion: 2
-        x: 1848
-        y: 2904
+        x: 0
+        y: 3960
         width: 264
         height: 264
       alignment: 0
@@ -735,116 +705,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L2 Effect_16
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 2640
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d0be43b17ff52c640800000000000000
-      internalID: 5098743243054836493
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_17
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 2640
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 991311f8755a96340800000000000000
-      internalID: 4857595468576797081
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_18
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 2640
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a9e3d7ba973b41030800000000000000
-      internalID: 3464591348504280730
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_19
-      rect:
-        serializedVersion: 2
-        x: 792
-        y: 2640
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 68afde28f93a7add0800000000000000
-      internalID: -2474829564725036410
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_20
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 2640
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f5c08ac109ee55890800000000000000
-      internalID: -7469802104200623009
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attack L2 Effect_21
       rect:
         serializedVersion: 2
-        x: 1320
-        y: 2640
+        x: 264
+        y: 3696
         width: 264
         height: 264
       alignment: 0
@@ -864,8 +729,8 @@ TextureImporter:
       name: Attack L2 Effect_22
       rect:
         serializedVersion: 2
-        x: 1584
-        y: 2640
+        x: 528
+        y: 3696
         width: 264
         height: 264
       alignment: 0
@@ -885,8 +750,8 @@ TextureImporter:
       name: Attack L2 Effect_23
       rect:
         serializedVersion: 2
-        x: 1848
-        y: 2640
+        x: 792
+        y: 3696
         width: 264
         height: 264
       alignment: 0
@@ -903,116 +768,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L2 Effect_24
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 2376
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3ff34522108a47e40800000000000000
-      internalID: 5653328155081195507
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_25
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 2376
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f6b78375441a8980800000000000000
-      internalID: -8535987855203780873
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_26
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 2376
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 22cc15031bdc3be30800000000000000
-      internalID: 4518181012086311970
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_27
-      rect:
-        serializedVersion: 2
-        x: 792
-        y: 2376
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a2377f16e73d93c60800000000000000
-      internalID: 7798496769531671338
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_28
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 2376
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 568b1bb4efbba68c0800000000000000
-      internalID: -4005182217726609307
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attack L2 Effect_29
       rect:
         serializedVersion: 2
-        x: 1320
-        y: 2376
+        x: 1056
+        y: 3432
         width: 264
         height: 264
       alignment: 0
@@ -1032,8 +792,8 @@ TextureImporter:
       name: Attack L2 Effect_30
       rect:
         serializedVersion: 2
-        x: 1584
-        y: 2376
+        x: 0
+        y: 3168
         width: 264
         height: 264
       alignment: 0
@@ -1053,8 +813,8 @@ TextureImporter:
       name: Attack L2 Effect_31
       rect:
         serializedVersion: 2
-        x: 1848
-        y: 2376
+        x: 264
+        y: 3168
         width: 264
         height: 264
       alignment: 0
@@ -1071,116 +831,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L2 Effect_32
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 2112
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f19a529a5164e2e0800000000000000
-      internalID: -2097444484817448461
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_33
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 2112
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b51bcaaeb5f8de750800000000000000
-      internalID: 6335877875722137947
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_34
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 2112
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4c4e3229615416360800000000000000
-      internalID: 7161080845739222212
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_35
-      rect:
-        serializedVersion: 2
-        x: 792
-        y: 2112
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 27431b2e04a3d1560800000000000000
-      internalID: 7286043822510912626
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_36
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 2112
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eb5d2323517421540800000000000000
-      internalID: 4977118694559897022
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attack L2 Effect_37
       rect:
         serializedVersion: 2
-        x: 1320
-        y: 2112
+        x: 528
+        y: 2904
         width: 264
         height: 264
       alignment: 0
@@ -1200,8 +855,8 @@ TextureImporter:
       name: Attack L2 Effect_38
       rect:
         serializedVersion: 2
-        x: 1584
-        y: 2112
+        x: 792
+        y: 2904
         width: 264
         height: 264
       alignment: 0
@@ -1221,8 +876,8 @@ TextureImporter:
       name: Attack L2 Effect_39
       rect:
         serializedVersion: 2
-        x: 1848
-        y: 2112
+        x: 1056
+        y: 2904
         width: 264
         height: 264
       alignment: 0
@@ -1239,116 +894,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L2 Effect_40
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1848
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 83762c2380310d7f0800000000000000
-      internalID: -589950625253267656
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_41
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 1848
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e033c09c63804a890800000000000000
-      internalID: -7447818852369681650
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_42
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 1848
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6268aa1a5808a4a60800000000000000
-      internalID: 7659075427728262694
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_43
-      rect:
-        serializedVersion: 2
-        x: 792
-        y: 1848
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: de4084f1c0d4ce2e0800000000000000
-      internalID: -2095215012174363411
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_44
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 1848
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5ad228591387386f0800000000000000
-      internalID: -683570564073116251
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attack L2 Effect_45
       rect:
         serializedVersion: 2
-        x: 1320
-        y: 1848
+        x: 0
+        y: 2376
         width: 264
         height: 264
       alignment: 0
@@ -1368,8 +918,8 @@ TextureImporter:
       name: Attack L2 Effect_46
       rect:
         serializedVersion: 2
-        x: 1584
-        y: 1848
+        x: 264
+        y: 2376
         width: 264
         height: 264
       alignment: 0
@@ -1389,8 +939,8 @@ TextureImporter:
       name: Attack L2 Effect_47
       rect:
         serializedVersion: 2
-        x: 1848
-        y: 1848
+        x: 528
+        y: 2376
         width: 264
         height: 264
       alignment: 0
@@ -1407,116 +957,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L2 Effect_48
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1584
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 52eaf7a524e8c2c00800000000000000
-      internalID: 877232443067706917
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_49
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 1584
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 02ab5e2a036ec7bd0800000000000000
-      internalID: -2630974985725429216
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_50
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 1584
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a902a40b8d9b2eb0800000000000000
-      internalID: -4743524562100942429
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_51
-      rect:
-        serializedVersion: 2
-        x: 792
-        y: 1584
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eafb458ea41ddf130800000000000000
-      internalID: 3602265396621918126
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_52
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 1584
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f66eb372d38ad6e00800000000000000
-      internalID: 1039672069597161071
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attack L2 Effect_53
       rect:
         serializedVersion: 2
-        x: 1320
-        y: 1584
+        x: 792
+        y: 2112
         width: 264
         height: 264
       alignment: 0
@@ -1536,8 +981,8 @@ TextureImporter:
       name: Attack L2 Effect_54
       rect:
         serializedVersion: 2
-        x: 1584
-        y: 1584
+        x: 1056
+        y: 2112
         width: 264
         height: 264
       alignment: 0
@@ -1557,8 +1002,8 @@ TextureImporter:
       name: Attack L2 Effect_55
       rect:
         serializedVersion: 2
-        x: 1848
-        y: 1584
+        x: 0
+        y: 1848
         width: 264
         height: 264
       alignment: 0
@@ -1575,116 +1020,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L2 Effect_56
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1320
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d530ee65009244d00800000000000000
-      internalID: 955934102344565597
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_57
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 1320
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4c0432b70be5a9ef0800000000000000
-      internalID: -100663929589251900
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_58
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 1320
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d911c2d95310773a0800000000000000
-      internalID: -6667859393516924515
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_59
-      rect:
-        serializedVersion: 2
-        x: 792
-        y: 1320
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ae184f856145606c0800000000000000
-      internalID: -4177559149381123606
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_60
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 1320
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 870ba6b80063d5490800000000000000
-      internalID: -7755983607295201160
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attack L2 Effect_61
       rect:
         serializedVersion: 2
-        x: 1320
-        y: 1320
+        x: 264
+        y: 1584
         width: 264
         height: 264
       alignment: 0
@@ -1704,8 +1044,8 @@ TextureImporter:
       name: Attack L2 Effect_62
       rect:
         serializedVersion: 2
-        x: 1584
-        y: 1320
+        x: 528
+        y: 1584
         width: 264
         height: 264
       alignment: 0
@@ -1725,8 +1065,8 @@ TextureImporter:
       name: Attack L2 Effect_63
       rect:
         serializedVersion: 2
-        x: 1848
-        y: 1320
+        x: 792
+        y: 1584
         width: 264
         height: 264
       alignment: 0
@@ -1743,116 +1083,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L2 Effect_64
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1056
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e7e20d28f5209c80800000000000000
-      internalID: -8318106763916023835
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_65
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 1056
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f1925a98ade3cbe0800000000000000
-      internalID: -1458060545938517517
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_66
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 1056
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 783a1d417689a24f0800000000000000
-      internalID: -852701610934951033
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_67
-      rect:
-        serializedVersion: 2
-        x: 792
-        y: 1056
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cf90a0b02c9227d50800000000000000
-      internalID: 6733490306257914364
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_68
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 1056
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 22928a9c94ef54b50800000000000000
-      internalID: 6576942423713786146
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attack L2 Effect_69
       rect:
         serializedVersion: 2
-        x: 1320
-        y: 1056
+        x: 1056
+        y: 1320
         width: 264
         height: 264
       alignment: 0
@@ -1872,7 +1107,7 @@ TextureImporter:
       name: Attack L2 Effect_70
       rect:
         serializedVersion: 2
-        x: 1584
+        x: 0
         y: 1056
         width: 264
         height: 264
@@ -1893,7 +1128,7 @@ TextureImporter:
       name: Attack L2 Effect_71
       rect:
         serializedVersion: 2
-        x: 1848
+        x: 264
         y: 1056
         width: 264
         height: 264
@@ -1911,115 +1146,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L2 Effect_72
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 792
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9cb5ce3bf41927b70800000000000000
-      internalID: 8895331985517206473
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_73
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 792
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 100e22dcd016c17f0800000000000000
-      internalID: -640530335089369087
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_74
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 792
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4f0cb77fa337ab6e0800000000000000
-      internalID: -1821016402220564236
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_75
-      rect:
-        serializedVersion: 2
-        x: 792
-        y: 792
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b26e36af29ae5ee00800000000000000
-      internalID: 1073522003184707115
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_76
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 792
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9d8d9f01bf9a5fc00800000000000000
-      internalID: 933839393535940825
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attack L2 Effect_77
       rect:
         serializedVersion: 2
-        x: 1320
+        x: 528
         y: 792
         width: 264
         height: 264
@@ -2040,7 +1170,7 @@ TextureImporter:
       name: Attack L2 Effect_78
       rect:
         serializedVersion: 2
-        x: 1584
+        x: 792
         y: 792
         width: 264
         height: 264
@@ -2061,7 +1191,7 @@ TextureImporter:
       name: Attack L2 Effect_79
       rect:
         serializedVersion: 2
-        x: 1848
+        x: 1056
         y: 792
         width: 264
         height: 264
@@ -2079,116 +1209,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L2 Effect_80
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 528
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d12fab332c90fbfb0800000000000000
-      internalID: -4629971162217385443
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_81
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 528
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 81277a9a8210014f0800000000000000
-      internalID: -860186254671121896
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_82
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 528
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9813714d5d02a5b40800000000000000
-      internalID: 5429688403506966921
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_83
-      rect:
-        serializedVersion: 2
-        x: 792
-        y: 528
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f6ac93372bf3dab20800000000000000
-      internalID: 3147241750271740527
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_84
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 528
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 480cc842b058c82f0800000000000000
-      internalID: -969253536887160700
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attack L2 Effect_85
       rect:
         serializedVersion: 2
-        x: 1320
-        y: 528
+        x: 0
+        y: 264
         width: 264
         height: 264
       alignment: 0
@@ -2208,8 +1233,8 @@ TextureImporter:
       name: Attack L2 Effect_86
       rect:
         serializedVersion: 2
-        x: 1584
-        y: 528
+        x: 264
+        y: 264
         width: 264
         height: 264
       alignment: 0
@@ -2229,8 +1254,8 @@ TextureImporter:
       name: Attack L2 Effect_87
       rect:
         serializedVersion: 2
-        x: 1848
-        y: 528
+        x: 528
+        y: 264
         width: 264
         height: 264
       alignment: 0
@@ -2247,116 +1272,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L2 Effect_88
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 264
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 15481a348d69a53c0800000000000000
-      internalID: -4370014632817884079
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_89
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 264
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 35561dad962b288e0800000000000000
-      internalID: -1692594342225418925
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_90
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 264
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5367c99dd4a517ab0800000000000000
-      internalID: -5012125619876760011
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_91
-      rect:
-        serializedVersion: 2
-        x: 792
-        y: 264
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5f69794cc3603e0d0800000000000000
-      internalID: -3394862836041148683
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_92
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 264
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 00a7dd5a1e6f033f0800000000000000
-      internalID: -922966474600121856
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attack L2 Effect_93
       rect:
         serializedVersion: 2
-        x: 1320
-        y: 264
+        x: 792
+        y: 0
         width: 264
         height: 264
       alignment: 0
@@ -2376,8 +1296,8 @@ TextureImporter:
       name: Attack L2 Effect_94
       rect:
         serializedVersion: 2
-        x: 1584
-        y: 264
+        x: 1056
+        y: 0
         width: 264
         height: 264
       alignment: 0
@@ -2394,10 +1314,1165 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L2 Effect_95
+      name: Attack L2 Effect_0
       rect:
         serializedVersion: 2
-        x: 1848
+        x: 0
+        y: 4752
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25d99b9a7d5df8590800000000000000
+      internalID: -7669676518146466478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_1
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 4752
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f6777a8d1c0e3ce0800000000000000
+      internalID: -1423687111185828110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_2
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 4752
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f93ffbe9728154620800000000000000
+      internalID: 2757636905280467871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_3
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 4752
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2daa3bf64157f6f0800000000000000
+      internalID: -650962255827260118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_4
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 4752
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65f2889ea5fa83af0800000000000000
+      internalID: -416390160531837098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_8
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 4488
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb45b8f1c7a9c0db0800000000000000
+      internalID: -4824311242924796740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_9
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 4488
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c91dbb128675f2bf0800000000000000
+      internalID: -346962541530066532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4224
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b590c7f097d9e6f70800000000000000
+      internalID: 9182449833531410779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_11
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 4224
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baf8f52f0d77abe70800000000000000
+      internalID: 9131742933750353835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_12
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 4224
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d205c00b347bf9e0800000000000000
+      internalID: -1586546646953164076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_16
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 3960
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96e46dec8f00b49a0800000000000000
+      internalID: -6247898989424390551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_17
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 3960
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c614a20e38f31d10800000000000000
+      internalID: 2095291196873381572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_18
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 3960
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e075d7b5567b61500800000000000000
+      internalID: 366682065631794958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_19
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 3960
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f324e88940d32cba0800000000000000
+      internalID: -6070222257793383873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3696
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f70e2f8fadfb33ef0800000000000000
+      internalID: -129549017063169921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_24
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 3696
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9084eec1222200720800000000000000
+      internalID: 2810283697388800009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3432
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8117c492a79c0310800000000000000
+      internalID: 1372638710977728908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_26
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 3432
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c0d3a7bff4a4ea0800000000000000
+      internalID: -5887805621327295450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_27
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 3432
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7310ec8ac2b23f660800000000000000
+      internalID: 7418320482019967287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_28
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 3432
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d04b340582f32190800000000000000
+      internalID: -7988274660909563694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_32
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 3168
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cb7ddad1403f5c50800000000000000
+      internalID: 6656091833679838146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_33
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 3168
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dfdce8499e1e1a90800000000000000
+      internalID: -7341396698865016873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_34
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 3168
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2057cbd411ac87200800000000000000
+      internalID: 178114360948585730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2904
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adcd05d6faf37eaf0800000000000000
+      internalID: -367254821921563430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_36
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 2904
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2bef281073c27c20800000000000000
+      internalID: 3202837171223391020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2640
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 600434bd573b54e10800000000000000
+      internalID: 2181346913302036486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_41
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 2640
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ec25c8b1d5397dd0800000000000000
+      internalID: -2487898144281121559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_42
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 2640
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab4ea144e7c4cedc0800000000000000
+      internalID: -3608425096238406470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_43
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 2640
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c41c3840d544c2550800000000000000
+      internalID: 6137355558497534284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_44
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 2640
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb6791d5710f7d20800000000000000
+      internalID: 3278340659288173546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_48
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 2376
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c80d61d658faa3d0800000000000000
+      internalID: -3194467933901485879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_49
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 2376
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45d621b262a862b60800000000000000
+      internalID: 7721010507709312340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2112
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfadb4e90b6301470800000000000000
+      internalID: 8363244640224926459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_51
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 2112
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bf7407334475f640800000000000000
+      internalID: 5113120783983738808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_52
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 2112
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 661862c7edae3e230800000000000000
+      internalID: 3667032762896253286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_56
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1848
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c86d529e52bcfd90800000000000000
+      internalID: -7062573996371515194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_57
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1848
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39dd5649d869e0d50800000000000000
+      internalID: 6705462430025506195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_58
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1848
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fc5faf09dfb615e0800000000000000
+      internalID: -1939151650544460553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_59
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1848
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4260adf81f20e50800000000000000
+      internalID: 6774242389659100326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1584
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8430782697854ed40800000000000000
+      internalID: 5612708313977783112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_64
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1584
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01fd7c8af8d7a92f0800000000000000
+      internalID: -965321114152083696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1320
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9033925e960d80670800000000000000
+      internalID: 8505277049524007689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_66
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1320
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e53b6e172ce2861d0800000000000000
+      internalID: -3357382109535227042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_67
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1320
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7838319ab4c4e960800000000000000
+      internalID: 7630439974251804794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_68
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1320
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75bf8664101db8d40800000000000000
+      internalID: 5587789566089689943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_72
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1056
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf203fed74429670800000000000000
+      internalID: 8543966750749765578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_73
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1056
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbfabc02e0d5f1800800000000000000
+      internalID: 585288791842598844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_74
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1056
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25650c54589d4c940800000000000000
+      internalID: 5315612626628138578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 792
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f01e8c34e2a49740800000000000000
+      internalID: 5157926574398247158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_76
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 792
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 602404ec7eea32fb0800000000000000
+      internalID: -4673699677659446778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 528
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7577dc2868ebc2d50800000000000000
+      internalID: 6713950629431965527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_81
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 528
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4a708070d117a740800000000000000
+      internalID: 5163115084741900877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_82
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 528
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a80db7fc6021d00800000000000000
+      internalID: 941822760279116329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_83
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 528
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 072e787bd6c4634d0800000000000000
+      internalID: -3155250454812171664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_84
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 528
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a89437b8e8a9730800000000000000
+      internalID: 4006671548085275193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_88
+      rect:
+        serializedVersion: 2
+        x: 792
         y: 264
         width: 264
         height: 264
@@ -2408,14 +2483,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b85e837582c342c0800000000000000
-      internalID: -4448498128486770504
+      spriteID: a5c89a4a87cd5e510800000000000000
+      internalID: 1577909655179988058
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L2 Effect_96
+      name: Attack L2 Effect_89
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 264
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bde64cab5aea4cb0800000000000000
+      internalID: -4878829566849258057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Effect_90
       rect:
         serializedVersion: 2
         x: 0
@@ -2429,14 +2525,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38324daf4b2696910800000000000000
-      internalID: 1831103252944659331
+      spriteID: 9dcf38a3cdc071480800000000000000
+      internalID: -8928653596224652071
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L2 Effect_97
+      name: Attack L2 Effect_91
       rect:
         serializedVersion: 2
         x: 264
@@ -2450,14 +2546,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10e993cd23b5f69a0800000000000000
-      internalID: -6237666684883591679
+      spriteID: bd4dad2534d3e1c30800000000000000
+      internalID: 4331967250939172059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack L2 Effect_98
+      name: Attack L2 Effect_92
       rect:
         serializedVersion: 2
         x: 528
@@ -2471,113 +2567,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 731a915a19e20a210800000000000000
-      internalID: 1342123892031463735
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_99
-      rect:
-        serializedVersion: 2
-        x: 792
-        y: 0
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4928041b9c3810fb0800000000000000
-      internalID: -4683317235203145068
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_100
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 0
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5b68c6ccf091d9d70800000000000000
-      internalID: 9051418381729433269
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_101
-      rect:
-        serializedVersion: 2
-        x: 1320
-        y: 0
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: abceaf350f8c572e0800000000000000
-      internalID: -2128574314336031558
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_102
-      rect:
-        serializedVersion: 2
-        x: 1584
-        y: 0
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 58d8478d2e5149b70800000000000000
-      internalID: 8904766427256622469
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack L2 Effect_103
-      rect:
-        serializedVersion: 2
-        x: 1848
-        y: 0
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 80611b76d0c003330800000000000000
-      internalID: 3688461346530203144
+      spriteID: d2b58c3c1a201a8f0800000000000000
+      internalID: -531140387255330003
       vertices: []
       indices: 
       edges: []
