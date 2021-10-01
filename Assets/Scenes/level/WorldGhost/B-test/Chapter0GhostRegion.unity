@@ -190,6 +190,58 @@ Transform:
   m_Father: {fileID: 1845216790}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &71956783
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 71956784}
+  - component: {fileID: 71956785}
+  m_Layer: 0
+  m_Name: Q0-1Defender1DiaC2-2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &71956784
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71956783}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1151279490}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &71956785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71956783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ebf3510ef3177d4d94666e81d1ea5e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talkerName: via
+  dialogueContent: Yeah
+  isGoNext: 0
+  isDisplayIconLeft: 0
+  makeTrueConditionTopics: []
+  makeFalseConditionTopics: []
+  assignedQuest: []
+  isSendQuestMessage: 0
+  next: {fileID: 0}
 --- !u!224 &92662978 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 9064331045847625803, guid: 4db7594b18e8fe44698d1a208763d9cc,
@@ -281,6 +333,7 @@ MonoBehaviour:
 
 '
   isGoNext: 0
+  isDisplayIconLeft: 0
   makeTrueConditionTopics: []
   makeFalseConditionTopics: []
   assignedQuest:
@@ -27398,6 +27451,7 @@ MonoBehaviour:
   talkerName: Starter
   dialogueContent: Hi Via, it's time to start journy
   isGoNext: 0
+  isDisplayIconLeft: 0
   makeTrueConditionTopics: []
   makeFalseConditionTopics: []
   assignedQuest: []
@@ -59932,6 +59986,25 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &646311010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
+  m_Name: NormalWeapon(Clone)
+  m_EditorClassIdentifier: 
+  id: 3379b14b38cb0e241977682e32a54afd
+  Name: NormalWeapon
+  Icon: {fileID: 21300000, guid: 752443c5e42aef346bbaf798b33d5d44, type: 3}
+  MaximunStack: 1
+  EquipmentType: 0
+  weaponPrefab: {fileID: 2563879699250417919, guid: e4f4399ba3a197d44ae30d7a19d1a1af,
+    type: 3}
 --- !u!1 &650053332
 GameObject:
   m_ObjectHideFlags: 0
@@ -61005,6 +61078,7 @@ MonoBehaviour:
   talkerName: Starter
   dialogueContent: 
   isGoNext: 1
+  isDisplayIconLeft: 0
   makeTrueConditionTopics: []
   makeFalseConditionTopics: []
   assignedQuest: []
@@ -61095,6 +61169,7 @@ MonoBehaviour:
   talkerName: Defender
   dialogueContent: 'What''s a rush ?? !! '
   isGoNext: 0
+  isDisplayIconLeft: 0
   makeTrueConditionTopics: []
   makeFalseConditionTopics: []
   assignedQuest: []
@@ -61216,6 +61291,7 @@ MonoBehaviour:
   talkerName: Defender
   dialogueContent: Time to practice you combat with those crazy rabbit.
   isGoNext: 0
+  isDisplayIconLeft: 0
   makeTrueConditionTopics: []
   makeFalseConditionTopics: []
   assignedQuest: []
@@ -61541,9 +61617,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a613f4b4093b0634b947bf3e559bdbbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talkerName: Defender
+  talkerName: 
   dialogueContent: Hi Via.
   isGoNext: 0
+  isDisplayIconLeft: 0
   makeTrueConditionTopics: []
   makeFalseConditionTopics: []
   assignedQuest: []
@@ -61644,6 +61721,7 @@ MonoBehaviour:
   talkerName: Defender
   dialogueContent: Hi Via.
   isGoNext: 0
+  isDisplayIconLeft: 0
   makeTrueConditionTopics: []
   makeFalseConditionTopics: []
   assignedQuest: []
@@ -62739,9 +62817,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ebf3510ef3177d4d94666e81d1ea5e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talkerName: Defend
+  talkerName: Defender
   dialogueContent: Go to wrap portal next to me.
   isGoNext: 0
+  isDisplayIconLeft: 1
   makeTrueConditionTopics: []
   makeFalseConditionTopics: []
   assignedQuest: []
@@ -63620,6 +63699,7 @@ MonoBehaviour:
   talkerName: Starter
   dialogueContent: I'm Starter your first guide in this world.
   isGoNext: 0
+  isDisplayIconLeft: 0
   makeTrueConditionTopics: []
   makeFalseConditionTopics: []
   assignedQuest: []
@@ -63736,6 +63816,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1439582942}
+  - {fileID: 71956784}
   m_Father: {fileID: 896032641}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -63751,9 +63832,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ebf3510ef3177d4d94666e81d1ea5e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talkerName: Defend
+  talkerName: Defender
   dialogueContent: Rabbit melees are Cute :D but....
   isGoNext: 0
+  isDisplayIconLeft: 1
   makeTrueConditionTopics: []
   makeFalseConditionTopics: []
   assignedQuest: []
@@ -63805,6 +63887,7 @@ MonoBehaviour:
   talkerName: Defender
   dialogueContent: Kill 3 of them then report to me.
   isGoNext: 0
+  isDisplayIconLeft: 0
   makeTrueConditionTopics: []
   makeFalseConditionTopics: []
   assignedQuest: []
@@ -63856,6 +63939,7 @@ MonoBehaviour:
   talkerName: Starter
   dialogueContent: I will teach you all essential thing to do in this world.
   isGoNext: 0
+  isDisplayIconLeft: 0
   makeTrueConditionTopics: []
   makeFalseConditionTopics: []
   assignedQuest: []
@@ -64002,6 +64086,7 @@ MonoBehaviour:
   talkerName: Defender
   dialogueContent: Head to north in grass field
   isGoNext: 0
+  isDisplayIconLeft: 0
   makeTrueConditionTopics: []
   makeFalseConditionTopics: []
   assignedQuest: []
@@ -64281,11 +64366,12 @@ MonoBehaviour:
   talkerName: Defender
   dialogueContent: Don't underestimate their power cuase it so cute.
   isGoNext: 0
+  isDisplayIconLeft: 1
   makeTrueConditionTopics: []
   makeFalseConditionTopics: []
   assignedQuest: []
   isSendQuestMessage: 0
-  next: {fileID: 0}
+  next: {fileID: 71956785}
 --- !u!1 &1440967235
 GameObject:
   m_ObjectHideFlags: 0
@@ -90147,25 +90233,6 @@ Transform:
   m_Father: {fileID: 843813071}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1493554737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
-  m_Name: IgniteWeapon(Clone)
-  m_EditorClassIdentifier: 
-  id: af75609591bad584abc70e65f391be17
-  Name: Ignite Weapon
-  Icon: {fileID: 21300000, guid: 539608af302184e479cbeb265856eb2a, type: 3}
-  MaximunStack: 1
-  EquipmentType: 0
-  weaponPrefab: {fileID: 8319709647177024906, guid: 054c03a396d26ab4f97a8465d508d2d3,
-    type: 3}
 --- !u!1 &1495364370
 GameObject:
   m_ObjectHideFlags: 0
@@ -90437,6 +90504,25 @@ Transform:
   m_Father: {fileID: 1939121521}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1642243799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
+  m_Name: NormalWeapon(Clone)
+  m_EditorClassIdentifier: 
+  id: 3379b14b38cb0e241977682e32a54afd
+  Name: NormalWeapon
+  Icon: {fileID: 21300000, guid: 752443c5e42aef346bbaf798b33d5d44, type: 3}
+  MaximunStack: 1
+  EquipmentType: 0
+  weaponPrefab: {fileID: 2563879699250417919, guid: e4f4399ba3a197d44ae30d7a19d1a1af,
+    type: 3}
 --- !u!1 &1642426240
 GameObject:
   m_ObjectHideFlags: 0
@@ -90482,9 +90568,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ebf3510ef3177d4d94666e81d1ea5e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talkerName: Defend
+  talkerName: Defender
   dialogueContent: Haha i told ya. so easy to finish those crazy rabbit.
   isGoNext: 0
+  isDisplayIconLeft: 1
   makeTrueConditionTopics: []
   makeFalseConditionTopics: []
   assignedQuest: []
@@ -90533,9 +90620,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ebf3510ef3177d4d94666e81d1ea5e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talkerName: Defend
+  talkerName: Defender
   dialogueContent: Your manage wanna talk to you Via.
   isGoNext: 0
+  isDisplayIconLeft: 1
   makeTrueConditionTopics: []
   makeFalseConditionTopics: []
   assignedQuest: []
@@ -90711,25 +90799,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1682110180}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1728629249
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
-  m_Name: NormalWeapon(Clone)
-  m_EditorClassIdentifier: 
-  id: 3379b14b38cb0e241977682e32a54afd
-  Name: NormalWeapon
-  Icon: {fileID: 21300000, guid: 752443c5e42aef346bbaf798b33d5d44, type: 3}
-  MaximunStack: 1
-  EquipmentType: 0
-  weaponPrefab: {fileID: 2563879699250417919, guid: e4f4399ba3a197d44ae30d7a19d1a1af,
-    type: 3}
 --- !u!1 &1743153017
 GameObject:
   m_ObjectHideFlags: 0
@@ -123812,6 +123881,7 @@ MonoBehaviour:
   talkerName: Starter
   dialogueContent: Defender is a big purple guy on the west.
   isGoNext: 0
+  isDisplayIconLeft: 0
   makeTrueConditionTopics: []
   makeFalseConditionTopics: []
   assignedQuest: []
@@ -123931,25 +124001,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1868021319
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
-  m_Name: NormalWeapon(Clone)
-  m_EditorClassIdentifier: 
-  id: 3379b14b38cb0e241977682e32a54afd
-  Name: NormalWeapon
-  Icon: {fileID: 21300000, guid: 752443c5e42aef346bbaf798b33d5d44, type: 3}
-  MaximunStack: 1
-  EquipmentType: 0
-  weaponPrefab: {fileID: 2563879699250417919, guid: e4f4399ba3a197d44ae30d7a19d1a1af,
-    type: 3}
 --- !u!1 &1897618722
 GameObject:
   m_ObjectHideFlags: 0
@@ -124232,6 +124283,7 @@ MonoBehaviour:
   talkerName: 
   dialogueContent: 
   isGoNext: 1
+  isDisplayIconLeft: 0
   makeTrueConditionTopics: []
   makeFalseConditionTopics: []
   assignedQuest: []
@@ -124334,6 +124386,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2032884783}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2065626760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
+  m_Name: IgniteWeapon(Clone)
+  m_EditorClassIdentifier: 
+  id: af75609591bad584abc70e65f391be17
+  Name: Ignite Weapon
+  Icon: {fileID: 21300000, guid: 539608af302184e479cbeb265856eb2a, type: 3}
+  MaximunStack: 1
+  EquipmentType: 0
+  weaponPrefab: {fileID: 8319709647177024906, guid: 054c03a396d26ab4f97a8465d508d2d3,
+    type: 3}
 --- !u!1001 &2069861063
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -124550,12 +124621,32 @@ MonoBehaviour:
   talkerName: Starter
   dialogueContent: Hahaha here you frist Assignment.
   isGoNext: 0
+  isDisplayIconLeft: 0
   makeTrueConditionTopics: []
   makeFalseConditionTopics: []
   assignedQuest:
   - {fileID: 11400000, guid: 803462ad005c1bb438aaccba4a24d34d, type: 2}
   isSendQuestMessage: 0
   next: {fileID: 1832891423}
+--- !u!114 &2133879483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
+  m_Name: IgniteWeapon(Clone)
+  m_EditorClassIdentifier: 
+  id: af75609591bad584abc70e65f391be17
+  Name: Ignite Weapon
+  Icon: {fileID: 21300000, guid: 539608af302184e479cbeb265856eb2a, type: 3}
+  MaximunStack: 1
+  EquipmentType: 0
+  weaponPrefab: {fileID: 8319709647177024906, guid: 054c03a396d26ab4f97a8465d508d2d3,
+    type: 3}
 --- !u!1001 &2135439839
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -124742,25 +124833,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2143718755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
-  m_Name: IgniteWeapon(Clone)
-  m_EditorClassIdentifier: 
-  id: af75609591bad584abc70e65f391be17
-  Name: Ignite Weapon
-  Icon: {fileID: 21300000, guid: 539608af302184e479cbeb265856eb2a, type: 3}
-  MaximunStack: 1
-  EquipmentType: 0
-  weaponPrefab: {fileID: 8319709647177024906, guid: 054c03a396d26ab4f97a8465d508d2d3,
-    type: 3}
 --- !u!212 &3093313484637063667
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -125132,7 +125204,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _item
       value: 
-      objectReference: {fileID: 2143718755}
+      objectReference: {fileID: 2065626760}
     - target: {fileID: 9064331045081330861, guid: 4db7594b18e8fe44698d1a208763d9cc,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -125317,7 +125389,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _item
       value: 
-      objectReference: {fileID: 1868021319}
+      objectReference: {fileID: 646311010}
     - target: {fileID: 9064331045604984181, guid: 4db7594b18e8fe44698d1a208763d9cc,
         type: 3}
       propertyPath: m_AnchorMin.y

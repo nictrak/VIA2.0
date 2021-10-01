@@ -20,7 +20,9 @@ public class DialogueController : MonoBehaviour
     [SerializeField]
     private Button button4;
     [SerializeField]
-    private Image Image;
+    private Image ImageLeft;
+    [SerializeField]
+    private Image ImageRight;
 
     private bool isShow;
     // Start is called before the first frame update
@@ -45,10 +47,33 @@ public class DialogueController : MonoBehaviour
         dialogueText.text = dialogue.DialogueContent;
     }
 
-    public void SetImage(string talkerName)
+    public void SetImage(Dialogue dialogue)
     {
-        // talkerNameText.text = dialogue.TalkerName;
-        // dialogueText.text = dialogue.DialogueContent;
+            // Load Profile-image from testUIDialog folder
+            Object [] sprites;
+            sprites = Resources.LoadAll ("testUIDialog/"+dialogue.TalkerName);
+            // Use dialog-properties-to Create-Image Canvas
+            if (sprites.Length > 0){
+                SetImageSite(dialogue,sprites);
+            } else{
+                sprites = Resources.LoadAll ("testUIDialog/DEFAULTUI");
+                Debug.Log("FindAssets: other DEFAULTUI");
+                Debug.Log("Fail Dialog-Talker"+dialogue.TalkerName);
+                Debug.Log("Fail Dialog-Content"+dialogue.DialogueContent);
+                SetImageSite(dialogue,sprites);
+            }
+    }
+
+    private void SetImageSite(Dialogue dialogue, Object [] sprites){
+        if (dialogue.IsDisplayIconLeft){
+            ImageLeft.enabled = dialogue.IsDisplayIconLeft;
+            ImageRight.enabled = !dialogue.IsDisplayIconLeft;
+            ImageLeft.sprite = (Sprite)sprites [1];
+        } else{
+            ImageLeft.enabled = dialogue.IsDisplayIconLeft;
+            ImageRight.enabled = !dialogue.IsDisplayIconLeft;
+            ImageRight.sprite = (Sprite)sprites [1];
+        }
     }
 
     public void ShowDialogue(Dialogue dialogue)
@@ -66,12 +91,7 @@ public class DialogueController : MonoBehaviour
             }
             SetActiveButton(dialogue.GetChoicesString());
             SetText(dialogue);
-            // "Assets\Materials\Characters\Mark inport.1"
-            Object [] sprites;
-            sprites = Resources.LoadAll ("testUIDialog/animal");
-            Debug.Log("FindAssets");
-            Debug.Log((Sprite)sprites [3]);
-            Image.sprite = (Sprite)sprites [3];
+            SetImage(dialogue);
         }
     }
     public void SetActivePanel(bool isActive)
