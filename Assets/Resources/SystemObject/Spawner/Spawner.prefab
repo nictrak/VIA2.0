@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5601663331523857050}
   - component: {fileID: 5601663331523857045}
   - component: {fileID: 5601663331523857044}
+  - component: {fileID: 8852341271347417434}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -51,6 +52,7 @@ MonoBehaviour:
     type: 3}
   maxSpawned: 3
   spawnDelayFrame: 100
+  effectSpawnerAnimator: {fileID: 8852341271347417434}
 --- !u!50 &5601663331523857044
 Rigidbody2D:
   serializedVersion: 4
@@ -72,6 +74,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &8852341271347417434
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5601663331523857047}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bf5e513170bca3646854aab3066f568d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5601663331585320571
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,6 +14,9 @@ public class RangeSpawner : MonoBehaviour
     private int maxSpawned;
     [SerializeField]
     private int spawnDelayFrame;
+    //TODO: Still Hard-code effect in line 44
+    [SerializeField]
+    private Animator effectSpawnerAnimator;
 
     private List<GameObject> spawneds;
     private int frameCounter;
@@ -37,6 +40,8 @@ public class RangeSpawner : MonoBehaviour
         {
             if (innerRange.Objs.Count == 0 && outerRange.Objs.Count > 0 && spawneds.Count < maxSpawned)
             {
+                //TODO: Still Hard-code effect
+                effectSpawnerAnimator.Play("Effect-Spawner");
                 GameObject spawned = Instantiate(spawnedPrefab);
                 spawneds.Add(spawned);
                 spawned.transform.position = transform.position;
