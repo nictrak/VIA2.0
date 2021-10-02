@@ -275,6 +275,7 @@ MonoBehaviour:
   isKnock: 0
   knockVelocity: 0
   knockFrame: 0
+  damageSubType: 0
 --- !u!1 &3444611298063183962
 GameObject:
   m_ObjectHideFlags: 0
@@ -359,9 +360,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3444611298654718248}
-  - component: {fileID: 3444611298654718254}
+  - component: {fileID: 1023665304285666068}
   m_Layer: 0
-  m_Name: MeetState
+  m_Name: FollowState
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -381,7 +382,7 @@ Transform:
   m_Father: {fileID: 3444611297787901004}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
---- !u!114 &3444611298654718254
+--- !u!114 &1023665304285666068
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -390,12 +391,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 3444611298654718253}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bf5a2154b0d658499167b63c95fac4a, type: 3}
+  m_Script: {fileID: 11500000, guid: 7714f1f70520d5f44a3e846ace178e42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 1
   NormalNextState: 2
   nextStateRange: {fileID: 3444611298973995556}
+  playerEndReachedDistance: 1.5
 --- !u!1 &3444611298836371538
 GameObject:
   m_ObjectHideFlags: 0
@@ -823,14 +825,14 @@ MonoBehaviour:
   statesHashSequence: 000000000100000002000000030000000400000005000000
   states:
   - {fileID: 3444611298446148135}
-  - {fileID: 3444611298654718254}
+  - {fileID: 1023665304285666068}
   - {fileID: 3444611297858240137}
   - {fileID: 7862151713584449120}
   - {fileID: 2131988245185870715}
   - {fileID: 3444611298974831884}
   stringAnimators:
   - idle
-  - idle
+  - move
   - move
   - attack
   - hurt
@@ -839,6 +841,8 @@ MonoBehaviour:
   isHaveEightDirection: 0
   mostOuterRange: {fileID: 3444611298973995556}
   tokenStates: 03000000
+  idleAnimationIfNotMoveState: 0100000002000000
+  idleString: idle
 --- !u!114 &3444611299003063927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -883,6 +887,13 @@ MonoBehaviour:
   hitEffectPrefab: {fileID: 1454490803532372921, guid: ce520020bce440044bc0d5d1f8feca7c,
     type: 3}
   charName: BasicMelee
+  chopResistance: 0
+  strikeResistance: 0
+  pierceResistance: 0
+  voidResistance: 0
+  electricResistance: 0
+  fireResistance: 0
+  frostResistance: 0
 --- !u!114 &3444611299433032736
 MonoBehaviour:
   m_ObjectHideFlags: 0

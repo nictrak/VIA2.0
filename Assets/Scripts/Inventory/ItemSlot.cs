@@ -31,7 +31,6 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler , IDragHandler, IBeg
         get { return _item; }
 
         set {
-
             _item = value;
             if(_item == null){
                 image.color = disableColor;

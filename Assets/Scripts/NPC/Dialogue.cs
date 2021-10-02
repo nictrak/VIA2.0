@@ -55,6 +55,10 @@ public abstract class Dialogue : MonoBehaviour
     public abstract void EndDialogue();
     public void AssignQuest()
     {
+        if(assignedQuest.Count > 0)
+        {
+            Debug.Log("Assign " + assignedQuest.Count);
+        }
         for(int i = 0; i < assignedQuest.Count; i++)
         {
             QuestSystem.AddNewQuest(assignedQuest[i]);

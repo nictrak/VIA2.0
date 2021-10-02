@@ -26,7 +26,7 @@ public class CraftingMaterial : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        UpdateSprite();
     }
     private void OnValidate()
     {
@@ -61,5 +61,10 @@ public class CraftingMaterial : MonoBehaviour
             return alternateName;
         }
         return itemData.Name;
+    }
+    public void UpdateSprite()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.sprite = itemData.Icon;
     }
 }
