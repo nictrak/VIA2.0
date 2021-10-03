@@ -6,6 +6,9 @@ using UnityEngine.UI;
 public class WindowCraftingRecipeSlot : MonoBehaviour
 {
 
+    [SerializeField]
+    private InventoryCraftingController craftingController;
+
     private static Color normalColor = Color.white;
     private static Color disableColor = Color.clear;
 
@@ -34,12 +37,19 @@ public class WindowCraftingRecipeSlot : MonoBehaviour
     }
 
     private void OnValidate() {
+        if(craftingController == null){
+            craftingController = Resources.FindObjectsOfTypeAll<InventoryCraftingController>()[0];
+        }
         if (image == null) {
             image = transform.GetChild(0).GetComponent<Image>();
         }
         if (bg == null) {
             bg = GetComponent<Image>();
         }
+    }
+
+    public void openWindow() {
+        craftingController.openWindow(_recipe);
     }
 
 }

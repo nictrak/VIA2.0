@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class WindowCraftingMenu : MonoBehaviour
 {
-    private static Color normalColor = Color.white;
-    private static Color disableColor = Color.clear;
 
     [Header("Refferences")]
     [SerializeField]

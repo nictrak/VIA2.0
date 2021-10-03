@@ -60,7 +60,9 @@ public class WindowCraftMenuUIController : MonoBehaviour
     }
 
     private void OnValidate() {
-        recipeSlotUIParent.GetComponentsInChildren<WindowCraftingRecipeSlot>(includeInactive: true, result: recipeSlotUIs);
+        if(recipeSlotUIParent != null){
+            recipeSlotUIParent.GetComponentsInChildren<WindowCraftingRecipeSlot>(includeInactive: true, result: recipeSlotUIs);
+        }
     }
 
 }

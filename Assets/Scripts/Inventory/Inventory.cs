@@ -142,6 +142,19 @@ public class Inventory : MonoBehaviour
         return false;
     }
 
+    public int ItemCount(Item item){
+        int count = 0;
+        for (int i =0; i< ItemSlots.Length ; i++)
+        {
+            if(ItemSlots[i].Item == item)
+            {
+                count += ItemSlots[i].Amount;
+                Debug.Log(ItemSlots[i].Amount);
+            }
+        }
+        return count;
+    }
+
     public Item RemoveItem(string itemID){
         for (int i =0; i< ItemSlots.Length ; i++)
         {

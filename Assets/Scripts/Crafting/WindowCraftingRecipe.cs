@@ -8,6 +8,11 @@ public struct ItemAndAmount
     public Item Item;
     [Range(0,99)]
     public int Amount;
+
+    public ItemAndAmount(Item item, int amount) {
+        this.Item = item;
+        this.Amount = amount;
+    }
 }
 
 public enum ItemType {
