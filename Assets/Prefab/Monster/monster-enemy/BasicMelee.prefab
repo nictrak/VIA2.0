@@ -400,7 +400,6 @@ MonoBehaviour:
   isKnock: 0
   knockVelocity: 0
   knockFrame: 0
-  damageSubType: 1
 --- !u!1 &1309778894
 GameObject:
   m_ObjectHideFlags: 0
@@ -941,8 +940,6 @@ MonoBehaviour:
   isHaveEightDirection: 0
   mostOuterRange: {fileID: 82805168}
   tokenStates: 03000000
-  idleAnimationIfNotMoveState: 02000000
-  idleString: idle
 --- !u!114 &101977571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -987,13 +984,6 @@ MonoBehaviour:
   hitEffectPrefab: {fileID: 1454490803532372921, guid: ce520020bce440044bc0d5d1f8feca7c,
     type: 3}
   charName: BasicMelee
-  chopResistance: 0
-  strikeResistance: 0
-  pierceResistance: 0
-  voidResistance: 0
-  electricResistance: 0
-  fireResistance: 0
-  frostResistance: 0
 --- !u!114 &407601076
 MonoBehaviour:
   m_ObjectHideFlags: 0
