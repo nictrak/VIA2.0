@@ -51,16 +51,19 @@ public class DialogueController : MonoBehaviour
     {
             // Load Profile-image from testUIDialog folder
             Object [] sprites;
-            sprites = Resources.LoadAll ("testUIDialog/"+dialogue.TalkerName);
+            Object [] spritesDefault;
+            spritesDefault = Resources.LoadAll ("UIProfileDialog/DEFAULTUI");
+            sprites = Resources.LoadAll ("UIProfileDialog/"+dialogue.TalkerName);
             // Use dialog-properties-to Create-Image Canvas
             if (sprites.Length > 0){
                 SetImageSite(dialogue,sprites);
             } else{
-                sprites = Resources.LoadAll ("testUIDialog/DEFAULTUI");
+                
                 Debug.Log("FindAssets: other DEFAULTUI");
                 Debug.Log("Fail Dialog-Talker"+dialogue.TalkerName);
                 Debug.Log("Fail Dialog-Content"+dialogue.DialogueContent);
-                SetImageSite(dialogue,sprites);
+                Debug.Log("Fail Dialog-Content long"+spritesDefault.Length);
+                SetImageSite(dialogue,spritesDefault);
             }
     }
 
