@@ -12,6 +12,8 @@ public abstract class Dialogue : MonoBehaviour
     [SerializeField]
     protected bool isGoNext;
     [SerializeField]
+    protected bool isDisplayIconLeft;
+    [SerializeField]
     protected List<string> makeTrueConditionTopics;
     [SerializeField]
     protected List<string> makeFalseConditionTopics;
@@ -21,6 +23,7 @@ public abstract class Dialogue : MonoBehaviour
     protected bool isSendQuestMessage;
     public string TalkerName { get => talkerName; set => talkerName = value; }
     public string DialogueContent { get => dialogueContent; set => dialogueContent = value; }
+    public bool IsDisplayIconLeft { get => isDisplayIconLeft; set => isDisplayIconLeft = value; }
     public bool IsGoNext { get => isGoNext; set => isGoNext = value; }
 
     // Start is called before the first frame update
