@@ -821,9 +821,9 @@ MonoBehaviour:
   animatorArmFrontStringHeads:
   - Via Stand arm hold weapon1
   - Via Stand arm hold weapon1
-  - 'Via attack 2-1 arm '
-  - 'Via attack 2-2 arm '
-  - 'Via attack 2-3 arm '
+  - Via attack 2-1 arm
+  - Via attack 2-2 arm
+  - Via attack 2-3 arm
   - 
   - Via null
   animatorArmBelowStringHeads:
@@ -1091,6 +1091,13 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   hitEffectPrefab: {fileID: 0}
   charName: 
+  chopResistance: 0
+  strikeResistance: 0
+  pierceResistance: 0
+  voidResistance: 0
+  electricResistance: 0
+  fireResistance: 0
+  frostResistance: 0
 --- !u!114 &894784140
 MonoBehaviour:
   m_ObjectHideFlags: 0
