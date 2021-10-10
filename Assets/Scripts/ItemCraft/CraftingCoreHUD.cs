@@ -13,8 +13,6 @@ public class CraftingCoreHUD : MonoBehaviour
     [SerializeField]
     private CraftingMaterial craftingMaterialPrefab;
 
-    private PlayerIdentity playerIdentity;
-
     private int currentIndex;
     // Start is called before the first frame update
     void Start()
@@ -35,10 +33,6 @@ public class CraftingCoreHUD : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 NextCycleCraftingCoreIndex();
-            }
-            if (Input.GetKeyDown(KeyCode.KeypadEnter))
-            {
-                SummonCraftingCore();
             }
         }
     }
@@ -79,10 +73,7 @@ public class CraftingCoreHUD : MonoBehaviour
     }
     private void SummonCraftingCore()
     {
-        CraftingMaterial summonedCraftingMaterial = Instantiate(craftingMaterialPrefab);
-        summonedCraftingMaterial.ItemData = craftingCores[currentIndex].SummonedCraftingMaterial;
-        summonedCraftingMaterial.transform.position = GetPlayerPosition();
-        summonedCraftingMaterial.UpdateSprite();
+        Instantiate(craftingCores[currentIndex]);
     }
     private void UpdateAllSprite()
     {
@@ -91,13 +82,5 @@ public class CraftingCoreHUD : MonoBehaviour
             int usedIndex = currentIndex + i - selectedCraftingCoreSlotsIndex;
             craftingCoreSlots[i].UpdateSprite(GetCycleCraftingCores(usedIndex));
         }
-    }
-    private Vector3 GetPlayerPosition()
-    {
-        if (playerIdentity == null)
-        {
-            playerIdentity = Resources.FindObjectsOfTypeAll<PlayerIdentity>()[0];
-        }
-        return playerIdentity.transform.position;
     }
 }

@@ -14,27 +14,6 @@ public class Health : MonoBehaviour
     private GameObject hitEffectPrefab;
     [SerializeField]
     private string charName;
-    [SerializeField]
-    [Range(0.0F, 1.0F)]
-    private float chopResistance;
-    [SerializeField]
-    [Range(0.0F, 1.0F)]
-    private float strikeResistance;
-    [SerializeField]
-    [Range(0.0F, 1.0F)]
-    private float pierceResistance;
-    [SerializeField]
-    [Range(0.0F, 1.0F)]
-    private float voidResistance;
-    [SerializeField]
-    [Range(0.0F, 1.0F)]
-    private float electricResistance;
-    [SerializeField]
-    [Range(0.0F, 1.0F)]
-    private float fireResistance;
-    [SerializeField]
-    [Range(0.0F, 1.0F)]
-    private float frostResistance;
 
     private bool isHurt;
     private bool isAlreadyHurt;
@@ -77,9 +56,9 @@ public class Health : MonoBehaviour
         float currentWidth = barWidth * currentHealth / maxHealth;
         healthBar.sizeDelta = new Vector2(currentWidth, healthBar.sizeDelta.y);
     }
-    public void TakeDamage(int damage, bool doHurt = true, DamageSystem.DamageSubType damageSubType = DamageSystem.DamageSubType.Pure)
+    public void TakeDamage(int damage, bool doHurt = true)
     {
-        currentHealth = currentHealth - CalculateDamage(damage, damageSubType);
+        currentHealth = currentHealth - damage;
         if (damage > 0 && doHurt)
         {
             isHurt = true;
@@ -133,42 +112,5 @@ public class Health : MonoBehaviour
         Vector3 start = transform.position + new Vector3(-1, 1, 0);
         Vector3 end = start + new Vector3((float)currentHealth / (float)maxHealth, 0, 0);
         Gizmos.DrawLine(start, end);
-    }
-    private int CalculateDamage(int damage, DamageSystem.DamageSubType damageSubType)
-    {
-        int newDamage = damage;
-        if(damageSubType == DamageSystem.DamageSubType.Chop)
-        {
-            newDamage = (int) ((1f - chopResistance) * newDamage);
-        }
-        else if (damageSubType == DamageSystem.DamageSubType.Strike)
-        {
-            newDamage = (int)((1f - strikeResistance) * newDamage);
-        }
-        else if (damageSubType == DamageSystem.DamageSubType.Pierce)
-        {
-            newDamage = (int)((1f - pierceResistance) * newDamage);
-        }
-        else if (damageSubType == DamageSystem.DamageSubType.Void)
-        {
-            newDamage = (int)((1f - voidResistance) * newDamage);
-        }
-        else if (damageSubType == DamageSystem.DamageSubType.Fire)
-        {
-            newDamage = (int)((1f - fireResistance) * newDamage);
-        }
-        else if (damageSubType == DamageSystem.DamageSubType.Electric)
-        {
-            newDamage = (int)((1f - electricResistance) * newDamage);
-        }
-        else if (damageSubType == DamageSystem.DamageSubType.Frost)
-        {
-            newDamage = (int)((1f - frostResistance) * newDamage);
-        }
-        if(newDamage == 0 && damage > 0)
-        {
-            newDamage = 1;
-        }
-        return newDamage;
     }
 }

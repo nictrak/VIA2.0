@@ -45,6 +45,7 @@ public class ItemCraftGravity : MonoBehaviour
     {
         if (obj == null) return false;
         CraftingMaterial otherCraftingMaterial = obj.GetComponentInParent<CraftingMaterial>();
+        Debug.Log(thisCratingMaterial.GetItemName() + otherCraftingMaterial.GetItemName());
         (string, string) materials = (thisCratingMaterial.GetItemName(), otherCraftingMaterial.GetItemName());
         return CraftingSystem.CraftingHash.ContainsKey(materials);
     }
