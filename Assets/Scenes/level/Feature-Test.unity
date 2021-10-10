@@ -433,18 +433,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 60885713, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 894784139, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
-      propertyPath: healthBar
-      value: 
-      objectReference: {fileID: 1507773443}
-    - target: {fileID: 894784141, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
-      propertyPath: staminaBar
-      value: 
-      objectReference: {fileID: 1507773442}
     - target: {fileID: 4634483407928223877, guid: de7b25d9405ed97409d914dd33f5a080,
         type: 3}
       propertyPath: m_Name
@@ -507,25 +495,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
---- !u!114 &386871704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
-  m_Name: NormalWeapon(Clone)
-  m_EditorClassIdentifier: 
-  id: 
-  Name: NormalWeapon
-  Icon: {fileID: 21300000, guid: 752443c5e42aef346bbaf798b33d5d44, type: 3}
-  MaximunStack: 1
-  EquipmentType: 0
-  weaponPrefab: {fileID: 2563879699250417919, guid: e4f4399ba3a197d44ae30d7a19d1a1af,
-    type: 3}
 --- !u!1 &527472737
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,25 +652,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!114 &537101899
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
-  m_Name: IgniteWeapon(Clone)
-  m_EditorClassIdentifier: 
-  id: 
-  Name: Ignite Weapon
-  Icon: {fileID: 21300000, guid: 539608af302184e479cbeb265856eb2a, type: 3}
-  MaximunStack: 1
-  EquipmentType: 0
-  weaponPrefab: {fileID: 8319709647177024906, guid: 054c03a396d26ab4f97a8465d508d2d3,
-    type: 3}
 --- !u!1 &641254706
 GameObject:
   m_ObjectHideFlags: 0
@@ -732,25 +682,6 @@ Transform:
   m_Father: {fileID: 191119349}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &722103251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
-  m_Name: NormalWeapon(Clone)
-  m_EditorClassIdentifier: 
-  id: 
-  Name: NormalWeapon
-  Icon: {fileID: 21300000, guid: 752443c5e42aef346bbaf798b33d5d44, type: 3}
-  MaximunStack: 1
-  EquipmentType: 0
-  weaponPrefab: {fileID: 2563879699250417919, guid: e4f4399ba3a197d44ae30d7a19d1a1af,
-    type: 3}
 --- !u!1 &979863173
 GameObject:
   m_ObjectHideFlags: 0
@@ -1072,7 +1003,7 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!114 &1052230354
+--- !u!114 &1075772655
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1084,7 +1015,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
   m_Name: IgniteWeapon(Clone)
   m_EditorClassIdentifier: 
-  id: 
+  id: af75609591bad584abc70e65f391be17
   Name: Ignite Weapon
   Icon: {fileID: 21300000, guid: 539608af302184e479cbeb265856eb2a, type: 3}
   MaximunStack: 1
@@ -19941,6 +19872,44 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
+--- !u!114 &1179317617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
+  m_Name: IgniteWeapon(Clone)
+  m_EditorClassIdentifier: 
+  id: af75609591bad584abc70e65f391be17
+  Name: Ignite Weapon
+  Icon: {fileID: 21300000, guid: 539608af302184e479cbeb265856eb2a, type: 3}
+  MaximunStack: 1
+  EquipmentType: 0
+  weaponPrefab: {fileID: 8319709647177024906, guid: 054c03a396d26ab4f97a8465d508d2d3,
+    type: 3}
+--- !u!114 &1231625407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
+  m_Name: NormalWeapon(Clone)
+  m_EditorClassIdentifier: 
+  id: 3379b14b38cb0e241977682e32a54afd
+  Name: NormalWeapon
+  Icon: {fileID: 21300000, guid: 752443c5e42aef346bbaf798b33d5d44, type: 3}
+  MaximunStack: 1
+  EquipmentType: 0
+  weaponPrefab: {fileID: 2563879699250417919, guid: e4f4399ba3a197d44ae30d7a19d1a1af,
+    type: 3}
 --- !u!1 &1370048452
 GameObject:
   m_ObjectHideFlags: 0
@@ -20261,6 +20230,11 @@ PrefabInstance:
       propertyPath: startingItems.Array.data[15]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3472931758353989141, guid: 56c520b0a64b3094f9373c505eaccfbc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3472931758403579004, guid: 56c520b0a64b3094f9373c505eaccfbc,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -20452,7 +20426,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _item
       value: 
-      objectReference: {fileID: 386871704}
+      objectReference: {fileID: 1576268346}
     - target: {fileID: 3472931759074333154, guid: 56c520b0a64b3094f9373c505eaccfbc,
         type: 3}
       propertyPath: m_Color.r
@@ -20999,7 +20973,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _item
       value: 
-      objectReference: {fileID: 1052230354}
+      objectReference: {fileID: 1075772655}
     - target: {fileID: 3472931759568579295, guid: 56c520b0a64b3094f9373c505eaccfbc,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -21222,18 +21196,25 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1507773440}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &1507773442 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3472931759273902058, guid: 56c520b0a64b3094f9373c505eaccfbc,
-    type: 3}
-  m_PrefabInstance: {fileID: 1507773440}
+--- !u!114 &1576268346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &1507773443 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3472931758792273052, guid: 56c520b0a64b3094f9373c505eaccfbc,
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
+  m_Name: NormalWeapon(Clone)
+  m_EditorClassIdentifier: 
+  id: 3379b14b38cb0e241977682e32a54afd
+  Name: NormalWeapon
+  Icon: {fileID: 21300000, guid: 752443c5e42aef346bbaf798b33d5d44, type: 3}
+  MaximunStack: 1
+  EquipmentType: 0
+  weaponPrefab: {fileID: 2563879699250417919, guid: e4f4399ba3a197d44ae30d7a19d1a1af,
     type: 3}
-  m_PrefabInstance: {fileID: 1507773440}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1622714708
 GameObject:
   m_ObjectHideFlags: 0
@@ -21331,6 +21312,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e76bed3eb12b22042ac606454e1075ea, type: 2}
   - {fileID: 11400000, guid: d05eaf64e57d5744b9c32cbf746b6531, type: 2}
   - {fileID: 11400000, guid: 0c7b9d2a078a0214584d2cb015f75e36, type: 2}
+  CraftingDelayPrefab: {fileID: 0}
 --- !u!1 &1860300652
 GameObject:
   m_ObjectHideFlags: 0
