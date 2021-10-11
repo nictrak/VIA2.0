@@ -14,6 +14,8 @@ public class Health : MonoBehaviour
     private GameObject hitEffectPrefab;
     [SerializeField]
     private string charName;
+    [SerializeField]
+    private Item dropOnDamaged;
 
 
     private bool isHurt;
@@ -63,6 +65,11 @@ public class Health : MonoBehaviour
         if (damage > 0 && doHurt)
         {
             isHurt = true;
+            if(dropOnDamaged != null)
+            {
+                Inventory inventory = Resources.FindObjectsOfTypeAll<Inventory>()[0];
+                inventory.AddItem(dropOnDamaged);
+            }
             if(hitEffectPrefab != null)
             {
                 GameObject spawned = Instantiate(hitEffectPrefab);
