@@ -33,7 +33,7 @@ public class Attack : MonoBehaviour
         
     }
     public void DoDamage(List<Modifier> mods = null)
-    {
+    {   
         attackHitbox.DoDamageAll(damage, mods);
         if(specialAttack != null)
         {
