@@ -39,7 +39,15 @@ public class AttackHitbox : MonoBehaviour
             ModifierController enemyModController = enemies[i].GetComponent<ModifierController>();
             if (enemyHealth != null)
             {
-                enemyHealth.TakeDamage(damage);
+                BreakableObjectIdentity breakableObjectIdentity = enemies[i].GetComponent<BreakableObjectIdentity>();
+                if (breakableObjectIdentity != null)
+                {
+                    enemyHealth.TakeDamage(1);
+                }
+                else
+                {
+                    enemyHealth.TakeDamage(damage);
+                }
                 if(mods != null)
                 {
                     for (int j = 0; j < mods.Count; j++)

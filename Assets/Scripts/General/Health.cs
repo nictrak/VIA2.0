@@ -15,6 +15,7 @@ public class Health : MonoBehaviour
     [SerializeField]
     private string charName;
 
+
     private bool isHurt;
     private bool isAlreadyHurt;
     private int currentHealth;
