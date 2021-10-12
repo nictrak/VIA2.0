@@ -24,7 +24,7 @@ public class PlayerInteractionController : MonoBehaviour
     void Update()
     {
         if(!isTalk) UpdateMarker();
-        if (Input.GetKeyDown(KeyCode.E) && currentTalker != null && !isTalk)
+        if (Input.GetKeyDown(KeyCode.F) && currentTalker != null && !isTalk)
         {
             currentTalker.Talk();
             isTalk = true;
