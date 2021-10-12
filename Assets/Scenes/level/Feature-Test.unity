@@ -425,7 +425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e62982b33c65eb408756bfd7c209565, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialDialogue: {fileID: 1207824630}
+  initialDialogue: {fileID: 804456730}
 --- !u!58 &98131247
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -496,6 +496,70 @@ MonoBehaviour:
   assignedQuest: []
   isSendQuestMessage: 0
   next: {fileID: 1106396799}
+--- !u!1 &147749735
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 147749736}
+  - component: {fileID: 147749737}
+  m_Layer: 0
+  m_Name: CX-QX-DiaMC-11-5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &147749736
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147749735}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1611833583}
+  m_Father: {fileID: 258718471}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &147749737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147749735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aa15a2d10edda84fb08dc9b7194dcc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talkerName: M
+  dialogueContent: 'CX-QX-DiaMC-11-5: Chose your plan'
+  isGoNext: 0
+  isDisplayIconLeft: 0
+  makeTrueConditionTopics: []
+  makeFalseConditionTopics: []
+  assignedQuest: []
+  isSendQuestMessage: 0
+  nexts:
+  - {fileID: 403865598}
+  - {fileID: 403865598}
+  - {fileID: 1611833584}
+  choicesString:
+  - Line-1
+  - Line-2
+  - Back
+  conditions:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &155112337
 GameObject:
   m_ObjectHideFlags: 0
@@ -681,25 +745,6 @@ Transform:
   m_Father: {fileID: 1622714710}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &224820699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
-  m_Name: NormalWeapon(Clone)
-  m_EditorClassIdentifier: 
-  id: 3379b14b38cb0e241977682e32a54afd
-  Name: NormalWeapon
-  Icon: {fileID: 21300000, guid: 752443c5e42aef346bbaf798b33d5d44, type: 3}
-  MaximunStack: 1
-  EquipmentType: 0
-  weaponPrefab: {fileID: 2563879699250417919, guid: e4f4399ba3a197d44ae30d7a19d1a1af,
-    type: 3}
 --- !u!1 &245771442
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,7 +803,12 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 778497879}
+  - {fileID: 804456729}
+  - {fileID: 649302363}
+  - {fileID: 1842443222}
+  - {fileID: 2001265820}
+  - {fileID: 147749736}
+  - {fileID: 403865597}
   m_Father: {fileID: 610229578}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1001,6 +1051,63 @@ MonoBehaviour:
   assignedQuest: []
   isSendQuestMessage: 0
   next: {fileID: 1512302440}
+--- !u!1 &403865596
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 403865597}
+  - component: {fileID: 403865598}
+  m_Layer: 0
+  m_Name: CX-QX-DiaCondition-11-6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &403865597
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403865596}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1041122890}
+  - {fileID: 905055618}
+  m_Father: {fileID: 258718471}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &403865598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403865596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a613f4b4093b0634b947bf3e559bdbbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talkerName: 
+  dialogueContent: 
+  isGoNext: 1
+  isDisplayIconLeft: 0
+  makeTrueConditionTopics:
+  - 
+  makeFalseConditionTopics: []
+  assignedQuest: []
+  isSendQuestMessage: 0
+  trueNext: {fileID: 1041122889}
+  falseNext: {fileID: 905055619}
+  condition: {fileID: 11400000, guid: 57bae3605ac32af47bdb59e9a88324dc, type: 2}
 --- !u!1 &404296573
 GameObject:
   m_ObjectHideFlags: 0
@@ -1134,25 +1241,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &413197397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
-  m_Name: NormalWeapon(Clone)
-  m_EditorClassIdentifier: 
-  id: 3379b14b38cb0e241977682e32a54afd
-  Name: NormalWeapon
-  Icon: {fileID: 21300000, guid: 752443c5e42aef346bbaf798b33d5d44, type: 3}
-  MaximunStack: 1
-  EquipmentType: 0
-  weaponPrefab: {fileID: 2563879699250417919, guid: e4f4399ba3a197d44ae30d7a19d1a1af,
-    type: 3}
 --- !u!1 &438369569
 GameObject:
   m_ObjectHideFlags: 0
@@ -1294,11 +1382,16 @@ PrefabInstance:
     - target: {fileID: 5618429681605682636, guid: 4db7594b18e8fe44698d1a208763d9cc,
         type: 3}
       propertyPath: conditionTopics.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5618429681605682636, guid: 4db7594b18e8fe44698d1a208763d9cc,
         type: 3}
       propertyPath: conditionTopics.Array.data[2]
+      value: isInBase
+      objectReference: {fileID: 0}
+    - target: {fileID: 5618429681605682636, guid: 4db7594b18e8fe44698d1a208763d9cc,
+        type: 3}
+      propertyPath: conditionTopics.Array.data[0]
       value: isInBase
       objectReference: {fileID: 0}
     - target: {fileID: 5618429681898746325, guid: 4db7594b18e8fe44698d1a208763d9cc,
@@ -1445,7 +1538,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _item
       value: 
-      objectReference: {fileID: 476533089}
+      objectReference: {fileID: 1815488422}
     - target: {fileID: 9064331045081330861, guid: 4db7594b18e8fe44698d1a208763d9cc,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -1630,7 +1723,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _item
       value: 
-      objectReference: {fileID: 224820699}
+      objectReference: {fileID: 1348797565}
     - target: {fileID: 9064331045604984181, guid: 4db7594b18e8fe44698d1a208763d9cc,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -1938,25 +2031,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4db7594b18e8fe44698d1a208763d9cc, type: 3}
---- !u!114 &476533089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
-  m_Name: IgniteWeapon(Clone)
-  m_EditorClassIdentifier: 
-  id: af75609591bad584abc70e65f391be17
-  Name: Ignite Weapon
-  Icon: {fileID: 21300000, guid: 539608af302184e479cbeb265856eb2a, type: 3}
-  MaximunStack: 1
-  EquipmentType: 0
-  weaponPrefab: {fileID: 8319709647177024906, guid: 054c03a396d26ab4f97a8465d508d2d3,
-    type: 3}
 --- !u!1 &498006351
 GameObject:
   m_ObjectHideFlags: 0
@@ -2574,6 +2648,58 @@ Transform:
   m_Father: {fileID: 191119349}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &649302362
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 649302363}
+  - component: {fileID: 649302364}
+  m_Layer: 0
+  m_Name: CX-QX-Dia-11-2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &649302363
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649302362}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 258718471}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &649302364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649302362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ebf3510ef3177d4d94666e81d1ea5e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talkerName: M
+  dialogueContent: Dia-11-2
+  isGoNext: 0
+  isDisplayIconLeft: 0
+  makeTrueConditionTopics: []
+  makeFalseConditionTopics: []
+  assignedQuest: []
+  isSendQuestMessage: 0
+  next: {fileID: 1842443223}
 --- !u!4 &652236827 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8363335128055834093, guid: 2a87444ce8f23b54297bfa5b44c3ecea,
@@ -2963,7 +3089,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b6708c9fa72cae14cbf71579c9d30b31, type: 2}
   isSendQuestMessage: 1
   next: {fileID: 662671932}
---- !u!1 &778497878
+--- !u!1 &804456728
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2971,29 +3097,50 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 778497879}
+  - component: {fileID: 804456729}
+  - component: {fileID: 804456730}
   m_Layer: 0
-  m_Name: BaseQuest
+  m_Name: CX-QX-Dia-11-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &778497879
+--- !u!4 &804456729
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 778497878}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.027687, y: -12.72958, z: -117.790184}
-  m_LocalScale: {x: 4, y: 4, z: 1}
-  m_Children:
-  - {fileID: 1207824629}
+  m_GameObject: {fileID: 804456728}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
   m_Father: {fileID: 258718471}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &804456730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804456728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ebf3510ef3177d4d94666e81d1ea5e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talkerName: Via
+  dialogueContent: Dia-11-1
+  isGoNext: 0
+  isDisplayIconLeft: 0
+  makeTrueConditionTopics: []
+  makeFalseConditionTopics: []
+  assignedQuest: []
+  isSendQuestMessage: 0
+  next: {fileID: 649302364}
 --- !u!1 &856046156
 GameObject:
   m_ObjectHideFlags: 0
@@ -3046,6 +3193,59 @@ MonoBehaviour:
   assignedQuest: []
   isSendQuestMessage: 0
   next: {fileID: 404296575}
+--- !u!1 &905055617
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 905055618}
+  - component: {fileID: 905055619}
+  m_Layer: 0
+  m_Name: CX-QX-DiaCondition-11-6-False
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &905055618
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905055617}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 403865597}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &905055619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905055617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ebf3510ef3177d4d94666e81d1ea5e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talkerName: Via
+  dialogueContent: Dia-11-12>>> Test-C1-Q1-Talkrabbit Quest Assign
+  isGoNext: 0
+  isDisplayIconLeft: 0
+  makeTrueConditionTopics: []
+  makeFalseConditionTopics: []
+  assignedQuest:
+  - {fileID: 11400000, guid: 9ce85f0fd00c6b44b9a69859970ea216, type: 2}
+  isSendQuestMessage: 0
+  next: {fileID: 147749737}
 --- !u!1 &909941308
 GameObject:
   m_ObjectHideFlags: 0
@@ -7180,6 +7380,59 @@ MonoBehaviour:
   assignedQuest: []
   isSendQuestMessage: 0
   next: {fileID: 681939426}
+--- !u!1 &1041122888
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1041122890}
+  - component: {fileID: 1041122889}
+  m_Layer: 0
+  m_Name: CX-QX-DiaCondition-11-6-True
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1041122889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1041122888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ebf3510ef3177d4d94666e81d1ea5e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talkerName: rabbit
+  dialogueContent: 'CX-QX-DiaCondition-11-6-True: Quest Assign'
+  isGoNext: 0
+  isDisplayIconLeft: 0
+  makeTrueConditionTopics: []
+  makeFalseConditionTopics: []
+  assignedQuest: []
+  isSendQuestMessage: 0
+  next: {fileID: 1906751325}
+--- !u!4 &1041122890
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1041122888}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1906751326}
+  m_Father: {fileID: 403865597}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1065192931
 GameObject:
   m_ObjectHideFlags: 0
@@ -7348,6 +7601,25 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.1
+--- !u!114 &1139540205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
+  m_Name: IgniteWeapon(Clone)
+  m_EditorClassIdentifier: 
+  id: af75609591bad584abc70e65f391be17
+  Name: Ignite Weapon
+  Icon: {fileID: 21300000, guid: 539608af302184e479cbeb265856eb2a, type: 3}
+  MaximunStack: 1
+  EquipmentType: 0
+  weaponPrefab: {fileID: 8319709647177024906, guid: 054c03a396d26ab4f97a8465d508d2d3,
+    type: 3}
 --- !u!1 &1146789375
 GameObject:
   m_ObjectHideFlags: 0
@@ -26425,58 +26697,6 @@ MonoBehaviour:
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
     value: -1
---- !u!1 &1207824628
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1207824629}
-  - component: {fileID: 1207824630}
-  m_Layer: 0
-  m_Name: NPCManagerStartDia1-2-Manage
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1207824629
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1207824628}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.506922, y: 3.182395, z: 117.790184}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
-  m_Children: []
-  m_Father: {fileID: 778497879}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1207824630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1207824628}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ebf3510ef3177d4d94666e81d1ea5e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  talkerName: Manager
-  dialogueContent: Hi Via.
-  isGoNext: 0
-  isDisplayIconLeft: 1
-  makeTrueConditionTopics: []
-  makeFalseConditionTopics: []
-  assignedQuest: []
-  isSendQuestMessage: 0
-  next: {fileID: 0}
 --- !u!1 &1289474460
 GameObject:
   m_ObjectHideFlags: 0
@@ -26813,6 +27033,25 @@ Transform:
   m_Father: {fileID: 1151209177}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1348797565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
+  m_Name: NormalWeapon(Clone)
+  m_EditorClassIdentifier: 
+  id: 3379b14b38cb0e241977682e32a54afd
+  Name: NormalWeapon
+  Icon: {fileID: 21300000, guid: 752443c5e42aef346bbaf798b33d5d44, type: 3}
+  MaximunStack: 1
+  EquipmentType: 0
+  weaponPrefab: {fileID: 2563879699250417919, guid: e4f4399ba3a197d44ae30d7a19d1a1af,
+    type: 3}
 --- !u!1 &1370048452
 GameObject:
   m_ObjectHideFlags: 0
@@ -26892,25 +27131,6 @@ MonoBehaviour:
   currentState: 1
   NormalNextState: 2
   nextStateRange: {fileID: 316544152}
---- !u!114 &1375981530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
-  m_Name: IgniteWeapon(Clone)
-  m_EditorClassIdentifier: 
-  id: af75609591bad584abc70e65f391be17
-  Name: Ignite Weapon
-  Icon: {fileID: 21300000, guid: 539608af302184e479cbeb265856eb2a, type: 3}
-  MaximunStack: 1
-  EquipmentType: 0
-  weaponPrefab: {fileID: 8319709647177024906, guid: 054c03a396d26ab4f97a8465d508d2d3,
-    type: 3}
 --- !u!1 &1397387968
 GameObject:
   m_ObjectHideFlags: 0
@@ -27362,6 +27582,58 @@ MonoBehaviour:
   assignedQuest: []
   isSendQuestMessage: 0
   next: {fileID: 1570461828}
+--- !u!1 &1611833582
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1611833583}
+  - component: {fileID: 1611833584}
+  m_Layer: 0
+  m_Name: CX-QX-Dia-11-5-1-Back
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1611833583
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611833582}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 147749736}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1611833584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611833582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ebf3510ef3177d4d94666e81d1ea5e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talkerName: 
+  dialogueContent: 
+  isGoNext: 0
+  isDisplayIconLeft: 0
+  makeTrueConditionTopics: []
+  makeFalseConditionTopics: []
+  assignedQuest: []
+  isSendQuestMessage: 0
+  next: {fileID: 0}
 --- !u!1 &1622714708
 GameObject:
   m_ObjectHideFlags: 0
@@ -27614,6 +27886,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1815488422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
+  m_Name: IgniteWeapon(Clone)
+  m_EditorClassIdentifier: 
+  id: af75609591bad584abc70e65f391be17
+  Name: Ignite Weapon
+  Icon: {fileID: 21300000, guid: 539608af302184e479cbeb265856eb2a, type: 3}
+  MaximunStack: 1
+  EquipmentType: 0
+  weaponPrefab: {fileID: 8319709647177024906, guid: 054c03a396d26ab4f97a8465d508d2d3,
+    type: 3}
 --- !u!1 &1837388929
 GameObject:
   m_ObjectHideFlags: 0
@@ -27696,6 +27987,58 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1842443221
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1842443222}
+  - component: {fileID: 1842443223}
+  m_Layer: 0
+  m_Name: CX-QX-Dia-11-3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1842443222
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842443221}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 258718471}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1842443223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842443221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ebf3510ef3177d4d94666e81d1ea5e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talkerName: Via
+  dialogueContent: Dia-11-3
+  isGoNext: 0
+  isDisplayIconLeft: 0
+  makeTrueConditionTopics: []
+  makeFalseConditionTopics: []
+  assignedQuest: []
+  isSendQuestMessage: 0
+  next: {fileID: 2001265821}
 --- !u!1 &1860300652
 GameObject:
   m_ObjectHideFlags: 0
@@ -27867,6 +28210,129 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a87444ce8f23b54297bfa5b44c3ecea, type: 3}
+--- !u!1 &1906751324
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1906751326}
+  - component: {fileID: 1906751325}
+  m_Layer: 0
+  m_Name: CX-QX-DiaCondition-11-6-True-1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1906751325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906751324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ebf3510ef3177d4d94666e81d1ea5e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talkerName: Rabbit
+  dialogueContent: 'CX-QX-DiaCondition-11-6-True:  Finish Qiest'
+  isGoNext: 0
+  isDisplayIconLeft: 0
+  makeTrueConditionTopics: []
+  makeFalseConditionTopics: []
+  assignedQuest: []
+  isSendQuestMessage: 1
+  next: {fileID: 0}
+--- !u!4 &1906751326
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906751324}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1041122890}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1912774258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f742b4c0b32cbfd4ab6a4bf188485c22, type: 3}
+  m_Name: NormalWeapon(Clone)
+  m_EditorClassIdentifier: 
+  id: 3379b14b38cb0e241977682e32a54afd
+  Name: NormalWeapon
+  Icon: {fileID: 21300000, guid: 752443c5e42aef346bbaf798b33d5d44, type: 3}
+  MaximunStack: 1
+  EquipmentType: 0
+  weaponPrefab: {fileID: 2563879699250417919, guid: e4f4399ba3a197d44ae30d7a19d1a1af,
+    type: 3}
+--- !u!1 &2001265819
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2001265820}
+  - component: {fileID: 2001265821}
+  m_Layer: 0
+  m_Name: CX-QX-Dia-11-4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2001265820
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001265819}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 258718471}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2001265821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001265819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ebf3510ef3177d4d94666e81d1ea5e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talkerName: Via
+  dialogueContent: Dia-11-4
+  isGoNext: 0
+  isDisplayIconLeft: 0
+  makeTrueConditionTopics: []
+  makeFalseConditionTopics: []
+  assignedQuest: []
+  isSendQuestMessage: 0
+  next: {fileID: 147749737}
 --- !u!1 &2032263020
 GameObject:
   m_ObjectHideFlags: 0
