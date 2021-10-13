@@ -5,8 +5,6 @@ using UnityEngine;
 public class DialogueSingleNextWrap : Dialogue
 {
     [SerializeField]
-    private Dialogue next;
-    [SerializeField]
     private string nextLevel;
     [SerializeField]
     private Condition condition;
@@ -15,8 +13,10 @@ public class DialogueSingleNextWrap : Dialogue
 
     public override void EndDialogue()
     {
-        if (condition.IsPass() == IsPassIfTrue)
+        if (!IsPassIfTrue)
         {
+            WarpSystem.WarpToScene(nextLevel);
+        }else if(condition.IsPass() == IsPassIfTrue){
             WarpSystem.WarpToScene(nextLevel);
         }
     }
@@ -28,7 +28,7 @@ public class DialogueSingleNextWrap : Dialogue
 
     public override Dialogue GetNextDialogue(int param)
     {
-        return next;
+        return null;
     }
 
     public override bool IsClicknext()
