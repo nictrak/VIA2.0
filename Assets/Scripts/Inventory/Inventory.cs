@@ -86,7 +86,20 @@ public class Inventory : MonoBehaviour
     public bool AddItem(Item item){
         for (int i =0; i< ItemSlots.Length ; i++)
         {
-            if(ItemSlots[i].Item == null || (ItemSlots[i].Item.ID == item.ID && ItemSlots[i].Amount < ItemSlots[i].Item.MaximunStack))
+            if (ItemSlots[i].Item != null) 
+            {
+                if (ItemSlots[i].Item.ID == item.ID && ItemSlots[i].Amount < ItemSlots[i].Item.MaximunStack)
+                {
+                    //previousItem = itemSlots[i].Item;
+                    ItemSlots[i].Item = item;
+                    ItemSlots[i].Amount++;
+                    return true;
+                }
+            }
+        }
+        for (int i = 0; i < ItemSlots.Length; i++)
+        {
+            if (ItemSlots[i].Item == null)
             {
                 //previousItem = itemSlots[i].Item;
                 ItemSlots[i].Item = item;
