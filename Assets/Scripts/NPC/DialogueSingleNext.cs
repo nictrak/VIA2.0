@@ -7,6 +7,11 @@ public class DialogueSingleNext : Dialogue
     [SerializeField]
     private Dialogue next;
 
+    public override void EndDialogue()
+    {
+        
+    }
+
     public override List<string> GetChoicesString()
     {
         return null;
@@ -20,6 +25,11 @@ public class DialogueSingleNext : Dialogue
     public override bool IsClicknext()
     {
         return true;
+    }
+
+    public override void StartDialogue()
+    {
+        
     }
 
     // Start is called before the first frame update

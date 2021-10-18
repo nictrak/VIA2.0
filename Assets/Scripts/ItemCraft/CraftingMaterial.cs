@@ -7,9 +7,14 @@ public class CraftingMaterial : MonoBehaviour
 {
     [SerializeField]
     private CraftingMaterialItem itemData;
+    [SerializeField]
+    private string alternateName;
+    [SerializeField]
+    private bool isUseAlternate;
     private SpriteRenderer spriteRenderer;
 
     public CraftingMaterialItem ItemData { get => itemData; set => itemData = value; }
+    public string AlternateName { get => alternateName; set => alternateName = value; }
 
     // Start is called before the first frame update
     void Start()
@@ -39,7 +44,10 @@ public class CraftingMaterial : MonoBehaviour
         {
             if (String.Compare(other.GetItemName(), GetItemName()) > 0)
             {
-                GameObject spawned = Instantiate(CraftingSystem.CraftingHash[materials]);
+                GameObject spawned = Instantiate(CraftingSystem.CraftingDelayStaticPrefab);
+                CraftingDelay craftingDelay = spawned.GetComponent<CraftingDelay>();
+                (string, GameObject) result = CraftingSystem.CraftingHash[materials];
+                craftingDelay.SetupResult(result.Item1, result.Item2);
                 spawned.transform.position = transform.position;
             }
            
@@ -48,6 +56,10 @@ public class CraftingMaterial : MonoBehaviour
     }
     public string GetItemName()
     {
+        if(isUseAlternate)
+        {
+            return alternateName;
+        }
         return itemData.Name;
     }
 }

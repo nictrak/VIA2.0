@@ -12,6 +12,11 @@ public class Health : MonoBehaviour
     private RectTransform healthBar;
     [SerializeField]
     private GameObject hitEffectPrefab;
+    [SerializeField]
+    private string charName;
+    [SerializeField]
+    private Item dropOnDamaged;
+
 
     private bool isHurt;
     private bool isAlreadyHurt;
@@ -60,6 +65,11 @@ public class Health : MonoBehaviour
         if (damage > 0 && doHurt)
         {
             isHurt = true;
+            if(dropOnDamaged != null)
+            {
+                Inventory inventory = Resources.FindObjectsOfTypeAll<Inventory>()[0];
+                inventory.AddItem(dropOnDamaged);
+            }
             if(hitEffectPrefab != null)
             {
                 GameObject spawned = Instantiate(hitEffectPrefab);
@@ -69,12 +79,17 @@ public class Health : MonoBehaviour
         if(currentHealth <= 0)
         {
             currentHealth = 0;
-            isDead = true;
+            if (!isDead)
+            {
+                QuestSystem.SendQuestMessage("Kill " + charName);
+                isDead = true;
+            }
         }
         if(currentHealth > maxHealth)
         {
             currentHealth = maxHealth;
         }
+        DamageTextFactory.InstantiateDamageText(transform.position);
     }
     public void Heal(int point)
     {

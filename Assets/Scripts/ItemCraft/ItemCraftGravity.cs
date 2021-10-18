@@ -6,6 +6,8 @@ public class ItemCraftGravity : MonoBehaviour
 {
     [SerializeField]
     private float gravityVelocity;
+    [SerializeField]
+    private bool isMove;
     private Rigidbody2D rgbody;
     private TriggerRange triggerRange;
     private CraftingMaterial thisCratingMaterial;
@@ -24,7 +26,7 @@ public class ItemCraftGravity : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        rgbody.MovePosition(rgbody.position + CalMoveVector());
+        if(isMove) rgbody.MovePosition(rgbody.position + CalMoveVector());
     }
     private Vector2 CalSingleMoveVector(Vector2 otherPosition)
     {
@@ -43,6 +45,7 @@ public class ItemCraftGravity : MonoBehaviour
     {
         if (obj == null) return false;
         CraftingMaterial otherCraftingMaterial = obj.GetComponentInParent<CraftingMaterial>();
+        Debug.Log(thisCratingMaterial.GetItemName() + otherCraftingMaterial.GetItemName());
         (string, string) materials = (thisCratingMaterial.GetItemName(), otherCraftingMaterial.GetItemName());
         return CraftingSystem.CraftingHash.ContainsKey(materials);
     }

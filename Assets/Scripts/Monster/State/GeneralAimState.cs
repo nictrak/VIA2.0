@@ -6,7 +6,6 @@ using Pathfinding;
 public class GeneralAimState : MonsterStateBehaviour
 {
     private TargetBuffer targetBuffer;
-    private AIDestinationSetter aIDestinationSetter;
     public override void ExitState()
     {
         
@@ -14,7 +13,7 @@ public class GeneralAimState : MonsterStateBehaviour
 
     public override MonsterStateMachine.MonsterState RunState()
     {
-        targetBuffer.TargetPosition = aIDestinationSetter.target.position;
+        targetBuffer.TargetPosition = GetTarget().transform.position;
         targetBuffer.IsAim = true;
         return NormalNextState;
     }
@@ -28,7 +27,6 @@ public class GeneralAimState : MonsterStateBehaviour
     void Start()
     {
         targetBuffer = GetComponentInParent<TargetBuffer>();
-        aIDestinationSetter = GetComponentInParent<AIDestinationSetter>();
     }
 
     // Update is called once per frame
