@@ -7241,6 +7241,8 @@ MonoBehaviour:
   button2: {fileID: 3472931758805004859}
   button3: {fileID: 3472931759092505975}
   button4: {fileID: 3472931758871414178}
+  ImageLeft: {fileID: 0}
+  ImageRight: {fileID: 0}
 --- !u!114 &3472931759613148878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7254,7 +7256,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryPanel: {fileID: 3472931758508167940}
+  shopPanel: {fileID: 0}
+  craftingCorePanel: {fileID: 0}
+  shortcutPanel: {fileID: 0}
   inventoryKey: 105
+  craftingCoreKey: 0
+  questsPanel: {fileID: 0}
+  questPanel: {fileID: 0}
+  questKey: 0
 --- !u!1 &3472931759617255541
 GameObject:
   m_ObjectHideFlags: 0

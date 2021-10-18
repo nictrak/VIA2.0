@@ -32,6 +32,12 @@ public class WindowCraftingWindow : MonoBehaviour
         set { SetMaterialsList(value); }
     }
 
+    private Inventory inventory;
+
+    public void Craft(){
+        _craftingRecipe.Craft(inventory);
+    }
+
     private void SetMaterialsList(WindowCraftingRecipe newCraftingRecipe){
 
         if(newCraftingRecipe == null){
@@ -56,6 +62,7 @@ public class WindowCraftingWindow : MonoBehaviour
                 materialUIs.Add(Instantiate(materialUIPrefab, materialUIParent, false));
             }
       
+            materialUIs[i].Inventory = inventory;
             materialUIs[i].Material = _craftingRecipe.Materials[i];
 
         }
@@ -69,6 +76,13 @@ public class WindowCraftingWindow : MonoBehaviour
     }
 
     private void OnValidate() {
+        if(inventory == null)
+        {
+            Inventory[] result = Resources.FindObjectsOfTypeAll<Inventory>();
+            if(result.Length > 0){
+                inventory = Resources.FindObjectsOfTypeAll<Inventory>()[0];
+            }
+        }
         if(materialUIParent != null){
             materialUIParent.GetComponentsInChildren<MaterialUIController>(includeInactive: true, result: materialUIs);
         }

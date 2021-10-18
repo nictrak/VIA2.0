@@ -9,7 +9,7 @@ public class MaterialUIController : MonoBehaviour
     private static Color normalTextColor = Color.black;
     private static Color disableColor = Color.clear;
 
-    private Inventory inventory;
+    private Inventory _inventory;
 
     [SerializeField]
     private Image image;
@@ -26,6 +26,11 @@ public class MaterialUIController : MonoBehaviour
         set { SetMaterialItem(value); }
     }
 
+    public Inventory Inventory {
+        get { return _inventory; }
+        set { _inventory = value; }
+    }
+
     private void SetMaterialItem(ItemAndAmount newMaterial){
         _material = newMaterial;
         SetUI();
@@ -39,16 +44,12 @@ public class MaterialUIController : MonoBehaviour
     }
 
     private void SetUI(){
-        if(inventory == null)
-        {
-            inventory = Resources.FindObjectsOfTypeAll<Inventory>()[0];
-        }
         if(_material.Item != null && _material.Amount > 0){
             image.sprite = _material.Item.Icon;
             image.color = normalColor;
             amountRequire.text = _material.Amount.ToString();
             amountRequire.color = normalTextColor;
-            amountCurrent.text = inventory.ItemCount(_material.Item).ToString();
+            amountCurrent.text = _inventory.ItemCount(_material.Item).ToString();
             amountCurrent.color = normalTextColor;
             gameObject.SetActive(true);
         } else {

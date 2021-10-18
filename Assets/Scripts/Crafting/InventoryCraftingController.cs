@@ -14,6 +14,10 @@ public class InventoryCraftingController : MonoBehaviour
         craftingWindow.CraftingRecipe = recipe;
     }
 
+    public void closeWindow(){
+        craftingWindow.CraftingRecipe = null;
+    }
+
     // Start is called before the first frame update
     void Start()
     {

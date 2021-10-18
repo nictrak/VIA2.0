@@ -56,6 +56,13 @@ public class WindowCraftingRecipe : ScriptableObject
             if (!inventory.AddItem(itemToAdd)) {
                 //#####
                 itemToAdd.Destroy();
+                foreach (ItemAndAmount material in Materials)
+                {
+                    //####
+                    for(int i =0 ; i< material.Amount; i++){
+                        inventory.AddItem(material.Item);
+                    }
+                }
             }
         }
     }

@@ -38,7 +38,10 @@ public class WindowCraftingRecipeSlot : MonoBehaviour
 
     private void OnValidate() {
         if(craftingController == null){
-            craftingController = Resources.FindObjectsOfTypeAll<InventoryCraftingController>()[0];
+            InventoryCraftingController[] result = Resources.FindObjectsOfTypeAll<InventoryCraftingController>();
+            if(result.Length > 0){
+                craftingController = Resources.FindObjectsOfTypeAll<InventoryCraftingController>()[0];
+            }
         }
         if (image == null) {
             image = transform.GetChild(0).GetComponent<Image>();
