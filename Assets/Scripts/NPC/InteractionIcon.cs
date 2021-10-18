@@ -26,8 +26,6 @@ public class InteractionIcon : MonoBehaviour
     {
         if(collision.gameObject.tag == tagTarget)
         {
-            Debug.Log("PLayer InteractionIcon in");
-            Debug.Log(gameObject.transform.position);
             ShowMarker(gameObject.transform.position);
         }
     }
@@ -35,7 +33,6 @@ public class InteractionIcon : MonoBehaviour
     {
         if (collision.gameObject.tag == tagTarget)
         {
-            Debug.Log("PLayer InteractionIcon out");
             ClearMarker();
         }
     }
