@@ -10,6 +10,8 @@ public class Inventory : MonoBehaviour
     [SerializeField]
     private List<Item> startingItems;
     [SerializeField]
+    private List<int> startingItemsAmount;
+    [SerializeField]
     private Transform itemsParent;
     public ItemSlot[] ItemSlots;
 
@@ -26,6 +28,7 @@ public class Inventory : MonoBehaviour
     }
 
     public event Action<ItemSlot> OnRightClickEvent;
+    public event Action<ItemSlot> OnLeftClickEvent;
     public event Action<ItemSlot> OnBeginDragEvent;
     public event Action<ItemSlot> OnEndDragEvent;
     public event Action<ItemSlot> OnDragEvent;
@@ -35,6 +38,7 @@ public class Inventory : MonoBehaviour
         for ( int i = 0 ; i < ItemSlots.Length ; i++ )
         {
             ItemSlots[i].OnRightClickEvent += OnRightClickEvent;
+            ItemSlots[i].OnLeftClickEvent += OnLeftClickEvent;
             //ItemSlots[i].OnBeginDragEvent += OnBeginDragEvent;
             //ItemSlots[i].OnEndDragEvent += OnEndDragEvent;
             //ItemSlots[i].OnDragEvent += OnDragEvent;
@@ -56,8 +60,10 @@ public class Inventory : MonoBehaviour
         int i = 0;
         for(; i < startingItems.Count && i < ItemSlots.Length ; i++)
         {
+            int amount = startingItemsAmount[i];
             ItemSlots[i].Item = startingItems[i].Copy();
-            ItemSlots[i].Amount = 1;
+            if (amount <= 0) amount = 1;
+            ItemSlots[i].Amount = amount;
         }
 
         for(;i < ItemSlots.Length ; i++)

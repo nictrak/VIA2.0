@@ -11,9 +11,14 @@ public class InventoryManager : MonoBehaviour
     private ItemSaveManager itemSaveManager;
     [SerializeField]
     private Image draggedItem;
+    [SerializeField]
+    private Text draggedAmount;
 
     private ItemSlot draggedSlot;
     private WeaponItem lastWeaponItem;
+
+    private Item draggedItemBuffer;
+    private int draggedAmountBuffer;
 
     public ShortcutPanel ShortcutPanel { get => shortcutPanel; set => shortcutPanel = value; }
 
@@ -21,8 +26,10 @@ public class InventoryManager : MonoBehaviour
 
         //Setup Events
         //Right Click
-        Inventory.OnRightClickEvent += Equip;
+        Inventory.OnRightClickEvent += PickOne;
         EquipmentPanel.OnRightClickEvent += Unequip;
+        //Left Click
+        Inventory.OnLeftClickEvent += SwapWithDragSlot;
         //Begin Drag
         Inventory.OnBeginDragEvent += BeginDrag;
         EquipmentPanel.OnBeginDragEvent += BeginDrag;
@@ -52,7 +59,53 @@ public class InventoryManager : MonoBehaviour
             itemSaveManager.SaveInventory(this);
         }*/
     }
+    private void SetDraggedBuffer(Item item, int amount)
+    {
+        draggedItemBuffer = item;
+        draggedAmountBuffer = amount;
+        if (draggedItemBuffer != null)
+        {
+            if(amount > 0)
+            {
+                draggedItem.sprite = item.Icon;
+                draggedAmount.text = amount.ToString();
+            }
+        }
+    }
+    private void SwapWithDragSlot(ItemSlot itemSlot)
+    {
+        if(itemSlot != null)
+        {
+            //Set temp
+            Item tempItem = draggedItemBuffer;
+            int tempAmount = draggedAmountBuffer;
+            //swap
+            SetDraggedBuffer(itemSlot.Item, itemSlot.Amount);
+            itemSlot.Item = tempItem;
+            itemSlot.Amount = tempAmount;
 
+        }
+    }
+
+    private void PickOne(ItemSlot itemSlot)
+    {
+        if(itemSlot != null)
+        {
+            if(draggedItemBuffer == null)
+            {
+                SetDraggedBuffer(itemSlot.Item, 1);
+                itemSlot.Amount = itemSlot.Amount - 1;
+            }
+            else
+            {
+                if (itemSlot.Item == draggedItemBuffer)
+                {
+                    SetDraggedBuffer(draggedItemBuffer, draggedAmountBuffer + 1);
+                    itemSlot.Amount = itemSlot.Amount - 1;
+                }
+            }
+        }
+    }
     private void Equip(ItemSlot itemSlot)
     {
         EquippableItem equippableItem = itemSlot.Item as EquippableItem;
@@ -160,6 +213,17 @@ public class InventoryManager : MonoBehaviour
             ChangeWeapon();
         }
         lastWeaponItem = EquipmentPanel.GetItemWeapon();
+        if(draggedItemBuffer != null)
+        {
+            draggedItem.enabled = true;
+            draggedAmount.enabled = true;
+            draggedItem.transform.position = Input.mousePosition;
+        }
+        else
+        {
+            draggedItem.enabled = false;
+            draggedAmount.enabled = false;
+        }
     }
     public int CountItem(string itemName)
     {
