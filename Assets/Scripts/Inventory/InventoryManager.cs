@@ -10,9 +10,9 @@ public class InventoryManager : MonoBehaviour
     [SerializeField]
     private ItemSaveManager itemSaveManager;
     [SerializeField]
-    private Image draggableItem;
+    private Image draggedItem;
 
-    private ItemSlot draggingSlot;
+    private ItemSlot draggedSlot;
     private WeaponItem lastWeaponItem;
 
     public ShortcutPanel ShortcutPanel { get => shortcutPanel; set => shortcutPanel = value; }
@@ -74,29 +74,29 @@ public class InventoryManager : MonoBehaviour
     private void BeginDrag(ItemSlot itemSlot){
         if(itemSlot.Item != null)
         {
-            draggingSlot = itemSlot;
-            draggableItem.sprite = itemSlot.Item.Icon;
-            draggableItem.transform.position = Input.mousePosition;
-            draggableItem.enabled = true;
+            draggedSlot = itemSlot;
+            draggedItem.sprite = itemSlot.Item.Icon;
+            draggedItem.transform.position = Input.mousePosition;
+            draggedItem.enabled = true;
         }
     }
 
     private void EndDrag(ItemSlot itemSlot){
-        draggingSlot = null;
-        draggableItem.enabled = false;
+        draggedSlot = null;
+        draggedItem.enabled = false;
     }
 
     private void Drag(ItemSlot itemSlot){
-        if(draggableItem.enabled){
-            draggableItem.transform.position = Input.mousePosition;
+        if(draggedItem.enabled){
+            draggedItem.transform.position = Input.mousePosition;
         }
     }
 
     private void Drop(ItemSlot dropSlot){
-        if(draggingSlot != null){
-            if(dropSlot.CanReceiveItem(draggingSlot.Item) && draggingSlot.CanReceiveItem(dropSlot.Item))
+        if(draggedSlot != null){
+            if(dropSlot.CanReceiveItem(draggedSlot.Item) && draggedSlot.CanReceiveItem(dropSlot.Item))
             {
-                EquippableItem dragItem = draggingSlot.Item as EquippableItem;
+                EquippableItem dragItem = draggedSlot.Item as EquippableItem;
                 EquippableItem dropItem = dropSlot.Item as EquippableItem;
 
                 /*if (draggingSlot is EquipmentSlot)
@@ -110,13 +110,13 @@ public class InventoryManager : MonoBehaviour
                     if(dropItem != null) dropItem.Unequip(this);
                 }*/
 
-                Item draggingItem = draggingSlot.Item;
-                int draggingAmount = draggingSlot.Amount;
+                Item draggingItem = draggedSlot.Item;
+                int draggingAmount = draggedSlot.Amount;
 
-                draggingSlot.Item = dropSlot.Item;
+                draggedSlot.Item = dropSlot.Item;
                 dropSlot.Item = draggingItem;
                 
-                draggingSlot.Amount = dropSlot.Amount;
+                draggedSlot.Amount = dropSlot.Amount;
                 dropSlot.Amount = draggingAmount;
             }
         }
