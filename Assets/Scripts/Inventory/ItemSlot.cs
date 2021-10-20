@@ -86,31 +86,31 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler , IDragHandler, IBeg
     Vector2 originalPosition;
 
     public void OnBeginDrag(PointerEventData eventData){
-        if(eventData != null)
+        /*if(eventData != null)
         {
             OnBeginDragEvent(this);
-        }
+        }*/
     }
 
     public void OnEndDrag(PointerEventData eventData){
-        if(eventData != null)
+        /*if(eventData != null)
         {
             OnEndDragEvent(this);
-        }
+        }*/
     }
 
     public void OnDrag(PointerEventData eventData){
-        if(eventData != null)
+        /*if(eventData != null)
         {
             OnDragEvent(this);
-        }
+        }*/
     }
 
     public void OnDrop(PointerEventData eventData){
-        if(eventData != null)
+        /*if(eventData != null)
         {
             OnDropEvent(this);
-        }
+        }*/
     }
     public string GetItemName()
     {

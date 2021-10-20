@@ -20,10 +20,10 @@ public class ShortcutPanel : MonoBehaviour
     {
         for (int i = 0; i < shortcutSlots.Length; i++)
         {
-            shortcutSlots[i].OnBeginDragEvent += OnBeginDragEvent;
-            shortcutSlots[i].OnEndDragEvent += OnEndDragEvent;
-            shortcutSlots[i].OnDragEvent += OnDragEvent;
-            shortcutSlots[i].OnDropEvent += OnDropEvent;
+            //shortcutSlots[i].OnBeginDragEvent += OnBeginDragEvent;
+            //shortcutSlots[i].OnEndDragEvent += OnEndDragEvent;
+            //shortcutSlots[i].OnDragEvent += OnDragEvent;
+            //shortcutSlots[i].OnDropEvent += OnDropEvent;
         }
     }
 

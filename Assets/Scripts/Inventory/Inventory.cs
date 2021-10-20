@@ -35,10 +35,10 @@ public class Inventory : MonoBehaviour
         for ( int i = 0 ; i < ItemSlots.Length ; i++ )
         {
             ItemSlots[i].OnRightClickEvent += OnRightClickEvent;
-            ItemSlots[i].OnBeginDragEvent += OnBeginDragEvent;
-            ItemSlots[i].OnEndDragEvent += OnEndDragEvent;
-            ItemSlots[i].OnDragEvent += OnDragEvent;
-            ItemSlots[i].OnDropEvent += OnDropEvent;
+            //ItemSlots[i].OnBeginDragEvent += OnBeginDragEvent;
+            //ItemSlots[i].OnEndDragEvent += OnEndDragEvent;
+            //ItemSlots[i].OnDragEvent += OnDragEvent;
+            //ItemSlots[i].OnDropEvent += OnDropEvent;
         }
     }
 

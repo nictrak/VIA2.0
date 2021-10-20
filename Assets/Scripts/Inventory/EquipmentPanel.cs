@@ -19,10 +19,10 @@ public class EquipmentPanel : MonoBehaviour
         for ( int i = 0 ; i < EquipmentSlots.Length ; i++ )
         {
             EquipmentSlots[i].OnRightClickEvent += OnRightClickEvent;
-            EquipmentSlots[i].OnBeginDragEvent += OnBeginDragEvent;
-            EquipmentSlots[i].OnEndDragEvent += OnEndDragEvent;
-            EquipmentSlots[i].OnDragEvent += OnDragEvent;
-            EquipmentSlots[i].OnDropEvent += OnDropEvent;
+            //EquipmentSlots[i].OnBeginDragEvent += OnBeginDragEvent;
+            //EquipmentSlots[i].OnEndDragEvent += OnEndDragEvent;
+            //EquipmentSlots[i].OnDragEvent += OnDragEvent;
+            //EquipmentSlots[i].OnDropEvent += OnDropEvent;
         }
     }
 
