@@ -76,14 +76,29 @@ public class InventoryManager : MonoBehaviour
     {
         if(itemSlot != null)
         {
-            //Set temp
-            Item tempItem = draggedItemBuffer;
-            int tempAmount = draggedAmountBuffer;
-            //swap
-            SetDraggedBuffer(itemSlot.Item, itemSlot.Amount);
-            itemSlot.Item = tempItem;
-            itemSlot.Amount = tempAmount;
-
+            if(itemSlot.Item != draggedItemBuffer)
+            {
+                //Set temp
+                Item tempItem = draggedItemBuffer;
+                int tempAmount = draggedAmountBuffer;
+                //swap
+                SetDraggedBuffer(itemSlot.Item, itemSlot.Amount);
+                itemSlot.Item = tempItem;
+                itemSlot.Amount = tempAmount;
+            }
+            else
+            {
+                itemSlot.Amount = itemSlot.Amount + draggedAmountBuffer;
+                if(itemSlot.Amount > itemSlot.Item.MaximunStack)
+                {
+                    SetDraggedBuffer(draggedItemBuffer, itemSlot.Amount - itemSlot.Item.MaximunStack);
+                    itemSlot.Amount = itemSlot.Item.MaximunStack;
+                }
+                else
+                {
+                    SetDraggedBuffer(null, 0);
+                }
+            }
         }
     }
 
@@ -100,8 +115,11 @@ public class InventoryManager : MonoBehaviour
             {
                 if (itemSlot.Item == draggedItemBuffer)
                 {
-                    SetDraggedBuffer(draggedItemBuffer, draggedAmountBuffer + 1);
-                    itemSlot.Amount = itemSlot.Amount - 1;
+                    if(draggedAmountBuffer + 1 <= draggedItemBuffer.MaximunStack)
+                    {
+                        SetDraggedBuffer(draggedItemBuffer, draggedAmountBuffer + 1);
+                        itemSlot.Amount = itemSlot.Amount - 1;
+                    }
                 }
             }
         }
