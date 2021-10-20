@@ -748,7 +748,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 25
   m_Sprite: {fileID: 21300000, guid: 3d4d828808576314faeaf2bc0bb10f97, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -991,6 +991,7 @@ MonoBehaviour:
   isHurtBreak: 0
   isHaveEightDirection: 0
   mostOuterRange: {fileID: 1191059845}
+  tokenStates: 
 --- !u!114 &337725379694729641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1034,6 +1035,7 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   hitEffectPrefab: {fileID: 1454490803532372921, guid: ce520020bce440044bc0d5d1f8feca7c,
     type: 3}
+  charName: 
 --- !u!114 &337725379924585470
 MonoBehaviour:
   m_ObjectHideFlags: 0
