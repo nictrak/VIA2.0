@@ -12,6 +12,8 @@ public class ShortcutPanel : MonoBehaviour
 
     public ItemSlot[] ShortcutSlots { get => shortcutSlots; set => shortcutSlots = value; }
 
+    public event Action<ItemSlot> OnRightClickEvent;
+    public event Action<ItemSlot> OnLeftClickEvent;
     public event Action<ItemSlot> OnBeginDragEvent;
     public event Action<ItemSlot> OnEndDragEvent;
     public event Action<ItemSlot> OnDragEvent;
@@ -20,6 +22,8 @@ public class ShortcutPanel : MonoBehaviour
     {
         for (int i = 0; i < shortcutSlots.Length; i++)
         {
+            shortcutSlots[i].OnRightClickEvent += OnRightClickEvent;
+            shortcutSlots[i].OnLeftClickEvent += OnLeftClickEvent;
             //shortcutSlots[i].OnBeginDragEvent += OnBeginDragEvent;
             //shortcutSlots[i].OnEndDragEvent += OnEndDragEvent;
             //shortcutSlots[i].OnDragEvent += OnDragEvent;

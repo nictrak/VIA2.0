@@ -10,6 +10,7 @@ public class EquipmentPanel : MonoBehaviour
     private int weaponSlotIndex;
 
     public event Action<ItemSlot> OnRightClickEvent;
+    public event Action<ItemSlot> OnLeftClickEvent;
     public event Action<ItemSlot> OnBeginDragEvent;
     public event Action<ItemSlot> OnEndDragEvent;
     public event Action<ItemSlot> OnDragEvent;
@@ -19,6 +20,7 @@ public class EquipmentPanel : MonoBehaviour
         for ( int i = 0 ; i < EquipmentSlots.Length ; i++ )
         {
             EquipmentSlots[i].OnRightClickEvent += OnRightClickEvent;
+            EquipmentSlots[i].OnLeftClickEvent += OnLeftClickEvent;
             //EquipmentSlots[i].OnBeginDragEvent += OnBeginDragEvent;
             //EquipmentSlots[i].OnEndDragEvent += OnEndDragEvent;
             //EquipmentSlots[i].OnDragEvent += OnDragEvent;

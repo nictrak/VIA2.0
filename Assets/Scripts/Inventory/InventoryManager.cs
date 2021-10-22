@@ -27,9 +27,12 @@ public class InventoryManager : MonoBehaviour
         //Setup Events
         //Right Click
         Inventory.OnRightClickEvent += PickOne;
-        EquipmentPanel.OnRightClickEvent += Unequip;
+        EquipmentPanel.OnRightClickEvent += PickOne;
+        ShortcutPanel.OnRightClickEvent += PickOne;
         //Left Click
         Inventory.OnLeftClickEvent += SwapWithDragSlot;
+        EquipmentPanel.OnLeftClickEvent += SwapWithDragSlot;
+        ShortcutPanel.OnLeftClickEvent += SwapWithDragSlot;
         //Begin Drag
         Inventory.OnBeginDragEvent += BeginDrag;
         EquipmentPanel.OnBeginDragEvent += BeginDrag;
