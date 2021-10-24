@@ -9,6 +9,7 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler , IDragHandler, IBeg
 {
 
     public event Action<ItemSlot> OnRightClickEvent;
+    public event Action<ItemSlot> OnLeftClickEvent;
     public event Action<ItemSlot> OnBeginDragEvent;
     public event Action<ItemSlot> OnEndDragEvent;
     public event Action<ItemSlot> OnDragEvent;
@@ -48,9 +49,10 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler , IDragHandler, IBeg
         get { return _amount; }
         set {
             _amount = value;
+            if (_amount <= 0) Item = null;
             if(amountText != null)
             {
-                amountText.enabled = _item != null && _item.MaximunStack > 1 && _amount > 1;
+                amountText.enabled = _item != null && _item.MaximunStack > 1;
                 if (amountText.enabled)
                 {
                     amountText.text = _amount.ToString();
@@ -83,36 +85,40 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler , IDragHandler, IBeg
         {
             OnRightClickEvent(this);
         }
+        if (eventData != null && eventData.button == PointerEventData.InputButton.Left)
+        {
+            OnLeftClickEvent(this);
+        }
     }
 
     Vector2 originalPosition;
 
     public void OnBeginDrag(PointerEventData eventData){
-        if(eventData != null)
+        /*if(eventData != null)
         {
             OnBeginDragEvent(this);
-        }
+        }*/
     }
 
     public void OnEndDrag(PointerEventData eventData){
-        if(eventData != null)
+        /*if(eventData != null)
         {
             OnEndDragEvent(this);
-        }
+        }*/
     }
 
     public void OnDrag(PointerEventData eventData){
-        if(eventData != null)
+        /*if(eventData != null)
         {
             OnDragEvent(this);
-        }
+        }*/
     }
 
     public void OnDrop(PointerEventData eventData){
-        if(eventData != null)
+        /*if(eventData != null)
         {
             OnDropEvent(this);
-        }
+        }*/
     }
     public string GetItemName()
     {
