@@ -117,22 +117,61 @@ public class Inventory : MonoBehaviour
         return false;
     }
 
-    public bool RemoveItem(Item item){
-        for (int i =0; i< ItemSlots.Length ; i++)
+    public bool RemoveItem(Item item, int Amount = 1){
+
+        if(ContainItem(item, Amount))
         {
-            if(ItemSlots[i].Item == item)
+            int remainingRemoveAmount = Amount;
+            for (int i =0; i< ItemSlots.Length ; i++)
             {
-                //previousItem = itemSlots[i].Item;
-                ItemSlots[i].Amount--;
-                if (ItemSlots[i].Amount == 0) {
-                    ItemSlots[i].Item = null;
-                    //ItemSlots[i].Amount = 0;
+                if(ItemSlots[i].Item == item)
+                {
+                    if(ItemSlots[i].Amount >= remainingRemoveAmount)
+                    {
+                        ItemSlots[i].Amount -= remainingRemoveAmount;
+                        if(ItemSlots[i].Amount == 0) {
+                            ItemSlots[i].Item = null;
+                        }
+                        return true;
+                    } else {
+                        remainingRemoveAmount -= ItemSlots[i].Amount;
+                        ItemSlots[i].Amount = 0;
+                        ItemSlots[i].Item = null;
+                    }
                 }
-                return true;
             }
         }
         //previousItem = null;
         return false;
+
+    }
+
+    public bool ContainItem(Item item, int Amount = 1){
+        int count = 0;
+        for (int i =0; i< ItemSlots.Length ; i++)
+        {
+            if(ItemSlots[i].Item == item)
+            {
+                count += ItemSlots[i].Amount;
+            }
+            if(count >= Amount){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public int ItemCount(Item item){
+        int count = 0;
+        for (int i =0; i< ItemSlots.Length ; i++)
+        {
+            if(ItemSlots[i].Item == item)
+            {
+                count += ItemSlots[i].Amount;
+                Debug.Log(ItemSlots[i].Amount);
+            }
+        }
+        return count;
     }
 
     public Item RemoveItem(string itemID){

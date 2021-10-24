@@ -63,11 +63,13 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler , IDragHandler, IBeg
 
     protected virtual void OnValidate()
     {
-        if (image == null)
+        if (image == null) {
             image = GetComponent<Image>();
+        }
 
-        if (amountText == null)
+        if (amountText == null) {
             amountText = GetComponentInChildren<Text>();
+        }
 
     }
 

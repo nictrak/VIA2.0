@@ -13,7 +13,7 @@ public class ShopItem : ScriptableObject
     public int Price;
 
     public bool CanBuy(Inventory inventory){
-        return inventory.Money >= Price && Amount > 0;
+        return inventory.Money >= Price && Amount > 0 && !inventory.IsFull();
     }
 
     public void Buy(Inventory inventory){
@@ -22,6 +22,7 @@ public class ShopItem : ScriptableObject
             Item itemToAdd = Item.Copy();
             if (!inventory.AddItem(itemToAdd)) {
                 itemToAdd.Destroy();
+                inventory.Money += Price;
             }
         }
     }
