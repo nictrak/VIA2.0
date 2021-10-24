@@ -90,7 +90,8 @@ public class EquipmentPanel : MonoBehaviour
     }
     public Weapon GetEquipedWeapon()
     {
-        return ((WeaponItem)EquipmentSlots[weaponSlotIndex].Item).weaponPrefab;
+        if(EquipmentSlots[weaponSlotIndex].Item != null) return ((WeaponItem)EquipmentSlots[weaponSlotIndex].Item).weaponPrefab;
+        return null;
     }
     public WeaponItem GetItemWeapon()
     {
