@@ -25,7 +25,6 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler , IDragHandler, IBeg
     [SerializeField]
     private Text amountText;
 
-    [SerializeField]
     private Item _item;
 
     public Item Item {
