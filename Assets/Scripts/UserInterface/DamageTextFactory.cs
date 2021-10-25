@@ -23,7 +23,7 @@ public class DamageTextFactory : MonoBehaviour
         
     }
 
-    public static void InstantiateDamageText(Vector3 position,int damage, Color textColor)
+    public static void InstantiateDamageText(Vector3 position,int damage, DamageSystem.DamageSubType damageType, Color textColor)
     {
         Camera cam = Resources.FindObjectsOfTypeAll<CameraFollow>()[0].GetComponent<Camera>();
         Vector3 screenPos = cam.WorldToScreenPoint(position);
@@ -32,6 +32,6 @@ public class DamageTextFactory : MonoBehaviour
         spawned.anchoredPosition = screenPos;
         Text text = spawned.GetComponent<Text>();
         text.color = textColor;
-        text.text = damage.ToString();
+        text.text = damageType.ToString() + " " + damage.ToString();
     }
 }

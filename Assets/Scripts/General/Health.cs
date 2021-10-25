@@ -109,7 +109,7 @@ public class Health : MonoBehaviour
         {
             currentHealth = maxHealth;
         }
-        if(GetComponent<BreakableObjectIdentity>() == null) DamageTextFactory.InstantiateDamageText(transform.position, damage, damageColor);
+        if(GetComponent<BreakableObjectIdentity>() == null) DamageTextFactory.InstantiateDamageText(transform.position, damage, damageSubType, damageColor);
     }
     public void Heal(int point)
     {
