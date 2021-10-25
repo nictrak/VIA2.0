@@ -133,6 +133,7 @@ public class Health : MonoBehaviour
         Vector3 end = start + new Vector3((float)currentHealth / (float)maxHealth, 0, 0);
         Gizmos.DrawLine(start, end);
     }
+    // new calculate damage
     private int CalculateDamage(int damage, DamageSystem.DamageSubType damageSubType)
     {
         int newDamage = damage;
