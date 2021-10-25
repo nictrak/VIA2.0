@@ -81,13 +81,16 @@ public class InventoryManager : MonoBehaviour
         {
             if(itemSlot.Item != draggedItemBuffer)
             {
-                //Set temp
-                Item tempItem = draggedItemBuffer;
-                int tempAmount = draggedAmountBuffer;
-                //swap
-                SetDraggedBuffer(itemSlot.Item, itemSlot.Amount);
-                itemSlot.Item = tempItem;
-                itemSlot.Amount = tempAmount;
+                if (itemSlot.CanReceiveItem(draggedItemBuffer))
+                {
+                    //Set temp
+                    Item tempItem = draggedItemBuffer;
+                    int tempAmount = draggedAmountBuffer;
+                    //swap
+                    SetDraggedBuffer(itemSlot.Item, itemSlot.Amount);
+                    itemSlot.Item = tempItem;
+                    itemSlot.Amount = tempAmount;
+                }
             }
             else
             {
