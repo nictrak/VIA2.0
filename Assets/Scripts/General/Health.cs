@@ -18,8 +18,10 @@ public class Health : MonoBehaviour
     private Item dropOnDamaged;
     [SerializeField]
     private Color damageColor;
+    [SerializeField]
     [Range(0.0F, 1.0F)]
     private float chopResistance;
+    [SerializeField]
     [Range(0.0F, 1.0F)]
     private float strikeResistance;
     [SerializeField]
