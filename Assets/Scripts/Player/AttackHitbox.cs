@@ -35,24 +35,35 @@ public class AttackHitbox : MonoBehaviour
     {
         for(int i = 0; i < enemies.Count; i++)
         {
-            Health enemyHealth = enemies[i].GetComponent<Health>();
-            ModifierController enemyModController = enemies[i].GetComponent<ModifierController>();
-            if (enemyHealth != null)
+            if(enemies[i] != null)
             {
-                enemyHealth.TakeDamage(damage);
-                if(mods != null)
+                Health enemyHealth = enemies[i].GetComponent<Health>();
+                ModifierController enemyModController = enemies[i].GetComponent<ModifierController>();
+                if (enemyHealth != null)
                 {
-                    for (int j = 0; j < mods.Count; j++)
+                    BreakableObjectIdentity breakableObjectIdentity = enemies[i].GetComponent<BreakableObjectIdentity>();
+                    if (breakableObjectIdentity != null)
                     {
-                        Modifier newMod = Instantiate<Modifier>(mods[j]);
-                        PortionTime portion = newMod.GetComponent<PortionTime>();
-                        if (portion != null)
+                        enemyHealth.TakeDamage(1);
+                    }
+                    else
+                    {
+                        enemyHealth.TakeDamage(damage);
+                    }
+                    if (mods != null)
+                    {
+                        for (int j = 0; j < mods.Count; j++)
                         {
-                            Destroy(portion);
+                            Modifier newMod = Instantiate<Modifier>(mods[j]);
+                            PortionTime portion = newMod.GetComponent<PortionTime>();
+                            if (portion != null)
+                            {
+                                Destroy(portion);
+                            }
+                            Debug.Log(enemies[i]);
+                            enemyModController.AddModifier(newMod);
+                            Destroy(newMod.gameObject);
                         }
-                        Debug.Log(enemies[i]);
-                        enemyModController.AddModifier(newMod);
-                        Destroy(newMod.gameObject);
                     }
                 }
             }

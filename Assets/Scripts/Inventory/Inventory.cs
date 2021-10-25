@@ -10,6 +10,8 @@ public class Inventory : MonoBehaviour
     [SerializeField]
     private List<Item> startingItems;
     [SerializeField]
+    private List<int> startingItemsAmount;
+    [SerializeField]
     private Transform itemsParent;
     public ItemSlot[] ItemSlots;
 
@@ -26,6 +28,7 @@ public class Inventory : MonoBehaviour
     }
 
     public event Action<ItemSlot> OnRightClickEvent;
+    public event Action<ItemSlot> OnLeftClickEvent;
     public event Action<ItemSlot> OnBeginDragEvent;
     public event Action<ItemSlot> OnEndDragEvent;
     public event Action<ItemSlot> OnDragEvent;
@@ -35,10 +38,11 @@ public class Inventory : MonoBehaviour
         for ( int i = 0 ; i < ItemSlots.Length ; i++ )
         {
             ItemSlots[i].OnRightClickEvent += OnRightClickEvent;
-            ItemSlots[i].OnBeginDragEvent += OnBeginDragEvent;
-            ItemSlots[i].OnEndDragEvent += OnEndDragEvent;
-            ItemSlots[i].OnDragEvent += OnDragEvent;
-            ItemSlots[i].OnDropEvent += OnDropEvent;
+            ItemSlots[i].OnLeftClickEvent += OnLeftClickEvent;
+            //ItemSlots[i].OnBeginDragEvent += OnBeginDragEvent;
+            //ItemSlots[i].OnEndDragEvent += OnEndDragEvent;
+            //ItemSlots[i].OnDragEvent += OnDragEvent;
+            //ItemSlots[i].OnDropEvent += OnDropEvent;
         }
     }
 
@@ -56,8 +60,10 @@ public class Inventory : MonoBehaviour
         int i = 0;
         for(; i < startingItems.Count && i < ItemSlots.Length ; i++)
         {
+            int amount = startingItemsAmount[i];
             ItemSlots[i].Item = startingItems[i].Copy();
-            ItemSlots[i].Amount = 1;
+            if (amount <= 0) amount = 1;
+            ItemSlots[i].Amount = amount;
         }
 
         for(;i < ItemSlots.Length ; i++)
@@ -86,7 +92,20 @@ public class Inventory : MonoBehaviour
     public bool AddItem(Item item){
         for (int i =0; i< ItemSlots.Length ; i++)
         {
-            if(ItemSlots[i].Item == null || (ItemSlots[i].Item.ID == item.ID && ItemSlots[i].Amount < ItemSlots[i].Item.MaximunStack))
+            if (ItemSlots[i].Item != null) 
+            {
+                if (ItemSlots[i].Item.ID == item.ID && ItemSlots[i].Amount < ItemSlots[i].Item.MaximunStack)
+                {
+                    //previousItem = itemSlots[i].Item;
+                    ItemSlots[i].Item = item;
+                    ItemSlots[i].Amount++;
+                    return true;
+                }
+            }
+        }
+        for (int i = 0; i < ItemSlots.Length; i++)
+        {
+            if (ItemSlots[i].Item == null)
             {
                 //previousItem = itemSlots[i].Item;
                 ItemSlots[i].Item = item;
@@ -98,22 +117,61 @@ public class Inventory : MonoBehaviour
         return false;
     }
 
-    public bool RemoveItem(Item item){
-        for (int i =0; i< ItemSlots.Length ; i++)
+    public bool RemoveItem(Item item, int Amount = 1){
+
+        if(ContainItem(item, Amount))
         {
-            if(ItemSlots[i].Item == item)
+            int remainingRemoveAmount = Amount;
+            for (int i =0; i< ItemSlots.Length ; i++)
             {
-                //previousItem = itemSlots[i].Item;
-                ItemSlots[i].Amount--;
-                if (ItemSlots[i].Amount == 0) {
-                    ItemSlots[i].Item = null;
-                    //ItemSlots[i].Amount = 0;
+                if(ItemSlots[i].Item == item)
+                {
+                    if(ItemSlots[i].Amount >= remainingRemoveAmount)
+                    {
+                        ItemSlots[i].Amount -= remainingRemoveAmount;
+                        if(ItemSlots[i].Amount == 0) {
+                            ItemSlots[i].Item = null;
+                        }
+                        return true;
+                    } else {
+                        remainingRemoveAmount -= ItemSlots[i].Amount;
+                        ItemSlots[i].Amount = 0;
+                        ItemSlots[i].Item = null;
+                    }
                 }
-                return true;
             }
         }
         //previousItem = null;
         return false;
+
+    }
+
+    public bool ContainItem(Item item, int Amount = 1){
+        int count = 0;
+        for (int i =0; i< ItemSlots.Length ; i++)
+        {
+            if(ItemSlots[i].Item == item)
+            {
+                count += ItemSlots[i].Amount;
+            }
+            if(count >= Amount){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public int ItemCount(Item item){
+        int count = 0;
+        for (int i =0; i< ItemSlots.Length ; i++)
+        {
+            if(ItemSlots[i].Item == item)
+            {
+                count += ItemSlots[i].Amount;
+                Debug.Log(ItemSlots[i].Amount);
+            }
+        }
+        return count;
     }
 
     public Item RemoveItem(string itemID){

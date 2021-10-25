@@ -19,6 +19,10 @@ public class DialogueController : MonoBehaviour
     private Button button3;
     [SerializeField]
     private Button button4;
+    [SerializeField]
+    private Image ImageLeft;
+    [SerializeField]
+    private Image ImageRight;
 
     private bool isShow;
     // Start is called before the first frame update
@@ -42,6 +46,39 @@ public class DialogueController : MonoBehaviour
         talkerNameText.text = dialogue.TalkerName;
         dialogueText.text = dialogue.DialogueContent;
     }
+
+    public void SetImage(Dialogue dialogue)
+    {
+            // Load Profile-image from testUIDialog folder
+            Object [] sprites;
+            Object [] spritesDefault;
+            spritesDefault = Resources.LoadAll ("UIProfileDialog/DEFAULTUI");
+            sprites = Resources.LoadAll ("UIProfileDialog/"+dialogue.TalkerName);
+            // Use dialog-properties-to Create-Image Canvas
+            if (sprites.Length > 0){
+                SetImageSite(dialogue,sprites);
+            } else{
+                
+                Debug.Log("FindAssets: other DEFAULTUI");
+                Debug.Log("Fail Dialog-Talker"+dialogue.TalkerName);
+                Debug.Log("Fail Dialog-Content"+dialogue.DialogueContent);
+                Debug.Log("Fail Dialog-Content long"+spritesDefault.Length);
+                SetImageSite(dialogue,spritesDefault);
+            }
+    }
+
+    private void SetImageSite(Dialogue dialogue, Object [] sprites){
+        if (dialogue.IsDisplayIconLeft){
+            ImageLeft.enabled = dialogue.IsDisplayIconLeft;
+            ImageRight.enabled = !dialogue.IsDisplayIconLeft;
+            ImageLeft.sprite = (Sprite)sprites [1];
+        } else{
+            ImageLeft.enabled = dialogue.IsDisplayIconLeft;
+            ImageRight.enabled = !dialogue.IsDisplayIconLeft;
+            ImageRight.sprite = (Sprite)sprites [1];
+        }
+    }
+
     public void ShowDialogue(Dialogue dialogue)
     {
         if(dialogue == null)
@@ -57,6 +94,7 @@ public class DialogueController : MonoBehaviour
             }
             SetActiveButton(dialogue.GetChoicesString());
             SetText(dialogue);
+            SetImage(dialogue);
         }
     }
     public void SetActivePanel(bool isActive)

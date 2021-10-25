@@ -15,6 +15,11 @@ public class RangeSpawner : MonoBehaviour
     [SerializeField]
     private int spawnDelayFrame;
 
+    [SerializeField]
+    private Animator animator;
+       [SerializeField]
+    private int animationFrame;
+
     private List<GameObject> spawneds;
     private int frameCounter;
 
@@ -39,13 +44,19 @@ public class RangeSpawner : MonoBehaviour
             {
                 GameObject spawned = Instantiate(spawnedPrefab);
                 spawneds.Add(spawned);
+                // TODO : Still in Hardcode time
+                animator.Play("SpawnEffect");
                 spawned.transform.position = transform.position;
                 frameCounter = 0;
-            }
+            }  
         }
         else
         {
             frameCounter++;
+        }
+        if (frameCounter == animationFrame){
+            // TODO : Still in Hardcode time
+            animator.Play("New State");
         }
     }
     public void ClearDeathSpawned()

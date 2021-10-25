@@ -15,5 +15,4 @@ MonoBehaviour:
   costItems: []
   costNumbers: 
   icon: {fileID: 21300000, guid: 17c4f53010080af4284189fb95c07a9e, type: 3}
-  summonedCraftingMaterial: {fileID: 11400000, guid: fb65723f5c556474eb0353e05a63da1b,
-    type: 2}
+  summonedPrefab: {fileID: 0}

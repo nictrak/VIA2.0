@@ -24,7 +24,7 @@ public class PlayerInteractionController : MonoBehaviour
     void Update()
     {
         if(!isTalk) UpdateMarker();
-        if (Input.GetKeyDown(KeyCode.E) && currentTalker != null && !isTalk)
+        if (Input.GetKeyDown(KeyCode.F) && currentTalker != null && !isTalk)
         {
             currentTalker.Talk();
             isTalk = true;
@@ -42,41 +42,41 @@ public class PlayerInteractionController : MonoBehaviour
             }
         }
     }
-    private bool IsMarkerUsed()
-    {
-        return interactionMarker != null;
-    }
-    private void ShowMarker(Vector3 position)
-    {
-        if (IsMarkerUsed())
-        {
-            interactionMarker.transform.position = position;
-        }
-        else
-        {
-            interactionMarker = Instantiate(interactionMarkerPrefab);
-            interactionMarker.transform.position = position;
-        }
-    }
-    private void ClearMarker()
-    {
-        if(IsMarkerUsed())
-        {
-            Destroy(interactionMarker);
-            currentTalker = null;
-        }
-    }
+    // private bool IsMarkerUsed()
+    // {
+    //     return interactionMarker != null;
+    // }
+    // private void ShowMarker(Vector3 position)
+    // {
+    //     if (IsMarkerUsed())
+    //     {
+    //         interactionMarker.transform.position = position;
+    //     }
+    //     else
+    //     {
+    //         interactionMarker = Instantiate(interactionMarkerPrefab);
+    //         interactionMarker.transform.position = position;
+    //     }
+    // }
+    // private void ClearMarker()
+    // {
+    //     if(IsMarkerUsed())
+    //     {
+    //         Destroy(interactionMarker);
+    //         currentTalker = null;
+    //     }
+    // }
     private void UpdateMarker()
     {
         if (!triggerRange.IsEmpty())
         {
             GameObject nearestObject = triggerRange.CalNearestObject(transform.position);
             currentTalker = nearestObject.GetComponent<Talker>();
-            ShowMarker(nearestObject.transform.position);
+            // ShowMarker(nearestObject.transform.position);
         }
         else
         {
-            ClearMarker();
+            // ClearMarker();
         }
     }
     private void SetMovementControl(bool isActive)

@@ -42,7 +42,7 @@ public class ItemDatabase : ScriptableObject
 
     private void LoadItems()
     {
-        items = FindAssetsByType<Item>("Assets/Items");
+        items = FindAssetsByType<Item>("Assets/Resources/Items");
     }
 
     public static T[] FindAssetsByType<T>(params string[] folders) where T : Object

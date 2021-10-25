@@ -10,6 +10,7 @@ public class EquipmentPanel : MonoBehaviour
     private int weaponSlotIndex;
 
     public event Action<ItemSlot> OnRightClickEvent;
+    public event Action<ItemSlot> OnLeftClickEvent;
     public event Action<ItemSlot> OnBeginDragEvent;
     public event Action<ItemSlot> OnEndDragEvent;
     public event Action<ItemSlot> OnDragEvent;
@@ -19,10 +20,11 @@ public class EquipmentPanel : MonoBehaviour
         for ( int i = 0 ; i < EquipmentSlots.Length ; i++ )
         {
             EquipmentSlots[i].OnRightClickEvent += OnRightClickEvent;
-            EquipmentSlots[i].OnBeginDragEvent += OnBeginDragEvent;
-            EquipmentSlots[i].OnEndDragEvent += OnEndDragEvent;
-            EquipmentSlots[i].OnDragEvent += OnDragEvent;
-            EquipmentSlots[i].OnDropEvent += OnDropEvent;
+            EquipmentSlots[i].OnLeftClickEvent += OnLeftClickEvent;
+            //EquipmentSlots[i].OnBeginDragEvent += OnBeginDragEvent;
+            //EquipmentSlots[i].OnEndDragEvent += OnEndDragEvent;
+            //EquipmentSlots[i].OnDragEvent += OnDragEvent;
+            //EquipmentSlots[i].OnDropEvent += OnDropEvent;
         }
     }
 
@@ -88,7 +90,8 @@ public class EquipmentPanel : MonoBehaviour
     }
     public Weapon GetEquipedWeapon()
     {
-        return ((WeaponItem)EquipmentSlots[weaponSlotIndex].Item).weaponPrefab;
+        if(EquipmentSlots[weaponSlotIndex].Item != null) return ((WeaponItem)EquipmentSlots[weaponSlotIndex].Item).weaponPrefab;
+        return null;
     }
     public WeaponItem GetItemWeapon()
     {

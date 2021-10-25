@@ -17,8 +17,6 @@ public class GeneralAttackState : MonsterStateBehaviour
     private float knockVelocity;
     [SerializeField]
     private int knockFrame;
-    [SerializeField]
-    private DamageSystem.DamageSubType damageSubType;
 
     private int attackCounter;
     public override void ExitState()
@@ -34,7 +32,7 @@ public class GeneralAttackState : MonsterStateBehaviour
             if (!attackRange.IsEmpty())
             {
                 Debug.Log(GetTarget());
-                GetTarget().GetComponentInParent<Health>().TakeDamage(damage, damageSubType: damageSubType);
+                GetTarget().GetComponentInParent<Health>().TakeDamage(damage);
                 if (isKnock)
                 {
                     PlayerKnockController knockController = GetTarget().GetComponent<PlayerKnockController>();

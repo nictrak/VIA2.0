@@ -15,9 +15,11 @@ public class Health : MonoBehaviour
     [SerializeField]
     private string charName;
     [SerializeField]
+    private Item dropOnDamaged;
+    [SerializeField]
+    private Color damageColor;
     [Range(0.0F, 1.0F)]
     private float chopResistance;
-    [SerializeField]
     [Range(0.0F, 1.0F)]
     private float strikeResistance;
     [SerializeField]
@@ -83,6 +85,11 @@ public class Health : MonoBehaviour
         if (damage > 0 && doHurt)
         {
             isHurt = true;
+            if(dropOnDamaged != null)
+            {
+                Inventory inventory = Resources.FindObjectsOfTypeAll<Inventory>()[0];
+                inventory.AddItem(dropOnDamaged);
+            }
             if(hitEffectPrefab != null)
             {
                 GameObject spawned = Instantiate(hitEffectPrefab);
@@ -102,6 +109,7 @@ public class Health : MonoBehaviour
         {
             currentHealth = maxHealth;
         }
+        if(GetComponent<BreakableObjectIdentity>() == null) DamageTextFactory.InstantiateDamageText(transform.position, damage, damageColor);
     }
     public void Heal(int point)
     {

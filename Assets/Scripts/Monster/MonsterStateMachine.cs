@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
@@ -50,6 +50,12 @@ public class MonsterStateMachine : MonoBehaviour
         Wait,
         Aim
     }
+
+    MonsterState[] tokenState = {
+        MonsterState.Attack,
+        MonsterState.Charge
+    };
+
     // Start is called before the first frame update
     void Start()
     {
