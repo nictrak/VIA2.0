@@ -812,8 +812,13 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   hitEffectPrefab: {fileID: 0}
   charName: 
-  dropOnDamaged: {fileID: 11400000, guid: e3625ecb93999f74b80f0f6f44d50876, type: 2}
+  dropOnDamaged: {fileID: 0}
   damageColor: {r: 0, g: 0, b: 0, a: 0}
+  pierceResistance: 0
+  voidResistance: 0
+  electricResistance: 0
+  fireResistance: 0
+  frostResistance: 0
 --- !u!61 &504686609
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3761,6 +3766,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2242185938980288467, guid: 56c520b0a64b3094f9373c505eaccfbc,
+        type: 3}
+      propertyPath: originTranslate.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2242185938980288467, guid: 56c520b0a64b3094f9373c505eaccfbc,
+        type: 3}
+      propertyPath: originTranslate.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2242185938980288467, guid: 56c520b0a64b3094f9373c505eaccfbc,
+        type: 3}
+      propertyPath: randomRange
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3180111770515205307, guid: 56c520b0a64b3094f9373c505eaccfbc,
         type: 3}

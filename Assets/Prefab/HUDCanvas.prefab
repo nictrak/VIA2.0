@@ -7863,6 +7863,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageTextPrefab: {fileID: 2018188255140969107, guid: 803501c9910ca214f99f88130ef6e05f,
     type: 3}
+  originTranslate: {x: 0, y: 0, z: 0}
+  randomRange: 0
 --- !u!1 &3472931759273902053
 GameObject:
   m_ObjectHideFlags: 0
