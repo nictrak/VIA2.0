@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DamageSystem
 {
+    //I am here
     public enum DamageMainType
     {
         Physical,
