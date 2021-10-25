@@ -16,6 +16,8 @@ public class Health : MonoBehaviour
     private string charName;
     [SerializeField]
     private Item dropOnDamaged;
+    [SerializeField]
+    private Color damageColor;
 
 
     private bool isHurt;
@@ -89,7 +91,7 @@ public class Health : MonoBehaviour
         {
             currentHealth = maxHealth;
         }
-        if(GetComponent<BreakableObjectIdentity>() == null) DamageTextFactory.InstantiateDamageText(transform.position);
+        if(GetComponent<BreakableObjectIdentity>() == null) DamageTextFactory.InstantiateDamageText(transform.position, damage, damageColor);
     }
     public void Heal(int point)
     {
