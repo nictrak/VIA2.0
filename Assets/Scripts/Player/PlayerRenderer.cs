@@ -12,7 +12,9 @@ public class PlayerRenderer : MonoBehaviour
         Attack2,
         Attack3,
         AreaAttack,
-        Dash
+        Dash,
+        Walk,
+        Dead
     }
     [SerializeField]
     private List<string> animatorBodyStringHeads;
