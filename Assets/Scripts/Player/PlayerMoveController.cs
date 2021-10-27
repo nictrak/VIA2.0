@@ -129,7 +129,7 @@ public class PlayerMoveController : MonoBehaviour
         {
             Vector2 mouseDirection = CalMouseDirection();
             lastestNonZeroMoveDirection = mouseDirection;
-            playerAttackController.AttackControlPerFrame(playerRenderer, CalMouseDirection());
+            Move(playerAttackController.AttackControlPerFrame(playerRenderer, mouseDirection));
         }
         else if (moveDirection.magnitude > 0.001)
         {

@@ -814,6 +814,8 @@ MonoBehaviour:
   charName: 
   dropOnDamaged: {fileID: 0}
   damageColor: {r: 0, g: 0, b: 0, a: 0}
+  chopResistance: 0
+  strikeResistance: 0
   pierceResistance: 0
   voidResistance: 0
   electricResistance: 0
@@ -1113,6 +1115,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BasicMelee (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6878539700662927994, guid: fb71296f129c18141a0a42216855cf17,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6878539700662927998, guid: fb71296f129c18141a0a42216855cf17,
         type: 3}
@@ -1942,6 +1949,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 407361424, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+      propertyPath: moveDistance
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 894784139, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
       propertyPath: healthBar
       value: 
@@ -1965,6 +1976,14 @@ PrefabInstance:
     - target: {fileID: 894784141, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
       propertyPath: staminaBar
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1084430251, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+      propertyPath: moveDistance
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103140246, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+      propertyPath: moveDistance
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 4634483407928223877, guid: de7b25d9405ed97409d914dd33f5a080,
         type: 3}

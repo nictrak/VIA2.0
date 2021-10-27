@@ -14,12 +14,15 @@ public class Attack : MonoBehaviour
     private int stamina;
     [SerializeField]
     private MonoBehaviour specialAttack;
+    [SerializeField]
+    private float moveDistance;
 
     private AttackHitbox attackHitbox;
 
     public int Frame { get => frame; set => frame = value; }
     public PlayerRenderer.PlayerRenderState RenderState { get => renderState; set => renderState = value; }
     public int Stamina { get => stamina; set => stamina = value; }
+    public float MoveDistance { get => moveDistance; set => moveDistance = value; }
 
     // Start is called before the first frame update
     void Start()
