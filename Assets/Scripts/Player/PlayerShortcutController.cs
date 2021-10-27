@@ -43,5 +43,7 @@ public class PlayerShortcutController : MonoBehaviour
 
         ItemPickable itemPickable = spawned.GetComponent<ItemPickable>();
         itemPickable.Item = shortcutPanel.ShortcutSlots[index].Item.Copy();
+
+        shortcutPanel.DecreaseOne(index);
     }
 }
