@@ -32,7 +32,7 @@ Transform:
   m_Children:
   - {fileID: 4113701316304038785}
   m_Father: {fileID: 4113701315965969141}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &4113701315352100978
 CircleCollider2D:
@@ -104,10 +104,10 @@ Transform:
   m_GameObject: {fileID: 4113701315965969138}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 9.69, y: 7.41, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.18219936, y: 0.22415914, z: 0.18219936}
   m_Children:
-  - {fileID: 4113701315352100977}
   - {fileID: 3128829152567499178}
+  - {fileID: 4113701315352100977}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -180,7 +180,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 15
   m_Sprite: {fileID: 21300000, guid: 9ab7f7da5900ed442ae47da9b1834d45, type: 3}
   m_Color: {r: 0.5728363, g: 0.14640439, b: 0.8867924, a: 0.99215686}
   m_FlipX: 0
@@ -199,20 +199,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4113701315965969141}
     m_Modifications:
-    - target: {fileID: 1332247471261115137, guid: 7194d3d6fc756994f857e1fa9b1c7565,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1332247471261115138, guid: 7194d3d6fc756994f857e1fa9b1c7565,
         type: 3}
       propertyPath: m_Name
       value: SmokeVision (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1332247471261115150, guid: 7194d3d6fc756994f857e1fa9b1c7565,
-        type: 3}
-      propertyPath: visionBlock
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1332247471261115151, guid: 7194d3d6fc756994f857e1fa9b1c7565,
         type: 3}
@@ -252,7 +242,7 @@ PrefabInstance:
     - target: {fileID: 1332247471261115151, guid: 7194d3d6fc756994f857e1fa9b1c7565,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1332247471261115151, guid: 7194d3d6fc756994f857e1fa9b1c7565,
         type: 3}
@@ -269,37 +259,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6899518044862299793, guid: 7194d3d6fc756994f857e1fa9b1c7565,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6899518044862299793, guid: 7194d3d6fc756994f857e1fa9b1c7565,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6899518044862299795, guid: 7194d3d6fc756994f857e1fa9b1c7565,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.14640439
-      objectReference: {fileID: 0}
-    - target: {fileID: 6899518044862299795, guid: 7194d3d6fc756994f857e1fa9b1c7565,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.8867924
-      objectReference: {fileID: 0}
-    - target: {fileID: 6899518044862299795, guid: 7194d3d6fc756994f857e1fa9b1c7565,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.5728363
-      objectReference: {fileID: 0}
-    - target: {fileID: 6899518044862299795, guid: 7194d3d6fc756994f857e1fa9b1c7565,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 9ab7f7da5900ed442ae47da9b1834d45,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7194d3d6fc756994f857e1fa9b1c7565, type: 3}
 --- !u!4 &3128829152567499178 stripped
