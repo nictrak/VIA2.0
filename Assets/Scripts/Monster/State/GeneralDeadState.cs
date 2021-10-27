@@ -8,6 +8,8 @@ public class GeneralDeadState : MonsterStateBehaviour
     private int delayFrame;
     [SerializeField]
     private GameObject target;
+    [SerializeField]
+    private Collider2D blocker;
 
     private int delayCounter;
     public override void ExitState()
@@ -29,7 +31,7 @@ public class GeneralDeadState : MonsterStateBehaviour
 
     public override void StartState()
     {
-        
+        if (blocker != null) blocker.isTrigger = true;
     }
 
     // Start is called before the first frame update

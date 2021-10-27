@@ -47,6 +47,7 @@ MonoBehaviour:
   NormalNextState: 5
   delayFrame: 65
   target: {fileID: 6878539700662927994}
+  blocker: {fileID: 1812663165}
 --- !u!1 &118654521
 GameObject:
   m_ObjectHideFlags: 0
@@ -984,6 +985,15 @@ MonoBehaviour:
   hitEffectPrefab: {fileID: 1454490803532372921, guid: ce520020bce440044bc0d5d1f8feca7c,
     type: 3}
   charName: BasicMelee
+  dropOnDamaged: {fileID: 0}
+  damageColor: {r: 0, g: 0, b: 0, a: 0}
+  chopResistance: 0
+  strikeResistance: 0
+  pierceResistance: 0
+  voidResistance: 0
+  electricResistance: 0
+  fireResistance: 0
+  frostResistance: 0
 --- !u!114 &407601076
 MonoBehaviour:
   m_ObjectHideFlags: 0
