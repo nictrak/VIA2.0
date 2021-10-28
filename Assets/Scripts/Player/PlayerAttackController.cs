@@ -82,14 +82,12 @@ public class PlayerAttackController : MonoBehaviour
     }
     public Vector2 AttackControlPerFrame(PlayerRenderer playerRenderer, Vector2 direction)
     {
-        Vector2 res = new Vector2();
         if (IsAnimatedAttack())
         {
             int index = attackStrings.IndexOf(animatedAttackString);
             if (IsFrameCounterHit(index))
             {
                 UpdateAttackAnimate(playerRenderer, direction);
-                res = direction.normalized * attackObjects[currentAnimatedIndex].MoveDistance;
                 attackFrameCounter = 0;
             }
             else
@@ -100,8 +98,9 @@ public class PlayerAttackController : MonoBehaviour
         else
         {
             UpdateAttackAnimate(playerRenderer, direction);
-            res = direction.normalized * attackObjects[currentAnimatedIndex].MoveDistance;
         }
+        Vector2 res = new Vector2();
+        res = direction.normalized * attackObjects[currentAnimatedIndex].MoveDistance;
         return res;
     }
     public bool IsEquipWeapon()
