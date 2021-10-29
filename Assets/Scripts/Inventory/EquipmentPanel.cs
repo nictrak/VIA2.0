@@ -8,6 +8,8 @@ public class EquipmentPanel : MonoBehaviour
     public EquipmentSlot[] EquipmentSlots;
     [SerializeField]
     private int weaponSlotIndex;
+    [SerializeField]
+    private WeaponItem startingWeapon;
 
     public event Action<ItemSlot> OnRightClickEvent;
     public event Action<ItemSlot> OnLeftClickEvent;
@@ -31,6 +33,11 @@ public class EquipmentPanel : MonoBehaviour
     private void OnValidate()
     {
         EquipmentSlots = equipmentSlotsParent.GetComponentsInChildren<EquipmentSlot>();
+        if(startingWeapon != null)
+        {
+            EquipmentSlots[weaponSlotIndex].Item = startingWeapon;
+            EquipmentSlots[weaponSlotIndex].Amount = 1;
+        }
     }
 
     public EquippableItem GetEquippedItem(EquipmentType equipmentType)

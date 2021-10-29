@@ -4948,7 +4948,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_Maskable: 0
   m_OnCullStateChanged:
@@ -4978,7 +4978,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 3472931757907280525}
   amountText: {fileID: 7668196218257437580}
-  _amount: 0
+  _amount: 1
   EquipmentType: 0
 --- !u!1 &3472931757957748272
 GameObject:
@@ -6906,6 +6906,7 @@ MonoBehaviour:
   - {fileID: 3472931758417753209}
   - {fileID: 3472931757907280524}
   weaponSlotIndex: 1
+  startingWeapon: {fileID: 0}
 --- !u!1 &3472931758999423559
 GameObject:
   m_ObjectHideFlags: 0
