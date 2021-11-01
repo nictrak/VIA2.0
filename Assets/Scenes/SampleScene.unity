@@ -860,6 +860,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainObject: {fileID: 536605902}
+  rendererObject: {fileID: 1995420555}
+  alphaDecreasePerFrame: 0.005
 --- !u!1 &536605902
 GameObject:
   m_ObjectHideFlags: 0
@@ -1942,7 +1944,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 407361424, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
       propertyPath: moveDistance
-      value: 0.01
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 894784139, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
       propertyPath: healthBar
@@ -1970,11 +1972,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1084430251, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
       propertyPath: moveDistance
-      value: 0
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 2103140246, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
       propertyPath: moveDistance
-      value: 0.03
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 4634483407928223877, guid: de7b25d9405ed97409d914dd33f5a080,
         type: 3}
