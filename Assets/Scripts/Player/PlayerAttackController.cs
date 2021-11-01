@@ -50,6 +50,10 @@ public class PlayerAttackController : MonoBehaviour
     {
         return attackFrameCounter >= attackObjects[index].Frame;
     }
+    private bool isFrameCounterZero()
+    {
+        return attackFrameCounter == 0;
+    }
     public void AddAttack(string attackKey)
     {
         string newAttackString = currentAttackString + attackKey;
@@ -82,9 +86,14 @@ public class PlayerAttackController : MonoBehaviour
     }
     public Vector2 AttackControlPerFrame(PlayerRenderer playerRenderer, Vector2 direction)
     {
+        Vector2 res = new Vector2();
         if (IsAnimatedAttack())
         {
             int index = attackStrings.IndexOf(animatedAttackString);
+            if (isFrameCounterZero())
+            {
+                res = direction.normalized * attackObjects[currentAnimatedIndex].MoveDistance;
+            }
             if (IsFrameCounterHit(index))
             {
                 UpdateAttackAnimate(playerRenderer, direction);
@@ -99,8 +108,6 @@ public class PlayerAttackController : MonoBehaviour
         {
             UpdateAttackAnimate(playerRenderer, direction);
         }
-        Vector2 res = new Vector2();
-        res = direction.normalized * attackObjects[currentAnimatedIndex].MoveDistance;
         return res;
     }
     public bool IsEquipWeapon()
