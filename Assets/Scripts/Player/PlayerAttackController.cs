@@ -54,6 +54,10 @@ public class PlayerAttackController : MonoBehaviour
     {
         return attackFrameCounter == 0;
     }
+    private bool IsFrameCounterHitMoveDelay(int index)
+    {
+        return attackFrameCounter == attackObjects[index].MoveDelayFrame;
+    }
     public void AddAttack(string attackKey)
     {
         string newAttackString = currentAttackString + attackKey;
@@ -90,7 +94,7 @@ public class PlayerAttackController : MonoBehaviour
         if (IsAnimatedAttack())
         {
             int index = attackStrings.IndexOf(animatedAttackString);
-            if (isFrameCounterZero())
+            if (IsFrameCounterHitMoveDelay(currentAnimatedIndex))
             {
                 res = direction.normalized * attackObjects[currentAnimatedIndex].MoveDistance;
             }

@@ -1946,6 +1946,10 @@ PrefabInstance:
       propertyPath: moveDistance
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 407361424, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+      propertyPath: moveDelayFrame
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 894784139, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
       propertyPath: healthBar
       value: 
@@ -1974,9 +1978,17 @@ PrefabInstance:
       propertyPath: moveDistance
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 1084430251, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+      propertyPath: moveDelayFrame
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2103140246, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
       propertyPath: moveDistance
       value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103140246, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+      propertyPath: moveDelayFrame
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4634483407928223877, guid: de7b25d9405ed97409d914dd33f5a080,
         type: 3}
