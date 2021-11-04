@@ -97,4 +97,15 @@ public class ShortcutPanel : MonoBehaviour
         }
         return count;
     }
+
+    public void DecreaseOne(int index)
+    {
+        if(shortcutSlots[index].Item != null)
+        {
+            if(shortcutSlots[index].Amount > 0)
+            {
+                shortcutSlots[index].Amount = shortcutSlots[index].Amount - 1;
+            }
+        }
+    }
 }

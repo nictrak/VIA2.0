@@ -15,6 +15,7 @@ public class PlayerAttackController : MonoBehaviour
     private string animatedAttackString;
     private int attackFrameCounter;
     private PlayerStaminaController playerStaminaController;
+    private int currentAnimatedIndex;
 
     public Weapon Weapon { get => weapon; set => weapon = value; }
 
@@ -25,6 +26,7 @@ public class PlayerAttackController : MonoBehaviour
         currentAttackString = "";
         animatedAttackString = "";
         playerStaminaController = GetComponent<PlayerStaminaController>();
+        currentAnimatedIndex = 0;
     }
 
     // Update is called once per frame
@@ -48,6 +50,14 @@ public class PlayerAttackController : MonoBehaviour
     {
         return attackFrameCounter >= attackObjects[index].Frame;
     }
+    private bool isFrameCounterZero()
+    {
+        return attackFrameCounter == 0;
+    }
+    private bool IsFrameCounterHitMoveDelay(int index)
+    {
+        return attackFrameCounter == attackObjects[index].MoveDelayFrame;
+    }
     public void AddAttack(string attackKey)
     {
         string newAttackString = currentAttackString + attackKey;
@@ -64,6 +74,7 @@ public class PlayerAttackController : MonoBehaviour
         {
             string newAnimatedAttackString = currentAttackString.Substring(0, animatedAttackString.Length + 1);
             int newIndex = attackStrings.IndexOf(newAnimatedAttackString);
+            currentAnimatedIndex = newIndex;
             PlayerRenderer.PlayerRenderState newRenderState = attackObjects[newIndex].RenderState;
             attackObjects[newIndex].DoDamage(weapon.ModifiersPrefab);
             playerRenderer.UpdateAnimation(newRenderState, direction);
@@ -77,11 +88,16 @@ public class PlayerAttackController : MonoBehaviour
             attackFrameCounter = 0;
         }
     }
-    public void AttackControlPerFrame(PlayerRenderer playerRenderer, Vector2 direction)
+    public Vector2 AttackControlPerFrame(PlayerRenderer playerRenderer, Vector2 direction)
     {
+        Vector2 res = new Vector2();
         if (IsAnimatedAttack())
         {
             int index = attackStrings.IndexOf(animatedAttackString);
+            if (IsFrameCounterHitMoveDelay(currentAnimatedIndex))
+            {
+                res = direction.normalized * attackObjects[currentAnimatedIndex].MoveDistance;
+            }
             if (IsFrameCounterHit(index))
             {
                 UpdateAttackAnimate(playerRenderer, direction);
@@ -96,6 +112,7 @@ public class PlayerAttackController : MonoBehaviour
         {
             UpdateAttackAnimate(playerRenderer, direction);
         }
+        return res;
     }
     public bool IsEquipWeapon()
     {
