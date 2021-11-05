@@ -35,7 +35,7 @@ public class DamageShot : Modifier
         {
             //add mod
             if(health != null)
-            health.TakeDamage(damagePoint);
+            health.TakeDamage(damagePoint, transform.position, false);
         }
         lastIsEnable = IsEnable;
     }
