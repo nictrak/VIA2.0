@@ -60,7 +60,10 @@ public class Inventory : MonoBehaviour
         int i = 0;
         for(; i < startingItems.Count && i < ItemSlots.Length ; i++)
         {
-            int amount = startingItemsAmount[i];
+            int amount = 0;
+            if(i < startingItemsAmount.Count){
+               amount = startingItemsAmount[i]; 
+            }
             ItemSlots[i].Item = startingItems[i].Copy();
             if (amount <= 0) amount = 1;
             ItemSlots[i].Amount = amount;

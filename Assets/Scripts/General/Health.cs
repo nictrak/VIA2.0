@@ -49,6 +49,13 @@ public class Health : MonoBehaviour
     public bool IsDead { get => isDead; set => isDead = value; }
     public bool IsHurt { get => isHurt; set => isHurt = value; }
 
+    [SerializeField]
+    private SpriteRenderer spriteRenderer;
+    private Rigidbody2D rb;
+
+    private bool attacked = false;
+	private float attackedTime = 0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -58,6 +65,7 @@ public class Health : MonoBehaviour
         currentHealth = initialHealth;
         if (currentHealth > maxHealth) currentHealth = maxHealth;
         barWidth = -1;
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -67,6 +75,7 @@ public class Health : MonoBehaviour
         {
             UpdateHealthBar();
         }
+        if(attacked && Time.time > attackedTime + 0.25f && spriteRenderer!=null) spriteRenderer.color = Color.white;
     }
     private void FixedUpdate()
     {
@@ -81,9 +90,19 @@ public class Health : MonoBehaviour
         float currentWidth = barWidth * currentHealth / maxHealth;
         healthBar.sizeDelta = new Vector2(currentWidth, healthBar.sizeDelta.y);
     }
-    public void TakeDamage(int damage, bool doHurt = true, DamageSystem.DamageSubType damageSubType = DamageSystem.DamageSubType.Pure)
+    public void TakeDamage(int damage, Vector3 damageDirection, bool isKnockback, bool doHurt = true, DamageSystem.DamageSubType damageSubType = DamageSystem.DamageSubType.Pure)
     {
-        currentHealth = currentHealth - CalculateDamage(damage, damageSubType);
+        int calculateDamage = CalculateDamage(damage, damageSubType);
+        currentHealth = currentHealth - calculateDamage;
+        if(calculateDamage > 0 && spriteRenderer!=null){
+            spriteRenderer.color = Color.red;
+            attacked = true;
+		    attackedTime = Time.time;
+            if(rb!=null && isKnockback){
+                Vector3 moveDirection = transform.position - damageDirection;
+                rb.AddForce(moveDirection.normalized * 0.8f, ForceMode2D.Impulse);
+            }
+        }
         if (damage > 0 && doHurt)
         {
             isHurt = true;

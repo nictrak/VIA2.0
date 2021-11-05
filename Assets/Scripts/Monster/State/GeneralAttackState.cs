@@ -32,7 +32,7 @@ public class GeneralAttackState : MonsterStateBehaviour
             if (!attackRange.IsEmpty())
             {
                 Debug.Log(GetTarget());
-                GetTarget().GetComponentInParent<Health>().TakeDamage(damage);
+                GetTarget().GetComponentInParent<Health>().TakeDamage(damage, transform.position, false);
                 if (isKnock)
                 {
                     PlayerKnockController knockController = GetTarget().GetComponent<PlayerKnockController>();

@@ -44,11 +44,11 @@ public class AttackHitbox : MonoBehaviour
                     BreakableObjectIdentity breakableObjectIdentity = enemies[i].GetComponent<BreakableObjectIdentity>();
                     if (breakableObjectIdentity != null)
                     {
-                        enemyHealth.TakeDamage(1);
+                        enemyHealth.TakeDamage(1, transform.position, false);
                     }
                     else
                     {
-                        enemyHealth.TakeDamage(damage);
+                        enemyHealth.TakeDamage(damage, transform.position, true);
                     }
                     if (mods != null)
                     {
