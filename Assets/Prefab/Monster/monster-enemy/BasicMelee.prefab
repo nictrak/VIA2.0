@@ -218,6 +218,52 @@ MonoBehaviour:
   currentState: 1
   NormalNextState: 2
   nextStateRange: {fileID: 82805168}
+--- !u!1 &895895330
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 895895332}
+  - component: {fileID: 895895331}
+  m_Layer: 0
+  m_Name: WaitState
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &895895332
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895895330}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2109351896}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &895895331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895895330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90d9f4250ed03c74f9f94edf15d4c854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: 9
+  NormalNextState: 1
+  delayFrame: 100
 --- !u!1 &1010535366
 GameObject:
   m_ObjectHideFlags: 0
@@ -581,6 +627,7 @@ Transform:
   - {fileID: 1305351801}
   - {fileID: 1067264558220451574}
   - {fileID: 83543705}
+  - {fileID: 895895332}
   m_Father: {fileID: 6878539700662927998}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -628,8 +675,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 4
-  NormalNextState: 1
-  delayFrame: 12
+  NormalNextState: 9
+  delayFrame: 24
 --- !u!1 &6878539700156517197
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,7 +969,7 @@ MonoBehaviour:
   initialState: 0
   animatorStringHead: basic_melee_
   animator: {fileID: 675005679}
-  statesHashSequence: 000000000100000002000000030000000400000005000000
+  statesHashSequence: 00000000010000000200000003000000040000000500000009000000
   states:
   - {fileID: 627429811}
   - {fileID: 701979322}
@@ -930,6 +977,7 @@ MonoBehaviour:
   - {fileID: 4816123618954434036}
   - {fileID: 3628757509199063279}
   - {fileID: 83543704}
+  - {fileID: 895895331}
   stringAnimators:
   - idle
   - idle
@@ -937,6 +985,7 @@ MonoBehaviour:
   - attack
   - hurt
   - dead
+  - idle
   isHurtBreak: 1
   isHaveEightDirection: 0
   mostOuterRange: {fileID: 82805168}
@@ -979,8 +1028,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30367bfd22ea2ca44b7b8cf9cb6b3d6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 75
-  initialHealth: 75
+  maxHealth: 100
+  initialHealth: 100
   healthBar: {fileID: 0}
   hitEffectPrefab: {fileID: 1454490803532372921, guid: ce520020bce440044bc0d5d1f8feca7c,
     type: 3}
@@ -994,6 +1043,7 @@ MonoBehaviour:
   electricResistance: 0
   fireResistance: 0
   frostResistance: 0
+  spriteRenderer: {fileID: 6878539700156517199}
 --- !u!114 &407601076
 MonoBehaviour:
   m_ObjectHideFlags: 0

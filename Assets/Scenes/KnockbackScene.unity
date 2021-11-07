@@ -330,6 +330,10 @@ PrefabInstance:
       propertyPath: initialHealth
       value: 2500
       objectReference: {fileID: 0}
+    - target: {fileID: 895895332, guid: fb71296f129c18141a0a42216855cf17, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3628757509199063279, guid: fb71296f129c18141a0a42216855cf17,
         type: 3}
       propertyPath: delayFrame
@@ -566,6 +570,10 @@ PrefabInstance:
     - target: {fileID: 407601075, guid: fb71296f129c18141a0a42216855cf17, type: 3}
       propertyPath: initialHealth
       value: 2500
+      objectReference: {fileID: 0}
+    - target: {fileID: 895895332, guid: fb71296f129c18141a0a42216855cf17, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3628757509199063279, guid: fb71296f129c18141a0a42216855cf17,
         type: 3}
@@ -820,6 +828,10 @@ PrefabInstance:
     - target: {fileID: 407601075, guid: fb71296f129c18141a0a42216855cf17, type: 3}
       propertyPath: initialHealth
       value: 2500
+      objectReference: {fileID: 0}
+    - target: {fileID: 895895332, guid: fb71296f129c18141a0a42216855cf17, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3628757509199063279, guid: fb71296f129c18141a0a42216855cf17,
         type: 3}
@@ -1901,18 +1913,6 @@ Transform:
   m_Father: {fileID: 6878539700403559542}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &762220033 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2109351896, guid: fb71296f129c18141a0a42216855cf17,
-    type: 3}
-  m_PrefabInstance: {fileID: 1123735978}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &789107602 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 6878539700156517199, guid: fb71296f129c18141a0a42216855cf17,
-    type: 3}
-  m_PrefabInstance: {fileID: 1123735978}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &878551532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1993,52 +1993,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagTarget: PlayerTarget
---- !u!1 &895895330
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 895895332}
-  - component: {fileID: 895895331}
-  m_Layer: 0
-  m_Name: WaitState
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &895895331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 895895330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90d9f4250ed03c74f9f94edf15d4c854, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentState: 9
-  NormalNextState: 1
-  delayFrame: 100
---- !u!4 &895895332
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 895895330}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 762220033}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &907195149
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2266,56 +2220,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 101977564, guid: fb71296f129c18141a0a42216855cf17, type: 3}
-      propertyPath: states.Array.size
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 101977564, guid: fb71296f129c18141a0a42216855cf17, type: 3}
-      propertyPath: statesHashSequence.Array.size
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 101977564, guid: fb71296f129c18141a0a42216855cf17, type: 3}
-      propertyPath: stringAnimators.Array.size
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 101977564, guid: fb71296f129c18141a0a42216855cf17, type: 3}
-      propertyPath: states.Array.data[6]
-      value: 
-      objectReference: {fileID: 895895331}
-    - target: {fileID: 101977564, guid: fb71296f129c18141a0a42216855cf17, type: 3}
-      propertyPath: statesHashSequence.Array.data[6]
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 101977564, guid: fb71296f129c18141a0a42216855cf17, type: 3}
-      propertyPath: isHaveEightDirection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 101977564, guid: fb71296f129c18141a0a42216855cf17, type: 3}
-      propertyPath: stringAnimators.Array.data[6]
-      value: idle
-      objectReference: {fileID: 0}
-    - target: {fileID: 407601075, guid: fb71296f129c18141a0a42216855cf17, type: 3}
-      propertyPath: spriteRenderer
-      value: 
-      objectReference: {fileID: 789107602}
-    - target: {fileID: 407601075, guid: fb71296f129c18141a0a42216855cf17, type: 3}
-      propertyPath: maxHealth
-      value: 2500
-      objectReference: {fileID: 0}
-    - target: {fileID: 407601075, guid: fb71296f129c18141a0a42216855cf17, type: 3}
-      propertyPath: initialHealth
-      value: 2500
-      objectReference: {fileID: 0}
-    - target: {fileID: 3628757509199063279, guid: fb71296f129c18141a0a42216855cf17,
-        type: 3}
-      propertyPath: delayFrame
-      value: 24
-      objectReference: {fileID: 0}
-    - target: {fileID: 3628757509199063279, guid: fb71296f129c18141a0a42216855cf17,
-        type: 3}
-      propertyPath: NormalNextState
-      value: 9
-      objectReference: {fileID: 0}
     - target: {fileID: 6878539700662927994, guid: fb71296f129c18141a0a42216855cf17,
         type: 3}
       propertyPath: m_Name
