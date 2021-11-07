@@ -676,7 +676,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 4
   NormalNextState: 9
-  delayFrame: 24
+  delayFrame: 60
 --- !u!1 &6878539700156517197
 GameObject:
   m_ObjectHideFlags: 0
@@ -1028,8 +1028,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30367bfd22ea2ca44b7b8cf9cb6b3d6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
-  initialHealth: 100
+  maxHealth: 1000
+  initialHealth: 1000
   healthBar: {fileID: 0}
   hitEffectPrefab: {fileID: 1454490803532372921, guid: ce520020bce440044bc0d5d1f8feca7c,
     type: 3}

@@ -100,7 +100,7 @@ public class Health : MonoBehaviour
 		    attackedTime = Time.time;
             if(rb!=null && isKnockback){
                 Vector3 moveDirection = transform.position - damageDirection;
-                rb.AddForce(moveDirection.normalized * 0.8f, ForceMode2D.Impulse);
+                rb.AddForce(moveDirection.normalized * 1f, ForceMode2D.Impulse);
             }
         }
         if (damage > 0 && doHurt)
