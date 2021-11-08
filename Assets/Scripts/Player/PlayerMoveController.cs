@@ -90,13 +90,20 @@ public class PlayerMoveController : MonoBehaviour
     // Start move method
     private Vector2 GetInputMoveDirection()
     {
+        // Vector3 mousePos = Input.mousePosition;
         Vector2 res = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        // Vector2 res = new Vector2(mousePos.x, mousePos.y);
+        
         return res.normalized;
     }
     private void UpdateMoveDirection()
     {
-        moveDirection = GetInputMoveDirection();
-        if(moveDirection.magnitude > 0.001 && !playerAttackController.IsAttack())
+        // moveDirection = GetInputMoveDirection();
+        // TO DELETE : Test Change-Direction with cursor
+        moveDirection = CalMouseDirection();
+        // if(moveDirection.magnitude > 0.001 && !playerAttackController.IsAttack())
+        // TO DELETE : Test Change-Direction with cursor
+        if(moveDirection.magnitude > 1 && !playerAttackController.IsAttack())
         {
             lastestNonZeroMoveDirection = moveDirection;
         }
