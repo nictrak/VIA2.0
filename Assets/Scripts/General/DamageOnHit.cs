@@ -30,14 +30,14 @@ public class DamageOnHit : MonoBehaviour
         {
             if (collision.gameObject.tag == "Player" && isEffectPlayer)
             {
-                collision.gameObject.GetComponent<Health>().TakeDamage(damage);
+                collision.gameObject.GetComponent<Health>().TakeDamage(damage, transform.position, false);
             }
             if (collision.gameObject.tag == "Enemy" && isEffectEnemy)
             {
                 if (!enemyHittedList.Contains(collision.gameObject))
                 {
                     enemyHittedList.Add(collision.gameObject);
-                    collision.gameObject.GetComponent<Health>().TakeDamage(damage);
+                    collision.gameObject.GetComponent<Health>().TakeDamage(damage, transform.position, false);
                 }
             }
         }

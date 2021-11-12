@@ -51,6 +51,8 @@ MonoBehaviour:
   damage: 10
   stamina: 0
   specialAttack: {fileID: 0}
+  moveDistance: 0.35
+  moveDelayFrame: 10
 --- !u!114 &4512288463562723486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,6 +180,8 @@ MonoBehaviour:
   damage: 20
   stamina: 0
   specialAttack: {fileID: 0}
+  moveDistance: 0.65
+  moveDelayFrame: 10
 --- !u!114 &4283394523707321329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -428,6 +432,8 @@ MonoBehaviour:
   damage: 40
   stamina: 50
   specialAttack: {fileID: 0}
+  moveDistance: 0
+  moveDelayFrame: 0
 --- !u!114 &1997419845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -569,6 +575,8 @@ MonoBehaviour:
   damage: 30
   stamina: 20
   specialAttack: {fileID: 0}
+  moveDistance: 1
+  moveDelayFrame: 10
 --- !u!114 &7948265326903561715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -818,6 +826,8 @@ MonoBehaviour:
   - Via attack 2-3 body
   - 
   - Via area attack
+  - Via Dead
+  - Via null
   animatorArmFrontStringHeads:
   - Via Stand arm hold weapon1
   - Via Stand arm hold weapon1
@@ -825,6 +835,8 @@ MonoBehaviour:
   - Via attack 2-2 arm
   - Via attack 2-3 arm
   - 
+  - Via null
+  - Via null
   - Via null
   animatorArmBelowStringHeads:
   - Via null
@@ -834,13 +846,17 @@ MonoBehaviour:
   - Via null
   - 
   - Via null
+  - Via null
+  - Via null
   animatorWeaponStringHeads:
   - Via Stand weapon 1
   - Via Stand weapon 1
-  - Via attack 2-1 weapon
-  - Via attack 2-2 weapon
-  - Via attack 2-3 weapon
+  - Via attack 3-1 weapon-grim
+  - Via attack 3-2 weapon-grim
+  - Via attack 3-3 weapon-grim
   - 
+  - Via null
+  - Via null
   - Via null
   animatorEffectStringHeads:
   - Via null
@@ -850,7 +866,9 @@ MonoBehaviour:
   - Via attack 2-3 effect
   - 
   - Via null
-  renderStatesSetupSequence: 00000000010000000200000003000000040000000600000005000000
+  - Via null
+  - Via null
+  renderStatesSetupSequence: 000000000100000002000000030000000400000006000000050000000800000007000000
   bodyAnimator: {fileID: 2858453401383727426}
   weaponAnimator: {fileID: 5497237861919302010}
   armFrontAnimator: {fileID: 230916243064135698}
@@ -955,7 +973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09d1656c73c8af149a67b7bad1901332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveVelocity: 0.2
+  moveVelocity: 0.09
 --- !u!114 &1656719872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1039,7 +1057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35e4c10b1b670de4a8358fcbb22615fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dashVelocity: 0.5
+  dashVelocity: 0.25
   dashFrame: 10
   dashStamina: 25
 --- !u!114 &894784141
@@ -1072,8 +1090,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerRange: {fileID: 2011776293}
-  interactionMarkerPrefab: {fileID: 7294971506650545309, guid: b179261737990e845bb71eac0d67769e,
-    type: 3}
+  interactionMarkerPrefab: {fileID: 0}
 --- !u!114 &894784139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1091,6 +1108,16 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   hitEffectPrefab: {fileID: 0}
   charName: 
+  dropOnDamaged: {fileID: 0}
+  damageColor: {r: 0, g: 0, b: 0, a: 0}
+  chopResistance: 0
+  strikeResistance: 0
+  pierceResistance: 0
+  voidResistance: 0
+  electricResistance: 0
+  fireResistance: 0
+  frostResistance: 0
+  spriteRenderer: {fileID: 0}
 --- !u!114 &894784140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1554,6 +1581,8 @@ MonoBehaviour:
   damage: 30
   stamina: 20
   specialAttack: {fileID: 7094923015974161617}
+  moveDistance: 0
+  moveDelayFrame: 0
 --- !u!114 &6049512011541717037
 MonoBehaviour:
   m_ObjectHideFlags: 0
