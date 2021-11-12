@@ -241,7 +241,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-1 weapon N 0 0
+  m_Name: Via attack 3-1 weapon-axe N
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -449,7 +449,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-1 weapon SE 0 0
+  m_Name: Via attack 3-1 weapon-axe SE
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -475,7 +475,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-1 weapon N 0
+  m_Name: Via attack 3-1 weapon-grim N
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -488,7 +488,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: b732f933d70d9184b8674bd9eb82c716, type: 2}
+  m_Motion: {fileID: 7400000, guid: 85681227665501643b497dbc74284587, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -501,7 +501,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-2 weapon E 0
+  m_Name: Via attack 3-2 weapon-grim E
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -514,7 +514,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 964b56b4fb031884d959cef6a7503d20, type: 2}
+  m_Motion: {fileID: 7400000, guid: 1bd574b587ad7e2479e6d8b339c873b8, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -553,7 +553,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-1 weapon SE 0 1
+  m_Name: Via attack 3-1 weapon-spear SE
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -709,7 +709,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-1 weapon S 0 1
+  m_Name: Via attack 3-1 weapon-spear S
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -761,7 +761,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-2 weapon SW 0 1
+  m_Name: Via attack 3-2 weapon-spear SW
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -813,7 +813,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-3 weapon N 0
+  m_Name: Via attack 3-3 weapon-grim N
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -826,7 +826,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 48ad7a84ab10a0644a6408227ef990c4, type: 2}
+  m_Motion: {fileID: 7400000, guid: bb9022d1b46e7d84bb4ffb32b17ac867, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -839,7 +839,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-2 weapon S 0
+  m_Name: Via attack 3-2 weapon-grim S
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -852,7 +852,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: df38e7b545e8d1d49977171cc5d98e85, type: 2}
+  m_Motion: {fileID: 7400000, guid: d84c12624dd1c86488b0b6b611f30305, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -943,7 +943,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-2 weapon N 0
+  m_Name: Via attack 3-2 weapon-grim N
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -956,7 +956,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: aee513a4f3c645c40a890d6e3fa0a53b, type: 2}
+  m_Motion: {fileID: 7400000, guid: 67093d3251974a84ba5277c51b9b1fc2, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -1060,7 +1060,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: ba1500b20684ca14a910514bf03863d5, type: 2}
+  m_Motion: {fileID: 7400000, guid: e80eea8ec1e968846ac8bc0416d818e3, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -1099,7 +1099,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-2 weapon W 0 0
+  m_Name: Via attack 3-2 weapon-axe W
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -1177,7 +1177,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-3 weapon E 0 0
+  m_Name: Via attack 3-3 weapon-axe E
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -1281,7 +1281,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-3 weapon W 0 0
+  m_Name: Via attack 3-3 weapon-axe W
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -1333,7 +1333,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-1 weapon NE 0 1
+  m_Name: Via attack 3-1 weapon-spear NE
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -1450,7 +1450,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 955ed12e22b2830449e91e01ccb49a7e, type: 2}
+  m_Motion: {fileID: 7400000, guid: ce09f02764070eb408ce98dfbfc7d3a7, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -1489,7 +1489,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-3 weapon W 0 1
+  m_Name: Via attack 3-3 weapon-spear W
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -1632,7 +1632,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: b732f933d70d9184b8674bd9eb82c716, type: 2}
+  m_Motion: {fileID: 7400000, guid: 91a6381a6c81e2649a984109497ed7ca, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -1827,7 +1827,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-3 weapon S 0 1
+  m_Name: Via attack 3-3 weapon-spear S
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -1905,7 +1905,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-3 weapon S 0
+  m_Name: Via attack 3-3 weapon-grim S
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -1918,7 +1918,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: aca362ef2d225d84a828187972f8f013, type: 2}
+  m_Motion: {fileID: 7400000, guid: 10bb8b3e40c6fe840b9c0af0093064d4, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2022,7 +2022,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 512a1f3e5aafefa4ba655a55bd6f71ff, type: 2}
+  m_Motion: {fileID: 7400000, guid: 02d3dc5dc80a2874fa4c563124388282, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2061,7 +2061,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-3 weapon E 0
+  m_Name: Via attack 3-3 weapon-grim E
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -2074,7 +2074,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: c0c8e8d14d5965d40ab43854e7d9a1a9, type: 2}
+  m_Motion: {fileID: 7400000, guid: e3a1fc6a562b5394fb59d1368b664923, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2113,7 +2113,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-2 weapon NW 0 1
+  m_Name: Via attack 3-2 weapon-spear NW
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -2139,7 +2139,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-3 weapon SW 0 1
+  m_Name: Via attack 3-3 weapon-spear SW
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -2295,7 +2295,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-1 weapon W 0 1
+  m_Name: Via attack 3-1 weapon-spear W
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -2347,7 +2347,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-1 weapon S 0
+  m_Name: Via attack 3-1 weapon-grim S
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -2360,7 +2360,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: ba1500b20684ca14a910514bf03863d5, type: 2}
+  m_Motion: {fileID: 7400000, guid: 3b90cb96543a75f4faa05cb6f4b09498, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2373,7 +2373,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-2 weapon N 0 1
+  m_Name: Via attack 3-2 weapon-spear N
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -2412,7 +2412,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 6d667bb909a586046947990a1272c1e2, type: 2}
+  m_Motion: {fileID: 7400000, guid: 7056c34e7a1ae924abf5d5c6b4ddbfc9, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2503,7 +2503,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-2 weapon SE 0
+  m_Name: Via attack 3-2 weapon-grim SE
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -2516,7 +2516,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: bb65a9b71e97b4848818e4e49232b735, type: 2}
+  m_Motion: {fileID: 7400000, guid: 9e03e438cb64a86448ba69f40a82d5b6, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2711,7 +2711,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-2 weapon SE 0 0
+  m_Name: Via attack 3-2 weapon-axe SE
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -2737,7 +2737,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-2 weapon NE 0
+  m_Name: Via attack 3-2 weapon-grim NE
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -2750,7 +2750,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: c0f06ea70024057479ab45a14dc1b486, type: 2}
+  m_Motion: {fileID: 7400000, guid: 61ac069dac56bd34bac7c42c7220b32c, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2945,7 +2945,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-2 weapon NW 0
+  m_Name: Via attack 3-2 weapon-grim NW
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -2958,7 +2958,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 507c1d36021b09b42afa50607bc0451c, type: 2}
+  m_Motion: {fileID: 7400000, guid: e6844a62091adc34b9d061ebe0b6b3d7, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -3309,7 +3309,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-2 weapon SW 0 0
+  m_Name: Via attack 3-2 weapon-axe SW
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -3335,7 +3335,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-1 weapon SW 0
+  m_Name: Via attack 3-1 weapon-grim SW
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -3348,7 +3348,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 512a1f3e5aafefa4ba655a55bd6f71ff, type: 2}
+  m_Motion: {fileID: 7400000, guid: 1673bff0cbe036844a9a397478671a70, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -3439,7 +3439,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-1 weapon E 0 0
+  m_Name: Via attack 3-1 weapon-axe E
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -3491,7 +3491,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-2 weapon E 0 0
+  m_Name: Via attack 3-2 weapon-axe E
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -3582,7 +3582,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 2c30cd07c34a666438b566b1ef3eb912, type: 2}
+  m_Motion: {fileID: 7400000, guid: 78546154025194b43bb728ba81e71652, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -3699,7 +3699,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-3 weapon NE 0
+  m_Name: Via attack 3-3 weapon-grim NE
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -3712,7 +3712,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 0664ca6d6d3bb5e4d884fc97b99b162d, type: 2}
+  m_Motion: {fileID: 7400000, guid: d449283bffdb45e4bbb91eb95300634f, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -3725,7 +3725,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-2 weapon N 0 0
+  m_Name: Via attack 3-2 weapon-axe N
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -4111,7 +4111,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-1 weapon NW 0 0
+  m_Name: Via attack 3-1 weapon-axe NW
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -4176,7 +4176,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 2221723e2e6469644b9c4710b273c75a, type: 2}
+  m_Motion: {fileID: 7400000, guid: 480a67fd37ed44a4499a0f9569b4f060, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -4241,7 +4241,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-1 weapon N 0 1
+  m_Name: Via attack 3-1 weapon-spear N
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -4423,7 +4423,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-2 weapon NE 0 0
+  m_Name: Via attack 3-2 weapon-axe NE
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -4449,7 +4449,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-2 weapon SE 0 1
+  m_Name: Via attack 3-2 weapon-spear SE
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -4475,7 +4475,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-1 weapon W 0 0
+  m_Name: Via attack 3-1 weapon-axe W
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -4501,7 +4501,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-1 weapon SE 0
+  m_Name: Via attack 3-1 weapon-grim SE
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -4514,7 +4514,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 6d667bb909a586046947990a1272c1e2, type: 2}
+  m_Motion: {fileID: 7400000, guid: 5d034f68214f0004e892ced000af2191, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -4553,7 +4553,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-3 weapon SE 0
+  m_Name: Via attack 3-3 weapon-grim SE
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -4566,7 +4566,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 775642672ad072345ac08fddb42c7b2c, type: 2}
+  m_Motion: {fileID: 7400000, guid: b60c76e364bc8cc469aa61c8789e17c5, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -4579,7 +4579,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-3 weapon N 0 1
+  m_Name: Via attack 3-3 weapon-spear N
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -4657,7 +4657,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-2 weapon E 0 1
+  m_Name: Via attack 3-2 weapon-spear E
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -4891,7 +4891,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-3 weapon SW 0
+  m_Name: Via attack 3-3 weapon-grim SW
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -4904,7 +4904,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 3b65636766ab58b4bb32f3a14d7efbd9, type: 2}
+  m_Motion: {fileID: 7400000, guid: 27294eb763cd0984fa93f916399c6514, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -5021,7 +5021,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-1 weapon S 0 0
+  m_Name: Via attack 3-1 weapon-axe S
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -5073,7 +5073,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-1 weapon E 0 1
+  m_Name: Via attack 3-1 weapon-spear E
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -5151,7 +5151,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-1 weapon E 0
+  m_Name: Via attack 3-1 weapon-grim E
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -5164,7 +5164,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 2221723e2e6469644b9c4710b273c75a, type: 2}
+  m_Motion: {fileID: 7400000, guid: 5a3e7abf88f1fdb4dabd976d47f96dba, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -5229,7 +5229,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-2 weapon NE 0 1
+  m_Name: Via attack 3-2 weapon-spear NE
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -5910,7 +5910,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-3 weapon W 0
+  m_Name: Via attack 3-3 weapon-grim W
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -5923,7 +5923,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: fc61fe5a5c17c21479cc1d2553dea1f5, type: 2}
+  m_Motion: {fileID: 7400000, guid: 486e3a2481aaa9b4da93a9d224e58716, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -5988,7 +5988,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-2 weapon S 0 0
+  m_Name: Via attack 3-2 weapon-axe S
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -6014,7 +6014,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-3 weapon E 0 1
+  m_Name: Via attack 3-3 weapon-spear E
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -6196,7 +6196,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-1 weapon NE 0
+  m_Name: Via attack 3-1 weapon-grim NE
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -6209,7 +6209,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: b1d30eb247e8d8145943479b45f3f86f, type: 2}
+  m_Motion: {fileID: 7400000, guid: 9ba59be6e90037344b2b4a46fb28193e, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -6248,7 +6248,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-3 weapon S 0 0
+  m_Name: Via attack 3-3 weapon-axe S
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -6352,7 +6352,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-3 weapon N 0 0
+  m_Name: Via attack 3-3 weapon-axe N
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -6404,7 +6404,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-1 weapon SW 0 1
+  m_Name: Via attack 3-1 weapon-spear SW
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -6430,7 +6430,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-2 weapon S 0 1
+  m_Name: Via attack 3-2 weapon-spear S
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -6534,7 +6534,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-3 weapon NW 0 0
+  m_Name: Via attack 3-3 weapon-axe NW
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -6560,7 +6560,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-3 weapon NW 0 1
+  m_Name: Via attack 3-3 weapon-spear NW
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -6742,7 +6742,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-1 weapon SW 0 0
+  m_Name: Via attack 3-1 weapon-axe SW
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -6768,7 +6768,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-2 weapon NW 0 0
+  m_Name: Via attack 3-2 weapon-axe NW
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -6794,7 +6794,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-3 weapon SE 0 1
+  m_Name: Via attack 3-3 weapon-spear SE
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -6820,7 +6820,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-1 weapon NE 0 0
+  m_Name: Via attack 3-1 weapon-axe NE
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -6872,7 +6872,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-3 weapon NE 0 1
+  m_Name: Via attack 3-3 weapon-spear NE
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -6950,7 +6950,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-3 weapon NE 0 0
+  m_Name: Via attack 3-3 weapon-axe NE
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -6976,7 +6976,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-1 weapon W 0
+  m_Name: Via attack 3-1 weapon-grim W
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -6989,7 +6989,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 2c30cd07c34a666438b566b1ef3eb912, type: 2}
+  m_Motion: {fileID: 7400000, guid: 2cd00e825f32d8e4b9a354ee2cafa274, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -7002,7 +7002,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-3 weapon SW 0 0
+  m_Name: Via attack 3-3 weapon-axe SW
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -7080,7 +7080,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-2 weapon SW 0
+  m_Name: Via attack 3-2 weapon-grim SW
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -7093,7 +7093,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 53827369f331eef4f8091e494dca6747, type: 2}
+  m_Motion: {fileID: 7400000, guid: 547030883764f324f9375acf56a75cb8, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -7262,7 +7262,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-3 weapon NW 0
+  m_Name: Via attack 3-3 weapon-grim NW
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -7275,7 +7275,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: df3ea6c0968fded4dbf1564b90c7ee5e, type: 2}
+  m_Motion: {fileID: 7400000, guid: 7f89da9ea907d2c468ddd75b4867858e, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -7366,7 +7366,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-1 weapon NW 0
+  m_Name: Via attack 3-1 weapon-grim NW
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -7379,7 +7379,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 955ed12e22b2830449e91e01ccb49a7e, type: 2}
+  m_Motion: {fileID: 7400000, guid: ea518a6f027a5544c8ae3d77ca2157c9, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -7392,7 +7392,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-2 weapon W 0
+  m_Name: Via attack 3-2 weapon-grim W
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -7405,7 +7405,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 1d560cfc64e519b42869861a62f56d6f, type: 2}
+  m_Motion: {fileID: 7400000, guid: 522b0d9f3c5a689439d75869999ce07f, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -7470,7 +7470,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-3 weapon SE 0 0
+  m_Name: Via attack 3-3 weapon-axe SE
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -7626,7 +7626,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-1 weapon NW 0 1
+  m_Name: Via attack 3-1 weapon-spear NW
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -7756,7 +7756,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Via attack 2-2 weapon W 0 1
+  m_Name: Via attack 3-2 weapon-spear W
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -7795,7 +7795,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: b1d30eb247e8d8145943479b45f3f86f, type: 2}
+  m_Motion: {fileID: 7400000, guid: 0ef33d75f517ff74aa5254ca8822d572, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
