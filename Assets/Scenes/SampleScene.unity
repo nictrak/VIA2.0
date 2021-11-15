@@ -369,6 +369,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!224 &173001854 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3472931758792273052, guid: 56c520b0a64b3094f9373c505eaccfbc,
+    type: 3}
+  m_PrefabInstance: {fileID: 6475018249491808130}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &325435209
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,6 +768,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &555460184 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4634483407928223877, guid: de7b25d9405ed97409d914dd33f5a080,
+    type: 3}
+  m_PrefabInstance: {fileID: 1411240216}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &555460185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555460184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6edcff32c23c494c9779424e32fdcdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Prototype-Menu
+  delayFrame: 10
 --- !u!1 &589200833
 GameObject:
   m_ObjectHideFlags: 0
@@ -1669,6 +1695,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 894784139, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 173001854}
     - target: {fileID: 4634483407928223877, guid: de7b25d9405ed97409d914dd33f5a080,
         type: 3}
       propertyPath: m_Name
