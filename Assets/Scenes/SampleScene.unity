@@ -1735,6 +1735,10 @@ PrefabInstance:
       propertyPath: damageColor.a
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 894784139, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
+      propertyPath: isTurnRedWhenHurt
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 894784141, guid: de7b25d9405ed97409d914dd33f5a080, type: 3}
       propertyPath: staminaBar
       value: 
@@ -4238,6 +4242,11 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4971308047986650140, guid: 56c520b0a64b3094f9373c505eaccfbc,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6426879890023669464, guid: 56c520b0a64b3094f9373c505eaccfbc,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -4286,6 +4295,16 @@ PrefabInstance:
     - target: {fileID: 7862305902560515842, guid: 56c520b0a64b3094f9373c505eaccfbc,
         type: 3}
       propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421389532225713069, guid: 56c520b0a64b3094f9373c505eaccfbc,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039367835054845280, guid: 56c520b0a64b3094f9373c505eaccfbc,
+        type: 3}
+      propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
