@@ -5096,13 +5096,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 752443c5e42aef346bbaf798b33d5d44, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7054,7 +7054,7 @@ MonoBehaviour:
   - {fileID: 3472931758417753209}
   - {fileID: 3472931757907280524}
   weaponSlotIndex: 1
-  startingWeapon: {fileID: 0}
+  startingWeapon: {fileID: 11400000, guid: 3379b14b38cb0e241977682e32a54afd, type: 2}
 --- !u!1 &3472931758999423559
 GameObject:
   m_ObjectHideFlags: 0
@@ -7304,7 +7304,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2937047895476085584, guid: 31f4c475c5750fa409fda6c542d1f83d,
+  m_Sprite: {fileID: -7584833386708112887, guid: 35863c8b644542d4d969402314924a4f,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -8014,8 +8014,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageTextPrefab: {fileID: 2018188255140969107, guid: 803501c9910ca214f99f88130ef6e05f,
     type: 3}
-  originTranslate: {x: 0, y: 0, z: 0}
-  randomRange: 0
+  originTranslate: {x: 0.5, y: 0.5, z: 0}
+  randomRange: 1
 --- !u!1 &3472931759273902053
 GameObject:
   m_ObjectHideFlags: 0
@@ -12121,7 +12121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:

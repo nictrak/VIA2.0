@@ -51,8 +51,8 @@ MonoBehaviour:
   damage: 10
   stamina: 0
   specialAttack: {fileID: 0}
-  moveDistance: 0.35
-  moveDelayFrame: 10
+  moveDistance: 0.5
+  moveDelayFrame: 5
 --- !u!114 &4512288463562723486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,8 +180,8 @@ MonoBehaviour:
   damage: 20
   stamina: 0
   specialAttack: {fileID: 0}
-  moveDistance: 0.65
-  moveDelayFrame: 10
+  moveDistance: 0.2
+  moveDelayFrame: 5
 --- !u!114 &4283394523707321329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -575,8 +575,8 @@ MonoBehaviour:
   damage: 30
   stamina: 20
   specialAttack: {fileID: 0}
-  moveDistance: 1
-  moveDelayFrame: 10
+  moveDistance: 0.8
+  moveDelayFrame: 20
 --- !u!114 &7948265326903561715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1109,7 +1109,7 @@ MonoBehaviour:
   hitEffectPrefab: {fileID: 0}
   charName: 
   dropOnDamaged: {fileID: 0}
-  damageColor: {r: 0, g: 0, b: 0, a: 0}
+  damageColor: {r: 1, g: 0, b: 0, a: 1}
   chopResistance: 0
   strikeResistance: 0
   pierceResistance: 0
@@ -1117,6 +1117,7 @@ MonoBehaviour:
   electricResistance: 0
   fireResistance: 0
   frostResistance: 0
+  isTurnRedWhenHurt: 1
   spriteRenderer: {fileID: 0}
 --- !u!114 &894784140
 MonoBehaviour:
