@@ -19,6 +19,7 @@ public class PlayerMoveController : MonoBehaviour
     private Collider2D normalCollider;
     private ModifierController modifierController;
     private PlayerKnockController playerKnockController;
+    private Health health;
 
     // In child field
     private PlayerRenderer playerRenderer;
@@ -57,6 +58,7 @@ public class PlayerMoveController : MonoBehaviour
         moveDirection = new Vector2();
         lastestNonZeroMoveDirection = new Vector2(0, -1);
         MoveSpeedModifiers = new List<float>();
+        health = GetComponent<Health>();
     }
 
     // Update is called once per frame
@@ -117,6 +119,10 @@ public class PlayerMoveController : MonoBehaviour
     }
     private void MovePerFrame()
     {
+        if (health.IsDead)
+        {
+            playerRenderer.UpdateAnimation(PlayerRenderer.PlayerRenderState.Dead, moveDirection);
+        }
         if (playerKnockController.IsKnocked)
         {
             Move(playerKnockController.KnockedVector);
