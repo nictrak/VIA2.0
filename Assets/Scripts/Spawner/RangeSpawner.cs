@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -22,18 +22,20 @@ public class RangeSpawner : MonoBehaviour
     private Animator animator;
     [SerializeField]
     private int animationFrame;
+    [SerializeField]
+    private RangeSpawner LinkSpawner;
 
     private List<GameObject> spawneds;
     private int frameCounter;
-    private int count;
-    // public int IsSpawnLimit { get => isSpawnLimit; set => isSpawnLimit = value; }
-
+    private bool haveLink;
+    public bool IsSpawnLimit { get => isSpawnLimit; set => isSpawnLimit = value; }
+    public bool HaveLink { get => haveLink; set => haveLink = value; }
     // Start is called before the first frame update
     void Start()
     {
         frameCounter = 0;
-        count = 0;
         spawneds = new List<GameObject>();
+        
     }
 
     // Update is called once per frame
@@ -44,17 +46,26 @@ public class RangeSpawner : MonoBehaviour
     private void FixedUpdate()
     {
         if (frameCounter >= spawnDelayFrame)
-        {
-            if (innerRange.Objs.Count == 0 && outerRange.Objs.Count > 0 && spawneds.Count < maxSpawned)
-            {
-                count += 1;
-                GameObject spawned = Instantiate(spawnedPrefab);
-                spawneds.Add(spawned);
-                // TODO : Still in Hardcode time
-                animator.Play("SpawnEffect");
-                spawned.transform.position = transform.position;
-                frameCounter = 0;
-            }  
+        {   
+            if ( LinkSpawner == null){
+                if (innerRange.Objs.Count == 0 && outerRange.Objs.Count > 0 && spawneds.Count < maxSpawned)
+                {
+                    spawnInstantiateMonster(spawnedPrefab);
+                    spawnAnimation("SpawnEffect");
+                    frameCounter = 0;
+                    HaveLink = true;
+                }
+            } else {
+                if (LinkSpawner.HaveLink){
+                    if (innerRange.Objs.Count == 0 && outerRange.Objs.Count > 0 && spawneds.Count < maxSpawned)
+                    {
+                        spawnInstantiateMonster(spawnedPrefab);
+                        spawnAnimation("SpawnEffect");
+                        frameCounter = 0;
+                    }
+                }
+            }
+              
         }
         else
         {
@@ -62,9 +73,11 @@ public class RangeSpawner : MonoBehaviour
         }
         // Use to let Animation run Full its Animation Frame
         if (frameCounter == animationFrame){
-            // TODO : Still in Hardcode time
-            animator.Play("New State");
-            if (count == maxSpawned && isSpawnLimit ) {
+            
+            spawnAnimation("New State");
+           
+            // Destroy Spawner :>
+            if (spawneds.Count == maxSpawned && isSpawnLimit ) {
                 Destroy(gameObject);
             }
         }
@@ -72,5 +85,18 @@ public class RangeSpawner : MonoBehaviour
     public void ClearDeathSpawned()
     {
         spawneds.RemoveAll(item => item == null);
+    }
+
+    // TODO : Still in Hardcode string animation time
+    private void spawnAnimation( string animationStringTag )
+    {
+        animator.Play(animationStringTag);
+    }
+
+    private void spawnInstantiateMonster( GameObject monsterPrefab)
+    {
+        GameObject spawned = Instantiate(monsterPrefab);
+        spawneds.Add(spawned);
+        spawned.transform.position = transform.position;
     }
 }
