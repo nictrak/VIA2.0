@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RangeSpawner : MonoBehaviour
 {
+
     [SerializeField]
     private TriggerRange innerRange;
     [SerializeField]
@@ -16,18 +17,22 @@ public class RangeSpawner : MonoBehaviour
     private int spawnDelayFrame;
 
     [SerializeField]
+    private bool isSpawnLimit;
+    [SerializeField]
     private Animator animator;
-       [SerializeField]
+    [SerializeField]
     private int animationFrame;
 
     private List<GameObject> spawneds;
     private int frameCounter;
-
+    private int count;
+    // public int IsSpawnLimit { get => isSpawnLimit; set => isSpawnLimit = value; }
 
     // Start is called before the first frame update
     void Start()
     {
         frameCounter = 0;
+        count = 0;
         spawneds = new List<GameObject>();
     }
 
@@ -42,6 +47,7 @@ public class RangeSpawner : MonoBehaviour
         {
             if (innerRange.Objs.Count == 0 && outerRange.Objs.Count > 0 && spawneds.Count < maxSpawned)
             {
+                count += 1;
                 GameObject spawned = Instantiate(spawnedPrefab);
                 spawneds.Add(spawned);
                 // TODO : Still in Hardcode time
@@ -54,9 +60,13 @@ public class RangeSpawner : MonoBehaviour
         {
             frameCounter++;
         }
+        // Use to let Animation run Full its Animation Frame
         if (frameCounter == animationFrame){
             // TODO : Still in Hardcode time
             animator.Play("New State");
+            if (count == maxSpawned && isSpawnLimit ) {
+                Destroy(gameObject);
+            }
         }
     }
     public void ClearDeathSpawned()

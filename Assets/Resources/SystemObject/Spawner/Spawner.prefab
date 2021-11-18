@@ -112,7 +112,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3340708588690866918}
-  - component: {fileID: 6153239931194678746}
   - component: {fileID: 8515167866305104670}
   m_Layer: 0
   m_Name: Renderer-outer
@@ -135,25 +134,6 @@ Transform:
   m_Father: {fileID: 1993070340}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &6153239931194678746
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5236945254703229641}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 034b7b62d197b404f8c7c369e97c8408, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!212 &8515167866305104670
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -256,6 +236,7 @@ MonoBehaviour:
     type: 3}
   maxSpawned: 1
   spawnDelayFrame: 100
+  isSpawnLimit: 1
   animator: {fileID: 1993070341}
   animationFrame: 40
 --- !u!50 &5601663331523857044
@@ -462,7 +443,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2033113817207078466}
-  - component: {fileID: 1491736979278171128}
   - component: {fileID: 2896604707704887048}
   m_Layer: 0
   m_Name: Renderer-inner
@@ -485,25 +465,6 @@ Transform:
   m_Father: {fileID: 1993070340}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1491736979278171128
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6484177091632495659}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 034b7b62d197b404f8c7c369e97c8408, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!212 &2896604707704887048
 SpriteRenderer:
   m_ObjectHideFlags: 0
