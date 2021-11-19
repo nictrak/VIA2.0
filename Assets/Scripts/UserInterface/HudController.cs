@@ -23,6 +23,10 @@ public class HudController : MonoBehaviour
     private GameObject questPanel;
     [SerializeField]
     private KeyCode questKey;
+    [SerializeField]
+    private GameObject windowCraftPanel;
+    [SerializeField]
+    private KeyCode windowCraftKey;
 
     private bool canToggle;
     // Start is called before the first frame update
@@ -30,6 +34,7 @@ public class HudController : MonoBehaviour
     {
         inventoryPanel.SetActive(false);
         shopPanel.SetActive(false);
+        windowCraftPanel.SetActive(false);
         canToggle = true;
     }
 
@@ -58,6 +63,10 @@ public class HudController : MonoBehaviour
             {
                 timeSystem.DoStandardTime();
             }
+        }
+        if(Input.GetKeyDown(windowCraftKey) && canToggle)
+        {
+            windowCraftPanel.SetActive(!windowCraftPanel.activeSelf);
         }
     }
     public void OpenShop()
