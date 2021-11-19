@@ -97,10 +97,14 @@ public class PlayerMoveController : MonoBehaviour
     }
     private void UpdateMoveDirection()
     {
-        moveDirection = GetInputMoveDirection();
-        if(moveDirection.magnitude > 0.001 && !playerAttackController.IsAttack())
+        Debug.Log(playerAttackController.IsAttack());
+        if (!playerAttackController.IsAttack())
         {
-            lastestNonZeroMoveDirection = moveDirection;
+            moveDirection = GetInputMoveDirection();
+            if (moveDirection.magnitude > 0.001)
+            {
+                lastestNonZeroMoveDirection = moveDirection;
+            }
         }
     }
     private Vector2 CalMoveVector()
@@ -133,9 +137,16 @@ public class PlayerMoveController : MonoBehaviour
         }
         else if (playerAttackController.IsAttack())
         {
-            Vector2 mouseDirection = CalMouseDirection();
-            lastestNonZeroMoveDirection = mouseDirection;
-            Move(playerAttackController.AttackControlPerFrame(playerRenderer, mouseDirection));
+            if (playerAttackController.GetAnimatedStringLenght() >= 1)
+            {
+                Move(playerAttackController.AttackControlPerFrame(playerRenderer, lastestNonZeroMoveDirection));
+            }
+            else
+            {
+                Vector2 mouseDirection = CalMouseDirection();
+                lastestNonZeroMoveDirection = mouseDirection;
+                Move(playerAttackController.AttackControlPerFrame(playerRenderer, mouseDirection));
+            }
         }
         else if (moveDirection.magnitude > 0.001)
         {
