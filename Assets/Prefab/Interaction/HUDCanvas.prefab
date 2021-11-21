@@ -6906,6 +6906,7 @@ MonoBehaviour:
   - {fileID: 3472931758417753209}
   - {fileID: 3472931757907280524}
   weaponSlotIndex: 1
+  startingWeapon: {fileID: 0}
 --- !u!1 &3472931758999423559
 GameObject:
   m_ObjectHideFlags: 0
@@ -7155,7 +7156,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2937047895476085584, guid: 31f4c475c5750fa409fda6c542d1f83d,
+  m_Sprite: {fileID: -7584833386708112887, guid: 35863c8b644542d4d969402314924a4f,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -7863,6 +7864,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageTextPrefab: {fileID: 2018188255140969107, guid: 803501c9910ca214f99f88130ef6e05f,
     type: 3}
+  originTranslate: {x: 0, y: 0, z: 0}
+  randomRange: 0
 --- !u!1 &3472931759273902053
 GameObject:
   m_ObjectHideFlags: 0
