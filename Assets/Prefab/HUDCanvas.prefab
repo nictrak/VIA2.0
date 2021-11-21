@@ -5096,13 +5096,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 752443c5e42aef346bbaf798b33d5d44, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7054,7 +7054,7 @@ MonoBehaviour:
   - {fileID: 3472931758417753209}
   - {fileID: 3472931757907280524}
   weaponSlotIndex: 1
-  startingWeapon: {fileID: 0}
+  startingWeapon: {fileID: 11400000, guid: 3379b14b38cb0e241977682e32a54afd, type: 2}
 --- !u!1 &3472931758999423559
 GameObject:
   m_ObjectHideFlags: 0
@@ -7931,6 +7931,7 @@ RectTransform:
   - {fileID: 300896343}
   - {fileID: 1990507188}
   - {fileID: 7272443333066755561}
+  - {fileID: 3974162747213123542}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8013,8 +8014,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageTextPrefab: {fileID: 2018188255140969107, guid: 803501c9910ca214f99f88130ef6e05f,
     type: 3}
-  originTranslate: {x: 0, y: 0, z: 0}
-  randomRange: 0
+  originTranslate: {x: 0.5, y: 0.5, z: 0}
+  randomRange: 1
 --- !u!1 &3472931759273902053
 GameObject:
   m_ObjectHideFlags: 0
@@ -12061,6 +12062,95 @@ MonoBehaviour:
   m_Text: '1
 
 '
+--- !u!1 &6650486479237787581
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3974162747213123542}
+  - component: {fileID: 7910016909912154170}
+  - component: {fileID: 9039367835054845280}
+  - component: {fileID: 4526022011879300251}
+  m_Layer: 5
+  m_Name: ScreenRed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3974162747213123542
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6650486479237787581}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 7.7998, y: 4.0457, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3472931759218802746}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -680, y: -312}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &7910016909912154170
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6650486479237787581}
+  m_CullTransparentMesh: 0
+--- !u!114 &9039367835054845280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6650486479237787581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: c5e3622fb8d46db4dab224b11301cf99, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4526022011879300251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6650486479237787581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c55067f05d238674e9ae675cb34e0757, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alphaChangeRateFadeIn: 0.05
+  alphaChangeRateFadeOut: 0.025
 --- !u!1 &6660862399730596854
 GameObject:
   m_ObjectHideFlags: 0

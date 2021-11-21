@@ -19,6 +19,7 @@ public class PlayerMoveController : MonoBehaviour
     private Collider2D normalCollider;
     private ModifierController modifierController;
     private PlayerKnockController playerKnockController;
+    private Health health;
 
     // In child field
     private PlayerRenderer playerRenderer;
@@ -57,6 +58,7 @@ public class PlayerMoveController : MonoBehaviour
         moveDirection = new Vector2();
         lastestNonZeroMoveDirection = new Vector2(0, -1);
         MoveSpeedModifiers = new List<float>();
+        health = GetComponent<Health>();
     }
 
     // Update is called once per frame
@@ -95,10 +97,14 @@ public class PlayerMoveController : MonoBehaviour
     }
     private void UpdateMoveDirection()
     {
-        moveDirection = GetInputMoveDirection();
-        if(moveDirection.magnitude > 0.001 && !playerAttackController.IsAttack())
+        Debug.Log(playerAttackController.IsAttack());
+        if (!playerAttackController.IsAttack())
         {
-            lastestNonZeroMoveDirection = moveDirection;
+            moveDirection = GetInputMoveDirection();
+            if (moveDirection.magnitude > 0.001)
+            {
+                lastestNonZeroMoveDirection = moveDirection;
+            }
         }
     }
     private Vector2 CalMoveVector()
@@ -117,6 +123,10 @@ public class PlayerMoveController : MonoBehaviour
     }
     private void MovePerFrame()
     {
+        if (health.IsDead)
+        {
+            playerRenderer.UpdateAnimation(PlayerRenderer.PlayerRenderState.Dead, moveDirection);
+        }
         if (playerKnockController.IsKnocked)
         {
             Move(playerKnockController.KnockedVector);
@@ -127,9 +137,16 @@ public class PlayerMoveController : MonoBehaviour
         }
         else if (playerAttackController.IsAttack())
         {
-            Vector2 mouseDirection = CalMouseDirection();
-            lastestNonZeroMoveDirection = mouseDirection;
-            Move(playerAttackController.AttackControlPerFrame(playerRenderer, mouseDirection));
+            if (playerAttackController.GetAnimatedStringLenght() >= 1)
+            {
+                Move(playerAttackController.AttackControlPerFrame(playerRenderer, lastestNonZeroMoveDirection));
+            }
+            else
+            {
+                Vector2 mouseDirection = CalMouseDirection();
+                lastestNonZeroMoveDirection = mouseDirection;
+                Move(playerAttackController.AttackControlPerFrame(playerRenderer, mouseDirection));
+            }
         }
         else if (moveDirection.magnitude > 0.001)
         {
