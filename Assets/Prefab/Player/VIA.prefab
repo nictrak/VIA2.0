@@ -900,6 +900,7 @@ GameObject:
   - component: {fileID: 1036136072}
   - component: {fileID: 745835280628814923}
   - component: {fileID: 1731373526}
+  - component: {fileID: 555460185}
   m_Layer: 8
   m_Name: VIA
   m_TagString: Player
@@ -1197,6 +1198,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemCraftPrefab: {fileID: 8513676582514408385, guid: fab92203df5cde949aa50b645b6c99bf,
     type: 3}
+--- !u!114 &555460185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4634483407928223877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6edcff32c23c494c9779424e32fdcdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Prototype-Menu
+  delayFrame: 100
+  newPosition: {x: 10000, y: 10000, z: 0}
+  mainObject: {fileID: 4634483407928223877}
 --- !u!1 &5080352739787989126
 GameObject:
   m_ObjectHideFlags: 0

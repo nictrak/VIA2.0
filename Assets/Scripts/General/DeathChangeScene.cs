@@ -9,6 +9,10 @@ public class DeathChangeScene : MonoBehaviour
     private string sceneName;
     [SerializeField]
     private int delayFrame;
+    [SerializeField]
+    private Vector3 newPosition;
+    [SerializeField]
+    private GameObject mainObject;
 
     private Health health;
     private bool isAlreadyDead;
@@ -42,6 +46,7 @@ public class DeathChangeScene : MonoBehaviour
             if(frameCounter >= delayFrame)
             {
                 frameCounter = 0;
+                mainObject.transform.position = newPosition;
                 SceneManager.LoadScene(sceneName);
             }
             else
