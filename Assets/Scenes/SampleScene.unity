@@ -787,7 +787,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Prototype-Menu
-  delayFrame: 10
+  delayFrame: 100
+  newPosition: {x: 10000, y: 10000, z: 0}
+  mainObject: {fileID: 555460184}
 --- !u!1 &589200833
 GameObject:
   m_ObjectHideFlags: 0
