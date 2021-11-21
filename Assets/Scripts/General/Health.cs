@@ -39,6 +39,8 @@ public class Health : MonoBehaviour
     [SerializeField]
     [Range(0.0F, 1.0F)]
     private float frostResistance;
+    [SerializeField]
+    private bool isTurnRedWhenHurt;
 
     private bool isHurt;
     private bool isAlreadyHurt;
@@ -106,6 +108,10 @@ public class Health : MonoBehaviour
         if (damage > 0 && doHurt)
         {
             isHurt = true;
+            if (isTurnRedWhenHurt)
+            {
+                ScreenRed.StartDamage();
+            }
             if(dropOnDamaged != null)
             {
                 Inventory inventory = Resources.FindObjectsOfTypeAll<Inventory>()[0];

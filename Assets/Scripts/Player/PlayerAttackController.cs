@@ -129,5 +129,8 @@ public class PlayerAttackController : MonoBehaviour
             weapon = Instantiate<Weapon>(newWeapon, transform);
         }
     }
-
+    public int GetAnimatedStringLenght()
+    {
+        return animatedAttackString.Length;
+    }
 }
