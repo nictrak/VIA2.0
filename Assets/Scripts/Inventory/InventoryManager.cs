@@ -230,6 +230,10 @@ public class InventoryManager : MonoBehaviour
         PlayerAttackController playerAttackController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerAttackController>();
         playerAttackController.ChangeWeapon(EquipmentPanel.GetEquipedWeapon());
     }
+    private void Start()
+    {
+        ChangeWeapon();
+    }
     private void Update()
     {
         if(EquipmentPanel.GetItemWeapon() != lastWeaponItem)
