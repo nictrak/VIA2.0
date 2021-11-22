@@ -8,7 +8,16 @@ public class Weapon : MonoBehaviour
     private List<Modifier> modifiersPrefab;
     [SerializeField]
     private List<string> ignoredModifiers;
+    [SerializeField]
+    private List<string> attackStrings;
+    [SerializeField]
+    private List<Attack> attackObjects;
+    [SerializeField]
+    private GameObject specialAttackPool;
     public List<Modifier> ModifiersPrefab { get => modifiersPrefab; set => modifiersPrefab = value; }
+    public List<Attack> AttackObjects { get => attackObjects; set => attackObjects = value; }
+    public List<string> AttackStrings { get => attackStrings; set => attackStrings = value; }
+    public GameObject SpecialAttackPool { get => specialAttackPool; set => specialAttackPool = value; }
 
     // Start is called before the first frame update
     void Start()

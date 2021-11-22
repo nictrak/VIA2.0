@@ -5,10 +5,6 @@ using UnityEngine;
 public class PlayerAttackController : MonoBehaviour
 {
     [SerializeField]
-    private List<string> attackStrings;
-    [SerializeField]
-    private List<Attack> attackObjects;
-    [SerializeField]
     private Weapon weapon;
 
     private string currentAttackString;
@@ -16,6 +12,8 @@ public class PlayerAttackController : MonoBehaviour
     private int attackFrameCounter;
     private PlayerStaminaController playerStaminaController;
     private int currentAnimatedIndex;
+    private List<Attack> attackObjects;
+    private List<string> attackStrings;
 
     public Weapon Weapon { get => weapon; set => weapon = value; }
 
@@ -127,6 +125,8 @@ public class PlayerAttackController : MonoBehaviour
         if(newWeapon != null)
         {
             weapon = Instantiate<Weapon>(newWeapon, transform);
+            attackObjects = weapon.AttackObjects;
+            attackStrings = weapon.AttackStrings;
         }
     }
     public int GetAnimatedStringLenght()
