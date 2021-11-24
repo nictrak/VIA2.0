@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 722430906938387621}
   m_LocalRotation: {x: -0, y: -0, z: 0.38268343, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 21.628, y: 21.628, z: 21.628}
   m_Children: []
   m_Father: {fileID: 7548511001317053176}
   m_RootOrder: 2
@@ -286,6 +286,7 @@ MonoBehaviour:
 
 '
   isGoNext: 0
+  isDisplayIconLeft: 0
   makeTrueConditionTopics: []
   makeFalseConditionTopics: []
   assignedQuest: []
@@ -337,6 +338,7 @@ MonoBehaviour:
   talkerName: NPC1
   dialogueContent: ...
   isGoNext: 1
+  isDisplayIconLeft: 0
   makeTrueConditionTopics: []
   makeFalseConditionTopics: []
   assignedQuest: []
