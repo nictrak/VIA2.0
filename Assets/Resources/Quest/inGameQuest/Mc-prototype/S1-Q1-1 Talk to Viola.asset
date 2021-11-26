@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: S1-Q1-1 Talk to Viola
   m_EditorClassIdentifier: 
   initialProgress: 0
-  goalProgress: 0
-  triggerMessage: 
+  goalProgress: 1
+  triggerMessage: Talk VIola
   makeTrueAfterComplete: []
   makeFalseAfterComplete: []
-  description: 
+  description: Talk VIola
   nextQuest: {fileID: 0}
   questRewards: []
   rewardNumbers: 

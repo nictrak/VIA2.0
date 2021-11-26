@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: S3-Q3-1 get to Lowest Dungeon
   m_EditorClassIdentifier: 
   initialProgress: 0
-  goalProgress: 0
-  triggerMessage: 
+  goalProgress: 1
+  triggerMessage: GoTo Mc-quest-prototype-state-4
   makeTrueAfterComplete: []
   makeFalseAfterComplete: []
-  description: 
-  nextQuest: {fileID: 0}
+  description: GoTo Mc-quest-prototype-state-4
+  nextQuest: {fileID: 11400000, guid: c6589bae0cbfd504e9a9531a1cece0c5, type: 2}
   questRewards: []
   rewardNumbers: 

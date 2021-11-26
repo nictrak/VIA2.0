@@ -1211,6 +1211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Prototype-Menu
+  testModeOn: 1
   delayFrame: 100
   newPosition: {x: 10000, y: 10000, z: 0}
   mainObject: {fileID: 4634483407928223877}

@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: S1-Q1-3 talk Witness
   m_EditorClassIdentifier: 
   initialProgress: 0
-  goalProgress: 0
-  triggerMessage: 
+  goalProgress: 1
+  triggerMessage: Talk Witness
   makeTrueAfterComplete: []
   makeFalseAfterComplete: []
-  description: 
+  description: Talk Witness
   nextQuest: {fileID: 0}
   questRewards: []
   rewardNumbers: 
