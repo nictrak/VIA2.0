@@ -17,7 +17,7 @@ MonoBehaviour:
   triggerMessage: GoTo Mc-quest-prototype-state-4
   makeTrueAfterComplete: []
   makeFalseAfterComplete: []
-  description: GoTo Mc-quest-prototype-state-4
+  description: GoTo Mc-quest-prototype-state-4 Lowest Dungeon
   nextQuest: {fileID: 11400000, guid: c6589bae0cbfd504e9a9531a1cece0c5, type: 2}
   questRewards: []
   rewardNumbers: 

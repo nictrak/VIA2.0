@@ -1033,7 +1033,7 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   hitEffectPrefab: {fileID: 1454490803532372921, guid: ce520020bce440044bc0d5d1f8feca7c,
     type: 3}
-  charName: BasicMelee
+  charName: Monster
   dropOnDamaged: {fileID: 0}
   damageColor: {r: 0, g: 0, b: 0, a: 0}
   chopResistance: 0
@@ -1043,6 +1043,7 @@ MonoBehaviour:
   electricResistance: 0
   fireResistance: 0
   frostResistance: 0
+  isTurnRedWhenHurt: 0
   spriteRenderer: {fileID: 6878539700156517199}
 --- !u!114 &407601076
 MonoBehaviour:

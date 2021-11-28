@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialProgress: 0
   goalProgress: 1
-  triggerMessage: Talk woman
+  triggerMessage: Talk Woman
   makeTrueAfterComplete: []
   makeFalseAfterComplete: []
   description: Talk woman in the forest

@@ -17,8 +17,8 @@ MonoBehaviour:
   triggerMessage: Talk Woman
   makeTrueAfterComplete: []
   makeFalseAfterComplete: []
-  description: 
+  description: 'Talk Woman '
   nextQuest: {fileID: 11400000, guid: 0e279be424ba1fa489e331a27edebefe, type: 2}
   questRewards:
-  - {fileID: 11400000, guid: e8b6da3d7bca40e47902a9d1c9d1a007, type: 2}
-  rewardNumbers: 00000000
+  - {fileID: 11400000, guid: 1d6e52ca43c517d47a90971b4205bc78, type: 2}
+  rewardNumbers: 01000000

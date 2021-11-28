@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: S5-Q5-1 Fight Boss
   m_EditorClassIdentifier: 
   initialProgress: 0
-  goalProgress: 0
+  goalProgress: 1
   triggerMessage: Kill Boss
   makeTrueAfterComplete: []
   makeFalseAfterComplete: []
