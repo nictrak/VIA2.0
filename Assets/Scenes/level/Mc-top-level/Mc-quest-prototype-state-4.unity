@@ -1579,7 +1579,7 @@ PrefabInstance:
     - target: {fileID: 4159001169657707135, guid: 06225a5812ff3034eaf16f3dea320656,
         type: 3}
       propertyPath: nextLevel
-      value: Mc-quest-prototype-state-5
+      value: Mc-quest-prototype-state-6-Boss
       objectReference: {fileID: 0}
     - target: {fileID: 4159001169657707135, guid: 06225a5812ff3034eaf16f3dea320656,
         type: 3}
@@ -1590,7 +1590,7 @@ PrefabInstance:
     - target: {fileID: 4159001169657707135, guid: 06225a5812ff3034eaf16f3dea320656,
         type: 3}
       propertyPath: IsPassIfTrue
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06225a5812ff3034eaf16f3dea320656, type: 3}
@@ -39627,7 +39627,7 @@ PrefabInstance:
     - target: {fileID: 4159001169657707135, guid: 06225a5812ff3034eaf16f3dea320656,
         type: 3}
       propertyPath: nextLevel
-      value: Mc-quest-prototype-state-5
+      value: Mc-quest-prototype-state-6-Boss
       objectReference: {fileID: 0}
     - target: {fileID: 4159001169657707135, guid: 06225a5812ff3034eaf16f3dea320656,
         type: 3}
@@ -39638,7 +39638,7 @@ PrefabInstance:
     - target: {fileID: 4159001169657707135, guid: 06225a5812ff3034eaf16f3dea320656,
         type: 3}
       propertyPath: IsPassIfTrue
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06225a5812ff3034eaf16f3dea320656, type: 3}

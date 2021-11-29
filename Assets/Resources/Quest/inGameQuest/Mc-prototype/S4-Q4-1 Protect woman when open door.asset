@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialProgress: 0
   goalProgress: 1
-  triggerMessage: GoTo Mc-quest-prototype-state-5
+  triggerMessage: GoTo Mc-quest-prototype-state-6-Boss
   makeTrueAfterComplete: []
   makeFalseAfterComplete: []
-  description: GoTo Mc-quest-prototype-state-5
+  description: GoTo Mc-quest-prototype-state-6-Boss
   nextQuest: {fileID: 11400000, guid: 92747e60e867d0a449fca07dc4e5a011, type: 2}
   questRewards: []
   rewardNumbers: 

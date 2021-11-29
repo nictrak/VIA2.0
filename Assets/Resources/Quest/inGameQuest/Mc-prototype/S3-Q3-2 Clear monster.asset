@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: S3-Q3-2 Clear monster
   m_EditorClassIdentifier: 
   initialProgress: 0
-  goalProgress: 10
+  goalProgress: 5
   triggerMessage: Kill Monster
   makeTrueAfterComplete: []
   makeFalseAfterComplete: []
-  description: Kill 10 Monsters
+  description: Kill 5 Monsters
   nextQuest: {fileID: 11400000, guid: b5aac133441779b4e9eb1d36665adeda, type: 2}
   questRewards: []
   rewardNumbers: 
