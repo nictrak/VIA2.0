@@ -768,28 +768,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &555460184 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4634483407928223877, guid: de7b25d9405ed97409d914dd33f5a080,
-    type: 3}
-  m_PrefabInstance: {fileID: 1411240216}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &555460185
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 555460184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6edcff32c23c494c9779424e32fdcdf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: Prototype-Menu
-  delayFrame: 100
-  newPosition: {x: 10000, y: 10000, z: 0}
-  mainObject: {fileID: 555460184}
 --- !u!1 &589200833
 GameObject:
   m_ObjectHideFlags: 0
