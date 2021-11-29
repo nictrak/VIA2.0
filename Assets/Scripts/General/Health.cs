@@ -39,6 +39,8 @@ public class Health : MonoBehaviour
     [SerializeField]
     [Range(0.0F, 1.0F)]
     private float frostResistance;
+    [SerializeField]
+    private bool isTurnRedWhenHurt;
 
     private bool isHurt;
     private bool isAlreadyHurt;
@@ -51,9 +53,6 @@ public class Health : MonoBehaviour
 
     [SerializeField]
     private SpriteRenderer spriteRenderer;
-    [SerializeField]
-    [Range(0.0F, 1.0F)]
-    private float knockbackRange = 0.5f;
     private Rigidbody2D rb;
 
     private bool attacked = false;
@@ -103,12 +102,16 @@ public class Health : MonoBehaviour
 		    attackedTime = Time.time;
             if(rb!=null && isKnockback){
                 Vector3 moveDirection = transform.position - damageDirection;
-                rb.AddForce(moveDirection.normalized * knockbackRange * 1.6f, ForceMode2D.Impulse);
+                rb.AddForce(moveDirection.normalized * 1f, ForceMode2D.Impulse);
             }
         }
         if (damage > 0 && doHurt)
         {
             isHurt = true;
+            if (isTurnRedWhenHurt)
+            {
+                ScreenRed.StartDamage();
+            }
             if(dropOnDamaged != null)
             {
                 Inventory inventory = Resources.FindObjectsOfTypeAll<Inventory>()[0];

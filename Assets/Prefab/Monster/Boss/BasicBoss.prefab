@@ -439,7 +439,7 @@ GameObject:
   - component: {fileID: 4572711834326518906}
   m_Layer: 0
   m_Name: BasicBoss
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1092,7 +1092,7 @@ GameObject:
   - component: {fileID: 4572711835351186455}
   m_Layer: 8
   m_Name: BossController
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1246,8 +1246,19 @@ MonoBehaviour:
   maxHealth: 100
   initialHealth: 100
   healthBar: {fileID: 0}
-  hitEffectPrefab: {fileID: 0}
+  hitEffectPrefab: {fileID: 1454490803532372921, guid: ce520020bce440044bc0d5d1f8feca7c,
+    type: 3}
   charName: 
+  dropOnDamaged: {fileID: 0}
+  damageColor: {r: 0.9622642, g: 0.004538993, b: 0.004538993, a: 0}
+  chopResistance: 0
+  strikeResistance: 0
+  pierceResistance: 0
+  voidResistance: 0
+  electricResistance: 0
+  fireResistance: 0
+  frostResistance: 0
+  spriteRenderer: {fileID: 4572711835032940438}
 --- !u!114 &4572711835351186452
 MonoBehaviour:
   m_ObjectHideFlags: 0

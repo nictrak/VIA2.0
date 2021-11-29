@@ -23,19 +23,16 @@ public class HudController : MonoBehaviour
     private GameObject questPanel;
     [SerializeField]
     private KeyCode questKey;
-    [SerializeField]
-    private GameObject windowCraftPanel;
-    [SerializeField]
-    private KeyCode windowCraftKey;
 
     private bool canToggle;
+    public static bool IsUsed;
     // Start is called before the first frame update
     void Start()
     {
         inventoryPanel.SetActive(false);
         shopPanel.SetActive(false);
-        windowCraftPanel.SetActive(false);
         canToggle = true;
+        IsUsed = false;
     }
 
     // Update is called once per frame
@@ -64,9 +61,13 @@ public class HudController : MonoBehaviour
                 timeSystem.DoStandardTime();
             }
         }
-        if(Input.GetKeyDown(windowCraftKey) && canToggle)
+        if (inventoryPanel.activeSelf || craftingCorePanel.activeSelf)
         {
-            windowCraftPanel.SetActive(!windowCraftPanel.activeSelf);
+            IsUsed = true;
+        }
+        else
+        {
+            IsUsed = false;
         }
     }
     public void OpenShop()

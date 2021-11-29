@@ -1,0 +1,2663 @@
+fileFormatVersion: 2
+guid: 179b23ba31b08434998a4ad64e974955
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1139586650709294868
+    second: Attack L3 Effect_0
+  - first:
+      213: 891923932143263050
+    second: Attack L3 Effect_1
+  - first:
+      213: 2776638779188136243
+    second: Attack L3 Effect_2
+  - first:
+      213: 1283022370147761584
+    second: Attack L3 Effect_3
+  - first:
+      213: 7181276213773183257
+    second: Attack L3 Effect_4
+  - first:
+      213: 7383456563064118529
+    second: Attack L3 Effect_5
+  - first:
+      213: -6056538492251444162
+    second: Attack L3 Effect_6
+  - first:
+      213: 1248825156462692581
+    second: Attack L3 Effect_7
+  - first:
+      213: -5547829469947275107
+    second: Attack L3 Effect_8
+  - first:
+      213: -4103407401591274991
+    second: Attack L3 Effect_9
+  - first:
+      213: 3844243420755403991
+    second: Attack L3 Effect_10
+  - first:
+      213: 2750002841983866297
+    second: Attack L3 Effect_11
+  - first:
+      213: -5144489536650789101
+    second: Attack L3 Effect_12
+  - first:
+      213: -5609479757118220437
+    second: Attack L3 Effect_13
+  - first:
+      213: 2650984640779393949
+    second: Attack L3 Effect_14
+  - first:
+      213: 8292045485839172808
+    second: Attack L3 Effect_15
+  - first:
+      213: 7136459481703954620
+    second: Attack L3 Effect_16
+  - first:
+      213: 8346820873911153771
+    second: Attack L3 Effect_17
+  - first:
+      213: -7921130466913681091
+    second: Attack L3 Effect_18
+  - first:
+      213: 9083832087893700728
+    second: Attack L3 Effect_19
+  - first:
+      213: 5587725607153288204
+    second: Attack L3 Effect_20
+  - first:
+      213: -6820603597730343565
+    second: Attack L3 Effect_21
+  - first:
+      213: -6662622274693985718
+    second: Attack L3 Effect_22
+  - first:
+      213: -9020720261537612263
+    second: Attack L3 Effect_23
+  - first:
+      213: -3503088522096130813
+    second: Attack L3 Effect_24
+  - first:
+      213: -3207156425471960590
+    second: Attack L3 Effect_25
+  - first:
+      213: 6124180043756015454
+    second: Attack L3 Effect_26
+  - first:
+      213: -4998665867794464270
+    second: Attack L3 Effect_27
+  - first:
+      213: -78665549943601515
+    second: Attack L3 Effect_28
+  - first:
+      213: -869666814151890961
+    second: Attack L3 Effect_29
+  - first:
+      213: 4929875025453643081
+    second: Attack L3 Effect_30
+  - first:
+      213: -1392133106817091799
+    second: Attack L3 Effect_31
+  - first:
+      213: -9141799748345925504
+    second: Attack L3 Effect_32
+  - first:
+      213: 8902413616073342021
+    second: Attack L3 Effect_33
+  - first:
+      213: -1790974084645531884
+    second: Attack L3 Effect_34
+  - first:
+      213: 6403723895637700377
+    second: Attack L3 Effect_35
+  - first:
+      213: 7534657096673291112
+    second: Attack L3 Effect_36
+  - first:
+      213: 7487694246999237428
+    second: Attack L3 Effect_37
+  - first:
+      213: 2366583144049300290
+    second: Attack L3 Effect_38
+  - first:
+      213: -8995419556514302521
+    second: Attack L3 Effect_39
+  - first:
+      213: -6598377113219786674
+    second: Attack L3 Effect_40
+  - first:
+      213: 2347137992041563016
+    second: Attack L3 Effect_41
+  - first:
+      213: -5641526859500717711
+    second: Attack L3 Effect_42
+  - first:
+      213: 885783501424374193
+    second: Attack L3 Effect_43
+  - first:
+      213: 670010265533084223
+    second: Attack L3 Effect_44
+  - first:
+      213: 652680594954672473
+    second: Attack L3 Effect_45
+  - first:
+      213: 1899335850895184402
+    second: Attack L3 Effect_46
+  - first:
+      213: 2972125465867698841
+    second: Attack L3 Effect_47
+  - first:
+      213: 7405263552223317684
+    second: Attack L3 Effect_48
+  - first:
+      213: 1484379223503953682
+    second: Attack L3 Effect_49
+  - first:
+      213: 4470802049624784631
+    second: Attack L3 Effect_50
+  - first:
+      213: 2798629134278041195
+    second: Attack L3 Effect_51
+  - first:
+      213: -1062303451040136128
+    second: Attack L3 Effect_52
+  - first:
+      213: -99929025837891009
+    second: Attack L3 Effect_53
+  - first:
+      213: 2999745925909443700
+    second: Attack L3 Effect_54
+  - first:
+      213: 8211950272159036119
+    second: Attack L3 Effect_55
+  - first:
+      213: -6111813769712206807
+    second: Attack L3 Effect_56
+  - first:
+      213: -1872175631057660732
+    second: Attack L3 Effect_57
+  - first:
+      213: -2041198054706966788
+    second: Attack L3 Effect_58
+  - first:
+      213: -4280212338628808666
+    second: Attack L3 Effect_59
+  - first:
+      213: 4169352451332111393
+    second: Attack L3 Effect_60
+  - first:
+      213: -8988056798663666058
+    second: Attack L3 Effect_61
+  - first:
+      213: -7956049465015974112
+    second: Attack L3 Effect_62
+  - first:
+      213: 1407068658708039666
+    second: Attack L3 Effect_63
+  - first:
+      213: 467996370921480686
+    second: Attack L3 Effect_64
+  - first:
+      213: -7213293998913221438
+    second: Attack L3 Effect_65
+  - first:
+      213: 5284471710195686518
+    second: Attack L3 Effect_66
+  - first:
+      213: -2806946367835392485
+    second: Attack L3 Effect_67
+  - first:
+      213: -5511347813600987118
+    second: Attack L3 Effect_68
+  - first:
+      213: 3478344455083335848
+    second: Attack L3 Effect_69
+  - first:
+      213: -8067136343476062019
+    second: Attack L3 Effect_70
+  - first:
+      213: -6804771299829454286
+    second: Attack L3 Effect_71
+  - first:
+      213: -5442866145747749968
+    second: Attack L3 Effect_72
+  - first:
+      213: -3126186168663986510
+    second: Attack L3 Effect_73
+  - first:
+      213: 2593761677954344170
+    second: Attack L3 Effect_74
+  - first:
+      213: 360326495854815029
+    second: Attack L3 Effect_75
+  - first:
+      213: 1593650791215399780
+    second: Attack L3 Effect_76
+  - first:
+      213: -5022870628241749019
+    second: Attack L3 Effect_77
+  - first:
+      213: -3669995241201020585
+    second: Attack L3 Effect_78
+  - first:
+      213: -9173115335279591144
+    second: Attack L3 Effect_79
+  - first:
+      213: 6909566275385610625
+    second: Attack L3 Effect_80
+  - first:
+      213: -1488848961277079981
+    second: Attack L3 Effect_81
+  - first:
+      213: 7583049416211180513
+    second: Attack L3 Effect_82
+  - first:
+      213: -5471724365052852289
+    second: Attack L3 Effect_83
+  - first:
+      213: 3042952813304337493
+    second: Attack L3 Effect_84
+  - first:
+      213: 3430713353859929527
+    second: Attack L3 Effect_85
+  - first:
+      213: -6714342687975852078
+    second: Attack L3 Effect_86
+  - first:
+      213: 2763091029573529253
+    second: Attack L3 Effect_87
+  - first:
+      213: 4043933027538634747
+    second: Attack L3 Effect_88
+  - first:
+      213: -7667567431897064191
+    second: Attack L3 Effect_89
+  - first:
+      213: -4137563401096607169
+    second: Attack L3 Effect_90
+  - first:
+      213: -840636661326757687
+    second: Attack L3 Effect_0
+  - first:
+      213: 3043105965984978871
+    second: Attack L3 Effect_1
+  - first:
+      213: -2327228513002221111
+    second: Attack L3 Effect_2
+  - first:
+      213: 6844113336351713366
+    second: Attack L3 Effect_3
+  - first:
+      213: 3765419086714604639
+    second: Attack L3 Effect_4
+  - first:
+      213: 7908443555799755382
+    second: Attack L3 Effect_5
+  - first:
+      213: -181405201587801971
+    second: Attack L3 Effect_6
+  - first:
+      213: 622636791437449207
+    second: Attack L3 Effect_7
+  - first:
+      213: 2658901965761251749
+    second: Attack L3 Effect_8
+  - first:
+      213: -4546541231129619596
+    second: Attack L3 Effect_9
+  - first:
+      213: -419848787257650942
+    second: Attack L3 Effect_10
+  - first:
+      213: -6421021876789251718
+    second: Attack L3 Effect_11
+  - first:
+      213: -1061301240479222492
+    second: Attack L3 Effect_12
+  - first:
+      213: 6820726596963430123
+    second: Attack L3 Effect_13
+  - first:
+      213: 2314498258922682748
+    second: Attack L3 Effect_14
+  - first:
+      213: 2944106317600860077
+    second: Attack L3 Effect_15
+  - first:
+      213: 4821140335053241613
+    second: Attack L3 Effect_16
+  - first:
+      213: 5684022761444788848
+    second: Attack L3 Effect_17
+  - first:
+      213: 6203829372862415451
+    second: Attack L3 Effect_18
+  - first:
+      213: -7152952988007118935
+    second: Attack L3 Effect_19
+  - first:
+      213: -1014905808471338203
+    second: Attack L3 Effect_20
+  - first:
+      213: -8131692603133604016
+    second: Attack L3 Effect_21
+  - first:
+      213: 8116503275953624638
+    second: Attack L3 Effect_22
+  - first:
+      213: -4443339111251486967
+    second: Attack L3 Effect_23
+  - first:
+      213: 2806956816977532749
+    second: Attack L3 Effect_24
+  - first:
+      213: 4369247832377703212
+    second: Attack L3 Effect_25
+  - first:
+      213: -8772443336539102694
+    second: Attack L3 Effect_26
+  - first:
+      213: 3366778276736336221
+    second: Attack L3 Effect_27
+  - first:
+      213: -1793806590134902345
+    second: Attack L3 Effect_28
+  - first:
+      213: -2595580395597440124
+    second: Attack L3 Effect_29
+  - first:
+      213: -936029196827814673
+    second: Attack L3 Effect_30
+  - first:
+      213: 1589944991487994460
+    second: Attack L3 Effect_31
+  - first:
+      213: -1840892308797761898
+    second: Attack L3 Effect_32
+  - first:
+      213: -4738233344038158791
+    second: Attack L3 Effect_33
+  - first:
+      213: 4114483588569353415
+    second: Attack L3 Effect_34
+  - first:
+      213: -8121569867387586845
+    second: Attack L3 Effect_35
+  - first:
+      213: 9106998445551538249
+    second: Attack L3 Effect_36
+  - first:
+      213: 785936916574032003
+    second: Attack L3 Effect_37
+  - first:
+      213: 6738674715743697335
+    second: Attack L3 Effect_38
+  - first:
+      213: 3862724125123422294
+    second: Attack L3 Effect_39
+  - first:
+      213: -6583713163843728694
+    second: Attack L3 Effect_40
+  - first:
+      213: 6588054126338356004
+    second: Attack L3 Effect_41
+  - first:
+      213: 8756086094172251342
+    second: Attack L3 Effect_42
+  - first:
+      213: -7183318639426268402
+    second: Attack L3 Effect_43
+  - first:
+      213: 1558142969041184434
+    second: Attack L3 Effect_44
+  - first:
+      213: 4759771216925539757
+    second: Attack L3 Effect_45
+  - first:
+      213: 2772674240211637367
+    second: Attack L3 Effect_46
+  - first:
+      213: 865600330881726620
+    second: Attack L3 Effect_47
+  - first:
+      213: 6645444430856366626
+    second: Attack L3 Effect_48
+  - first:
+      213: -5848982373369821203
+    second: Attack L3 Effect_49
+  - first:
+      213: -3335157547124213408
+    second: Attack L3 Effect_50
+  - first:
+      213: 6339076349512687241
+    second: Attack L3 Effect_51
+  - first:
+      213: 3183034513147570580
+    second: Attack L3 Effect_52
+  - first:
+      213: -2228730058570244567
+    second: Attack L3 Effect_53
+  - first:
+      213: -8747462449381887340
+    second: Attack L3 Effect_54
+  - first:
+      213: 7722247991551033020
+    second: Attack L3 Effect_55
+  - first:
+      213: 9162496105483663353
+    second: Attack L3 Effect_56
+  - first:
+      213: 9121191193592853938
+    second: Attack L3 Effect_57
+  - first:
+      213: 3987023897920356473
+    second: Attack L3 Effect_58
+  - first:
+      213: -360288578242620581
+    second: Attack L3 Effect_59
+  - first:
+      213: 1315123127937247108
+    second: Attack L3 Effect_60
+  - first:
+      213: 8450589330318512417
+    second: Attack L3 Effect_61
+  - first:
+      213: 4369389623136759652
+    second: Attack L3 Effect_62
+  - first:
+      213: -7950452706155659938
+    second: Attack L3 Effect_63
+  - first:
+      213: -8042206743874051139
+    second: Attack L3 Effect_64
+  - first:
+      213: -3785939618630413291
+    second: Attack L3 Effect_65
+  - first:
+      213: 5160093512527972259
+    second: Attack L3 Effect_66
+  - first:
+      213: 8777918197346589997
+    second: Attack L3 Effect_67
+  - first:
+      213: 3802979853561111496
+    second: Attack L3 Effect_68
+  - first:
+      213: -1884231533700201361
+    second: Attack L3 Effect_69
+  - first:
+      213: 703436069458012170
+    second: Attack L3 Effect_70
+  - first:
+      213: 3673886328368604985
+    second: Attack L3 Effect_71
+  - first:
+      213: -1783945410570044454
+    second: Attack L3 Effect_72
+  - first:
+      213: 7266395488104771829
+    second: Attack L3 Effect_73
+  - first:
+      213: -5186267537436544989
+    second: Attack L3 Effect_74
+  - first:
+      213: 6527812234742191972
+    second: Attack L3 Effect_75
+  - first:
+      213: 6109749574695910065
+    second: Attack L3 Effect_76
+  - first:
+      213: -2544119915414474306
+    second: Attack L3 Effect_77
+  - first:
+      213: 2609241937215659669
+    second: Attack L3 Effect_78
+  - first:
+      213: -4902616044267497320
+    second: Attack L3 Effect_79
+  - first:
+      213: -2395594578154879228
+    second: Attack L3 Effect_80
+  - first:
+      213: -7012914333724089033
+    second: Attack L3 Effect_81
+  - first:
+      213: -3923300451409354241
+    second: Attack L3 Effect_82
+  - first:
+      213: -5104437247029851802
+    second: Attack L3 Effect_83
+  - first:
+      213: -4991535444826663083
+    second: Attack L3 Effect_84
+  - first:
+      213: -1622087959701547684
+    second: Attack L3 Effect_85
+  - first:
+      213: 4017136354925582011
+    second: Attack L3 Effect_86
+  - first:
+      213: -2061633817070920941
+    second: Attack L3 Effect_87
+  - first:
+      213: 5391254694113110594
+    second: Attack L3 Effect_88
+  - first:
+      213: 1479199089588208389
+    second: Attack L3 Effect_89
+  - first:
+      213: -515751859622299830
+    second: Attack L3 Effect_91
+  - first:
+      213: 3163674192455674485
+    second: Attack L3 Effect_92
+  - first:
+      213: -1169111467306213557
+    second: Attack L3 Effect_93
+  - first:
+      213: -274658118908749837
+    second: Attack L3 Effect_94
+  - first:
+      213: -4746982538431177527
+    second: Attack L3 Effect_95
+  - first:
+      213: 5662037920756450191
+    second: Attack L3 Effect_96
+  - first:
+      213: 8914503438312063588
+    second: Attack L3 Effect_97
+  - first:
+      213: -7546298172265227409
+    second: Attack L3 Effect_98
+  - first:
+      213: 5394472582656945893
+    second: Attack L3 Effect_99
+  - first:
+      213: -6617301118492296891
+    second: Attack L3 Effect_100
+  - first:
+      213: 3066578037893741740
+    second: Attack L3 Effect_101
+  - first:
+      213: 1259984821021785817
+    second: Attack L3 Effect_102
+  - first:
+      213: -5150690075137462532
+    second: Attack L3 Effect_103
+  - first:
+      213: 7531081583677781036
+    second: Attack L3 Effect_104
+  - first:
+      213: -2859647427181769477
+    second: Attack L3 Effect_105
+  - first:
+      213: -1738676011214871031
+    second: Attack L3 Effect_106
+  - first:
+      213: -356040710215353004
+    second: Attack L3 Effect_107
+  - first:
+      213: 5175926356415161453
+    second: Attack L3 Effect_108
+  - first:
+      213: 4179589083295892163
+    second: Attack L3 Effect_109
+  - first:
+      213: 4865811378842533891
+    second: Attack L3 Effect_110
+  - first:
+      213: -6517434011103614343
+    second: Attack L3 Effect_111
+  - first:
+      213: 6890285719377509097
+    second: Attack L3 Effect_112
+  - first:
+      213: 3243134779526508720
+    second: Attack L3 Effect_113
+  - first:
+      213: 8530343570572113735
+    second: Attack L3 Effect_114
+  - first:
+      213: -6178674630925679889
+    second: Attack L3 Effect_115
+  - first:
+      213: -5288185711165643562
+    second: Attack L3 Effect_116
+  - first:
+      213: 8415033818548956914
+    second: Attack L3 Effect_117
+  - first:
+      213: -4254247032556323270
+    second: Attack L3 Effect_118
+  - first:
+      213: -7260690507262049129
+    second: Attack L3 Effect_119
+  - first:
+      213: 1260988694308158912
+    second: Attack L3 Effect_120
+  - first:
+      213: 9078907184625043283
+    second: Attack L3 Effect_121
+  - first:
+      213: 7500116352102011448
+    second: Attack L3 Effect_122
+  - first:
+      213: 4890700571490159448
+    second: Attack L3 Effect_123
+  - first:
+      213: -4275900308549831212
+    second: Attack L3 Effect_124
+  - first:
+      213: 3696523809132517185
+    second: Attack L3 Effect_125
+  - first:
+      213: -5759257614583360430
+    second: Attack L3 Effect_126
+  - first:
+      213: 969372990865099291
+    second: Attack L3 Effect_127
+  - first:
+      213: -277359966243667090
+    second: Attack L3 Effect_128
+  - first:
+      213: 8800940731985102415
+    second: Attack L3 Effect_129
+  - first:
+      213: -7813268368430198954
+    second: Attack L3 Effect_130
+  - first:
+      213: -184202816072355904
+    second: Attack L3 Effect_131
+  - first:
+      213: -7796580073524608300
+    second: Attack L3 Effect_132
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Attack L3 Effect_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2376
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c0c27019657554f0800000000000000
+      internalID: -840636661326757687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_1
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 2376
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b71864c0c84b3a20800000000000000
+      internalID: 3043105965984978871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_2
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 2376
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c197536ff504bfd0800000000000000
+      internalID: -2327228513002221111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_3
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 2376
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 658e1c751dc2bfe50800000000000000
+      internalID: 6844113336351713366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_4
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 2376
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5c891695b4714430800000000000000
+      internalID: 3765419086714604639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_5
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 2376
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67aeba5638f60cd60800000000000000
+      internalID: 7908443555799755382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_6
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 2376
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8073f62ee48b7df0800000000000000
+      internalID: -181405201587801971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_7
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 2376
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f7d7b9ecdc04a800800000000000000
+      internalID: 622636791437449207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_8
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 2376
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a989c9104156e420800000000000000
+      internalID: 2658901965761251749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2112
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4731ad1c6d077e0c0800000000000000
+      internalID: -4546541231129619596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_10
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 2112
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2011120a0c56c2af0800000000000000
+      internalID: -419848787257650942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_11
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 2112
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a71f6f28f92f3e6a0800000000000000
+      internalID: -6421021876789251718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_12
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 2112
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 425fd8115208541f0800000000000000
+      internalID: -1061301240479222492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_13
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 2112
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bee6012c3b618ae50800000000000000
+      internalID: 6820726596963430123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_14
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 2112
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c79b85c57efbe1020800000000000000
+      internalID: 2314498258922682748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_15
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 2112
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da72599e8119bd820800000000000000
+      internalID: 2944106317600860077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_16
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 2112
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0df72b579128e240800000000000000
+      internalID: 4821140335053241613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_17
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 2112
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ac6271694b1ee40800000000000000
+      internalID: 5684022761444788848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1848
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b52499002fd681650800000000000000
+      internalID: 6203829372862415451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_19
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1848
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a744c6c72b9bbc90800000000000000
+      internalID: -7152952988007118935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_20
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1848
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 523d59d5b845ae1f0800000000000000
+      internalID: -1014905808471338203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_21
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1848
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05fcc8739ac662f80800000000000000
+      internalID: -8131692603133604016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_22
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1848
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e369285f9bc93a070800000000000000
+      internalID: 8116503275953624638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_23
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 1848
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9075141ce961652c0800000000000000
+      internalID: -4443339111251486967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_24
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 1848
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d479ec76a5054f620800000000000000
+      internalID: 2806956816977532749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_25
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 1848
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2bb48811cfa2ac30800000000000000
+      internalID: 4369247832377703212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_26
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 1848
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1228598345024680800000000000000
+      internalID: -8772443336539102694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1584
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d510f56310339be20800000000000000
+      internalID: 3366778276736336221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_28
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1584
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b12147096e1b17e0800000000000000
+      internalID: -1793806590134902345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_29
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1584
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b5276d165aafbd0800000000000000
+      internalID: -2595580395597440124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_30
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1584
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe41faf976e8203f0800000000000000
+      internalID: -936029196827814673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_31
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1584
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5aad0ebb8e901610800000000000000
+      internalID: 1589944991487994460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_32
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 1584
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6965c58d236d376e0800000000000000
+      internalID: -1840892308797761898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_33
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 1584
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93eb1b9b0e96e3eb0800000000000000
+      internalID: -4738233344038158791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_34
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 1584
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ccc9da3605991930800000000000000
+      internalID: 4114483588569353415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_35
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 1584
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e6b8db4c336a4f80800000000000000
+      internalID: -8121569867387586845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1320
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9405225d5de826e70800000000000000
+      internalID: 9106998445551538249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_37
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1320
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380d248267538ea00800000000000000
+      internalID: 785936916574032003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_38
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1320
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b93fc073f4948d50800000000000000
+      internalID: 6738674715743697335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_39
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1320
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 658205f40272b9530800000000000000
+      internalID: 3862724125123422294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_40
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1320
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aca080e62c3f1a4a0800000000000000
+      internalID: -6583713163843728694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_41
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 1320
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 423b179a2587d6b50800000000000000
+      internalID: 6588054126338356004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_42
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 1320
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec4efd139edd38970800000000000000
+      internalID: 8756086094172251342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_43
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 1320
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e031e8c91c9bf4c90800000000000000
+      internalID: -7183318639426268402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_44
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 1320
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b6e8f266c2af9510800000000000000
+      internalID: 1558142969041184434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1056
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dadb9f414ba1e0240800000000000000
+      internalID: 4759771216925539757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_46
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1056
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 774d0bdf7848a7620800000000000000
+      internalID: 2772674240211637367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_47
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1056
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c987aaf2aea330c00800000000000000
+      internalID: 865600330881726620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_48
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1056
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22aaac3308c593c50800000000000000
+      internalID: 6645444430856366626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_49
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1056
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de745c9458d34dea0800000000000000
+      internalID: -5848982373369821203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_50
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 1056
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 069b2bd91e327b1d0800000000000000
+      internalID: -3335157547124213408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_51
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 1056
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e98c0aa5ce8f750800000000000000
+      internalID: 6339076349512687241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_52
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 1056
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49928f776096c2c20800000000000000
+      internalID: 3183034513147570580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_53
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 1056
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92e5faee1d5f111e0800000000000000
+      internalID: -2228730058570244567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 792
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49236829f35ca9680800000000000000
+      internalID: -8747462449381887340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_55
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 792
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbe7fd352afea2b60800000000000000
+      internalID: 7722247991551033020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_56
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 792
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f7f047b9a9b72f70800000000000000
+      internalID: 9162496105483663353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_57
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 792
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b5f58e701bf49e70800000000000000
+      internalID: 9121191193592853938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_58
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 792
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 970498a6c11c45730800000000000000
+      internalID: 3987023897920356473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_59
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 792
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b53d73d627ffffaf0800000000000000
+      internalID: -360288578242620581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_60
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 792
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 487a99c5481404210800000000000000
+      internalID: 1315123127937247108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_61
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 792
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12157580936864570800000000000000
+      internalID: 8450589330318512417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_62
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 792
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46f285456b033ac30800000000000000
+      internalID: 4369389623136759652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 528
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5d7c0613615aa190800000000000000
+      internalID: -7950452706155659938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_64
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 528
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db3e22d6397546090800000000000000
+      internalID: -8042206743874051139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_65
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 528
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 514d472c9f3a57bc0800000000000000
+      internalID: -3785939618630413291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_66
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 528
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a70706d5b55c9740800000000000000
+      internalID: 5160093512527972259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_67
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 528
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2dd744d71e61d970800000000000000
+      internalID: 8777918197346589997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_68
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 528
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c32a7b1706e6c430800000000000000
+      internalID: 3802979853561111496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_69
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 528
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f64c537376dd9d5e0800000000000000
+      internalID: -1884231533700201361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_70
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 528
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a08ed32d06b13c900800000000000000
+      internalID: 703436069458012170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_71
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 528
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 937239b86244cf230800000000000000
+      internalID: 3673886328368604985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 264
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adbb840d9172e37e0800000000000000
+      internalID: -1783945410570044454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_73
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 264
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f07cf9823c67d460800000000000000
+      internalID: 7266395488104771829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_74
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 264
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32074f8172da608b0800000000000000
+      internalID: -5186267537436544989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_75
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 264
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 467d14444a2779a50800000000000000
+      internalID: 6527812234742191972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_76
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 264
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1baf75a0ed03ac450800000000000000
+      internalID: 6109749574695910065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_77
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 264
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb139bf8a6871bcd0800000000000000
+      internalID: -2544119915414474306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_78
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 264
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59e9ac0b7b3e53420800000000000000
+      internalID: 2609241937215659669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_79
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 264
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8981e43dea866fbb0800000000000000
+      internalID: -4902616044267497320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_80
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 264
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4070a3f6c6321ced0800000000000000
+      internalID: -2395594578154879228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_81
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 735612ac19f1dae90800000000000000
+      internalID: -7012914333724089033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_82
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 0
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff1ad96a603ad89c0800000000000000
+      internalID: -3923300451409354241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_83
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 0
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66943884e556929b0800000000000000
+      internalID: -5104437247029851802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_84
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 0
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 557d55f85f08abab0800000000000000
+      internalID: -4991535444826663083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_85
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 0
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c551d87489f2d79e0800000000000000
+      internalID: -1622087959701547684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_86
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 0
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb695a92b3cbfb730800000000000000
+      internalID: 4017136354925582011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_87
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 0
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31b1e8467fa9363e0800000000000000
+      internalID: -2061633817070920941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_88
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 0
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24ae448849591da40800000000000000
+      internalID: 5391254694113110594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L3 Effect_89
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 0
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5038cfe1cbb278410800000000000000
+      internalID: 1479199089588208389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,2264 @@
+fileFormatVersion: 2
+guid: 17657e9c2bebc05418a006374397a389
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6162828340459880930
+    second: Attack L2 Weapon grim_0
+  - first:
+      213: -6142472733001861385
+    second: Attack L2 Weapon grim_1
+  - first:
+      213: 6861694542163452754
+    second: Attack L2 Weapon grim_2
+  - first:
+      213: -7161620360983967075
+    second: Attack L2 Weapon grim_3
+  - first:
+      213: -9222039177994462271
+    second: Attack L2 Weapon grim_4
+  - first:
+      213: 3768499842748357203
+    second: Attack L2 Weapon grim_5
+  - first:
+      213: 4386429037106249878
+    second: Attack L2 Weapon grim_6
+  - first:
+      213: 6752823969809848409
+    second: Attack L2 Weapon grim_7
+  - first:
+      213: 3633061038227402122
+    second: Attack L2 Weapon grim_8
+  - first:
+      213: 5040046168457532355
+    second: Attack L2 Weapon grim_9
+  - first:
+      213: 8382429911331234672
+    second: Attack L2 Weapon grim_10
+  - first:
+      213: -7723515286022991661
+    second: Attack L2 Weapon grim_11
+  - first:
+      213: -1942759947615486950
+    second: Attack L2 Weapon grim_12
+  - first:
+      213: -4730249399770181309
+    second: Attack L2 Weapon grim_13
+  - first:
+      213: -7152235699617209744
+    second: Attack L2 Weapon grim_14
+  - first:
+      213: -6234892753509807998
+    second: Attack L2 Weapon grim_15
+  - first:
+      213: 7566747098576794734
+    second: Attack L2 Weapon grim_16
+  - first:
+      213: -1729863763355481924
+    second: Attack L2 Weapon grim_17
+  - first:
+      213: 2474535185360744776
+    second: Attack L2 Weapon grim_18
+  - first:
+      213: -7768662739563824339
+    second: Attack L2 Weapon grim_19
+  - first:
+      213: -4087493715477638726
+    second: Attack L2 Weapon grim_20
+  - first:
+      213: -6129320561885319010
+    second: Attack L2 Weapon grim_21
+  - first:
+      213: 6609656623079905141
+    second: Attack L2 Weapon grim_22
+  - first:
+      213: 3068863124557787977
+    second: Attack L2 Weapon grim_23
+  - first:
+      213: 6354240931655280899
+    second: Attack L2 Weapon grim_24
+  - first:
+      213: -7729569456149753509
+    second: Attack L2 Weapon grim_25
+  - first:
+      213: 2275271804545309134
+    second: Attack L2 Weapon grim_26
+  - first:
+      213: 5851769023505944983
+    second: Attack L2 Weapon grim_27
+  - first:
+      213: -5647228576358108601
+    second: Attack L2 Weapon grim_28
+  - first:
+      213: -9064248553202153770
+    second: Attack L2 Weapon grim_29
+  - first:
+      213: 405667950332625367
+    second: Attack L2 Weapon grim_30
+  - first:
+      213: 3810104822727348550
+    second: Attack L2 Weapon grim_31
+  - first:
+      213: -4008666933940173221
+    second: Attack L2 Weapon grim_32
+  - first:
+      213: 5633306889618441414
+    second: Attack L2 Weapon grim_33
+  - first:
+      213: -2110812990271818634
+    second: Attack L2 Weapon grim_34
+  - first:
+      213: 2215383647212547638
+    second: Attack L2 Weapon grim_35
+  - first:
+      213: 6572614819061448697
+    second: Attack L2 Weapon grim_36
+  - first:
+      213: -1015814281272553769
+    second: Attack L2 Weapon grim_37
+  - first:
+      213: 6664563959211081297
+    second: Attack L2 Weapon grim_38
+  - first:
+      213: -526457573758976681
+    second: Attack L2 Weapon grim_39
+  - first:
+      213: -4032749576821790022
+    second: Attack L2 Weapon grim_40
+  - first:
+      213: 7295816712421474301
+    second: Attack L2 Weapon grim_41
+  - first:
+      213: 240226187743986261
+    second: Attack L2 Weapon grim_42
+  - first:
+      213: -8069730551721144451
+    second: Attack L2 Weapon grim_43
+  - first:
+      213: -8323701757837888318
+    second: Attack L2 Weapon grim_44
+  - first:
+      213: 4396629758795702919
+    second: Attack L2 Weapon grim_45
+  - first:
+      213: 6483143342022413514
+    second: Attack L2 Weapon grim_46
+  - first:
+      213: -8683890683062598415
+    second: Attack L2 Weapon grim_47
+  - first:
+      213: -4005488281183450444
+    second: Attack L2 Weapon grim_48
+  - first:
+      213: 1803916980319289189
+    second: Attack L2 Weapon grim_49
+  - first:
+      213: 6747526161648300682
+    second: Attack L2 Weapon grim_50
+  - first:
+      213: -7997360433003404445
+    second: Attack L2 Weapon grim_51
+  - first:
+      213: 2553154804695719231
+    second: Attack L2 Weapon grim_52
+  - first:
+      213: -49104581006944867
+    second: Attack L2 Weapon grim_53
+  - first:
+      213: 2751295019334941075
+    second: Attack L2 Weapon grim_54
+  - first:
+      213: 2601799721128870058
+    second: Attack L2 Weapon grim_55
+  - first:
+      213: -5571789746075885403
+    second: Attack L2 Weapon grim_56
+  - first:
+      213: 732223162089364473
+    second: Attack L2 Weapon grim_57
+  - first:
+      213: -6183120387528448197
+    second: Attack L2 Weapon grim_58
+  - first:
+      213: -1563158319425127145
+    second: Attack L2 Weapon grim_59
+  - first:
+      213: 4961982767371845031
+    second: Attack L2 Weapon grim_60
+  - first:
+      213: 7436679201243959308
+    second: Attack L2 Weapon grim_61
+  - first:
+      213: 6825235762955711867
+    second: Attack L2 Weapon grim_62
+  - first:
+      213: 2264147283820665250
+    second: Attack L2 Weapon grim_63
+  - first:
+      213: 9042337136565811389
+    second: Attack L2 Weapon grim_64
+  - first:
+      213: 462970638659400465
+    second: Attack L2 Weapon grim_65
+  - first:
+      213: 7016348854446722184
+    second: Attack L2 Weapon grim_66
+  - first:
+      213: -4944454052436710716
+    second: Attack L2 Weapon grim_67
+  - first:
+      213: -4941995312877184992
+    second: Attack L2 Weapon grim_68
+  - first:
+      213: 958563871211311381
+    second: Attack L2 Weapon grim_69
+  - first:
+      213: -3466527180931259309
+    second: Attack L2 Weapon grim_70
+  - first:
+      213: 3437253821070603567
+    second: Attack L2 Weapon grim_71
+  - first:
+      213: -4512263963989536850
+    second: Attack L2 Weapon grim_72
+  - first:
+      213: -8848797817945523634
+    second: Attack L2 Weapon grim_73
+  - first:
+      213: 8969628011156742302
+    second: Attack L2 Weapon grim_74
+  - first:
+      213: -8240883304566157706
+    second: Attack L2 Weapon grim_75
+  - first:
+      213: 5883255494543357129
+    second: Attack L2 Weapon grim_76
+  - first:
+      213: -7624934160090342425
+    second: Attack L2 Weapon grim_77
+  - first:
+      213: 4160623383894074453
+    second: Attack L2 Weapon grim_78
+  - first:
+      213: 4147603698779017238
+    second: Attack L2 Weapon grim_79
+  - first:
+      213: -538889729173533740
+    second: Attack L2 Weapon grim_80
+  - first:
+      213: 2210422401735170764
+    second: Attack L2 Weapon grim_81
+  - first:
+      213: -1053829045769026863
+    second: Attack L2 Weapon grim_82
+  - first:
+      213: 461182977738813345
+    second: Attack L2 Weapon grim_83
+  - first:
+      213: 8023038829270719207
+    second: Attack L2 Weapon grim_84
+  - first:
+      213: 4003767729482264892
+    second: Attack L2 Weapon grim_85
+  - first:
+      213: 452084631926660492
+    second: Attack L2 Weapon grim_86
+  - first:
+      213: 8221418085149991538
+    second: Attack L2 Weapon grim_87
+  - first:
+      213: 5864773354425720255
+    second: Attack L2 Weapon grim_88
+  - first:
+      213: 1308835901783731472
+    second: Attack L2 Weapon grim_89
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2376
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1ebd23c64c397aa0800000000000000
+      internalID: -6162828340459880930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_1
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 2376
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f6b6e2f79d81caa0800000000000000
+      internalID: -6142472733001861385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_2
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 2376
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 253a3eec4d2a93f50800000000000000
+      internalID: 6861694542163452754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_3
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 2376
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9a885fb930dc9c90800000000000000
+      internalID: -7161620360983967075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_4
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 2376
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb97e26a3cb40080800000000000000
+      internalID: -9222039177994462271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_5
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 2376
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35a912ff3a66c4430800000000000000
+      internalID: 3768499842748357203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_6
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 2376
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6904d2d08f9bfdc30800000000000000
+      internalID: 4386429037106249878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_7
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 2376
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 958524f5f99d6bd50800000000000000
+      internalID: 6752823969809848409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_8
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 2376
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8d2bd6f3c93b6230800000000000000
+      internalID: 3633061038227402122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2112
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c3da727947d1f540800000000000000
+      internalID: 5040046168457532355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_10
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 2112
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 073e183a79f545470800000000000000
+      internalID: 8382429911331234672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_11
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 2112
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d0dc4fa4cf80d490800000000000000
+      internalID: -7723515286022991661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_12
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 2112
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1cb58eee1ee905e0800000000000000
+      internalID: -1942759947615486950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_13
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 2112
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34191bb9b37ca5eb0800000000000000
+      internalID: -4730249399770181309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_14
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 2112
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 072e27e76872ebc90800000000000000
+      internalID: -7152235699617209744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_15
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 2112
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 288046613163979a0800000000000000
+      internalID: -6234892753509807998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_16
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 2112
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6433e3556c720960800000000000000
+      internalID: 7566747098576794734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_17
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 2112
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb8406b821a4ef7e0800000000000000
+      internalID: -1729863763355481924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1848
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 841f1a3f3a0575220800000000000000
+      internalID: 2474535185360744776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_19
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1848
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2b3c74066a203490800000000000000
+      internalID: -7768662739563824339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_20
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1848
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab1505b4f1e4647c0800000000000000
+      internalID: -4087493715477638726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_21
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1848
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e90f35a6c6740faa0800000000000000
+      internalID: -6129320561885319010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_22
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1848
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5775cf1eda73abb50800000000000000
+      internalID: 6609656623079905141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_23
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 1848
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 943ff8390cac69a20800000000000000
+      internalID: 3068863124557787977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_24
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 1848
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3096f8c067cce2850800000000000000
+      internalID: 6354240931655280899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_25
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 1848
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b511c7b588d0bb490800000000000000
+      internalID: -7729569456149753509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_26
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 1848
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9926db6a3639f10800000000000000
+      internalID: 2275271804545309134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1584
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 791d4b14ce8a53150800000000000000
+      internalID: 5851769023505944983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_28
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1584
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7427db4b78301a1b0800000000000000
+      internalID: -5647228576358108601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_29
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1584
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d6898e17f1553280800000000000000
+      internalID: -9064248553202153770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_30
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1584
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d1465cf9d831a500800000000000000
+      internalID: 405667950332625367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_31
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1584
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6419aa3462630e430800000000000000
+      internalID: 3810104822727348550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_32
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 1584
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5644a399aa5e58c0800000000000000
+      internalID: -4008666933940173221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_33
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 1584
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c4c77205c68d2e40800000000000000
+      internalID: 5633306889618441414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_34
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 1584
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6747197d4c2e4b2e0800000000000000
+      internalID: -2110812990271818634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_35
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 1584
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63e205580bf9ebe10800000000000000
+      internalID: 2215383647212547638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1320
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ff30afca5e963b50800000000000000
+      internalID: 6572614819061448697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_37
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1320
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7de0bfe0b4a17e1f0800000000000000
+      internalID: -1015814281272553769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_38
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1320
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15eb5ab4c994d7c50800000000000000
+      internalID: 6664563959211081297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_39
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1320
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d38ce30a5a1b8f0800000000000000
+      internalID: -526457573758976681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_40
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1320
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aba2e6550abc808c0800000000000000
+      internalID: -4032749576821790022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_41
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 1320
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff7d3225a2ff3560800000000000000
+      internalID: 7295816712421474301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_42
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 1320
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5520a3ae174755300800000000000000
+      internalID: 240226187743986261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_43
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 1320
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f4b8781de820090800000000000000
+      internalID: -8069730551721144451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_44
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 1320
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c437c32a554c7c80800000000000000
+      internalID: -8323701757837888318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1056
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 782ede5a877f30d30800000000000000
+      internalID: 4396629758795702919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_46
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1056
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acc4f293580c8f950800000000000000
+      internalID: 6483143342022413514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_47
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1056
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f4cab7de6f9c7780800000000000000
+      internalID: -8683890683062598415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_48
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1056
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ba021851a5a968c0800000000000000
+      internalID: -4005488281183450444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_49
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1056
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56ff930afecc80910800000000000000
+      internalID: 1803916980319289189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_50
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 1056
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a82b3b94b4704ad50800000000000000
+      internalID: 6747526161648300682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_51
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 1056
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 363611ade0ba30190800000000000000
+      internalID: -7997360433003404445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_52
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 1056
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d587684c0ae6320800000000000000
+      internalID: 2553154804695719231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_53
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 1056
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d959c3cc4ab815ff0800000000000000
+      internalID: -49104581006944867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 792
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 399b2cb3e309e2620800000000000000
+      internalID: 2751295019334941075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_55
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 792
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0c89abf037b1420800000000000000
+      internalID: 2601799721128870058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_56
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 792
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0abfd1fb60da2b0800000000000000
+      internalID: -5571789746075885403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_57
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 792
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb56a02611692a00800000000000000
+      internalID: 732223162089364473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_58
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 792
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3724e164c4213aa0800000000000000
+      internalID: -6183120387528448197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_59
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 792
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71df7fa5acb8e4ae0800000000000000
+      internalID: -1563158319425127145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_60
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 792
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7adfec689018cd440800000000000000
+      internalID: 4961982767371845031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_61
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 792
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c009ea21554643760800000000000000
+      internalID: 7436679201243959308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_62
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 792
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b757447c3cb18be50800000000000000
+      internalID: 6825235762955711867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 528
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a9db4b65fddb6f10800000000000000
+      internalID: 2264147283820665250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_64
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 528
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db8f354a7b5dc7d70800000000000000
+      internalID: 9042337136565811389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_65
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 528
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113babac75dcc6600800000000000000
+      internalID: 462970638659400465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_66
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 528
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c0481eb141f5160800000000000000
+      internalID: 7016348854446722184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_67
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 528
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cae4447c35c16bb0800000000000000
+      internalID: -4944454052436710716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_68
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 528
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0285f4e52718a6bb0800000000000000
+      internalID: -4941995312877184992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_69
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 528
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 511d21e13c08d4d00800000000000000
+      internalID: 958563871211311381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_70
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 528
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3542b5835eb64efc0800000000000000
+      internalID: -3466527180931259309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_71
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 528
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2574cf832493bf20800000000000000
+      internalID: 3437253821070603567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 264
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaf8b9de4d73161c0800000000000000
+      internalID: -4512263963989536850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_73
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 264
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4afa1c7441c23580800000000000000
+      internalID: -8848797817945523634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_74
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 264
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e90246c27258a7c70800000000000000
+      internalID: 8969628011156742302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_75
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 264
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67e03ebeb4082ad80800000000000000
+      internalID: -8240883304566157706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_76
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 264
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c43f1393b585a150800000000000000
+      internalID: 5883255494543357129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_77
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 264
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ebd210b7cace2690800000000000000
+      internalID: -7624934160090342425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_78
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 264
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 554a0397ce08db930800000000000000
+      internalID: 4160623383894074453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_79
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 264
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 610d1dec69f3f8930800000000000000
+      internalID: 4147603698779017238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_80
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 264
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4db418f75aa7588f0800000000000000
+      internalID: -538889729173533740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_81
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca9dfa867ffcae10800000000000000
+      internalID: 2210422401735170764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_82
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 0
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d2c2f8f01c0061f0800000000000000
+      internalID: -1053829045769026863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_83
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 0
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af249c8973766600800000000000000
+      internalID: 461182977738813345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_84
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 0
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ead8ddae4f875f60800000000000000
+      internalID: 8023038829270719207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_85
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 0
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3176fe798d309730800000000000000
+      internalID: 4003767729482264892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_86
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 0
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8dd666d390264600800000000000000
+      internalID: 452084631926660492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_87
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 0
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27266538038581270800000000000000
+      internalID: 8221418085149991538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_88
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 0
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbd98befa4cd36150800000000000000
+      internalID: 5864773354425720255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack L2 Weapon grim_89
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 0
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01de813715be92210800000000000000
+      internalID: 1308835901783731472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

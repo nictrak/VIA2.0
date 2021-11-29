@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ModName: DamageZone
-  TimeFrame: 1
+  TimeFrame: 20
   IsEnable: 1
   GizmosColor: {r: 0, g: 0, b: 0, a: 0}
   damagePointPerFrame: 1

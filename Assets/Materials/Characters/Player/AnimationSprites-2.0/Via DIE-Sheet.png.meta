@@ -1,7 +1,67 @@
 fileFormatVersion: 2
 guid: d99fed092fbd32048801109f977410e1
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 111381647794441754
+    second: Via DIE-Sheet_0
+  - first:
+      213: 6036613702002586379
+    second: Via DIE-Sheet_1
+  - first:
+      213: 1571286122267294253
+    second: Via DIE-Sheet_2
+  - first:
+      213: -697277678832019850
+    second: Via DIE-Sheet_3
+  - first:
+      213: 8703860220236066124
+    second: Via DIE-Sheet_4
+  - first:
+      213: 3943058626614999282
+    second: Via DIE-Sheet_5
+  - first:
+      213: 2418213245929771701
+    second: Via DIE-Sheet_6
+  - first:
+      213: 2974515531537766047
+    second: Via DIE-Sheet_7
+  - first:
+      213: -3605578732205149854
+    second: Via DIE-Sheet_8
+  - first:
+      213: -74410457208623039
+    second: Via DIE-Sheet_9
+  - first:
+      213: -5963807354238146217
+    second: Via DIE-Sheet_10
+  - first:
+      213: -2884760976597385350
+    second: Via DIE-Sheet_11
+  - first:
+      213: -8092113907758288387
+    second: Via DIE-Sheet_12
+  - first:
+      213: -1436089828995232883
+    second: Via DIE-Sheet_13
+  - first:
+      213: -3919566013204703099
+    second: Via DIE-Sheet_14
+  - first:
+      213: 2093984115596869090
+    second: Via DIE-Sheet_15
+  - first:
+      213: 1409814624609683618
+    second: Via DIE-Sheet_16
+  - first:
+      213: 897358425388422582
+    second: Via DIE-Sheet_17
+  - first:
+      213: 5936427000611221764
+    second: Via DIE-Sheet_18
+  - first:
+      213: -4918326294017013830
+    second: Via DIE-Sheet_19
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -31,7 +91,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,12 +100,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -61,7 +121,19 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -73,7 +145,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Via DIE-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1e094fb405bb8100800000000000000
+      internalID: 111381647794441754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Via DIE-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 0
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b03be1abd2c56c350800000000000000
+      internalID: 6036613702002586379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Via DIE-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 0
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2a3e3637645ec510800000000000000
+      internalID: 1571286122267294253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Via DIE-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 0
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 676986b35a5c256f0800000000000000
+      internalID: -697277678832019850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Via DIE-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 0
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4de2d951c25ac870800000000000000
+      internalID: 8703860220236066124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Via DIE-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 0
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f83deffdee88b630800000000000000
+      internalID: 3943058626614999282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Via DIE-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 0
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b2d9ca82283f8120800000000000000
+      internalID: 2418213245929771701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Via DIE-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 0
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f96d034cd1a974920800000000000000
+      internalID: 2974515531537766047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
