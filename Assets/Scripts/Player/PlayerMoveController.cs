@@ -64,16 +64,16 @@ public class PlayerMoveController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(canUpdateMoveDirection) UpdateMoveDirection();
-        if (Input.GetMouseButtonDown(0) && canAttack && playerAttackController.IsEquipWeapon())
+        if (canUpdateMoveDirection && !HudController.IsUsed) UpdateMoveDirection();
+        if (Input.GetMouseButtonDown(0) && canAttack && playerAttackController.IsEquipWeapon() && !HudController.IsUsed)
         {
             playerAttackController.AddAttack("a");
         }
-        if (Input.GetMouseButtonDown(1) && canAttack && playerAttackController.IsEquipWeapon())
+        if (Input.GetMouseButtonDown(1) && canAttack && playerAttackController.IsEquipWeapon() && !HudController.IsUsed)
         {
             playerAttackController.AddAttack("b");
         }
-        if (Input.GetKeyDown(KeyCode.Space) && canDash)
+        if (Input.GetKeyDown(KeyCode.Space) && canDash && !HudController.IsUsed)
         {
             playerDashController.StartDash(lastestNonZeroMoveDirection, playerRenderer, normalCollider);
         }
@@ -81,7 +81,7 @@ public class PlayerMoveController : MonoBehaviour
     // Fixed frame update
     private void FixedUpdate()
     {
-        if (canMove) MovePerFrame();
+        if (canMove && !HudController.IsUsed) MovePerFrame();
     }
 
     private Vector2 CalMouseDirection()

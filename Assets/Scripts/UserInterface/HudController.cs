@@ -25,12 +25,14 @@ public class HudController : MonoBehaviour
     private KeyCode questKey;
 
     private bool canToggle;
+    public static bool IsUsed;
     // Start is called before the first frame update
     void Start()
     {
         inventoryPanel.SetActive(false);
         shopPanel.SetActive(false);
         canToggle = true;
+        IsUsed = false;
     }
 
     // Update is called once per frame
@@ -58,6 +60,14 @@ public class HudController : MonoBehaviour
             {
                 timeSystem.DoStandardTime();
             }
+        }
+        if (inventoryPanel.activeSelf || craftingCorePanel.activeSelf)
+        {
+            IsUsed = true;
+        }
+        else
+        {
+            IsUsed = false;
         }
     }
     public void OpenShop()
