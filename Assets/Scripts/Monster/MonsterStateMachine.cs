@@ -103,7 +103,7 @@ public class MonsterStateMachine : MonoBehaviour
         if(nextState != currentState)
         {
             if(tokenStates.Contains(nextState)){
-                if(monsterTokenController.RequestToken()){
+                if(monsterTokenController.RequestToken(mostOuterRange.tagTarget == "PlayerTarget")){
                     ExitState(currentState);
                     currentState = nextState;
                     StartState(currentState);

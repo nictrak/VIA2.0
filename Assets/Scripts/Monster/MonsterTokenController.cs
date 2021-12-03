@@ -20,38 +20,61 @@ public class MonsterTokenController : MonoBehaviour
     private int tokenAmount = 9;
     [SerializeField]
     private float delayTime = 30.0f;
-    private MonsterToken[] tokens;
+    private MonsterToken[] monsterTokens;
+    private MonsterToken[] alliesTokens;
 
-    public bool RequestToken(){
-        if(useToken()){
+    public bool RequestToken(bool isEnemy = true){
+        if(useToken(isEnemy)){
             return true;
         } else {
             return false;
         }
     }
 
-    private bool useToken(){
-        foreach (MonsterToken token in tokens){
-            if(!token.reserved){
-                token.timeLeft = delayTime;
-                token.reserved = true;
-                return true;
+    private bool useToken(bool isEnemy){
+        if(isEnemy) {
+            foreach (MonsterToken token in monsterTokens){
+                if(!token.reserved){
+                    token.timeLeft = delayTime;
+                    token.reserved = true;
+                    return true;
+                }
             }
+            return false;
+        } else {
+            foreach (MonsterToken token in alliesTokens){
+                if(!token.reserved){
+                    token.timeLeft = delayTime;
+                    token.reserved = true;
+                    return true;
+                }
+            }
+            return false;
         }
-        return false;
     }
     void Start()
     {
-        tokens = new MonsterToken[tokenAmount];
+        monsterTokens = new MonsterToken[tokenAmount];
+        alliesTokens = new MonsterToken[tokenAmount];
         for(int i = 0; i < tokenAmount; i++) {
-            tokens[i] = new MonsterToken();
+            monsterTokens[i] = new MonsterToken();
+            alliesTokens[i] = new MonsterToken();
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        foreach (MonsterToken token in tokens){
+        foreach (MonsterToken token in monsterTokens){
+            if(token.reserved){
+                token.timeLeft -= Time.deltaTime;
+                if(token.timeLeft <= 0f){
+                    token.reserved = false;
+                }
+            }
+        };
+
+        foreach (MonsterToken token in alliesTokens){
             if(token.reserved){
                 token.timeLeft -= Time.deltaTime;
                 if(token.timeLeft <= 0f){
