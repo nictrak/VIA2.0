@@ -34,6 +34,7 @@ public class MonsterStateMachine : MonoBehaviour
     private MonsterState currentState;
     private Health health;
     private MonsterTokenController monsterTokenController;
+    private MonsterAttributes monsterAttributes;
 
     private static readonly string[] directions = { "N", "NW", "W", "SW", "S", "SW", "W", "NW" };
     public enum MonsterState
@@ -70,6 +71,9 @@ public class MonsterStateMachine : MonoBehaviour
         {
             monsterTokenController = Resources.FindObjectsOfTypeAll<MonsterTokenController>()[0];
         }
+        if (monsterAttributes == null){
+            monsterAttributes = this.transform.root.gameObject.GetComponent<MonsterAttributes>();
+        }
     }
 
     // Update is called once per frame
@@ -103,7 +107,8 @@ public class MonsterStateMachine : MonoBehaviour
         if(nextState != currentState)
         {
             if(tokenStates.Contains(nextState)){
-                if(monsterTokenController.RequestToken(mostOuterRange.tagTarget == "PlayerTarget")){
+                //if(monsterTokenController.RequestToken(mostOuterRange.tagTarget == "PlayerTarget")){
+                if(monsterTokenController.RequestToken(!monsterAttributes.isEnemy)){    
                     ExitState(currentState);
                     currentState = nextState;
                     StartState(currentState);

@@ -224,6 +224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagTarget: EnemyTarget
+  monsterAttributes: {fileID: 8439978603664903561}
 --- !u!1 &3444611298049246700
 GameObject:
   m_ObjectHideFlags: 0
@@ -457,6 +458,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagTarget: EnemyTarget
+  monsterAttributes: {fileID: 8439978603664903561}
 --- !u!1 &3444611298974831875
 GameObject:
   m_ObjectHideFlags: 0
@@ -504,6 +506,7 @@ MonoBehaviour:
   NormalNextState: 5
   delayFrame: 65
   target: {fileID: 8122467121740665326}
+  blocker: {fileID: 0}
 --- !u!1 &3444611299019412909
 GameObject:
   m_ObjectHideFlags: 0
@@ -644,6 +647,7 @@ GameObject:
   - component: {fileID: 8122467121740665301}
   - component: {fileID: 8122467121740665300}
   - component: {fileID: 8122467121740665303}
+  - component: {fileID: 8439978603664903561}
   - component: {fileID: 3444611299003063880}
   - component: {fileID: 3444611299003063927}
   - component: {fileID: 3444611297421524170}
@@ -805,6 +809,19 @@ CapsuleCollider2D:
   m_Offset: {x: 0.075824976, y: 0.4176607}
   m_Size: {x: 0.5447421, y: 0.7239108}
   m_Direction: 0
+--- !u!114 &8439978603664903561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8122467121740665326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49fc0971388b60c48aa15ece809c908b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnemy: 0
 --- !u!114 &3444611299003063880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -883,6 +900,17 @@ MonoBehaviour:
   hitEffectPrefab: {fileID: 1454490803532372921, guid: ce520020bce440044bc0d5d1f8feca7c,
     type: 3}
   charName: BasicMelee
+  dropOnDamaged: {fileID: 0}
+  damageColor: {r: 0, g: 0, b: 0, a: 0}
+  chopResistance: 0
+  strikeResistance: 0
+  pierceResistance: 0
+  voidResistance: 0
+  electricResistance: 0
+  fireResistance: 0
+  frostResistance: 0
+  isTurnRedWhenHurt: 0
+  spriteRenderer: {fileID: 0}
 --- !u!114 &3444611299433032736
 MonoBehaviour:
   m_ObjectHideFlags: 0
