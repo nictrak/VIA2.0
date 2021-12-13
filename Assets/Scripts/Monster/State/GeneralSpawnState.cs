@@ -19,6 +19,12 @@ public class GeneralSpawnState : MonsterStateBehaviour
     private TriggerRange innerRange;
     [SerializeField]
     private float randomRadius;
+    
+    [SerializeField]
+    private float magicBulletPosX;
+
+        [SerializeField]
+    private float magicBulletPosY;
 
     private int delayCounter;
 
