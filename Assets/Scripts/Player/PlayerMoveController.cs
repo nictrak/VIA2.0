@@ -97,7 +97,6 @@ public class PlayerMoveController : MonoBehaviour
     }
     private void UpdateMoveDirection()
     {
-        Debug.Log(playerAttackController.IsAttack());
         if (!playerAttackController.IsAttack())
         {
             moveDirection = GetInputMoveDirection();
