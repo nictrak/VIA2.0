@@ -119,7 +119,7 @@ public class PlayerRenderer : MonoBehaviour
         }
         bodyAnimator.Play(stateToBodyStringHash[renderState] + " " + renderedString);
         armFrontAnimator.Play(stateToArmFrontStringHash[renderState] + " " + renderedString);
-        armBelowAnimator.Play(stateToArmBelowStringHash[renderState] + " " + renderedString);
+        // armBelowAnimator.Play(stateToArmBelowStringHash[renderState] + " " + renderedString);
         weaponAnimator.Play(stateToWeaponStringHash[renderState] + " " + renderedString);
         effectAnimator.Play(stateToEffectStringHash[renderState] + " " + renderedString);
         lastRenderedDirectionString = renderedString;
