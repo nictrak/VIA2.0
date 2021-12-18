@@ -128,9 +128,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   renderState: 3
-  frame: 25
+  frame: 20
   damage: 20
-  stamina: 0
+  stamina: 5
   specialAttack: {fileID: 0}
   moveDistance: 0.2
   moveDelayFrame: 5
@@ -203,7 +203,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2012531012473312949}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.000019550323, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5360569423985050703}
@@ -222,9 +222,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   renderState: 2
-  frame: 25
+  frame: 20
   damage: 10
-  stamina: 0
+  stamina: 5
   specialAttack: {fileID: 0}
   moveDistance: 0.5
   moveDelayFrame: 5
