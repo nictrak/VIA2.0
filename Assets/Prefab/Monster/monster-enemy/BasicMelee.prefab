@@ -676,7 +676,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 4
   NormalNextState: 9
-  delayFrame: 35
+  delayFrame: 30
 --- !u!1 &6878539700156517197
 GameObject:
   m_ObjectHideFlags: 0
