@@ -23,6 +23,10 @@ public class HudController : MonoBehaviour
     private GameObject questPanel;
     [SerializeField]
     private KeyCode questKey;
+    [SerializeField]
+    private GameObject windowCraftPanel;
+    [SerializeField]
+    private KeyCode windowCraftKey;
 
     private bool canToggle;
     public static bool IsUsed;
@@ -31,6 +35,7 @@ public class HudController : MonoBehaviour
     {
         inventoryPanel.SetActive(false);
         shopPanel.SetActive(false);
+        windowCraftPanel.SetActive(false);
         canToggle = true;
         IsUsed = false;
     }
@@ -61,7 +66,11 @@ public class HudController : MonoBehaviour
                 timeSystem.DoStandardTime();
             }
         }
-        if (inventoryPanel.activeSelf || craftingCorePanel.activeSelf)
+        if (Input.GetKeyDown(windowCraftKey) && canToggle)
+        {
+            windowCraftPanel.SetActive(!windowCraftPanel.activeSelf);
+        }
+        if (inventoryPanel.activeSelf || craftingCorePanel.activeSelf || windowCraftPanel.activeSelf)
         {
             IsUsed = true;
         }

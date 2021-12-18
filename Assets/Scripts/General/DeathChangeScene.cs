@@ -8,6 +8,8 @@ public class DeathChangeScene : MonoBehaviour
     [SerializeField]
     private string sceneName;
     [SerializeField]
+    private bool testModeOn;
+    [SerializeField]
     private int delayFrame;
     [SerializeField]
     private Vector3 newPosition;
@@ -28,8 +30,11 @@ public class DeathChangeScene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CheckIsAlreadyDead();
-        RunAnimationThenChangeSceneIfDead();
+        if (!testModeOn){
+            CheckIsAlreadyDead();
+            RunAnimationThenChangeSceneIfDead();
+        }
+
     }
     private void CheckIsAlreadyDead()
     {

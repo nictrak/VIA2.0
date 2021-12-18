@@ -47,6 +47,7 @@ MonoBehaviour:
   NormalNextState: 5
   delayFrame: 65
   target: {fileID: 3626388922457289444}
+  blocker: {fileID: 0}
 --- !u!1 &1552283714
 GameObject:
   m_ObjectHideFlags: 0
@@ -213,7 +214,7 @@ Transform:
   m_GameObject: {fileID: 3626388920737731472}
   m_LocalRotation: {x: 0, y: 0, z: 0.38268343, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.51188, y: 0.51188, z: 0.51188}
   m_Children: []
   m_Father: {fileID: 3626388921349848320}
   m_RootOrder: 1
@@ -567,12 +568,14 @@ MonoBehaviour:
   NormalNextState: 6
   spawnedPrefab: {fileID: 7502476381054501942, guid: d13a01e0f77b9e54d9feb82e5393a3a4,
     type: 3}
-  delayFrame: 40
+  delayFrame: 30
   velocity: 0.15
-  outerRangeNextState: 1
+  outerRangeNextState: 0
   outerRange: {fileID: 339064514}
   innerRange: {fileID: 579494116}
-  randomRadius: 1.5
+  randomRadius: 1
+  magicBulletPosX: 0
+  magicBulletPosY: 0
 --- !u!1 &3626388922023832323
 GameObject:
   m_ObjectHideFlags: 0
@@ -958,7 +961,7 @@ MonoBehaviour:
   isHurtBreak: 1
   isHaveEightDirection: 1
   mostOuterRange: {fileID: 339064514}
-  tokenStates: 
+  tokenStates: 03000000
 --- !u!114 &3626388922457289457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -977,6 +980,18 @@ MonoBehaviour:
   hitEffectPrefab: {fileID: 1454490803532372921, guid: ce520020bce440044bc0d5d1f8feca7c,
     type: 3}
   charName: 
+  dropOnDamaged: {fileID: 0}
+  damageColor: {r: 0, g: 0, b: 0, a: 0}
+  chopResistance: 0
+  strikeResistance: 0
+  pierceResistance: 0
+  voidResistance: 0
+  electricResistance: 0
+  fireResistance: 0
+  frostResistance: 0
+  isTurnRedWhenHurt: 1
+  spriteRenderer: {fileID: 0}
+  knockbackRange: 0.5
 --- !u!114 &3626388922457289463
 MonoBehaviour:
   m_ObjectHideFlags: 0

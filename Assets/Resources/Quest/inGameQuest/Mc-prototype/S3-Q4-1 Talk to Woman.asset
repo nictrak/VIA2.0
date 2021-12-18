@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 550863f633806484ebf2126aff974574, type: 3}
+  m_Name: S3-Q4-1 Talk to Woman
+  m_EditorClassIdentifier: 
+  initialProgress: 0
+  goalProgress: 1
+  triggerMessage: Talk Woman
+  makeTrueAfterComplete: []
+  makeFalseAfterComplete: []
+  description: 'Talk Woman '
+  nextQuest: {fileID: 11400000, guid: 0e279be424ba1fa489e331a27edebefe, type: 2}
+  questRewards:
+  - {fileID: 11400000, guid: 1d6e52ca43c517d47a90971b4205bc78, type: 2}
+  rewardNumbers: 01000000

@@ -6,30 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/level/unuse-map/World-Rabbit/A-test/Start/Start-Rabbit-W-S1-0-1.unity
-    guid: 8858e7821d36f244a83d2ebf3ce65810
-  - enabled: 1
-    path: Assets/Scenes/level/unuse-map/World-Rabbit/A-test/Start/Start-Rabbit-W-S1-0-2.unity
-    guid: 1e4b6cda6d9817246aecab732bd14bbe
-  - enabled: 1
-    path: Assets/Scenes/level/unuse-map/World-Rabbit/A-test/Start/Start-Rabbit-W-S1-1-1.unity
-    guid: 59295f6043a949a4bbac885119283319
-  - enabled: 1
-    path: Assets/Scenes/level/unuse-map/World-Rabbit/A-test/Start/Start-Rabbit-W-S1-2-1.unity
-    guid: d425703ad8604b64abc0288512b96dc4
-  - enabled: 1
-    path: Assets/Scenes/level/unuse-map/World-Rabbit/A-test/Start/Start-Rabbit-W-S1-2-2.unity
-    guid: 7dd596daf328de549ab691254dee131b
-  - enabled: 1
-    path: Assets/Scenes/level/unuse-map/World-Rabbit/A-test/Start/Start-Rabbit-W-S1-3-1.unity
-    guid: 7864966f7f7276d41b801df618cad3cb
-  - enabled: 1
-    path: Assets/Scenes/level/unuse-map/World-Rabbit/A-test/Start/Start-Rabbit-W-S1-4-1.unity
-    guid: b347b20f9d87b514d87b3086c63fbb11
-  - enabled: 1
-    path: Assets/Scenes/level/unuse-map/World-Rabbit/B-test/HQ.unity
-    guid: 2aeac3cdde20cee43bb99f904fb7fff2
-  - enabled: 1
     path: Assets/Scenes/Prototype-Menu.unity
     guid: eacb1b51e1822aa45ad2a32a65a58702
+  - enabled: 1
+    path: Assets/Scenes/level/Mc-top-level/Mc-quest-prototype-state-1.unity
+    guid: c9f34a1b3567fd241a8a6025b3b0c7a7
+  - enabled: 1
+    path: Assets/Scenes/level/Mc-top-level/Mc-quest-prototype-state-2.unity
+    guid: f06b2860733de814b9b53152d648ab51
+  - enabled: 1
+    path: Assets/Scenes/level/Mc-top-level/Mc-quest-prototype-state-3.unity
+    guid: a50b322115bf2234fb232254cd5dc674
+  - enabled: 1
+    path: Assets/Scenes/level/Mc-top-level/Mc-quest-prototype-state-4.unity
+    guid: da93d070a7e9e1b43bb31ee9de1c3648
+  - enabled: 1
+    path: Assets/Scenes/level/Mc-top-level/Mc-quest-prototype-state-5.unity
+    guid: 5d6c123303e27714f8b6d30acd9d8490
+  - enabled: 1
+    path: Assets/Scenes/level/Mc-top-level/Mc-quest-prototype-state-6-Boss.unity
+    guid: ae2f48b2b5a29a343b2b798a247d28e3
   m_configObjects: {}

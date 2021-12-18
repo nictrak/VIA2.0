@@ -705,6 +705,7 @@ MonoBehaviour:
   frostResistance: 0
   isTurnRedWhenHurt: 1
   spriteRenderer: {fileID: 0}
+  knockbackRange: 0.5
 --- !u!114 &894784140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -796,6 +797,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Prototype-Menu
+  testModeOn: 1
   delayFrame: 100
   newPosition: {x: 10000, y: 10000, z: 0}
   mainObject: {fileID: 4634483407928223877}
@@ -812,6 +814,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Prototype-Menu
+  testModeOn: 0
   delayFrame: 100
   newPosition: {x: 10000, y: 10000, z: 0}
   mainObject: {fileID: 4634483407928223877}
