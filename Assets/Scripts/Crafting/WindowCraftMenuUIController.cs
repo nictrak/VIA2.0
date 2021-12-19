@@ -34,7 +34,7 @@ public class WindowCraftMenuUIController : MonoBehaviour
 
         for (int i = 0; i < recipesList.Count; i++){
             if(recipeSlotUIs.Count == i) {
-                recipeSlotUIs.Add(Instantiate(recipeSlotUIPrefab, recipeSlotUIParent, false));
+                // recipeSlotUIs.Add(Instantiate(recipeSlotUIPrefab, recipeSlotUIParent, false));
             } else if (recipeSlotUIs[i] == null) {
                 recipeSlotUIs[i] = Instantiate(recipeSlotUIPrefab, recipeSlotUIParent, false);
             }
