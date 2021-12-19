@@ -117,6 +117,7 @@ public class PlayerRenderer : MonoBehaviour
         {
             renderedString = directionString;
         }
+        
         bodyAnimator.Play(stateToBodyStringHash[renderState] + " " + renderedString);
         armFrontAnimator.Play(stateToArmFrontStringHash[renderState] + " " + renderedString);
         // armBelowAnimator.Play(stateToArmBelowStringHash[renderState] + " " + renderedString);

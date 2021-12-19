@@ -52,7 +52,7 @@ public class Health : MonoBehaviour
     public bool IsHurt { get => isHurt; set => isHurt = value; }
 
     [SerializeField]
-    private SpriteRenderer spriteRenderer;
+    private List<SpriteRenderer> spriteRenderer;
     [SerializeField]
     [Range(0.0F, 1.0F)]
     private float knockbackRange = 0.5f;
@@ -80,7 +80,14 @@ public class Health : MonoBehaviour
         {
             UpdateHealthBar();
         }
-        if(attacked && Time.time > attackedTime + 0.25f && spriteRenderer!=null) spriteRenderer.color = Color.white;
+        if(attacked && Time.time > attackedTime + 0.25f && spriteRenderer!=null ) {
+            foreach (SpriteRenderer part in spriteRenderer) 
+                {
+                    if (part != null){
+                        part.color = Color.white;
+                    }
+                }
+        }
     }
     private void FixedUpdate()
     {
@@ -100,7 +107,13 @@ public class Health : MonoBehaviour
         int calculateDamage = CalculateDamage(damage, damageSubType);
         currentHealth = currentHealth - calculateDamage;
         if(calculateDamage > 0 && spriteRenderer!=null){
-            spriteRenderer.color = Color.red;
+            foreach (SpriteRenderer part in spriteRenderer) 
+            {
+                if (part != null){
+                    part.color = Color.red;
+                }
+            }
+            // spriteRenderer.color = Color.red;
             attacked = true;
 		    attackedTime = Time.time;
             if(rb!=null && isKnockback){
