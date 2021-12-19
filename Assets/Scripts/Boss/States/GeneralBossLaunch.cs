@@ -9,6 +9,9 @@ public class GeneralBossLaunch : BossStateBehaviour
     private List<Vector2> positions;
 
     [SerializeField]
+    private bool isBasedOnSelfPosition = true;
+
+    [SerializeField]
     private float velocity;
 
     [SerializeField]
@@ -41,7 +44,11 @@ public class GeneralBossLaunch : BossStateBehaviour
                 for(int i = 0; i < positions.Count; i++)
                 {
                     NeedTarget spawned = Instantiate(spawnedPrefab);
-                    spawned.SetTarget(transform.position, positions[i], velocity);
+                    Vector2 targetPosition = positions[i];
+                    if(isBasedOnSelfPosition){
+                        targetPosition += (Vector2)transform.position;
+                    }
+                    spawned.SetTarget( (Vector2)transform.position, targetPosition, velocity);
                 }
                 delayCounter = 0;
             } else {
