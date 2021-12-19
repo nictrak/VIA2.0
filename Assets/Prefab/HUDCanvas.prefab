@@ -14377,6 +14377,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3849637922462617013, guid: 3c6da1039ed58bb45bc0ada5fcf18484,
+        type: 3}
+      propertyPath: recipeSlotUIs.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3849637922462617014, guid: 3c6da1039ed58bb45bc0ada5fcf18484,
         type: 3}
       propertyPath: m_AnchorMin.y
