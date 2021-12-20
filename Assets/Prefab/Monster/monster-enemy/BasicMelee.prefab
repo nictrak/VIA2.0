@@ -1044,7 +1044,8 @@ MonoBehaviour:
   fireResistance: 0
   frostResistance: 0
   isTurnRedWhenHurt: 1
-  spriteRenderer: {fileID: 6878539700156517199}
+  spriteRenderer:
+  - {fileID: 6878539700156517199}
   knockbackRange: 0.046
 --- !u!114 &407601076
 MonoBehaviour:
