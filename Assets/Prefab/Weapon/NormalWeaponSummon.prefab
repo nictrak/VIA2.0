@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32eea81e8aa724546a1856510929b9d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  renderState: 4
+  renderState: 11
   frame: 40
   damage: 30
   stamina: 20
@@ -104,8 +104,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8770234032558266342}
   - component: {fileID: 7110805451372315936}
+  - component: {fileID: -2046727266640745384}
   m_Layer: 0
-  m_Name: NormalWeaponbase
+  m_Name: NormalWeaponSummon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -158,6 +159,19 @@ MonoBehaviour:
   - {fileID: 3784841240481061866}
   - {fileID: 1752601733942143437}
   specialAttackPool: {fileID: 6885609922959711253}
+--- !u!114 &-2046727266640745384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535133713017519570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 680a715e39fd9a7418617f1e1a5f8c35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTimeFrame: 100
 --- !u!1 &2396988151931909828
 GameObject:
   m_ObjectHideFlags: 0
@@ -460,7 +474,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32eea81e8aa724546a1856510929b9d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  renderState: 3
+  renderState: 10
   frame: 25
   damage: 20
   stamina: 0
@@ -554,7 +568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32eea81e8aa724546a1856510929b9d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  renderState: 2
+  renderState: 9
   frame: 25
   damage: 10
   stamina: 0

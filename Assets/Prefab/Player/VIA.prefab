@@ -430,6 +430,9 @@ MonoBehaviour:
   - Via area attack
   - Via Dead
   - Via null
+  - Via attack 2-1 body
+  - Via attack 2-2 body
+  - Via attack 2-3 body
   animatorArmFrontStringHeads:
   - Via Stand arm hold weapon1
   - Via Stand arm hold weapon1
@@ -440,6 +443,9 @@ MonoBehaviour:
   - Via null
   - Via null
   - Via null
+  - Via attack 2-1 arm
+  - Via attack 2-2 arm
+  - Via attack 2-3 arm
   animatorArmBelowStringHeads:
   - Via null
   - Via null
@@ -447,6 +453,9 @@ MonoBehaviour:
   - Via null
   - Via null
   - 
+  - Via null
+  - Via null
+  - Via null
   - Via null
   - Via null
   - Via null
@@ -460,6 +469,9 @@ MonoBehaviour:
   - Via null
   - Via null
   - Via null
+  - Via attack 2-1 weapon
+  - Via attack 2-2 weapon
+  - Via attack 2-3 weapon
   animatorEffectStringHeads:
   - Via null
   - Via null
@@ -470,7 +482,10 @@ MonoBehaviour:
   - Via null
   - Via null
   - Via null
-  renderStatesSetupSequence: 000000000100000002000000030000000400000006000000050000000800000007000000
+  - Via null
+  - Via null
+  - Via null
+  renderStatesSetupSequence: 000000000100000002000000030000000400000006000000050000000800000007000000090000000a0000000b000000
   bodyAnimator: {fileID: 2858453401383727426}
   weaponAnimator: {fileID: 5497237861919302010}
   armFrontAnimator: {fileID: 230916243064135698}
