@@ -4240,8 +4240,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3048086345109389169, guid: cf05b2614ab18c649872a9d7758bcde8,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 222c1fe4795f67f429ac9aba73f15271, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5522,8 +5521,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _money: 500
   startingItems:
-  - {fileID: 11400000, guid: 3379b14b38cb0e241977682e32a54afd, type: 2}
-  - {fileID: 11400000, guid: af75609591bad584abc70e65f391be17, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 11400000, guid: c13ecb50a1692c346b8e2f2873c95b29, type: 2}
   - {fileID: 11400000, guid: e879342816bc5084f9345af287d31af8, type: 2}
   - {fileID: 11400000, guid: fb65723f5c556474eb0353e05a63da1b, type: 2}
@@ -6906,6 +6905,7 @@ MonoBehaviour:
   - {fileID: 3472931758417753209}
   - {fileID: 3472931757907280524}
   weaponSlotIndex: 1
+  startingWeapon: {fileID: 0}
 --- !u!1 &3472931758999423559
 GameObject:
   m_ObjectHideFlags: 0
@@ -7155,7 +7155,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2937047895476085584, guid: 31f4c475c5750fa409fda6c542d1f83d,
+  m_Sprite: {fileID: -7584833386708112887, guid: 35863c8b644542d4d969402314924a4f,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -7863,6 +7863,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageTextPrefab: {fileID: 2018188255140969107, guid: 803501c9910ca214f99f88130ef6e05f,
     type: 3}
+  originTranslate: {x: 0, y: 0, z: 0}
+  randomRange: 0
 --- !u!1 &3472931759273902053
 GameObject:
   m_ObjectHideFlags: 0
@@ -8003,8 +8005,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2366726274241941888, guid: abc0584209e21aa4ca24bdd2105f6e12,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: e2f6c91184972214fbc94ed892202a48, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8636,6 +8637,8 @@ MonoBehaviour:
   questsPanel: {fileID: 0}
   questPanel: {fileID: 0}
   questKey: 0
+  windowCraftPanel: {fileID: 0}
+  windowCraftKey: 0
 --- !u!1 &3472931759617255541
 GameObject:
   m_ObjectHideFlags: 0
@@ -12766,7 +12769,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7910774791481192074}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
@@ -12791,9 +12794,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '1
-
-'
+  m_Text: 1
 --- !u!1 &7983265608123384652
 GameObject:
   m_ObjectHideFlags: 0

@@ -6538,7 +6538,7 @@ MonoBehaviour:
   - {fileID: 5498659627958966068}
   - {fileID: 5498659627464892865}
   weaponSlotIndex: 1
-  startingWeapon: {fileID: 11400000, guid: 3379b14b38cb0e241977682e32a54afd, type: 2}
+  startingWeapon: {fileID: 0}
 --- !u!1 &5498659626400032497
 GameObject:
   m_ObjectHideFlags: 0
@@ -10068,8 +10068,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _money: 500
   startingItems:
-  - {fileID: 11400000, guid: 3379b14b38cb0e241977682e32a54afd, type: 2}
-  - {fileID: 11400000, guid: af75609591bad584abc70e65f391be17, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 11400000, guid: c13ecb50a1692c346b8e2f2873c95b29, type: 2}
   - {fileID: 11400000, guid: e879342816bc5084f9345af287d31af8, type: 2}
   - {fileID: 11400000, guid: fb65723f5c556474eb0353e05a63da1b, type: 2}
