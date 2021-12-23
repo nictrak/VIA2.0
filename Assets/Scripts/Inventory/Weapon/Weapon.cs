@@ -14,6 +14,10 @@ public class Weapon : MonoBehaviour
     private List<Attack> attackObjects;
     [SerializeField]
     private GameObject specialAttackPool;
+    [SerializeField]
+    private bool isSommonWeapon;
+
+    private bool sommonWeapon;
     public List<Modifier> ModifiersPrefab { get => modifiersPrefab; set => modifiersPrefab = value; }
     public List<Attack> AttackObjects { get => attackObjects; set => attackObjects = value; }
     public List<string> AttackStrings { get => attackStrings; set => attackStrings = value; }
@@ -23,6 +27,7 @@ public class Weapon : MonoBehaviour
     void Start()
     {
         ignoredModifiers = new List<string>();
+        sommonWeapon = isSommonWeapon;
     }
 
     // Update is called once per frame
@@ -57,5 +62,10 @@ public class Weapon : MonoBehaviour
             return spawned;
         }
         return null;
+    }
+
+    public bool IsSummonWeapon()
+    {
+        return sommonWeapon;
     }
 }

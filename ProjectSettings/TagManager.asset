@@ -18,6 +18,7 @@ TagManager:
   - EnemyTarget
   - Inventory
   - HUD
+  - Weapon
   layers:
   - Default
   - TransparentFX

@@ -34,6 +34,10 @@ public class CraftingCoreHUD : MonoBehaviour
             {
                 NextCycleCraftingCoreIndex();
             }
+            if (Input.GetKeyDown(KeyCode.T))
+            {
+                SummonCraftingCore();
+            }
         }
     }
     private CraftingCore GetCycleCraftingCores(int index)
@@ -72,7 +76,8 @@ public class CraftingCoreHUD : MonoBehaviour
         UpdateAllSprite();
     }
     private void SummonCraftingCore()
-    {
+    {   
+        Debug.Log(currentIndex);
         Instantiate(craftingCores[currentIndex]);
     }
     private void UpdateAllSprite()

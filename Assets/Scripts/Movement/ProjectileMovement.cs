@@ -90,7 +90,7 @@ public class ProjectileMovement : NeedTarget
         this.endPosition = target;
         this.lifeTime = CalculateTime(start, endPosition, velocity);
         this.currentLavitateVelocity = CalculateStartLavitateVelocity(lifeTime, gravity);
-        Debug.Log(currentLavitateVelocity);
+        // Debug.Log(currentLavitateVelocity);
         planeVector = CalculatePlaneVector(start, endPosition, velocity);
         lavitateValue = 0;
         lifeCounter = 0;

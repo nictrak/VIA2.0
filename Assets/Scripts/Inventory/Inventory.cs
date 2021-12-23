@@ -171,7 +171,7 @@ public class Inventory : MonoBehaviour
             if(ItemSlots[i].Item == item)
             {
                 count += ItemSlots[i].Amount;
-                Debug.Log(ItemSlots[i].Amount);
+                // Debug.Log(ItemSlots[i].Amount);
             }
         }
         return count;
