@@ -124,7 +124,7 @@ public class Health : MonoBehaviour
         if (damage > 0 && doHurt)
         {
             isHurt = true;
-            if (isTurnRedWhenHurt)
+            if (isTurnRedWhenHurt && gameObject.tag =="Player")
             {
                 ScreenRed.StartDamage();
             }

@@ -1776,7 +1776,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1590316508051463931}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
@@ -1801,9 +1801,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '1
-
-'
+  m_Text: 1
 --- !u!1 &1870232884910566600
 GameObject:
   m_ObjectHideFlags: 0
@@ -8467,7 +8465,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 539608af302184e479cbeb265856eb2a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 222c1fe4795f67f429ac9aba73f15271, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10062,8 +10060,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _money: 500
   startingItems:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: c7a8016507f68fd49af1bc6ca1d94ef6, type: 2}
+  - {fileID: 11400000, guid: e8b6da3d7bca40e47902a9d1c9d1a007, type: 2}
   - {fileID: 11400000, guid: c13ecb50a1692c346b8e2f2873c95b29, type: 2}
   - {fileID: 11400000, guid: e879342816bc5084f9345af287d31af8, type: 2}
   - {fileID: 11400000, guid: fb65723f5c556474eb0353e05a63da1b, type: 2}
@@ -11504,9 +11502,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '1
-
-'
+  m_Text: 1
 --- !u!1 &6581464839668800672
 GameObject:
   m_ObjectHideFlags: 0
