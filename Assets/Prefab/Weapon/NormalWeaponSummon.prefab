@@ -159,7 +159,7 @@ MonoBehaviour:
   - {fileID: 3784841240481061866}
   - {fileID: 1752601733942143437}
   specialAttackPool: {fileID: 6885609922959711253}
-  isSommonWeapon: 1
+  isSummonWeapon: 1
 --- !u!114 &-2046727266640745384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 680a715e39fd9a7418617f1e1a5f8c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeTimeFrame: 1000
+  lifeTimeFrame: 100
 --- !u!1 &2396988151931909828
 GameObject:
   m_ObjectHideFlags: 0

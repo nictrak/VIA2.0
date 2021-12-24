@@ -141,6 +141,7 @@ public class InventoryManager : MonoBehaviour
 
     private void Unequip(ItemSlot itemSlot)
     {
+        Debug.Log("Unequip weapon");
         EquippableItem equippableItem = itemSlot.Item as EquippableItem;
         if(equippableItem != null)
         {

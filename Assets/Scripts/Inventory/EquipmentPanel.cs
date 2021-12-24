@@ -120,4 +120,14 @@ public class EquipmentPanel : MonoBehaviour
         }
         return count;
     }
+
+    public void ReEquipWeaponFromSummon()
+    {
+        EquipmentSlots = equipmentSlotsParent.GetComponentsInChildren<EquipmentSlot>();
+        if(startingWeapon != null)
+        {
+            EquipmentSlots[weaponSlotIndex].Item = startingWeapon;
+            EquipmentSlots[weaponSlotIndex].Amount = 1;
+        }
+    }
 }

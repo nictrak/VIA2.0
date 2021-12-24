@@ -15,9 +15,9 @@ public class Weapon : MonoBehaviour
     [SerializeField]
     private GameObject specialAttackPool;
     [SerializeField]
-    private bool isSommonWeapon;
+    private bool isSummonWeapon;
 
-    private bool sommonWeapon;
+    private bool summonWeapon;
     public List<Modifier> ModifiersPrefab { get => modifiersPrefab; set => modifiersPrefab = value; }
     public List<Attack> AttackObjects { get => attackObjects; set => attackObjects = value; }
     public List<string> AttackStrings { get => attackStrings; set => attackStrings = value; }
@@ -27,7 +27,7 @@ public class Weapon : MonoBehaviour
     void Start()
     {
         ignoredModifiers = new List<string>();
-        sommonWeapon = isSommonWeapon;
+        summonWeapon = isSummonWeapon;
     }
 
     // Update is called once per frame
@@ -66,6 +66,17 @@ public class Weapon : MonoBehaviour
 
     public bool IsSummonWeapon()
     {
-        return sommonWeapon;
+        return summonWeapon;
+    }
+    void OnDestroy()
+    {
+        if (summonWeapon){
+            Debug.Log("OnDestroy Weapon Summon");
+            InventoryManager inventoryManager = GameObject.FindGameObjectWithTag("inventoryPanel").GetComponent<InventoryManager>();
+            inventoryManager.EquipmentPanel.RemoveItem(inventoryManager.EquipmentPanel.GetItemWeapon());
+
+            inventoryManager.EquipmentPanel.ReEquipWeaponFromSummon();
+        }
+        
     }
 }

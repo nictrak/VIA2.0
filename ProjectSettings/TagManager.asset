@@ -19,6 +19,7 @@ TagManager:
   - Inventory
   - HUD
   - Weapon
+  - inventoryPanel
   layers:
   - Default
   - TransparentFX
