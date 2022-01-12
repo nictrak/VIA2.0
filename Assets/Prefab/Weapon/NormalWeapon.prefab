@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   renderState: 3
-  frame: 20
+  frame: 15
   damage: 20
   stamina: 5
   specialAttack: {fileID: 0}
@@ -222,7 +222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   renderState: 2
-  frame: 20
+  frame: 15
   damage: 10
   stamina: 5
   specialAttack: {fileID: 0}
@@ -347,12 +347,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   renderState: 4
-  frame: 40
+  frame: 30
   damage: 30
   stamina: 20
   specialAttack: {fileID: 0}
   moveDistance: 0.8
-  moveDelayFrame: 20
+  moveDelayFrame: 15
 --- !u!114 &4486096829806423322
 MonoBehaviour:
   m_ObjectHideFlags: 0
