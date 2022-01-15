@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GeneralBossLaunch : BossStateBehaviour
 {
+    [SerializeField]
+    private float maxRandom = 0;
 
     [SerializeField]
     private List<Vector2> positions;
@@ -48,6 +50,7 @@ public class GeneralBossLaunch : BossStateBehaviour
                     if(isBasedOnSelfPosition){
                         targetPosition += (Vector2)transform.position;
                     }
+                    targetPosition += new Vector2(Random.Range(-maxRandom, maxRandom), Random.Range(-maxRandom, maxRandom)) ;
                     spawned.SetTarget( (Vector2)transform.position, targetPosition, velocity);
                 }
                 delayCounter = 0;
