@@ -15,22 +15,33 @@ public class Attack : MonoBehaviour
     [SerializeField]
     private MonoBehaviour specialAttack;
     [SerializeField]
-    private float moveDistance;
+    private int turningPointFrame;
     [SerializeField]
-    private float moveDelayFrame;
+    private int moveDelayFrame;
+    [SerializeField]
+    private float maxVelocity;
 
     private AttackHitbox attackHitbox;
+    private float accelerateRate;
+    private float slowRate;
 
     public int Frame { get => frame; set => frame = value; }
     public PlayerRenderer.PlayerRenderState RenderState { get => renderState; set => renderState = value; }
     public int Stamina { get => stamina; set => stamina = value; }
-    public float MoveDistance { get => moveDistance; set => moveDistance = value; }
-    public float MoveDelayFrame { get => moveDelayFrame; set => moveDelayFrame = value; }
+    public int MoveDelayFrame { get => moveDelayFrame; set => moveDelayFrame = value; }
+    public int TurningPointFrame { get => turningPointFrame; set => turningPointFrame = value; }
+    public float MaxVelocity { get => maxVelocity; set => maxVelocity = value; }
+    public float AccelerateRate { get => accelerateRate; set => accelerateRate = value; }
+    public float SlowRate { get => slowRate; set => slowRate = value; }
 
     // Start is called before the first frame update
     void Start()
     {
         attackHitbox = GetComponent<AttackHitbox>();
+        int accelerateFrame = turningPointFrame - moveDelayFrame;
+        int slowFrame = frame - turningPointFrame;
+        accelerateRate = maxVelocity / accelerateFrame;
+        slowRate = maxVelocity / slowFrame;
     }
 
     // Update is called once per frame

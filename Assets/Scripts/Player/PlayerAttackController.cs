@@ -14,6 +14,8 @@ public class PlayerAttackController : MonoBehaviour
     private int currentAnimatedIndex;
     private List<Attack> attackObjects;
     private List<string> attackStrings;
+    private float currentVelocity;
+
 
     public Weapon Weapon { get => weapon; set => weapon = value; }
 
@@ -25,6 +27,7 @@ public class PlayerAttackController : MonoBehaviour
         animatedAttackString = "";
         playerStaminaController = GetComponent<PlayerStaminaController>();
         currentAnimatedIndex = 0;
+        currentVelocity = 0;
     }
 
     // Update is called once per frame
@@ -54,7 +57,11 @@ public class PlayerAttackController : MonoBehaviour
     }
     private bool IsFrameCounterHitMoveDelay(int index)
     {
-        return attackFrameCounter == attackObjects[index].MoveDelayFrame;
+        return attackFrameCounter >= attackObjects[index].MoveDelayFrame;
+    }
+    private bool IsFrameCounterHitTurningPoint(int index)
+    {
+        return attackFrameCounter >= attackObjects[index].TurningPointFrame;
     }
     public void AddAttack(string attackKey)
     {
@@ -94,12 +101,21 @@ public class PlayerAttackController : MonoBehaviour
             int index = attackStrings.IndexOf(animatedAttackString);
             if (IsFrameCounterHitMoveDelay(currentAnimatedIndex))
             {
-                res = direction.normalized * attackObjects[currentAnimatedIndex].MoveDistance;
+                //res = direction.normalized * attackObjects[currentAnimatedIndex].MoveDistance;
+                res = direction.normalized * currentVelocity;
+                if (IsFrameCounterHitTurningPoint(currentAnimatedIndex))
+                {
+                    currentVelocity -= attackObjects[currentAnimatedIndex].SlowRate;
+                }
+                else
+                {
+                    currentVelocity += attackObjects[currentAnimatedIndex].AccelerateRate;
+                }
             }
             if (IsFrameCounterHit(index))
             {
-                UpdateAttackAnimate(playerRenderer, direction);
                 attackFrameCounter = 0;
+                currentVelocity = 0;
             }
             else
             {
