@@ -114,6 +114,7 @@ public class PlayerAttackController : MonoBehaviour
             }
             if (IsFrameCounterHit(index))
             {
+                UpdateAttackAnimate(playerRenderer, direction);
                 attackFrameCounter = 0;
                 currentVelocity = 0;
             }

@@ -132,9 +132,9 @@ MonoBehaviour:
   damage: 20
   stamina: 0
   specialAttack: {fileID: 0}
-  turningPointFrame: 20
-  moveDelayFrame: 5
-  maxVelocity: 0.2
+  turningPointFrame: 18
+  moveDelayFrame: 3
+  maxVelocity: 0.05
 --- !u!114 &2512565328292902417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,9 +227,9 @@ MonoBehaviour:
   damage: 10
   stamina: 0
   specialAttack: {fileID: 0}
-  turningPointFrame: 20
-  moveDelayFrame: 5
-  maxVelocity: 0.2
+  turningPointFrame: 18
+  moveDelayFrame: 3
+  maxVelocity: 0.05
 --- !u!114 &3975202978136180043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -355,7 +355,7 @@ MonoBehaviour:
   specialAttack: {fileID: 0}
   turningPointFrame: 30
   moveDelayFrame: 10
-  maxVelocity: 0.2
+  maxVelocity: 0.07
 --- !u!114 &4486096829806423322
 MonoBehaviour:
   m_ObjectHideFlags: 0
