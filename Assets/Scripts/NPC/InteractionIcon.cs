@@ -8,25 +8,36 @@ public class InteractionIcon : MonoBehaviour
     private string tagTarget;
 
     [SerializeField]
+    private float yaxis;
+
+    [SerializeField]
     private GameObject interactionMarkerPrefab;
     // Start is called before the first frame update
     private GameObject interactionMarker;
+
+    private bool trigger;
+    private Vector3 position;
     void Start()
     {
         // interactionMarker = gameObject.GetComponent(interactionMarkerPrefab);
+        position = gameObject.transform.position + new Vector3(0,yaxis,0);
+        trigger = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (trigger){
+            gameObject.transform.position = position;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == tagTarget)
         {
-            ShowMarker(gameObject.transform.position);
+            ShowMarker();
+            trigger = true;
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -34,6 +45,7 @@ public class InteractionIcon : MonoBehaviour
         if (collision.gameObject.tag == tagTarget)
         {
             ClearMarker();
+            trigger = false;
         }
     }
 
@@ -41,7 +53,7 @@ public class InteractionIcon : MonoBehaviour
     {
         return interactionMarker != null;
     }
-    private void ShowMarker(Vector3 position)
+    private void ShowMarker()
     {
         if (IsMarkerUsed())
         {
