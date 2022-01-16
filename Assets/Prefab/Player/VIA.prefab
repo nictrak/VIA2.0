@@ -503,7 +503,6 @@ GameObject:
   - component: {fileID: 745835280628814923}
   - component: {fileID: 1731373526}
   - component: {fileID: 555460185}
-  - component: {fileID: 5021280783552702038}
   m_Layer: 8
   m_Name: VIA
   m_TagString: Player
@@ -705,6 +704,7 @@ MonoBehaviour:
   frostResistance: 0
   isTurnRedWhenHurt: 1
   spriteRenderer: {fileID: 0}
+  knockbackRange: 0.5
 --- !u!114 &894784140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -737,7 +737,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4634483407928223877}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29c4dfe1d63ba2e41ab93954f5cee9e3, type: 3}
   m_Name: 
@@ -796,22 +796,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Prototype-Menu
-  delayFrame: 100
-  newPosition: {x: 10000, y: 10000, z: 0}
-  mainObject: {fileID: 4634483407928223877}
---- !u!114 &5021280783552702038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4634483407928223877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6edcff32c23c494c9779424e32fdcdf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: Prototype-Menu
+  testModeOn: 1
   delayFrame: 100
   newPosition: {x: 10000, y: 10000, z: 0}
   mainObject: {fileID: 4634483407928223877}
@@ -1005,13 +990,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.6, y: 2.8}
+  m_Size: {x: 4.125, y: 4.125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
