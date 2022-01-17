@@ -56,7 +56,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1624813212}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ModifierPool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,6 +170,7 @@ MonoBehaviour:
   NormalNextState: 5
   delayFrame: 20
   target: {fileID: 6618791823218120240}
+  blocker: {fileID: 0}
 --- !u!1 &337725379867403136
 GameObject:
   m_ObjectHideFlags: 0
@@ -381,7 +382,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.45837694, y: 0.28745773}
@@ -400,6 +401,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagTarget: PlayerTarget
+  monsterAttributes: {fileID: 0}
 --- !u!1 &337725380688118322
 GameObject:
   m_ObjectHideFlags: 0
@@ -522,6 +524,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagTarget: PlayerTarget
+  monsterAttributes: {fileID: 0}
 --- !u!1 &337725381203828529
 GameObject:
   m_ObjectHideFlags: 0
@@ -800,6 +803,7 @@ GameObject:
   - component: {fileID: 337725379924585465}
   - component: {fileID: 337725379924585470}
   - component: {fileID: 880358994}
+  - component: {fileID: 1973349593}
   m_Layer: 8
   m_Name: BasicCharge
   m_TagString: Enemy
@@ -988,10 +992,10 @@ MonoBehaviour:
   - dead
   - idle
   - charge
-  isHurtBreak: 0
+  isHurtBreak: 1
   isHaveEightDirection: 0
   mostOuterRange: {fileID: 1191059845}
-  tokenStates: 
+  tokenStates: 03000000
 --- !u!114 &337725379694729641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1035,7 +1039,19 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   hitEffectPrefab: {fileID: 1454490803532372921, guid: ce520020bce440044bc0d5d1f8feca7c,
     type: 3}
-  charName: 
+  charName: Monster
+  dropOnDamaged: {fileID: 0}
+  damageColor: {r: 0, g: 0, b: 0, a: 0}
+  chopResistance: 0
+  strikeResistance: 0
+  pierceResistance: 0
+  voidResistance: 0
+  electricResistance: 0
+  fireResistance: 0
+  frostResistance: 0
+  isTurnRedWhenHurt: 1
+  spriteRenderer: {fileID: 6618791822644928261}
+  knockbackRange: 0.064
 --- !u!114 &337725379924585470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1062,6 +1078,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ModifierPool: {fileID: 1624813211}
+--- !u!114 &1973349593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6618791823218120240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b628e686251b8cf429fda6114ed8c841, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aimPrefab: {fileID: 0}
 --- !u!1 &7826640968731279261
 GameObject:
   m_ObjectHideFlags: 0
