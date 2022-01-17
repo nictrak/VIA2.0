@@ -154,7 +154,8 @@ public class PlayerMoveController : MonoBehaviour
         }
         else
         {
-            playerRenderer.UpdateAnimation(PlayerRenderer.PlayerRenderState.Static, moveDirection);
+            Vector2 mouseDirection = CalMouseDirection();
+            playerRenderer.UpdateAnimation(PlayerRenderer.PlayerRenderState.Static, mouseDirection);
         }
     }
     // End of move method
