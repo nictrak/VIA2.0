@@ -10,13 +10,13 @@ public class QuestsPanel : MonoBehaviour
     [SerializeField]
     private float unitHeight;
 
-    private int currentQuestCount;
     private Vector2 startPosition;
     private Vector2 accumulatePosition;
+    private List<RectTransform> units;
     // Start is called before the first frame update
     void Start()
     {
-        currentQuestCount = 0;
+        units = new List<RectTransform>();
         startPosition = new Vector2(0, -unitHeight / 2);
         accumulatePosition = new Vector2(0, -unitHeight);
     }
@@ -24,12 +24,17 @@ public class QuestsPanel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        while(currentQuestCount < QuestSystem.GetQuestsCount())
+        while(units.Count < QuestSystem.GetQuestsCount())
         {
             RectTransform spawned = Instantiate(questUnitPrefab);
             spawned.parent = transform;
-            spawned.anchoredPosition = startPosition + (accumulatePosition * currentQuestCount);
-            currentQuestCount++;
+            spawned.anchoredPosition = startPosition + (accumulatePosition * units.Count);
+            units.Add(spawned);
+        }
+        for(int i = 0; i < units.Count; i++)
+        {
+            units[i].GetComponent<QuestUnitPanel>().DescriptionText.text 
+                = QuestSystem.GetQuestDescriptionFromIndex(i);
         }
     }
 }
