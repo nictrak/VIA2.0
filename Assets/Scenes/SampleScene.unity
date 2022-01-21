@@ -4651,6 +4651,21 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6475018249491808130}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6475018249491808135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6475018249491808131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b84a18ee2573094fa48527e7376bd82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questUnitPrefab: {fileID: 7886421431096960690, guid: 131a8bd0c3fdb444f934cad6ee07b7fb,
+    type: 3}
+  unitHeight: 100
 --- !u!1001 &7184383322915531996
 PrefabInstance:
   m_ObjectHideFlags: 0
