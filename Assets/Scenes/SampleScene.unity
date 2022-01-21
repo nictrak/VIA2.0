@@ -1185,6 +1185,60 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb71296f129c18141a0a42216855cf17, type: 3}
+--- !u!1 &775764475
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 775764476}
+  - component: {fileID: 775764477}
+  m_Layer: 0
+  m_Name: Dia4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &775764476
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775764475}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1983196799}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &775764477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775764475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ebf3510ef3177d4d94666e81d1ea5e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talkerName: NPC1
+  dialogueContent: Gather 5 seeds, please.
+  isGoNext: 0
+  isDisplayIconLeft: 0
+  makeTrueConditionTopics:
+  - Test01
+  makeFalseConditionTopics: []
+  assignedQuest:
+  - {fileID: 11400000, guid: d82bc20ae3851e44c8df56df6810b044, type: 2}
+  isSendQuestMessage: 0
+  next: {fileID: 0}
 --- !u!1001 &815160840
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1196,6 +1250,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BasicMelee
+      objectReference: {fileID: 0}
+    - target: {fileID: 6878539700662927994, guid: fb71296f129c18141a0a42216855cf17,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6878539700662927998, guid: fb71296f129c18141a0a42216855cf17,
         type: 3}
@@ -2009,11 +2068,14 @@ MonoBehaviour:
   - {fileID: 1142153220}
   - {fileID: 2008031473}
   - {fileID: 1313274680}
+  - {fileID: 775764477}
   choicesString:
   - Quest
   - Hello
   - Bye
+  - Quest4
   conditions:
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -2120,7 +2182,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1567815184}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.96, y: 1.1, z: 0}
+  m_LocalPosition: {x: -1.88, y: -0.12, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children:
   - {fileID: 1875288602}
@@ -2536,7 +2598,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!210 &1712241644
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -2568,7 +2630,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1712241643}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4, y: -0.66, z: 0}
+  m_LocalPosition: {x: -1.65, y: -2.4, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children:
   - {fileID: 1914000630}
@@ -3153,6 +3215,7 @@ Transform:
   - {fileID: 1142153219}
   - {fileID: 2008031472}
   - {fileID: 1313274679}
+  - {fileID: 775764476}
   m_Father: {fileID: 1712241646}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4330,6 +4393,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3472931759613148878, guid: 56c520b0a64b3094f9373c505eaccfbc,
+        type: 3}
+      propertyPath: questsKey
+      value: 113
+      objectReference: {fileID: 0}
+    - target: {fileID: 3472931759613148878, guid: 56c520b0a64b3094f9373c505eaccfbc,
+        type: 3}
+      propertyPath: questsPanel
+      value: 
+      objectReference: {fileID: 6475018249491808131}
     - target: {fileID: 3472931759617255546, guid: 56c520b0a64b3094f9373c505eaccfbc,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -4572,6 +4645,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56c520b0a64b3094f9373c505eaccfbc, type: 3}
+--- !u!1 &6475018249491808131 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5786583206965761666, guid: 56c520b0a64b3094f9373c505eaccfbc,
+    type: 3}
+  m_PrefabInstance: {fileID: 6475018249491808130}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6475018249491808135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6475018249491808131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b84a18ee2573094fa48527e7376bd82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questUnitPrefab: {fileID: 7886421431096960690, guid: 131a8bd0c3fdb444f934cad6ee07b7fb,
+    type: 3}
+  unitHeight: 100
 --- !u!1001 &7184383322915531996
 PrefabInstance:
   m_ObjectHideFlags: 0
