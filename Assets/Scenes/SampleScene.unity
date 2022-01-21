@@ -4393,6 +4393,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3472931759613148878, guid: 56c520b0a64b3094f9373c505eaccfbc,
+        type: 3}
+      propertyPath: questsKey
+      value: 113
+      objectReference: {fileID: 0}
+    - target: {fileID: 3472931759613148878, guid: 56c520b0a64b3094f9373c505eaccfbc,
+        type: 3}
+      propertyPath: questsPanel
+      value: 
+      objectReference: {fileID: 6475018249491808131}
     - target: {fileID: 3472931759617255546, guid: 56c520b0a64b3094f9373c505eaccfbc,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -4633,13 +4643,14 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9039367835054845280, guid: 56c520b0a64b3094f9373c505eaccfbc,
-        type: 3}
-      propertyPath: m_RaycastTarget
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56c520b0a64b3094f9373c505eaccfbc, type: 3}
+--- !u!1 &6475018249491808131 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5786583206965761666, guid: 56c520b0a64b3094f9373c505eaccfbc,
+    type: 3}
+  m_PrefabInstance: {fileID: 6475018249491808130}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7184383322915531996
 PrefabInstance:
   m_ObjectHideFlags: 0
