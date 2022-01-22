@@ -4747,6 +4747,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8438312023579159790}
   - component: {fileID: 2281749033751191948}
+  - component: {fileID: 247325049}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -4771,7 +4772,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 200}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2281749033751191948
 MonoBehaviour:
@@ -4798,6 +4799,20 @@ MonoBehaviour:
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+--- !u!114 &247325049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3464833781071942542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
 --- !u!1 &3472931757693695699
 GameObject:
   m_ObjectHideFlags: 0
@@ -11583,7 +11598,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 490, y: 252}
+  m_SizeDelta: {x: 600, y: 350}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3991924328985112878
 CanvasRenderer:
@@ -14665,15 +14680,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c6da1039ed58bb45bc0ada5fcf18484, type: 3}
---- !u!1 &7596767595319839336 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3849637921913064992, guid: 3c6da1039ed58bb45bc0ada5fcf18484,
-    type: 3}
-  m_PrefabInstance: {fileID: 6629732597163131976}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &7596767595319839337 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3849637921913064993, guid: 3c6da1039ed58bb45bc0ada5fcf18484,
+    type: 3}
+  m_PrefabInstance: {fileID: 6629732597163131976}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7596767595319839336 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3849637921913064992, guid: 3c6da1039ed58bb45bc0ada5fcf18484,
     type: 3}
   m_PrefabInstance: {fileID: 6629732597163131976}
   m_PrefabAsset: {fileID: 0}
