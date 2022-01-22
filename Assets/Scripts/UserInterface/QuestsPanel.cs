@@ -22,21 +22,32 @@ public class QuestsPanel : MonoBehaviour
         startPosition = new Vector2(0, -unitHeight / 2);
         accumulatePosition = new Vector2(0, -unitHeight);
     }
-
+    private void InstantiateUnit()
+    {
+        RectTransform spawned = Instantiate(questUnitPrefab);
+        spawned.parent = contentTransform;
+        spawned.anchoredPosition = startPosition + (accumulatePosition * units.Count);
+        units.Add(spawned);
+    }
     // Update is called once per frame
     void Update()
     {
-        while(units.Count < QuestSystem.GetQuestsCount())
+        for(int i = 0; i < QuestSystem.GetQuestsCount(); i++)
         {
-            RectTransform spawned = Instantiate(questUnitPrefab);
-            spawned.parent = contentTransform;
-            spawned.anchoredPosition = startPosition + (accumulatePosition * units.Count);
-            units.Add(spawned);
-        }
-        for(int i = 0; i < units.Count; i++)
-        {
+            if(i >= units.Count)
+            {
+                InstantiateUnit();
+            }
             units[i].GetComponent<QuestUnitPanel>().DescriptionText.text 
                 = QuestSystem.GetQuestDescriptionFromIndex(i);
         }
+        for (int i = 0; i < units.Count; i++)
+        {
+            if(i >= QuestSystem.GetQuestsCount())
+            {
+                Destroy(units[i]);
+            }
+        }
+        units.RemoveAll(item => item == null);
     }
 }
