@@ -9,6 +9,8 @@ public class QuestsPanel : MonoBehaviour
     private RectTransform questUnitPrefab;
     [SerializeField]
     private float unitHeight;
+    [SerializeField]
+    private Transform contentTransform;
 
     private Vector2 startPosition;
     private Vector2 accumulatePosition;
@@ -27,7 +29,7 @@ public class QuestsPanel : MonoBehaviour
         while(units.Count < QuestSystem.GetQuestsCount())
         {
             RectTransform spawned = Instantiate(questUnitPrefab);
-            spawned.parent = transform;
+            spawned.parent = contentTransform;
             spawned.anchoredPosition = startPosition + (accumulatePosition * units.Count);
             units.Add(spawned);
         }
