@@ -128,12 +128,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   renderState: 3
-  frame: 15
+  frame: 25
   damage: 20
-  stamina: 5
+  stamina: 0
   specialAttack: {fileID: 0}
-  moveDistance: 0.2
-  moveDelayFrame: 5
+  turningPointFrame: 18
+  moveDelayFrame: 3
+  maxVelocity: 0.05
 --- !u!114 &2512565328292902417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,7 +204,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2012531012473312949}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.000019550323, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5360569423985050703}
@@ -222,12 +223,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   renderState: 2
-  frame: 15
+  frame: 25
   damage: 10
-  stamina: 5
+  stamina: 0
   specialAttack: {fileID: 0}
-  moveDistance: 0.5
-  moveDelayFrame: 5
+  turningPointFrame: 18
+  moveDelayFrame: 3
+  maxVelocity: 0.05
 --- !u!114 &3975202978136180043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -347,12 +349,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   renderState: 4
-  frame: 30
+  frame: 40
   damage: 30
   stamina: 20
   specialAttack: {fileID: 0}
-  moveDistance: 0.8
-  moveDelayFrame: 15
+  turningPointFrame: 30
+  moveDelayFrame: 10
+  maxVelocity: 0.07
 --- !u!114 &4486096829806423322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -458,7 +461,6 @@ MonoBehaviour:
   - {fileID: 8483772263164939829}
   - {fileID: 6442506053984173074}
   specialAttackPool: {fileID: 2212539950563740106}
-  isSummonWeapon: 0
 --- !u!1 &6951812782633640731
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,8 +512,9 @@ MonoBehaviour:
   damage: 30
   stamina: 20
   specialAttack: {fileID: 5148953153727158927}
-  moveDistance: 0
+  turningPointFrame: 0
   moveDelayFrame: 0
+  maxVelocity: 0
 --- !u!114 &8827499376940537384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -603,8 +606,9 @@ MonoBehaviour:
   damage: 40
   stamina: 50
   specialAttack: {fileID: 0}
-  moveDistance: 0
+  turningPointFrame: 0
   moveDelayFrame: 0
+  maxVelocity: 0
 --- !u!114 &5244668526703272450
 MonoBehaviour:
   m_ObjectHideFlags: 0
