@@ -1,10 +1,7 @@
 ﻿using UnityEngine;
-#if UNITY_EDITOR
-using UnityEditor;
-#endif
 
 [CreateAssetMenu(fileName = "New ItemDatabase", menuName = "VIA2.0/ItemDatabase", order = 0)]
-public class ItemDatabase : ScriptableObject
+public class ItemDatabase : Database
 {
     [SerializeField]
     Item[] items;
@@ -28,42 +25,9 @@ public class ItemDatabase : ScriptableObject
     }
 
     #if UNITY_EDITOR
-    private void OnValidate() {
-        LoadItems();
-    }
-
-    private void OnEnable() {
-        EditorApplication.projectChanged += LoadItems;
-    }
-
-    private void OnDisable() {
-        EditorApplication.projectChanged -= LoadItems;
-    }
-
-    private void LoadItems()
+    protected override void LoadItems()
     {
-        items = FindAssetsByType<Item>("Assets/Resources/Items");
-    }
-
-    public static T[] FindAssetsByType<T>(params string[] folders) where T : Object
-    {
-        string type = typeof(T).ToString().Replace("UnityEngine.", "");
-        string[] guids;// = AssetDatabase.FindAssets("t:" + type, );
-        if(folders == null || folders.Length == 0)
-        {
-            guids = AssetDatabase.FindAssets("t:" + type);
-        } else {
-            guids = AssetDatabase.FindAssets("t:" + type, folders);
-        }
-
-        T[] assets = new T[guids.Length];
-
-        for(int i = 0; i< guids.Length; i++)
-        {
-            string assetPath = AssetDatabase.GUIDToAssetPath(guids[i]);
-            assets[i] = AssetDatabase.LoadAssetAtPath<T>(assetPath);
-        }
-        return assets;
+        items = Helper.FindAssetsByType<Item>("Assets/Resources/Items");
     }
     #endif
 }
