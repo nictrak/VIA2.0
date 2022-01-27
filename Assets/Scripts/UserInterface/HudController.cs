@@ -56,7 +56,6 @@ public class HudController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(CurrentState);
         if (Input.GetKeyDown(inventoryKey))
         {
             if (CurrentState == HUD_STATE.IDLE)
