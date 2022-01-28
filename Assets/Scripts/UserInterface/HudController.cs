@@ -138,5 +138,16 @@ public class HudController : MonoBehaviour
         shopPanel.SetActive(false);
         canToggle = true;
     }
+    public void GoToIdle()
+    {
+        inventoryPanel.SetActive(false);
+        shopPanel.SetActive(false);
+        windowCraftPanel.SetActive(false);
+        questsPanel.SetActive(false);
+        questPanel.SetActive(true);
+        canToggle = true;
+        IsUsed = false;
+        CurrentState = HUD_STATE.IDLE;
+    }
 
 }
