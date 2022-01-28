@@ -32,6 +32,8 @@ public class HudController : MonoBehaviour
     [SerializeField]
     private GameObject questPanel;
     [SerializeField]
+    private GameObject sideTab;
+    [SerializeField]
     private KeyCode questsKey;
     [SerializeField]
     private GameObject windowCraftPanel;
@@ -62,11 +64,13 @@ public class HudController : MonoBehaviour
             if (CurrentState == HUD_STATE.IDLE)
             {
                 inventoryPanel.SetActive(true);
+                sideTab.SetActive(true);
                 CurrentState = HUD_STATE.INVENTORY;
             }
             else if (CurrentState == HUD_STATE.INVENTORY)
             {
                 inventoryPanel.SetActive(false);
+                sideTab.SetActive(false);
                 CurrentState = HUD_STATE.IDLE;
             }
         }
@@ -76,12 +80,14 @@ public class HudController : MonoBehaviour
             {
                 questPanel.SetActive(false);
                 questsPanel.SetActive(true);
+                sideTab.SetActive(true);
                 CurrentState = HUD_STATE.QUESTS;
             }
             else if (CurrentState == HUD_STATE.QUESTS)
             {
                 questPanel.SetActive(true);
                 questsPanel.SetActive(false);
+                sideTab.SetActive(false);
                 CurrentState = HUD_STATE.IDLE;
             }
         }
@@ -149,5 +155,17 @@ public class HudController : MonoBehaviour
         IsUsed = false;
         CurrentState = HUD_STATE.IDLE;
     }
-
+    public void GoToInventory()
+    {
+        GoToIdle();
+        inventoryPanel.SetActive(true);
+        CurrentState = HUD_STATE.INVENTORY;
+    }
+    public void GoToQuests()
+    {
+        GoToIdle();
+        questPanel.SetActive(false);
+        questsPanel.SetActive(true);
+        CurrentState = HUD_STATE.QUESTS;
+    }
 }
