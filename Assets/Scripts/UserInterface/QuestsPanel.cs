@@ -26,7 +26,7 @@ public class QuestsPanel : MonoBehaviour
     {
         RectTransform spawned = Instantiate(questUnitPrefab);
         spawned.parent = contentTransform;
-        spawned.anchoredPosition = startPosition + (accumulatePosition * units.Count);
+        //spawned.anchoredPosition = startPosition + (accumulatePosition * units.Count);
         units.Add(spawned);
     }
     // Update is called once per frame

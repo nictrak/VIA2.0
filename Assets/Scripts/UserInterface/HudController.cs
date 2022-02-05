@@ -32,6 +32,8 @@ public class HudController : MonoBehaviour
     [SerializeField]
     private GameObject questPanel;
     [SerializeField]
+    private GameObject sideTab;
+    [SerializeField]
     private KeyCode questsKey;
     [SerializeField]
     private GameObject windowCraftPanel;
@@ -56,17 +58,18 @@ public class HudController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(CurrentState);
         if (Input.GetKeyDown(inventoryKey))
         {
             if (CurrentState == HUD_STATE.IDLE)
             {
                 inventoryPanel.SetActive(true);
+                sideTab.SetActive(true);
                 CurrentState = HUD_STATE.INVENTORY;
             }
             else if (CurrentState == HUD_STATE.INVENTORY)
             {
                 inventoryPanel.SetActive(false);
+                sideTab.SetActive(false);
                 CurrentState = HUD_STATE.IDLE;
             }
         }
@@ -76,12 +79,14 @@ public class HudController : MonoBehaviour
             {
                 questPanel.SetActive(false);
                 questsPanel.SetActive(true);
+                sideTab.SetActive(true);
                 CurrentState = HUD_STATE.QUESTS;
             }
             else if (CurrentState == HUD_STATE.QUESTS)
             {
                 questPanel.SetActive(true);
                 questsPanel.SetActive(false);
+                sideTab.SetActive(false);
                 CurrentState = HUD_STATE.IDLE;
             }
         }
@@ -138,5 +143,28 @@ public class HudController : MonoBehaviour
         shopPanel.SetActive(false);
         canToggle = true;
     }
-
+    public void GoToIdle()
+    {
+        inventoryPanel.SetActive(false);
+        shopPanel.SetActive(false);
+        windowCraftPanel.SetActive(false);
+        questsPanel.SetActive(false);
+        questPanel.SetActive(true);
+        canToggle = true;
+        IsUsed = false;
+        CurrentState = HUD_STATE.IDLE;
+    }
+    public void GoToInventory()
+    {
+        GoToIdle();
+        inventoryPanel.SetActive(true);
+        CurrentState = HUD_STATE.INVENTORY;
+    }
+    public void GoToQuests()
+    {
+        GoToIdle();
+        questPanel.SetActive(false);
+        questsPanel.SetActive(true);
+        CurrentState = HUD_STATE.QUESTS;
+    }
 }
