@@ -5,19 +5,45 @@ using UnityEngine;
 public class TriggerRange : MonoBehaviour
 {
     [SerializeField]
-    private string tagTarget;
+    public string tagTarget;
 
     private List<GameObject> objs;
 
     public List<GameObject> Objs { get => objs; set => objs = value; }
 
+    [SerializeField]
+    private MonsterAttributes monsterAttributes;
+
+    private void OnValidate() {
+        /*if(monsterAttributes == null){
+            monsterAttributes = this.transform.root.gameObject.GetComponent<MonsterAttributes>();
+        } else {
+            if(monsterAttributes.isEnemy){
+                tagTarget = "PlayerTarget";
+            } else {
+                tagTarget = "EnemyTarget";
+            }
+        }*/
+    }
+
     private void Awake()
     {
         objs = new List<GameObject>();
+        if (monsterAttributes == null){
+            monsterAttributes = this.transform.root.gameObject.GetComponent<MonsterAttributes>();
+        }
     }
+
     // Start is called before the first frame update
     void Start()
     {
+        if (monsterAttributes != null){
+            if(monsterAttributes.isEnemy){
+                tagTarget = "PlayerTarget";
+            } else {
+                tagTarget = "EnemyTarget";
+            }
+        }
     }
 
     // Update is called once per frame

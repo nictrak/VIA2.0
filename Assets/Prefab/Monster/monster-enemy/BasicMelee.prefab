@@ -325,6 +325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagTarget: PlayerTarget
+  monsterAttributes: {fileID: 0}
 --- !u!1 &1170233307
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,6 +397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagTarget: PlayerTarget
+  monsterAttributes: {fileID: 0}
 --- !u!1 &1305351800
 GameObject:
   m_ObjectHideFlags: 0
@@ -676,7 +678,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 4
   NormalNextState: 9
-  delayFrame: 30
+  delayFrame: 35
 --- !u!1 &6878539700156517197
 GameObject:
   m_ObjectHideFlags: 0
@@ -787,6 +789,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6878539700662927998}
+  - component: {fileID: 4743387557766703811}
   - component: {fileID: 6878539700662927999}
   - component: {fileID: 6878539700662927996}
   - component: {fileID: 6878539700662927997}
@@ -828,6 +831,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4743387557766703811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6878539700662927994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49fc0971388b60c48aa15ece809c908b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnemy: 1
 --- !u!114 &6878539700662927999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1044,8 +1060,7 @@ MonoBehaviour:
   fireResistance: 0
   frostResistance: 0
   isTurnRedWhenHurt: 1
-  spriteRenderer:
-  - {fileID: 6878539700156517199}
+  spriteRenderer: {fileID: 6878539700156517199}
   knockbackRange: 0.046
 --- !u!114 &407601076
 MonoBehaviour:
