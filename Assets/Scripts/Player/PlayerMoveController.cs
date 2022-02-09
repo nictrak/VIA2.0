@@ -92,12 +92,11 @@ public class PlayerMoveController : MonoBehaviour
     // Start move method
     private Vector2 GetInputMoveDirection()
     {
-        Vector2 res = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        Vector2 res = new Vector2(Input.GetAxis("Horizontal") * Mathf.Pow(3, 0.5f), Input.GetAxis("Vertical"));
         return res.normalized;
     }
     private void UpdateMoveDirection()
     {
-        Debug.Log(playerAttackController.IsAttack());
         if (!playerAttackController.IsAttack())
         {
             moveDirection = GetInputMoveDirection();
@@ -155,7 +154,8 @@ public class PlayerMoveController : MonoBehaviour
         }
         else
         {
-            playerRenderer.UpdateAnimation(PlayerRenderer.PlayerRenderState.Static, moveDirection);
+            Vector2 mouseDirection = CalMouseDirection();
+            playerRenderer.UpdateAnimation(PlayerRenderer.PlayerRenderState.Static, mouseDirection);
         }
     }
     // End of move method

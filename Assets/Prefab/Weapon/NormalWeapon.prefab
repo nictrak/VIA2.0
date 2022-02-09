@@ -128,12 +128,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   renderState: 3
-  frame: 25
-  damage: 20
+  frame: 15
+  damage: 60
   stamina: 0
   specialAttack: {fileID: 0}
-  moveDistance: 0.2
-  moveDelayFrame: 5
+  turningPointFrame: 10
+  moveDelayFrame: 0
+  maxVelocity: 0.1
 --- !u!114 &2512565328292902417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,12 +223,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   renderState: 2
-  frame: 25
-  damage: 10
+  frame: 15
+  damage: 50
   stamina: 0
   specialAttack: {fileID: 0}
-  moveDistance: 0.5
-  moveDelayFrame: 5
+  turningPointFrame: 10
+  moveDelayFrame: 0
+  maxVelocity: 0.1
 --- !u!114 &3975202978136180043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -347,12 +349,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   renderState: 4
-  frame: 40
-  damage: 30
+  frame: 25
+  damage: 100
   stamina: 20
   specialAttack: {fileID: 0}
-  moveDistance: 0.8
-  moveDelayFrame: 20
+  turningPointFrame: 12
+  moveDelayFrame: 10
+  maxVelocity: 0.1
 --- !u!114 &4486096829806423322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -509,8 +512,9 @@ MonoBehaviour:
   damage: 30
   stamina: 20
   specialAttack: {fileID: 5148953153727158927}
-  moveDistance: 0
+  turningPointFrame: 0
   moveDelayFrame: 0
+  maxVelocity: 0
 --- !u!114 &8827499376940537384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -602,8 +606,9 @@ MonoBehaviour:
   damage: 40
   stamina: 50
   specialAttack: {fileID: 0}
-  moveDistance: 0
+  turningPointFrame: 0
   moveDelayFrame: 0
+  maxVelocity: 0
 --- !u!114 &5244668526703272450
 MonoBehaviour:
   m_ObjectHideFlags: 0

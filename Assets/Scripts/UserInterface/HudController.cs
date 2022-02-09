@@ -5,6 +5,16 @@ using UnityEngine.UI;
 
 public class HudController : MonoBehaviour
 {
+    public enum HUD_STATE
+    {
+        IDLE,
+        INVENTORY,
+        SHOP,
+        CRAFTINGCORE,
+        CRAFTING,
+        QUESTS
+    }
+
     [SerializeField]
     private GameObject inventoryPanel;
     [SerializeField]
@@ -22,7 +32,9 @@ public class HudController : MonoBehaviour
     [SerializeField]
     private GameObject questPanel;
     [SerializeField]
-    private KeyCode questKey;
+    private GameObject sideTab;
+    [SerializeField]
+    private KeyCode questsKey;
     [SerializeField]
     private GameObject windowCraftPanel;
     [SerializeField]
@@ -30,47 +42,87 @@ public class HudController : MonoBehaviour
 
     private bool canToggle;
     public static bool IsUsed;
+    public static HUD_STATE CurrentState;
+
     // Start is called before the first frame update
     void Start()
     {
         inventoryPanel.SetActive(false);
         shopPanel.SetActive(false);
         windowCraftPanel.SetActive(false);
+        questsPanel.SetActive(false);
         canToggle = true;
         IsUsed = false;
+        CurrentState = HUD_STATE.IDLE;
     }
-
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(inventoryKey) && canToggle)
+        if (Input.GetKeyDown(inventoryKey))
         {
-            inventoryPanel.SetActive(!inventoryPanel.activeSelf);
-        }
-        if (Input.GetKeyDown(questKey) && canToggle)
-        {
-            questPanel.SetActive(!questPanel.activeSelf);
-            questsPanel.SetActive(!questsPanel.activeSelf);
-        }
-        if (Input.GetKeyDown(craftingCoreKey) && canToggle)
-        {
-            craftingCorePanel.SetActive(!craftingCorePanel.activeSelf);
-            shortcutPanel.SetActive(!shortcutPanel.activeSelf);
-            TimeSystem timeSystem = Resources.FindObjectsOfTypeAll<TimeSystem>()[0];
-            if (craftingCorePanel.activeSelf)
+            if (CurrentState == HUD_STATE.IDLE)
             {
+                inventoryPanel.SetActive(true);
+                sideTab.SetActive(true);
+                CurrentState = HUD_STATE.INVENTORY;
+            }
+            else if (CurrentState == HUD_STATE.INVENTORY)
+            {
+                inventoryPanel.SetActive(false);
+                sideTab.SetActive(false);
+                CurrentState = HUD_STATE.IDLE;
+            }
+        }
+        if (Input.GetKeyDown(questsKey))
+        {
+            if (CurrentState == HUD_STATE.IDLE)
+            {
+                questPanel.SetActive(false);
+                questsPanel.SetActive(true);
+                sideTab.SetActive(true);
+                CurrentState = HUD_STATE.QUESTS;
+            }
+            else if (CurrentState == HUD_STATE.QUESTS)
+            {
+                questPanel.SetActive(true);
+                questsPanel.SetActive(false);
+                sideTab.SetActive(false);
+                CurrentState = HUD_STATE.IDLE;
+            }
+        }
+        if (Input.GetKeyDown(craftingCoreKey))
+        {
+            if (CurrentState == HUD_STATE.IDLE)
+            {
+                craftingCorePanel.SetActive(true);
+                shortcutPanel.SetActive(false);
+                TimeSystem timeSystem = Resources.FindObjectsOfTypeAll<TimeSystem>()[0];
                 timeSystem.DoSlowMotion();
+                CurrentState = HUD_STATE.CRAFTINGCORE;
             }
-            else
+            else if(CurrentState == HUD_STATE.CRAFTINGCORE)
             {
+                craftingCorePanel.SetActive(false);
+                shortcutPanel.SetActive(true);
+                TimeSystem timeSystem = Resources.FindObjectsOfTypeAll<TimeSystem>()[0];
                 timeSystem.DoStandardTime();
+                CurrentState = HUD_STATE.IDLE;
             }
         }
-        if (Input.GetKeyDown(windowCraftKey) && canToggle)
+        if (Input.GetKeyDown(windowCraftKey))
         {
-            windowCraftPanel.SetActive(!windowCraftPanel.activeSelf);
+            if (CurrentState == HUD_STATE.IDLE)
+            {
+                windowCraftPanel.SetActive(true);
+                CurrentState = HUD_STATE.CRAFTING;
+            }
+            else if (CurrentState == HUD_STATE.CRAFTING)
+            {
+                windowCraftPanel.SetActive(false);
+                CurrentState = HUD_STATE.IDLE;
+            }
         }
-        if (inventoryPanel.activeSelf || craftingCorePanel.activeSelf || windowCraftPanel.activeSelf)
+        if (inventoryPanel.activeSelf || craftingCorePanel.activeSelf || windowCraftPanel.activeSelf || questsPanel.activeSelf)
         {
             IsUsed = true;
         }
@@ -91,5 +143,28 @@ public class HudController : MonoBehaviour
         shopPanel.SetActive(false);
         canToggle = true;
     }
-
+    public void GoToIdle()
+    {
+        inventoryPanel.SetActive(false);
+        shopPanel.SetActive(false);
+        windowCraftPanel.SetActive(false);
+        questsPanel.SetActive(false);
+        questPanel.SetActive(true);
+        canToggle = true;
+        IsUsed = false;
+        CurrentState = HUD_STATE.IDLE;
+    }
+    public void GoToInventory()
+    {
+        GoToIdle();
+        inventoryPanel.SetActive(true);
+        CurrentState = HUD_STATE.INVENTORY;
+    }
+    public void GoToQuests()
+    {
+        GoToIdle();
+        questPanel.SetActive(false);
+        questsPanel.SetActive(true);
+        CurrentState = HUD_STATE.QUESTS;
+    }
 }
