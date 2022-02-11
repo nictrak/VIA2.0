@@ -129,7 +129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   renderState: 3
   frame: 15
-  damage: 60
+  damage: 20
   stamina: 0
   specialAttack: {fileID: 0}
   turningPointFrame: 10
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   renderState: 2
   frame: 15
-  damage: 50
+  damage: 20
   stamina: 0
   specialAttack: {fileID: 0}
   turningPointFrame: 10
@@ -351,10 +351,10 @@ MonoBehaviour:
   renderState: 4
   frame: 25
   damage: 100
-  stamina: 20
+  stamina: 30
   specialAttack: {fileID: 0}
   turningPointFrame: 12
-  moveDelayFrame: 10
+  moveDelayFrame: 0
   maxVelocity: 0.1
 --- !u!114 &4486096829806423322
 MonoBehaviour:
