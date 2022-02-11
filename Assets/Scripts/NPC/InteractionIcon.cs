@@ -27,9 +27,10 @@ public class InteractionIcon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (trigger){
-            gameObject.transform.position = position;
-        }
+        // if (trigger){
+        //     gameObject.transform.position = position;
+        // }
+        // Debug.Log(tagTarget);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

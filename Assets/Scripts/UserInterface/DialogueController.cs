@@ -52,8 +52,8 @@ public class DialogueController : MonoBehaviour
             // Load Profile-image from testUIDialog folder
             Object [] sprites;
             Object [] spritesDefault;
-            spritesDefault = Resources.LoadAll ("UIProfileDialog/DEFAULTUI");
-            sprites = Resources.LoadAll ("UIProfileDialog/"+dialogue.TalkerName);
+            spritesDefault = Resources.LoadAll ("DEFAULTUI");
+            sprites = Resources.LoadAll (dialogue.TalkerName);
             // Use dialog-properties-to Create-Image Canvas
             if (sprites.Length > 0){
                 SetImageSite(dialogue,sprites);
