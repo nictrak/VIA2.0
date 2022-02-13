@@ -124,6 +124,7 @@ MonoBehaviour:
   NormalNextState: 5
   delayFrame: 65
   target: {fileID: 7000904033944838464}
+  blocker: {fileID: 0}
 --- !u!1 &6015595941223420632
 GameObject:
   m_ObjectHideFlags: 0
@@ -402,6 +403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagTarget: PlayerTarget
+  monsterAttributes: {fileID: 0}
 --- !u!1 &7000904032971910821
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,6 +489,8 @@ MonoBehaviour:
   outerRange: {fileID: 1245999426}
   innerRange: {fileID: 397920582}
   randomRadius: 0
+  magicBulletPosX: 0
+  magicBulletPosY: 0
 --- !u!1 &7000904033632237735
 GameObject:
   m_ObjectHideFlags: 0
@@ -704,6 +708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagTarget: PlayerTarget
+  monsterAttributes: {fileID: 0}
 --- !u!1 &7000904033939796323
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,6 +767,7 @@ GameObject:
   - component: {fileID: 7000904033944838485}
   - component: {fileID: 7000904033944838483}
   - component: {fileID: 793002158}
+  - component: {fileID: 3835709124803961166}
   m_Layer: 8
   m_Name: SlowDebuff
   m_TagString: Enemy
@@ -1007,6 +1013,18 @@ MonoBehaviour:
   hitEffectPrefab: {fileID: 1454490803532372921, guid: ce520020bce440044bc0d5d1f8feca7c,
     type: 3}
   charName: 
+  dropOnDamaged: {fileID: 0}
+  damageColor: {r: 0, g: 0, b: 0, a: 0}
+  chopResistance: 0
+  strikeResistance: 0
+  pierceResistance: 0
+  voidResistance: 0
+  electricResistance: 0
+  fireResistance: 0
+  frostResistance: 0
+  isTurnRedWhenHurt: 0
+  spriteRenderer: []
+  knockbackRange: 0.5
 --- !u!114 &7000904033944838483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1033,6 +1051,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ModifierPool: {fileID: 674163031}
+--- !u!114 &3835709124803961166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7000904033944838464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a87b721cc801f94d914c1fa214ea454, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnemy: 1
 --- !u!1001 &7594557972664705136
 PrefabInstance:
   m_ObjectHideFlags: 0

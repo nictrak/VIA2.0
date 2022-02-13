@@ -26,7 +26,8 @@ public class ConditionalWarp : MonoBehaviour
     {
         if (collision.gameObject.tag == "PlayerTarget")
         {
-            if (condition.IsPass() == IsPassIfTrue)
+            Debug.Log("Player Pass");
+            if (condition.IsPass() == IsPassIfTrue ||  !IsPassIfTrue )
             {
                 WarpSystem.WarpToScene(nextLevel);
             }

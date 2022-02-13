@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 632216038}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.63, y: 2.36, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 3626388922450272966}
@@ -214,7 +214,7 @@ Transform:
   m_GameObject: {fileID: 3626388920737731472}
   m_LocalRotation: {x: 0, y: 0, z: 0.38268343, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.51188, y: 0.51188, z: 0.51188}
+  m_LocalScale: {x: 0.48227677, y: 0.48227677, z: 0.48227677}
   m_Children: []
   m_Father: {fileID: 3626388921349848320}
   m_RootOrder: 1
@@ -258,6 +258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagTarget: PlayerTarget
+  monsterAttributes: {fileID: 0}
 --- !u!1 &3626388920837161269
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,6 +522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagTarget: PlayerTarget
+  monsterAttributes: {fileID: 0}
 --- !u!1 &3626388921976202571
 GameObject:
   m_ObjectHideFlags: 0
@@ -735,6 +737,7 @@ GameObject:
   - component: {fileID: 3626388922457289457}
   - component: {fileID: 3626388922457289463}
   - component: {fileID: 3954309674418717977}
+  - component: {fileID: 3676813905979024102}
   m_Layer: 8
   m_Name: BasicRange
   m_TagString: Enemy
@@ -979,7 +982,7 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   hitEffectPrefab: {fileID: 1454490803532372921, guid: ce520020bce440044bc0d5d1f8feca7c,
     type: 3}
-  charName: 
+  charName: Monster
   dropOnDamaged: {fileID: 0}
   damageColor: {r: 0, g: 0, b: 0, a: 0}
   chopResistance: 0
@@ -990,7 +993,8 @@ MonoBehaviour:
   fireResistance: 0
   frostResistance: 0
   isTurnRedWhenHurt: 1
-  spriteRenderer: {fileID: 0}
+  spriteRenderer:
+  - {fileID: 0}
   knockbackRange: 0.5
 --- !u!114 &3626388922457289463
 MonoBehaviour:
@@ -1018,6 +1022,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ModifierPool: {fileID: 8647742464634251103}
+--- !u!114 &3676813905979024102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3626388922457289444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a87b721cc801f94d914c1fa214ea454, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnemy: 1
 --- !u!1 &8647742464634251103
 GameObject:
   m_ObjectHideFlags: 0
