@@ -1,0 +1,1064 @@
+fileFormatVersion: 2
+guid: dc01a453a58b2ec4ebf86427222fbb75
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1175366421028951983
+    second: MeleeWalk_0
+  - first:
+      213: 9190187986163565511
+    second: MeleeWalk_1
+  - first:
+      213: -6687846687258121987
+    second: MeleeWalk_2
+  - first:
+      213: 5156053983460577985
+    second: MeleeWalk_3
+  - first:
+      213: 7035419819853073880
+    second: MeleeWalk_4
+  - first:
+      213: 4603349779737872223
+    second: MeleeWalk_5
+  - first:
+      213: -833242523728112339
+    second: MeleeWalk_6
+  - first:
+      213: 8471027787978050897
+    second: MeleeWalk_7
+  - first:
+      213: -5243842705978336663
+    second: MeleeWalk_8
+  - first:
+      213: 6146975041649878032
+    second: MeleeWalk_9
+  - first:
+      213: -8045636808548922299
+    second: MeleeWalk_10
+  - first:
+      213: -2497707297448585995
+    second: MeleeWalk_11
+  - first:
+      213: 5218173849881142330
+    second: MeleeWalk_12
+  - first:
+      213: 6551472058461006909
+    second: MeleeWalk_13
+  - first:
+      213: -3979820094458339258
+    second: MeleeWalk_14
+  - first:
+      213: 1308272566562066111
+    second: MeleeWalk_15
+  - first:
+      213: 1916722752095702072
+    second: MeleeWalk_16
+  - first:
+      213: 5251005959903581537
+    second: MeleeWalk_17
+  - first:
+      213: 3097423511156492787
+    second: MeleeWalk_18
+  - first:
+      213: 4985341258610465645
+    second: MeleeWalk_19
+  - first:
+      213: 86678451160447738
+    second: MeleeWalk_20
+  - first:
+      213: 1551706687790995212
+    second: MeleeWalk_21
+  - first:
+      213: -1133889703791329010
+    second: MeleeWalk_22
+  - first:
+      213: 6157490674709732012
+    second: MeleeWalk_23
+  - first:
+      213: -6166513555862542230
+    second: MeleeWalk_24
+  - first:
+      213: 5177657185229732936
+    second: MeleeWalk_25
+  - first:
+      213: -4152862048774394056
+    second: MeleeWalk_26
+  - first:
+      213: -6082307776534601468
+    second: MeleeWalk_27
+  - first:
+      213: 151442401477576724
+    second: MeleeWalk_28
+  - first:
+      213: 1201306494984536953
+    second: MeleeWalk_29
+  - first:
+      213: 2557473813409008773
+    second: MeleeWalk_30
+  - first:
+      213: 8154482641700757451
+    second: MeleeWalk_31
+  - first:
+      213: -5236803887639062365
+    second: MeleeWalk_32
+  - first:
+      213: 923349472800963775
+    second: MeleeWalk_33
+  - first:
+      213: -1665506096260329561
+    second: MeleeWalk_34
+  - first:
+      213: 731979703732212613
+    second: MeleeWalk_35
+  - first:
+      213: 566931709932948162
+    second: MeleeWalk_36
+  - first:
+      213: 1385555281662742085
+    second: MeleeWalk_37
+  - first:
+      213: -1265994483524006812
+    second: MeleeWalk_38
+  - first:
+      213: 8958050448450424193
+    second: MeleeWalk_39
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MeleeWalk_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 984
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa75a56588dbf4010800000000000000
+      internalID: 1175366421028951983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_1
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 984
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c3875e184b1a8f70800000000000000
+      internalID: 9190187986163565511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_2
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 984
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df8e4b52fdeff23a0800000000000000
+      internalID: -6687846687258121987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_3
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 984
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c2d7eea7cbfd8740800000000000000
+      internalID: 5156053983460577985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_4
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 984
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ddc5180d05d2a160800000000000000
+      internalID: 7035419819853073880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_5
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 984
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f57062e2c3262ef30800000000000000
+      internalID: 4603349779737872223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_6
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 984
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d259f61e65abf64f0800000000000000
+      internalID: -833242523728112339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_7
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 984
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d05e844e22f8570800000000000000
+      internalID: 8471027787978050897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 738
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96a532c87d02a37b0800000000000000
+      internalID: -5243842705978336663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_9
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 738
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 014abb87b317e4550800000000000000
+      internalID: 6146975041649878032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_10
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 738
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c42a243f7285090800000000000000
+      internalID: -8045636808548922299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_11
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 738
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f41da6427c565dd0800000000000000
+      internalID: -2497707297448585995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_12
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 738
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a34e56a287daa6840800000000000000
+      internalID: 5218173849881142330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_13
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 738
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3c277040218bea50800000000000000
+      internalID: 6551472058461006909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_14
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 738
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64069d7c5b6d4c8c0800000000000000
+      internalID: -3979820094458339258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_15
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 738
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe025fb7fae72210800000000000000
+      internalID: 1308272566562066111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 492
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83cc2931031999a10800000000000000
+      internalID: 1916722752095702072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_17
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 492
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 165138979125fd840800000000000000
+      internalID: 5251005959903581537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_18
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 492
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f90d65c5424cfa20800000000000000
+      internalID: 3097423511156492787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_19
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 492
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6b5393167d7f2540800000000000000
+      internalID: 4985341258610465645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_20
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 492
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afa79139791f33100800000000000000
+      internalID: 86678451160447738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_21
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 492
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c075161e205c88510800000000000000
+      internalID: 1551706687790995212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_22
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 492
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e018b0f625d9340f0800000000000000
+      internalID: -1133889703791329010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_23
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 492
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa9ad5152dc37550800000000000000
+      internalID: 6157490674709732012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 246
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a68ae20b7942c6aa0800000000000000
+      internalID: -6166513555862542230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_25
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 246
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84cfd5e07cbbad740800000000000000
+      internalID: 5177657185229732936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_26
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 246
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83fe99d28f11e56c0800000000000000
+      internalID: -4152862048774394056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_27
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 246
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4012f0d7d4d479ba0800000000000000
+      internalID: -6082307776534601468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_28
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 246
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 418c000df080a1200800000000000000
+      internalID: 151442401477576724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_29
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 246
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9734ce374e5eba010800000000000000
+      internalID: 1201306494984536953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_30
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 246
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58c8b9a12e8fd7320800000000000000
+      internalID: 2557473813409008773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_31
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 246
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcf99a122ca8a2170800000000000000
+      internalID: 8154482641700757451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a893e62c922357b0800000000000000
+      internalID: -5236803887639062365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_33
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 0
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbc78d1147560dc00800000000000000
+      internalID: 923349472800963775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_34
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 0
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7afc729970fe2e8e0800000000000000
+      internalID: -1665506096260329561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_35
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 0
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58311cf89a3882a00800000000000000
+      internalID: 731979703732212613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_36
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 0
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca457ee2652ed700800000000000000
+      internalID: 566931709932948162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_37
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 0
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e8c2c003b7a3310800000000000000
+      internalID: 1385555281662742085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_38
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 0
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46c82f989b84e6ee0800000000000000
+      internalID: -1265994483524006812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeWalk_39
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 0
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18d8aebcb63615c70800000000000000
+      internalID: 8958050448450424193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

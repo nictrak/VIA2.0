@@ -1,0 +1,3704 @@
+fileFormatVersion: 2
+guid: 9dfef6111c297e340934c2b5dd684ccd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8581759396206521096
+    second: MeleeAttack_0
+  - first:
+      213: -7178623259649137448
+    second: MeleeAttack_1
+  - first:
+      213: -4205368095397869056
+    second: MeleeAttack_2
+  - first:
+      213: 4094403805000562864
+    second: MeleeAttack_3
+  - first:
+      213: 537798051485838422
+    second: MeleeAttack_4
+  - first:
+      213: 4428854563092530283
+    second: MeleeAttack_5
+  - first:
+      213: -2965601815077720815
+    second: MeleeAttack_6
+  - first:
+      213: -3697579306725997803
+    second: MeleeAttack_7
+  - first:
+      213: 5685518229701880453
+    second: MeleeAttack_8
+  - first:
+      213: -8734048796587357133
+    second: MeleeAttack_9
+  - first:
+      213: 8685741471776150721
+    second: MeleeAttack_10
+  - first:
+      213: -7283065516684708526
+    second: MeleeAttack_11
+  - first:
+      213: -5951675377145783829
+    second: MeleeAttack_12
+  - first:
+      213: -1340710337748707006
+    second: MeleeAttack_13
+  - first:
+      213: 6669593560083935939
+    second: MeleeAttack_14
+  - first:
+      213: -3059935473454870941
+    second: MeleeAttack_15
+  - first:
+      213: -276553716771925400
+    second: MeleeAttack_16
+  - first:
+      213: 1438481443812338148
+    second: MeleeAttack_17
+  - first:
+      213: 4036391515637788764
+    second: MeleeAttack_18
+  - first:
+      213: 5733699962609698707
+    second: MeleeAttack_19
+  - first:
+      213: 8871199571648393348
+    second: MeleeAttack_20
+  - first:
+      213: 3138759654682856681
+    second: MeleeAttack_21
+  - first:
+      213: -7782218717363427244
+    second: MeleeAttack_22
+  - first:
+      213: -4304654101864822703
+    second: MeleeAttack_23
+  - first:
+      213: -4297033204834759105
+    second: MeleeAttack_24
+  - first:
+      213: 3142156990003255965
+    second: MeleeAttack_25
+  - first:
+      213: -6441938931026436354
+    second: MeleeAttack_26
+  - first:
+      213: -7822371705940672313
+    second: MeleeAttack_27
+  - first:
+      213: 7156416307377411183
+    second: MeleeAttack_28
+  - first:
+      213: -6510480710479247933
+    second: MeleeAttack_29
+  - first:
+      213: 3888124431467778263
+    second: MeleeAttack_30
+  - first:
+      213: -5536121916176080693
+    second: MeleeAttack_31
+  - first:
+      213: -5598430283254797808
+    second: MeleeAttack_32
+  - first:
+      213: -3212798952229687157
+    second: MeleeAttack_33
+  - first:
+      213: -8945606869976501387
+    second: MeleeAttack_34
+  - first:
+      213: -6621552941152054358
+    second: MeleeAttack_35
+  - first:
+      213: 4424979942710222368
+    second: MeleeAttack_36
+  - first:
+      213: 3393934194661776391
+    second: MeleeAttack_37
+  - first:
+      213: -5901762481482132802
+    second: MeleeAttack_38
+  - first:
+      213: 4115307451719293536
+    second: MeleeAttack_39
+  - first:
+      213: -4541097009584929813
+    second: MeleeAttack_40
+  - first:
+      213: 3098268322739233407
+    second: MeleeAttack_41
+  - first:
+      213: -5564969391324893282
+    second: MeleeAttack_42
+  - first:
+      213: -5235253519078425270
+    second: MeleeAttack_43
+  - first:
+      213: 6204985761211135022
+    second: MeleeAttack_44
+  - first:
+      213: -3758090383501142052
+    second: MeleeAttack_45
+  - first:
+      213: -8913234470516446225
+    second: MeleeAttack_46
+  - first:
+      213: 8209655971716580771
+    second: MeleeAttack_47
+  - first:
+      213: 4888359272803533427
+    second: MeleeAttack_48
+  - first:
+      213: -5328389072259837647
+    second: MeleeAttack_49
+  - first:
+      213: 831928589512902883
+    second: MeleeAttack_50
+  - first:
+      213: 6706320334249619593
+    second: MeleeAttack_51
+  - first:
+      213: 5860242734730275609
+    second: MeleeAttack_52
+  - first:
+      213: -1016424873347799796
+    second: MeleeAttack_53
+  - first:
+      213: -825290796842137913
+    second: MeleeAttack_54
+  - first:
+      213: -4416783177922001073
+    second: MeleeAttack_55
+  - first:
+      213: 1107343028116967556
+    second: MeleeAttack_56
+  - first:
+      213: -2912684859332779666
+    second: MeleeAttack_57
+  - first:
+      213: -4365186764570190597
+    second: MeleeAttack_58
+  - first:
+      213: -2276280749777314600
+    second: MeleeAttack_59
+  - first:
+      213: -5870148557079889584
+    second: MeleeAttack_60
+  - first:
+      213: 8506860533810479313
+    second: MeleeAttack_61
+  - first:
+      213: -5882120024686305525
+    second: MeleeAttack_62
+  - first:
+      213: -1991143086304830559
+    second: MeleeAttack_63
+  - first:
+      213: 1741766846181151254
+    second: MeleeAttack_64
+  - first:
+      213: -4146197785454214767
+    second: MeleeAttack_65
+  - first:
+      213: -257994619038349939
+    second: MeleeAttack_66
+  - first:
+      213: 2400202683737563031
+    second: MeleeAttack_67
+  - first:
+      213: -7883273416387475220
+    second: MeleeAttack_68
+  - first:
+      213: -5321076532427021327
+    second: MeleeAttack_69
+  - first:
+      213: -309184277827310803
+    second: MeleeAttack_70
+  - first:
+      213: -1521626116950478944
+    second: MeleeAttack_71
+  - first:
+      213: 1235743310284874953
+    second: MeleeAttack_72
+  - first:
+      213: -441372775111656866
+    second: MeleeAttack_73
+  - first:
+      213: 2521609216169962361
+    second: MeleeAttack_74
+  - first:
+      213: 1689654620397631178
+    second: MeleeAttack_75
+  - first:
+      213: -6116082345801974462
+    second: MeleeAttack_76
+  - first:
+      213: 9141664272187466625
+    second: MeleeAttack_77
+  - first:
+      213: -265286834605809482
+    second: MeleeAttack_78
+  - first:
+      213: -7680610942797052920
+    second: MeleeAttack_79
+  - first:
+      213: -7640600891385493438
+    second: MeleeAttack_80
+  - first:
+      213: -3857061570947851796
+    second: MeleeAttack_81
+  - first:
+      213: -847934877037652472
+    second: MeleeAttack_82
+  - first:
+      213: 8312041748169025809
+    second: MeleeAttack_83
+  - first:
+      213: -2679635943356783242
+    second: MeleeAttack_84
+  - first:
+      213: 4325910473640103661
+    second: MeleeAttack_85
+  - first:
+      213: -6244078124152185416
+    second: MeleeAttack_86
+  - first:
+      213: -6567850340629161350
+    second: MeleeAttack_87
+  - first:
+      213: -1110957335201991172
+    second: MeleeAttack_88
+  - first:
+      213: 2179795819888089657
+    second: MeleeAttack_89
+  - first:
+      213: 799746382143174119
+    second: MeleeAttack_90
+  - first:
+      213: -1092176767126871499
+    second: MeleeAttack_91
+  - first:
+      213: 144587693578715501
+    second: MeleeAttack_92
+  - first:
+      213: 3524002752516305495
+    second: MeleeAttack_93
+  - first:
+      213: -5244064506882044409
+    second: MeleeAttack_94
+  - first:
+      213: -7509469724213835673
+    second: MeleeAttack_95
+  - first:
+      213: -471521616165217277
+    second: MeleeAttack_96
+  - first:
+      213: 1074324652605381985
+    second: MeleeAttack_97
+  - first:
+      213: 8982629936080775708
+    second: MeleeAttack_98
+  - first:
+      213: -642938766560791920
+    second: MeleeAttack_99
+  - first:
+      213: 3734775949669156664
+    second: MeleeAttack_100
+  - first:
+      213: 1071804061796183929
+    second: MeleeAttack_101
+  - first:
+      213: 763577703058248111
+    second: MeleeAttack_102
+  - first:
+      213: -152087170229222625
+    second: MeleeAttack_103
+  - first:
+      213: 2601911293888091298
+    second: MeleeAttack_104
+  - first:
+      213: 9208135296877125186
+    second: MeleeAttack_105
+  - first:
+      213: -1586902317407435859
+    second: MeleeAttack_106
+  - first:
+      213: 8653301096245333435
+    second: MeleeAttack_107
+  - first:
+      213: 5837615955929632551
+    second: MeleeAttack_108
+  - first:
+      213: -3887742954118281509
+    second: MeleeAttack_109
+  - first:
+      213: 1460382413860028438
+    second: MeleeAttack_110
+  - first:
+      213: -4600844131775224759
+    second: MeleeAttack_111
+  - first:
+      213: 1696478630035335451
+    second: MeleeAttack_112
+  - first:
+      213: -5985744130049176148
+    second: MeleeAttack_113
+  - first:
+      213: 900330612980091207
+    second: MeleeAttack_114
+  - first:
+      213: -481077043277411353
+    second: MeleeAttack_115
+  - first:
+      213: -5182905919244848331
+    second: MeleeAttack_116
+  - first:
+      213: -3904230785988802365
+    second: MeleeAttack_117
+  - first:
+      213: -2623529839789819998
+    second: MeleeAttack_118
+  - first:
+      213: -6227945609789087323
+    second: MeleeAttack_119
+  - first:
+      213: -5116051492010734724
+    second: MeleeAttack_120
+  - first:
+      213: 8423276476529865326
+    second: MeleeAttack_121
+  - first:
+      213: -4268477989079552102
+    second: MeleeAttack_122
+  - first:
+      213: -5329987922697531968
+    second: MeleeAttack_123
+  - first:
+      213: -8963226276461173835
+    second: MeleeAttack_124
+  - first:
+      213: 8424746701534992582
+    second: MeleeAttack_125
+  - first:
+      213: 7007059468081602567
+    second: MeleeAttack_126
+  - first:
+      213: 1631237216684038919
+    second: MeleeAttack_127
+  - first:
+      213: -3440139014233459735
+    second: MeleeAttack_128
+  - first:
+      213: -7958996811219805086
+    second: MeleeAttack_129
+  - first:
+      213: -3241095831419220547
+    second: MeleeAttack_130
+  - first:
+      213: -6193794218202357374
+    second: MeleeAttack_131
+  - first:
+      213: 1779959934637604663
+    second: MeleeAttack_132
+  - first:
+      213: 8669094865461349689
+    second: MeleeAttack_133
+  - first:
+      213: -4617592391856784271
+    second: MeleeAttack_134
+  - first:
+      213: 6025601738454632378
+    second: MeleeAttack_135
+  - first:
+      213: 8567191898278129070
+    second: MeleeAttack_136
+  - first:
+      213: 1497421731110355551
+    second: MeleeAttack_137
+  - first:
+      213: -6077623457520582372
+    second: MeleeAttack_138
+  - first:
+      213: -504376445244570415
+    second: MeleeAttack_139
+  - first:
+      213: -5251208396777096011
+    second: MeleeAttack_140
+  - first:
+      213: -8521580471370544238
+    second: MeleeAttack_141
+  - first:
+      213: -9175875277852257512
+    second: MeleeAttack_142
+  - first:
+      213: 7671820754704928811
+    second: MeleeAttack_143
+  - first:
+      213: -1356927876040151715
+    second: MeleeAttack_144
+  - first:
+      213: -3001254538693148831
+    second: MeleeAttack_145
+  - first:
+      213: 3930447969008022785
+    second: MeleeAttack_146
+  - first:
+      213: 9171691128104004912
+    second: MeleeAttack_147
+  - first:
+      213: -4228704791294528385
+    second: MeleeAttack_148
+  - first:
+      213: -5890241007663363538
+    second: MeleeAttack_149
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MeleeAttack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3444
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f45d391c4777e880800000000000000
+      internalID: -8581759396206521096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_1
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 3444
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d4a148ed28606c90800000000000000
+      internalID: -7178623259649137448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_2
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 3444
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00a8c0c8ff783a5c0800000000000000
+      internalID: -4205368095397869056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_3
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 3444
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b8f01c419e32d830800000000000000
+      internalID: 4094403805000562864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_4
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 3444
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ce5bb7a74a67700800000000000000
+      internalID: 537798051485838422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_5
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 3444
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b648ff292c3767d30800000000000000
+      internalID: 4428854563092530283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_6
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 3444
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11de9039cd018d6d0800000000000000
+      internalID: -2965601815077720815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_7
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 3444
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51303cd063f8facc0800000000000000
+      internalID: -3697579306725997803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_8
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 3444
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a636de4b407ee40800000000000000
+      internalID: 5685518229701880453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_9
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 3444
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33c8b7cf4ec6ac680800000000000000
+      internalID: -8734048796587357133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3198
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c4981c79d3f98870800000000000000
+      internalID: 8685741471776150721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_11
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 3198
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2557c1aff7a5dea90800000000000000
+      internalID: -7283065516684708526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_12
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 3198
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be959ce17c6676da0800000000000000
+      internalID: -5951675377145783829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_13
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 3198
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2495bcb1d07d46de0800000000000000
+      internalID: -1340710337748707006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_14
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 3198
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c2390181082f8c50800000000000000
+      internalID: 6669593560083935939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_15
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 3198
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36e0b1d26ece885d0800000000000000
+      internalID: -3059935473454870941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_16
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 3198
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 862de7e1cdb792cf0800000000000000
+      internalID: -276553716771925400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_17
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 3198
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e9ec62704386f310800000000000000
+      internalID: 1438481443812338148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_18
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 3198
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c50bdff92b4240830800000000000000
+      internalID: 4036391515637788764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_19
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 3198
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3978500dcb1329f40800000000000000
+      internalID: 5733699962609698707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2952
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48033bf3205dc1b70800000000000000
+      internalID: 8871199571648393348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_21
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 2952
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ec03bca64d1f8b20800000000000000
+      internalID: 3138759654682856681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_22
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 2952
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 458282bfe41000490800000000000000
+      internalID: -7782218717363427244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_23
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 2952
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1584b61c6ebc244c0800000000000000
+      internalID: -4304654101864822703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_24
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 2952
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3e04cd111fdd54c0800000000000000
+      internalID: -4297033204834759105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_25
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 2952
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9a97a1722f2b9b20800000000000000
+      internalID: 3142156990003255965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_26
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 2952
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efed86f4ca2a996a0800000000000000
+      internalID: -6441938931026436354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_27
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 2952
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c0075ec06a517390800000000000000
+      internalID: -7822371705940672313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_28
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 2952
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f641b0a17b2b05360800000000000000
+      internalID: 7156416307377411183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_29
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 2952
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c50adea94026a5a0800000000000000
+      internalID: -6510480710479247933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2706
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d0972cf19465f530800000000000000
+      internalID: 3888124431467778263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_31
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 2706
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc0e119e27ebb23b0800000000000000
+      internalID: -5536121916176080693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_32
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 2706
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01aeec2b1516e42b0800000000000000
+      internalID: -5598430283254797808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_33
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 2706
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b803a950068d963d0800000000000000
+      internalID: -3212798952229687157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_34
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 2706
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573b1c692f1dad380800000000000000
+      internalID: -8945606869976501387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_35
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 2706
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa35039bea48b14a0800000000000000
+      internalID: -6621552941152054358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_36
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 2706
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02e987730dfa86d30800000000000000
+      internalID: 4424979942710222368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_37
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 2706
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70cdddf0b2da91f20800000000000000
+      internalID: 3393934194661776391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_38
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 2706
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb2978eba4ab81ea0800000000000000
+      internalID: -5901762481482132802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_39
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 2706
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06a1f31d2528c1930800000000000000
+      internalID: 4115307451719293536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2460
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be30a1d5458caf0c0800000000000000
+      internalID: -4541097009584929813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_41
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 2460
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f72a7bbcf924ffa20800000000000000
+      internalID: 3098268322739233407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_42
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 2460
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9f6824b2d145c2b0800000000000000
+      internalID: -5564969391324893282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_43
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 2460
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4d773679a4a857b0800000000000000
+      internalID: -5235253519078425270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_44
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 2460
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24b855aca98c1650800000000000000
+      internalID: 6204985761211135022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_45
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 2460
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd75a9915b498dbc0800000000000000
+      internalID: -3758090383501142052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_46
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 2460
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feba9113974dd4480800000000000000
+      internalID: -8913234470516446225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_47
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 2460
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5c4521c9e8ee170800000000000000
+      internalID: 8209655971716580771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_48
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 2460
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37201f5ebd0f6d340800000000000000
+      internalID: 4888359272803533427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_49
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 2460
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13111eaae52cd06b0800000000000000
+      internalID: -5328389072259837647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2214
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e88868f4aa9b8b00800000000000000
+      internalID: 831928589512902883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_51
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 2214
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9807de8ffc2a11d50800000000000000
+      internalID: 6706320334249619593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_52
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 2214
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91b6925e7b3c35150800000000000000
+      internalID: 5860242734730275609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_53
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 2214
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c05ab3386fee4e1f0800000000000000
+      internalID: -1016424873347799796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_54
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 2214
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c643d1946afb84f0800000000000000
+      internalID: -825290796842137913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_55
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 2214
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f47c90ec91f64b2c0800000000000000
+      internalID: -4416783177922001073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_56
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 2214
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480da6bfd921e5f00800000000000000
+      internalID: 1107343028116967556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_57
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 2214
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e61afc07d801497d0800000000000000
+      internalID: -2912684859332779666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_58
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 2214
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfc9e8fe3cdbb63c0800000000000000
+      internalID: -4365186764570190597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_59
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 2214
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dc9674e7b60960e0800000000000000
+      internalID: -2276280749777314600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1968
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0593b7c1dfa098ea0800000000000000
+      internalID: -5870148557079889584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_61
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 1968
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d0409f85907e0670800000000000000
+      internalID: 8506860533810479313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_62
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 1968
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f5c5a90038e5ea0800000000000000
+      internalID: -5882120024686305525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_63
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 1968
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ab53db99e90e54e0800000000000000
+      internalID: -1991143086304830559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_64
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 1968
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6121e24e7bffb2810800000000000000
+      internalID: 1741766846181151254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_65
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 1968
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1918d75e41fb576c0800000000000000
+      internalID: -4146197785454214767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_66
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 1968
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d85c14ac24b6b6cf0800000000000000
+      internalID: -257994619038349939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_67
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 1968
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79fdd11cf9b3f4120800000000000000
+      internalID: 2400202683737563031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_68
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 1968
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce8c1fc589cf89290800000000000000
+      internalID: -7883273416387475220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_69
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 1968
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f32506061db726b0800000000000000
+      internalID: -5321076532427021327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1722
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2ba7f5998e85bbf0800000000000000
+      internalID: -309184277827310803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_71
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 1722
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0afa53acb1912eae0800000000000000
+      internalID: -1521626116950478944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_72
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 1722
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c468135efd362110800000000000000
+      internalID: 1235743310284874953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_73
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 1722
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5af0fdaccdefd9f0800000000000000
+      internalID: -441372775111656866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_74
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 1722
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b6928d83e8ef220800000000000000
+      internalID: 2521609216169962361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_75
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 1722
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac6f5e1dcebd27710800000000000000
+      internalID: 1689654620397631178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_76
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 1722
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24d7f69c28f4f1ba0800000000000000
+      internalID: -6116082345801974462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_77
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 1722
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1832d9f8837bdde70800000000000000
+      internalID: 9141664272187466625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_78
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 1722
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b0abbb8703815cf0800000000000000
+      internalID: -265286834605809482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_79
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 1722
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8048a988a0df86590800000000000000
+      internalID: -7680610942797052920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1476
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2484f6e88f127f590800000000000000
+      internalID: -7640600891385493438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_81
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 1476
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce9d7d2dfe6f87ac0800000000000000
+      internalID: -3857061570947851796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_82
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 1476
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 806918dc8b78b34f0800000000000000
+      internalID: -847934877037652472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_83
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 1476
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 119e4dd4eed4a5370800000000000000
+      internalID: 8312041748169025809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_84
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 1476
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 675a9dc8e4500dad0800000000000000
+      internalID: -2679635943356783242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_85
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 1476
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deec577f7a8b80c30800000000000000
+      internalID: 4325910473640103661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_86
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 1476
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd1f1457049859a0800000000000000
+      internalID: -6244078124152185416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_87
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 1476
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7aded4c9ee4ad4a0800000000000000
+      internalID: -6567850340629161350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_88
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 1476
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf5bba290361590f0800000000000000
+      internalID: -1110957335201991172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_89
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 1476
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a9f47cfb0304e10800000000000000
+      internalID: 2179795819888089657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1230
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e53c0ae815491b00800000000000000
+      internalID: 799746382143174119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_91
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 1230
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 532e773540fc7d0f0800000000000000
+      internalID: -1092176767126871499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_92
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 1230
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6107a2cdbda10200800000000000000
+      internalID: 144587693578715501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_93
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 1230
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 752bb3b15d5c7e030800000000000000
+      internalID: 3524002752516305495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_94
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 1230
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ecf008d175937b0800000000000000
+      internalID: -5244064506882044409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_95
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 1230
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7680fac921109c790800000000000000
+      internalID: -7509469724213835673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_96
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 1230
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30cdd8c9691d479f0800000000000000
+      internalID: -471521616165217277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_97
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 1230
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d1dfb5494c8ee00800000000000000
+      internalID: 1074324652605381985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_98
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 1230
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a62e8b556b8ac70800000000000000
+      internalID: 8982629936080775708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_99
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 1230
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092f0d62992d317f0800000000000000
+      internalID: -642938766560791920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 984
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 837c3b340f694d330800000000000000
+      internalID: 3734775949669156664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_101
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 984
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97fae249d10dfde00800000000000000
+      internalID: 1071804061796183929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_102
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 984
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa1123510e5c89a00800000000000000
+      internalID: 763577703058248111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_103
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 984
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f13c793468da3edf0800000000000000
+      internalID: -152087170229222625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_104
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 984
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a4d6494988db1420800000000000000
+      internalID: 2601911293888091298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_105
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 984
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24ed816044ed9cf70800000000000000
+      internalID: 9208135296877125186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_106
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 984
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da38fa500c03af9e0800000000000000
+      internalID: -1586902317407435859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_107
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 984
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd8338ff73b61870800000000000000
+      internalID: 8653301096245333435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_108
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 984
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72f865c68c0630150800000000000000
+      internalID: 5837615955929632551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_109
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 984
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd680c1a166fb0ac0800000000000000
+      internalID: -3887742954118281509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 738
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 610ca566112544410800000000000000
+      internalID: 1460382413860028438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_111
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 738
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 944e89273a48620c0800000000000000
+      internalID: -4600844131775224759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_112
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 738
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b192c40635a1b8710800000000000000
+      internalID: 1696478630035335451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_113
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 738
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cad0a047d6d5eeca0800000000000000
+      internalID: -5985744130049176148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_114
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 738
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 749861f1ced9e7c00800000000000000
+      internalID: 900330612980091207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_115
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 738
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ebcadd5afed259f0800000000000000
+      internalID: -481077043277411353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_116
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 738
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5333423d68e9218b0800000000000000
+      internalID: -5182905919244848331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_117
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 738
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c84eff19c261d9c0800000000000000
+      internalID: -3904230785988802365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_118
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 738
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a7b0b1c289579bd0800000000000000
+      internalID: -2623529839789819998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_119
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 738
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a161180774e199a0800000000000000
+      internalID: -6227945609789087323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 492
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7bc71626422009b0800000000000000
+      internalID: -5116051492010734724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_121
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 492
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e627774b35d75e470800000000000000
+      internalID: 8423276476529865326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_122
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 492
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9fe65162e153c4c0800000000000000
+      internalID: -4268477989079552102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_123
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 492
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cdcd7a49341806b0800000000000000
+      internalID: -5329987922697531968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_124
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 492
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b3a516d0393c9380800000000000000
+      internalID: -8963226276461173835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_125
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 492
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c813a32d76bae470800000000000000
+      internalID: 8424746701534992582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_126
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 492
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 700aa0316731e3160800000000000000
+      internalID: 7007059468081602567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_127
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 492
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70b59dc1b9153a610800000000000000
+      internalID: 1631237216684038919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_128
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 492
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e3f6ae0bcb2240d0800000000000000
+      internalID: -3440139014233459735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_129
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 492
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26cd6ca9196fb8190800000000000000
+      internalID: -7958996811219805086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_130
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 246
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd024d63805503d0800000000000000
+      internalID: -3241095831419220547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_131
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 246
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2812e2489f83b0aa0800000000000000
+      internalID: -6193794218202357374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_132
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 246
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73f70824120b3b810800000000000000
+      internalID: 1779959934637604663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_133
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 246
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d8cfb69dfce4870800000000000000
+      internalID: 8669094865461349689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_134
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 246
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17c74d54f240befb0800000000000000
+      internalID: -4617592391856784271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_135
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 246
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab7809a2bdc3f9350800000000000000
+      internalID: 6025601738454632378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_136
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 246
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eade87bf3a7c4e670800000000000000
+      internalID: 8567191898278129070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_137
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 246
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5288c97129e7c410800000000000000
+      internalID: 1497421731110355551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_138
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 246
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1187ef7aa1f7aba0800000000000000
+      internalID: -6077623457520582372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_139
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 246
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d48f1c9b481009f0800000000000000
+      internalID: -504376445244570415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_140
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bc7d8409c5ff17b0800000000000000
+      internalID: -5251208396777096011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_141
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 0
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b8d07e5b34db980800000000000000
+      internalID: -8521580471370544238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_142
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 0
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 813d358fc0eb8a080800000000000000
+      internalID: -9175875277852257512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_143
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 0
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2018a05458c77a60800000000000000
+      internalID: 7671820754704928811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_144
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 0
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d2dca39493b2de0800000000000000
+      internalID: -1356927876040151715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_145
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 0
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16f7aacf5e66956d0800000000000000
+      internalID: -3001254538693148831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_146
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 0
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 105f0e87a91cb8630800000000000000
+      internalID: 3930447969008022785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_147
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 0
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03dad30cc74684f70800000000000000
+      internalID: 9171691128104004912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_148
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 0
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f74b5ee956f9055c0800000000000000
+      internalID: -4228704791294528385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeAttack_149
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 0
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2a49c8e209a14ea0800000000000000
+      internalID: -5890241007663363538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
