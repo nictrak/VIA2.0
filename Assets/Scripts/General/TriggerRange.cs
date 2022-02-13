@@ -15,15 +15,7 @@ public class TriggerRange : MonoBehaviour
     private MonsterAttributes monsterAttributes;
 
     private void OnValidate() {
-        /*if(monsterAttributes == null){
-            monsterAttributes = this.transform.root.gameObject.GetComponent<MonsterAttributes>();
-        } else {
-            if(monsterAttributes.isEnemy){
-                tagTarget = "PlayerTarget";
-            } else {
-                tagTarget = "EnemyTarget";
-            }
-        }*/
+
     }
 
     private void Awake()
@@ -38,9 +30,9 @@ public class TriggerRange : MonoBehaviour
     void Start()
     {
         if (monsterAttributes != null){
-            if(monsterAttributes.isEnemy){
+            if(monsterAttributes.monsterType == monsterType.Enemy){
                 tagTarget = "PlayerTarget";
-            } else {
+            } else if (monsterAttributes.monsterType == monsterType.Friendly) {
                 tagTarget = "EnemyTarget";
             }
         }
