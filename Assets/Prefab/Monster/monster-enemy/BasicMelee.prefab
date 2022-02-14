@@ -263,7 +263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 9
   NormalNextState: 1
-  delayFrame: 20
+  delayFrame: 40
 --- !u!1 &1010535366
 GameObject:
   m_ObjectHideFlags: 0
@@ -728,7 +728,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &362187747401865812
 Transform:
   m_ObjectHideFlags: 0
@@ -787,7 +787,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3.84375, y: 3.84375}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -803,7 +803,7 @@ Animator:
   m_GameObject: {fileID: 5511070332047198921}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a464a6a234cbd0b4786ebc7209b0289c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
