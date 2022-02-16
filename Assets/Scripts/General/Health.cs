@@ -54,7 +54,7 @@ public class Health : MonoBehaviour
     [SerializeField]
     private List<SpriteRenderer> spriteRenderer;
     [SerializeField]
-    [Range(0.0F, 1.0F)]
+    [Range(0.0F, 10.0F)]
     private float knockbackRange = 0.5f;
     private Rigidbody2D rb;
 
