@@ -1164,8 +1164,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30367bfd22ea2ca44b7b8cf9cb6b3d6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 8
-  initialHealth: 8
+  maxHealth: 200
+  initialHealth: 200
   healthBar: {fileID: 0}
   hitEffectPrefab: {fileID: 1454490803532372921, guid: ce520020bce440044bc0d5d1f8feca7c,
     type: 3}
@@ -1182,7 +1182,7 @@ MonoBehaviour:
   isTurnRedWhenHurt: 1
   spriteRenderer:
   - {fileID: 6878539700156517199}
-  knockbackRange: 1
+  knockbackRange: 1.2
 --- !u!114 &407601076
 MonoBehaviour:
   m_ObjectHideFlags: 0
