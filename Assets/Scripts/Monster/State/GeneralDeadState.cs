@@ -35,6 +35,8 @@ public class GeneralDeadState : MonsterStateBehaviour
 
     public override void StartState()
     {
+        TargetBuffer targetBuffer = this.transform.root.gameObject.GetComponent<TargetBuffer>();
+        if (targetBuffer != null) targetBuffer.CancleAim();
         if (parentRb != null) parentRb.constraints = RigidbodyConstraints2D.FreezePosition;
         if (parentCollider != null) parentCollider.isTrigger = true;
         if (blocker != null) blocker.isTrigger = true;

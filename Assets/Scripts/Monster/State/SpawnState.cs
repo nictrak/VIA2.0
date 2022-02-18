@@ -21,9 +21,7 @@ public class SpawnState : MonsterStateBehaviour
     {
         if(counter >= delayFrame)
         {
-            GameObject spawned = Instantiate(spawnedPrefab);
-            spawned.transform.position = targetBuffer.TargetPosition;
-            targetBuffer.IsAim = false;
+            targetBuffer.Fire(spawnedPrefab);
             counter = 0;
             return NormalNextState;
         }

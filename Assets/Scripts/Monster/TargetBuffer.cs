@@ -4,44 +4,52 @@ using UnityEngine;
 
 public class TargetBuffer : MonoBehaviour
 {
-    private Vector2 targetPosition;
-    private bool isAim;
-    private GameObject currentAim;
-    [SerializeField]
-    private GameObject aimPrefab;
+    private GameObject instantiatedObject;
 
-    public Vector2 TargetPosition { get => targetPosition; set => targetPosition = value; }
-    public bool IsAim { get => isAim; set => isAim = value; }
+    public void Aim(GameObject aimPrefab, Vector2 position){
+        instantiatedObject = Instantiate(aimPrefab);
+        instantiatedObject.transform.position = position;   
+    }
+
+    public Vector2 AimPosition(){
+        if(instantiatedObject != null){
+            return instantiatedObject.transform.position;
+        }
+        return this.transform.position;
+    }
+
+    public Vector2 CancleAim(){
+        Vector2 position = this.transform.position;
+        if(instantiatedObject != null) {
+            position = instantiatedObject.transform.position;
+            Destroy(instantiatedObject);
+            instantiatedObject = null;
+        }
+        return position;
+    }
+
+    public void Fire(GameObject firePrefab){
+        if(instantiatedObject != null) {
+            Vector2 position = instantiatedObject.transform.position;
+            Destroy(instantiatedObject);
+            instantiatedObject = Instantiate(firePrefab);
+            instantiatedObject.transform.position = position;
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        targetPosition = new Vector2();
-        isAim = false;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (aimPrefab != null) AimUpdate();
+
     }
     private void AimUpdate()
     {
-        if (isAim)
-        {
-            if(currentAim == null)
-            {
-                currentAim = Instantiate(aimPrefab);
-                currentAim.transform.position = targetPosition;
-            }
-        }
-        else
-        {
-            if(currentAim != null)
-            {
-                Destroy(currentAim);
-                currentAim = null;
-            }
-        }
+
     }
 }

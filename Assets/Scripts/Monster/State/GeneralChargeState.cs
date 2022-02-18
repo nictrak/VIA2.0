@@ -18,6 +18,7 @@ public class GeneralChargeState : MonsterStateBehaviour
 
     private Vector2 targetPosition;
     private Rigidbody2D rgbody;
+    private TargetBuffer targetBuffer;
 
     public override void ExitState()
     {
@@ -51,7 +52,15 @@ public class GeneralChargeState : MonsterStateBehaviour
     public override void StartState()
     {
         //set Distination
-        targetPosition = GetTarget().transform.position;
+        targetBuffer = GetComponentInParent<TargetBuffer>();
+        if(targetBuffer == null){
+            targetPosition = GetTarget().transform.position;
+        } else {
+            targetPosition = targetBuffer.CancleAim();
+            if ( targetPosition == (Vector2)this.transform.position ){
+                targetPosition = GetTarget().transform.position;
+            }
+        }
     }
 
     // Start is called before the first frame update
