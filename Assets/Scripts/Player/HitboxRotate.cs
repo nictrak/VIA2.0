@@ -14,6 +14,7 @@ public class HitboxRotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Debug.Log("Active HitboxRotate");
         Vector2 direction = playerMoveController.LastestNonZeroMoveDirection;
         Quaternion target = Quaternion.Euler(0, 0, CalAngle(direction));
         transform.rotation = target;

@@ -11,6 +11,7 @@ public class MonsterStateMachine : MonoBehaviour
     private string animatorStringHead;
     [SerializeField]
     private Animator animator;
+    private Animator effectAnimator;
     [SerializeField]
     private List<MonsterState> statesHashSequence;
     [SerializeField]
@@ -26,12 +27,20 @@ public class MonsterStateMachine : MonoBehaviour
     [SerializeField]
     private List<MonsterState> tokenStates;
 
+    // Use For attack direction
+    private Vector2 lastestNonZeroMoveDirection;
+    public Vector2 LastestNonZeroMoveDirection { get => lastestNonZeroMoveDirection; set => lastestNonZeroMoveDirection = value; }
+
+    // string directionString = "S";
+    private string directionString = "S";
+    private Boolean atttackPlayEffect ;
     private Dictionary<MonsterState, MonsterStateBehaviour> statesHash;
     private Dictionary<MonsterState, string> stringAnimatorsHash;
     private AIDestinationSetter aIDestinationSetter;
     private FlipToPlayer flipToPlayer;
 
     private MonsterState currentState;
+    public MonsterState CurrentState { get => currentState; set => currentState = value; }
     private Health health;
     private MonsterTokenController monsterTokenController;
     private MonsterAttributes monsterAttributes;
@@ -67,6 +76,12 @@ public class MonsterStateMachine : MonoBehaviour
         health = GetComponent<Health>();
         aIDestinationSetter = GetComponent<AIDestinationSetter>();
         flipToPlayer = GetComponent<FlipToPlayer>();
+        // effect Attack
+        effectAnimator = GameObject.Find("RendererEffect").GetComponent<Animator>();
+        atttackPlayEffect = false ;
+        // Direction string 
+        directionString = "S";
+        lastestNonZeroMoveDirection = new Vector2(0, -1);
         if(monsterTokenController == null)
         {
             monsterTokenController = Resources.FindObjectsOfTypeAll<MonsterTokenController>()[0];
@@ -81,6 +96,10 @@ public class MonsterStateMachine : MonoBehaviour
     {
         UpdateDestination();
         animator.Play(CreateAnimatorString(currentState));
+        if (currentState == MonsterState.Attack ) {
+                effectAnimator.Play("basic_melee_effect"+ " " + directionString);
+                // effectAnimator.Play("Idle");
+        }
     }
     private void FixedUpdate()
     {
@@ -131,17 +150,20 @@ public class MonsterStateMachine : MonoBehaviour
     private string CreateAnimatorString(MonsterState state)
     {
         string result = animatorStringHead;
-        string directionString = "S";
+        // string directionString = "S";
         if (isHaveEightDirection && currentState != MonsterState.Hurt && currentState != MonsterState.Dead)
         {
             if (aIDestinationSetter.target != null)
             {
                 Vector2 direction = (aIDestinationSetter.target.transform.position - transform.position).normalized;
+                LastestNonZeroMoveDirection = direction;
                 if (flipToPlayer.IsReverse)
                 {
                     direction = direction * -1;
                 }
                 directionString = directions[DirectionToIndex(direction, 8)];
+
+
             }
             result = result + stringAnimatorsHash[state] + " " + directionString;
         }
@@ -200,3 +222,4 @@ public class MonsterStateMachine : MonoBehaviour
         }
     }
 }
+
