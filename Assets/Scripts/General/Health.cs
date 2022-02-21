@@ -51,8 +51,17 @@ public class Health : MonoBehaviour
     public bool IsDead { get => isDead; set => isDead = value; }
     public bool IsHurt { get => isHurt; set => isHurt = value; }
 
+    public bool IsKnockback { get => isKnockback; set => isKnockback = value; }
+    public bool IsNotKnockback { get => isNotKnockback; set => isNotKnockback = value; }
+
+
     [SerializeField]
     private SpriteRenderer spriteRenderer;
+    private bool isKnockback;
+    private bool isNotKnockback;
+    [SerializeField]
+    [Range(0.0F, 1.0F)]
+    private float knockbackPossibility = 1.0f;
     [SerializeField]
     [Range(0.0F, 1.0F)]
     private float knockbackRange = 0.5f;
@@ -66,6 +75,8 @@ public class Health : MonoBehaviour
     {
         isDead = false;
         isHurt = false;
+        isKnockback = false;
+        isNotKnockback = false;
         isAlreadyHurt = false;
         currentHealth = initialHealth;
         if (currentHealth > maxHealth) currentHealth = maxHealth;
@@ -124,9 +135,14 @@ public class Health : MonoBehaviour
                 currentHealth = currentHealth - calculateDamage;
             }
             if(currentHealth > 0){
-                if(rb!=null && isKnockback){
-                    Vector3 moveDirection = transform.position - damageDirection;
-                    rb.AddForce(moveDirection.normalized * knockbackRange * 1.6f, ForceMode2D.Impulse);
+                if(rb!=null && isKnockback && !isNotKnockback){
+                    if(( Random.Range(0.0f, 1.0f) <= knockbackPossibility )) {
+                        this.isKnockback = true;
+                        Vector3 moveDirection = transform.position - damageDirection;
+                        rb.AddForce(moveDirection.normalized * knockbackRange * 1.6f, ForceMode2D.Impulse);
+                    } else {
+                        isNotKnockback = true;
+                    }
                 }
             }
         }
@@ -160,6 +176,7 @@ public class Health : MonoBehaviour
             if (isAlreadyHurt)
             {
                 isHurt = false;
+                isKnockback = false;
                 isAlreadyHurt = false;
             }
             else
