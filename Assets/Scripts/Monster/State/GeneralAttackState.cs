@@ -47,6 +47,7 @@ public class GeneralAttackState : MonsterStateBehaviour
             //Enter next state
             attackCounter = 0;
             isAlreadyDoDamage = false;
+            this.transform.root.gameObject.GetComponent<Health>().IsNotKnockback = false;
             return NormalNextState;
         }
         else attackCounter++;
