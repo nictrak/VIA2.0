@@ -92,9 +92,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.013185263}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.3197542
+  m_Radius: 0.1
 --- !u!1 &484702154
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,8 +275,6 @@ GameObject:
   - component: {fileID: 1010535367}
   - component: {fileID: 1286149515167316011}
   - component: {fileID: 623239987}
-  - component: {fileID: 9171523714081708725}
-  - component: {fileID: 590450366}
   m_Layer: 0
   m_Name: AttackRange
   m_TagString: Untagged
@@ -291,13 +289,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1010535366}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.38268343, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.675, y: 0.76421875, z: 1}
+  m_LocalScale: {x: 0.57094, y: 0.57094, z: 0.57094}
   m_Children: []
   m_Father: {fileID: 484702155}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
 --- !u!58 &1286149515167316011
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -305,15 +303,15 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1010535366}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1}
+  m_Offset: {x: 0.413623, y: 0.2545375}
   serializedVersion: 2
-  m_Radius: 2
+  m_Radius: 3
 --- !u!114 &623239987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,34 +326,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tagTarget: PlayerTarget
   monsterAttributes: {fileID: 0}
---- !u!114 &9171523714081708725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1010535366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7ead52d558510c4e94e37205d4ebe6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!70 &590450366
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1010535366}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1}
-  m_Size: {x: 3, y: 3}
-  m_Direction: 0
 --- !u!1 &1170233307
 GameObject:
   m_ObjectHideFlags: 0
@@ -575,8 +545,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0052422783, y: 0.04508724}
-  m_Size: {x: 0.64322037, y: 0.7636788}
+  m_Offset: {x: 0.06251534, y: 0.34724963}
+  m_Size: {x: 0.5077052, y: 0.6574641}
   m_Direction: 0
 --- !u!1 &2053696795
 GameObject:
@@ -982,10 +952,14 @@ Transform:
   m_GameObject: {fileID: 6878539700662927994}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalPosition: {x: 0.014, y: -0.104, z: 0}
 =======
   m_LocalPosition: {x: 0, y: 0, z: 0}
 >>>>>>> origin/MARK-scen-
+=======
+  m_LocalPosition: {x: 4.63, y: 2.36, z: 0}
+>>>>>>> parent of a0b8200c (Checkpoint Animation Stack)
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8098071294265969206}
@@ -1121,8 +1095,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.021513402, y: 0.042212963}
-  m_Size: {x: 0.73941886, y: 0.9062841}
+  m_Offset: {x: 0.075824976, y: 0.4176607}
+  m_Size: {x: 0.5447421, y: 0.7239108}
   m_Direction: 0
 --- !u!114 &101977564
 MonoBehaviour:
@@ -1217,10 +1191,14 @@ MonoBehaviour:
   spriteRenderer:
   - {fileID: 6878539700156517199}
 <<<<<<< HEAD
+<<<<<<< HEAD
   knockbackRange: 0.5
 =======
   knockbackRange: 8
 >>>>>>> origin/MARK-scen-
+=======
+  knockbackRange: 1
+>>>>>>> parent of a0b8200c (Checkpoint Animation Stack)
 --- !u!114 &407601076
 MonoBehaviour:
   m_ObjectHideFlags: 0
