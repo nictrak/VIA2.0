@@ -427,7 +427,7 @@ MonoBehaviour:
   - Via attack 2-1 body
   - Via attack 2-2 body
   - Via attack 2-3 body
-  - 
+  - Via Body Dash
   - Via area attack
   - Via Dead
   - Via null
@@ -659,7 +659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dashVelocity: 0.25
-  dashFrame: 10
+  dashFrame: 15
   dashStamina: 25
 --- !u!114 &894784141
 MonoBehaviour:
