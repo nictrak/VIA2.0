@@ -72,7 +72,7 @@ public class MonsterStateMachine : MonoBehaviour
     };
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         SetupStatesHash();
         SetupStringAnimatorsHash();
@@ -83,6 +83,7 @@ public class MonsterStateMachine : MonoBehaviour
         flipToPlayer = GetComponent<FlipToPlayer>();
         // effect Attack
         effectAnimator = GameObject.Find("RendererEffect").GetComponent<Animator>();
+        directionsEffect = new Dictionary<string, float[]>();
         directionsEffect.Add("N",new float[]{0f,1f});
         directionsEffect.Add("NW",new float[]{-0.707f,0.707f});
         directionsEffect.Add("W",new float[]{-1f,0f});
