@@ -1,72 +1,48 @@
 fileFormatVersion: 2
-guid: cfc9886fcb5c68b4ba6f3bd832d0c13f
+guid: 151210dd37ff3974488fd75e696deafe
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5892452180538991832
-    second: MeleeDamage_0
+      213: 5573759596085902011
+    second: MeleeDead_0
   - first:
-      213: 2452092046256221051
-    second: MeleeDamage_1
+      213: 7894451995594131058
+    second: MeleeDead_1
   - first:
-      213: -4093178591677627882
-    second: MeleeDamage_2
+      213: 4979156366614560946
+    second: MeleeDead_2
   - first:
-      213: 8986779621186379365
-    second: MeleeDamage_3
+      213: -8015725753187490344
+    second: MeleeDead_3
   - first:
-      213: 4405235629758042670
-    second: MeleeDamage_4
+      213: 6889200281406877426
+    second: MeleeDead_4
   - first:
-      213: 5220087270283794361
-    second: MeleeDamage_5
+      213: 1276639164550442926
+    second: MeleeDead_5
   - first:
-      213: 7142918425128293196
-    second: MeleeDamage_6
+      213: -6496232454054374214
+    second: MeleeDead_6
   - first:
-      213: 7109533198241159389
-    second: MeleeDamage_7
+      213: -7909438800249697375
+    second: MeleeDead_7
   - first:
-      213: 2040881789201889491
-    second: MeleeDamage_8
+      213: -5952759318862854402
+    second: MeleeDead_8
   - first:
-      213: 694207028414005740
-    second: MeleeDamage_9
+      213: -7097527026773819232
+    second: MeleeDead_9
   - first:
-      213: -6901793958708050386
-    second: MeleeDamage_10
+      213: -3299331034803917502
+    second: MeleeDead_10
   - first:
-      213: 7422660984168939287
-    second: MeleeDamage_11
-  - first:
-      213: -123224234490052635
-    second: MeleeDamage_12
-  - first:
-      213: 6249179932840321594
-    second: MeleeDamage_13
-  - first:
-      213: 5656994001039895184
-    second: MeleeDamage_14
-  - first:
-      213: 6061543313097045588
-    second: MeleeDamage_15
-  - first:
-      213: 2590313660348132655
-    second: MeleeDamage_16
-  - first:
-      213: -2507558048097393577
-    second: MeleeDamage_17
-  - first:
-      213: 2040025335536767634
-    second: MeleeDamage_18
-  - first:
-      213: 6956999799847866183
-    second: MeleeDamage_19
+      213: -4152789110562478201
+    second: MeleeDead_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -121,7 +97,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -133,7 +109,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -145,7 +121,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -159,175 +135,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MeleeDamage_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 984
-        width: 246
-        height: 246
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 82b5ffa16fdc93ea0800000000000000
-      internalID: -5892452180538991832
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MeleeDamage_1
-      rect:
-        serializedVersion: 2
-        x: 246
-        y: 984
-        width: 246
-        height: 246
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b7ba9ad69b4970220800000000000000
-      internalID: 2452092046256221051
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MeleeDamage_2
-      rect:
-        serializedVersion: 2
-        x: 492
-        y: 984
-        width: 246
-        height: 246
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 61242d8e1cb1237c0800000000000000
-      internalID: -4093178591677627882
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MeleeDamage_3
-      rect:
-        serializedVersion: 2
-        x: 738
-        y: 984
-        width: 246
-        height: 246
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 56e9883937477bc70800000000000000
-      internalID: 8986779621186379365
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MeleeDamage_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 738
-        width: 246
-        height: 246
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e225f9f177a822d30800000000000000
-      internalID: 4405235629758042670
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MeleeDamage_5
-      rect:
-        serializedVersion: 2
-        x: 246
-        y: 738
-        width: 246
-        height: 246
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9b7ddc117b9717840800000000000000
-      internalID: 5220087270283794361
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MeleeDamage_6
-      rect:
-        serializedVersion: 2
-        x: 492
-        y: 738
-        width: 246
-        height: 246
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c435d5d767eb02360800000000000000
-      internalID: 7142918425128293196
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MeleeDamage_7
-      rect:
-        serializedVersion: 2
-        x: 738
-        y: 738
-        width: 246
-        height: 246
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dd8d200a6c22aa260800000000000000
-      internalID: 7109533198241159389
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MeleeDamage_8
+      name: MeleeDead_0
       rect:
         serializedVersion: 2
         x: 0
@@ -341,14 +149,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d831f99c2ba25c10800000000000000
-      internalID: 2040881789201889491
+      spriteID: bbaff1452d8f95d40800000000000000
+      internalID: 5573759596085902011
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeDamage_9
+      name: MeleeDead_1
       rect:
         serializedVersion: 2
         x: 246
@@ -362,14 +170,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce142314d9152a900800000000000000
-      internalID: 694207028414005740
+      spriteID: 27603cd634abe8d60800000000000000
+      internalID: 7894451995594131058
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeDamage_10
+      name: MeleeDead_2
       rect:
         serializedVersion: 2
         x: 492
@@ -383,14 +191,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e26054a36f6e730a0800000000000000
-      internalID: -6901793958708050386
+      spriteID: 2b08f21b554891540800000000000000
+      internalID: 4979156366614560946
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeDamage_11
+      name: MeleeDead_3
       rect:
         serializedVersion: 2
         x: 738
@@ -404,14 +212,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71f7a8196d6920760800000000000000
-      internalID: 7422660984168939287
+      spriteID: 8d52f4885eb62c090800000000000000
+      internalID: -8015725753187490344
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeDamage_12
+      name: MeleeDead_4
       rect:
         serializedVersion: 2
         x: 0
@@ -425,14 +233,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ef308b26383a4ef0800000000000000
-      internalID: -123224234490052635
+      spriteID: 2fe27c7c72b5b9f50800000000000000
+      internalID: 6889200281406877426
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeDamage_13
+      name: MeleeDead_5
       rect:
         serializedVersion: 2
         x: 246
@@ -446,14 +254,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3262721a0c89b650800000000000000
-      internalID: 6249179932840321594
+      spriteID: eaf61656e8887b110800000000000000
+      internalID: 1276639164550442926
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeDamage_14
+      name: MeleeDead_6
       rect:
         serializedVersion: 2
         x: 492
@@ -467,14 +275,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09aaf78621ea18e40800000000000000
-      internalID: 5656994001039895184
+      spriteID: ab499b5600fb8d5a0800000000000000
+      internalID: -6496232454054374214
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeDamage_15
+      name: MeleeDead_7
       rect:
         serializedVersion: 2
         x: 738
@@ -488,14 +296,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4563bcf178dee1450800000000000000
-      internalID: 6061543313097045588
+      spriteID: 1abcc6231570c3290800000000000000
+      internalID: -7909438800249697375
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeDamage_16
+      name: MeleeDead_8
       rect:
         serializedVersion: 2
         x: 0
@@ -509,14 +317,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2d64edcc84a2f320800000000000000
-      internalID: 2590313660348132655
+      spriteID: ef688c540fc836da0800000000000000
+      internalID: -5952759318862854402
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeDamage_17
+      name: MeleeDead_9
       rect:
         serializedVersion: 2
         x: 246
@@ -530,14 +338,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 754ab79ad3d533dd0800000000000000
-      internalID: -2507558048097393577
+      spriteID: 0a0896106c4808d90800000000000000
+      internalID: -7097527026773819232
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeDamage_18
+      name: MeleeDead_10
       rect:
         serializedVersion: 2
         x: 492
@@ -551,14 +359,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2925771fb30af4c10800000000000000
-      internalID: 2040025335536767634
+      spriteID: 24d271a87eb6632d0800000000000000
+      internalID: -3299331034803917502
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeDamage_19
+      name: MeleeDead_11
       rect:
         serializedVersion: 2
         x: 738
@@ -572,8 +380,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74f456c457a3c8060800000000000000
-      internalID: 6956999799847866183
+      spriteID: 78720dd6e445e56c0800000000000000
+      internalID: -4152789110562478201
       vertices: []
       indices: 
       edges: []
