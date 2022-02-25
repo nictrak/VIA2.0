@@ -10,6 +10,10 @@ public class GeneralDeadState : MonsterStateBehaviour
     private GameObject target;
     [SerializeField]
     private Collider2D blocker;
+    [SerializeField]
+    private Rigidbody2D parentRb;
+    [SerializeField]
+    private Collider2D parentCollider;
 
     private int delayCounter;
     public override void ExitState()
@@ -31,6 +35,8 @@ public class GeneralDeadState : MonsterStateBehaviour
 
     public override void StartState()
     {
+        if (parentRb != null) parentRb.constraints = RigidbodyConstraints2D.FreezePosition;
+        if (parentCollider != null) parentCollider.isTrigger = true;
         if (blocker != null) blocker.isTrigger = true;
     }
 

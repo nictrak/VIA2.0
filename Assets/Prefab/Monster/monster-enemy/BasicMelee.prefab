@@ -48,6 +48,8 @@ MonoBehaviour:
   delayFrame: 65
   target: {fileID: 6878539700662927994}
   blocker: {fileID: 1812663165}
+  parentRb: {fileID: 6878539700662927937}
+  parentCollider: {fileID: 6878539700662927939}
 --- !u!1 &118654521
 GameObject:
   m_ObjectHideFlags: 0
@@ -1229,6 +1231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 6878539700156517199}
+  health: {fileID: 407601075}
 --- !u!114 &1490483533
 MonoBehaviour:
   m_ObjectHideFlags: 0

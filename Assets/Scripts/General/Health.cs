@@ -105,38 +105,41 @@ public class Health : MonoBehaviour
     public void TakeDamage(int damage, Vector3 damageDirection, bool isKnockback, bool doHurt = true, DamageSystem.DamageSubType damageSubType = DamageSystem.DamageSubType.Pure)
     {
         int calculateDamage = CalculateDamage(damage, damageSubType);
-        currentHealth = currentHealth - calculateDamage;
-        if(calculateDamage > 0 && spriteRenderer!=null){
-            foreach (SpriteRenderer part in spriteRenderer) 
-            {
-                if (part != null){
-                    part.color = Color.red;
-                }
-            }
-            // spriteRenderer.color = Color.red;
-            attacked = true;
-		    attackedTime = Time.time;
-            if(rb!=null && isKnockback){
-                Vector3 moveDirection = transform.position - damageDirection;
-                rb.AddForce(moveDirection.normalized * knockbackRange * 1.6f, ForceMode2D.Impulse);
-            }
-        }
-        if (damage > 0 && doHurt)
+        if(calculateDamage > 0 && doHurt)
         {
-            isHurt = true;
-            if (isTurnRedWhenHurt && gameObject.tag =="Player")
-            {
-                ScreenRed.StartDamage();
+            if(currentHealth > 0) {
+                if(spriteRenderer!=null){
+                    foreach (SpriteRenderer part in spriteRenderer) 
+                    {
+                        if (part != null){
+                            part.color = Color.red;
+                        }
+                    }
+                    attacked = true;
+                    attackedTime = Time.time;
+                }
+                if (isTurnRedWhenHurt && gameObject.tag =="Player")
+                {
+                    ScreenRed.StartDamage();
+                }
+                if(hitEffectPrefab != null)
+                {
+                    GameObject spawned = Instantiate(hitEffectPrefab);
+                    spawned.transform.position = transform.position;
+                }
+                if(dropOnDamaged != null)
+                {
+                    Inventory inventory = Resources.FindObjectsOfTypeAll<Inventory>()[0];
+                    inventory.AddItem(dropOnDamaged);
+                }
+                isHurt = true;
+                currentHealth = currentHealth - calculateDamage;
             }
-            if(dropOnDamaged != null)
-            {
-                Inventory inventory = Resources.FindObjectsOfTypeAll<Inventory>()[0];
-                inventory.AddItem(dropOnDamaged);
-            }
-            if(hitEffectPrefab != null)
-            {
-                GameObject spawned = Instantiate(hitEffectPrefab);
-                spawned.transform.position = transform.position;
+            if(currentHealth > 0){
+                if(rb!=null && isKnockback){
+                    Vector3 moveDirection = transform.position - damageDirection;
+                    rb.AddForce(moveDirection.normalized * knockbackRange * 1.6f, ForceMode2D.Impulse);
+                }
             }
         }
         if(currentHealth <= 0)

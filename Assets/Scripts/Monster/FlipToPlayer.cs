@@ -7,6 +7,8 @@ public class FlipToPlayer : MonoBehaviour
 {
     [SerializeField]
     private SpriteRenderer spriteRenderer;
+    [SerializeField]
+    private Health health;
     private AIDestinationSetter destinationSetter;
     private bool isReverse;
 
@@ -21,7 +23,7 @@ public class FlipToPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(destinationSetter.target != null)
+        if(destinationSetter.target != null && ( health == null || !health.IsDead ))
         {
             if(destinationSetter.target.transform.position.x > transform.position.x)
             {
