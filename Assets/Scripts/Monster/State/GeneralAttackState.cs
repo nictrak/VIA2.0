@@ -8,6 +8,8 @@ public class GeneralAttackState : MonsterStateBehaviour
     [SerializeField]
     private int attackFrame;
     [SerializeField]
+    private int frameLength;
+    [SerializeField]
     private int damage;
     [SerializeField]
     private TriggerRange attackRange;
@@ -19,15 +21,15 @@ public class GeneralAttackState : MonsterStateBehaviour
     private int knockFrame;
 
     private int attackCounter;
+    private bool isAlreadyDoDamage = false;
     public override void ExitState()
     {
     }
 
     public override MonsterStateMachine.MonsterState RunState()
     {
-        if (attackCounter >= attackFrame)
+        if (attackCounter >= attackFrame && !isAlreadyDoDamage)
         {
-            attackCounter = 0;
             //TODO do damage
             if (!attackRange.IsEmpty())
             {
@@ -39,6 +41,12 @@ public class GeneralAttackState : MonsterStateBehaviour
                     if(knockController != null) knockController.StartKnock(transform.position, knockVelocity, knockFrame);
                 }
             }
+            isAlreadyDoDamage = true;
+
+        } else if (attackCounter >= frameLength){
+            //Enter next state
+            attackCounter = 0;
+            isAlreadyDoDamage = false;
             return NormalNextState;
         }
         else attackCounter++;
