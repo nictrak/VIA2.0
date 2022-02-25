@@ -21,6 +21,13 @@ public class WindowCraftMenuUIController : MonoBehaviour
     [SerializeField]
     private Text type;
 
+    public RectTransform recipeRowUIParent{
+        set {
+            this.transform.parent = value;
+            this.transform.localScale = new Vector3(1,1,1);
+        }
+    }
+
     public void SetWindowCraftingRecipe(List<WindowCraftingRecipe> recipesList, ItemType typeName){
 
         type.text = System.Enum.GetName(typeof(ItemType), typeName);
@@ -34,9 +41,13 @@ public class WindowCraftMenuUIController : MonoBehaviour
 
         for (int i = 0; i < recipesList.Count; i++){
             if(recipeSlotUIs.Count == i) {
-                // recipeSlotUIs.Add(Instantiate(recipeSlotUIPrefab, recipeSlotUIParent, false));
+                WindowCraftingRecipeSlot temp = Instantiate(recipeSlotUIPrefab, recipeSlotUIParent, false);
+                temp.recipeSlotUIParent = recipeSlotUIParent;
+                recipeSlotUIs.Add(temp);
             } else if (recipeSlotUIs[i] == null) {
-                recipeSlotUIs[i] = Instantiate(recipeSlotUIPrefab, recipeSlotUIParent, false);
+                WindowCraftingRecipeSlot temp = Instantiate(recipeSlotUIPrefab, recipeSlotUIParent, false);
+                temp.recipeSlotUIParent = recipeSlotUIParent;
+                recipeSlotUIs[i] = temp;
             }
 
             recipeSlotUIs[i].Recipe = recipesList[i];

@@ -18,6 +18,13 @@ public class WindowCraftingRecipeSlot : MonoBehaviour
     private Image bg;
     private WindowCraftingRecipe _recipe;
 
+    public RectTransform recipeSlotUIParent{
+        set {
+            this.transform.parent = value;
+            this.transform.localScale = new Vector3(1,1,1);
+        }
+    }
+
     public WindowCraftingRecipe Recipe {
         get { return _recipe; }
 

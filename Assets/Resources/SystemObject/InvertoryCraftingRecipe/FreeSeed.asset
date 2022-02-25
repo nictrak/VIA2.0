@@ -10,12 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 26518bebbd8cb584297cbee96dcbf700, type: 3}
-  m_Name: New CraftRecipe 1
+  m_Name: FreeSeed
   m_EditorClassIdentifier: 
-  Materials:
-  - Item: {fileID: 11400000, guid: e3625ecb93999f74b80f0f6f44d50876, type: 2}
-    Amount: 1
+  Materials: []
   Result:
-    Item: {fileID: 11400000, guid: efacd8fa431b95440b48beeb519aa934, type: 2}
+    Item: {fileID: 11400000, guid: e3625ecb93999f74b80f0f6f44d50876, type: 2}
     Amount: 1
   type: 2

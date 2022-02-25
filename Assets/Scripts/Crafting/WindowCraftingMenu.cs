@@ -21,24 +21,24 @@ public class WindowCraftingMenu : MonoBehaviour
     public List<WindowCraftingRecipe> craftingList;
 
     private void SeperateCraftingType(){
-
         for (int i = 0; i < craftingList.Count; i++){
             seperatedList[craftingList[i].type].Add(craftingList[i]);
         }
-
     }
 
     private void SetWindowCraftingRecipe(){
-
         int i = 0;
         foreach(ItemType type in System.Enum.GetValues(typeof(ItemType))){
-            
             if(recipeRowUIs.Count == i) {
-                recipeRowUIs.Add(Instantiate(recipeRowUIPrefab, recipeRowUIParent, false));
+                WindowCraftMenuUIController temp = Instantiate(recipeRowUIPrefab, recipeRowUIParent, false);
+                temp.recipeRowUIParent = recipeRowUIParent;
+                recipeRowUIs.Add(temp);
             } else if (recipeRowUIs[i] == null) {
-                recipeRowUIs[i] = Instantiate(recipeRowUIPrefab, recipeRowUIParent, false);
+                WindowCraftMenuUIController temp = Instantiate(recipeRowUIPrefab, recipeRowUIParent, false);
+                temp.recipeRowUIParent = recipeRowUIParent;
+                recipeRowUIs[i] = temp;
             }
-      
+    
             recipeRowUIs[i].SetWindowCraftingRecipe(seperatedList[type], type);
             i++;
 
@@ -47,7 +47,6 @@ public class WindowCraftingMenu : MonoBehaviour
         for (i = seperatedList.Count; i < recipeRowUIs.Count; i++){
             recipeRowUIs[i].SetNullWindowCraftingRecipe();
         }
-
     }
     private void OnValidate() {
         if(recipeRowUIParent != null){
@@ -59,5 +58,17 @@ public class WindowCraftingMenu : MonoBehaviour
             SeperateCraftingType();
             SetWindowCraftingRecipe();
         }
+    }
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 }
