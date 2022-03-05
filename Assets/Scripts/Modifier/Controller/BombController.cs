@@ -15,6 +15,11 @@ public class BombController : MonoBehaviour
 
     [SerializeField]
     private GameObject interactionMod;
+    
+    [SerializeField]
+    private int bombDelayFrame;
+
+    private int bombDelayCounter;
 
     private bool triggerBomb;
     private Color baseColor;
@@ -24,6 +29,7 @@ public class BombController : MonoBehaviour
     void Start()
     {
         triggerBomb = false;
+        bombDelayFrame = bombDelayFrame +1 ;
         baseColor = m_SpriteRenderer.color;
         interactionMod.SetActive(false);
     }
@@ -41,9 +47,14 @@ public class BombController : MonoBehaviour
             Debug.Log(collision.gameObject.tag);
 
             //Set the SpriteRenderer to the Color defined by the Sliders
-            m_SpriteRenderer.color = new Color(255, 10, 10,255);
+            m_SpriteRenderer.color = new Color(0, 0, 0,255);
             // collision.gameObject.GetComponentInParent<Health>().TakeDamage(damagePointPerFrame);
-            interactionMod.SetActive(true);   
+            if (bombDelayCounter >= bombDelayFrame){
+                interactionMod.SetActive(true);   
+            }else{
+                bombDelayCounter++;
+            }
+            
         }
     }
     private void OnTriggerExit2D(Collider2D collision)

@@ -50,6 +50,7 @@ MonoBehaviour:
   tagTarget: PlayerTarget
   m_SpriteRenderer: {fileID: 6803304358044290405}
   interactionMod: {fileID: 1752811056015565285}
+  bombDelay: 0
 --- !u!58 &1429657980736671990
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -92,7 +93,6 @@ GameObject:
   - component: {fileID: 1752811056015565283}
   - component: {fileID: 1752811056015565284}
   - component: {fileID: 7081816205216440849}
-  - component: {fileID: 1752811056015565286}
   m_Layer: 10
   m_Name: DamageZone
   m_TagString: Untagged
@@ -400,19 +400,6 @@ PolygonCollider2D:
       - {x: -6.153516, y: -2.5135548}
       - {x: -6.153516, y: -2.534414}
       - {x: -6.174375, y: -2.534414}
---- !u!114 &1752811056015565286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1752811056015565285}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 680a715e39fd9a7418617f1e1a5f8c35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lifeTimeFrame: 50
 --- !u!1 &6803304358044290400
 GameObject:
   m_ObjectHideFlags: 0
@@ -484,7 +471,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 30
   m_Sprite: {fileID: 21300000, guid: 23ea582f1ccd0754abcabf7291b32584, type: 3}
-  m_Color: {r: 1, g: 0.12941177, b: 0.39607844, a: 0.99215686}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.99215686}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

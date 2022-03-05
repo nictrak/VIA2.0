@@ -8636,7 +8636,8 @@ MonoBehaviour:
   craftingCoreKey: 114
   questsPanel: {fileID: 0}
   questPanel: {fileID: 0}
-  questKey: 0
+  sideTab: {fileID: 0}
+  questsKey: 0
   windowCraftPanel: {fileID: 0}
   windowCraftKey: 0
 --- !u!1 &3472931759617255541
