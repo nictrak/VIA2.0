@@ -407,7 +407,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: basic_melee_attack SE
+  m_Name: basic_melee_attack SW
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -488,13 +488,13 @@ AnimatorStateMachine:
     m_Position: {x: 250, y: -10, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6900974131105784813}
-    m_Position: {x: 235, y: 65, z: 0}
+    m_Position: {x: 340, y: 80, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -4844386492262982715}
-    m_Position: {x: 270, y: 130, z: 0}
+    m_Position: {x: 340, y: 140, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6928652364103288854}
-    m_Position: {x: 305, y: 195, z: 0}
+    m_Position: {x: 340, y: 200, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -2979882817525095581}
     m_Position: {x: 340, y: 260, z: 0}

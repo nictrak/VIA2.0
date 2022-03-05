@@ -46,7 +46,7 @@ public class MonsterStateMachine : MonoBehaviour
     private MonsterAttributes monsterAttributes;
 
     // private static readonly string[] directions = { "N", "NW", "W", "SW", "S", "SW", "W", "NW" };
-    private static readonly string[] directions = { "N", "NW", "W", "SW", "S", "SE", "E", "NE" };
+    private static readonly string[] directions = { "N", "NW", "W", "SW", "S", "SW", "W", "NW" };
     
     // 2 dimention array
     // private static readonly float[,] directionsEffect = { {0,1}, {,}, {}, {}, {}, {}, {}, {} };
@@ -70,6 +70,11 @@ public class MonsterStateMachine : MonoBehaviour
         MonsterState.Attack,
         MonsterState.Charge
     };
+
+    private bool startFreezingAnimation = false;
+    private bool alreadyFreezingAnimation = false;
+
+    private string previousAnimationstring = "";
 
     // Start is called before the first frame update
     private void Start()
@@ -108,8 +113,25 @@ public class MonsterStateMachine : MonoBehaviour
     void Update()
     {
         UpdateDestination();
-        animator.Play(CreateAnimatorString(currentState));
+        if(startFreezingAnimation) {
+            if(!alreadyFreezingAnimation){
+                PlayAnimation(currentState);
+                alreadyFreezingAnimation = true;
+                flipToPlayer.canFlip = false;
+            }
+        } else {
+            PlayAnimation(currentState);
+        }
     }
+
+    void PlayAnimation(MonsterState state) {
+        string animationString = CreateAnimatorString(state);
+        if(animationString != previousAnimationstring){
+            animator.Play(animationString);
+            previousAnimationstring = animationString;
+        }
+    }
+
     private void FixedUpdate()
     {
         RunStatePerFrame(currentState);
@@ -135,7 +157,6 @@ public class MonsterStateMachine : MonoBehaviour
         if(nextState != currentState)
         {
             if(tokenStates.Contains(nextState)){
-                //if(monsterTokenController.RequestToken(mostOuterRange.tagTarget == "PlayerTarget")){
                 if(monsterTokenController.RequestToken(monsterAttributes.monsterType != monsterType.Friendly)){    
                     ExitState(currentState);
                     currentState = nextState;
@@ -151,10 +172,18 @@ public class MonsterStateMachine : MonoBehaviour
     private void StartState(MonsterState state)
     {
         statesHash[state].StartState();
+        if(state == MonsterState.Attack){
+            startFreezingAnimation = true;
+        }
     }
     private void ExitState(MonsterState state)
     {
         statesHash[state].ExitState();
+        if(state == MonsterState.Attack){
+            startFreezingAnimation = false;
+            alreadyFreezingAnimation = false;
+            flipToPlayer.canFlip = true;
+        }
     }
     private string CreateAnimatorString(MonsterState state)
     {
@@ -193,6 +222,7 @@ public class MonsterStateMachine : MonoBehaviour
     {
         MonsterState nextState;
         nextState = statesHash[state].RunState();
+        Debug.Log(currentState);
         if (isHurtBreak)
         {
             if (health.IsHurt && health.IsKnockback)

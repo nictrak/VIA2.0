@@ -475,8 +475,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 3
   NormalNextState: 9
-  attackFrame: 75
-  frameLength: 50
+  attackFrame: 50
+  frameLength: 75
   damage: 8
   attackRange: {fileID: 623239987}
   isKnock: 0
@@ -1232,6 +1232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 6878539700156517199}
   health: {fileID: 407601075}
+  canFlip: 1
 --- !u!114 &1490483533
 MonoBehaviour:
   m_ObjectHideFlags: 0

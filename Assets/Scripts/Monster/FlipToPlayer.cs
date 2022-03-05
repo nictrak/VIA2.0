@@ -14,6 +14,8 @@ public class FlipToPlayer : MonoBehaviour
 
     public bool IsReverse { get => isReverse; set => isReverse = value; }
 
+    public bool canFlip = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +25,7 @@ public class FlipToPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(destinationSetter.target != null && ( health == null || !health.IsDead ))
+        if(destinationSetter.target != null && ( health == null || !health.IsDead ) && canFlip)
         {
             if(destinationSetter.target.transform.position.x > transform.position.x)
             {

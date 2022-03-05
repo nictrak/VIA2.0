@@ -43,7 +43,9 @@ public class GeneralAttackState : MonsterStateBehaviour
             }
             isAlreadyDoDamage = true;
 
-        } else if (attackCounter >= frameLength){
+        }
+        
+        if (attackCounter >= frameLength){
             //Enter next state
             attackCounter = 0;
             isAlreadyDoDamage = false;
