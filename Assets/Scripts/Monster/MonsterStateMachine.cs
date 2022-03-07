@@ -11,6 +11,7 @@ public class MonsterStateMachine : MonoBehaviour
     private string animatorStringHead;
     [SerializeField]
     private Animator animator;
+    [SerializeField]
     private Animator effectAnimator;
     [SerializeField]
     private List<MonsterState> statesHashSequence;
@@ -48,8 +49,6 @@ public class MonsterStateMachine : MonoBehaviour
     // private static readonly string[] directions = { "N", "NW", "W", "SW", "S", "SW", "W", "NW" };
     private static readonly string[] directions = { "N", "NW", "W", "SW", "S", "SW", "W", "NW" };
     
-    // 2 dimention array
-    // private static readonly float[,] directionsEffect = { {0,1}, {,}, {}, {}, {}, {}, {}, {} };
     private Dictionary<string, float[]> directionsEffect ;
     public enum MonsterState
     {
@@ -86,18 +85,6 @@ public class MonsterStateMachine : MonoBehaviour
         health = GetComponent<Health>();
         aIDestinationSetter = GetComponent<AIDestinationSetter>();
         flipToPlayer = GetComponent<FlipToPlayer>();
-        // effect Attack
-        effectAnimator = GameObject.Find("RendererEffect").GetComponent<Animator>();
-        directionsEffect = new Dictionary<string, float[]>();
-        directionsEffect.Add("N",new float[]{0f,1f});
-        directionsEffect.Add("NW",new float[]{-0.707f,0.707f});
-        directionsEffect.Add("W",new float[]{-1f,0f});
-        directionsEffect.Add("SW",new float[]{-0.707f,-0.707f});
-        directionsEffect.Add("S",new float[]{0f,-1f});
-        directionsEffect.Add("SE",new float[]{0.707f,-0.707f});
-        directionsEffect.Add("E",new float[]{1f,0f});
-        directionsEffect.Add("NE",new float[]{0.707f,0.707f});
-        atttackPlayEffect = false ;
 
         lastestNonZeroMoveDirection = new Vector2(0, -1);
         if(monsterTokenController == null)
@@ -189,6 +176,7 @@ public class MonsterStateMachine : MonoBehaviour
     {
         string result = animatorStringHead;
         string directionString = "S";
+        string attackDirection = "" ;
         if (isHaveEightDirection && currentState != MonsterState.Hurt && currentState != MonsterState.Dead)
         {
             if (aIDestinationSetter.target != null)
@@ -206,9 +194,12 @@ public class MonsterStateMachine : MonoBehaviour
             result = result + stringAnimatorsHash[state] + " " + directionString;
 
             if (currentState == MonsterState.Attack ) {
-                effectAnimator.Play("basic_melee_effect"+ " " + directionString);
-                // effectAnimator.Play("Idle");
-            } else {
+                // Debug.Log("basic_melee_effect"+ " " + directionString);
+                // effectAnimator.Play("basic_melee_effect"+" "+"W");
+                attackDirection = directionString ;
+                effectAnimator.Play("basic_melee_effect"+ " " + attackDirection);
+                
+            } else if (currentState != MonsterState.Attack ) {
                 effectAnimator.Play("Idle");
             }
         }

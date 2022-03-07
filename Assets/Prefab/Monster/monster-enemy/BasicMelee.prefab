@@ -1139,6 +1139,7 @@ MonoBehaviour:
   initialState: 0
   animatorStringHead: basic_melee_
   animator: {fileID: 675005679}
+  effectAnimator: {fileID: 6373927174201181309}
   statesHashSequence: 00000000010000000200000003000000040000000500000009000000
   states:
   - {fileID: 627429811}
