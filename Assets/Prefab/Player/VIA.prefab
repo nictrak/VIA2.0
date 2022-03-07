@@ -658,8 +658,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35e4c10b1b670de4a8358fcbb22615fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dashVelocity: 0.25
-  dashFrame: 15
+  dashVelocity: 0.15
+  dashFrame: 25
   dashStamina: 25
 --- !u!114 &894784141
 MonoBehaviour:
@@ -673,8 +673,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff138a60760f47649a386e0634b5cedc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxStamina: 100
-  initialStamina: 100
+  maxStamina: 10000
+  initialStamina: 10000
   staminaBar: {fileID: 0}
   regenFrame: 4
   regenedStamina: 1

@@ -1213,7 +1213,7 @@ MonoBehaviour:
   isTurnRedWhenHurt: 1
   spriteRenderer:
   - {fileID: 6878539700156517199}
-  knockbackRange: 0.5
+  knockbackRange: 1
 --- !u!114 &407601076
 MonoBehaviour:
   m_ObjectHideFlags: 0
