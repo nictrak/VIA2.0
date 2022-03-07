@@ -48,6 +48,8 @@ public class MonsterStateMachine : MonoBehaviour
 
     // private static readonly string[] directions = { "N", "NW", "W", "SW", "S", "SW", "W", "NW" };
     private static readonly string[] directions = { "N", "NW", "W", "SW", "S", "SW", "W", "NW" };
+    //Hot Fix: Attack flip 
+    private static readonly string[] directionsAttack = { "N", "NW", "W", "SW", "S", "SE", "E", "SN" };
     
     private Dictionary<string, float[]> directionsEffect ;
     public enum MonsterState
@@ -188,7 +190,7 @@ public class MonsterStateMachine : MonoBehaviour
                     direction = direction * -1;
                 }
                 directionString = directions[DirectionToIndex(direction, 8)];
-
+                attackDirection = directionsAttack[DirectionToIndex(direction, 8)];
 
             }
             result = result + stringAnimatorsHash[state] + " " + directionString;
@@ -196,7 +198,6 @@ public class MonsterStateMachine : MonoBehaviour
             if (currentState == MonsterState.Attack ) {
                 // Debug.Log("basic_melee_effect"+ " " + directionString);
                 // effectAnimator.Play("basic_melee_effect"+" "+"W");
-                attackDirection = directionString ;
                 effectAnimator.Play("basic_melee_effect"+ " " + attackDirection);
                 
             } else if (currentState != MonsterState.Attack ) {
