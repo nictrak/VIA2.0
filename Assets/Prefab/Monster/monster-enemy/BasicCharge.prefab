@@ -307,7 +307,7 @@ GameObject:
   m_Component:
   - component: {fileID: 337725380401635213}
   - component: {fileID: 1926512663}
-  - component: {fileID: 1630863182}
+  - component: {fileID: 5941658318300110686}
   m_Layer: 0
   m_Name: AttackRange
   m_TagString: Untagged
@@ -345,7 +345,7 @@ CircleCollider2D:
   m_Offset: {x: 0.55, y: 0.35}
   serializedVersion: 2
   m_Radius: 1
---- !u!114 &1630863182
+--- !u!114 &5941658318300110686
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -354,10 +354,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 337725380401635212}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf52656b99340fc45a6b2cd2520008f4, type: 3}
+  m_Script: {fileID: 11500000, guid: 4a79d82ddadee4742b1c0dd9b0f776ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tagTarget: PlayerTarget
+  tagTarget: 
   monsterAttributes: {fileID: 0}
 --- !u!1 &337725380688118322
 GameObject:
@@ -407,7 +407,7 @@ MonoBehaviour:
   attackFrame: 0
   frameLength: 0
   damage: 20
-  attackRange: {fileID: 1630863182}
+  attackRange: {fileID: 5941658318300110686}
   isKnock: 1
   knockVelocity: 0.3
   knockFrame: 7
@@ -803,7 +803,7 @@ MonoBehaviour:
   currentState: 7
   NormalNextState: 3
   outerRangeNextState: 9
-  innerRange: {fileID: 1630863182}
+  innerRange: {fileID: 5941658318300110686}
   outerRange: {fileID: 1191059845}
   velocity: 15
 --- !u!1 &6618791822644928263

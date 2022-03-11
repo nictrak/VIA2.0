@@ -7,18 +7,18 @@ public class TriggerRange : MonoBehaviour
     [SerializeField]
     public string tagTarget;
 
-    private List<GameObject> objs;
+    protected List<GameObject> objs;
 
     public List<GameObject> Objs { get => objs; set => objs = value; }
 
     [SerializeField]
-    private MonsterAttributes monsterAttributes;
+    protected MonsterAttributes monsterAttributes;
 
-    private void OnValidate() {
+    protected void OnValidate() {
 
     }
 
-    private void Awake()
+    protected virtual void Awake()
     {
         objs = new List<GameObject>();
         if (monsterAttributes == null){
@@ -27,7 +27,7 @@ public class TriggerRange : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    void Start()
+    protected virtual void Start()
     {
         if (monsterAttributes != null){
             if(monsterAttributes.monsterType == monsterType.Enemy){
@@ -43,21 +43,21 @@ public class TriggerRange : MonoBehaviour
     {
         
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == tagTarget)
         {
             objs.Add(collision.gameObject);
         }
     }
-    private void OnTriggerExit2D(Collider2D collision)
+    protected virtual void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.tag == tagTarget)
         {
             objs.Remove(collision.gameObject);
         }
     }
-    private float CalDistance(int index, Vector3 position)
+    protected float CalDistance(int index, Vector3 position)
     {
         return (objs[index].transform.position - position).magnitude;
     }
