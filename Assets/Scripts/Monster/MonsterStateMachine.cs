@@ -49,7 +49,7 @@ public class MonsterStateMachine : MonoBehaviour
     // private static readonly string[] directions = { "N", "NW", "W", "SW", "S", "SW", "W", "NW" };
     private static readonly string[] directions = { "N", "NW", "W", "SW", "S", "SW", "W", "NW" };
     //Hot Fix: Attack flip 
-    private static readonly string[] directionsAttack = { "N", "NW", "W", "SW", "S", "SE", "E", "SN" };
+    private static readonly string[] directionsAttack = { "N", "NW", "W", "SW", "S", "SE", "E", "NE" };
     
     private Dictionary<string, float[]> directionsEffect ;
     public enum MonsterState
