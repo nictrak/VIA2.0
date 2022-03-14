@@ -54,6 +54,7 @@ public class PlayerDashController : MonoBehaviour
             playerRenderer.UpdateAnimation(PlayerRenderer.PlayerRenderState.Dash, direction);
             normalCollider = collider2D;
             normalCollider.isTrigger = true;
+            gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
         }
     }
     public void StopDash()
@@ -63,6 +64,8 @@ public class PlayerDashController : MonoBehaviour
         dashVector = new Vector2();
         normalCollider.isTrigger = false;
         normalCollider = null;
+        gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
