@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 779781116}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -108.09, y: -18.807884, z: 3.4804688}
+  m_LocalPosition: {x: -116.29, y: -23.217884, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 999855869}
@@ -456,6 +456,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MonsterTokenController
       objectReference: {fileID: 0}
+    - target: {fileID: 3566046780201747459, guid: 7eac1f27dec9ef141bd6196a4e69896b,
+        type: 3}
+      propertyPath: tokenAmount
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 3566046780201747484, guid: 7eac1f27dec9ef141bd6196a4e69896b,
         type: 3}
       propertyPath: m_RootOrder
@@ -761,6 +766,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5024248771072895731, guid: 56c520b0a64b3094f9373c505eaccfbc,
+        type: 3}
+      propertyPath: m_Value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6426879890023669464, guid: 56c520b0a64b3094f9373c505eaccfbc,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -790,6 +800,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8438312023579159790, guid: 56c520b0a64b3094f9373c505eaccfbc,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 180.02997
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56c520b0a64b3094f9373c505eaccfbc, type: 3}

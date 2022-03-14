@@ -90,7 +90,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4634483407928223878}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1362891525
 Rigidbody2D:
@@ -357,7 +357,7 @@ Transform:
   - {fileID: 3055032041690488755}
   - {fileID: 6312973099657991474}
   m_Father: {fileID: 4634483407928223878}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4634483407574408060
 SpriteRenderer:
@@ -537,9 +537,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1362891523}
   - {fileID: 3456510850362082444}
   - {fileID: 4634483407574408050}
-  - {fileID: 1362891523}
   - {fileID: 1317626773}
   - {fileID: 2011776292}
   - {fileID: 1849417260}
@@ -1239,7 +1239,7 @@ PrefabInstance:
     - target: {fileID: 8363335128055834093, guid: 2a87444ce8f23b54297bfa5b44c3ecea,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8363335128055834093, guid: 2a87444ce8f23b54297bfa5b44c3ecea,
         type: 3}

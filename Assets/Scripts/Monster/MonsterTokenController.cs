@@ -17,7 +17,7 @@ public class MonsterTokenController : MonoBehaviour
 
     // Start is called before the first frame update
     [SerializeField]
-    private int tokenAmount = 9;
+    private int tokenAmount;
     [SerializeField]
     private float delayTime = 30.0f;
     private MonsterToken[] monsterTokens;
@@ -82,6 +82,8 @@ public class MonsterTokenController : MonoBehaviour
                 }
             }
         };
+
+        Debug.Log(tokenAmount);
     }
 
 }
