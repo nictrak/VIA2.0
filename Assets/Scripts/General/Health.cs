@@ -113,7 +113,11 @@ public class Health : MonoBehaviour
         float currentWidth = barWidth * currentHealth / maxHealth;
         healthBar.sizeDelta = new Vector2(currentWidth, healthBar.sizeDelta.y);
     }
-    public void TakeDamage(int damage, Vector3 damageDirection, bool isKnockback, bool doHurt = true, DamageSystem.DamageSubType damageSubType = DamageSystem.DamageSubType.Pure)
+
+    public void TakeDamage(int damage, Vector3 damageDirection, bool isKnockback, float knockbackRange){
+        TakeDamage(damage, damageDirection, isKnockback, true, DamageSystem.DamageSubType.Pure, knockbackRange);
+    }
+    public void TakeDamage(int damage, Vector3 damageDirection, bool isKnockback, bool doHurt = true, DamageSystem.DamageSubType damageSubType = DamageSystem.DamageSubType.Pure, float knockbackRange = 0)
     {
         int calculateDamage = CalculateDamage(damage, damageSubType);
         if(calculateDamage > 0 && doHurt)
@@ -151,6 +155,9 @@ public class Health : MonoBehaviour
                     if(( Random.Range(0.0f, 1.0f) <= knockbackPossibility )) {
                         this.isKnockback = true;
                         Vector3 moveDirection = transform.position - damageDirection;
+                        if(knockbackRange == 0){
+                            knockbackRange = this.knockbackRange;
+                        }
                         rb.AddForce(moveDirection.normalized * knockbackRange * 1.6f, ForceMode2D.Impulse);
                     } else {
                         isNotKnockback = true;

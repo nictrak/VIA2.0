@@ -9,24 +9,43 @@ public class GeneralChargeState : MonsterStateBehaviour
     private MonsterStateMachine.MonsterState outerRangeNextState;
     
     [SerializeField]
-    private TriggerRange innerRange;
+    private AggressiveTriggerRange innerRange;
     [SerializeField]
     private TriggerRange outerRange;
 
     [SerializeField]
     private float velocity;
-
+    [SerializeField]
+    private int damage = 100;
+    [SerializeField]
+    [Range(4.0F, 6.0F)]
+    private float knockbackRange = 5f;
     private Vector2 targetPosition;
     private Rigidbody2D rgbody;
     private TargetBuffer targetBuffer;
 
     public override void ExitState()
     {
-
+        rgbody.bodyType = RigidbodyType2D.Dynamic;
     }
 
     public override MonsterStateMachine.MonsterState RunState()
     {
+        if(!innerRange.IsSubEmpty()){
+            while(!innerRange.IsSubEmpty()){
+                GameObject monster = innerRange.PopSub();
+                Vector2 thisToTarget = (Vector2)transform.position - targetPosition;
+                Vector2 thisToMonster = (Vector2)transform.position - (Vector2)monster.transform.position;
+                float angle = Vector2.SignedAngle(thisToTarget, thisToMonster);
+                //Debug.Log("Angle: "+angle+" MoveVector: "+thisToMonster+" From: "+(Vector2)transform.position+" To: "+(Vector2)monster.transform.position);
+                Health monsterHealth = monster.GetComponentInParent<Health>();
+                Vector2 damagePosition = transform.position;
+                if(Mathf.Abs(angle) < 30){
+                    //damagePosition += new 
+                }
+                monsterHealth.TakeDamage(damage, damagePosition, true, knockbackRange);
+            }
+        }
         if (!innerRange.IsEmpty())
         {
             return NormalNextState;
@@ -61,6 +80,7 @@ public class GeneralChargeState : MonsterStateBehaviour
                 targetPosition = GetTarget().transform.position;
             }
         }
+        rgbody.bodyType = RigidbodyType2D.Kinematic;
     }
 
     // Start is called before the first frame update

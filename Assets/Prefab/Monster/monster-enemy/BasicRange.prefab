@@ -741,8 +741,8 @@ GameObject:
   - component: {fileID: 3626388922457289457}
   - component: {fileID: 3626388922457289463}
   - component: {fileID: 3954309674418717977}
-  - component: {fileID: 902153918477595642}
   - component: {fileID: 3676813905979024102}
+  - component: {fileID: 1458989071926555257}
   m_Layer: 8
   m_Name: BasicRange
   m_TagString: Enemy
@@ -923,6 +923,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 3626388922023832320}
   health: {fileID: 0}
+  canFlip: 1
 --- !u!114 &3626388922457289458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -952,6 +953,7 @@ MonoBehaviour:
   initialState: 0
   animatorStringHead: basic_range_
   animator: {fileID: 3626388922023832321}
+  effectAnimator: {fileID: 0}
   statesHashSequence: 00000000010000000300000006000000040000000500000002000000
   states:
   - {fileID: 3626388921693567092}
@@ -1003,6 +1005,7 @@ MonoBehaviour:
   isTurnRedWhenHurt: 1
   spriteRenderer:
   - {fileID: 0}
+  knockbackPossibility: 1
   knockbackRange: 0.5
 --- !u!114 &3626388922457289463
 MonoBehaviour:
@@ -1030,7 +1033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ModifierPool: {fileID: 8647742464634251103}
---- !u!114 &902153918477595642
+--- !u!114 &3676813905979024102
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1039,10 +1042,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 3626388922457289444}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 976bb73cb9050f44e8fef84ae257dfc8, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a87b721cc801f94d914c1fa214ea454, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   monsterType: 0
+--- !u!114 &1458989071926555257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3626388922457289444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b628e686251b8cf429fda6114ed8c841, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5485669281381479864
 GameObject:
   m_ObjectHideFlags: 0
@@ -1163,19 +1178,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tagTarget: PlayerTarget
   monsterAttributes: {fileID: 0}
---- !u!114 &3676813905979024102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3626388922457289444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a87b721cc801f94d914c1fa214ea454, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isEnemy: 1
 --- !u!1 &8647742464634251103
 GameObject:
   m_ObjectHideFlags: 0

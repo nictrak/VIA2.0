@@ -214,7 +214,6 @@ public class MonsterStateMachine : MonoBehaviour
     {
         MonsterState nextState;
         nextState = statesHash[state].RunState();
-        Debug.Log(currentState);
         if (isHurtBreak)
         {
             if (health.IsHurt && health.IsKnockback)
