@@ -83,7 +83,7 @@ public class MonsterTokenController : MonoBehaviour
             }
         };
 
-        Debug.Log(tokenAmount);
+        // Debug.Log(tokenAmount);
     }
 
 }

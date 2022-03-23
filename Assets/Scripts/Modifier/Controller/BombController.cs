@@ -7,6 +7,7 @@ public class BombController : MonoBehaviour
 
     // [SerializeField]
     // private int damagePointPerFrame;
+    // [SerializeField]
     [SerializeField]
     private string tagTarget;
 
@@ -19,6 +20,11 @@ public class BombController : MonoBehaviour
     [SerializeField]
     private int bombDelayFrame;
 
+    [SerializeField]
+    private Animator anim;
+
+
+
     private int bombDelayCounter;
 
     private bool triggerBomb;
@@ -30,7 +36,7 @@ public class BombController : MonoBehaviour
     {
         triggerBomb = false;
         bombDelayFrame = bombDelayFrame +1 ;
-        baseColor = m_SpriteRenderer.color;
+        m_SpriteRenderer.sprite = null ;
         interactionMod.SetActive(false);
     }
 
@@ -43,26 +49,33 @@ public class BombController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         
-        if (collision.gameObject.tag == tagTarget){
+        if (collision.gameObject.tag == tagTarget && !triggerBomb){
             Debug.Log(collision.gameObject.tag);
-
+            // anim.Play("trap-mine-trigger");
             //Set the SpriteRenderer to the Color defined by the Sliders
-            m_SpriteRenderer.color = new Color(0, 0, 0,255);
+            // m_SpriteRenderer.color = new Color(0, 0, 0,255);
             // collision.gameObject.GetComponentInParent<Health>().TakeDamage(damagePointPerFrame);
+            interactionMod.SetActive(true);   
+            triggerBomb = true;
+            
+        } 
+        if (triggerBomb) {
             if (bombDelayCounter >= bombDelayFrame){
-                interactionMod.SetActive(true);   
+                triggerBomb = false;
+                anim.Play("trap-mine-bomb");
             }else{
                 bombDelayCounter++;
             }
-            
         }
+
+
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.tag == tagTarget)
         {
             interactionMod.SetActive(false);
-            m_SpriteRenderer.color = baseColor;
+            // m_SpriteRenderer.sprite = null ;
             // Destroy(gameObject);
         }
     }
