@@ -24,6 +24,9 @@ public class GeneralChargeState : MonsterStateBehaviour
     private Rigidbody2D rgbody;
     private TargetBuffer targetBuffer;
 
+
+    private MonsterStateMachine monsterStateMachine;
+
     public override void ExitState()
     {
         rgbody.bodyType = RigidbodyType2D.Dynamic;
@@ -48,6 +51,7 @@ public class GeneralChargeState : MonsterStateBehaviour
         }
         if (!innerRange.IsEmpty())
         {
+            monsterStateMachine.targetPosition = getTarget();
             return NormalNextState;
         } else if (rgbody.position == targetPosition)
         {
@@ -72,6 +76,12 @@ public class GeneralChargeState : MonsterStateBehaviour
     {
         //set Distination
         targetBuffer = GetComponentInParent<TargetBuffer>();
+        targetPosition = getTarget();
+        rgbody.bodyType = RigidbodyType2D.Kinematic;
+    }
+
+    private Vector2 getTarget(){
+        Vector2 targetPosition;
         if(targetBuffer == null){
             targetPosition = GetTarget().transform.position;
         } else {
@@ -80,13 +90,14 @@ public class GeneralChargeState : MonsterStateBehaviour
                 targetPosition = GetTarget().transform.position;
             }
         }
-        rgbody.bodyType = RigidbodyType2D.Kinematic;
+        return targetPosition;
     }
 
     // Start is called before the first frame update
     void Start()
     {
         rgbody = GetComponentInParent<Rigidbody2D>();
+        monsterStateMachine = GetComponentInParent<MonsterStateMachine>();
     }
 
     // Update is called once per frame

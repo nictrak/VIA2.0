@@ -64,7 +64,8 @@ public class MonsterStateMachine : MonoBehaviour
         Charge,
         Warning,
         Wait,
-        Aim
+        Aim,
+        Move
     }
 
     MonsterState[] tokenState = {
@@ -76,6 +77,8 @@ public class MonsterStateMachine : MonoBehaviour
     private bool alreadyFreezingAnimation = false;
 
     private string previousAnimationstring = "";
+
+    public Vector2 targetPosition = Vector2.zero;
 
     // Start is called before the first frame update
     private void Start()
