@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -60,5 +61,14 @@ public class AggressiveTriggerRange : TriggerRange{
         GameObject popObject = subObjs[0];
         subObjs.RemoveAt(0);
         return popObject;
+    }
+
+    public Vector2 getTargetPosition()
+    {
+        if(objs.Count == 0){
+            return Vector2.zero;
+        }
+
+        return objs[0].transform.position;
     }
 }
