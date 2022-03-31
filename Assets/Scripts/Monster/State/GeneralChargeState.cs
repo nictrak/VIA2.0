@@ -46,7 +46,7 @@ public class GeneralChargeState : MonsterStateBehaviour
                 if(Mathf.Abs(angle) < 30){
                     //damagePosition += new 
                 }
-                monsterHealth.TakeDamage(damage, damagePosition, true, knockbackRange);
+                monsterHealth.TakeDamage(new DamageInput(damage), new AttackEffectInput(), new KnockbackInput(damagePosition, knockbackRange));
             }
         }
         if (!innerRange.IsEmpty())

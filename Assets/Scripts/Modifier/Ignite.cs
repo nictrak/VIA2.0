@@ -34,7 +34,7 @@ public class Ignite : Modifier
     {
         if (counter >= frameRate)
         {
-            health.TakeDamage(damage, transform.position, false, false);
+            health.TakeDamage(new DamageInput(damage), new AttackEffectInput(false));
             counter = 0;
         }
         else

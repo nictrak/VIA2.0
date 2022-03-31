@@ -38,7 +38,7 @@ public class GeneralBossCharge : BossStateBehaviour
             //Damage player
             if (innerRange.IsHitPlayer)
             {
-                innerRange.TargetGameObject.GetComponent<Health>().TakeDamage(damage, transform.position, false);
+                innerRange.TargetGameObject.GetComponent<Health>().TakeDamage(new DamageInput(damage), new AttackEffectInput(true));
                 if (isKnock)
                 {
                     innerRange.TargetGameObject.GetComponent<PlayerKnockController>().StartKnock(transform.position, knockVelocity, knockFrame);

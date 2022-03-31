@@ -31,7 +31,7 @@ public class GeneralBossAttack : BossStateBehaviour
             //TODO do damage
             if (attackRange.IsHitPlayer)
             {
-                attackRange.TargetGameObject.GetComponent<Health>().TakeDamage(damage, transform.position, false);
+                attackRange.TargetGameObject.GetComponent<Health>().TakeDamage(new DamageInput(damage), new AttackEffectInput(true));
                 if (isKnock)
                 {
                     attackRange.TargetGameObject.GetComponent<PlayerKnockController>().StartKnock(transform.position, knockVelocity, knockFrame);

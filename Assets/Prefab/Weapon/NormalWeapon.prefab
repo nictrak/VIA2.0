@@ -461,6 +461,11 @@ MonoBehaviour:
   - {fileID: 8483772263164939829}
   - {fileID: 6442506053984173074}
   specialAttackPool: {fileID: 2212539950563740106}
+  isSummonWeapon: 0
+  attackEffect:
+    DoHurt: 1
+    HitEffectPrefab: {fileID: 0}
+  knockBackPower: 1
 --- !u!1 &6951812782633640731
 GameObject:
   m_ObjectHideFlags: 0

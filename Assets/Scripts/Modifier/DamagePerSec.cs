@@ -10,7 +10,7 @@ public class DamagePerSec : Modifier
 
     protected override void RunPerFrame()
     {
-        health.TakeDamage(damagePointPerFrame, transform.position, false);
+        health.TakeDamage(new DamageInput(damagePointPerFrame), new AttackEffectInput(true));
     }
 
     // Start is called before the first frame update

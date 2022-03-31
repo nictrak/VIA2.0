@@ -49,9 +49,9 @@ public class Attack : MonoBehaviour
     {
         
     }
-    public void DoDamage(List<Modifier> mods = null)
+    public void DoDamage(Weapon weapon)
     {   
-        attackHitbox.DoDamageAll(damage, mods);
+        attackHitbox.DoDamageAll(damage, weapon);
         if(specialAttack != null)
         {
             ((SpecialAttack)specialAttack).DoSpecial();

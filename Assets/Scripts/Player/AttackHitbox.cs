@@ -31,8 +31,9 @@ public class AttackHitbox : MonoBehaviour
             enemies.Remove(collision.gameObject);
         }
     }
-    public void DoDamageAll(int damage, List<Modifier> mods = null)
+    public void DoDamageAll(int damage, Weapon weapon)
     {
+        List<Modifier> mods = weapon.ModifiersPrefab;
         for(int i = 0; i < enemies.Count; i++)
         {
             if(enemies[i] != null)
@@ -44,11 +45,11 @@ public class AttackHitbox : MonoBehaviour
                     BreakableObjectIdentity breakableObjectIdentity = enemies[i].GetComponent<BreakableObjectIdentity>();
                     if (breakableObjectIdentity != null)
                     {
-                        enemyHealth.TakeDamage(1, transform.position, false);
+                        enemyHealth.TakeDamage(new DamageInput(1), weapon.AttackEffect);
                     }
                     else
                     {
-                        enemyHealth.TakeDamage(damage, transform.position, true);
+                        enemyHealth.TakeDamage(new DamageInput(damage), weapon.AttackEffect, weapon.KnockbackInput);
                     }
                     if (mods != null)
                     {

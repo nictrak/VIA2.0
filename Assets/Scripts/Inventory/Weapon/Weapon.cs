@@ -16,6 +16,19 @@ public class Weapon : MonoBehaviour
     private GameObject specialAttackPool;
     [SerializeField]
     private bool isSummonWeapon;
+    [SerializeField]
+
+    [Header("Attact Effect")]
+    private AttackEffectInput attackEffect;
+    public AttackEffectInput AttackEffect { get { return attackEffect; } }
+    [SerializeField]
+    private float knockBackPower = 0f;
+    public KnockbackInput KnockbackInput { 
+        get {
+            if(knockBackPower <= 0f) return null;
+            return new KnockbackInput(transform.position, knockBackPower); 
+        }
+    }
 
     private bool summonWeapon;
     public List<Modifier> ModifiersPrefab { get => modifiersPrefab; set => modifiersPrefab = value; }

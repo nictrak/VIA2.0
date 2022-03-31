@@ -81,7 +81,7 @@ public class PlayerAttackController : MonoBehaviour
             int newIndex = attackStrings.IndexOf(newAnimatedAttackString);
             currentAnimatedIndex = newIndex;
             PlayerRenderer.PlayerRenderState newRenderState = attackObjects[newIndex].RenderState;
-            attackObjects[newIndex].DoDamage(weapon.ModifiersPrefab);
+            attackObjects[newIndex].DoDamage(weapon);
             playerRenderer.UpdateAnimation(newRenderState, direction);
             animatedAttackString = newAnimatedAttackString;
         }

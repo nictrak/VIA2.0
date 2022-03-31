@@ -1,9 +1,16 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Health : MonoBehaviour
 {
+
+    #region Public Value
+    public bool IsDead { get => isDead; set => isDead = value; }
+    public bool IsHurt { get => isHurt; set => isHurt = value; }
+    #endregion
+
+    #region Adjustable
     [SerializeField]
     private int maxHealth;
     [SerializeField]
@@ -11,13 +18,34 @@ public class Health : MonoBehaviour
     [SerializeField]
     private RectTransform healthBar;
     [SerializeField]
-    private GameObject hitEffectPrefab;
-    [SerializeField]
     private string charName;
     [SerializeField]
     private Item dropOnDamaged;
     [SerializeField]
     private Color damageColor;
+    [SerializeField]
+    private bool isTurnRedWhenHurt;
+
+    [SerializeField]
+    private List<SpriteRenderer> spriteRenderer;
+
+    [SerializeField]
+    private Rigidbody2D rb;
+
+    #endregion
+
+    #region NotAdjustable
+    private bool isHurt;
+    private bool isAlreadyHurt;
+    private int currentHealth;
+    private bool isDead;
+    private float barWidth;
+
+    private bool attacked = false;
+	private float attackedTime = 0f;
+    #endregion
+
+    #region Damage Resistance
     [SerializeField]
     [Range(0.0F, 1.0F)]
     private float chopResistance;
@@ -39,36 +67,23 @@ public class Health : MonoBehaviour
     [SerializeField]
     [Range(0.0F, 1.0F)]
     private float frostResistance;
-    [SerializeField]
-    private bool isTurnRedWhenHurt;
+    #endregion
 
-    private bool isHurt;
-    private bool isAlreadyHurt;
-    private int currentHealth;
-    private bool isDead;
-    private float barWidth;
-
-    public bool IsDead { get => isDead; set => isDead = value; }
-    public bool IsHurt { get => isHurt; set => isHurt = value; }
-
-    public bool IsKnockback { get => isKnockback; set => isKnockback = value; }
-    public bool IsNotKnockback { get => isNotKnockback; set => isNotKnockback = value; }
-
-
-    [SerializeField]
-    private List<SpriteRenderer> spriteRenderer;
-    private bool isKnockback;
-    private bool isNotKnockback;
+    #region Knockback
+    public static float KnockbackForce = 1.6f;
     [SerializeField]
     [Range(0.0F, 1.0F)]
     private float knockbackPossibility = 1.0f;
     [SerializeField]
     [Range(0.0F, 10.0F)]
-    private float knockbackRange = 0.5f;
-    private Rigidbody2D rb;
 
-    private bool attacked = false;
-	private float attackedTime = 0f;
+    private float knockbackResistance = 0.5f;
+    public bool IsKnockback { get => isKnockback; set => isKnockback = value; }
+    public bool IsNotKnockback { get => isNotKnockback; set => isNotKnockback = value; }
+    private bool isKnockback;
+    private bool isNotKnockback;
+
+    #endregion
 
     // Start is called before the first frame update
     void Start()
@@ -114,15 +129,18 @@ public class Health : MonoBehaviour
         healthBar.sizeDelta = new Vector2(currentWidth, healthBar.sizeDelta.y);
     }
 
-    public void TakeDamage(int damage, Vector3 damageDirection, bool isKnockback, float knockbackRange){
-        TakeDamage(damage, damageDirection, isKnockback, true, DamageSystem.DamageSubType.Pure, knockbackRange);
-    }
-    public void TakeDamage(int damage, Vector3 damageDirection, bool isKnockback, bool doHurt = true, DamageSystem.DamageSubType damageSubType = DamageSystem.DamageSubType.Pure, float knockbackRange = 0)
+    //public void TakeDamage(int damage, Vector3 damageDirection, bool isKnockback, bool doHurt = true, DamageSystem.DamageSubType damageSubType = DamageSystem.DamageSubType.Pure, float knockbackRange = 0)
+    public void TakeDamage( DamageInput damageInput, AttackEffectInput attackEffectInput, KnockbackInput knockbackInput = null )
     {
-        int calculateDamage = CalculateDamage(damage, damageSubType);
-        if(calculateDamage > 0 && doHurt)
+        int prevHealth = currentHealth;
+        int calculateDamage = CalculateDamage(damageInput.Damage, damageInput.DamageSubType);
+        currentHealth -= calculateDamage;
+
+        //If not continious damage
+        if( attackEffectInput.DoHurt && calculateDamage > 0 )
         {
-            if(currentHealth > 0) {
+
+            if(prevHealth > 0) {
                 if(spriteRenderer!=null){
                     foreach (SpriteRenderer part in spriteRenderer) 
                     {
@@ -137,9 +155,9 @@ public class Health : MonoBehaviour
                 {
                     ScreenRed.StartDamage();
                 }
-                if(hitEffectPrefab != null)
+                if(attackEffectInput.HitEffectPrefab != null)
                 {
-                    GameObject spawned = Instantiate(hitEffectPrefab);
+                    GameObject spawned = Instantiate(attackEffectInput.HitEffectPrefab);
                     spawned.transform.position = transform.position;
                 }
                 if(dropOnDamaged != null)
@@ -148,23 +166,23 @@ public class Health : MonoBehaviour
                     inventory.AddItem(dropOnDamaged);
                 }
                 isHurt = true;
-                currentHealth = currentHealth - calculateDamage;
             }
+
             if(currentHealth > 0){
-                if(rb!=null && isKnockback && !isNotKnockback){
+                if(rb!=null && knockbackInput!=null && !isNotKnockback){
                     if(( Random.Range(0.0f, 1.0f) <= knockbackPossibility )) {
+                        float knockbackRange = knockbackInput.KnockBackPower - knockbackResistance;
+                        Vector2 moveDirection = (Vector2)transform.position - knockbackInput.DamageDirection;
+                        rb.AddForce( moveDirection.normalized * ( knockbackRange > 0 ? knockbackRange : 0 ) * KnockbackForce, ForceMode2D.Impulse );
                         this.isKnockback = true;
-                        Vector3 moveDirection = transform.position - damageDirection;
-                        if(knockbackRange == 0){
-                            knockbackRange = this.knockbackRange;
-                        }
-                        rb.AddForce(moveDirection.normalized * knockbackRange * 1.6f, ForceMode2D.Impulse);
                     } else {
-                        isNotKnockback = true;
+                        this.isNotKnockback = true;
                     }
                 }
             }
+
         }
+
         if(currentHealth <= 0)
         {
             currentHealth = 0;
@@ -174,11 +192,13 @@ public class Health : MonoBehaviour
                 isDead = true;
             }
         }
+
         if(currentHealth > maxHealth)
         {
             currentHealth = maxHealth;
         }
-        if(GetComponent<BreakableObjectIdentity>() == null) DamageTextFactory.InstantiateDamageText(transform.position, damage, damageSubType, damageColor);
+    
+        if(GetComponent<BreakableObjectIdentity>() == null) DamageTextFactory.InstantiateDamageText(transform.position, damageInput.Damage, damageInput.DamageSubType, damageColor);
     }
     public void Heal(int point)
     {
