@@ -136,17 +136,7 @@ public class PlayerMoveController : MonoBehaviour
         }
         else if (playerAttackController.IsAttack())
         {
-            //This Part
-            /*if (playerAttackController.GetAnimatedStringLenght() >= 1)
-            {
-                Move(playerAttackController.AttackControlPerFrame(playerRenderer, lastestNonZeroMoveDirection));
-            }
-            else
-            {*/
-                Vector2 mouseDirection = CalMouseDirection();
-                lastestNonZeroMoveDirection = mouseDirection;
-                Move(playerAttackController.AttackControlPerFrame(playerRenderer, mouseDirection));
-            //}
+            Move(playerAttackController.AttackControlPerFrame(playerRenderer, lastestNonZeroMoveDirection));
         }
         else if (moveDirection.magnitude > 0.001)
         {
@@ -155,8 +145,7 @@ public class PlayerMoveController : MonoBehaviour
         }
         else
         {
-            Vector2 mouseDirection = CalMouseDirection();
-            playerRenderer.UpdateAnimation(PlayerRenderer.PlayerRenderState.Static, mouseDirection);
+            playerRenderer.UpdateAnimation(PlayerRenderer.PlayerRenderState.Static, lastestNonZeroMoveDirection);
         }
     }
     // End of move method

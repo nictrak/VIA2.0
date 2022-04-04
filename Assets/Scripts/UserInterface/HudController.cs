@@ -54,6 +54,8 @@ public class HudController : MonoBehaviour
         canToggle = true;
         IsUsed = false;
         CurrentState = HUD_STATE.IDLE;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
     // Update is called once per frame
     void Update()
@@ -129,6 +131,14 @@ public class HudController : MonoBehaviour
         else
         {
             IsUsed = false;
+        }
+
+        if(CurrentState != HUD_STATE.IDLE){
+            Cursor.lockState = CursorLockMode.Confined;
+            Cursor.visible = true;
+        } else {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
     }
     public void OpenShop()
