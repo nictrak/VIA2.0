@@ -97,13 +97,10 @@ public class PlayerMoveController : MonoBehaviour
     }
     private void UpdateMoveDirection()
     {
-        if (!playerAttackController.IsAttack())
+        moveDirection = GetInputMoveDirection();
+        if (moveDirection.magnitude > 0.001)
         {
-            moveDirection = GetInputMoveDirection();
-            if (moveDirection.magnitude > 0.001)
-            {
-                lastestNonZeroMoveDirection = moveDirection;
-            }
+            lastestNonZeroMoveDirection = moveDirection;
         }
     }
     private Vector2 CalMoveVector()

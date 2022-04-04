@@ -127,16 +127,12 @@ public class HudController : MonoBehaviour
         if (inventoryPanel.activeSelf || craftingCorePanel.activeSelf || windowCraftPanel.activeSelf || questsPanel.activeSelf)
         {
             IsUsed = true;
+            Cursor.lockState = CursorLockMode.Confined;
+            Cursor.visible = true;
         }
         else
         {
             IsUsed = false;
-        }
-
-        if(CurrentState != HUD_STATE.IDLE){
-            Cursor.lockState = CursorLockMode.Confined;
-            Cursor.visible = true;
-        } else {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
         }
