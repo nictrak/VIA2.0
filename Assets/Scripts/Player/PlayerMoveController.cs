@@ -92,7 +92,7 @@ public class PlayerMoveController : MonoBehaviour
     // Start move method
     private Vector2 GetInputMoveDirection()
     {
-        Vector2 res = new Vector2(Input.GetAxis("Horizontal") * Mathf.Pow(3, 0.5f), Input.GetAxis("Vertical"));
+        Vector2 res = new Vector2(Input.GetAxisRaw("Horizontal") * Mathf.Pow(3, 0.5f), Input.GetAxisRaw("Vertical"));
         return res.normalized;
     }
     private void UpdateMoveDirection()
