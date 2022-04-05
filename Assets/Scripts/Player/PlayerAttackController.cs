@@ -16,7 +16,6 @@ public class PlayerAttackController : MonoBehaviour
     private List<string> attackStrings;
     private float currentVelocity;
 
-
     public Weapon Weapon { get => weapon; set => weapon = value; }
 
     // Start is called before the first frame update
@@ -51,7 +50,7 @@ public class PlayerAttackController : MonoBehaviour
     {
         return attackFrameCounter >= attackObjects[index].Frame;
     }
-    private bool isFrameCounterZero()
+    public bool IsFrameCounterZero()
     {
         return attackFrameCounter == 0;
     }
@@ -93,6 +92,11 @@ public class PlayerAttackController : MonoBehaviour
             attackFrameCounter = 0;
         }
     }
+
+    public bool CanChangeDirection(){
+        return !IsAnimatedAttack() || !IsFrameCounterHit(attackStrings.IndexOf(animatedAttackString));
+    }
+
     public Vector2 AttackControlPerFrame(PlayerRenderer playerRenderer, Vector2 direction)
     {
         Vector2 res = new Vector2();

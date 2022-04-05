@@ -10,6 +10,7 @@ public class PlayerMoveController : MonoBehaviour
     // Calculation field
     private Vector2 moveDirection;
     private Vector2 lastestNonZeroMoveDirection;
+    private Vector2 lastestAttackDirection;
     private List<float> moveSpeedModifiers;
     
     // In same object field
@@ -133,15 +134,20 @@ public class PlayerMoveController : MonoBehaviour
         }
         else if (playerAttackController.IsAttack())
         {
-            Move(playerAttackController.AttackControlPerFrame(playerRenderer, lastestNonZeroMoveDirection));
+            if(!playerAttackController.CanChangeDirection()){
+                lastestAttackDirection = lastestNonZeroMoveDirection;
+            }
+            Move(playerAttackController.AttackControlPerFrame(playerRenderer, lastestAttackDirection));
         }
         else if (moveDirection.magnitude > 0.001)
         {
+            lastestAttackDirection = lastestNonZeroMoveDirection;
             playerRenderer.UpdateAnimation(PlayerRenderer.PlayerRenderState.Run, moveDirection);
             Move(CalMoveVector());
         }
         else
         {
+            lastestAttackDirection = lastestNonZeroMoveDirection;
             playerRenderer.UpdateAnimation(PlayerRenderer.PlayerRenderState.Static, lastestNonZeroMoveDirection);
         }
     }
