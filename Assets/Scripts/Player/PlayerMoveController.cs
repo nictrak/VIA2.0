@@ -77,6 +77,7 @@ public class PlayerMoveController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && canDash && !HudController.IsUsed && !playerDashController.IsDash)
         {
             playerDashController.StartDash(lastestNonZeroMoveDirection, playerRenderer, normalCollider);
+            playerAttackController.ClearAllStack();
         }
     }
     // Fixed frame update
@@ -123,32 +124,39 @@ public class PlayerMoveController : MonoBehaviour
         if (health.IsDead)
         {
             playerRenderer.UpdateAnimation(PlayerRenderer.PlayerRenderState.Dead, moveDirection);
+            Debug.Log("Dead");
         }
         if (playerKnockController.IsKnocked)
         {
             Move(playerKnockController.KnockedVector);
+            Debug.Log("Knock");
         }
         else if (playerDashController.IsDash)
         {
             Move(playerDashController.DashVector);
+            Debug.Log("Dash");
         }
         else if (playerAttackController.IsAttack())
         {
-            if(!playerAttackController.CanChangeDirection()){
+            if(playerAttackController.CanChangeDirection()){
                 lastestAttackDirection = lastestNonZeroMoveDirection;
+                Debug.Log("Play AttackAnim");
             }
             Move(playerAttackController.AttackControlPerFrame(playerRenderer, lastestAttackDirection));
+            Debug.Log("Attack");
         }
         else if (moveDirection.magnitude > 0.001)
         {
             lastestAttackDirection = lastestNonZeroMoveDirection;
             playerRenderer.UpdateAnimation(PlayerRenderer.PlayerRenderState.Run, moveDirection);
             Move(CalMoveVector());
+            Debug.Log("Move");
         }
         else
         {
             lastestAttackDirection = lastestNonZeroMoveDirection;
             playerRenderer.UpdateAnimation(PlayerRenderer.PlayerRenderState.Static, lastestNonZeroMoveDirection);
+            Debug.Log("Idle");
         }
     }
     // End of move method

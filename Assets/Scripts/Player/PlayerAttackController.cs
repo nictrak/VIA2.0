@@ -93,8 +93,16 @@ public class PlayerAttackController : MonoBehaviour
         }
     }
 
+    public void ClearAllStack(){
+        attackFrameCounter = 0;
+        currentAttackString = "";
+        animatedAttackString = "";
+        currentAnimatedIndex = 0;
+        currentVelocity = 0;
+    }
+
     public bool CanChangeDirection(){
-        return !IsAnimatedAttack() || !IsFrameCounterHit(attackStrings.IndexOf(animatedAttackString));
+        return !IsAnimatedAttack() || IsFrameCounterHit(attackStrings.IndexOf(animatedAttackString));
     }
 
     public Vector2 AttackControlPerFrame(PlayerRenderer playerRenderer, Vector2 direction)
@@ -118,6 +126,7 @@ public class PlayerAttackController : MonoBehaviour
             }
             if (IsFrameCounterHit(index))
             {
+                Debug.Log("First");
                 UpdateAttackAnimate(playerRenderer, direction);
                 attackFrameCounter = 0;
                 currentVelocity = 0;
@@ -129,6 +138,7 @@ public class PlayerAttackController : MonoBehaviour
         }
         else
         {
+            Debug.Log("Second");
             UpdateAttackAnimate(playerRenderer, direction);
         }
         return res;
