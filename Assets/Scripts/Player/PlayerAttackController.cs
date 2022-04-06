@@ -126,7 +126,6 @@ public class PlayerAttackController : MonoBehaviour
             }
             if (IsFrameCounterHit(index))
             {
-                Debug.Log("First");
                 UpdateAttackAnimate(playerRenderer, direction);
                 attackFrameCounter = 0;
                 currentVelocity = 0;
@@ -138,7 +137,6 @@ public class PlayerAttackController : MonoBehaviour
         }
         else
         {
-            Debug.Log("Second");
             UpdateAttackAnimate(playerRenderer, direction);
         }
         return res;
