@@ -8,6 +8,12 @@ TextureImporter:
   - first:
       213: 8248703336696556011
     second: Item 2x2_1
+  - first:
+      213: -2088058935873802686
+    second: Unit Item 2x2_0
+  - first:
+      213: -807108222117330425
+    second: Unit Item 2x2_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -105,7 +111,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Item 2x2_0
+      name: Unit Item 2x2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -119,14 +125,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af198c5dd7252b960800000000000000
-      internalID: 7616240620248011258
+      spriteID: 24e6929f579b503e0800000000000000
+      internalID: -2088058935873802686
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Item 2x2_1
+      name: Unit Item 2x2_1
       rect:
         serializedVersion: 2
         x: 128
@@ -140,8 +146,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be9a0613bf7497270800000000000000
-      internalID: 8248703336696556011
+      spriteID: 702466529539cc4f0800000000000000
+      internalID: -807108222117330425
       vertices: []
       indices: 
       edges: []
