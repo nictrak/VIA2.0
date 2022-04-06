@@ -74,7 +74,7 @@ public class PlayerMoveController : MonoBehaviour
         {
             playerAttackController.AddAttack("b");
         }
-        if (Input.GetKeyDown(KeyCode.Space) && canDash && !HudController.IsUsed)
+        if (Input.GetKeyDown(KeyCode.Space) && canDash && !HudController.IsUsed && !playerDashController.IsDash)
         {
             playerDashController.StartDash(lastestNonZeroMoveDirection, playerRenderer, normalCollider);
         }
