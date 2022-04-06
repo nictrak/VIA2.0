@@ -24,11 +24,11 @@ public class DialogueController : MonoBehaviour
     [SerializeField]
     private Image ImageRight;
 
-    private bool isShow;
+    public static bool IsShow;
     // Start is called before the first frame update
     void Start()
     {
-        isShow = false;
+        IsShow = false;
     }
 
     // Update is called once per frame
@@ -84,11 +84,11 @@ public class DialogueController : MonoBehaviour
         if(dialogue == null)
         {
             SetActivePanel(false);
-            isShow = false;
+            IsShow = false;
         }
         else
         {
-            if (!isShow)
+            if (!IsShow)
             {
                 SetActivePanel(true);
             }
@@ -100,7 +100,7 @@ public class DialogueController : MonoBehaviour
     public void SetActivePanel(bool isActive)
     {
         dialoguePanel.SetActive(isActive);
-        isShow = isActive;
+        IsShow = isActive;
     }
     public void SetActiveButton(List<string> strings)
     {

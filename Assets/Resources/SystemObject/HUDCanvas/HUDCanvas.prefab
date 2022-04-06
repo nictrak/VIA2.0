@@ -10529,6 +10529,7 @@ GameObject:
   - component: {fileID: 3472931759613148873}
   - component: {fileID: 3472931759613148872}
   - component: {fileID: 3472931759613148878}
+  - component: {fileID: 505959161423610720}
   m_Layer: 0
   m_Name: HUDController
   m_TagString: HUDController
@@ -10595,6 +10596,18 @@ MonoBehaviour:
   questsKey: 113
   windowCraftPanel: {fileID: 7596767595319839336}
   windowCraftKey: 99
+--- !u!114 &505959161423610720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3472931759613148875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3517a760ad8a6d64ca8df06a158a59e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3472931759617255541
 GameObject:
   m_ObjectHideFlags: 0

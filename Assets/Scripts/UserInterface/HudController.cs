@@ -54,8 +54,6 @@ public class HudController : MonoBehaviour
         canToggle = true;
         IsUsed = false;
         CurrentState = HUD_STATE.IDLE;
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
     }
     // Update is called once per frame
     void Update()
@@ -127,14 +125,10 @@ public class HudController : MonoBehaviour
         if (inventoryPanel.activeSelf || craftingCorePanel.activeSelf || windowCraftPanel.activeSelf || questsPanel.activeSelf)
         {
             IsUsed = true;
-            Cursor.lockState = CursorLockMode.Confined;
-            Cursor.visible = true;
         }
         else
         {
             IsUsed = false;
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
         }
     }
     public void OpenShop()
