@@ -71,7 +71,8 @@ public class PlayerDashController : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (isDash && collision.gameObject.tag == "Wall")
+        // if (isDash && collision.gameObject.tag == "Wall")
+        if (collision.gameObject.tag == "Wall")
         {
             StopDash();
         }
