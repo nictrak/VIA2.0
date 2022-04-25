@@ -421,6 +421,26 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: 10, y: 7, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 48
+      m_TileSpriteIndex: 48
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 11, y: 7, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 49
+      m_TileSpriteIndex: 49
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: 14, y: 7, z: 0}
     second:
       serializedVersion: 2
@@ -679,6 +699,10 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 46be93d91d4384440ab6fe2277e75b45, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 7b92219deefecfe4386d24a326f92335, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 550300dba5709ea439a245f637a33a1b, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: bf0cf07656296b74bbbf195c8326685c, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 1
     m_Data: {fileID: -807108222117330425, guid: 520ed5c9777cbc14e88ab0d59cc2b12a,
@@ -820,8 +844,14 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: -5197145376595747807, guid: 63765c5f71e69cf40860c20e7cd402aa,
       type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 3179224065165013462, guid: 3a038b95a2ab2c242be2e456cc564ef5,
+      type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -7866940331449322556, guid: 3a038b95a2ab2c242be2e456cc564ef5,
+      type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 50
+  - m_RefCount: 52
     m_Data:
       e00: 1
       e01: 0
@@ -876,7 +906,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 54
+  - m_RefCount: 56
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 0
     m_Data: {r: 0.000014524863, g: 0.000014524863, b: 0.000014524863, a: 0.000014524863}

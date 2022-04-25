@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4adb36c8bd3a07549a9f41eb0b3c0e70, type: 3}
   m_Name: Life
   m_EditorClassIdentifier: 
+  id: fb65723f5c556474eb0353e05a63da1b
   Name: Life
-  Icon: {fileID: 267081401544755927, guid: abc0584209e21aa4ca24bdd2105f6e12, type: 3}
+  Icon: {fileID: 21300000, guid: ba274f649c6163048b311a80506bd54d, type: 3}
+  MaximunStack: 1
