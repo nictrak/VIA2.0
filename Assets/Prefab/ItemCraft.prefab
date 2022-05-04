@@ -75,8 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8576124541983880907, guid: abc0584209e21aa4ca24bdd2105f6e12,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: e4200fde087a0dd4f9fbed1a9a956a11, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -251,3 +250,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagTarget: Crafting
+  monsterAttributes: {fileID: 0}

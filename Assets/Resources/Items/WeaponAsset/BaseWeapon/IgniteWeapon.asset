@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 18c108840ad1569458866f33ed14c126
   Name: Ignite Weapon
-  Icon: {fileID: 21300000, guid: 539608af302184e479cbeb265856eb2a, type: 3}
+  Icon: {fileID: 21300000, guid: be9fa9d4b3df4324aba7eb3be50d24a1, type: 3}
   MaximunStack: 1
   EquipmentType: 0
   weaponPrefab: {fileID: 8319709647177024906, guid: 054c03a396d26ab4f97a8465d508d2d3,
