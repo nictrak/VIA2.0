@@ -434,9 +434,11 @@ MonoBehaviour:
   - Via attack 2-1 body
   - Via attack 2-2 body
   - Via attack 2-3 body
+  - Via Stand body
+  - Via Run body
   animatorArmFrontStringHeads:
-  - Via Stand arm hold weapon1
-  - Via Stand arm hold weapon1
+  - Via Stand arm hold
+  - Via Run arm
   - Via attack 2-1 arm
   - Via attack 2-2 arm
   - Via attack 2-3 arm
@@ -447,6 +449,8 @@ MonoBehaviour:
   - Via attack 2-1 arm
   - Via attack 2-2 arm
   - Via attack 2-3 arm
+  - Via Stand arm hold weapon1
+  - Via Stand arm hold weapon1
   animatorArmBelowStringHeads:
   - Via null
   - Via null
@@ -460,9 +464,11 @@ MonoBehaviour:
   - Via null
   - Via null
   - Via null
+  - Via null
+  - Via null
   animatorWeaponStringHeads:
-  - Via Stand weapon 1
-  - Via Stand weapon 1
+  - Via null
+  - Via null
   - Via attack 3-1 weapon-grim
   - Via attack 3-2 weapon-grim
   - Via attack 3-3 weapon-grim
@@ -473,6 +479,8 @@ MonoBehaviour:
   - Via attack 2-1 weapon
   - Via attack 2-2 weapon
   - Via attack 2-3 weapon
+  - Via Stand weapon 1
+  - Via Stand weapon 1
   animatorEffectStringHeads:
   - Via null
   - Via null
@@ -486,7 +494,9 @@ MonoBehaviour:
   - Via null
   - Via null
   - Via null
-  renderStatesSetupSequence: 000000000100000002000000030000000400000006000000050000000800000007000000090000000a0000000b000000
+  - Via null
+  - Via null
+  renderStatesSetupSequence: 000000000100000002000000030000000400000006000000050000000800000007000000090000000a0000000b0000000c0000000d000000
   bodyAnimator: {fileID: 2858453401383727426}
   weaponAnimator: {fileID: 5497237861919302010}
   armFrontAnimator: {fileID: 230916243064135698}
@@ -504,6 +514,7 @@ GameObject:
   - component: {fileID: 4634483407928223879}
   - component: {fileID: 4550108241435275513}
   - component: {fileID: 197813265}
+  - component: {fileID: 7922645363864569478}
   - component: {fileID: 1656719872}
   - component: {fileID: 908748499}
   - component: {fileID: 4901974935291254093}
@@ -514,11 +525,10 @@ GameObject:
   - component: {fileID: 894784139}
   - component: {fileID: 894784140}
   - component: {fileID: 9038403806887410355}
-  - component: {fileID: 60885713}
   - component: {fileID: 1036136072}
   - component: {fileID: 745835280628814923}
-  - component: {fileID: 1731373526}
   - component: {fileID: 555460185}
+  - component: {fileID: 8228854463925405965}
   m_Layer: 8
   m_Name: VIA
   m_TagString: Player
@@ -591,6 +601,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveVelocity: 0.065
+--- !u!114 &7922645363864569478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4634483407928223877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09e32dd5ee2c1c24c9d81fc18176da11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1656719872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -707,10 +729,15 @@ MonoBehaviour:
   maxHealth: 100
   initialHealth: 100
   healthBar: {fileID: 0}
-  hitEffectPrefab: {fileID: 0}
   charName: 
   dropOnDamaged: {fileID: 0}
   damageColor: {r: 1, g: 0, b: 0, a: 1}
+  isTurnRedWhenHurt: 1
+  spriteRenderer:
+  - {fileID: 1970421023796403309}
+  - {fileID: 7367123547502531689}
+  - {fileID: 2952028968493382707}
+  rb: {fileID: 0}
   chopResistance: 0
   strikeResistance: 0
   pierceResistance: 0
@@ -718,13 +745,8 @@ MonoBehaviour:
   electricResistance: 0
   fireResistance: 0
   frostResistance: 0
-  isTurnRedWhenHurt: 1
-  spriteRenderer:
-  - {fileID: 1970421023796403309}
-  - {fileID: 7367123547502531689}
-  - {fileID: 2952028968493382707}
   knockbackPossibility: 1
-  knockbackRange: 0.5
+  knockbackResistance: 0.5
 --- !u!114 &894784140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -750,18 +772,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ModifierPool: {fileID: 1849417259}
---- !u!114 &60885713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4634483407928223877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29c4dfe1d63ba2e41ab93954f5cee9e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1036136072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -789,20 +799,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHash: Player
   isDontDestroyOnLoad: 1
---- !u!114 &1731373526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4634483407928223877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9ed1c3d985bae7439c9f738e35be8bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemCraftPrefab: {fileID: 8513676582514408385, guid: fab92203df5cde949aa50b645b6c99bf,
-    type: 3}
 --- !u!114 &555460185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -820,6 +816,18 @@ MonoBehaviour:
   delayFrame: 100
   newPosition: {x: 10000, y: 10000, z: 0}
   mainObject: {fileID: 4634483407928223877}
+--- !u!114 &8228854463925405965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4634483407928223877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9ed1c3d985bae7439c9f738e35be8bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6676632270927758984
 GameObject:
   m_ObjectHideFlags: 0

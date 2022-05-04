@@ -17,7 +17,11 @@ public class PlayerRenderer : MonoBehaviour
         Dead,
         AttackSummon1,
         AttackSummon2,
-        AttackSummon3
+        AttackSummon3,
+        StaticHoldWeapon,
+        RunHoldWeapon,
+        StaticHoldBlock,
+        RunHoldBlock,
     }
     [SerializeField]
     private List<string> animatorBodyStringHeads;

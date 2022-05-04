@@ -39,6 +39,8 @@ public class HudController : MonoBehaviour
     private GameObject windowCraftPanel;
     [SerializeField]
     private KeyCode windowCraftKey;
+    [SerializeField]
+    private KeyCode universalESCKey;
 
     private bool canToggle;
     public static bool IsUsed;
@@ -58,6 +60,10 @@ public class HudController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetKeyDown(universalESCKey)) {
+            GoToIdle();
+        }
+
         if (Input.GetKeyDown(inventoryKey))
         {
             if (CurrentState == HUD_STATE.IDLE)
@@ -150,6 +156,7 @@ public class HudController : MonoBehaviour
         windowCraftPanel.SetActive(false);
         questsPanel.SetActive(false);
         questPanel.SetActive(true);
+        sideTab.SetActive(false);
         canToggle = true;
         IsUsed = false;
         CurrentState = HUD_STATE.IDLE;

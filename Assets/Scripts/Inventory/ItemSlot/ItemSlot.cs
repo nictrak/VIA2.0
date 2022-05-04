@@ -15,19 +15,19 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler , IDragHandler, IBeg
     public event Action<ItemSlot> OnDragEvent;
     public event Action<ItemSlot> OnDropEvent;
 
-    private static Color normalColor = Color.white;
-    private static Color disableColor = Color.clear;
+    protected static Color normalColor = Color.white;
+    protected static Color disableColor = Color.clear;
     
 
     [SerializeField]
-    private Image image;
+    protected Image image;
 
     [SerializeField]
-    private Text amountText;
+    protected Text amountText;
 
-    private Item _item;
+    protected Item _item;
 
-    public Item Item {
+    public virtual Item Item {
         get { return _item; }
 
         set {
@@ -51,7 +51,7 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler , IDragHandler, IBeg
             if (_amount <= 0) Item = null;
             if(amountText != null)
             {
-                amountText.enabled = _item != null && _item.MaximunStack > 1;
+                amountText.enabled = _item != null && _item.MaximunStack > 1 && _amount > 1;
                 if (amountText.enabled)
                 {
                     amountText.text = _amount.ToString();
@@ -93,31 +93,31 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler , IDragHandler, IBeg
     Vector2 originalPosition;
 
     public void OnBeginDrag(PointerEventData eventData){
-        /*if(eventData != null)
+        if(eventData != null)
         {
             OnBeginDragEvent(this);
-        }*/
+        }
     }
 
     public void OnEndDrag(PointerEventData eventData){
-        /*if(eventData != null)
+        if(eventData != null)
         {
             OnEndDragEvent(this);
-        }*/
+        }
     }
 
     public void OnDrag(PointerEventData eventData){
-        /*if(eventData != null)
+        if(eventData != null)
         {
             OnDragEvent(this);
-        }*/
+        }
     }
 
     public void OnDrop(PointerEventData eventData){
-        /*if(eventData != null)
+        if(eventData != null)
         {
             OnDropEvent(this);
-        }*/
+        }
     }
     public string GetItemName()
     {

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerAttackController : MonoBehaviour
 {
+    public static PlayerAttackController current;
+
     [SerializeField]
     private Weapon weapon;
 
@@ -16,7 +18,11 @@ public class PlayerAttackController : MonoBehaviour
     private List<string> attackStrings;
     private float currentVelocity;
 
-    public Weapon Weapon { get => weapon; set => weapon = value; }
+    public Weapon Weapon { get => weapon; }
+
+    private void Awake() {
+        current = this;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -88,7 +94,7 @@ public class PlayerAttackController : MonoBehaviour
         {
             currentAttackString = "";
             animatedAttackString = "";
-            playerRenderer.UpdateAnimation(PlayerRenderer.PlayerRenderState.Static, direction);
+            playerRenderer.UpdateAnimation(PlayerRenderer.PlayerRenderState.StaticHoldWeapon, direction);
             attackFrameCounter = 0;
         }
     }
@@ -150,6 +156,7 @@ public class PlayerAttackController : MonoBehaviour
         if (IsEquipWeapon())
         {
             Destroy(weapon.gameObject);
+            weapon = null;
         }
         if(newWeapon != null)
         {

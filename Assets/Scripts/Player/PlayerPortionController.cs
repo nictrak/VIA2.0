@@ -51,6 +51,6 @@ public class PlayerPortionController : MonoBehaviour
     private void DrinkFromShortcut(int index)
     {
         ShortcutPanel shortcutPanel = GameObject.FindGameObjectWithTag("Shortcut").GetComponent<ShortcutPanel>();
-        DrinkPortion((PortionItem)shortcutPanel.ShortcutSlots[index].Item);
+        //DrinkPortion((PortionItem)shortcutPanel.ShortcutSlots[index].Item);
     }
 }

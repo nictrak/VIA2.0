@@ -14,6 +14,7 @@ public class UIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if( HudController.IsUsed || DialogueController.IsShow ) {
 
             Cursor.lockState = CursorLockMode.Confined;

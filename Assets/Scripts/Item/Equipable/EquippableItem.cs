@@ -17,5 +17,6 @@ public class EquippableItem : Item
 
     public override void Destroy() {
         Destroy(this);
-    } 
+    }
+    
 }

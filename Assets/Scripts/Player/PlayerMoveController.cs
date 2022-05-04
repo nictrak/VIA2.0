@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class PlayerMoveController : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class PlayerMoveController : MonoBehaviour
     // In same object field
     private Rigidbody2D rgbody;
     private PlayerAttackController playerAttackController;
+    private PlayerBuildController playerBuildController;
     private PlayerDashController playerDashController;
     private Collider2D normalCollider;
     private ModifierController modifierController;
@@ -40,13 +42,17 @@ public class PlayerMoveController : MonoBehaviour
     public bool CanAttack { get => canAttack; set => canAttack = value; }
     public bool CanDash { get => canDash; set => canDash = value; }
     public List<float> MoveSpeedModifiers { get => moveSpeedModifiers; set => moveSpeedModifiers = value; }
+    public static PlayerMoveController current;
 
     // Start is called before the first frame update
     void Start()
     {
+        current = this;
+
         rgbody = GetComponent<Rigidbody2D>();
         playerRenderer = GetComponentInChildren<PlayerRenderer>();
         playerAttackController = GetComponent<PlayerAttackController>();
+        playerBuildController = GetComponent<PlayerBuildController>();
         playerDashController = GetComponent<PlayerDashController>();
         normalCollider = GetComponent<Collider2D>();
         modifierController = GetComponent<ModifierController>();
@@ -60,20 +66,18 @@ public class PlayerMoveController : MonoBehaviour
         lastestNonZeroMoveDirection = new Vector2(0, -1);
         MoveSpeedModifiers = new List<float>();
         health = GetComponent<Health>();
+
     }
+
+    private void OnDestroy() {
+        
+    }
+
 
     // Update is called once per frame
     void Update()
     {
         if (canUpdateMoveDirection && !HudController.IsUsed) UpdateMoveDirection();
-        if (Input.GetMouseButtonDown(0) && canAttack && playerAttackController.IsEquipWeapon() && !HudController.IsUsed)
-        {
-            playerAttackController.AddAttack("a");
-        }
-        if (Input.GetMouseButtonDown(1) && canAttack && playerAttackController.IsEquipWeapon() && !HudController.IsUsed)
-        {
-            playerAttackController.AddAttack("b");
-        }
         if (Input.GetKeyDown(KeyCode.Space) && canDash && !HudController.IsUsed && !playerDashController.IsDash)
         {
             playerDashController.StartDash(lastestNonZeroMoveDirection, playerRenderer, normalCollider);
@@ -84,6 +88,19 @@ public class PlayerMoveController : MonoBehaviour
     private void FixedUpdate()
     {
         if (canMove && !HudController.IsUsed) MovePerFrame();
+    }
+
+    public void WeaponUsedHandler(bool isRightClick){
+
+        if (isRightClick && canAttack && playerAttackController.IsEquipWeapon() && !HudController.IsUsed)
+        {
+            playerAttackController.AddAttack("a");
+        }
+        if (!isRightClick && canAttack && playerAttackController.IsEquipWeapon() && !HudController.IsUsed)
+        {
+            playerAttackController.AddAttack("b");
+        }
+
     }
 
     private Vector2 CalMouseDirection()
@@ -143,13 +160,25 @@ public class PlayerMoveController : MonoBehaviour
         else if (moveDirection.magnitude > 0.001)
         {
             lastestAttackDirection = lastestNonZeroMoveDirection;
-            playerRenderer.UpdateAnimation(PlayerRenderer.PlayerRenderState.Run, moveDirection);
+            if(playerBuildController.IsCarryingBlock()){
+                playerRenderer.UpdateAnimation(PlayerRenderer.PlayerRenderState.RunHoldBlock, moveDirection);
+            } else if(playerAttackController.IsEquipWeapon()){
+                playerRenderer.UpdateAnimation(PlayerRenderer.PlayerRenderState.RunHoldWeapon, moveDirection);
+            } else {
+                playerRenderer.UpdateAnimation(PlayerRenderer.PlayerRenderState.Run, moveDirection);
+            }
             Move(CalMoveVector());
         }
         else
         {
             lastestAttackDirection = lastestNonZeroMoveDirection;
-            playerRenderer.UpdateAnimation(PlayerRenderer.PlayerRenderState.Static, lastestNonZeroMoveDirection);
+            if(playerBuildController.IsCarryingBlock()){
+                playerRenderer.UpdateAnimation(PlayerRenderer.PlayerRenderState.StaticHoldBlock, lastestNonZeroMoveDirection);
+            } else if(playerAttackController.IsEquipWeapon()){
+                playerRenderer.UpdateAnimation(PlayerRenderer.PlayerRenderState.StaticHoldWeapon, lastestNonZeroMoveDirection);
+            } else {
+                playerRenderer.UpdateAnimation(PlayerRenderer.PlayerRenderState.Static, lastestNonZeroMoveDirection);
+            }
         }
     }
     // End of move method

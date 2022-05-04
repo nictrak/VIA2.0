@@ -15,13 +15,13 @@ public class InventoryManager : MonoBehaviour
     private Text draggedAmount;
 
     private ItemSlot draggedSlot;
-    private WeaponItem lastWeaponItem;
 
     private Item draggedItemBuffer;
     private int draggedAmountBuffer;
 
     public ShortcutPanel ShortcutPanel { get => shortcutPanel; set => shortcutPanel = value; }
 
+    #region Unity Function
     private void Awake() {
 
         //Setup Events
@@ -34,9 +34,9 @@ public class InventoryManager : MonoBehaviour
         EquipmentPanel.OnLeftClickEvent += SwapWithDragSlot;
         ShortcutPanel.OnLeftClickEvent += SwapWithDragSlot;
         //Begin Drag
-        Inventory.OnBeginDragEvent += BeginDrag;
-        EquipmentPanel.OnBeginDragEvent += BeginDrag;
-        shortcutPanel.OnBeginDragEvent += BeginDrag;
+        Inventory.OnBeginDragEvent += SwapWithDragSlot;
+        EquipmentPanel.OnBeginDragEvent += SwapWithDragSlot;
+        shortcutPanel.OnBeginDragEvent += SwapWithDragSlot;
         //End Drag
         Inventory.OnEndDragEvent += EndDrag;
         EquipmentPanel.OnEndDragEvent += EndDrag;
@@ -46,9 +46,9 @@ public class InventoryManager : MonoBehaviour
         EquipmentPanel.OnDragEvent += Drag;
         shortcutPanel.OnDragEvent += Drag;
         //Drop
-        Inventory.OnDropEvent += Drop;
-        EquipmentPanel.OnDropEvent += Drop;
-        shortcutPanel.OnDropEvent += Drop;
+        Inventory.OnDropEvent += SwapWithDragSlot;
+        EquipmentPanel.OnDropEvent += SwapWithDragSlot;
+        shortcutPanel.OnDropEvent += SwapWithDragSlot;
 
         /*if(itemSaveManager != null){
             itemSaveManager.LoadEquipment(this);
@@ -62,6 +62,29 @@ public class InventoryManager : MonoBehaviour
             itemSaveManager.SaveInventory(this);
         }*/
     }
+
+    private void Start()
+    {
+        
+    }
+    
+    private void Update()
+    {
+        if(draggedItemBuffer != null)
+        {
+            draggedItem.enabled = true;
+            draggedItem.transform.position = Input.mousePosition;
+            if(draggedAmountBuffer > 1) draggedAmount.enabled = true;
+        }
+        else
+        {
+            draggedItem.enabled = false;
+            draggedAmount.enabled = false;
+        }
+    }
+    #endregion
+
+    #region Inventory Moving
     private void SetDraggedBuffer(Item item, int amount)
     {
         draggedItemBuffer = item;
@@ -130,24 +153,6 @@ public class InventoryManager : MonoBehaviour
             }
         }
     }
-    private void Equip(ItemSlot itemSlot)
-    {
-        EquippableItem equippableItem = itemSlot.Item as EquippableItem;
-        if(equippableItem != null)
-        {
-            Equip(equippableItem);
-        }
-    }
-
-    private void Unequip(ItemSlot itemSlot)
-    {
-        Debug.Log("Unequip weapon");
-        EquippableItem equippableItem = itemSlot.Item as EquippableItem;
-        if(equippableItem != null)
-        {
-            Unequip(equippableItem);
-        }
-    }
 
     private void BeginDrag(ItemSlot itemSlot){
         if(itemSlot.Item != null)
@@ -169,91 +174,8 @@ public class InventoryManager : MonoBehaviour
             draggedItem.transform.position = Input.mousePosition;
         }
     }
+    #endregion
 
-    private void Drop(ItemSlot dropSlot){
-        if(draggedSlot != null){
-            if(dropSlot.CanReceiveItem(draggedSlot.Item) && draggedSlot.CanReceiveItem(dropSlot.Item))
-            {
-                EquippableItem dragItem = draggedSlot.Item as EquippableItem;
-                EquippableItem dropItem = dropSlot.Item as EquippableItem;
-
-                /*if (draggingSlot is EquipmentSlot)
-                {
-                    if(dragItem != null) dragItem.Unequip(this);
-                    if(dropItem != null) dropItem.Equip(this);
-                }
-                if (dropSlot is EquipmentSlot)
-                {
-                    if(dragItem != null) dragItem.Equip(this);
-                    if(dropItem != null) dropItem.Unequip(this);
-                }*/
-
-                Item draggingItem = draggedSlot.Item;
-                int draggingAmount = draggedSlot.Amount;
-
-                draggedSlot.Item = dropSlot.Item;
-                dropSlot.Item = draggingItem;
-                
-                draggedSlot.Amount = dropSlot.Amount;
-                dropSlot.Amount = draggingAmount;
-            }
-        }
-    }
-
-    public void Equip(EquippableItem item)
-    {
-        if(Inventory.RemoveItem(item))
-        {
-            EquippableItem previousItem = EquipmentPanel.GetEquippedItem(item.EquipmentType);
-            if(previousItem != null){
-                Unequip(previousItem);
-                EquipmentPanel.AddItem(item);
-            } else if(!EquipmentPanel.AddItem(item))
-            {
-                Inventory.AddItem(item);
-            }
-        }
-    }
-    public void LoadEquip(EquippableItem item, int amount)
-    {
-        EquipmentPanel.SetItem(item, amount);
-    }
-
-    public void Unequip(EquippableItem item)
-    {
-        if(!Inventory.IsFull() && EquipmentPanel.RemoveItem(item))
-        {
-            Inventory.AddItem(item);
-        }
-    }
-    private void ChangeWeapon()
-    {
-        PlayerAttackController playerAttackController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerAttackController>();
-        playerAttackController.ChangeWeapon(EquipmentPanel.GetEquipedWeapon());
-    }
-    private void Start()
-    {
-        ChangeWeapon();
-    }
-    private void Update()
-    {
-        if(EquipmentPanel.GetItemWeapon() != lastWeaponItem)
-        {
-            ChangeWeapon();
-        }
-        lastWeaponItem = EquipmentPanel.GetItemWeapon();
-        if(draggedItemBuffer != null)
-        {
-            draggedItem.enabled = true;
-            draggedAmount.enabled = true;
-            draggedItem.transform.position = Input.mousePosition;
-        }
-        else
-        {
-            draggedItem.enabled = false;
-            draggedAmount.enabled = false;
-        }
-    }
     public int CountItem(string itemName)
     {
         return this.Inventory.CountItem(itemName) + EquipmentPanel.CountItem(itemName) + ShortcutPanel.CountItem(itemName); 

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -86,9 +87,8 @@ public class Weapon : MonoBehaviour
         if (summonWeapon){
             Debug.Log("OnDestroy Weapon Summon");
             InventoryManager inventoryManager = GameObject.FindGameObjectWithTag("inventoryPanel").GetComponent<InventoryManager>();
-            inventoryManager.EquipmentPanel.RemoveItem(inventoryManager.EquipmentPanel.GetItemWeapon());
-
-            inventoryManager.EquipmentPanel.ReEquipWeaponFromSummon();
+            //inventoryManager.EquipmentPanel.RemoveItem(inventoryManager.EquipmentPanel.GetItemWeapon());
+            throw new NotImplementedException();
         }
         
     }

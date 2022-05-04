@@ -38,14 +38,17 @@ public class ItemSaveManager : MonoBehaviour
         if(savedData == null) return;
 
         //IM.EquipmentPanel.Clear();
+        /*List<EquipmentSlot> equipmentSlots = new List<EquipmentSlot>();
 
         foreach (ItemSlotSaveData savedSlot in savedData.SavedSlots)
         {
             if(savedSlot == null) continue;
 
             Item item = itemDatabase.GetItemCopy(savedSlot.ItemID);
-            IM.LoadEquip((EquippableItem) item, savedSlot.Amount);
+            equipmentSlots.Add((EquippableItem) item, savedSlot.Amount);
         }
+
+        IM.EquipmentPanel.SetItem(equipmentSlots.ToArray());*/
     }
 
     public void SaveInventory(InventoryManager IM)
@@ -55,7 +58,7 @@ public class ItemSaveManager : MonoBehaviour
 
     public void SaveEquipment(InventoryManager IM)
     {
-        SaveItems(IM.EquipmentPanel.EquipmentSlots, EquipmentFileName);
+        //SaveItems(IM.EquipmentPanel.ItemSlots, EquipmentFileName);
     }
 
     private void SaveItems(IList<ItemSlot> itemSlots, string fileName)
