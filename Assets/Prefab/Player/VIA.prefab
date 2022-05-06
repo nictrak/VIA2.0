@@ -437,7 +437,7 @@ MonoBehaviour:
   - Via Stand body
   - Via Run body
   animatorArmFrontStringHeads:
-  - Via Stand arm hold
+  - Via idel arm
   - Via Run arm
   - Via attack 2-1 arm
   - Via attack 2-2 arm
@@ -613,6 +613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e32dd5ee2c1c24c9d81fc18176da11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  block: {fileID: 0}
 --- !u!114 &1656719872
 MonoBehaviour:
   m_ObjectHideFlags: 0
