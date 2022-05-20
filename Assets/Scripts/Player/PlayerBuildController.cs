@@ -11,6 +11,15 @@ public class PlayerBuildController : MonoBehaviour
 
     public Block Block { get => block; }
 
+    [SerializeField]
+    private SpriteRenderer blockSpriteRenderer;
+
+    [SerializeField]
+    private GameObject carryBlockObject;
+
+    private static Color normalColor = Color.white;
+    private static Color disableColor = Color.clear;
+
     private void Awake() {
         current = this;
     }
@@ -18,22 +27,27 @@ public class PlayerBuildController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        block = carryBlockObject.GetComponent<Block>();
     }
 
-    public void ChangeHoldingItem(Block newBlock) {
+    public void ChangeHoldingItem(PlaceableItem newBlock) {
         if (IsCarryingBlock())
         {
-            Destroy(block.gameObject);
-            block = null;
+            carryBlockObject.SetActive(false);
+            block.Item = null;
         }
         if(newBlock != null)
         {
-            block = Instantiate<Block>(newBlock, transform);
+            blockSpriteRenderer.color = normalColor;
+            blockSpriteRenderer.sprite = newBlock.Icon;
+            carryBlockObject.SetActive(true);
+            block.Item = newBlock;
+        } else {
+            blockSpriteRenderer.color = disableColor;
         }
     }
 
     public bool IsCarryingBlock(){
-        return block != null;
+        return block.Item != null;
     }
 }

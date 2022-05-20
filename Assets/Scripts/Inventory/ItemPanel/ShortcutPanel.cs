@@ -17,6 +17,8 @@ public class ShortcutPanel : ItemPanel<ShortcutSlot>
         
         PlayerShortcutController.OnShortcutKeyPress += SelectShortcut;
         PlayerShortcutController.OnShortcutUsed += ShortcutUse;
+
+        UpdateSelectedShortcut();
     }
     #endregion
 
@@ -46,22 +48,24 @@ public class ShortcutPanel : ItemPanel<ShortcutSlot>
         PlayerAttackController.current.ChangeWeapon(null);
         PlayerBuildController.current.ChangeHoldingItem(null);
         
-        Item item = SelectedSlot.Item;
+        if(SelectedSlot.Item != null){
+            Item item = SelectedSlot.Item;
 
-        if(item is WeaponItem){
+            if(item is WeaponItem){
 
-            WeaponItem weaponItem = (WeaponItem)item;
-            if(weaponItem != null){
-                PlayerAttackController.current.ChangeWeapon(weaponItem.WeaponPrefab);
+                WeaponItem weaponItem = (WeaponItem)item;
+                if(weaponItem != null){
+                    PlayerAttackController.current.ChangeWeapon(weaponItem.WeaponPrefab);
+                }
+
+            } else if(item is PlaceableItem){
+
+                PlaceableItem placeableItem = (PlaceableItem)item;
+                if(placeableItem != null){
+                    PlayerBuildController.current.ChangeHoldingItem(placeableItem);
+                }
+
             }
-
-        } else if(item is PlaceableItem){
-
-            PlaceableItem placeableItem = (PlaceableItem)item;
-            if(placeableItem != null){
-                PlayerBuildController.current.ChangeHoldingItem(placeableItem.PlaceablePrefab);
-            }
-
         }
         
     }

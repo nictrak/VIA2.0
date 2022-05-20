@@ -5,9 +5,13 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Placeable Item", menuName = "VIA2.0/Items/Placeable Item")]
 public class PlaceableItem : Item, IShortcutable
 {
+    
     [SerializeField]
-    private Block placeablePrefab;
-    public Block PlaceablePrefab { get => placeablePrefab; }
+    private Vector2 size;
+
+    public Vector2 Size {
+        get { return size; }
+    }
 
     public override Item Copy() {
         return Instantiate(this);

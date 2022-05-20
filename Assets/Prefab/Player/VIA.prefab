@@ -436,6 +436,8 @@ MonoBehaviour:
   - Via attack 2-3 body
   - Via Stand body
   - Via Run body
+  - Via Stand body
+  - Via Run body
   animatorArmFrontStringHeads:
   - Via idel arm
   - Via Run arm
@@ -451,7 +453,11 @@ MonoBehaviour:
   - Via attack 2-3 arm
   - Via Stand arm hold weapon1
   - Via Stand arm hold weapon1
+  - Via Lift item
+  - Via Lift item
   animatorArmBelowStringHeads:
+  - Via null
+  - Via null
   - Via null
   - Via null
   - Via null
@@ -481,6 +487,8 @@ MonoBehaviour:
   - Via attack 2-3 weapon
   - Via Stand weapon 1
   - Via Stand weapon 1
+  - Via null
+  - Via null
   animatorEffectStringHeads:
   - Via null
   - Via null
@@ -496,7 +504,9 @@ MonoBehaviour:
   - Via null
   - Via null
   - Via null
-  renderStatesSetupSequence: 000000000100000002000000030000000400000006000000050000000800000007000000090000000a0000000b0000000c0000000d000000
+  - Via null
+  - Via null
+  renderStatesSetupSequence: 000000000100000002000000030000000400000006000000050000000800000007000000090000000a0000000b0000000c0000000d0000000e0000000f000000
   bodyAnimator: {fileID: 2858453401383727426}
   weaponAnimator: {fileID: 5497237861919302010}
   armFrontAnimator: {fileID: 230916243064135698}

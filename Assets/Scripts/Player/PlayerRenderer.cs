@@ -34,6 +34,8 @@ public class PlayerRenderer : MonoBehaviour
     [SerializeField]
     private List<string> animatorEffectStringHeads;
     [SerializeField]
+    private List<string> animatorBlockStringHeads;
+    [SerializeField]
     private List<PlayerRenderState> renderStatesSetupSequence;
     [SerializeField]
     private Animator bodyAnimator;
@@ -45,6 +47,11 @@ public class PlayerRenderer : MonoBehaviour
     private Animator armBelowAnimator;
     [SerializeField]
     private Animator effectAnimator;
+    [SerializeField]
+    private Animator blockAnimator;
+
+    [SerializeField]
+    private PlayerRenderState currentState;
 
 
     private static readonly string[] directions = { "N", "NW", "W", "SW", "S", "SE", "E", "NE" };
@@ -52,6 +59,7 @@ public class PlayerRenderer : MonoBehaviour
     private Dictionary<PlayerRenderState, string> stateToArmFrontStringHash;
     private Dictionary<PlayerRenderState, string> stateToArmBelowStringHash;
     private Dictionary<PlayerRenderState, string> stateToWeaponStringHash;
+    private Dictionary<PlayerRenderState, string> stateToBlockStringHash;
     private Dictionary<PlayerRenderState, string> stateToEffectStringHash;
     private string lastRenderedDirectionString;
 
@@ -61,6 +69,7 @@ public class PlayerRenderer : MonoBehaviour
         SetupStateToBodyStringHash();
         SetupStateToArmFrontStringHash();
         SetupStateToWeaponStringHash();
+        SetupStateToBlockStringHash();
         SetupStateToArmBelowStringHash();
         SetupStateToEffectStringHash();
         lastRenderedDirectionString = "S";
@@ -113,6 +122,15 @@ public class PlayerRenderer : MonoBehaviour
         }
     }
 
+    private void SetupStateToBlockStringHash()
+    {
+        stateToBlockStringHash = new Dictionary<PlayerRenderState, string>();
+        for (int i = 0; i < renderStatesSetupSequence.Count; i++)
+        {
+            stateToBlockStringHash.Add(renderStatesSetupSequence[i], animatorBlockStringHeads[i]);
+        }
+    }
+
     private void Render(PlayerRenderState renderState, string directionString)
     {
         string renderedString;
@@ -129,6 +147,7 @@ public class PlayerRenderer : MonoBehaviour
         armFrontAnimator.Play(stateToArmFrontStringHash[renderState] + " " + renderedString);
         // armBelowAnimator.Play(stateToArmBelowStringHash[renderState] + " " + renderedString);
         weaponAnimator.Play(stateToWeaponStringHash[renderState] + " " + renderedString);
+        blockAnimator.Play(stateToBlockStringHash[renderState] + " " + renderedString);
         effectAnimator.Play(stateToEffectStringHash[renderState] + " " + renderedString);
         lastRenderedDirectionString = renderedString;
     }
@@ -165,6 +184,7 @@ public class PlayerRenderer : MonoBehaviour
     }
     public void UpdateAnimation(PlayerRenderState renderState, Vector2 direction)
     {
+        currentState = renderState;
         Render(renderState, DirectionToString(direction));
     }
 }
