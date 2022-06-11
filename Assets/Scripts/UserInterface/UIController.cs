@@ -15,9 +15,9 @@ public class UIController : MonoBehaviour
     void Update()
     {
 
-        if( HudController.IsUsed || DialogueController.IsShow ) {
+        if( HudController.IsUsed || DialogueController.IsShow || PlayerBuildController.current.IsCarryingBlock() ) {
 
-            Cursor.lockState = CursorLockMode.Confined;
+            Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
 
         } else {

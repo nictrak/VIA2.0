@@ -103,6 +103,17 @@ public class PlayerMoveController : MonoBehaviour
 
     }
 
+    public bool BlockUsedHandler(bool isRightClick){
+
+        if (isRightClick && canAttack && playerBuildController.IsCarryingBlock() && !HudController.IsUsed)
+        {
+            return playerBuildController.PlaceBlock();
+        }
+
+        return false;
+
+    }
+
     private Vector2 CalMouseDirection()
     {
         return ((Vector2)Input.mousePosition - centerMousePosition).normalized;

@@ -114,12 +114,12 @@ TextureImporter:
       name: Unit Item 2x2_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 0
         width: 128
         height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.0546875, y: 0.21875}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -139,8 +139,8 @@ TextureImporter:
         y: 0
         width: 128
         height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.140625, y: 0.1484375}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

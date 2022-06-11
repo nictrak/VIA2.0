@@ -10,20 +10,29 @@ public class Block : MonoBehaviour
     #region Block Properties
 
     [SerializeField]
-    private SpriteRenderer spriteRenderer;
+    protected SpriteRenderer spriteRenderer;
     [SerializeField]
-    private BoxCollider2D collider;
+    protected BoxCollider2D boxCollider;
 
     #endregion
 
     [SerializeField]
-    private PlaceableItem item;
+    protected PlaceableItem item;
 
     public PlaceableItem Item {
         get { return item; }
         set {
             this.item = value;
             setBlockProperties();
+        }
+    }
+
+    protected virtual void OnValidate() {
+        if (spriteRenderer == null) {
+            spriteRenderer = GetComponent<SpriteRenderer>();
+        }
+        if (boxCollider == null) {
+            boxCollider = GetComponentInChildren<BoxCollider2D>();
         }
     }
 
@@ -35,8 +44,8 @@ public class Block : MonoBehaviour
             spriteRenderer.sprite = item.Icon;
             //Collider setting
             Vector2 size = item.Size;
-            collider.size = new Vector2(size.y, size.x) * blockSize;
-            collider.offset = new Vector2(size.y, -size.x) * 0.5f * blockSize;
+            boxCollider.size = new Vector2(size.y, size.x) * blockSize;
+            boxCollider.offset = new Vector2(size.y, -size.x) * 0.5f * blockSize;
 
         }
 

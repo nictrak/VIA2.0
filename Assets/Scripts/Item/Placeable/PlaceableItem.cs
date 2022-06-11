@@ -28,7 +28,10 @@ public class PlaceableItem : Item, IShortcutable
 
     public int Use(bool isRightClick)
     {
-        throw new System.NotImplementedException();
+        if(PlayerMoveController.current.BlockUsedHandler(isRightClick)){
+            return 1;
+        }
+        return 0;
     }
 
 }

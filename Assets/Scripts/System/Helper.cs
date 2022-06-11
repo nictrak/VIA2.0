@@ -24,10 +24,20 @@ public static class Helper
         return assets;
     }
 
-    public static Vector2 rotate(Vector2 v, float delta) {
+    public static Vector2 Rotate(Vector2 v, float delta) {
         return new Vector2(
             v.x * Mathf.Cos(delta) - v.y * Mathf.Sin(delta),
             v.x * Mathf.Sin(delta) + v.y * Mathf.Cos(delta)
         );
+    }
+
+    public static int LayerMaskToLayer (LayerMask layerMask) {
+        int layerNumber = 0;
+        int layer = layerMask.value;
+        while(layer > 0) {
+            layer = layer >> 1;
+            layerNumber++;
+        }
+        return layerNumber - 1;
     }
 }
