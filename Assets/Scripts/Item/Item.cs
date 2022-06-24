@@ -7,7 +7,7 @@ using UnityEditor;
 public class Item : ScriptableObject
 {
     [SerializeField]
-    private string id;
+    protected string id;
     public string ID { get { return id; } }
     public string Name;
     public Sprite Icon;
@@ -15,7 +15,7 @@ public class Item : ScriptableObject
     public int MaximunStack = 1;
 
     #if UNITY_EDITOR
-    private void OnValidate() {
+    protected virtual void OnValidate() {
         string path = AssetDatabase.GetAssetPath(this);
         id = AssetDatabase.AssetPathToGUID(path);
     }

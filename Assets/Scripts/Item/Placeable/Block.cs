@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Block : MonoBehaviour
 {
-    public static float blockSize = 0.7f;
+    public static float blockSize = Mathf.Sin(Mathf.Deg2Rad*45);
 
     #region Block Properties
 
@@ -36,7 +36,7 @@ public class Block : MonoBehaviour
         }
     }
 
-    private void setBlockProperties() {
+    protected virtual void setBlockProperties() {
 
         if(item != null){
 
@@ -45,7 +45,7 @@ public class Block : MonoBehaviour
             //Collider setting
             Vector2 size = item.Size;
             boxCollider.size = new Vector2(size.y, size.x) * blockSize;
-            boxCollider.offset = new Vector2(size.y, -size.x) * 0.5f * blockSize;
+            boxCollider.offset = new Vector2((size.y-1), -(size.x-1)) * 0.5f * blockSize;
 
         }
 

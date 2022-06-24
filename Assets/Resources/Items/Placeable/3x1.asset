@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8ef8fa6f37cf2b48b7fed28a4e30e9c, type: 3}
-  m_Name: TestBlock
+  m_Name: 3x1
   m_EditorClassIdentifier: 
-  id: a5d2fff59e88eba45b876fe6f7124bbb
-  Name: TestBlock
-  Icon: {fileID: 3007252833570019158, guid: 262ddae4a1fa51c4aaa7e56ade8cc4e7, type: 3}
-  MaximunStack: 1
-  size: {x: 1, y: 1}
+  id: 94056ed80e15c4342888175f837057bf
+  Name: 3x1
+  Icon: {fileID: 21300000, guid: 3049e8cd18b66e24e8e0c6733a2e24e3, type: 3}
+  MaximunStack: 50
+  size: {x: 3, y: 1}

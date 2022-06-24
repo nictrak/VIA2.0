@@ -6,28 +6,29 @@ using UnityEngine;
 public class ColliderLayerDetector : MonoBehaviour
 {
     [SerializeField]
-    private LayerMask layerMask;
+    protected LayerMask layerMask;
 
     [SerializeField]
-    private List<GameObject> objs;
+    protected List<GameObject> objs;
 
-    private int layer;
+    protected int layer;
 
-    private void Start() {
+    protected virtual void Start() {
         layer = Helper.LayerMaskToLayer(layerMask);
+        objs = new List<GameObject>();
     }
 
     public bool IsEmpty() {
         return objs.Count == 0;
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
+    protected virtual void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.layer == layer){
             objs.Add(other.gameObject);
         }
     }
 
-    private void OnTriggerExit2D(Collider2D other) {
+    protected virtual void OnTriggerExit2D(Collider2D other) {
         if (other.gameObject.layer == layer){
             objs.Remove(other.gameObject);
         }

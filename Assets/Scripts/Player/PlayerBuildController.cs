@@ -20,20 +20,39 @@ public class PlayerBuildController : MonoBehaviour
     [SerializeField]
     private GameObject carryBlockObject;
 
+    [SerializeField]
+    private Grid grid;
+
+    private Vector2 spherePos = Vector2.zero;
+    private float sphereSize = 0f;
+    private Vector2 spherePos2 = Vector2.zero;
+    private float sphereSize2 = 0f;
+
     private static Color normalColor = new Color(1f,1f,1f,0.5f);
     private static Color disableColor = Color.clear;
 
     private void Awake() {
         current = this;
+        if (grid == null) {
+            grid = Grid.FindObjectOfType<Grid>();
+        }
     }
 
     private void Update() {
         if(carryingBlock.Item != null) {
-            Vector2 mousePosition = Input.mousePosition;
-            mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
 
+            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+            if (Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.RightControl)){
+
+                Vector3Int cellPos = grid.WorldToCell(mousePosition);
+                mousePosition = (Vector2)grid.CellToWorld(cellPos) + Vector2.up*grid.cellSize.y/2;
+
+            }
             carryBlockObject.transform.position = mousePosition;
+
         }
+
     }
 
     // Start is called before the first frame update

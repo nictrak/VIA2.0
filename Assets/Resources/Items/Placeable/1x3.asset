@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8ef8fa6f37cf2b48b7fed28a4e30e9c, type: 3}
-  m_Name: TestTable
+  m_Name: 1x3
   m_EditorClassIdentifier: 
-  id: a5d2fff59e88eba45b876fe6f7124bbb
-  Name: TestTable
-  Icon: {fileID: -2088058935873802686, guid: 520ed5c9777cbc14e88ab0d59cc2b12a, type: 3}
+  id: 919e5de903239284f96ae09cb6c5b940
+  Name: 1x3
+  Icon: {fileID: 21300000, guid: 2a8911c7e25112b4bb49ab98834e922a, type: 3}
   MaximunStack: 50
-  size: {x: 2, y: 1}
+  size: {x: 1, y: 3}

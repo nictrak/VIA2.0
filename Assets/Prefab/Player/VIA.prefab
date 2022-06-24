@@ -465,7 +465,7 @@ GameObject:
   m_Component:
   - component: {fileID: 990499914007209348}
   - component: {fileID: 3518513148764833818}
-  - component: {fileID: 2529963203449405440}
+  - component: {fileID: 1934633151}
   m_Layer: 9
   m_Name: Collider
   m_TagString: Untagged
@@ -513,7 +513,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.4, y: 0.7}
   m_EdgeRadius: 0
---- !u!114 &2529963203449405440
+--- !u!114 &1934633151
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -522,13 +522,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 2529963203449405439}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8e9b9cbdd3599644be74457b0e8a2d4, type: 3}
+  m_Script: {fileID: 11500000, guid: f1f37573ee5f18e41b13544ae300fe6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   layerMask:
     serializedVersion: 2
     m_Bits: 512
   objs: []
+  tag: Grid
+  taggedObjs: []
 --- !u!1 &4634483407574408049
 GameObject:
   m_ObjectHideFlags: 0
@@ -856,6 +858,7 @@ MonoBehaviour:
     type: 3}
   blockSpriteRenderer: {fileID: 8981949986066919275}
   carryBlockObject: {fileID: 8981949986066919273}
+  grid: {fileID: 0}
 --- !u!114 &1656719872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1574,7 +1577,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 8981949986066919275}
   boxCollider: {fileID: 3518513148764833818}
   item: {fileID: 0}
-  detector: {fileID: 2529963203449405440}
+  detector: {fileID: 1934633151}
 --- !u!1001 &6622392287761391969
 PrefabInstance:
   m_ObjectHideFlags: 0

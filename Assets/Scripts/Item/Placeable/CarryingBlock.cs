@@ -9,14 +9,14 @@ public class CarryingBlock : Block
     #region Block Properties
 
     [SerializeField]
-    private ColliderLayerDetector detector;
+    private ColliderLayerTagDetector detector;
 
     #endregion
 
     protected override void OnValidate() {
         base.OnValidate();
         if (detector == null) {
-            detector = GetComponentInChildren<ColliderLayerDetector>();
+            detector = GetComponentInChildren<ColliderLayerTagDetector>();
         }
         if(!boxCollider.isTrigger){
             boxCollider.isTrigger = true;
@@ -24,7 +24,7 @@ public class CarryingBlock : Block
     }
 
     private void FixedUpdate() {
-        if(detector.IsEmpty()) {
+        if(CanPlace()) {
             spriteRenderer.color = new Color(1f,1f,1f,0.5f);
         } else {
             spriteRenderer.color = new Color(1f,0,0,0.5f);
