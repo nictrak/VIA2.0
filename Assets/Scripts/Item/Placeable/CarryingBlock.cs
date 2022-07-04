@@ -5,11 +5,13 @@ using UnityEngine;
 
 public class CarryingBlock : Block
 {
-
+/*
     #region Block Properties
 
     [SerializeField]
     private ColliderLayerTagDetector detector;
+    [SerializeField]
+    Vector2 offsetCollider;
 
     #endregion
 
@@ -31,8 +33,23 @@ public class CarryingBlock : Block
         }
     }
 
+    protected override void setBlockProperties() {
+
+        if(item != null){
+
+            //Sprite setting
+            spriteRenderer.sprite = item.Icon;
+            //Collider setting
+            Vector2 size = item.Size;
+            boxCollider.size = (new Vector2(size.y, size.x) * blockSize) - offsetCollider;
+            boxCollider.offset = new Vector2((size.y-1), -(size.x-1)) * 0.5f * blockSize;
+
+        }
+
+    }
+
     public bool CanPlace(){
         return detector.IsEmpty();
-    }
+    }*/
 
 }

@@ -84,12 +84,12 @@ public class PlayerBuildController : MonoBehaviour
 
     public bool PlaceBlock(){
 
-        if(carryingBlock.CanPlace()){
+        /*if(carryingBlock.CanPlace()){
             Block spawnedBlock = Instantiate(blockPrefab);
             spawnedBlock.transform.position = carryBlockObject.transform.position;
             spawnedBlock.Item = carryingBlock.Item;
             return true;
-        }
+        }*/
         return false;
         
     }

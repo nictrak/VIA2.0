@@ -9,8 +9,11 @@ public class Block : MonoBehaviour
 
     #region Block Properties
 
+
     [SerializeField]
-    protected SpriteRenderer spriteRenderer;
+    private Transform spritesParent;
+    [SerializeField]
+    protected SpriteRenderer[] spriteRenderers;
     [SerializeField]
     protected BoxCollider2D boxCollider;
 
@@ -28,9 +31,8 @@ public class Block : MonoBehaviour
     }
 
     protected virtual void OnValidate() {
-        if (spriteRenderer == null) {
-            spriteRenderer = GetComponent<SpriteRenderer>();
-        }
+        if (spritesParent != null)
+            spriteRenderers = spritesParent.GetComponentsInChildren<SpriteRenderer>();
         if (boxCollider == null) {
             boxCollider = GetComponentInChildren<BoxCollider2D>();
         }
@@ -41,7 +43,7 @@ public class Block : MonoBehaviour
         if(item != null){
 
             //Sprite setting
-            spriteRenderer.sprite = item.Icon;
+            //spriteRenderer.sprite = item.Icon;
             //Collider setting
             Vector2 size = item.Size;
             boxCollider.size = new Vector2(size.y, size.x) * blockSize;
