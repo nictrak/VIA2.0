@@ -3,7 +3,8 @@
 [CreateAssetMenu(fileName = "New Placeable Item", menuName = "VIA2.0/Items/Placeable Item")]
 public class PlaceableItem : Item, IShortcutable
 {
-    
+    public Sprite[] Icons;
+
     [SerializeField]
     private Vector2 size;
 

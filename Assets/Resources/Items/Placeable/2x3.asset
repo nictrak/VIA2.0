@@ -14,6 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 1e538c1df3a7a6046a4c30bc490d8474
   Name: 2x3
-  Icon: {fileID: 21300000, guid: 219d1961b0dd0744c8f6cfd9924567ec, type: 3}
+  Icon: {fileID: 3214878562578686268, guid: 219d1961b0dd0744c8f6cfd9924567ec, type: 3}
   MaximunStack: 50
+  Icons:
+  - {fileID: 1081828861169438336, guid: 219d1961b0dd0744c8f6cfd9924567ec, type: 3}
+  - {fileID: -7356479617528036574, guid: 219d1961b0dd0744c8f6cfd9924567ec, type: 3}
+  - {fileID: -3429407760936139322, guid: 219d1961b0dd0744c8f6cfd9924567ec, type: 3}
+  - {fileID: -2775378005062465250, guid: 219d1961b0dd0744c8f6cfd9924567ec, type: 3}
+  - {fileID: 8714345833090727223, guid: 219d1961b0dd0744c8f6cfd9924567ec, type: 3}
   size: {x: 2, y: 3}

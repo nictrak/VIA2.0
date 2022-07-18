@@ -15,9 +15,6 @@ public class PlayerBuildController : MonoBehaviour
     private Block blockPrefab;
 
     [SerializeField]
-    private SpriteRenderer blockSpriteRenderer;
-
-    [SerializeField]
     private GameObject carryBlockObject;
 
     [SerializeField]
@@ -69,12 +66,11 @@ public class PlayerBuildController : MonoBehaviour
         }
         if(newBlock != null)
         {
-            blockSpriteRenderer.color = normalColor;
-            blockSpriteRenderer.sprite = newBlock.Icon;
             carryBlockObject.SetActive(true);
+            carryingBlock.SetColor(normalColor);
             carryingBlock.Item = newBlock;
         } else {
-            blockSpriteRenderer.color = disableColor;
+            carryingBlock.SetColor(disableColor);
         }
     }
 
@@ -84,12 +80,12 @@ public class PlayerBuildController : MonoBehaviour
 
     public bool PlaceBlock(){
 
-        /*if(carryingBlock.CanPlace()){
+        if(carryingBlock.CanPlace()){
             Block spawnedBlock = Instantiate(blockPrefab);
             spawnedBlock.transform.position = carryBlockObject.transform.position;
             spawnedBlock.Item = carryingBlock.Item;
             return true;
-        }*/
+        }
         return false;
         
     }
